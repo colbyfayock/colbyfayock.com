@@ -11,6 +11,12 @@ collections:
     create: true
     fields:
       - {
+          name: "template",
+          label: "Template",
+          widget: "hidden",
+          default: "blog-post"
+        }
+      - {
           name: date,
           label: Date,
           widget: date
@@ -29,6 +35,12 @@ collections:
     folder: src/_pages
     create: true
     fields:
+      - {
+          name: "template",
+          label: "Template",
+          widget: "hidden",
+          default: "page"
+        }
       - {
           name: title,
           label: Title

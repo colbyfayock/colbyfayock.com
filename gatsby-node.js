@@ -29,6 +29,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
                 edges {
                     node {
                         frontmatter {
+                            template
                             path
                         }
                     }
@@ -44,11 +45,12 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         result.data.allMarkdownRemark.edges.forEach(({ node }) => {
             createPage({
                 path: node.frontmatter.path,
-                component: path.resolve('src/templates/blog-post.js'),
+                component: path.resolve(`src/templates/${String(node.frontmatter.template)}.js`)
             });
         });
 
     });
+
 };
 
 exports.modifyWebpackConfig = ({config, stage}) => {
@@ -74,4 +76,4 @@ exports.modifyWebpackConfig = ({config, stage}) => {
     }
 
     return config;
-}
+};
