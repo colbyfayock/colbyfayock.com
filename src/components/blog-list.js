@@ -11,7 +11,7 @@ const BlogList = ({data}) => {
 
     return (
         <div className="blog-list">
-            { posts.map(({ node }, index) => <BlogListPost key={`BlogList-${index}`} node={node} />) }
+            { posts.filter(post => post.node.frontmatter.template === 'blog-post').map(({ node }, index) => <BlogListPost key={`BlogList-${index}`} node={node} />) }
         </div>
     )
 
