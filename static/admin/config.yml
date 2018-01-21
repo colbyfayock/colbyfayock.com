@@ -24,3 +24,17 @@ collections:
           name: body,
           widget: markdown
         }
+  - name: page
+    label: Page
+    folder: src/_pages
+    create: true
+    fields:
+      - {
+          name: title,
+          label: Title
+        }
+      - {
+          label: Body,
+          name: body,
+          widget: markdown
+        }

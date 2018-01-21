@@ -1,13 +1,55 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
 
-const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
-)
+import BlogList from '../components/blog-list';
 
-export default IndexPage
+const helmet_settings = {
+    bodyAttributes: {
+        class: 'page-home',
+    }
+}
+
+class Index extends React.Component {
+
+    render() {
+
+        return (
+            <div className="home container">
+            <Helmet {...helmet_settings} />
+                <BlogList data={this.props.data} />
+            </div>
+        )
+    }
+
+}
+
+export default Index;
+
+export const pageQuery = graphql`
+    query IndexQuery {
+        site {
+            siteMetadata {
+                title
+            }
+        }
+        allMarkdownRemark(
+            sort: {
+                fields: [frontmatter___date],
+                order: DESC
+            }
+        )
+        {
+            edges {
+                node {
+                    excerpt
+                    frontmatter {
+                        path
+                        date(formatString: "DD MMMM, YYYY")
+                        title
+                    }
+                }
+            }
+        }
+    }
+`;

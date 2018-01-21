@@ -1,0 +1,27 @@
+.container {
+
+    max-width: 60em;
+    padding: 0 2em;
+    margin: 0 auto;
+
+    @include mobile() {
+        padding: 0;
+    }
+
+}
+
+.row {
+    margin-bottom: 1.5em;
+}
+
+.row-flex {
+    @include desktop() {
+        display: flex;
+        display: -webkit-flex;
+        height: 100%;
+        flex-direction: row;
+        -webkit-flex-direction: row;
+        -webkit-align-content: stretch;
+        align-content: stretch;
+    }
+}

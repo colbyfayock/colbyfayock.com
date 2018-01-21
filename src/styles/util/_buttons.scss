@@ -1,0 +1,256 @@
+// Based on https://github.com/alexwolfe/Buttons/
+
+
+/*
+* Button Colors
+*
+* $button-colors is used to generate the different button colors.
+* Edit or add colors to the list below and recompile.
+* Each block contains the (name, background, color)
+* The class is generated using the name: (ex .button-primary)
+*/
+
+$button-colors:
+    ('default' $color-grey white)
+    ('primary' $color-primary white)
+    ('secondary' $color-secondary white)
+    ('blue' $color-blue white)
+    ('green' $color-green white)
+    ('orange' $color-orange white)
+    ('red' $color-red white)
+    ('purple' $color-purple white)
+;
+
+
+/*
+* Button Shapes
+*
+* $button-shapes is used to generate the different button shapes.
+* Edit or add shapes to the list below and recompile.
+* Each block contains the (name, border-radius).
+* The class is generated using the name: (ex .button-square).
+*/
+
+$button-shapes:
+    (square 0)
+    (box 10px)
+    (rounded $border-radius)
+    (pill 200px)
+    (circle 100%)
+;
+
+
+/*
+* Button Sizes
+*
+* $button-sizes is used to generate the different button sizes.
+* Edit or add colors to the list below and recompile.
+* Each block contains the (name, size multiplier).
+* The class is generated using the name: (ex .button-giant).
+*/
+
+$button-sizes:
+    (giant 1.75)
+    (jumbo 1.5)
+    (large 1.25)
+    (normal 1)
+    (small .75)
+    (tiny .6)
+;
+
+
+
+/*
+* Base Button Style
+*
+* The default values for the .button class
+*/
+
+$button-height: 2.5em;
+$button-font-size: 1em;
+
+.button {
+
+    display: inline-block;
+    box-sizing: border-box;
+    appearance: none;
+    height: $button-height;
+    font-size: $button-font-size;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: $button-height;
+    padding: 0  ( $button-height / 3 * 2 );
+    margin: 0;
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:visited {
+        text-decoration: none;
+        outline: none;
+    }
+
+    &:active,
+    &.active,
+    &.is-active {
+        text-decoration: none;
+    }
+
+    &.disabled,
+    &.is-disabled,
+    &:disabled {
+        opacity: .8 !important;
+        appearance: none !important;
+        top: 0 !important;
+        color: #CCC !important;
+        background: #EEE !important;
+        border: 1px solid #DDD !important;
+        cursor: default !important;
+    }
+
+    i {
+
+        margin-left: .3em;
+
+    }
+
+    &:hover {
+
+        [data-icon-hover] {
+
+            &:before {
+                content: attr(data-icon-hover);
+            }
+
+        }
+
+    }
+
+}
+
+
+/*
+* Base Colors
+*
+* Create colors for buttons
+* (.button-primary, .button-secondary, etc.)
+*/
+
+@each $color-set in $button-colors {
+
+    $button-name: nth($color-set, 1);
+    $button-background: nth($color-set, 2);
+    $button-color: nth($color-set, 3);
+    $button-class: 'button-' + $button-name;
+
+    @if $button-name == 'default' {
+        $button-class: 'button';
+    }
+
+    .#{$button-class} {
+
+        color: $button-color;
+        background-color: $button-background;
+        border-color: $button-background;
+
+        &:hover,
+        &:focus {
+            color: $button-color;
+            background-color: lighten($button-background, 5);
+            border-color: lighten($button-background, 5);
+        }
+
+        &:visited {
+
+            color: $button-color;
+
+            &:hover,
+            &:focus {
+                color: $button-color;
+                background-color: lighten($button-background, 5);
+                border-color: lighten($button-background, 5);
+            }
+
+        }
+
+        &:active {
+            color: $button-color;
+            background-color: desaturate($button-background, 5);
+            border-color: desaturate($button-background, 5);
+        }
+
+    }
+
+}
+
+
+/*
+* Button Shapes
+*
+* This file creates the various button shapes
+* (ex. Circle, Rounded, Pill)
+*/
+
+@each $button-shape in $button-shapes {
+
+    $button-shape-name: nth($button-shape, 1);
+    $button-shape-radius: nth($button-shape, 2);
+
+    .button-#{$button-shape-name} {
+        border-radius: $button-shape-radius;
+    }
+
+}
+
+
+/*
+* Size Adjustment for equal height & widht buttons
+*
+* Remove padding and set a fixed width.
+*/
+
+.button-circle,
+.button-box,
+.button-square {
+
+    width: $button-height;
+    padding: 0 !important;
+
+    @each $button-sizes-hash in $button-sizes {
+
+        $button-size: nth($button-sizes-hash, 1);
+        $button-multiplier : nth($button-sizes-hash, 2);
+
+        &.button-#{$button-size} {
+            width: $button-height * $button-multiplier;
+        }
+
+    }
+}
+
+
+/*
+* Button Sizes
+*
+* This file creates the various button sizes
+* (ex. .button-large, .button-small, etc.)
+*/
+
+@each $button-size in $button-sizes {
+
+    $button-size-name: nth($button-size, 1);
+    $button-size-multiplier: nth($button-size, 2);
+
+    .button-#{$button-size-name} {
+        font-size: $button-font-size * $button-size-multiplier;
+    }
+
+}
+
+
+.button-full {
+    display: block;
+}

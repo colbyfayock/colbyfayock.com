@@ -1,0 +1,35 @@
+.social-icons {
+
+    @include horizontalList();
+
+    li {
+        margin: 0;
+    }
+
+    a {
+
+        display: block;
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        text-align: center;
+
+        &:hover {
+
+            path,
+            polygon {
+                fill: $color-primary;
+            }
+
+        }
+
+    }
+
+    path,
+    polygon {
+
+        fill: $color-grey5;
+
+    }
+
+}

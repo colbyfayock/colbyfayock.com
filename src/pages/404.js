@@ -1,10 +1,39 @@
-import React from 'react'
+import React from 'react';
+import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
 
-const NotFoundPage = () => (
-  <div>
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </div>
-)
+const helmet_settings = {
+    bodyAttributes: {
+        class: 'page-404',
+    }
+}
 
-export default NotFoundPage
+const NotFoundPage = () => {
+
+    return (
+        <article className="row flat-bottom" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+
+            <header className="align-center push-bottom-four">
+
+                <h1 className="h1 flat-bottom" itemprop="headline">
+                    Uh oh, <strong>404!!</strong>
+                </h1>
+
+                <p className="push-top-one">
+                    Try checking the URL or head back to the <Link to="/">homepage</Link>.
+                </p>
+
+            </header>
+
+            <section className="align-center" itemprop="articleBody">
+
+                <img src="http://fay.io/content/uploads/2016/05/vader.jpg" />
+
+            </section>
+
+        </article>
+    );
+
+}
+
+export default NotFoundPage;

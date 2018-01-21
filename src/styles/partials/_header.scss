@@ -1,0 +1,136 @@
+#nav {
+
+    text-align: center;
+
+    .row {
+
+        margin-bottom: 0;
+
+        .page-home & {
+
+            padding: 8em 0;
+
+            @include mobile() {
+                padding: 4em 1em 2em;
+            }
+
+        }
+
+        body:not(.page-home) & {
+
+            display: flex;
+            width: 100%;
+
+        }
+
+    }
+
+    .h1 {
+
+        margin: 0;
+
+        a {
+            font-weight: 700;
+        }
+
+        .page-home & {
+
+            text-align: center;
+
+            a {
+                font-size: 1.6em;
+            }
+
+            @include mobile() {
+                font-size: 1.8em;
+            }
+
+        }
+
+        body:not(.page-home) & {
+
+            font-size: 1em;
+
+        }
+
+    }
+
+    .tagline {
+        display: block;
+        color: $color-grey4;
+        font-weight: 400;
+        font-size: .5em;
+        line-height: 1.2em;
+        margin-top: .6em;
+    }
+
+    .nav-logo,
+    .nav-social {
+        flex-grow: 1;
+    }
+
+    .nav-logo {
+
+        body:not(.page-home) & {
+
+            font-size: 1.4em;
+            text-align: left;
+
+            a {
+
+                display: block;
+                height: 2em;
+                color: $color-grey4;
+                line-height: 2em;
+
+                &:hover {
+                    color: $color-primary;
+                }
+
+            }
+
+        }
+
+        @include mobile() {
+            text-align: center;
+        }
+
+    }
+
+    .social-icons {
+
+        .page-home & {
+
+            display: flex;
+            font-size: 1.6em;
+            flex-flow: wrap;
+            justify-content: center;
+            margin-top: .3em;
+
+            a,
+            path,
+            polygon {
+
+                color: $color-grey5;
+                fill: $color-grey5;
+
+                &:hover {
+                    color: $color-primary;
+                    fill: $color-primary;
+                }
+
+            }
+
+        }
+
+        body:not(.page-home) & {
+
+            @include desktop() {
+                text-align: right;
+            }
+
+        }
+
+    }
+
+}

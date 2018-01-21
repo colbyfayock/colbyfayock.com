@@ -1,0 +1,78 @@
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+button {
+    @extend .button;
+    @extend .button-rounded;
+}
+
+input[type="submit"] {
+    @extend .button-primary;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="search"],
+input[type="url"],
+input[type="password"],
+input[type="number"],
+input[type="color"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input:not([type]),
+textarea,
+select {
+
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: white;
+    padding: .8em;
+    border-radius: $border-radius;
+    border: solid 2px $color-grey2;
+    outline: 0;
+
+    &:focus {
+        border: solid 2px lighten( $color-purple, 25 );
+    }
+
+    &:disabled {
+        color: $color-grey4;
+        background-color: $color-grey1;
+    }
+
+}
+
+input[type="color"] {
+    box-sizing: content-box;
+    width: 2em;
+    height: 2em;
+    padding: .4em;
+
+}
+
+fieldset {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    border-bottom: solid 1px $color-grey2;
+    padding-bottom: .4em;
+}
+
+.label-title {
+    display: block;
+    color: $color-grey5;
+    font-size: .7em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: .6em;
+}

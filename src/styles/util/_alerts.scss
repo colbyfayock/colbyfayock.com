@@ -1,0 +1,45 @@
+.alert {
+
+    display: block;
+    padding: 1.2em;
+    margin-bottom: 1.2em;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+    }
+
+}
+
+.alert-warning {
+    color: darken( $color-warning, 45 );
+    background-color: $color-warning-background;
+}
+
+.alert-error {
+    color: darken( $color-error, 30 );
+    background-color: $color-error-background;
+}
+
+.alert-success {
+    color: darken( $color-success, 30 );
+    background-color: $color-success-background;
+}
+
+.alert-info {
+    color: darken( $color-info, 30 );
+    background-color: $color-info-background;
+}
