@@ -6,34 +6,6 @@ import FaGithub from 'react-icons/lib/fa/github';
 import FaCodepen from 'react-icons/lib/fa/codepen';
 import FaEnvelopeO from 'react-icons/lib/fa/envelope-o';
 
-const social_links = [
-    {
-        title: 'Twitter',
-        url: 'http://twitter.com/colbyfayock',
-        icon: <FaTwitter />,
-    },
-    {
-        title: 'Dribbble',
-        url: 'http://dribbble.com/colbyfayock',
-        icon: <FaDribbble />,
-    },
-    {
-        title: 'GitHub',
-        url: 'http://github.com/colbyfayock',
-        icon: <FaGithub />,
-    },
-    {
-        title: 'CodePen',
-        url: 'http://codepen.io/colbyfayock',
-        icon: <FaCodepen />,
-    },
-    {
-        title: 'Email',
-        url: 'mailto:hello@fay.io',
-        icon: <FaEnvelopeO />,
-    },
-];
-
 const SocialIconsList = ({links}) => {
 
     if ( !Array.isArray(links) ) return null;
@@ -52,11 +24,41 @@ const SocialIconsList = ({links}) => {
 }
 
 const SocialIcons = () => {
+
+    const social_links = [
+        {
+            title: 'Twitter',
+            url: 'http://twitter.com/colbyfayock',
+            icon: <FaTwitter />,
+        },
+        {
+            title: 'Dribbble',
+            url: 'http://dribbble.com/colbyfayock',
+            icon: <FaDribbble />,
+        },
+        {
+            title: 'GitHub',
+            url: 'http://github.com/colbyfayock',
+            icon: <FaGithub />,
+        },
+        {
+            title: 'CodePen',
+            url: 'http://codepen.io/colbyfayock',
+            icon: <FaCodepen />,
+        },
+        {
+            title: 'Email',
+            url: 'mailto:hello@fay.io',
+            icon: <FaEnvelopeO />,
+        },
+    ];
+
     return (
         <ul className="social-icons">
             <SocialIconsList links={social_links} />
         </ul>
     );
+
 }
 
 export default SocialIcons;
