@@ -10,16 +10,20 @@ const SocialIconsList = ({links}) => {
 
     if ( !Array.isArray(links) ) return null;
 
-    return links.map((item, index) => {
-        return (
-            <li key={`SocialIconsList-${index}`} className={`social-icons-${item.title.toLowerCase()}`}>
-                <a href={item.url}>
-                    { item.icon }
-                    <span className="ir">{ item.title }</span>
-                </a>
-            </li>
-        );
-    });
+    return (
+        <div>
+            { links.map((item, index) => {
+                return (
+                    <li key={`SocialIconsList-${index}`} className={`social-icons-${item.title.toLowerCase()}`}>
+                        <a href={item.url}>
+                            { item.icon }
+                            <span className="ir">{ item.title }</span>
+                        </a>
+                    </li>
+                );
+            }) }
+        </div>
+    )
 
 }
 
