@@ -6,13 +6,6 @@
 
 const path = require("path");
 
-const build_stages = [
-    'develop',
-    'develop-html',
-    'build-html',
-    'build-javascript'
-];
-
 exports.createPages = ({ boundActionCreators, graphql }) => {
 
     const { createPage } = boundActionCreators;
@@ -20,10 +13,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
     return graphql(`
         {
             allMarkdownRemark(
-                sort: {
-                    order: DESC,
-                    fields: [frontmatter___date]
-                }
                 limit: 1000
             ) {
                 edges {
@@ -54,6 +43,13 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 };
 
 exports.modifyWebpackConfig = ({config, stage}) => {
+
+    const build_stages = [
+        'develop',
+        'develop-html',
+        'build-html',
+        'build-javascript'
+    ];
 
     if ( build_stages.includes(stage) ) {
 
