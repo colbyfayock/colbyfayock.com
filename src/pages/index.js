@@ -16,7 +16,7 @@ class Index extends React.Component {
 
         return (
             <div className="home container">
-            <Helmet {...helmet_settings} />
+                <Helmet {...helmet_settings} />
                 <BlogList data={this.props.data} />
             </div>
         )
