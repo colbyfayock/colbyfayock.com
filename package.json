@@ -8,6 +8,8 @@
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-netlify-cms": "^1.0.4",
     "gatsby-plugin-react-helmet": "^2.0.3",
+    "gatsby-source-filesystem": "^1.5.14",
+    "gatsby-transformer-remark": "^1.7.28",
     "react-helmet": "^5.2.0"
   },
   "keywords": [
