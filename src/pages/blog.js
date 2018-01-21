@@ -16,10 +16,10 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Helmet title={this.props.data.site.siteMetadata.title} />
-        {posts.map(({ node }) => {
+        {posts.map(({ node, index }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
-            <div key={'1'}>
+            <div key={index}>
               <h3>
                 <Link style={{ boxShadow: 'none' }} to={'/'}>
                   {title}
