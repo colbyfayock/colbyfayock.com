@@ -6,10 +6,11 @@ media_folder: static/assets
 
 collections:
   - name: blog
-    label: Blog
-    folder: blog
+    label: Post
+    folder: src/_posts
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     create: true
     fields:
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
+      - { label: Body, name: body, widget: markdown }
