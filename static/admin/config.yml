@@ -17,13 +17,17 @@ collections:
           default: "blog-post"
         }
       - {
+          name: title,
+          label: Title
+        }
+      - {
+          name: path,
+          label: Path
+        }
+      - {
           name: date,
           label: Date,
           widget: date
-        }
-      - {
-          name: title,
-          label: Title
         }
       - {
           label: Body,
@@ -44,6 +48,10 @@ collections:
       - {
           name: title,
           label: Title
+        }
+      - {
+          name: path,
+          label: Path
         }
       - {
           label: Body,
