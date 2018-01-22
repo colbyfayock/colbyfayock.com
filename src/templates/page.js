@@ -6,7 +6,7 @@ import ArticleMeta from '../components/article/article-meta';
 
 const PageContent = ({html}) => {
     return (
-        <section class="row cf" itemprop="articleBody">
+        <section className="row cf" itemprop="articleBody">
             <div className="article-content-body" dangerouslySetInnerHTML={{ __html: html }}></div>
         </section>
     );
@@ -32,9 +32,9 @@ const Page = ({content, html}) => {
 
             <Helmet {...helmet_settings} />
 
-            <header class="article-header">
+            <header className="article-header">
 
-                <h1 class="entry-title single-title flat-top" itemprop="headline">
+                <h1 className="entry-title single-title flat-top" itemprop="headline">
                     { content.title }
                 </h1>
 

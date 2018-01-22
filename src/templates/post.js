@@ -5,7 +5,7 @@ import ArticleHeader from '../components/article/article-header';
 
 const PostContent = ({html}) => {
     return (
-        <section class="row cf" itemprop="articleBody">
+        <section className="row cf" itemprop="articleBody">
             <div className="article-content-body" dangerouslySetInnerHTML={{ __html: html }}></div>
         </section>
     );

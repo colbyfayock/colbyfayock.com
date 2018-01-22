@@ -5,9 +5,9 @@ import ArticleMeta from './article-meta';
 const ArticleHeader = ({title, categories, date}) => {
 
     return (
-        <header class="article-header">
+        <header className="article-header">
 
-            <h1 class="flat-top" itemprop="headline">
+            <h1 className="flat-top" itemprop="headline">
                 { title }
             </h1>
 
