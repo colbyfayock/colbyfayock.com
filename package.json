@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "normalize.css": "^7.0.0",
+    "parameterize": "^0.1.0",
     "react-icons": "^2.2.7"
   }
 }

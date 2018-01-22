@@ -15,7 +15,7 @@ const Post = ({content, html}) => {
 
     const helmet_settings = {
         bodyAttributes: {
-            class: 'article post',
+            class: `article post post-${Parameterize(content.title)}`,
         },
         title: `${content.title} - Colby Fayock`,
         meta: [

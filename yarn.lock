@@ -6085,6 +6085,10 @@ param-case@2.1.x:
   dependencies:
     no-case "^2.2.0"
 
+parameterize@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/parameterize/-/parameterize-0.1.0.tgz#2d2b2e3b1a553006d045a3049054a50b9931f79d"
+
 parse-asn1@^5.0.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/parse-asn1/-/parse-asn1-5.1.0.tgz#37c4f9b7ed3ab65c74817b5f2480937fbf97c712"

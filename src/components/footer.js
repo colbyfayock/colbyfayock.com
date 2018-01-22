@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 
 import SocialIcons from './social-icons';
 
+import image_resume from '../../static/assets/colby-fayock-front-end-development-web-design-resume.jpg';
+
 const Footer = () => {
     return (
         <div className="footer">
@@ -40,9 +42,9 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/">
+                                    <a href={image_resume}>
                                         Resume
-                                    </Link>
+                                    </a>
                                 </li>
                                 <li>
                                     <Link to="/">

@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import Parameterize from 'parameterize';
 
 import ArticleHeader from '../components/article/article-header';
 import ArticleMeta from '../components/article/article-meta';
@@ -16,7 +17,7 @@ const Page = ({content, html}) => {
 
     const helmet_settings = {
         bodyAttributes: {
-            class: 'article page',
+            class: `article page page-${Parameterize(content.title)}`,
         },
         title: `${content.title} - Colby Fayock`,
         meta: [
@@ -50,6 +51,7 @@ const Page = ({content, html}) => {
 }
 
 export default function Template({ data }) {
+    console.log('data', data);
     return <Page content={data.markdownRemark.frontmatter} html={data.markdownRemark.html} />;
 }
 

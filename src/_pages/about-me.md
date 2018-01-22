@@ -43,6 +43,6 @@ Drove all UX and front end development for a large geek culture ecommerce websit
 
 ## And what I'm doing now...
 
-Currently, I'm living in Virginia working as a UX Designer & Front End Developer for Element 84.
+Currently, I'm living in Virginia working as a UX Designer & Front End Developer for [Element 84](https://www.element84.com/).
 
-You can also find me freelancing and messing around with GitHub repos in my free time.
+You can also find me freelancing and messing around with [GitHub repos](https://github.com/colbyfayock) in my free time.
