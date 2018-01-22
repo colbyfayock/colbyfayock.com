@@ -51,7 +51,6 @@ const Page = ({content, html}) => {
 }
 
 export default function Template({ data }) {
-    console.log('data', data);
     return <Page content={data.markdownRemark.frontmatter} html={data.markdownRemark.html} />;
 }
 
