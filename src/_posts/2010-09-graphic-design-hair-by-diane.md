@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Hair By Diane
 path: /2010/09/graphic-design/hair-by-diane/
 date: 2010-09-28T05:54:56Z

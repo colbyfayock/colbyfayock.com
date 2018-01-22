@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Pong-Fu Flyer Design
 path: /2011/04/graphic-design/pong-fu-flyer-design/
 date: 2011-04-04T22:55:10Z

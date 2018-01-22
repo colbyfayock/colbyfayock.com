@@ -2,6 +2,14 @@
 
     margin-bottom: 4em;
 
+    @include mobile() {
+        font-size: .8em;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     p {
 
         margin: 0 0 .8em;
@@ -12,6 +20,11 @@
 
     }
 
+    .article-meta {
+        text-align: left;
+        margin: 0;
+    }
+
 }
 
 .blog-list-post-header {
@@ -20,78 +33,6 @@
 
 .blog-list-post-header-title {
     margin: 0 0 .4em 0;
-}
-
-.blog-list-post-meta {
-
-    color: $color-grey4;
-    list-style: none;
-    padding: 0;
-    margin: 0 0 .7em;
-
-    li {
-
-        display: inline-block;
-        margin: 0 .5em;
-
-        &:first-child {
-            margin-left: 0;
-        }
-
-        &:last-child {
-            margin-right: 0;
-        }
-
-    }
-
-    a {
-
-        color: inherit;
-        text-decoration: none;
-
-        &:hover {
-            color: $color-primary;
-            text-decoration: underline;
-        }
-
-    }
-
-    .post-edit-link {
-
-        i {
-            font-size: .8em;
-            margin-right: .4em;
-        }
-
-    }
-
-}
-
-.blog-list-post-meta-categories {
-
-    color: $color-grey7;
-    font-weight: 600;
-
-    span {
-
-        margin-right: .2em;
-
-        &:after {
-            content: ',';
-        }
-
-        &:last-child {
-
-            margin-right: 0;
-
-            &:after {
-                content: none;
-            }
-
-        }
-
-    }
-
 }
 
 .blog-list-post-more {

@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Batch PNG Optimization
 path: /2015/03/coding/batch-png-optimization/
 date: 2015-03-29T22:35:31Z

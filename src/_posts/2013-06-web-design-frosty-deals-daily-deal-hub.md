@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Frosty Deals, Daily Deal Hub
 path: /2013/06/web-design/frosty-deals-daily-deal-hub/
 date: 2013-06-11T00:13:52Z

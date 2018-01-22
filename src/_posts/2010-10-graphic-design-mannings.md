@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Manning&#039;s
 path: /2010/10/graphic-design/mannings/
 date: 2010-10-05T06:24:54Z

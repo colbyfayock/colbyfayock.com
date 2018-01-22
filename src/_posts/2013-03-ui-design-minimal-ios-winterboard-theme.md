@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: minimal.iOS Winterboard Theme
 path: /2013/03/ui-design/minimal-ios-winterboard-theme/
 date: 2013-03-11T22:45:01Z

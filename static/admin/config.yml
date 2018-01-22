@@ -5,7 +5,7 @@ backend:
 media_folder: static/assets
 
 collections:
-  - name: blog
+  - name: post
     label: Post
     folder: src/_posts
     create: true
@@ -14,7 +14,7 @@ collections:
           name: "template",
           label: "Template",
           widget: "hidden",
-          default: "blog-post"
+          default: "post"
         }
       - {
           name: title,

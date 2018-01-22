@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: dpkg-scanpackages Stripping Name Field
 path: /2014/12/cydia/dpkg-scanpackages-strip-name/
 date: 2014-12-25T14:46:32Z

@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Asynchronous Javascript Loading
 path: /2012/04/coding/asynchronous-javascript-loading/
 date: 2012-04-20T13:43:12Z

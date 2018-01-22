@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Paper Heart
 path: /2009/07/graphic-design/paper-heart/
 date: 2009-07-26T01:30:03Z

@@ -6,23 +6,22 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import '../styles/main.scss';
 
-const meta = [
-    {
-        name: 'description',
-        content: 'Sample'
-    },
-    {
-        name: 'keywords',
-        content: 'sample, something'
-    },
-]
-
 const TemplateWrapper = (props) => {
+
+    const helmet_settings = {
+        title: 'Colby Fayock - A UX Designer & Front-end Developer Blog',
+        meta: [
+            {
+                name: 'description',
+                content: 'A UX Designer &amp; Front-end Developer Blog'
+            }
+        ],
+    };
 
     return (
         <div>
 
-            <Helmet title="Gatsby Default Starter" meta={meta} />
+            <Helmet {...helmet_settings} />
 
             <Header {...props} />
 

@@ -4,23 +4,23 @@ import Helmet from 'react-helmet';
 
 import BlogList from '../components/blog-list';
 
-const helmet_settings = {
-    bodyAttributes: {
-        class: 'page-home',
-    }
-}
+const Index = ({data}) => {
 
-class Index extends React.Component {
+    const helmet_settings = {
+        bodyAttributes: {
+            class: 'home',
+        }
+    };
 
-    render() {
+    return (
+        <div className="container">
 
-        return (
-            <div className="home container">
-                <Helmet {...helmet_settings} />
-                <BlogList data={this.props.data} />
-            </div>
-        )
-    }
+            <Helmet {...helmet_settings} />
+
+            <BlogList posts={data.allMarkdownRemark.edges} />
+
+        </div>
+    );
 
 }
 

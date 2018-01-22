@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: minimal.iOS.8
 path: /2014/11/updates/minimal-ios-8/
 date: 2014-11-30T18:07:20Z

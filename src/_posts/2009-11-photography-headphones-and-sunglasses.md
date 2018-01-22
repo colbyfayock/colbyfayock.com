@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Headphones and Sunglasses
 path: /2009/11/photography/headphones-and-sunglasses/
 date: 2009-11-17T07:15:59Z

@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Anthony Santiago
 path: /2010/04/photography/anthony-santiago/
 date: 2010-04-05T03:39:35Z

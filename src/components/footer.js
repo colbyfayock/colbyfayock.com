@@ -5,8 +5,9 @@ import SocialIcons from './social-icons';
 
 const Footer = () => {
     return (
-        <div>
-            <div id="subfooter" className="container">
+        <div className="footer">
+
+            <div className="container footer-secondary">
 
                 <div className="content">
 
@@ -20,7 +21,7 @@ const Footer = () => {
 
             </div>
 
-            <footer id="footer" className="container" role="contentinfo">
+            <footer className="container footer-primary" role="contentinfo">
 
                 <div className="content">
 

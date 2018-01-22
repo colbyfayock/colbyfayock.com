@@ -1,26 +1,26 @@
-#nav {
+.header {
 
     text-align: center;
 
-    .row {
+    .home & {
 
-        margin-bottom: 0;
+        margin: 8em auto;
 
-        .page-home & {
-
-            padding: 8em 0;
-
-            @include mobile() {
-                padding: 4em 1em 2em;
-            }
-
+        @include mobile() {
+            margin: 4em auto;
         }
 
-        body:not(.page-home) & {
+    }
 
-            display: flex;
-            width: 100%;
+    .row {
 
+        display: flex;
+        width: 100%;
+        margin-bottom: 0;
+
+        .home & {
+            display: block;
+            padding: 0;
         }
 
     }
@@ -33,7 +33,7 @@
             font-weight: 700;
         }
 
-        .page-home & {
+        .home & {
 
             text-align: center;
 
@@ -47,7 +47,7 @@
 
         }
 
-        body:not(.page-home) & {
+        body:not(.home) & {
 
             font-size: 1em;
 
@@ -64,14 +64,14 @@
         margin-top: .6em;
     }
 
-    .nav-logo,
-    .nav-social {
+    .header-logo,
+    .header-social {
         flex-grow: 1;
     }
 
-    .nav-logo {
+    .header-logo {
 
-        body:not(.page-home) & {
+        body:not(.home) & {
 
             font-size: 1.4em;
             text-align: left;
@@ -99,7 +99,7 @@
 
     .social-icons {
 
-        .page-home & {
+        .home & {
 
             display: flex;
             font-size: 1.6em;
@@ -123,7 +123,7 @@
 
         }
 
-        body:not(.page-home) & {
+        body:not(.home) & {
 
             @include desktop() {
                 text-align: right;

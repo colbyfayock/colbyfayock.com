@@ -1,67 +1,9 @@
-.page-home {
-
-    .post {
-        margin-bottom: 2em;
-    }
+.home {
 
     .article-header {
 
         h2 {
             margin-bottom: $margin-bottom-h2 / 4;
-        }
-
-    }
-
-    .entry-content-wrapper {
-
-        @include desktop() {
-            display: flex;
-            align-items: center;
-        }
-
-    }
-
-    .entry-content {
-
-        margin-top: 1em;
-
-        @include desktop() {
-            padding-left: 4em;
-        }
-
-        @include tablet() {
-            padding-left: 0;
-        }
-
-        @include mobile() {
-            font-size: .8em;
-            text-align: center;
-        }
-
-        a {
-            display: block;
-            @include overrideLinkColor( $font-color-base );
-            text-decoration: none;
-        }
-
-        .tags {
-            color: $color-grey4;
-            font-size: 1em;
-        }
-
-
-        .button {
-
-            i {
-                width: 1em;
-            }
-
-            @include mobile() {
-
-                width: 100%;
-
-            }
-
         }
 
     }

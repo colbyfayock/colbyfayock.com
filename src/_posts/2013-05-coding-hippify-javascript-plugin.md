@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: hippify Javascript Plugin
 path: /2013/05/coding/hippify-javascript-plugin/
 date: 2013-05-15T00:58:46Z

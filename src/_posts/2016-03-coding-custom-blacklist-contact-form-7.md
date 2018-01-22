@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Custom Blacklist Contact Form 7
 path: /2016/03/coding/custom-blacklist-contact-form-7/
 date: 2016-03-11T02:58:58Z

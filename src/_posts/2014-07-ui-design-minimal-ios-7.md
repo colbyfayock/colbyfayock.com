@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: minimal.iOS.7
 path: /2014/07/ui-design/minimal-ios-7/
 date: 2014-07-08T13:43:57Z

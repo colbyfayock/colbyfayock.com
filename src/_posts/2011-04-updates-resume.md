@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Resume
 path: /2011/04/updates/resume/
 date: 2011-04-05T19:00:14Z

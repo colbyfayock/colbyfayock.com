@@ -1,9 +1,31 @@
-#subfooter {
+.footer {
+
+    .row {
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .container {
+
+        margin: 8em auto;
+
+        @include mobile() {
+            margin: 6em auto;
+        }
+
+        &:last-child {
+            margin-bottom: 2em;
+        }
+
+    }
+
+}
+
+.footer-secondary {
 
     color: $color-grey4;
     font-size: 1em;
     text-align: center;
-    margin-top: 2.6em;
 
     @include mobile() {
         font-size: .9em;
@@ -29,13 +51,9 @@
 
 }
 
-#footer {
+.footer-primary {
 
     text-align: center;
-
-    @include desktop() {
-        margin-top: 2.8em;
-    }
 
     .align-right {
         text-align: center;

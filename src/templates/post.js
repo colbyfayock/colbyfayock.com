@@ -1,10 +1,9 @@
-import React from 'react';
+import React from "react";
 import Helmet from 'react-helmet';
 
 import ArticleHeader from '../components/article/article-header';
-import ArticleMeta from '../components/article/article-meta';
 
-const PageContent = ({html}) => {
+const PostContent = ({html}) => {
     return (
         <section class="row cf" itemprop="articleBody">
             <div className="article-content-body" dangerouslySetInnerHTML={{ __html: html }}></div>
@@ -12,11 +11,11 @@ const PageContent = ({html}) => {
     );
 }
 
-const Page = ({content, html}) => {
+const Post = ({content, html}) => {
 
     const helmet_settings = {
         bodyAttributes: {
-            class: 'article page',
+            class: 'article post',
         },
         title: `${content.title} - Colby Fayock`,
         meta: [
@@ -32,17 +31,9 @@ const Page = ({content, html}) => {
 
             <Helmet {...helmet_settings} />
 
-            <header class="article-header">
+            <ArticleHeader title={content.title} categories={content.categories} date={content.date} />
 
-                <h1 class="entry-title single-title flat-top" itemprop="headline">
-                    { content.title }
-                </h1>
-
-                <ArticleMeta categories={content.categories} date={content.date} />
-
-            </header>
-
-            <PageContent html={html} />
+            <PostContent html={html} />
 
         </article>
     );
@@ -50,11 +41,11 @@ const Page = ({content, html}) => {
 }
 
 export default function Template({ data }) {
-    return <Page content={data.markdownRemark.frontmatter} html={data.markdownRemark.html} />;
+    return <Post content={data.markdownRemark.frontmatter} html={data.markdownRemark.html} />;
 }
 
 export const pageQuery = graphql`
-    query PageByPath($path: String!) {
+    query PostByPath($path: String!) {
         markdownRemark(frontmatter: { path: { eq: $path } }) {
             html
             frontmatter {

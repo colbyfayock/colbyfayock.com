@@ -3,15 +3,15 @@ import Link from 'gatsby-link';
 
 import BlogListPost from './blog-list-post';
 
-const BlogList = ({data}) => {
+const BlogList = ({posts}) => {
 
-    if ( !data || !data.allMarkdownRemark || !Array.isArray(data.allMarkdownRemark.edges) ) return null;
+    if ( !Array.isArray(posts) ) return null;
 
-    const posts = data.allMarkdownRemark.edges;
+    const blog_posts = posts.filter(post => post.node.frontmatter.template === 'post');
 
     return (
         <div className="blog-list">
-            { posts.filter(post => post.node.frontmatter.template === 'blog-post').map(({ node }, index) => <BlogListPost key={`BlogList-${index}`} node={node} />) }
+            { blog_posts.map(({ node }, index) => <BlogListPost key={`BlogList-${index}`} excerpt={node.excerpt} content={node.frontmatter} />) }
         </div>
     )
 

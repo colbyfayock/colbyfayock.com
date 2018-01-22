@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Design Official
 path: /2010/04/graphic-design/design-official/
 date: 2010-04-15T18:18:25Z

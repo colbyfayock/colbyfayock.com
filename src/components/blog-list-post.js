@@ -1,26 +1,15 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import ArticleMeta from '../components/article/article-meta';
+import CategoriesList from './categories-list';
+
 import FaHandORight from 'react-icons/lib/fa/hand-o-right';
 import FaThumbsOUp from 'react-icons/lib/fa/thumbs-o-up';
 
-const BlogListPostCategories = ({categories}) => {
+const BlogListPost = ({excerpt, content}) => {
 
-    if ( typeof categories !== 'string' ) return null;
-
-    return categories.split(',').map((category, index) => {
-        return (
-            <span key={`BlogListPostCategories-${index}`}>
-                { category.trim() }
-            </span>
-        )
-    })
-
-}
-
-const BlogListPost = ({node}) => {
-
-    if ( !node || !node.frontmatter ) return null;
+    if ( !excerpt || !content ) return null;
 
     return (
         <article className="blog-list-post" role="article">
@@ -28,30 +17,21 @@ const BlogListPost = ({node}) => {
             <header className="blog-list-post-header">
 
                 <h2 className="h2 blog-list-post-header-title">
-                    <Link to={ node.frontmatter.path }>
-                        { node.frontmatter.title }
+                    <Link to={ content.path }>
+                        { content.title }
                     </Link>
                 </h2>
 
-                <ul className="blog-list-post-meta">
-                    <li className="blog-list-post-meta-categories">
-                        <BlogListPostCategories categories={node.frontmatter.categories} />
-                    </li>
-                    <li>
-                        <time className="updated">
-                            { node.frontmatter.date }
-                        </time>
-                    </li>
-                </ul>
+                <ArticleMeta categories={content.categories} date={content.date} />
 
             </header>
 
             <section>
 
-                <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                <p dangerouslySetInnerHTML={{ __html: excerpt }} />
 
                 <p className="blog-list-post-more">
-                    <Link to={ node.frontmatter.path }>
+                    <Link to={ content.path }>
                         Read More
                         <span className="fa-hand-o-right">
                             <FaHandORight />

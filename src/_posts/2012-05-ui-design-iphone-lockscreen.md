@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: iPhone Lock Screen
 path: /2012/05/ui-design/iphone-lockscreen/
 date: 2012-05-04T02:00:46Z

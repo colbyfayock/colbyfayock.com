@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Hair by Diane Website
 path: /2011/03/web-design/hair-by-diane-website/
 date: 2011-03-10T20:58:00Z

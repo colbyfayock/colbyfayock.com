@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Filmore MySpace Design
 path: /2010/01/web-design/filmore-myspace/
 date: 2010-01-10T01:14:03Z

@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Wowee Zowee
 path: /2009/11/graphic-design/wowee-zowee/
 date: 2009-11-16T01:06:27Z

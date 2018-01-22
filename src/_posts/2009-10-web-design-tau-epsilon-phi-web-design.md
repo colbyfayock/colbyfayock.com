@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Tau Epsilon Phi Web Design
 path: /2009/10/web-design/tau-epsilon-phi-web-design/
 date: 2009-10-22T01:05:46Z

@@ -7,7 +7,7 @@ const HeaderLogo = ({path}) => {
 
     if ( path === '/' ) {
         return (
-            <div className="nav-logo">
+            <div className="header-logo">
                 <h1 className="h1">
                     <Link to="/">
                         Colby Fayock
@@ -21,7 +21,7 @@ const HeaderLogo = ({path}) => {
     }
 
     return (
-        <div className="nav-logo">
+        <div className="header-logo">
             <span className="h1">
                 <Link to="/">
                     Colby Fayock
@@ -34,7 +34,7 @@ const HeaderLogo = ({path}) => {
 
 const Header = ({location}) => {
     return (
-        <nav id="nav" className="container" role="navigation">
+        <nav className="header container" role="navigation">
 
             <div className="content">
 
@@ -42,7 +42,7 @@ const Header = ({location}) => {
 
                     <HeaderLogo path={location.pathname} />
 
-                    <div className="nav-social">
+                    <div className="header-social">
                         <SocialIcons />
                     </div>
 

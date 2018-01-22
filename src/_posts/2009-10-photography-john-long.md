@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: John Long
 path: /2009/10/photography/john-long/
 date: 2009-10-04T07:04:39Z

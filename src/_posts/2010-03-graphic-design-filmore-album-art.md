@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: Filmore Album Art
 path: /2010/03/graphic-design/filmore-album-art/
 date: 2010-03-17T02:34:25Z

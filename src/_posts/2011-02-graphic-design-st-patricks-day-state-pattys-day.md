@@ -1,5 +1,5 @@
 ---
-template: blog-post
+template: post
 title: St. Patrick&#039;s and State Patty&#039;s Day
 path: /2011/02/graphic-design/st-patricks-day-state-pattys-day/
 date: 2011-02-18T22:06:05Z
