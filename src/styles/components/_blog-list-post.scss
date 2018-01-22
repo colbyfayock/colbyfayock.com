@@ -1,6 +1,6 @@
 .blog-list-post {
 
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 
     p {
 
@@ -71,6 +71,26 @@
 
     color: $color-grey7;
     font-weight: 600;
+
+    span {
+
+        margin-right: .2em;
+
+        &:after {
+            content: ',';
+        }
+
+        &:last-child {
+
+            margin-right: 0;
+
+            &:after {
+                content: none;
+            }
+
+        }
+
+    }
 
 }
 

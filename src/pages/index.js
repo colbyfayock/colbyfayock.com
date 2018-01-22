@@ -45,9 +45,10 @@ export const pageQuery = graphql`
                     excerpt
                     frontmatter {
                         template
-                        path
-                        date(formatString: "DD MMMM, YYYY")
                         title
+                        date(formatString: "DD MMMM, YYYY")
+                        path
+                        categories
                     }
                 }
             }

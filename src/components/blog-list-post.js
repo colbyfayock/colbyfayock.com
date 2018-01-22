@@ -4,6 +4,20 @@ import Link from 'gatsby-link';
 import FaHandORight from 'react-icons/lib/fa/hand-o-right';
 import FaThumbsOUp from 'react-icons/lib/fa/thumbs-o-up';
 
+const BlogListPostCategories = ({categories}) => {
+
+    if ( typeof categories !== 'string' ) return null;
+
+    return categories.split(',').map((category, index) => {
+        return (
+            <span key={`BlogListPostCategories-${index}`}>
+                { category.trim() }
+            </span>
+        )
+    })
+
+}
+
 const BlogListPost = ({node}) => {
 
     if ( !node || !node.frontmatter ) return null;
@@ -21,9 +35,7 @@ const BlogListPost = ({node}) => {
 
                 <ul className="blog-list-post-meta">
                     <li className="blog-list-post-meta-categories">
-                        <a href="#">
-                            Category
-                        </a>
+                        <BlogListPostCategories categories={node.frontmatter.categories} />
                     </li>
                     <li>
                         <time className="updated">

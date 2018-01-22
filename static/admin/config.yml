@@ -30,6 +30,10 @@ collections:
           widget: date
         }
       - {
+          name: categories,
+          label: Categories
+        }
+      - {
           label: Body,
           name: body,
           widget: markdown
