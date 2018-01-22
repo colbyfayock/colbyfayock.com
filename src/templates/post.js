@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from 'react-helmet';
+import Parameterize from 'parameterize';
 
 import ArticleHeader from '../components/article/article-header';
 
