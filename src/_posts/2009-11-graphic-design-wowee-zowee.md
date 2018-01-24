@@ -11,10 +11,10 @@ The one in this particular promotion consists of simply a hamburger bun and chee
 
 Images below and [the commercial is available on YouTube](http://www.youtube.com/watch?v=Ft-Kuk8y2FU).
 
-![Wowee Zowee Logo](http://cdn.colbyfayock.com/images/2009/wowee-zowee-logo-design.jpg)
+![Wowee Zowee Logo](https://cdn.fay.io/images/2009/wowee-zowee-logo-design.jpg)
 
-![Wowee Zowee Advertisement](http://cdn.colbyfayock.com/images/2009/wowee-zowee-ad-design.jpg)
+![Wowee Zowee Advertisement](https://cdn.fay.io/images/2009/wowee-zowee-ad-design.jpg)
 
-![Wowee Zowee Purple Flyer](http://cdn.colbyfayock.com/images/2009/wowee-zowee-ad-purple.jpg)
+![Wowee Zowee Purple Flyer](https://cdn.fay.io/images/2009/wowee-zowee-ad-purple.jpg)
 
-![Wowee Zowee Teal Flyer](http://cdn.colbyfayock.com/images/2009/wowee-zowee-ad-teal.jpg)
+![Wowee Zowee Teal Flyer](https://cdn.fay.io/images/2009/wowee-zowee-ad-teal.jpg)

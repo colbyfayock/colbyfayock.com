@@ -7,10 +7,10 @@ categories: Photography
 ---
 Studio photography session with Marine, John Long.
 
-![John Long Image 1](http://cdn.colbyfayock.com/images/2009/john-long-photography-01.jpg)
+![John Long Image 1](https://cdn.fay.io/images/2009/john-long-photography-01.jpg)
 
-![John Long Image 2](http://cdn.colbyfayock.com/images/2009/john-long-photography-02.jpg)
+![John Long Image 2](https://cdn.fay.io/images/2009/john-long-photography-02.jpg)
 
-![John Long Image 3](http://cdn.colbyfayock.com/images/2009/john-long-photography-03.jpg)
+![John Long Image 3](https://cdn.fay.io/images/2009/john-long-photography-03.jpg)
 
-![John Long Image 4](http://cdn.colbyfayock.com/images/2009/john-long-photography-04.jpg)
+![John Long Image 4](https://cdn.fay.io/images/2009/john-long-photography-04.jpg)

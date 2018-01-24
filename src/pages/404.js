@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
+import img_vader from '../assets/images/vader.jpg';
+
 const helmet_settings = {
     bodyAttributes: {
         class: 'page-404',
@@ -27,7 +29,7 @@ const NotFoundPage = () => {
 
             <section className="align-center" itemprop="articleBody">
 
-                <img src="http://fay.io/content/uploads/2016/05/vader.jpg" />
+                <img src={img_vader} />
 
             </section>
 

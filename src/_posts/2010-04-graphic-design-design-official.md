@@ -9,6 +9,6 @@ Design Official is a mock design team/company created by two colleagues and myse
 
 With Design Official, I created a logo, a business card, and a company website (below) to demonstrate the branding of our team. Having an elegant, yet fun outlook, we wanted to keep along the lines of a professional identity as well as leaving a bit of fun personality to it.
 
-![Design Official Business Card](http://cdn.colbyfayock.com/images/2010/design-official-business-card-design.jpg)
+![Design Official Business Card](https://cdn.fay.io/images/2010/design-official-business-card-design.jpg)
 
-![Design Official Website Design](http://cdn.colbyfayock.com/images/2010/design-official-website-design.jpg)
+![Design Official Website Design](https://cdn.fay.io/images/2010/design-official-website-design.jpg)

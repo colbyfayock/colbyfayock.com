@@ -11,4 +11,4 @@ The layout is simple, but effective bringing together all of the information in 
 
 See more at [hairbydianemfn.com](http://www.hairbydianemfn.com)
 
-![Hair by Diane](http://cdn.colbyfayock.com/images/2011/hair-by-design-website-design.jpg)
+![Hair by Diane](https://cdn.fay.io/images/2011/hair-by-design-website-design.jpg)

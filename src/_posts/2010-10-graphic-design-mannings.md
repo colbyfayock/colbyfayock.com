@@ -11,4 +11,4 @@ For his card, I was debating having his face and portrait as the back, but figur
 
 Next, I'm hoping I can help him understand the potential expansion with having his name on the web!
 
-![Manning's Business Card](http://cdn.colbyfayock.com/images/2010/mannings-business-card-design.jpg)
+![Manning's Business Card](https://cdn.fay.io/images/2010/mannings-business-card-design.jpg)

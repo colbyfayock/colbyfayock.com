@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: 'Gatsby Default Starter',
+        title: 'colbyfayock.com',
     },
     plugins: [
         'gatsby-plugin-netlify-cms',

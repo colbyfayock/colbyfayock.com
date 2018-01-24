@@ -11,4 +11,4 @@ This project was created in response to a [poster design competition](http://new
 
 Link to my [official submission](http://colbz.deviantart.com/art/Paper-Heart-130156077?q=boost%3Apopular%20in%3Acontests%2F2009%2Fpaperheart&qo=71) for this contest.
 
-![Paper Heart](http://cdn.colbyfayock.com/images/2009/paper-heart-poster-design.jpg)
+![Paper Heart](https://cdn.fay.io/images/2009/paper-heart-poster-design.jpg)

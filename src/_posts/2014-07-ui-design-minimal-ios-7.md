@@ -10,4 +10,4 @@ With the recent release of [Pangu](http://en.pangu.io), I was inspired to get ba
 - [minimal.iOS.7 on GitHub](https://github.com/colbyfayock/minimal.iOS.7)
 - [minimal.iOS.7 on Dribbble](https://dribbble.com/shots/1633041-Minimal-iOS-Theme)
 
-![minimal.iOS.7 Preview](http://cdn.colbyfayock.com/images/2014/minimal.ios.7-winterboard-theme-iphone-lockscreen.png)
+![minimal.iOS.7 Preview](https://cdn.fay.io/images/2014/minimal.ios.7-winterboard-theme-iphone-lockscreen.png)

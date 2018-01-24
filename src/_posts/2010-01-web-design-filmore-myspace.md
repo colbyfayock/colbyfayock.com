@@ -9,4 +9,4 @@ Filmore, a band out of Maryland, contacted me to create a MySpace web template f
 
 The title "Filmore" used on the design was originally provided, but required some cleaning, rebuilding, and adjustment before being added.
 
-![Filmore MySpace Design](http://cdn.colbyfayock.com/images/2010/filmore-myspace-design.jpg)
+![Filmore MySpace Design](https://cdn.fay.io/images/2010/filmore-myspace-design.jpg)

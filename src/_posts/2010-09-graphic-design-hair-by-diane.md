@@ -11,8 +11,8 @@ Starting with her logo, I wanted to create something that would showcase her tal
 
 She also wanted a business card to brand the logo onto giving her the opportunity to pass it out to quickly spread word. For the back, I chose a hair brush that was similar to the logo having thin bristles with ball points. After personally taking the photo, I manipulated the temperature of the image to match more closely to the color scheme she wanted. On the front, I marked it with her logo and the details she needed presented.
 
-![Hair by Diane Logo](http://cdn.colbyfayock.com/images/2010/hair-by-diane-logo-design.jpg)
+![Hair by Diane Logo](https://cdn.fay.io/images/2010/hair-by-diane-logo-design.jpg)
 
-![Hair by Diane Business Card](http://cdn.colbyfayock.com/images/2010/hair-by-diane-business-card-design.jpg)
+![Hair by Diane Business Card](https://cdn.fay.io/images/2010/hair-by-diane-business-card-design.jpg)
 
-![Hair by Diane Sign](http://cdn.colbyfayock.com/images/2010/hair-by-diane-business-sign-design.jpg)
+![Hair by Diane Sign](https://cdn.fay.io/images/2010/hair-by-diane-business-sign-design.jpg)

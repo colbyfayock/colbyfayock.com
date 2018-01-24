@@ -17,6 +17,6 @@ Images used:
 
 Download through: [State Patty's Day](http://colbz.deviantart.com/gallery/#/d39wkki) - [St. Patrick's Day](http://colbz.deviantart.com/gallery/#/d39wk59)
 
-![State Patty's Day Background](http://cdn.colbyfayock.com/images/2011/state-pattys-day-iphone-background.jpg)
+![State Patty's Day Background](https://cdn.fay.io/images/2011/state-pattys-day-iphone-background.jpg)
 
-![St Patrick's Day Background](http://cdn.colbyfayock.com/images/2011/st-patricks-day-iphone-background.jpg)
+![St Patrick's Day Background](https://cdn.fay.io/images/2011/st-patricks-day-iphone-background.jpg)

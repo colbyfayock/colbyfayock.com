@@ -10,4 +10,4 @@ categories: UI Design, Updates
 - [minimal.iOS.8](http://colbyfayock.github.io/minimal.iOS.8/)
 - [minimal.iOS.8 on GitHub](https://github.com/colbyfayock/minimal.iOS.8)
 
-![minimal.iOS.8 Preview](http://cdn.fay.io/images/2014/minimal.ios.8-iphone-ios8-winterboard-theme.png)
+![minimal.iOS.8 Preview](https://cdn.fay.io/images/2014/minimal.ios.8-iphone-ios8-winterboard-theme.png)

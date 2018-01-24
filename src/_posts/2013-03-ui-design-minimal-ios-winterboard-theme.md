@@ -9,4 +9,4 @@ Recently, I released a [Winterboard](http://www.saurik.com/id/9) theme for [jail
 
 [minimal.iOS on GitHub](https://github.com/colbyfayock/minimal.iOS)
 
-![minimal.iOS Lockscreen](http://cdn.colbyfayock.com/images/2013/minimal.ios-winterboard-theme-iphone-lockscreen.png)
+![minimal.iOS Lockscreen](https://cdn.fay.io/images/2013/minimal.ios-winterboard-theme-iphone-lockscreen.png)
