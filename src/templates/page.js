@@ -22,9 +22,9 @@ const Page = ({content, html}) => {
         title: `${content.title} - Colby Fayock`,
         meta: [
             {
-                name: 'description',
-                content: 'A UX Designer &amp; Front-end Developer Blog'
-            }
+                property: 'og:title',
+                content: `${content.title} - Colby Fayock`,
+            },
         ],
     };
 

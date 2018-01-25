@@ -6,6 +6,9 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import '../assets/scss/main.scss';
 
+import img_favicon_png from '../assets/images/favicon.png';
+import img_touchicon_png from '../assets/images/touchicon.png';
+
 const google_tag_manager = `
     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -19,15 +22,43 @@ const helmet_settings = {
     meta: [
         {
             name: 'description',
-            content: 'A UX Designer &amp; Front-end Developer Blog'
-        }
+            content: 'Blog, notes, projects, and such'
+        },
+        {
+            property: 'og:title',
+            content: 'Colby Fayock - A UX Designer & Front-end Developer Blog',
+        },
+        {
+            property: 'og:description',
+            content: 'Blog, notes, projects, and such',
+        },
+        {
+            property: 'og:url',
+            content: 'url',
+        },
+        {
+            property: 'og:site_name',
+            content: 'Colby Fayock',
+        },
     ],
     script: [
         {
             type: 'text/javascript',
             innerHTML: google_tag_manager
         }
-    ]
+    ],
+    link: [
+        {
+            rel: 'icon',
+            type: 'image/png',
+            href: img_favicon_png,
+        },
+        {
+            rel: 'apple-touch-icon-precomposed',
+            type: 'image/png',
+            href: img_touchicon_png,
+        },
+    ],
 };
 
 class TemplateWrapper extends React.Component {

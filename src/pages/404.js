@@ -5,6 +5,21 @@ import Helmet from 'react-helmet';
 import img_vader from '../assets/images/vader.jpg';
 
 const helmet_settings = {
+    title: 'Nooooooo... 404!',
+    meta: [
+        {
+            name: 'description',
+            content: 'Hm... this (probably) is not the page you are looking for',
+        },
+        {
+            property: 'og:title',
+            content: 'Nooooooo... 404!',
+        },
+        {
+            property: 'og:description',
+            content: 'Hm... this (probably) is not the page you are looking for',
+        },
+    ],
     bodyAttributes: {
         class: 'page-404',
     }
