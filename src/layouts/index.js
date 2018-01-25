@@ -33,12 +33,6 @@ const helmet_settings = {
             content: 'Colby Fayock',
         },
     ],
-    script: [
-        {
-            type: 'text/javascript',
-            innerHTML: google_tag_manager
-        }
-    ],
     link: [
         {
             rel: 'icon',
