@@ -3,7 +3,7 @@ template: post
 title: How do you find all of those blog posts?
 path: /2018/06/coding/how-do-you-find-all-of-those-blog-posts
 date: 2018-06-09T22:42:51.163Z
-categories: coding
+categories: Coding
 ---
 I'm pretty active on [Slack](https://slack.com/) (most active, ahem...). I like to chat, because I believe strong communication is super helpful for teams, but it’s also a lot of fun (gifs, memes, etc).
 
