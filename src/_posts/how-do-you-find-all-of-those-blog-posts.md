@@ -7,7 +7,7 @@ categories: coding
 ---
 I'm pretty active on [Slack](https://slack.com/) (most active, ahem...). I like to chat, because I believe strong communication is super helpful for teams, but it’s also a lot of fun (gifs, memes, etc).
 
-![Man saying "shhh"](https://i.giphy.com/media/NdKVEei95yvIY/giphy.webp)
+![Man saying "shhh"](/assets/dwight-shh.gif)
 
 Straddling that line, I post articles I come across in relevant channels that I think others would appreciate or learn from, and typically they do. Often, I get asked where I find all of these blog posts…
 
@@ -16,24 +16,28 @@ No, I don’t follow all of those random developers. There’s a crazy amount of
 This isn’t a complete list, but should get the job done.
 
 ## Code
+
 * [Frontend Focus](https://frontendfoc.us/) - Front-end news, articles, and tutorials by [Cooperpress](https://cooperpress.com/)
 * [React Status](https://react.statuscode.com/) - React JS and React Native news, articles, and tutorials by Cooperpress
 * [Javascript Weekly](https://javascriptweekly.com/) - Javascript news, articles, and tutorials by Cooperpress
 * [Web Tools Weekly](https://webtoolsweekly.com/) - Tools, news, articles, and tutorials for various frontend topics varying each week from [Louis Lazaris](https://twitter.com/ImpressiveWebs)
 * [CSS Weekly](https://css-weekly.com/) - CSS articles, 
-tutorials, experiments, and tools
-curated by [Zoran Jambor](https://twitter.com/ZoranJambor)
+  tutorials, experiments, and tools
+  curated by [Zoran Jambor](https://twitter.com/ZoranJambor)
 * [Github Explore](https://github.com/explore) - Daily trending [Github](https://github.com/) repos (find the newsletter signup about halfway down)
 
 ## Random
+
 * [The Hustle](http://ambassadors.thehustle.co/?ref=89655be940) - Daily weekday newsletter following interesting tech and news
 * [Unsplash Curated Collection](https://unsplash.com/join) - A weekly curated collection of 10 amazing [Unsplash](https://unsplash.com/) photos
 * [The History of the Web](thehistoryoftheweb.com) - Mostly weekly stories about how the World Wide Web got to where it is today brought to you by [Jay Hoffmann](https://twitter.com/jay_hoffmann)
 
 ## Twitter
-Too many to list, check out this handy list I keep up to date: [https://twitter.com/colbyfayock/lists/web-dev/members](https://twitter.com/colbyfayock/lists/web-dev/members)
+
+Too many to list, check out this handy list I keep up to date: <https://twitter.com/colbyfayock/lists/web-dev/members>
 
 ## RSS & Blogs
+
 [Feedly](https://feedly.com/) free works really well for an RSS reader, but there are many alternatives.  If using Feedly, most of these can be searched for when adding a new source.
 
 * [React Blog](https://reactjs.org/blog/) - News straight from the [React](https://reactjs.org/) team
