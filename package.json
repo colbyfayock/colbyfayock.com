@@ -4,21 +4,23 @@
   "version": "1.0.0",
   "author": "Colby Fayock",
   "dependencies": {
-    "gatsby": "^1.9.153",
-    "gatsby-link": "^1.6.34",
-    "gatsby-plugin-netlify-cms": "^1.0.4",
-    "gatsby-plugin-react-helmet": "^2.0.3",
-    "gatsby-plugin-sass": "^1.0.15",
-    "gatsby-source-filesystem": "^1.5.14",
-    "gatsby-transformer-remark": "^1.7.28",
-    "react-helmet": "^5.2.0",
+    "gatsby": "^1.9.270",
+    "gatsby-link": "^1.6.44",
+    "gatsby-plugin-netlify-cms": "^2.0.1",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-sass": "^1.0.26",
+    "gatsby-source-filesystem": "^1.5.38",
+    "gatsby-transformer-remark": "^1.7.42",
+    "netlify-cms": "^1.8.4",
+    "normalize.css": "^8.0.0",
     "parameterize": "^0.1.0",
-    "react-icons": "^2.2.7",
-    "normalize.css": "^7.0.0"
+    "react-helmet": "^5.2.0",
+    "react-icons": "^2.2.7"
   },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1"
-  }
+  },
+  "devDependencies": {}
 }
