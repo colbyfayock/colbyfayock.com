@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 import SocialIcons from './social-icons';
 
-import image_resume from '../../static/assets/colby-fayock-front-end-development-web-design-resume.jpg';
+import image_resume from '../../static/assets/colby-fayock-front-end-development-web-design-resume.pdf';
 
 const Footer = () => {
     return (
