@@ -47,8 +47,6 @@ class BlogList extends React.Component {
     }
 
     render() {
-        console.log('this.blogPosts().length', this.blogPosts().length)
-        console.log('this.state.posts_to_show', this.state.posts_to_show)
         return (
             <div className="blog-list">
 

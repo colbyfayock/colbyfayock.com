@@ -32,7 +32,7 @@ const AllPosts = ({data}) => {
 
             <header className="article-header">
 
-                <h1 className="entry-title single-title flat-top" itemprop="headline">
+                <h1 className="entry-title single-title flat-top" itemProp="headline">
                     All Posts
                 </h1>
 
