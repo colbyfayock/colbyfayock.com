@@ -40,7 +40,7 @@ const AllPosts = ({data}) => {
 
             <Helmet {...helmet_settings} />
 
-            <BlogList posts_count={'all'} posts={data.allMarkdownRemark.edges} />
+            <BlogList posts_to_show={'all'} posts={data.allMarkdownRemark.edges} />
 
         </div>
     );

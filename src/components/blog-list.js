@@ -6,7 +6,7 @@ import BlogListPost from './blog-list-post';
 import FaHandODown from 'react-icons/lib/fa/hand-o-down';
 import FaThumbsOUp from 'react-icons/lib/fa/thumbs-o-up';
 
-const DEFAULT_POSTS_COUNT = 5;
+const DEFAULT_POSTS_TO_SHOW = 5;
 
 class BlogList extends React.Component {
 
@@ -15,7 +15,7 @@ class BlogList extends React.Component {
         super(props);
 
         this.state = {
-            posts_count: this.props.posts_count || DEFAULT_POSTS_COUNT
+            posts_to_show: this.props.posts_to_show || DEFAULT_POSTS_TO_SHOW
         }
 
         this.handleClick = this.handleClick.bind(this);
@@ -28,8 +28,8 @@ class BlogList extends React.Component {
 
         let posts = this.props.posts;
 
-        if ( this.state.posts_count !== 'all' ) {
-            posts = posts.slice(0, this.state.posts_count);
+        if ( this.state.posts_to_show !== 'all' ) {
+            posts = posts.slice(0, this.state.posts_to_show + 1);
         }
 
         return posts.filter(post => post.node.frontmatter.template === 'post');
@@ -41,18 +41,20 @@ class BlogList extends React.Component {
         e.preventDefault();
 
         this.setState({
-            posts_count: this.state.posts_count + 5
+            posts_to_show: this.state.posts_to_show + 5
         });
 
     }
 
     render() {
+        console.log('this.blogPosts().length', this.blogPosts().length)
+        console.log('this.state.posts_to_show', this.state.posts_to_show)
         return (
             <div className="blog-list">
 
                 <BlogListPosts posts={this.blogPosts()} />
 
-                <BlogListMore posts_count={this.state.posts_count} handleClick={this.handleClick} />
+                <BlogListMore posts_count={this.blogPosts().length} posts_to_show={this.state.posts_to_show} handleClick={this.handleClick} />
 
             </div>
         );
@@ -65,8 +67,8 @@ const BlogListPosts = ({posts}) => {
     return posts.map(({ node }, index) => <BlogListPost key={`BlogList-${index}`} excerpt={node.excerpt} content={node.frontmatter} />);
 }
 
-const BlogListMore = ({posts_count, handleClick}) => {
-    if ( posts_count === 'all' ) return null;
+const BlogListMore = ({posts_count, posts_to_show, handleClick}) => {
+    if ( posts_count < posts_to_show || posts_to_show === 'all' ) return null;
     return (
         <div className="blog-list-more text-center">
             <a href="#" onClick={handleClick}>
