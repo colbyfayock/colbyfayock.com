@@ -5,7 +5,7 @@ import Helmet from 'react-helmet';
 import img_vader from '../assets/images/vader.jpg';
 
 const helmet_settings = {
-    title: 'Nooooooo... 404!',
+    title: 'Nooooooo... 404! - Colby Fayock',
     meta: [
         {
             name: 'description',
@@ -13,7 +13,7 @@ const helmet_settings = {
         },
         {
             property: 'og:title',
-            content: 'Nooooooo... 404!',
+            content: 'Nooooooo... 404! - Colby Fayock',
         },
         {
             property: 'og:description',
@@ -29,6 +29,8 @@ const NotFoundPage = () => {
 
     return (
         <article className="row flat-bottom" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+
+            <Helmet {...helmet_settings} />
 
             <header className="align-center push-bottom-four">
 

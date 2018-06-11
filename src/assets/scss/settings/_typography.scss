@@ -1,7 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,700,600,300,200);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700);
 
 $font-size-base: 1.2em;
 $line-height-base: $font-size-base * 1.333333333;
+
+$font-weight-medium: 400;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
 
 $font-color-base: $color-grey6;
 

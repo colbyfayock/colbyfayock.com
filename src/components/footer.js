@@ -42,6 +42,11 @@ const Footer = () => {
                                     </Link>
                                 </li>
                                 <li>
+                                    <Link to="/all-posts">
+                                        All Posts
+                                    </Link>
+                                </li>
+                                <li>
                                     <a href={image_resume}>
                                         Resume
                                     </a>

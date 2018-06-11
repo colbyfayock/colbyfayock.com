@@ -30,7 +30,7 @@
         margin: 0;
 
         a {
-            font-weight: 700;
+            font-weight: $font-weight-bolder;
         }
 
         .home & {
@@ -58,7 +58,7 @@
     .tagline {
         display: block;
         color: $color-grey4;
-        font-weight: 400;
+        font-weight: $font-weight-medium;
         font-size: .5em;
         line-height: 1.2em;
         margin-top: .6em;
