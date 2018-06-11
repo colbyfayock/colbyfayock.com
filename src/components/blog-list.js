@@ -62,7 +62,11 @@ class BlogList extends React.Component {
 
 const BlogListPosts = ({posts}) => {
     if ( !Array.isArray(posts) ) return null;
-    return posts.map(({ node }, index) => <BlogListPost key={`BlogList-${index}`} excerpt={node.excerpt} content={node.frontmatter} />);
+    return (
+        <div>
+            { posts.map(({ node }, index) => <BlogListPost key={`BlogList-${index}`} excerpt={node.excerpt} content={node.frontmatter} />) }
+        </div>
+    );
 }
 
 const BlogListMore = ({posts_count, posts_to_show, handleClick}) => {
