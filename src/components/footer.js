@@ -15,7 +15,7 @@ const Footer = () => {
 
                     <div className="row">
                         <p>
-                            Looking to refresh your web presence? <a href="mailto:hello@fay.io">Contact me now</a> for availability and pricing.
+                            Looking to refresh your web presence? <a href="mailto:hello@colbyfayock.com">Contact me now</a> for availability and pricing.
                         </p>
                     </div>
 

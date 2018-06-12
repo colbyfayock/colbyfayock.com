@@ -54,7 +54,7 @@ const SocialIcons = () => {
         },
         {
             title: 'Email',
-            url: 'mailto:hello@fay.io',
+            url: 'mailto:hello@colbyfayock.com',
             icon: <FaEnvelopeO />,
         },
     ];
