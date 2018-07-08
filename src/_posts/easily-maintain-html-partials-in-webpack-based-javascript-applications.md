@@ -13,13 +13,13 @@ That’s where [Partials for HTML Webpack Plugin](https://github.com/colbyfayock
 ## How simple is it?
 1. After installing and requiring it in your webpack config, add `HtmlWebpackPartialsPlugin` to your plugins after `HtmlWebpackPlugin`:
 ```
-// webpack.config.js
-plugins: [
-  new HtmlWebpackPlugin(),
-  new HtmlWebpackPartialsPlugin({
-    path: './path/to/partials/body.html'
-  })
-]
+// webpack.config.js  
+plugins: [  
+  new HtmlWebpackPlugin(),  
+  new HtmlWebpackPartialsPlugin({  
+    path: './path/to/partials/body.html'  
+  })  
+]  
 ```
 
 2. Create your partial:
