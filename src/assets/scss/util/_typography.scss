@@ -126,12 +126,6 @@ li {
     margin-bottom: .5em;
 }
 
-pre {
-    padding: 2em;
-    border: 0;
-    border-radius: 0;
-}
-
 hr {
     height: 1px;
     background-color: $color-grey2;
@@ -158,15 +152,30 @@ blockquote {
 
 }
 
+code,
+pre {
+    display: inline;
+    background-color: $color-grey1;
+    white-space: nowrap;
+    border-radius: 0;
+    border: 0;
+}
+
 code {
+    padding: .1em .3em;
+}
+
+pre {
 
     display: block;
     overflow: hidden;
     overflow-x: scroll;
     font-size: .7em;
     line-height: 1.4em;
-    white-space: nowrap;
-    background-color: $color-grey1;
     padding: 2em;
+
+    p + & {
+        margin-top: -2em;
+    }
 
 }
