@@ -3,7 +3,6 @@ module.exports = {
         title: 'colbyfayock.com',
     },
     plugins: [
-        'gatsby-plugin-netlify-cms',
         'gatsby-plugin-sass',
         'gatsby-plugin-postcss',
         'gatsby-plugin-react-helmet',
