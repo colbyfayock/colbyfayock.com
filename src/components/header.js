@@ -1,7 +1,32 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import { Link } from 'gatsby';
 
 import SocialIcons from './social-icons';
+
+const Header = ({location}) => {
+    return (
+        <nav className="header container" role="navigation">
+
+            <div className="content">
+
+                <div className="row">
+
+                    <HeaderLogo path={location.pathname} />
+
+                    <div className="header-social">
+                        <SocialIcons />
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+    );
+};
+
+export default Header;
+
 
 const HeaderLogo = ({path}) => {
 
@@ -31,27 +56,3 @@ const HeaderLogo = ({path}) => {
     );
 
 }
-
-const Header = ({location}) => {
-    return (
-        <nav className="header container" role="navigation">
-
-            <div className="content">
-
-                <div className="row">
-
-                    <HeaderLogo path={location.pathname} />
-
-                    <div className="header-social">
-                        <SocialIcons />
-                    </div>
-
-                </div>
-
-            </div>
-
-        </nav>
-    );
-};
-
-export default Header

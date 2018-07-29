@@ -47,30 +47,29 @@ const helmet_settings = {
     ],
 };
 
-class TemplateWrapper extends React.Component {
+const TemplateWrapper = ({children, location}) => {
 
-    render() {
-        return (
-            <div>
+    return (
+        <div>
 
-                <Helmet {...helmet_settings} />
+            <Helmet {...helmet_settings} />
 
-                <Header {...this.props} />
+            <Header location={location} />
 
-                <div id="main" role="main">
-                    { this.props.children() }
-                </div>
-
-                <Footer />
-
+            <div id="main" role="main">
+                { children }
             </div>
-        );
-    }
+
+            <Footer />
+
+        </div>
+    );
 
 }
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.object,
+  location: PropTypes.object,
 }
 
 export default TemplateWrapper;

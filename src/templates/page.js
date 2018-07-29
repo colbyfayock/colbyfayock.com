@@ -1,19 +1,23 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Parameterize from 'parameterize';
 
-import ArticleHeader from '../components/article/article-header';
+import Layout from '../components/layout';
 import ArticleMeta from '../components/article/article-meta';
 
 const PageContent = ({html}) => {
     return (
-        <section className="row cf" itemprop="articleBody">
+        <section className="row cf" itemProp="articleBody">
             <div className="article-content-body" dangerouslySetInnerHTML={{ __html: html }}></div>
         </section>
     );
 }
 
-const Page = ({content, html}) => {
+export default function Template({ location, data }) {
+
+    const content = data.markdownRemark.frontmatter;
+    const html = data.markdownRemark.html;
 
     const helmet_settings = {
         bodyAttributes: {
@@ -29,33 +33,30 @@ const Page = ({content, html}) => {
     };
 
     return (
-        <article className="container article-content" role="article" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <Layout location={location}>
+            <article className="container article-content" itemScope="" itemType="http://schema.org/BlogPosting">
 
-            <Helmet {...helmet_settings} />
+                <Helmet {...helmet_settings} />
 
-            <header className="article-header">
+                <header className="article-header">
 
-                <h1 className="entry-title single-title flat-top" itemprop="headline">
-                    { content.title }
-                </h1>
+                    <h1 className="entry-title single-title flat-top" itemProp="headline">
+                        { content.title }
+                    </h1>
 
-                <ArticleMeta categories={content.categories} date={content.date} />
+                    <ArticleMeta categories={content.categories} date={content.date} />
 
-            </header>
+                </header>
 
-            <PageContent html={html} />
+                <PageContent html={html} />
 
-        </article>
+            </article>
+        </Layout>
     );
-
-}
-
-export default function Template({ data }) {
-    return <Page content={data.markdownRemark.frontmatter} html={data.markdownRemark.html} />;
 }
 
 export const pageQuery = graphql`
-    query PageByPath($path: String!) {
+    query($path: String!) {
         markdownRemark(frontmatter: { path: { eq: $path } }) {
             html
             frontmatter {

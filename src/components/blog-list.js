@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from 'gatsby-link';
 
 import BlogListPost from './blog-list-post';
+import { Link } from 'gatsby';
 
 import FaHandODown from 'react-icons/lib/fa/hand-o-down';
 import FaThumbsOUp from 'react-icons/lib/fa/thumbs-o-up';
@@ -73,7 +73,7 @@ const BlogListMore = ({posts_count, posts_to_show, handleClick}) => {
     if ( posts_count < posts_to_show || posts_to_show === 'all' ) return null;
     return (
         <div className="blog-list-more text-center">
-            <a href="#" onClick={handleClick}>
+            <Link to="/all-posts" onClick={handleClick}>
                 More Posts, Please...
                 <span className="fa-hand-o-down">
                     <FaHandODown />
@@ -81,7 +81,7 @@ const BlogListMore = ({posts_count, posts_to_show, handleClick}) => {
                 <span className="fa-thumbs-o-up">
                     <FaThumbsOUp />
                 </span>
-            </a>
+            </Link>
         </div>
     );
 }

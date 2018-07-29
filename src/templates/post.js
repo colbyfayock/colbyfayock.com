@@ -1,18 +1,23 @@
-import React from "react";
+import React from 'react';
+import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Parameterize from 'parameterize';
 
+import Layout from '../components/layout';
 import ArticleHeader from '../components/article/article-header';
 
 const PostContent = ({html}) => {
     return (
-        <section className="row cf" itemprop="articleBody">
+        <section className="row cf" itemProp="articleBody">
             <div className="article-content-body" dangerouslySetInnerHTML={{ __html: html }}></div>
         </section>
     );
 }
 
-const Post = ({content, html}) => {
+export default function Template({ location, data }) {
+
+    const content = data.markdownRemark.frontmatter;
+    const html = data.markdownRemark.html;
 
     const helmet_settings = {
         bodyAttributes: {
@@ -28,25 +33,22 @@ const Post = ({content, html}) => {
     };
 
     return (
-        <article className="container article-content" role="article" itemscope="" itemtype="http://schema.org/BlogPosting">
+        <Layout location={location}>
+            <article className="container article-content" itemScope="" itemType="http://schema.org/BlogPosting">
 
-            <Helmet {...helmet_settings} />
+                <Helmet {...helmet_settings} />
 
-            <ArticleHeader title={content.title} categories={content.categories} date={content.date} />
+                <ArticleHeader title={content.title} categories={content.categories} date={content.date} />
 
-            <PostContent html={html} />
+                <PostContent html={html} />
 
-        </article>
+            </article>
+        </Layout>
     );
-
-}
-
-export default function Template({ data }) {
-    return <Post content={data.markdownRemark.frontmatter} html={data.markdownRemark.html} />;
 }
 
 export const pageQuery = graphql`
-    query PostByPath($path: String!) {
+    query($path: String!) {
         markdownRemark(frontmatter: { path: { eq: $path } }) {
             html
             frontmatter {

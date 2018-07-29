@@ -6,9 +6,9 @@
 
 const path = require("path");
 
-exports.createPages = ({ boundActionCreators, graphql }) => {
+exports.createPages = ({ actions, graphql }) => {
 
-    const { createPage } = boundActionCreators;
+    const { createPage } = actions;
 
     return graphql(`
         {
@@ -42,34 +42,42 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
 };
 
-exports.modifyWebpackConfig = ({config, stage}) => {
+// exports.onCreateWebpackConfig = ({stage, actions}) => {
 
-    const build_stages = [
-        'develop',
-        'develop-html',
-        'build-html',
-        'build-javascript'
-    ];
+//     const build_stages = [
+//         'develop',
+//         'develop-html',
+//         'build-html',
+//         'build-javascript'
+//     ];
 
-    if ( build_stages.includes(stage) ) {
+//     if ( build_stages.includes(stage) ) {
 
-        // Remove svg from url-loader config
+//         actions.setWebpackConfig({
 
-        config.loader(`url-loader`, {
-            test: /\.(jpg|jpeg|png|gif|mp4|webm|wav|mp3|m4a|aac|oga)(\?.*)?$/,
-            loader: `url`,
-            query: {
-                limit: 10000,
-                name: `static/[name].[hash:8].[ext]`,
-            },
-        });
+//             module: {
+//                 rules: [
 
-        config.loader('svg-react-loader', {
-            test: /\.svg$/,
-            loader: 'svg-react-loader'
-        });
+//                     {
+//                         test: /\.svg$/,
+//                         loader: 'svg-react-loader'
+//                     },
 
-    }
+//                     // Remove svg from url-loader config
 
-    return config;
-};
+//                     {
+//                         test: /\.(jpg|jpeg|png|gif|mp4|webm|wav|mp3|m4a|aac|oga)(\?.*)?$/,
+//                         loader: 'url',
+//                         query: {
+//                             limit: 10000,
+//                             name: `static/[name].[hash:8].[ext]`,
+//                         },
+//                     }
+
+//                 ]
+//             }
+//         });
+
+//     }
+
+// };

@@ -1,10 +1,11 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 
+import Layout from '../components/layout';
 import BlogList from '../components/blog-list';
 
-const Index = ({data}) => {
+const Index = ({location, data}) => {
 
     const helmet_settings = {
         bodyAttributes: {
@@ -13,13 +14,15 @@ const Index = ({data}) => {
     };
 
     return (
-        <div className="container">
+        <Layout location={location}>
+            <div className="container">
 
-            <Helmet {...helmet_settings} />
+                <Helmet {...helmet_settings} />
 
-            <BlogList posts={data.allMarkdownRemark.edges} />
+                <BlogList posts={data.allMarkdownRemark.edges} />
 
-        </div>
+            </div>
+        </Layout>
     );
 
 }
@@ -27,7 +30,7 @@ const Index = ({data}) => {
 export default Index;
 
 export const pageQuery = graphql`
-    query IndexQuery {
+    {
         site {
             siteMetadata {
                 title

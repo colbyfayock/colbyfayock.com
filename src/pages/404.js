@@ -1,6 +1,8 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 import Helmet from 'react-helmet';
+
+import Layout from '../components/layout';
 
 import img_vader from '../assets/images/vader.jpg';
 
@@ -25,32 +27,34 @@ const helmet_settings = {
     }
 }
 
-const NotFoundPage = () => {
+const NotFoundPage = ({location}) => {
 
     return (
-        <article className="row flat-bottom" role="article" itemscope itemtype="http://schema.org/BlogPosting">
+        <Layout location={location}>
+            <article className="row flat-bottom" itemscope itemType="http://schema.org/BlogPosting">
 
-            <Helmet {...helmet_settings} />
+                <Helmet {...helmet_settings} />
 
-            <header className="align-center push-bottom-four">
+                <header className="align-center push-bottom-four">
 
-                <h1 className="h1 flat-bottom" itemprop="headline">
-                    Uh oh, <strong>404!!</strong>
-                </h1>
+                    <h1 className="h1 flat-bottom" itemProp="headline">
+                        Uh oh, <strong>404!!</strong>
+                    </h1>
 
-                <p className="push-top-one">
-                    Try checking the URL or head back to the <Link to="/">homepage</Link>.
-                </p>
+                    <p className="push-top-one">
+                        Try checking the URL or head back to the <Link to="/">homepage</Link>.
+                    </p>
 
-            </header>
+                </header>
 
-            <section className="align-center" itemprop="articleBody">
+                <section className="align-center" itemProp="articleBody">
 
-                <img src={img_vader} />
+                    <img src={img_vader} alt="Darth Vader screaming Noooooo!" />
 
-            </section>
+                </section>
 
-        </article>
+            </article>
+        </Layout>
     );
 
 }

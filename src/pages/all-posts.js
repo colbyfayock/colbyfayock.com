@@ -1,10 +1,11 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 
+import Layout from '../components/layout';
 import BlogList from '../components/blog-list';
 
-const AllPosts = ({data}) => {
+const AllPosts = ({location, data}) => {
 
     const helmet_settings = {
         title: 'All Posts - Colby Fayock',
@@ -28,21 +29,23 @@ const AllPosts = ({data}) => {
     }
 
     return (
-        <div className="container">
+        <Layout location={location}>
+            <div className="container">
 
-            <header className="article-header">
+                <header className="article-header">
 
-                <h1 className="entry-title single-title flat-top" itemProp="headline">
-                    All Posts
-                </h1>
+                    <h1 className="entry-title single-title flat-top" itemProp="headline">
+                        All Posts
+                    </h1>
 
-            </header>
+                </header>
 
-            <Helmet {...helmet_settings} />
+                <Helmet {...helmet_settings} />
 
-            <BlogList posts_to_show={'all'} posts={data.allMarkdownRemark.edges} />
+                <BlogList posts_to_show={'all'} posts={data.allMarkdownRemark.edges} />
 
-        </div>
+            </div>
+        </Layout>
     );
 
 }
@@ -50,7 +53,7 @@ const AllPosts = ({data}) => {
 export default AllPosts;
 
 export const pageQuery = graphql`
-    query AllPostsQuery {
+    {
         site {
             siteMetadata {
                 title

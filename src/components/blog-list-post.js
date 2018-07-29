@@ -1,8 +1,7 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 
 import ArticleMeta from '../components/article/article-meta';
-import CategoriesList from './categories-list';
 
 import FaHandORight from 'react-icons/lib/fa/hand-o-right';
 import FaThumbsOUp from 'react-icons/lib/fa/thumbs-o-up';
@@ -12,7 +11,7 @@ const BlogListPost = ({excerpt, content}) => {
     if ( !excerpt || !content ) return null;
 
     return (
-        <article className="blog-list-post" role="article">
+        <article className="blog-list-post">
 
             <header className="blog-list-post-header">
 
