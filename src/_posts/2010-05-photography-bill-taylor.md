@@ -1,9 +1,8 @@
 ---
 template: post
 title: Bill Taylor
-path: /2010/05/photography/bill-taylor/
 date: 2010-05-15T03:54:15Z
-categories: Photography
+category: photography
 ---
 Studio and outdoor photography session with model Bill Taylor.
 

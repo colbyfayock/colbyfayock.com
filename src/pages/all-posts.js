@@ -73,8 +73,10 @@ export const pageQuery = graphql`
                         template
                         title
                         date(formatString: "DD MMMM, YYYY")
-                        path
-                        categories
+                        category
+                    }
+                    fields {
+                        slug
                     }
                 }
             }

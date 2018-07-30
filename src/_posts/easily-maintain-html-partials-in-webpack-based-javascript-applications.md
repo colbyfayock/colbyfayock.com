@@ -1,10 +1,8 @@
 ---
 template: post
 title: Easily Maintain HTML Partials in Webpack Based Javascript Applications
-path: >-
-  /2018/07/easily-maintain-html-partials-in-webpack-based-javascript-applications
 date: '2018-07-08'
-categories: 'Coding, Javascript, Webpack'
+category: coding
 ---
 Webpack, even with the [HTML Webpack Plugin](https://github.com/jantimon/html-webpack-plugin), doesn’t necessarily give a graceful way of managing simple HTML snippets without putting together ugly custom templates within inline loaders. Moving them to the application itself is sometimes an option, with things like title tags using [React Helmet](https://github.com/nfl/react-helmet), but that doesn’t necessarily work with requirements such as analytics scripts or A/B testing, where you need the snippet delivered with the HTML directly from the server. Yeah, this can also be done with server side rendering, but there’s usually not a great way of managing the snippets themselves.
 
@@ -13,13 +11,13 @@ That’s where [Partials for HTML Webpack Plugin](https://github.com/colbyfayock
 ## How simple is it?
 1. After installing and requiring it in your webpack config, add `HtmlWebpackPartialsPlugin` to your plugins after `HtmlWebpackPlugin`:
 ```
-// webpack.config.js  
-plugins: [  
-  new HtmlWebpackPlugin(),  
-  new HtmlWebpackPartialsPlugin({  
-    path: './path/to/partials/body.html'  
-  })  
-]  
+// webpack.config.js
+plugins: [
+  new HtmlWebpackPlugin(),
+  new HtmlWebpackPartialsPlugin({
+    path: './path/to/partials/body.html'
+  })
+]
 ```
 
 2. Create your partial:

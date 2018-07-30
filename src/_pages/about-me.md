@@ -1,7 +1,6 @@
 ---
 template: page
 title: About
-path: /about
 ---
 ## Where it started...
 

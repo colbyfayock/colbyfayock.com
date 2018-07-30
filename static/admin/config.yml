@@ -2,6 +2,8 @@ backend:
   name: github
   repo: colbyfayock/colbyfayock.com
 
+publish_mode: editorial_workflow
+
 media_folder: static/assets
 
 collections:
@@ -21,17 +23,43 @@ collections:
           label: Title
         }
       - {
-          name: path,
-          label: Path
-        }
-      - {
           name: date,
           label: Date,
           widget: date
         }
       - {
-          name: categories,
-          label: Categories
+          name: category,
+          label: Category,
+          widget: "select",
+          options:
+            - {
+              label: "Coding",
+              value: "coding"
+            }
+            - {
+              label: "Graphic Design",
+              value: "graphic-design"
+            }
+            - {
+              label: "Photography",
+              value: "photography"
+            }
+            - {
+              label: "Theming",
+              value: "theming"
+            }
+            - {
+              label: "UI Design",
+              value: "ui-design"
+            }
+            - {
+              label: "Updates",
+              value: "updates"
+            }
+            - {
+              label: "Web Design",
+              value: "web-design"
+            }
         }
       - {
           label: Body,

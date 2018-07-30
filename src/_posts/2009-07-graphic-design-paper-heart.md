@@ -1,9 +1,8 @@
 ---
 template: post
 title: Paper Heart
-path: /2009/07/graphic-design/paper-heart/
 date: 2009-07-26T01:30:03.000Z
-categories: Graphic Design
+category: graphic-design
 ---
 [Paper Heart](http://www.paperheart-movie.com/) is a film that was created to look like a documentary of a girl who does not believe in love. As the film progresses, she finds her way into romance and discovers love first hand.
 

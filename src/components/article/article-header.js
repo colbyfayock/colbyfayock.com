@@ -2,7 +2,7 @@ import React from 'react';
 
 import ArticleMeta from './article-meta';
 
-const ArticleHeader = ({title, categories, date}) => {
+const ArticleHeader = ({title, category, date}) => {
 
     return (
         <header className="article-header">
@@ -11,7 +11,7 @@ const ArticleHeader = ({title, categories, date}) => {
                 { title }
             </h1>
 
-            <ArticleMeta categories={categories} date={date} />
+            <ArticleMeta category={category} date={date} />
 
         </header>
     );

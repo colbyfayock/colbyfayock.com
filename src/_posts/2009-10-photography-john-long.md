@@ -1,9 +1,8 @@
 ---
 template: post
 title: John Long
-path: /2009/10/photography/john-long/
 date: 2009-10-04T07:04:39.000Z
-categories: Photography
+category: photography
 ---
 Studio photography session with Marine, John Long.
 

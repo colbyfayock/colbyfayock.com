@@ -1,9 +1,8 @@
 ---
 template: post
 title: Manning's
-path: /2010/10/graphic-design/mannings/
 date: 2010-10-05T06:24:54Z
-categories: Graphic Design
+category: graphic-design
 ---
 Mannings is a TV, furniture, and appliances store owned and managed by my grandfather. He has had this store for over 50 years and has never owned a business card. I figured it was about time he got one!
 

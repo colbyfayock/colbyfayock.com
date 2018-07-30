@@ -1,9 +1,8 @@
 ---
 template: post
 title: iPhone Lock Screen
-path: /2012/05/ui-design/iphone-lockscreen/
 date: 2012-05-04T02:00:46Z
-categories: UI Design
+category: ui-design
 ---
 Finally got around to updating my lockscreen. Wanted to go with something nice and simple
 

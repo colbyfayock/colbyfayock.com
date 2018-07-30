@@ -1,9 +1,8 @@
 ---
 template: post
 title: St. Patrick's and State Patty's Day
-path: /2011/02/graphic-design/st-patricks-day-state-pattys-day/
 date: 2011-02-18T22:06:05Z
-categories: Graphic Design
+category: graphic-design
 ---
 Getting in the spirit for St. Patrick's Day and more specifically, State Patty's Day, I decided to create a background for my phone.
 

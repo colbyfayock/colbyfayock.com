@@ -1,9 +1,8 @@
 ---
 template: post
 title: Tau Epsilon Phi Web Design
-path: /2009/10/web-design/tau-epsilon-phi-web-design/
 date: 2009-10-22T01:05:46.000Z
-categories: Web Design
+category: web-design
 ---
 The [Pennsylvania State University](http://www.psu.edu/) branch of [Tau Epsilon Phi](http://www.tephq.org/) requested me to create a website for their brotherhood.
 

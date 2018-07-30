@@ -3,12 +3,12 @@ import React from 'react';
 import CategoriesList from '../categories-list';
 import Time from '../time';
 
-const ArticleMeta = ({categories, date}) => {
+const ArticleMeta = ({category, date}) => {
 
-    if ( !categories && !date ) return null;
+    if ( !category && !date ) return null;
 
     const meta = [
-        <CategoriesList categories={categories} />,
+        <CategoriesList categories={category} />,
         <Time date={date} />,
     ];
 
@@ -17,6 +17,7 @@ const ArticleMeta = ({categories, date}) => {
             { meta.map((item, index) => <li key={`ArticleMeta-${index}`}>{ item }</li>)}
         </ul>
     );
+
 };
 
 export default ArticleMeta;

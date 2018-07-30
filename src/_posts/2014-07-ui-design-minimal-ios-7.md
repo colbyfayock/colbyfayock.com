@@ -1,9 +1,8 @@
 ---
 template: post
 title: minimal.iOS.7
-path: /2014/07/ui-design/minimal-ios-7/
 date: 2014-07-08T13:43:57Z
-categories: UI Design
+category: ui-design
 ---
 With the recent release of [Pangu](http://en.pangu.io), I was inspired to get back to work on more icon theming. Behold, the iOS7 version of [Winterboard](http://cydia.saurik.com/package/winterboard/) theme minimal.iOS!
 

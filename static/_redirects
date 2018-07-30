@@ -1,2 +1,33 @@
-# Redirects from what the browser requests to what we serve
-/test         /              301
+# Old Post URLs to New Dynamic Scheme
+
+/2018/07/stop-using-custom-templates-in-your-webpack-react-apps/                  /2018/07/stop-using-custom-templates-in-your-webpack-react-apps
+/2018/07/easily-maintain-html-partials-in-webpack-based-javascript-applications/  /2018/07/easily-maintain-html-partials-in-webpack-based-javascript-applications
+/2018/06/coding/how-do-you-find-all-of-those-blog-posts/                          /2018/06/how-do-you-find-all-of-those-blog-posts
+/2016/03/coding/custom-blacklist-contact-form-7/                                  /2016/03/custom-blacklist-contact-form-7
+/2015/03/coding/batch-png-optimization/                                           /2015/03/batch-png-optimization
+/2014/12/cydia/dpkg-scanpackages-strip-name/                                      /2014/12/dpkg-scanpackages-stripping-name-field
+/2014/11/updates/minimal-ios-8/                                                   /2014/11/minimalios8
+/2014/07/ui-design/minimal-ios-7/                                                 /2014/07/minimalios7
+/2013/09/coding/sync-your-sublimetext2-settings-with-dropbox/                     /2013/09/sync-your-sublimetext2-settings-with-dropbox
+/2013/06/web-design/frosty-deals-daily-deal-hub/                                  /2013/06/frosty-deals-daily-deal-hub
+/2013/05/coding/hippify-javascript-plugin/                                        /2013/05/hippify-javascript-plugin
+/2013/05/updates/new-site-design-how-about-an-updated-resume/                     /2013/05/new-site-design-how-about-an-updated-resume
+/2013/03/ui-design/minimal-ios-winterboard-theme/                                 /2013/03/minimalios-winterboard-theme
+/2012/05/ui-design/iphone-lockscreen/                                             /2012/05/iphone-lock-screen
+/2012/04/coding/asynchronous-javascript-loading/                                  /2012/04/asynchronous-javascript-loading
+/2011/04/updates/resume/                                                          /2011/04/resume
+/2011/04/graphic-design/pong-fu-flyer-design/                                     /2011/04/pong-fu-flyer-design
+/2011/03/web-design/hair-by-diane-website/                                        /2011/03/hair-by-diane-website
+/2011/02/graphic-design/st-patricks-day-state-pattys-day/                         /2011/02/st-patricks-and-state-pattys-day
+/2010/10/graphic-design/mannings/                                                 /2010/10/mannings
+/2010/09/graphic-design/hair-by-diane/                                            /2010/09/hair-by-diane
+/2010/05/photography/bill-taylor/                                                 /2010/05/bill-taylor
+/2010/04/graphic-design/design-official/                                          /2010/04/design-official
+/2010/04/photography/anthony-santiago/                                            /2010/04/anthony-santiago
+/2010/03/graphic-design/filmore-album-art/                                        /2010/03/filmore-album-art
+/2010/01/web-design/filmore-myspace/                                              /2010/01/filmore-myspace-design
+/2009/11/photography/headphones-and-sunglasses/                                   /2009/11/headphones-and-sunglasses
+/2009/11/graphic-design/wowee-zowee/                                              /2009/11/wowee-zowee
+/2009/10/web-design/tau-epsilon-phi-web-design/                                   /2009/10/tau-epsilon-phi-web-design
+/2009/10/photography/john-long/                                                   /2009/10/john-long
+/2009/07/graphic-design/paper-heart/                                              /2009/07/paper-heart

@@ -1,9 +1,8 @@
 ---
 template: post
 title: Wowee Zowee
-path: /2009/11/graphic-design/wowee-zowee/
 date: 2009-11-16T01:06:27.000Z
-categories: 'Graphic Design, Photography'
+category: graphic-design
 ---
 Wowee Zowee was a student project that I created mocking the current fast food era. Many fast food chains will promote ridiculous food creations similar to the fake one shown.
 

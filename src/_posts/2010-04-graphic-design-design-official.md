@@ -1,9 +1,8 @@
 ---
 template: post
 title: Design Official
-path: /2010/04/graphic-design/design-official/
 date: 2010-04-15T18:18:25Z
-categories: Graphic Design, Web Design
+category: graphic-design
 ---
 Design Official is a mock design team/company created by two colleagues and myself to emulate the structure and teamwork needed in a typical design team. Progressing throughout the time, projects focused on school oriented assignments. We completed various projects all dealing mostly with photography and graphic design.
 

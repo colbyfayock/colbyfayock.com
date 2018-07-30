@@ -1,9 +1,8 @@
 ---
 template: post
 title: dpkg-scanpackages Stripping Name Field
-path: /2014/12/cydia/dpkg-scanpackages-strip-name/
 date: 2014-12-25T14:46:32Z
-categories: Cydia, Theming
+category: coding
 ---
 dpkg-scanpackages isn't designed to take in some of the user defined fields Cydia repos use. Saurik points out in his How to Host a Cydia Package post how to easily fix this.
 

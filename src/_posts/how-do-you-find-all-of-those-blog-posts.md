@@ -1,9 +1,8 @@
 ---
 template: post
 title: How do you find all of those blog posts?
-path: /2018/06/coding/how-do-you-find-all-of-those-blog-posts
 date: 2018-06-09T22:42:51.163Z
-categories: Coding
+category: coding
 ---
 I'm pretty active on [Slack](https://slack.com/) (most active, ahem...). I like to chat, because I believe strong communication is super helpful for teams, but it’s also a lot of fun (gifs, memes, etc).
 
@@ -21,7 +20,7 @@ This isn’t a complete list, but should get the job done.
 * [React Status](https://react.statuscode.com/) - React JS and React Native news, articles, and tutorials by Cooperpress
 * [Javascript Weekly](https://javascriptweekly.com/) - Javascript news, articles, and tutorials by Cooperpress
 * [Web Tools Weekly](https://webtoolsweekly.com/) - Tools, news, articles, and tutorials for various frontend topics varying each week from [Louis Lazaris](https://twitter.com/ImpressiveWebs)
-* [CSS Weekly](https://css-weekly.com/) - CSS articles, 
+* [CSS Weekly](https://css-weekly.com/) - CSS articles,
   tutorials, experiments, and tools
   curated by [Zoran Jambor](https://twitter.com/ZoranJambor)
 * [Github Explore](https://github.com/explore) - Daily trending [Github](https://github.com/) repos (find the newsletter signup about halfway down)

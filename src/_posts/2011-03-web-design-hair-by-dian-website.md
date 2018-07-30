@@ -1,9 +1,8 @@
 ---
 template: post
 title: Hair by Diane Website
-path: /2011/03/web-design/hair-by-diane-website/
 date: 2011-03-10T20:58:00Z
-categories: Web Design
+category: web-design
 ---
 To promote her company and get a foot in the door, I was asked by my mom to make a website for [Hair by Diane](http://www.hairbydianemfn.com). I wanted to create a modern look to the site yet keep the charm that her shop has.
 

@@ -1,9 +1,8 @@
 ---
 template: post
 title: Hair By Diane
-path: /2010/09/graphic-design/hair-by-diane/
 date: 2010-09-28T05:54:56Z
-categories: Graphic Design
+category: graphic-design
 ---
 [Hair By Diane](http://www.hairbydianemfn.com/) is a recent start-up salon created by my mother. Prior to this salon and between other career fields, she has had over 25 years of personal experience owning and running a salon. She finally came to a point where she could re-open her salon and stick to her passion. As I had a bit of time on my hand, I was readily available to go to work for her.
 

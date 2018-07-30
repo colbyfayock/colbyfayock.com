@@ -1,9 +1,8 @@
 ---
 template: post
 title: Headphones and Sunglasses
-path: /2009/11/photography/headphones-and-sunglasses/
 date: 2009-11-17T07:15:59.000Z
-categories: Photography
+category: photography
 ---
 Mock product shots for Sennheiser/AX.
 

@@ -1,8 +1,9 @@
 import React from 'react';
 
-import BlogListPost from './blog-list-post';
-import { Link } from 'gatsby';
+import Post from '../models/post';
 
+import { Link } from 'gatsby';
+import BlogListPost from './blog-list-post';
 import FaHandODown from 'react-icons/lib/fa/hand-o-down';
 import FaThumbsOUp from 'react-icons/lib/fa/thumbs-o-up';
 
@@ -32,7 +33,8 @@ class BlogList extends React.Component {
             posts = posts.slice(0, this.state.posts_to_show + 1);
         }
 
-        return posts.filter(post => post.node.frontmatter.template === 'post');
+
+        return posts.map(post => new Post(post.node)).filter(post => post.template === 'post');
 
     }
 
@@ -61,12 +63,15 @@ class BlogList extends React.Component {
 }
 
 const BlogListPosts = ({posts}) => {
+
     if ( !Array.isArray(posts) ) return null;
+
     return (
         <div>
-            { posts.map(({ node }, index) => <BlogListPost key={`BlogList-${index}`} excerpt={node.excerpt} content={node.frontmatter} />) }
+            { posts.map((post, index) => <BlogListPost key={`BlogList-${index}`} post={post} />) }
         </div>
     );
+
 }
 
 const BlogListMore = ({posts_count, posts_to_show, handleClick}) => {

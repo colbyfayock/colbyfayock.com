@@ -3,8 +3,9 @@ import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Parameterize from 'parameterize';
 
+import Post from '../models/post';
+
 import Layout from '../components/layout';
-import ArticleMeta from '../components/article/article-meta';
 
 const PageContent = ({html}) => {
     return (
@@ -16,18 +17,17 @@ const PageContent = ({html}) => {
 
 export default function Template({ location, data }) {
 
-    const content = data.markdownRemark.frontmatter;
-    const html = data.markdownRemark.html;
+    const post = new Post(data.markdownRemark);
 
     const helmet_settings = {
         bodyAttributes: {
-            class: `article page page-${Parameterize(content.title)}`,
+            class: `article page page-${Parameterize(post.title)}`,
         },
-        title: `${content.title} - Colby Fayock`,
+        title: `${post.title} - Colby Fayock`,
         meta: [
             {
                 property: 'og:title',
-                content: `${content.title} - Colby Fayock`,
+                content: `${post.title} - Colby Fayock`,
             },
         ],
     };
@@ -41,14 +41,12 @@ export default function Template({ location, data }) {
                 <header className="article-header">
 
                     <h1 className="entry-title single-title flat-top" itemProp="headline">
-                        { content.title }
+                        { post.title }
                     </h1>
-
-                    <ArticleMeta categories={content.categories} date={content.date} />
 
                 </header>
 
-                <PageContent html={html} />
+                <PageContent html={post.html} />
 
             </article>
         </Layout>
@@ -56,13 +54,16 @@ export default function Template({ location, data }) {
 }
 
 export const pageQuery = graphql`
-    query($path: String!) {
-        markdownRemark(frontmatter: { path: { eq: $path } }) {
+    query($slug: String!) {
+        markdownRemark(fields: { slug: { eq: $slug } }) {
             html
             frontmatter {
-                categories
+                category
                 date(formatString: "MMMM DD, YYYY")
                 title
+            }
+            fields {
+                slug
             }
         }
     }

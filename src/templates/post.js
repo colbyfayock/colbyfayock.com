@@ -3,6 +3,8 @@ import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Parameterize from 'parameterize';
 
+import Post from '../models/post';
+
 import Layout from '../components/layout';
 import ArticleHeader from '../components/article/article-header';
 
@@ -16,18 +18,17 @@ const PostContent = ({html}) => {
 
 export default function Template({ location, data }) {
 
-    const content = data.markdownRemark.frontmatter;
-    const html = data.markdownRemark.html;
+    const post = new Post(data.markdownRemark);
 
     const helmet_settings = {
         bodyAttributes: {
-            class: `article post post-${Parameterize(content.title)}`,
+            class: `article post post-${Parameterize(post.title)}`,
         },
-        title: `${content.title} - Colby Fayock`,
+        title: `${post.title} - Colby Fayock`,
         meta: [
             {
                 property: 'og:title',
-                content: `${content.title} - Colby Fayock`,
+                content: `${post.title} - Colby Fayock`,
             },
         ],
     };
@@ -38,9 +39,9 @@ export default function Template({ location, data }) {
 
                 <Helmet {...helmet_settings} />
 
-                <ArticleHeader title={content.title} categories={content.categories} date={content.date} />
+                <ArticleHeader title={post.title} category={post.category} date={post.date} />
 
-                <PostContent html={html} />
+                <PostContent html={post.html} />
 
             </article>
         </Layout>
@@ -48,13 +49,16 @@ export default function Template({ location, data }) {
 }
 
 export const pageQuery = graphql`
-    query($path: String!) {
-        markdownRemark(frontmatter: { path: { eq: $path } }) {
+    query($slug: String!) {
+        markdownRemark(fields: { slug: { eq: $slug } }) {
             html
             frontmatter {
-                categories
+                category
                 date(formatString: "MMMM DD, YYYY")
                 title
+            }
+            fields {
+                slug
             }
         }
     }

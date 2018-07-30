@@ -1,9 +1,8 @@
 ---
 template: post
 title: Custom Blacklist Contact Form 7
-path: /2016/03/coding/custom-blacklist-contact-form-7/
 date: 2016-03-11T02:58:58Z
-categories: Coding
+category: coding
 ---
 Easily set up a blacklist for those marketing lists that somehow get around [Akismet](https://akismet.com/). Throw the below in your functions.php file and customize the $blacklist array to filter by email address to your liking.
 
