@@ -21,7 +21,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
-    "react-icons": "^2.2.7"
+    "react-icons": "^3.0.4"
   },
   "scripts": {
     "build": "gatsby build",

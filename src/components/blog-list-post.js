@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import ArticleMeta from '../components/article/article-meta';
-import FaHandORight from 'react-icons/lib/fa/hand-o-right';
-import FaThumbsOUp from 'react-icons/lib/fa/thumbs-o-up';
+import { FaHandPointRight, FaThumbsUp } from 'react-icons/fa';
 
 const BlogListPost = ({post}) => {
 
@@ -32,10 +31,10 @@ const BlogListPost = ({post}) => {
                     <Link to={ post.path }>
                         Read More
                         <span className="fa-hand-o-right">
-                            <FaHandORight />
+                            <FaHandPointRight />
                         </span>
                         <span className="fa-thumbs-o-up">
-                            <FaThumbsOUp />
+                            <FaThumbsUp />
                         </span>
                     </Link>
                 </p>

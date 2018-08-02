@@ -4,8 +4,7 @@ import Post from '../models/post';
 
 import { Link } from 'gatsby';
 import BlogListPost from './blog-list-post';
-import FaHandODown from 'react-icons/lib/fa/hand-o-down';
-import FaThumbsOUp from 'react-icons/lib/fa/thumbs-o-up';
+import { FaHandPointDown, FaThumbsUp } from 'react-icons/fa';
 
 const DEFAULT_POSTS_TO_SHOW = 5;
 
@@ -81,10 +80,10 @@ const BlogListMore = ({posts_count, posts_to_show, handleClick}) => {
             <Link to="/all-posts" onClick={handleClick}>
                 More Posts, Please...
                 <span className="fa-hand-o-down">
-                    <FaHandODown />
+                    <FaHandPointDown />
                 </span>
                 <span className="fa-thumbs-o-up">
-                    <FaThumbsOUp />
+                    <FaThumbsUp />
                 </span>
             </Link>
         </div>

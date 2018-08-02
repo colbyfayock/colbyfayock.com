@@ -36,9 +36,9 @@ img {
     margin: 0;
 }
 
+@import 'components/components';
 @import 'pages/pages';
 @import 'partials/partials';
-@import 'components/components';
 
 .mfp-bg {
     background-color: $color-grey4;

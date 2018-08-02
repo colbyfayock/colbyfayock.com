@@ -14,21 +14,27 @@
         line-height: 2em;
         text-align: center;
 
-        &:hover {
-
-            path,
-            polygon {
-                fill: $color-primary;
-            }
-
-        }
-
     }
 
+    a,
     path,
     polygon {
 
-        fill: $color-grey5;
+        color: $color-grey5;
+
+    }
+
+    a {
+
+        &:hover {
+
+            &,
+            path,
+            polygon {
+                color: $color-primary;
+            }
+
+        }
 
     }
 

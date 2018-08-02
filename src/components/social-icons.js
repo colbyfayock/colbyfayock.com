@@ -1,11 +1,19 @@
 import React from 'react';
 
-import FaTwitter from 'react-icons/lib/fa/twitter';
-import FaDribbble from 'react-icons/lib/fa/dribbble';
-import FaGithub from 'react-icons/lib/fa/github';
-import FaInstagram from 'react-icons/lib/fa/instagram';
-import FaEnvelopeO from 'react-icons/lib/fa/envelope-o';
-import FaMedium from 'react-icons/lib/fa/medium';
+import {
+    FaTwitter,
+    FaDribbble,
+    FaGithub,
+    FaInstagram,
+    FaMedium
+} from 'react-icons/fa';
+
+import { FiMail } from 'react-icons/fi';
+
+
+
+
+
 
 const SocialIconsList = ({links}) => {
 
@@ -39,14 +47,14 @@ const SocialIcons = () => {
             icon: <FaTwitter />,
         },
         {
+            title: 'Medium',
+            url: 'https://medium.com/@colbyfayock',
+            icon: <FaMedium />,
+        },
+        {
             title: 'Instagram',
             url: 'https://www.instagram.com/colbyfayock/',
             icon: <FaInstagram />,
-        },
-        {
-            title: 'Dribbble',
-            url: 'http://dribbble.com/colbyfayock',
-            icon: <FaDribbble />,
         },
         {
             title: 'GitHub',
@@ -54,14 +62,14 @@ const SocialIcons = () => {
             icon: <FaGithub />,
         },
         {
-            title: 'Medium',
-            url: 'https://medium.com/@colbyfayock',
-            icon: <FaMedium />,
+            title: 'Dribbble',
+            url: 'http://dribbble.com/colbyfayock',
+            icon: <FaDribbble />,
         },
         {
             title: 'Email',
             url: 'mailto:hello@colbyfayock.com',
-            icon: <FaEnvelopeO />,
+            icon: <FiMail />,
         },
     ];
 

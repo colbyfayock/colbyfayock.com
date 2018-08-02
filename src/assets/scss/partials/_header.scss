@@ -107,20 +107,6 @@
             justify-content: center;
             margin-top: .3em;
 
-            a,
-            path,
-            polygon {
-
-                color: $color-grey5;
-                fill: $color-grey5;
-
-                &:hover {
-                    color: $color-primary;
-                    fill: $color-primary;
-                }
-
-            }
-
         }
 
         body:not(.home) & {

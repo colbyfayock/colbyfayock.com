@@ -64,27 +64,12 @@
 .footer-social,
 .footer-links {
 
-    color: $color-grey3;
-
-    a {
+    &,
+    a,
+    path,
+    polygon {
 
         color: $color-grey3;
-
-        path,
-        polygon {
-            fill: $color-grey3;
-        }
-
-        &:hover {
-
-            color: $color-primary;
-
-            path,
-            polygon {
-                fill: $color-primary;
-            }
-
-        }
 
     }
 
