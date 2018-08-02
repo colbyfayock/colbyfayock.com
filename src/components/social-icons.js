@@ -5,6 +5,7 @@ import FaDribbble from 'react-icons/lib/fa/dribbble';
 import FaGithub from 'react-icons/lib/fa/github';
 import FaInstagram from 'react-icons/lib/fa/instagram';
 import FaEnvelopeO from 'react-icons/lib/fa/envelope-o';
+import FaMedium from 'react-icons/lib/fa/medium';
 
 const SocialIconsList = ({links}) => {
 
@@ -51,6 +52,11 @@ const SocialIcons = () => {
             title: 'GitHub',
             url: 'http://github.com/colbyfayock',
             icon: <FaGithub />,
+        },
+        {
+            title: 'Medium',
+            url: 'https://medium.com/@colbyfayock',
+            icon: <FaMedium />,
         },
         {
             title: 'Email',
