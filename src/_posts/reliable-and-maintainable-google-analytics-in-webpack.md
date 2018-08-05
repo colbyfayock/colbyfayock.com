@@ -39,7 +39,7 @@ Once you already have your basic setup and HTML Webpack Plugin installed, our Pa
 yarn add html-webpack-partials-plugin -D
 ```
 
-/Note: make sure to properly set up the package dependency based on your project configuration./
+_Note: make sure to properly set up the package dependency based on your project configuration._
 
 ## Set up your partial
 
@@ -65,7 +65,7 @@ First, require the plugin at the top of your config:
 const HtmlWebpackPartialsPlugin = require('html-webpack-partials-plugin');
 ```
 
-Next, and this is very important, include a new instance of the plugin _AFTER_ your instance of `HtmlWebpackPlugin()`:
+Next, and this is very important, include a new instance of the plugin **AFTER** your instance of `HtmlWebpackPlugin()`:
 
 ```
 ...
@@ -81,9 +81,9 @@ Next, and this is very important, include a new instance of the plugin _AFTER_ y
 
 Now let’s break that config down first before moving on:
 
-* _path_: this is what it sounds like, the path to the partial file in our project. Make sure to update this to the right location so the plugin can find it.
-* _location_: the HTML tag the plugin looks for.
-* _priority_: this determines whether at compile time, our plugin adds our partial at the beginning of the `location` tag or at the end (opening vs closing).
+* **path**: this is what it sounds like, the path to the partial file in our project. Make sure to update this to the right location so the plugin can find it.
+* **location**: the HTML tag the plugin looks for.
+* **priority**: this determines whether at compile time, our plugin adds our partial at the beginning of the `location` tag or at the end (opening vs closing).
 
 Like we covered earlier, we want to add this as high in the `<head>` as possible. For most HTML tags used in `location`, Partials will simply add it right after the opening tag if the priority is `high`, but with the `<head>` tag, Partials looks for your `charset` meta tag and injects it immediately after, as it’s important to render that in the document first.
 
@@ -110,7 +110,7 @@ gtag('config', 'UA-XXXXXXXX-X');
 </script>
 ```
 
-/Note: make sure to update the IDs to your match your property’s values. Your Analytics snippet may also vary depending on your setup./
+_Note: make sure to update the IDs to your match your property’s values. Your Analytics snippet may also vary depending on your setup._
 
 You should now be able to compile Webpack again and see your page start to ping Google Analytics! 🙆
 
