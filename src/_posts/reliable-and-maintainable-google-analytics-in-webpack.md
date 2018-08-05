@@ -45,7 +45,7 @@ yarn add html-webpack-partials-plugin -D
 
 Next we’ll want to create our partial. My preference for generally managing any partials is to create a new directory called `partials`  in the source root. For example, if your entry point lives at `src/main.js`, your partials directory would be right next to it at `src/partials`.
 
-![Partial directory setup](/static/assets/c6eafed8-3215-42f2-92b5-c83a57e3da8d.png)
+![Partial directory setup](https://www.colbyfayock.com/assets/c6eafed8-3215-42f2-92b5-c83a57e3da8d.png)
 
 Once you have your preferred location, let’s create an `analytics.html` file in our new partials directory. For now, let’s just throw in some test code so we know it works:
 
@@ -91,7 +91,7 @@ Like we covered earlier, we want to add this as high in the `<head>` as possible
 
 Compile webpack, open your project in your browser, and you should now see a nice, ultra violet background. 👌
 
-![Page with ultra violet background](/static/assets/19596e02-7d0c-4438-828c-23aa3d75043d.png)
+![Page with ultra violet background](https://www.colbyfayock.com/assets/19596e02-7d0c-4438-828c-23aa3d75043d.png)
 
 If you take a look at the source, you should see the snippet get added right after the `charset` tag!
 
