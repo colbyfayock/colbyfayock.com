@@ -2,8 +2,6 @@ backend:
   name: github
   repo: colbyfayock/colbyfayock.com
 
-publish_mode: editorial_workflow
-
 media_folder: static/assets
 
 collections:
