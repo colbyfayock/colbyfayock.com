@@ -156,9 +156,9 @@ gtag('config', '<%= ga_property_id %>');
 
 Now compile again and profit!
 
+![Google Tag Assistant successful pageview request](/static/assets/pageview.png)
 
-
-To verify your tag is properly set up, I recommend checking out Google Tag Assistant available on Chrome.
+To verify your tag is properly set up, I recommend checking out [Google Tag Assistant](https://chrome.google.com/webstore/detail/tag-assistant-by-google/kejbdjndbnbjgmefkgdddjlbokphdefk) available on Chrome.
 
 ## Setting this up for different property IDs
 
