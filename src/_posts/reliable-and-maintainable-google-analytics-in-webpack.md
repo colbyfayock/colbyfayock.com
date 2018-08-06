@@ -12,7 +12,7 @@ Beyond how you manage your code, if analytics is truly important to you and your
 
 As important as I say this is, you might not care as much if you’re more relaxed about it and just want to get a general idea about how things are running on your portfolio site, but if you expand your reach into other tools like A/B testing with [Google Optimize](https://marketingplatform.google.com/about/optimize/), it’s even more critical to have GA recognize the page and the experiment running to avoid additional delays or worse, page flickering. 😱
 
-
+![Blog page flickering](/static/assets/blog-optimize-flicker.gif)
 
 ## How we’ll fix this
 
