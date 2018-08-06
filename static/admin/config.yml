@@ -2,6 +2,7 @@ backend:
   name: github
   repo: colbyfayock/colbyfayock.com
 
+display_url: https://colbyfayock.com
 media_folder: static/assets
 public_folder: /assets
 
