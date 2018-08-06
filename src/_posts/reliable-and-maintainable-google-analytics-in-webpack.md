@@ -4,13 +4,15 @@ title: Reliable and Maintainable Google Analytics in Webpack
 date: 2018-08-05T20:53:44.767Z
 category: coding
 ---
-One of the messier bits of a new app setup is trying to figure out where to stash your Google Analytics initialization scripts. There are some existing options, like [React Helmet](https://github.com/nfl/react-helmet), to manage the head of your document or you can simply toss it in your monolithic `index.html` file, but those setups don’t really ever work out the way you want them to and end up as ugly blocks of HTML strings in your Javascript or you end up having to manage that earlier mentioned monolithic `index.html` file throughout your project’s lifecycle.
+One of the messier bits of a new app setup is trying to figure out where to stash your Google Analytics initialization scripts. There are some existing options like [React Helmet](https://github.com/nfl/react-helmet), to manage the head of your document, or you can simply toss it in your monolithic `index.html` file. The thing is, those setups never really work out the way you want them to and end up as ugly blocks of HTML strings in your Javascript or you end up having to manage that monolith of an `index.html` file I mentioned before throughout your project’s lifecycle.
 
 ## Why this actually matters
 
 Beyond how you manage your code, if analytics is truly important to you and your business, you want to make sure the setup is reliable and properly installed. A lot of developers assume that because it’s a JS snippet, that best practice is to toss it at the bottom of the page. The issue with this is, throwing it at the end leaves a greater risk that you miss tracking a hit before a user exits the page, as Analytics won’t initialize until the rest of the page loads. That’s why Google itself recommends [installing the snippet as high in the head as possible](https://support.google.com/analytics/answer/1008080?hl=en).
 
-As important as I say this is, you might not care as much if you’re more relaxed about it and just want to get a general idea about how things are running on your portfolio site, but if you expand your reach into A/B testing with [Google Optimize](https://marketingplatform.google.com/about/optimize/), it’s even more critical to have GA recognize the page and the experiment running to avoid additional delays or worse, page flickering. 😱
+As important as I say this is, you might not care as much if you’re more relaxed about it and just want to get a general idea about how things are running on your portfolio site, but if you expand your reach into other tools like A/B testing with [Google Optimize](https://marketingplatform.google.com/about/optimize/), it’s even more critical to have GA recognize the page and the experiment running to avoid additional delays or worse, page flickering. 😱
+
+
 
 ## How we’ll fix this
 
