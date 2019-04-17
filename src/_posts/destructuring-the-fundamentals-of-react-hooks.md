@@ -10,7 +10,7 @@ But why not just use a class? Without getting too far away from the topic, funct
 
 There’s [a lot of use cases for hooks](https://github.com/rehooks/awesome-react-hooks), so I won’t dive into examples, but it shouldn't be too bad to get up to speed with a few quick lines.
 
-## Diving in to the cookie jar
+## Diving into the cookie jar
 Here we have `MyCookies`, a function component, which we can consider our cookie jar. Let's say we want to internally keep track of how many cookies we have in the jar. With the new hooks API, we can add a simple line using `useState` to handle the job.
 
 ```
@@ -93,7 +93,7 @@ Often components need a way to create side effects that won’t necessarily inte
 ```
 const MyCookies = () => {
   const [ cookies, setCookieCount ] = useState(0);
-	useEffect(() => {
+  useEffect(() => {
     getCookieCount().then((count) => {
       setCookieCount(count);
     })
@@ -112,7 +112,7 @@ To get around this, we can set a 2nd argument to the `useEffect` function that a
 ```
 const MyCookies = () => {
   const [ cookies, setCookieCount ] = useState(0);
-	useEffect(() => {
+  useEffect(() => {
     getCookieCount().then((count) => {
       setCookieCount(count);
     })
@@ -126,7 +126,7 @@ In most cases though, you’ll want to pass an array of dependencies that when c
 ```
 const MyCookies = ({cookieType = 'chocolate'}) => {
   const [ cookies, setCookieCount ] = useState(0);
-	useEffect(() => {
+  useEffect(() => {
     getCookieCount().then((count) => {
       setCookieCount(count);
     })
@@ -159,7 +159,7 @@ const MyCookies = ({cookieType = 'chocolate'}) => {
 };
 ```
 
-In the above code, given our already created context, we can immediately “use” said context and collect the values passed in to our context provider.
+In the above code, given our already created context, we can immediately “use” said context and collect the values passed into our context provider.
 
 ## Cleaning your hooks
 What makes hooks even more powerful is combining and abstracting them DRYing up your code in a cleaner way. As a quick last example, we can take our cookie examples of `useState` and `useEffect` and abstract them into their own `use[Name]` function, effectively [creating a custom hook](https://reactjs.org/docs/hooks-custom.html).
@@ -170,7 +170,7 @@ function useCookies(initialCookieCount) {
 
   const [ cookies, setCookieCount ] = useState(initialCookieCount);
 
-	useEffect(() => {
+  useEffect(() => {
     getCookieCount().then((count) => {
       setCookieCount(count);
     })
