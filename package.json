@@ -5,6 +5,7 @@
   "author": "Colby Fayock",
   "dependencies": {
     "gatsby": "^2.3.23",
+    "gatsby-plugin-google-marketing-platform": "^0.1.10",
     "gatsby-plugin-postcss": "^2.0.7",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sass": "^2.0.11",

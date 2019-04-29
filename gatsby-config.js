@@ -20,6 +20,24 @@ module.exports = {
                 name: 'markdown-pages',
             },
         },
-        'gatsby-transformer-remark'
+        'gatsby-transformer-remark',
+        {
+            resolve: 'gatsby-plugin-google-marketing-platform',
+            options: {
+                dataLayer: {
+                    gaPropertyId: 'UA-28076707-1',
+                },
+                tagmanager: {
+                    id: 'GTM-NJ75NM',
+                    params: {
+                        gtm_cookies_win: 'x'
+                    }
+                },
+                analytics: {
+                    id: 'UA-28076707-1',
+                },
+                includeInDevelopment: false,
+            },
+        }
     ],
 };
