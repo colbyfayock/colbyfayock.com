@@ -7,6 +7,7 @@ category: coding
 CSS-in-JS is all the rage. But is it really the best option?
 
 ## Solving problems you don't need to solve
+
 Don't get me wrong, CSS-in-JS is a great solution, but it's for a problem most people don't have. Maintaining your components in a very siloed approach absolutely helps things like:
 
 * Unintentional side effects of cascading styles
@@ -16,6 +17,7 @@ Don't get me wrong, CSS-in-JS is a great solution, but it's for a problem most p
 But those really only become problems with large teams with many developers and a vast library of components. 
 
 ## So what do you want me to use?
+
 To start from a slightly higher point of view, you can get in the habit of a few basic ideas:
 
 * Set and follow some basic rules for writing
@@ -25,11 +27,15 @@ To start from a slightly higher point of view, you can get in the habit of a few
 This will eliminate any of those concerns on a smaller project (or large) and can actually make life easier.
 
 ## What CSS-in-JS is good at...
+
 **Helping large teams preserve sanity:** part of why this solution exists is because very large teams have a hard time avoiding conflicts when they have a huge library to deal with. Being able to have your component and anything that impacts it in one compartmentalized area helps people avoid stepping on each other's feet and potentially rolling out tweaks that unintentionally cascade throughout the app. This is great but more likely than not, you're 1 of a few (or alone) working on a small app. If you and you're team aren't communicating about some basic rules and standards, I'd argue you have bigger problems. 
 
 **Kind of eliminates the need to learn CSS (kind of):** some developers mock CSS saying it's not real code, others are scared about it's magic (don't be, embrace it). Only having to worry about a few rules in one component helps put people's mind at ease knowing it's just a little more JS that changes how it looks a bit.
 
 ## What both do?
+
+![CSS pointing at CSS](/assets/css-pointing-at-css.png)
+
 **Hot Module Reloading (HMR)**: Though some say an advantage to CSS-in-JS is HMR, you'll find this works fine with stylesheets. Sometimes it actually works a little nicer if you're working on a component that requires a rerender such as those with a network request as a dependency, where the CSS changes won't force that rerender.
 
 **Variables, Global Settings**: If someone is making an argument that CSS can't do that, it's because they haven't been paying attention for a while. Not only does Sass provide this, [it's native to modern browsers](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties).
@@ -50,9 +56,10 @@ This will eliminate any of those concerns on a smaller project (or large) and ca
 }
 ```
 
-**Linting**: [https://stylelint.io/](https://stylelint.io/)
+**Linting**: <https://stylelint.io/>
 
 ## What stylesheets and SASS do better...
+
 **Rule sharing and configuration:** SASS allows you to configure variables, custom functions, and mixins that take your CSS development to the next level.
 
 Ingnoring the bad selector names:
@@ -119,19 +126,20 @@ if ( whos_favorite === 'Colby' || whos_favorite === 'Lord Commander' ) {
 }
 
 <MyCompnent styles={styles} />
-
 ```
 
 **Performance:** [Less Javascript is always a win](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4). It's less your browser has to load, less your browser has to compile, which will ultimately translates to quicker page speed. When the browser loads a page, it tries to optimize the HTML and CSS as much as possible. Yes, you probably are loading more CSS up front, but more JS is very costly and also is more likely to [force a full rerender](https://developers.google.com/web/fundamentals/performance/rendering/);
 
 A lot of the little magic bits you do with Javascript can be done with some pretty powerful CSS animation methods, just browse Codepen a bit or check out something like [Animista](http://animista.net/).
 
-
 I don't actually have any numbers on this, but you can see some of these results getting high depending on the library: https://github.com/A-gambit/CSS-IN-JS-Benchmarks/blob/master/RESULT.md
 
 Has anyone done the legwork on this?
 
 ## At the end of the day, do what's effective
+
+![](/assets/css-in-js-argument.png)
+
 **Everyone has personal preference, everyone is productive in a different way.** Do what's best for you, do what's best for your team, and avoid treating what other developers say as dogmatic rights and wrongs.
 
 If you're a lone developer on a project and want to practice CSS-in-JS to get used to it for when you're on a big team, go for it! If you're on a huge, huge team at Facebook and want to use stylesheets, well you might run into issues if everyone's not following the same guidelines, but do what's best for you and your team.
