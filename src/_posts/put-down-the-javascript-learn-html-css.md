@@ -68,7 +68,7 @@ A favorite of mine is creating a fancy Facebook-like loading animation class tha
 }
 ```
 
-![CSS loading animation](/assets/screen-capture-on-2019-08-28-at-09-07-47.gif)
+![CSS loading animation](/assets/loading-animation.gif)
 
 Crack open [a codepen](https://codepen.io/colbyfayock/pen/aKKoJP) and try it yourself!
 
