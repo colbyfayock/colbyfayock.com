@@ -29,7 +29,7 @@ The base version of Google Analytics is free. You have the option of upgrading t
 
 ### Why do I need Google Analytics?
 
-You don’t /need/ it, but the amount of insights you get even with an out of the box setup can be powerful for a developer trying to get more traffic to their blog or a business trying to optimize their funnel. Doing so allows you to answer some simple questions such as:
+You don’t _need_ it, but the amount of insights you get even with an out of the box setup can be powerful for a developer trying to get more traffic to their blog or a business trying to optimize their funnel. Doing so allows you to answer some simple questions such as:
 
 * Where is my traffic coming from?
 * What pages get the most traffic?
