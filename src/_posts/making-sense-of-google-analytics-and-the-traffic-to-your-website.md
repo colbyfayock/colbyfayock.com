@@ -77,7 +77,7 @@ Let’s start with a simple one. Which pages of my site or application are getti
 
 ![Finding top page on Google Analytics Behavior Overview Report](/assets/google-analytics-behavior-overview.jpg)
 
-Above we’re looking at the full month of August, which you can change with the date picker in the top right of the report. We can see overall, we had 3,834,679 total pageviews and 120,473 of them were to /news, the freeCodeCamp News homepage, which was our most popular page of the month!
+Above we’re looking at the full month of August, which you can change with the date picker in the top right of the report. We can see overall, we had 3,853,265 total pageviews and 121,187 of them were to /news, the freeCodeCamp News homepage, which was our most popular page of the month!
 
 ### Where is my traffic coming from?
 
@@ -105,7 +105,7 @@ Finally we’ll have an idea of where people are coming from to visit our post.
 
 ![Finding the top Source / Medium on the Google Analytics Landing Page Report](/assets/google-analytics-landing-page-top-source-medium.jpg)
 
-Unfortunately, it’s not always that easy and if Google Analytics can’t figure out where the user came from, it will mark it as “(direct) / (none)”. [While that’s solvable](https://moz.com/blog/guide-to-direct-traffic-google-analytics), we can see the next majority comes from simple searches on Google itself.
+Seems like this is following the trend of great Organic SEO. If you notice though, we have “(direct) / (none)” as the second highest source / medium. Unfortunately, it’s not always that easy and if Google Analytics can’t figure out where the user came from, it will mark it as “(direct) / (none)”. [While that’s solvable](https://moz.com/blog/guide-to-direct-traffic-google-analytics), and sometimes actually means something, we can see the majority comes from simple searches on Google itself.
 
 ### What are the most popular devices people visit on?
 
@@ -117,11 +117,11 @@ To get started, find your way to Audience then Overview. Once there, select Brow
 
 ![Finding the top browser in the Google Analytics Acquisition Report](/assets/google-analytics-acquisition-top-browser.jpg)
 
-We can see that luckily, our top browsers are dominated by modern ones, with Chrome carrying a cool 76.47%! But wait, Internet Explorer is pulling 1.06% or 22,437, which isn’t something to bat an eye at. So let’s dig in a little more by clicking on Internet Explorer.
+We can see that luckily, our top browsers are dominated by modern ones, with Chrome carrying a cool 76.42%! But wait, Internet Explorer is pulling 1.06% or 22,499, which isn’t something to bat an eye at. So let’s dig in a little more by clicking on Internet Explorer.
 
 ![Finding the traffic for Internet Explorer versions in the Google Analytics Acquisition Browser Report](/assets/google-analytics-acquisition-browser-internet-explorer.jpg)
 
-Phew, I think we’re safe. Now we can see how many people visit each version of Internet Explorer and luckily almost 99% of THAT traffic is IE9 or above. While it’s important that we should be as inclusive with development as we possibly can, this can help us determine priority and make decisions on what browser versions to officially support.
+Phew, I think we’re safe. Now we can see how many people visit each version of Internet Explorer and luckily almost 99% of THAT traffic is IE9 or above. While it’s important that we should be as inclusive with development as we possibly can, this can help us determine priority and make decisions on [what browser versions to officially support](https://caniuse.com).
 
 Real talk: 5 people on IE5? 🤔
 
