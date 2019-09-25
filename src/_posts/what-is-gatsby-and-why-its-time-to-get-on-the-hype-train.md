@@ -98,7 +98,6 @@ If you have a Gatsby question in particular, their Github Issues is swarming wit
 
 Like to roll up your sleeve and tweak the pipeline yourself? Gatsby provides easy ways to patch into the processing whether it’s [hooking into the lifecycle of the build](https://www.gatsbyjs.org/docs/node-apis/) or tweaking the [webpack config](https://www.gatsbyjs.org/docs/add-custom-webpack-config/). This allows the core of your app to be as easy or advanced as you want, though if you’re that advanced, maybe [help write a plugin](https://www.gatsbyjs.org/docs/creating-plugins/) or two!
 
-
 ![Hackerman](/assets/hackerman.gif)
 
 ## The maybe not so great…
