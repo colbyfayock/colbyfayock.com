@@ -1,7 +1,7 @@
 ---
 template: post
 title: What is Gatsby and why it's time to get on the hype train?
-date: 2019-09-25T03:14:22.904Z
+date: 2019-09-26T03:14:22.904Z
 category: coding
 ---
 Frameworks come and go, and while Gatsby may eventually drift as tech does, the performance and productivity boosts are strong arguments for diving in right away.
