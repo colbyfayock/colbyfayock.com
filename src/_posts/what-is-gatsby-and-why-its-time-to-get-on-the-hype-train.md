@@ -106,7 +106,7 @@ Like to roll up your sleeve and tweak the pipeline yourself? Gatsby provides eas
 
 You should expect that you’ll hit some snags here and there staying on the latest and greatest, after all it is open source software developing for more than just your individual site.
 
-The Gatsby team has been [building very rapidly](https://github.com/gatsbyjs/gatsby/pulse/monthly), which is awesome, but moving fast is prone to overlooking things as they build. Luckily, they’re starting to push automated testing all over to help harden the code and they’re intentionally trying to slow things down to address this type of concern.
+The Gatsby team has been [building very rapidly](https://github.com/gatsbyjs/gatsby/pulse/monthly), which is awesome, but moving fast is prone to overlooking things as they build. Luckily, they’re starting to push automated testing all over to help harden the code and they’re intentionally trying to avoid rushing work to address this type of concern.
 
 Just make sure to be thorough on testing your package upgrades and don’t be afraid to downgrade and lock your package version if you’re running into issues.
 
@@ -123,3 +123,5 @@ My opinion or any other’s doesn’t matter until you try it. Worst case you li
 ![Lego - we could build a spaceship!](/assets/lego-build.gif)
 
 Go build, go experiment, and share what great things you make!
+
+_Edit: Changed "slowing down" to "avoid rushing" to clarify statement intent, as they're not slowing down the amount of actual work getting put in, but trying to be more careful with it._
