@@ -253,6 +253,8 @@ Running one more time and finally nothing again! But this time because everythin
 
 ## Go forth and write messy code!
 
+![Bruce Almighty - Typing](/assets/bruce-almighty-typing.gif)
+
 Kidding 😜 The good news here, is now you can easily take a look at the general health of your codebase as well as hopefully fix most of it automatically. This is going to save a lot of headaches as you work with others on your team, and generally, it’s nice to have all of your code neat and tidy.
 
 This post is just getting started. ESLint is a wide open book with tons of plugins and rules, and it’s not the only linting tool in the game. Play around and find what fits best for you and your team. The little time spent configuring it to your app will save you lots more time in the long run.
