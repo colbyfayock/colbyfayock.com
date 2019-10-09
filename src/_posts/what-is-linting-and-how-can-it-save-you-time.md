@@ -72,7 +72,7 @@ Let’s first add our ESLint dependency:
 yarn add eslint -D
 ```
 
-We’re installing this as a `devDependency` (hence the \`-D\` flag), because this isn’t something our application needs to run. After it’s successfully installed, let’s add it to our `package.json` as a script:
+We’re installing this as a `devDependency` (hence the `-D` flag), because this isn’t something our application needs to run. After it’s successfully installed, let’s add it to our `package.json` as a script:
 
 ```
 ...
@@ -86,7 +86,7 @@ We’re installing this as a `devDependency` (hence the \`-D\` flag), because th
 
 In the above, we’re running our linter on the entire project directory on any file that has an extension of `.js`. If you're working with a large project with many file types, maybe even some you don't want linted, you can [change that flag or be more specific](https://eslint.org/docs/user-guide/command-line-interface) with other options.
 
-To support ESLint, we’ll need to do one more thing. Let’s add a file at the root of our project (probably where your \`package.json\` is) called `.eslintrc.js` and make the contents of the file simply:
+To support ESLint, we’ll need to do one more thing. Let’s add a file at the root of our project (probably where your `package.json` is) called `.eslintrc.js` and make the contents of the file simply:
 
 ```
 module.exports = {};
@@ -110,7 +110,7 @@ To set that up, we’ll want to first install our dependency:
 yarn add babel-eslint -D
 ```
 
-Typically if you're using \`babel-eslint\` you'll want to make sure \`babel\` is installed next to it, but in our case, Gatsby already uses `babel`, so we don’t necessarily need to add it. After that’s set up, we’ll want to update our `.eslintrc.js` config file with some new options:
+Typically if you're using `babel-eslint` you'll want to make sure `babel` is installed next to it, but in our case, Gatsby already uses `babel`, so we don’t necessarily need to add it. After that’s set up, we’ll want to update our `.eslintrc.js` config file with some new options:
 
 ```
 module.exports = {
