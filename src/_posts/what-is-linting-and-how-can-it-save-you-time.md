@@ -11,7 +11,7 @@ One of the biggest challenges in software development is time. It’s something 
 > **lint**, or a **linter**, is a tool that analyzes source code  to flag programming errors, bugs, stylistic errors, and suspicious constructs.
 > <https://en.wikipedia.org/wiki/Lint(software)>
 
-Simply put, a linter is a tool that programmatically scans your code with the goal of finding issues and inconsistencies that can lead to bugs or find issues with code health and style.
+Simply put, a linter is a tool that programmatically scans your code with the goal of finding issues that can lead to bugs or inconsistencies with code health and style.
 
 Take for instance, the following example:
 
@@ -48,7 +48,7 @@ Most things you can think of probably already [exist in one form or another](htt
 
 ## How is this actually helping or why should I care?
 
-Probably the biggest overlying theme of the list above is the fact that these issues will be called out immediately. No longer will these issues creep up on you in the middle of running your app or your code reviewer during a review. No longer will you and your reviewer endlessly fight passive aggressively through the comments about whether or not to include a semicolon at the end of JS statements ([you should](https://stackoverflow.com/a/444082) 🔥).
+Probably the biggest overlying theme of the list above is the fact that these issues will be called out immediately. No longer will these issues creep up on you in the middle of running your app or give someone anxiety during a code review. No longer will you and your reviewer endlessly fight passive aggressively through the comments about whether or not to include a semicolon at the end of JS statements ([you should](https://stackoverflow.com/a/444082) 🔥).
 
 ![Grandma looking for a semicolon](/assets/looking-for-semicolon.jpg)
 
@@ -56,13 +56,13 @@ All of those moments that stop you from being productive because of a silly synt
 
 ## So how do I actually get started?
 
-Even though there are linters for most if not all other mainstream languages, for the purpose of this post, I’m going to focus on Javascript. The same principles apply, but the tooling may be a bit different.
+Even though there are linters for most, if not all, other mainstream languages, for the purpose of this post, I’m going to focus on Javascript. The same principles apply, but the tooling may be a bit different.
 
-I’m going to run through some installation examples for a React app. You can easily follow along by spinning up your own React app or using my [Gatsby](https://www.gatsbyjs.org/) starter: https://github.com/colbyfayock/gatsby-starter-sass#starting-from-scratch
+I’m going to run through how you can get set up for basic linting in a React app. You can easily follow along by spinning up your own React app or using my [Gatsby](https://www.gatsbyjs.org/) starter: https://github.com/colbyfayock/gatsby-starter-sass#starting-from-scratch
 
 ### Your Linter
 
-To get started, we first need a linter. Probably the most popular in the Javascript world is [ESLint](https://eslint.org/). Your linter will actually be what provides the engine for defining rules and parsing your files to test against. ESLint is available as an [npm package](https://www.npmjs.com/package/eslint) by itself and [once installed](https://eslint.org/docs/user-guide/getting-started), it out of the box allows you to set up a basic configuration file and hit the ground running with some command line tools.
+To get started, we first need a linter. [Probably the most popular](https://trends.google.com/trends/explore?geo=US&q=eslint,jshint,jslint) in the Javascript world is [ESLint](https://eslint.org/). Your linter will actually be the engine for defining rules and parsing your files to test against. ESLint is available as an [npm package](https://www.npmjs.com/package/eslint) by itself and [once installed](https://eslint.org/docs/user-guide/getting-started), out of the box it allows you to set up a basic configuration file and hit the ground running with some command line tools.
 
 Let’s first add our ESLint dependency:
 
@@ -70,7 +70,7 @@ Let’s first add our ESLint dependency:
 yarn add eslint -D
 ```
 
-We’re installing this as a `devDependency` (hence the -D flag), because this isn’t something our application needs to run. After it’s successfully installed, let’s add it to our `package.json` as a script:
+We’re installing this as a `devDependency` (hence the \`-D\` flag), because this isn’t something our application needs to run. After it’s successfully installed, let’s add it to our `package.json` as a script:
 
 ```
 ...
@@ -82,9 +82,9 @@ We’re installing this as a `devDependency` (hence the -D flag), because this i
 ...
 ```
 
-In the above, we’re running our linter on the entire project directory on any file that has an extension of `.js`. 
+In the above, we’re running our linter on the entire project directory on any file that has an extension of `.js`. If you're working with a large project with many file types, maybe even some you don't want linted, you can [change that flag or be more specific](https://eslint.org/docs/user-guide/command-line-interface) with other options.
 
-To support ESLint, we’ll need to do one more thing. Let’s add a file at the root of our project called `.eslintrc.js` and make the contents of the file simply:
+To support ESLint, we’ll need to do one more thing. Let’s add a file at the root of our project (probably where your \`package.json\` is) called `.eslintrc.js` and make the contents of the file simply:
 
 ```
 module.exports = {};
@@ -98,7 +98,7 @@ This is okay, and expected in our project, so let’s move on.
 
 ### Your Parser
 
-A common tool in the chain for Javascript developers is [Babel](https://babeljs.io/), which allows you to write code with features that may not be supported in all browsers, such as using [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) that are available in [ES6](http://es6-features.org/#Constants) and generally use conventions like importing files via `import`.
+A common tool in the chain for Javascript developers is [Babel](https://babeljs.io/), which allows you to write code with features that may not be supported in all browsers, such as using [arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions), that are available in [ES6](http://es6-features.org/#Constants), and other conventions like importing files via `import`.
 
 The code you write may already run through Babel to work in a browser, but that doesn’t apply to ESLint by default, so ESLint allows you to specify a parser that allows the linting processing to look at the same code as your browser sees. In this case we’ll want to use [Babel’s ESLint](https://github.com/babel/babel-eslint) parser that’s made available to us.
 
@@ -108,7 +108,7 @@ To set that up, we’ll want to first install our dependency:
 yarn add babel-eslint -D
 ```
 
-Now in our case, Gatsby already uses `babel`, so we don’t necessarily need to add it individually here. After that’s set up, we’ll want to update our `.eslintrc.js` config file with some new options:
+Typically if you're using \`babel-eslint\` you'll want to make sure \`babel\` is installed next to it, but in our case, Gatsby already uses `babel`, so we don’t necessarily need to add it. After that’s set up, we’ll want to update our `.eslintrc.js` config file with some new options:
 
 ```
 module.exports = {
@@ -121,10 +121,9 @@ module.exports = {
 };
 ```
 
-Here, we’re letting letting ESLint know that our environment will be run in node (Gatsby’s precompiling), inside the browser, and it will use ES6. This helps ESLint know how to run your code. Additionally, we want to set up our parser to be `babel-eslint`.
+Here, we’re letting ESLint know that our environment will be run in node (Gatsby’s precompiling), inside the browser (the app), and it will use ES6. This helps ESLint know how to run your code. Additionally, we want to set up our parser to be `babel-eslint`.
 
 Once we’re ready to go, run `yarn lint` again and… well nothing really happened.
-
 
 ![Lint results - Nothing happened](/assets/lint-with-nothing-happening.jpg)
 
@@ -132,7 +131,7 @@ This is still expected, as we don’t have any rules set up!
 
 ### Plugins for your code
 
-Writing a [React](https://reactjs.org/) app? The Babel parser may help you transform your code, but you might have a hard time being productive with the React syntax, as [JSX](https://reactjs.org/docs/introducing-jsx.html) isn’t 100% natural Javascript.
+Writing a [React](https://reactjs.org/) app? The Babel parser may help you transform your code, but you might have a hard time being productive, as ESLint needs to understand how it should work to lint your React files.
 
 Part of the beauty of ESLint is that it allows you to [configure plugins](https://eslint.org/docs/developer-guide/working-with-plugins) that have the opportunity to create and set rules for you. Luckily, along with our Babel parser above that does some of the heavy lifting, we have a [React plugin](https://github.com/yannickcr/eslint-plugin-react) available that does just that and takes care of linting the JSX for us.
 
@@ -166,7 +165,6 @@ module.exports = {
 What we’re adding here is a setting that automatically detects what React version you’re using, which is helpful to let your linting get parsed properly, and then set up our react plugin that we installed above.
 
 For one last final time, we will run our `lint` script and get nothing:
-
 
 ![Lint results - Nothing happened... again](/assets/lint-with-nothing-happening.jpg)
 
@@ -202,7 +200,7 @@ Woah! This will immediately give you a lot errors, it seems like something’s w
 
 ![Lint results - React errors](/assets/lint-with-react-errors.jpg)
 
-Since we’re running a React app, we also want to make sure our linter understands the configuration and rules, so let’s also add our React plugin to the `.eslintrc.js` config setup:
+Since we’re running a React app, we also want to make sure our linter understands the rules it should follow, so let’s also add our React plugin to the `.eslintrc.js` config setup:
 
 ```
     "extends": [
@@ -212,7 +210,6 @@ Since we’re running a React app, we also want to make sure our linter understa
 ```
 
 Now if you run `yarn lint`, you get something a little more logical.
-
 
 ![Lint results - Normal errors](/assets/lint-with-errors.jpg)
 
@@ -234,9 +231,7 @@ You don’t think I’m going to make you fix all of those thing yourself do you
 
 If you noticed after we ran the command above, ESLint gave us an extra message:
 
-
 ![Lint results - Option to fix](/assets/lint-fix-option.jpg)
-
 
 So let’s give it a try! Let’s run:
 
@@ -246,9 +241,7 @@ yarn lint --fix
 
 And what do you know, it now only gives us 1 linting error.
 
-
 ![Lint results - 1 error](/assets/lint-with-one-error.jpg)
-
 
 Turns out  ESLint was able to fix our semicolon issue automatically, but we’ll still have to add `pageName` to our `Layout`’s `propTypes` manually, not too much of a lift.
 
@@ -258,9 +251,9 @@ Running one more time and finally nothing again! But this time because everythin
 
 ## Go forth and write messy code!
 
-/s (sarcasm). The good news here, is now you can easily take a look at the general health of your codebase as well as hopefully fix most of it automatically. This is going to save a lot of headaches as you work with others on your team, and generally, it’s nice to have all of your code all neat and tidy.
+/s (sarcasm). The good news here, is now you can easily take a look at the general health of your codebase as well as hopefully fix most of it automatically. This is going to save a lot of headaches as you work with others on your team, and generally, it’s nice to have all of your code neat and tidy.
 
-And this post is just getting started. ESLint is a wide open book with tons of plugins and rules, and it’s not the only linting tool in the game. Play around and find what fits best for you and your team. The little time spent configuring it to your app will save you lots more in the long run.
+This post is just getting started. ESLint is a wide open book with tons of plugins and rules, and it’s not the only linting tool in the game. Play around and find what fits best for you and your team. The little time spent configuring it to your app will save you lots more time in the long run.
 
 ## Other linting tools to check out
 
