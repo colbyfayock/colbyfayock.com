@@ -11,7 +11,9 @@ One of the biggest challenges in software development is time. It’s something 
 > **lint**, or a **linter**, is a tool that analyzes source code  to flag programming errors, bugs, stylistic errors, and suspicious constructs.
 > <https://en.wikipedia.org/wiki/Lint(software)>
 
-Simply put, a linter is a tool that programmatically scans your code with the goal of finding issues that can lead to bugs or inconsistencies with code health and style.
+Simply put, a linter is a tool that programmatically scans your code with the goal of finding issues that can lead to bugs or inconsistencies with code health and style. Some can even help fix them for you!
+
+![Michael Scott - Tell me more](/assets/miachel-scott-tell-me-more.gif)
 
 Take for instance, the following example:
 
@@ -251,7 +253,7 @@ Running one more time and finally nothing again! But this time because everythin
 
 ## Go forth and write messy code!
 
-/s (sarcasm). The good news here, is now you can easily take a look at the general health of your codebase as well as hopefully fix most of it automatically. This is going to save a lot of headaches as you work with others on your team, and generally, it’s nice to have all of your code neat and tidy.
+Kidding 😜 The good news here, is now you can easily take a look at the general health of your codebase as well as hopefully fix most of it automatically. This is going to save a lot of headaches as you work with others on your team, and generally, it’s nice to have all of your code neat and tidy.
 
 This post is just getting started. ESLint is a wide open book with tons of plugins and rules, and it’s not the only linting tool in the game. Play around and find what fits best for you and your team. The little time spent configuring it to your app will save you lots more time in the long run.
 
