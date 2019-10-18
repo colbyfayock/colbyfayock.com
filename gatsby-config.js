@@ -26,6 +26,7 @@ module.exports = {
             options: {
                 dataLayer: {
                     gaPropertyId: 'UA-28076707-1',
+                    gaOptimizeId: 'GTM-MF4ZKBR'
                 },
                 tagmanager: {
                     id: 'GTM-NJ75NM',
@@ -35,6 +36,9 @@ module.exports = {
                 },
                 analytics: {
                     id: 'UA-28076707-1',
+                },
+                optimize: {
+                    id: 'GTM-MF4ZKBR',
                 },
                 includeInDevelopment: false,
             },
