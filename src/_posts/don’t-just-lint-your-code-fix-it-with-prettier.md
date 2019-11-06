@@ -26,7 +26,9 @@ If you already use the fix option, thats a good start, but there are tools out t
 
 You can easily use Prettier alone just to format your code, which works just fine, but combine this with an underlying ESLint process and you get both a powerful linter and a powerful fixer. I’m going to show you how to make those work together.
 
-## Getting started
+![Voltron](/assets/voltron.gif)
+
+## Getting started with Prettier
 
 For this walkthrough, I’m going to assume that you have ESLint set up and configured in an application. Particularly, I’m going to pick up where I left off in my previous walkthrough where [we installed ESLint to a React application](https://www.freecodecamp.org/news/what-is-linting-and-how-can-it-save-you-time/).
 
@@ -85,6 +87,8 @@ So what’s going on there? We’re:
 * We’re utilizing our `prettier-eslint-cli` package to run the formatting for us
 * We’re passing in our ESLint config located next to our `package.json` in the root of the project (change this if it’s in a different location)
 * And finally, we’re telling prettier to write all files matching `**/*.js`, or any JS files it finds recursively through our project
+
+The beauty here, is we're passing in our ESLint config to Prettier. This means we only have to maintain 1 config for both tools, but we still leverage the linting power of ESLint along with the formatting power of Prettier.
 
 ## Run your formatter!
 
