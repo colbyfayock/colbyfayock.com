@@ -22,7 +22,7 @@ If you already use the fix option, thats a good start, but there are tools out t
 
 ## What is Prettier?
 
-[Prettier](https://prettier.io/) pegs itself as “an opinionated code formatter." It takes an input of your code and outputs it in a consistent format stripping any of the original code style. It actually converts your code to a [syntax tree](https://github.com/benjamn/recast), then rewrites it using the styles and rules you and Prettier together provide via your ESLint config and Prettier’s default rules.
+[Prettier](https://prettier.io/) pegs itself as “an opinionated code formatter." It takes an input of your code and outputs it in a consistent format stripping any of the original code style. It actually converts your code to a [syntax tree](https://github.com/benjamn/recast), then rewrites it using the styles and rules you and Prettier provide together via your ESLint config and Prettier’s default rules.
 
 You can easily use Prettier alone just to format your code, which works just fine, but combine this with an underlying ESLint process and you get both a powerful linter and a powerful fixer. I’m going to show you how to make those work together.
 
@@ -95,7 +95,6 @@ yarn format
 
 and immediately, we see that it works:
 
-
 ![Successful run of Prettier](/assets/prettier-command-line-success.png)
 
 ## Hey, my code looks different!
@@ -118,7 +117,6 @@ When using these in practice, your best bet is to always run `format` first to l
 ## What’s next?
 
 Now that we can format our code automatically, we should be able to automatically fix our code automatically!
-
 
 ![Eddie from Fresh of the Boat's mind blown](/assets/fresh-off-the-boat-mind-blown.gif)
 
