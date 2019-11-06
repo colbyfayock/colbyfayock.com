@@ -1,7 +1,7 @@
 ---
 template: post
 title: 'Don’t just lint your code, fix it with Prettier'
-date: 2019-11-07T02:05:14.314Z
+date: 2019-11-06T02:05:14.314Z
 category: coding
 ---
 Linting makes everyone’s lives easier by telling us what’s wrong with our code, but how can we avoid doing the actual work that goes into fixing it?
