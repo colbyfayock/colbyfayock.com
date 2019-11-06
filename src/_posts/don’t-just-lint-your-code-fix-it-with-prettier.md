@@ -51,7 +51,8 @@ Above, we’re installing:
 * [prettier](https://github.com/prettier/prettier): core Prettier package and engine
 * [prettier-lint](https://github.com/prettier/prettier-eslint): passes the Prettier result to ESLint to fix using your ESLint config
 * [prettier-eslint-cli](https://github.com/prettier/prettier-eslint-cli): helps Prettier and ESLint work together on various files across your project
-  And we’re installing them as a dev dependency, as we don’t need it outside development.
+
+And we’re installing them as a dev dependency, as we don’t need it outside development.
 
 ## Configuring your new formatter
 
