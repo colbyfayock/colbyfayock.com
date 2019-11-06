@@ -30,7 +30,7 @@ You can easily use Prettier alone just to format your code, which works just fin
 
 For this walkthrough, I’m going to assume that you have ESLint set up and configured in an application. Particularly, I’m going to pick up where I left off in my previous walkthrough where [we installed ESLint to a React application](https://www.freecodecamp.org/news/what-is-linting-and-how-can-it-save-you-time/).
 
-Additionally of note, Prettier tells us right from the start, it's an opinionated code formatter. You should expect that it will format your code in  a consistent, but maybe different way, than you currently have it configured to. But don’t fret! You can tweak this configuration.
+Additionally of note, Prettier tells us right from the start, it's an opinionated code formatter. You should expect that it will format your code in  a consistent way, but maybe a different way, than you currently have it configured to. But don’t fret! You can tweak this configuration.
 
 So what are we starting off with? We already:
 
