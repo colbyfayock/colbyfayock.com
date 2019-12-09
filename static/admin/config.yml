@@ -42,6 +42,27 @@ collections:
   - name: body
     label: Body
     widget: markdown
+- name: talk
+  label: Talk
+  folder: src/_talks
+  create: true
+  fields:
+  - name: template
+    label: Template
+    widget: hidden
+    default: talk
+  - name: title
+    label: Title
+  - name: video
+    label: video
+  - name: slides
+    label: slides
+  - name: date
+    label: Date
+    widget: date
+  - name: body
+    label: Body
+    widget: markdown
 - name: page
   label: Page
   folder: src/_pages
