@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Helmet from 'react-helmet';
 
-import Layout from '../components/layout';
+import Layout from 'components/layout';
 
-import img_vader from '../assets/images/vader.jpg';
+import img_vader from 'assets/images/vader.jpg';
 
 const helmet_settings = {
     title: 'Nooooooo... 404! - Colby Fayock',

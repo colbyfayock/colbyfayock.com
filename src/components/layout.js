@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-import Header from '../components/header';
-import Footer from '../components/footer';
-import '../assets/scss/main.scss';
+import Header from 'components/header';
+import Footer from 'components/footer';
+import 'assets/scss/main.scss';
 
-import img_favicon_png from '../assets/images/favicon.png';
-import img_touchicon_png from '../assets/images/touchicon.png';
+import img_favicon_png from 'assets/images/favicon.png';
+import img_touchicon_png from 'assets/images/touchicon.png';
 
 const helmet_settings = {
     title: 'Colby Fayock - A UX Designer & Front-end Developer Blog',

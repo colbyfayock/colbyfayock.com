@@ -3,6 +3,7 @@ module.exports = {
         title: 'colbyfayock.com',
     },
     plugins: [
+        'gatsby-plugin-resolve-src',
         'gatsby-plugin-sass',
         'gatsby-plugin-postcss',
         'gatsby-plugin-react-helmet',
@@ -10,6 +11,13 @@ module.exports = {
             resolve: 'gatsby-source-filesystem',
             options: {
                 path: `${__dirname}/src/_posts`,
+                name: 'markdown-pages',
+            },
+        },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                path: `${__dirname}/src/_talks`,
                 name: 'markdown-pages',
             },
         },

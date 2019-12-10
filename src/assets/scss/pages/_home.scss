@@ -1,11 +1,44 @@
 .home {
 
-    .article-header {
+  .article-header {
 
-        h2 {
-            margin-bottom: $margin-bottom-h2 / 4;
-        }
-
+    h2 {
+      margin-bottom: $margin-bottom-h2 / 4;
     }
+
+  }
+
+  .header {
+
+    margin: 8em auto 4em;
+
+    @include mobile() {
+        margin: 4em auto;
+    }
+
+  }
+
+  .react-tabs__tab-list {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 4em;
+  }
+
+  .react-tabs__tab {
+    color: $color-grey4;
+    padding: .4em;
+    margin: 0 1em;
+    cursor: pointer;
+    border-bottom: solid 3px transparent;
+  }
+
+  .react-tabs__tab--selected {
+    color: $color-grey7;
+    border-bottom: solid 3px $color-primary;
+  }
 
 }

@@ -1,0 +1,25 @@
+.article-list {
+
+}
+
+.article-list-more {
+
+  font-size: 1.2em;
+  font-weight: $font-weight-bolder;
+  margin-top: 5em;
+
+  @extend %blog-more-link;
+
+  a {
+
+    &:hover {
+
+      .fa-hand-o-down {
+        display: none;
+      }
+
+    }
+
+  }
+
+}

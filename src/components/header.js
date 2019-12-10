@@ -1,58 +1,26 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
+import HeaderLogo from './HeaderLogo';
 import SocialIcons from './social-icons';
 
 const Header = ({location}) => {
-    return (
-        <nav className="header container" role="navigation">
+  return (
+    <nav className="header container" role="navigation">
+      <div className="content">
+        <div className="row">
 
-            <div className="content">
+          <HeaderLogo path={location.pathname} />
 
-                <div className="row">
+          <div className="header-social">
+            <SocialIcons />
+          </div>
 
-                    <HeaderLogo path={location.pathname} />
-
-                    <div className="header-social">
-                        <SocialIcons />
-                    </div>
-
-                </div>
-
-            </div>
-
-        </nav>
-    );
+        </div>
+      </div>
+    </nav>
+  );
 };
 
 export default Header;
 
 
-const HeaderLogo = ({path}) => {
-
-    if ( path === '/' ) {
-        return (
-            <div className="header-logo">
-                <h1 className="h1">
-                    <Link to="/">
-                        Colby Fayock
-                    </Link>
-                    <span className="tagline">
-                        A UX Designer &amp; Front-end Developer Blog
-                    </span>
-                </h1>
-            </div>
-        );
-    }
-
-    return (
-        <div className="header-logo">
-            <span className="h1">
-                <Link to="/">
-                    Colby Fayock
-                </Link>
-            </span>
-        </div>
-    );
-
-}

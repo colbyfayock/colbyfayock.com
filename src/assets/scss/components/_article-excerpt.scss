@@ -1,0 +1,57 @@
+.article-excerpt {
+
+  margin-bottom: 4em;
+
+  @include mobile() {
+    font-size: .8em;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  p {
+
+    margin: 0 0 .8em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  .article-meta {
+    text-align: left;
+    margin: 0;
+  }
+
+}
+
+.article-excerpt-header {
+  margin-bottom: .8em;
+}
+
+.article-excerpt-header-title {
+  margin: 0 0 .4em 0;
+}
+
+.article-excerpt-more {
+
+  font-size: 1em;
+  font-weight: $font-weight-bold;
+
+  @extend %blog-more-link;
+
+  a {
+
+    &:hover {
+
+      .fa-hand-o-right {
+        display: none;
+      }
+
+    }
+
+  }
+
+}

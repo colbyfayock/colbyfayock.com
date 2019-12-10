@@ -2,16 +2,6 @@
 
     text-align: center;
 
-    .home & {
-
-        margin: 8em auto;
-
-        @include mobile() {
-            margin: 4em auto;
-        }
-
-    }
-
     .row {
 
         display: flex;

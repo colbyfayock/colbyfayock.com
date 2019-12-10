@@ -1,62 +1,46 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
-import Layout from '../components/layout';
-import BlogList from '../components/blog-list';
+import { usePosts, useTalks } from 'hooks';
+
+import Layout from 'components/layout';
+import ArticleList from 'components/ArticleList';
 
 const Index = ({location, data}) => {
 
-    const helmet_settings = {
-        bodyAttributes: {
-            class: 'home',
-        }
-    };
+  const posts = usePosts();
+  const talks = useTalks();
 
-    return (
-        <Layout location={location}>
-            <div className="container">
+  const helmet_settings = {
+    bodyAttributes: {
+      class: 'home',
+    }
+  };
 
-                <Helmet {...helmet_settings} />
+  return (
+    <Layout location={location}>
+      <div className="container">
 
-                <BlogList posts={data.allMarkdownRemark.edges} />
+        <Helmet {...helmet_settings} />
 
-            </div>
-        </Layout>
-    );
+        <Tabs>
+          <TabList>
+            <Tab>Blog</Tab>
+            <Tab>Speaking</Tab>
+          </TabList>
+          <TabPanel>
+            <ArticleList articles={posts} />
+          </TabPanel>
+          <TabPanel>
+            <ArticleList articles={talks} />
+          </TabPanel>
+        </Tabs>
+
+      </div>
+    </Layout>
+  );
 
 }
 
 export default Index;
-
-export const pageQuery = graphql`
-    {
-        site {
-            siteMetadata {
-                title
-            }
-        }
-        allMarkdownRemark(
-            sort: {
-                fields: [frontmatter___date],
-                order: DESC
-            }
-        )
-        {
-            edges {
-                node {
-                    excerpt
-                    frontmatter {
-                        template
-                        title
-                        date(formatString: "DD MMMM, YYYY")
-                        category
-                    }
-                    fields {
-                        slug
-                    }
-                }
-            }
-        }
-    }
-`;
