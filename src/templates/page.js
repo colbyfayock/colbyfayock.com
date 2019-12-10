@@ -3,9 +3,9 @@ import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Parameterize from 'parameterize';
 
-import Post from '../models/post';
+import Post from 'models/post';
 
-import Layout from '../components/layout';
+import Layout from 'components/layout';
 
 const PageContent = ({html}) => {
     return (

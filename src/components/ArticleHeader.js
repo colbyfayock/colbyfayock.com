@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ArticleMeta from './article-meta';
+import ArticleMeta from 'components/ArticleMeta';
 
 const ArticleHeader = ({title, category, date}) => {
 

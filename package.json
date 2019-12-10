@@ -8,6 +8,7 @@
     "gatsby-plugin-google-marketing-platform": "^0.1.17",
     "gatsby-plugin-postcss": "^2.1.16",
     "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-resolve-src": "^2.0.0",
     "gatsby-plugin-sass": "^2.1.24",
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-transformer-remark": "^2.6.39",

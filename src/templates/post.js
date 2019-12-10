@@ -3,10 +3,10 @@ import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Parameterize from 'parameterize';
 
-import Post from '../models/post';
+import Post from 'models/post';
 
-import Layout from '../components/layout';
-import ArticleHeader from '../components/article/article-header';
+import Layout from 'components/layout';
+import ArticleHeader from 'components/ArticleHeader';
 
 const PostContent = ({html}) => {
     return (

@@ -54,9 +54,9 @@ collections:
   - name: title
     label: Title
   - name: video
-    label: video
+    label: Video
   - name: slides
-    label: slides
+    label: Slides
   - name: date
     label: Date
     widget: date
