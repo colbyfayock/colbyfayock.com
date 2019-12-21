@@ -194,6 +194,8 @@ This was a section added after published to handle the API resetting, but you ca
 
 ## Put a pin in his location
 
+Edit 12/21: The next and rest of this tutorial depended on the API returning a routes file, so things aren’t going to be working as expected. You can still follow along with the code and wait til the 24th for Santa to begin his journey!
+
 We found Santa! 🎉 Now let’s put him on the map.
 
 For our purposes, we’ll need to find the latitude and longitude of Santa. The problem is, we don’t get this exact value defined anywhere, we just get his destinations.
