@@ -134,7 +134,7 @@ So once we have that line, let’s now fetch Santa’s route inside of our `mapE
       route = await fetch(santaJson.route);
       routeJson = await route.json();
     } catch(e) {
-      throw new Error(`Failed to find Santa!: ${e}`)
+      console.log(`Failed to find Santa!: ${e}`);
     }
     console.log(‘routeJson’, routeJson);
   }
@@ -153,7 +153,44 @@ Let’s break this down:
 
 Now we have Santa and his route, which means we can see all the destinations in his route. If you dig in the response a little bit, you can see some fun things like how many presents were delivered to each location and the weather at the time!
 
+Edit 12/21: Looks like Google reset their API for the year and doesn’t include the routes property by default, which allows us to make the request to grab the destinations. See the new section right below here to handle this situation.
+
 [Follow along with the commit.](https://github.com/colbyfayock/my-santa-tracker/commit/f42c48fb0f0d70b4d20f1c2a1410bde1a4f27e84)
+
+## Handle a missing Santa
+
+Now that it’s close to Christmas, the API has reset, and doesn’t include the original route API for us to consume. So let’s handle not being able to find Santa first.
+
+```
+if ( !routeJson ) {
+  // Create a Leaflet Market instance using Santa's LatLng location
+  const center = new L.LatLng( 0, 0 );
+  const noSanta = L.marker( center, {
+    icon: L.divIcon({
+      className: 'icon',
+      html: `<div class="icon-santa">🎅</div>`,
+      iconSize: 50
+    })
+  });
+  noSanta.addTo( leafletElement );
+  noSanta.bindPopup( `Santa's still at the North Pole!` );
+  noSanta.openPopup();
+  return;
+}
+```
+
+Okay so what are we doing here?
+
+* First, we’re checking if we have routeJson which we’ll need in order to find the destinations, which is what we’re handling first here.
+* We first create a LatLng of the center of the map
+* We create a Leaflet marker, using that center, with a custom Icon of Santa
+* Next we add that Santa marker to the leafletElement, which is our map
+* To show a message, we first bind a popup with a custom message and open it
+* Finally we return so the rest of the code doesn’t run, as we don’t have Santa at this point
+
+This was a section added after published to handle the API resetting, but you can still follow along with the code I added in context of the rest of the rest of the code.
+
+[Follow along with the commit.](https://github.com/colbyfayock/my-santa-tracker/commit/aeefd9263b9b6a5d5fa762dcd0f8c92876122d55)
 
 ## Put a pin in his location
 
