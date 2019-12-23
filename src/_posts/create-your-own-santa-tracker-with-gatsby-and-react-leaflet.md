@@ -10,6 +10,8 @@ The Christmas season is a magical time of year. We have Santa flying around spre
 
 To get in the spirit, we’re going to spin up a web app that includes a map that tracks Santa on it!
 
+*Edit 12/23: Updated the app to request directly to Santa's route, just in case the original API doesn't work as originally expected.*
+
 ## What are we going to build?
 
 We’re going to work through building a mapping app that tracks Santa’s route and his current location.
@@ -142,10 +144,8 @@ So once we have that line, let’s now fetch Santa’s route inside of our `mapE
 
 Let’s break this down:
 
-* We fetch Santa himself using our API endpoint
-* Once we have Santa, we grab the response in a JSON format to make it easier to work with
-* From that response, we grab Santa’s route URL
-* We fetch Santa’s route using that URL and again grab it in a JSON format
+* We grab Santa’s route via the API endpoint
+* Once we have his route, we grab the response in a JSON format to make it easier to work with
 * This is all wrapped in a try/catch so we can safely handle any response errors
 * Finally, we just `log` out our response for now
 
@@ -153,16 +153,40 @@ Let’s break this down:
 
 Now we have Santa and his route, which means we can see all the destinations in his route. If you dig in the response a little bit, you can see some fun things like how many presents were delivered to each location and the weather at the time!
 
-Edit 12/21: Looks like Google reset their API for the year and doesn’t include the routes property by default, which allows us to make the request to grab the destinations. See the new section right below here to handle this situation.
-
 [Follow along with the commit.](https://github.com/colbyfayock/my-santa-tracker/commit/f42c48fb0f0d70b4d20f1c2a1410bde1a4f27e84)
+
+## Put a pin in his location
+
+We found Santa! 🎉 Now let’s put him on the map.
+
+For our purposes, we’ll need to find the latitude and longitude of Santa. The problem is, we don’t get this exact value defined anywhere, we just get his destinations.
+
+Since we don’t have his location specified anywhere, we can utilize his last known location where presents were delivered. Add the following after our last snippet inside the `mapEffect` function:
+
+```
+const { destinations = [] } = routeJson || {};
+    const destinationsVisited = destinations.filter(({arrival}) => arrival < Date.now());
+    const destinationsWithPresents = destinationsVisited.filter(({presentsDelivered}) => presentsDelivered > 0);
+const lastKnownDestination = destinationsWithPresents[destinationsWithPresents.length - 1]
+```
+
+Below our request code, we:
+
+* Destructure `routeJson` to grab `destinations` into a constant, adding a fallback to an empty object
+* Filter the results to only find the destinations that he's visited, using the arrival time from the route object
+* Filter the results to find only the locations with presents
+* And finally grab the last item from the array, which shows his last known location
+
+At this point in time, 12/23, we don't actually have any destinations, as Santa is still at the North Pole. At any time, we can test this out to simulate a future date by replaceing `Date.now()` in `destinationsVisited` with a future date, such as `1577188980000` which would be around 7pm Eastern on 12/24. With that change, we can see what Santa's route actually looks like!
 
 ## Handle a missing Santa
 
-Now that it’s close to Christmas, the API has reset, and doesn’t include the original route API for us to consume. So let’s handle not being able to find Santa first.
+Now that it's close to Christmas, Santa will still be at the North Pole, so let's handle the case where we don't have a location.
+
+Above the line where we set `lastKnownDestination`, let's add:
 
 ```
-if ( !routeJson ) {
+if ( destinationsWithPresents.length === 0 ) {
   // Create a Leaflet Market instance using Santa's LatLng location
   const center = new L.LatLng( 0, 0 );
   const noSanta = L.marker( center, {
@@ -181,7 +205,7 @@ if ( !routeJson ) {
 
 Okay so what are we doing here?
 
-* First, we’re checking if we have routeJson which we’ll need in order to find the destinations, which is what we’re handling first here.
+* First, we’re checking if we have any destinations with presents, which here we don't
 * We first create a LatLng of the center of the map
 * We create a Leaflet marker, using that center, with a custom Icon of Santa
 * Next we add that Santa marker to the leafletElement, which is our map
@@ -190,29 +214,11 @@ Okay so what are we doing here?
 
 This was a section added after published to handle the API resetting, but you can still follow along with the code I added in context of the rest of the rest of the code.
 
-[Follow along with the commit.](https://github.com/colbyfayock/my-santa-tracker/commit/aeefd9263b9b6a5d5fa762dcd0f8c92876122d55)
+[Follow along in the code.](https://github.com/colbyfayock/my-santa-tracker/blob/master/src/pages/index.js#L40)
 
-## Put a pin in his location
+## Pinning Santa
 
-Edit 12/21: The next and rest of this tutorial depended on the API returning a routes file, so things aren’t going to be working as expected. You can still follow along with the code and wait til the 24th for Santa to begin his journey!
-
-We found Santa! 🎉 Now let’s put him on the map.
-
-For our purposes, we’ll need to find the latitude and longitude of Santa. The problem is, we don’t get this exact value defined anywhere, we just get his destinations.
-
-Since we don’t have his location specified anywhere, we can utilize his last known location where presents were delivered. Add the following after our last snippet inside the `mapEffect` function:
-
-```
-const { destinations } = routeJson;
-const destinationsWithPresents = destinations.filter(({presentsDelivered}) => presentsDelivered > 0);
-const lastKnownDestination = destinationsWithPresents[destinationsWithPresents.length - 1]
-```
-
-Below our request code, we:
-
-* Destructure `routeJson` to grab `destinations` into a constant
-* Filter the results to find only the locations with presents
-* And finally grab the last item from the array, which shows his last known location
+*Edit 12/23: This section was originally written with the previous year's API, but this is still a good example of what you'll expect on the response, so you can follow right along.*
 
 And as we can see, since we’re looking at last year’s data, Santa is back home at the North Pole.
 
