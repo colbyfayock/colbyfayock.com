@@ -13,7 +13,7 @@ import ArticleContent from 'components/ArticleContent';
 export default function Template({ location, data }) {
 
   const talk = new Talk(data.markdownRemark);
-  const { title, html, date, video, slides } = talk;
+  const { title, html, date, video, video_embed, slides } = talk;
   const links = [];
 
   if ( video ) {
@@ -56,9 +56,9 @@ export default function Template({ location, data }) {
         <ArticleHeader title={title} date={date} />
 
         <ArticleContent html={html}>
-          { video && (
+          { video_embed && (
             <p className="article-content-video">
-              <iframe width="560" height="315" src={video} title={title} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="560" height="315" src={video_embed} title={title} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true} />
             </p>
           )}
         </ArticleContent>
@@ -66,9 +66,9 @@ export default function Template({ location, data }) {
         {links.length > 0 && (
           <div className="article-links">
             <ul>
-              {links.map(({to, label, icon, id} = {}) => {
+              {links.map(({to, label, icon, id} = {}, index) => {
                 return (
-                  <li className={`article-links-${id}`}>
+                  <li key={`ArticleLink-${index}`} className={`article-links-${id}`}>
                     <a href={to}>
                       { icon }
                       { label }
@@ -93,6 +93,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         video
+        video_embed
         slides
       }
       fields {

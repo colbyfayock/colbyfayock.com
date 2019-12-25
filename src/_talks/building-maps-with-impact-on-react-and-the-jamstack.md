@@ -1,7 +1,8 @@
 ---
 template: talk
 title: Building Maps with Impact on React and the JAMstack
-video: 'https://www.youtube.com/embed/a-1rcaQ-aSk'
+video: 'https://www.youtube.com/watch?v=a-1rcaQ-aSk&list=PLeGxIOPLk9EKBu_B0WpBLYkkHQIGki2EZ&index=3&t=0s'
+video_embed: 'https://www.youtube.com/embed/a-1rcaQ-aSk'
 slides: >-
   https://slides.com/colbyfayock/building-maps-with-impact-with-react-and-the-jamstack#/
 date: 2019-12-07T00:53:47.892Z

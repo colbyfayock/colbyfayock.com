@@ -24,6 +24,7 @@ export default function useNodes() {
               date(formatString: "DD MMMM, YYYY")
               category
               video
+              video_embed
               slides
             }
             fields {

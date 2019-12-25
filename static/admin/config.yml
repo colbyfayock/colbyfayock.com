@@ -55,6 +55,8 @@ collections:
     label: Title
   - name: video
     label: Video
+  - name: video_embed
+    label: Video Embed
   - name: slides
     label: Slides
   - name: date
