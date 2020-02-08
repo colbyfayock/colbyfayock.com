@@ -32,6 +32,8 @@ Services like [AWS Lambda](https://aws.amazon.com/lambda/) let you build a “fu
 
 The brilliant part about this is there’s a lot less overhead and it's typically a whole heck of a lot cheaper. Many cases, you’ll also get a huge performance boost, where serving a site from s3 will require less processing to get that [first response to the browser](https://developers.google.com/web/tools/lighthouse/audits/ttfb), which can directly equate to improved user experience.
 
+![Thumbs up to a good user experience!](/assets/brett-rambo-thumbs-up.gif)
+
 This isn’t to push you to the JAMstack, but to show that the full stack paradigm is shifting and it’s something worth looking at. There still is a traditional sense of the difference in work, but it’s becoming a bit different.
 
 DevOps teams now manage cloud resources and deploys, backend developers now build APIs and code that interfaces with services using tools like lambda functions, and front end developers primarily work in Javascript building [React](https://reactjs.org/) or [Vue](https://vuejs.org/) apps that reach out to the services your backend developers created. Arguably, this might or might not include things like CSS, but that’s another can of worms about what title that work “officially” falls under (spoiler: depends on the team).
