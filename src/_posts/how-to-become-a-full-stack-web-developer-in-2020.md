@@ -16,6 +16,10 @@ That’s not to take away from what we’re all able to accomplish now as front 
 
 The web development landscape has been changing rapidly. [Wordpress](https://wordpress.org/) has been king CMS for a little while now, representing over a third of websites who use a CMS, which helped in PHP popularity, while others worked off of homegrown solutions.
 
+![CMS chart showing Wordpress with a large share](/assets/wordpress-cms-share.jpg)
+
+*Graph from https://trends.builtwith.com/cms*
+
 These represented a more traditional web stack like [LAMP](https://en.wikipedia.org/wiki/LAMP_(software_bundle)), where you had web servers usually running some kind of content management system and a server side language (like PHP) that would interface with the databases and produce the code that would ultimately be delivered to the browser.
 
 On top of that, you might have Javascript making some interactive features with CSS managing the display of the page. Now in some instances, having a managed Wordpress server is all you need for certain web hosts, but other larger sites would require another team to manage those services and the deploy pipeline for getting the code out to production.
@@ -88,7 +92,7 @@ While there would be benefits to call out CSS preprocessors and tools like Sass,
 
 In the JAMstack world, the back end will generally refer to the APIs that our front ends use to create dynamic experiences by interacting with endpoints from the client like those in [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) APIs. Being able to make those requests from the client will remove the need to have to do any of that processing before the page is served to the browser.
 
-Though you shouldn’t feel like you can only ever code in one language, being able to write in Javascript gives a nice advantage here, as you can grow into the fundamentals of working with the back end side of things with a familiar language (or vice versa with the front end). [NodeJS](https://nodejs.org/en/) is a common runtime that you’ll find in most cloud environments as an option and will give you a similar experience to what you’d expect in a browser, except you won’t have access to certain browser APIs nor will there be a `window `object and the APIs associated with it.
+Though you shouldn’t feel like you can only ever code in one language, being able to write in Javascript gives a nice advantage here, as you can grow into the fundamentals of working with the back end side of things with a familiar language (or vice versa with the front end). [NodeJS](https://nodejs.org/en/) is a common runtime that you’ll find in most cloud environments as an option and will give you a similar experience to what you’d expect in a browser, except you won’t have access to certain browser APIs nor will there be a `window`object and the APIs associated with it.
 
 That said, Python is also [another popular language](https://pypl.github.io/PYPL.html) and is growing, especially given it’s popularity in the data science and engineering community. PHP and Ruby, while both are valid and will give you options in the job market, don’t seem to be as popular and not as much on an overall [upward trend](https://madnight.github.io/githut/) as Javascript and Python.
 
