@@ -199,6 +199,8 @@ There's also something to be said about learning how to use your terminal. It ca
 
 First things first, get your code editor set up. [Visual Studio Code](https://code.visualstudio.com/) is all the rage right now, but there are others that will serve you well depending on your preferences like [Atom](https://atom.io/) or [Sublime Text](https://www.sublimetext.com/). You'll even find cloud based IDEs like [Repl.it](https://repl.it/) or you can just get started with a lower barrier of entry by playing around in [CodePen](https://codepen.io/) or [JSFiddle](https://jsfiddle.net/).
 
+![Visual Studio Code is so hot right now](/assets/visual-studio-code-so-hot.jpg)
+
 Either way, once you're ready to get coding, you want to understand what source control is, where git is the biggest player right now. Git is a powerful tool that let's you track changes to code and become more productive collaborating with other developers.
 
 You'll want to get familiar with some of the basic commands of git like adding new changes as well as what branches are and how to use them. Git is a huge world, you don't need to master it right away, you'll quickly learn there's an endless amount of new things to learn on your journey to mastering your git fu.
