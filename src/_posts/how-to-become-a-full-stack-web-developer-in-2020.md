@@ -80,6 +80,10 @@ Next, learn Javascript. It will remain king for the foreseeable future. Javascri
 
 Speaking of frameworks, React and Vue are probably the best candidates given their popularity. React is the most popular out of the bunch and is just going to keep growing as they’re constantly working to mature the framework and produce APIs that will help build modern, fast web apps.
 
+![2019 State of JS Frameworks ](/assets/front-end-framework-usage.jpg)
+
+*<https://2019.stateofjs.com/front-end-frameworks/#front_end_frameworks_section_overview>*
+
 Getting started with [Create React App](https://github.com/facebook/create-react-app) or [Gatsby](https://www.gatsbyjs.org/) will even help you easily spin up a React app and immediately get into a position where you can tinker around in the code.
 
 While there would be benefits to call out CSS preprocessors and tools like Sass, there are a ton of solutions now for CSS including [CSS-in-JS](https://cssinjs.org/). While putting CSS inside of JS has some [pros and cons](https://www.freecodecamp.org/news/you-dont-need-css-in-js-why-i-use-stylesheets/), it isn't necessarily worth pointing out what to use as a particular direction, as it's really going to be team dependent. Understanding the basics and power of CSS and how to use it in it's vanilla form will help prepare you for utilizing it no matter the framework.
