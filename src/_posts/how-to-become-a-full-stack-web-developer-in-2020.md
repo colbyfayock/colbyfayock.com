@@ -50,6 +50,8 @@ On top of that, part of being a full stack developer isn't necessarily being abl
 
 The bottom line, try to figure out what's best for you and don't let your high ambition get in the way of mastering your journey.
 
+![Mr. Miyagi approves](/assets/mr-miyagi-approves.gif)
+
 ## So where do we start?
 
 For the purposes of this article, we’re going to keep with the traditional breakpoints of what break up the stack (front end, back end, etc.). Though [some people say it's not really a thing anymore](https://medium.com/better-programming/2020-001-full-stack-pronounced-dead-355d7f78e733), realistically, there are tons of jobs for full stack developers and day to day, they refer to the traditional breakpoints. "Full stack developer" definitely isn't going anywhere.
