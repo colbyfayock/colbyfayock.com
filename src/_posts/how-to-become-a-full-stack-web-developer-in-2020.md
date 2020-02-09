@@ -207,6 +207,8 @@ You'll want to get familiar with some of the basic commands of git like adding n
 
 For a lot of tools you'll use, there are GUIs available like [GitKraken](https://www.gitkraken.com/), but you'll still be a bit limited with what you can do. Learning your way around the default terminals on your machine or downloading other options like [iterm2](https://iterm2.com/) (my preference) or [Xterm.js](https://xtermjs.org/) will be your best bet. Bonus: you'll feel like a movie hacker every time you use it (or is that just me?).
 
+![Hugh Jackman hacking in Swordfish](/assets/hacking-swordfish.gif)
+
 ### Resources
 
 * Getting Started with Visual Studio Code <https://www.codecademy.com/articles/visual-studio-code>
