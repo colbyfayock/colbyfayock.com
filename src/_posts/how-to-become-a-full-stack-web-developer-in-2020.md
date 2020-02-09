@@ -58,6 +58,8 @@ For the purposes of this article, we’re going to keep with the traditional bre
 
 As far as the stack goes, we’re going to lean on the serverless / JAMstack architectures, as that’s just going to keep growing, which will only make you more marketable with the number of jobs popping up around it.
 
+![Boomshakalaka!](/assets/boomshakalaka.gif)
+
 As you'll notice below, this isn't meant to be all encompassing with every type of database and every type of rendering solution. A strong developer should be able to be flexible with their tooling, reaching to understand the concepts of their work rather than being singled minded and only being able to be productive in one framework. While you may be working in React and comfortable with it in your current job (that's okay!), your next job could be heavy on Vue or "surprise!" your team lead wants to rewrite the app in [Svelte](https://svelte.dev/). Try to understand why you're using a UI framework in the first place and how it's helping you solve the problem at hand.
 
 Now let's get into it...
