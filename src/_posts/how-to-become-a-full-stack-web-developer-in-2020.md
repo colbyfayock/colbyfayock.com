@@ -178,6 +178,8 @@ When creating solutions, try to imagine how your work will be used. What will th
 
 You can also try to get inspiration from what others are doing in your space. How would you expect an app to look when providing similar functionality? This isn’t license to copy or steal, but understand the needs their solution is solving such as why their Add to Cart button is so huge, why they’re giving users the ability to zoom in on a product photo, or how you can make a table design slightly more usable.
 
+!["table" product design on Dribbble](/assets/dribbble-table-design.jpg)
+
 As for accessibility, try to learn the basics. There's a growing amount of resources available to help you understand the needs of others. Try to understand what disabilities there are and how they might struggle in your app. Maybe look at a few common patterns about how to address those concerns. More often than not, it's not too hard to incorporate, and if you get in the habit of doing it from the start, you won't even think about it the next time you build an app.
 
 ### Resources
