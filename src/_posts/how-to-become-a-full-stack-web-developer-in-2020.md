@@ -160,6 +160,8 @@ Yes, you should understand design basics. No, you don’t need to be a designer.
 
 There are many aspects about design that will accelerate your abilities as a developer. While we all know the visual and UX designers produce magic, having a basic understanding can prevent your application from becoming a huge disappointment.
 
+![Fictional Pied Piper's app tanked because of a bad user experience](/assets/pied-piper-user-interface.jpg)
+
 Everyone in the development process is working towards a goal that impacts an end user in one way or another. Being able to understand what needs your work is trying to solve and how that impacts those that are using what you create will help the team as a whole develop a more comprehensive end solution.
 
 Consider a back end developer creating an API to allow someone to manage users in an app, where the requirements of the API are pretty lean only including the user’s name. Providing that as a single “name” field instead of “first” and “last” while might not be the most intuitive solution for most, could be an oversight that complicates how the front end developer exposes that in the UI, making it a pain for the developer to display or possibly confusing for the end user to consume.
