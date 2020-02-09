@@ -139,6 +139,8 @@ It’s also not perfect yet, writing CloudFormation templates is daunting. Writi
 
 If this is your first time setting this kind of thing up, start with Netlify. Set up a React app or even just a simple HTML file in a Github repository, connect it to a new Netlify account, and watch it deploy.
 
+![Easy spinup with Netlify](/assets/netlify-setup.jpg)
+
 From there, or if you have a little experience already, start getting curious about what’s going on behind the scenes. Netlify is likely taking your code, running the commands you set up (like `yarn build`) in a virtual environment, dumping the files built into storage like S3, and putting a CDN in front of it like CloudFront to serve from an endpoint. First try doing that manually from your computer using the AWS console and their CLI, then write a script to automate the whole process integrating with Circle CI into your Github project instead of Netlify to get it actually deployed to AWS.
 
 Taking that up a notch will include spinning up services that your back end might interface with. Do you have a database that your services use? You can automate spinning up that database using CloudFormation or bash scripts. Treating your infrastructure as code with disposable, easily recreatable resources will help you and your projects become more flexible and have a better ability to spin back up in the event of failure.
