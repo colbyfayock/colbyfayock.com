@@ -246,6 +246,8 @@ This list can go on forever as there's so much to the world of coding. What else
 
 Given all of the experience you’ll have accumulated with the above, you should be in a position to be able to create an entire app from start to finish by yourself. Do you understand the power that you have?
 
+![Thanos squeezing the gauntlet](/assets/thanos-glove.gif)
+
 This is where the fun starts. Try to create a new app, doesn’t matter what it is, just build something. The best thing you can do for learning is to gain experience by doing, whether it’s one of the million todo tutorials you’ll find or by teaching yourself to code by building one of the largest social networks like the [creator of Instagram](https://thenextweb.com/2012/04/10/instagrams-ceo-had-no-formal-programming-training-hes-a-marketer-who-learned-to-code-by-night/).
 
 From here, you should be able to create:
