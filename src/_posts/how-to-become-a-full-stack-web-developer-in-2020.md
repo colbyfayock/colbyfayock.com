@@ -106,6 +106,10 @@ Though you shouldn’t feel like you can only ever code in one language, being a
 
 That said, Python is also [another popular language](https://pypl.github.io/PYPL.html) and is growing, especially given it’s popularity in the data science and engineering community. PHP and Ruby, while both are valid and will give you options in the job market, don’t seem to be as popular and not as much on an overall [upward trend](https://madnight.github.io/githut/) as Javascript and Python.
 
+![Popular languages on Github](/assets/language-popularity.jpg)
+
+*<https://madnight.github.io/githut/#/pull_requests/2019/4>*
+
 With the language of your choice, your best bet will be learning how to create cloud services that your applications can interface with. Creating a simple lambda that you can play around with, whether in AWS, Netlify, or any other cloud provider, will give you a good experience as to what you might expect when working in the field. And even if you may not develop directly in a lambda in the job you find, you’ll be able to start getting familiar with concepts that are fundamental to working with the back end, ultimately utilizing those functions to connect with other services and databases to create your own dynamic services.
 
 ### So what should I learn?
