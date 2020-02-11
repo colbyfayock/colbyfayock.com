@@ -21,8 +21,6 @@ export default function Template({ location, data }) {
 
     const post = new Post(data.markdownRemark);
 
-    console.log('post', post)
-
     const helmet_settings = {
         bodyAttributes: {
             class: `article post post-${Parameterize(post.title)}`,
@@ -52,6 +50,7 @@ export default function Template({ location, data }) {
 
                 <Hidden>
                     <a class="p-author h-card" href="https://colbyfayock.com">Colby Fayock</a>
+                    <img class="u-photo" src="https://www.colbyfayock.com/colby-fayock-bite-world.jpg" alt="Colby Fayock Image" />
                 </Hidden>
 
                 <Hidden>

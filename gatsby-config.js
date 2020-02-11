@@ -50,6 +50,21 @@ module.exports = {
                 },
                 includeInDevelopment: false,
             },
+        },
+        {
+            resolve: `gatsby-plugin-webmention`,
+            options: {
+                username: "www.colbyfayock.com",
+                identity: {
+                    github: "colbyfayock",
+                    twitter: "colbyfayock"
+                },
+                mentions: true,
+                pingbacks: false,
+                domain: "colbyfayock.com",
+                fetchLimit: 10000,
+                token: process.env.WEBMENTIONS_TOKEN
+            }
         }
     ],
 };
