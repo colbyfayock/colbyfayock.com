@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import SocialIcons from './social-icons';
+import Hidden from 'components/Hidden';
 
 import image_resume from '../../static/assets/colby-fayock-front-end-development-web-design-resume.pdf';
 
@@ -52,9 +53,9 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="h-card" href="https://www.colbyfayock.com" rel="me">
+                  <Link to="/">
                     &copy; Colby Fayock
-                  </a>
+                  </Link>
                 </li>
               </ul>
 
@@ -65,6 +66,17 @@ const Footer = () => {
         </div>
 
       </footer>
+
+      <Hidden>
+        <a className="h-card" href="https://www.colbyfayock.com" rel="me">
+          Colby Fayock
+        </a>
+        <img class="u-photo" src="https://www.colbyfayock.com/colby-fayock-bite-world.jpg" />
+        <p class="p-note">
+          A Front End Engineer and UX Designer that’s passionate about tackling challenges
+          that can help save people’s lives and make the world a better place.
+        </p>
+      </Hidden>
     </div>
   );
 };
