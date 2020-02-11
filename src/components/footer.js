@@ -52,9 +52,9 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <Link to="/">
+                  <a className="h-card" href="https://www.colbyfayock.com" rel="me">
                     &copy; Colby Fayock
-                  </Link>
+                  </a>
                 </li>
               </ul>
 

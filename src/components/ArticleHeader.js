@@ -7,7 +7,7 @@ const ArticleHeader = ({title, category, date}) => {
     return (
         <header className="article-header">
 
-            <h1 className="flat-top" itemProp="headline">
+            <h1 className="flat-top p-name" itemProp="headline">
                 { title }
             </h1>
 

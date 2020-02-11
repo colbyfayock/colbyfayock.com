@@ -7,6 +7,7 @@ import Post from 'models/post';
 
 import Layout from 'components/layout';
 import ArticleHeader from 'components/ArticleHeader';
+import Hidden from 'components/Hidden';
 
 const PostContent = ({html}) => {
     return (
@@ -35,13 +36,23 @@ export default function Template({ location, data }) {
 
     return (
         <Layout location={location}>
-            <article className="container article-content" itemScope="" itemType="http://schema.org/BlogPosting">
+            <article className="container article-content h-card" itemScope="" itemType="http://schema.org/BlogPosting">
 
                 <Helmet {...helmet_settings} />
 
                 <ArticleHeader title={post.title} category={post.category} date={post.date} />
 
                 <PostContent html={post.html} />
+
+                <Hidden className="p-summary e-content">
+                    { post.excerpt }
+                </Hidden>
+
+                <Hidden className="p-summary e-content">
+                    <footer>
+                        <a class="u-url p-name" href="https://colbyfayock.com">Colby Fayock</a>
+                    </footer>
+                </Hidden>
 
             </article>
         </Layout>
@@ -52,6 +63,7 @@ export const pageQuery = graphql`
     query($slug: String!) {
         markdownRemark(fields: { slug: { eq: $slug } }) {
             html
+            excerpt
             frontmatter {
                 category
                 date(formatString: "MMMM DD, YYYY")
