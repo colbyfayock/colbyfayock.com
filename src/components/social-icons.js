@@ -10,11 +10,6 @@ import {
 
 import { FiMail } from 'react-icons/fi';
 
-
-
-
-
-
 const SocialIconsList = ({links}) => {
 
     if ( !Array.isArray(links) ) return null;
@@ -22,7 +17,7 @@ const SocialIconsList = ({links}) => {
     const link_items = links.map((item, index) => {
         return (
             <li key={`SocialIconsList-${index}`} className={`social-icons-${item.title.toLowerCase()}`}>
-                <a href={item.url}>
+                <a href={item.url} rel="me">
                     { item.icon }
                     <span className="ir">{ item.title }</span>
                 </a>
