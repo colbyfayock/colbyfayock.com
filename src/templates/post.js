@@ -12,7 +12,7 @@ import Hidden from 'components/Hidden';
 const PostContent = ({html}) => {
     return (
         <section className="row cf" itemProp="articleBody">
-            <div className="article-content-body" dangerouslySetInnerHTML={{ __html: html }}></div>
+            <div className="article-content-body e-content" dangerouslySetInnerHTML={{ __html: html }}></div>
         </section>
     );
 }
@@ -20,6 +20,8 @@ const PostContent = ({html}) => {
 export default function Template({ location, data }) {
 
     const post = new Post(data.markdownRemark);
+
+    console.log('post', post)
 
     const helmet_settings = {
         bodyAttributes: {
@@ -36,7 +38,7 @@ export default function Template({ location, data }) {
 
     return (
         <Layout location={location}>
-            <article className="container article-content h-card" itemScope="" itemType="http://schema.org/BlogPosting">
+            <article className="container article-content h-entry" itemScope="" itemType="http://schema.org/BlogPosting">
 
                 <Helmet {...helmet_settings} />
 
@@ -48,10 +50,14 @@ export default function Template({ location, data }) {
                     { post.excerpt }
                 </Hidden>
 
-                <Hidden className="p-summary e-content">
-                    <footer>
-                        <a class="u-url p-name" href="https://colbyfayock.com">Colby Fayock</a>
-                    </footer>
+                <Hidden>
+                    <a class="p-author h-card" href="https://colbyfayock.com">Colby Fayock</a>
+                </Hidden>
+
+                <Hidden>
+                    <a class="u-url" href={`https://colbyfayock.com${post.path}`}>
+                        { `https://colbyfayock.com${post.path}` }
+                    </a>
                 </Hidden>
 
             </article>

@@ -67,11 +67,11 @@ const Footer = () => {
 
       </footer>
 
-      <Hidden>
-        <a className="h-card" href="https://www.colbyfayock.com" rel="me">
+      <Hidden className="h-card">
+        <a className="p-name u-url" href="https://www.colbyfayock.com" rel="me">
           Colby Fayock
         </a>
-        <img class="u-photo" src="https://www.colbyfayock.com/colby-fayock-bite-world.jpg" />
+        <img class="u-photo" src="https://www.colbyfayock.com/colby-fayock-bite-world.jpg" alt="Colby Fayock Image" />
         <p class="p-note">
           A Front End Engineer and UX Designer that’s passionate about tackling challenges
           that can help save people’s lives and make the world a better place.

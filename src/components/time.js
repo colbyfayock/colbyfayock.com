@@ -1,4 +1,5 @@
 import React from 'react';
+import Hidden from 'components/Hidden';
 
 function dateToDateTime(date_string) {
     if ( typeof date_string !== 'string' ) return null;
@@ -9,10 +10,17 @@ const Time = ({date}) => {
 
     if ( !date ) return null;
 
+    const dateTime = dateToDateTime(date);
+
     return (
-        <time dateTime={dateToDateTime(date)} pubdate={dateToDateTime(date)}>
-            { date }
-        </time>
+        <>
+            <time dateTime={dateTime} pubdate={dateTime}>
+                { date }
+            </time>
+            <Hidden className="dt-published">
+                { dateTime }
+            </Hidden>
+        </>
     );
 
 };
