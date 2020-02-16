@@ -5,6 +5,8 @@ video: 'https://www.youtube.com/watch?v=a-1rcaQ-aSk&list=PLeGxIOPLk9EKBu_B0WpBLY
 video_embed: 'https://www.youtube.com/embed/a-1rcaQ-aSk'
 slides: >-
   https://slides.com/colbyfayock/building-maps-with-impact-with-react-and-the-jamstack#/
+link: ""
+link_label: ""
 date: 2019-12-07T00:53:47.892Z
 ---
 Working on building apps and interfaces is as challenging as it is rewarding. On one hand, being able to work on tools scientists use every day and giving first responders the ability to help save lives is rewarding in itself, but getting to those goals is technically challenging considering building an application with useful map features, making it intuitive, and having infrastructure behind it that gives the map the features needed to be useful in the first place.

@@ -50,7 +50,7 @@ export default function Template({ location, data }) {
 
                 <Hidden>
                     <a class="p-author h-card" href="https://colbyfayock.com">Colby Fayock</a>
-                    <img class="u-photo" src="https://www.colbyfayock.com/colby-fayock-bite-world.jpg" alt="Colby Fayock Image" />
+                    <img class="u-photo" src="https://www.colbyfayock.com/colby-fayock-bite-world.jpg" alt="Author Colby Fayock Image" />
                 </Hidden>
 
                 <Hidden>

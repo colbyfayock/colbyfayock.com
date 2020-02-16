@@ -55,10 +55,19 @@ collections:
     label: Title
   - name: video
     label: Video
+    required: false
   - name: video_embed
     label: Video Embed
+    required: false
   - name: slides
     label: Slides
+    required: false
+  - name: link
+    label: Link
+    required: false
+  - name: link_label
+    label: Link Label
+    required: false
   - name: date
     label: Date
     widget: date

@@ -30,7 +30,8 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "gatsby clean"
   },
   "devDependencies": {}
 }

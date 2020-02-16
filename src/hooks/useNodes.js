@@ -26,6 +26,8 @@ export default function useNodes() {
               video
               video_embed
               slides
+              link
+              link_label
             }
             fields {
               slug

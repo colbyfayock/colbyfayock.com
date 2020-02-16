@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Parameterize from 'parameterize';
-import { FaPlay, FaThLarge } from 'react-icons/fa';
+import { FaPlay, FaThLarge, FaLink } from 'react-icons/fa';
 
 import Talk from 'models/talk';
 
@@ -13,7 +13,7 @@ import ArticleContent from 'components/ArticleContent';
 export default function Template({ location, data }) {
 
   const talk = new Talk(data.markdownRemark);
-  const { title, html, date, video, video_embed, slides } = talk;
+  const { title, html, date, video, video_embed, slides, link, link_label } = talk;
   const links = [];
 
   if ( video ) {
@@ -31,6 +31,15 @@ export default function Template({ location, data }) {
       to: slides,
       label: 'Slides',
       icon: <FaThLarge />
+    });
+  }
+
+  if ( link ) {
+    links.push({
+      id: 'link',
+      to: link,
+      label: link_label || 'Learn More',
+      icon: <FaLink />
     });
   }
 
