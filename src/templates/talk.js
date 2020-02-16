@@ -104,6 +104,8 @@ export const pageQuery = graphql`
         video
         video_embed
         slides
+        link
+        link_label
       }
       fields {
         slug
