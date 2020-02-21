@@ -12,7 +12,7 @@ To start, [JAMstack](https://jamstack.org/) is a software architecture and phi
 
 If this sounds familiar, it's because it is! That React app that you compile down with [Webpack](https://webpack.js.org/) and ultimately serve from [S3](https://aws.amazon.com/s3/)? Yup, that's a JAMstack app. That simple HTML file that has no JavaScript and literally doesn't do anything dynamic? Yup, that's also a JAMstack app.
 
-![Bill and Ted play air guitars](https://www.freecodecamp.org/news/content/images/2020/02/bill-ted-air-guitar.gif)
+![Bill and Ted play air guitars](/assets/bill-ted-air-guitar.gif)
 
 ## That's not to be confused with serverless
 
@@ -26,7 +26,7 @@ Combining these philosophies can go a long way, but they shouldn't be confused a
 
 Back to the JAMstack: it's typically comprised of 3 components: Javascript, APIs, and Markup. Its [history stems](https://snipcart.com/blog/jamstack) from growing the term "static site" into something more meaningful (and marketable). So while ultimately a static site is the end result, it's blown up to include first class tooling for every step of the way.
 
-![JAMstack breakdown](https://www.freecodecamp.org/news/content/images/2020/02/jamstack-breakdown-3.jpg)
+![JAMstack breakdown](/assets/jamstack-breakdown.jpg)
 
 While there aren't any specific set of tools that you need to use, or any tools at all beyond simple HTML, there are great examples of what can make up each part of the stack. Let's dive in a little bit to each component.
 
@@ -36,7 +36,7 @@ The component that's probably done the most work to popularize the JAMstack is J
 
 This is where a lot of times you'll see UI frameworks like [React](https://reactjs.org/), [Vue](https://vuejs.org/), and newcomers like [Svelte](https://svelte.dev/) come into play.
 
-!["A Simple Component" example from https://reactjs.org/](https://www.freecodecamp.org/news/content/images/2020/02/react-component-example.jpg)
+!["A Simple Component" example from https://reactjs.org/](/assets/react-component-example.jpg)
 
 They make building apps simpler and more organized by providing component APIs and tooling that compile down to a simple HTML file (or a bunch of them).
 
@@ -129,8 +129,6 @@ But you don't even need to have APIs. You don't even need to have Javascript! As
 Yes! freecodecamp.org and its learning portal [is a JAMstack site](https://www.freecodecamp.org/news/freecodecamp-jamstack/) built on Gatsby. Even with the complexities of providing an app to take code courses with, freeCodeCamp is able to pull together the power of a static site generator and powerful APIs to bring people around the world the power of learning code.
 
 ![https://www.freecodecamp.org/](https://www.freecodecamp.org/news/content/images/2020/02/freecodecamp.jpg)
-
-
 
 You can see Quincy from freeCodeCamp talk more about this at the 2018 JAMstack_conf:\
 <https://www.youtube.com/watch?v=e5H7CI3yqPY>
