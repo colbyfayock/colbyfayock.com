@@ -48,7 +48,7 @@ Utilizing the strengths of APIs is core to how you make a JAMstack app dynamic. 
 
 [Gatsby](https://www.gatsbyjs.org/) coined the phrase "[content mesh](https://www.gatsbyjs.org/blog/2018-10-04-journey-to-the-content-mesh/)" that does a pretty good job at describing the possibilities here.
 
-![Content Mesh](https://www.freecodecamp.org/news/content/images/2020/02/content-mesh-1.jpg)
+![Content Mesh](/assets/content-mesh-gatsby.jpg)
 
 You don't necessarily have to reach out to only one host for an API, but you can reach out to as many as you need (but try not to go overboard).
 
