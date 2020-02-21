@@ -80,7 +80,7 @@ Instead, whether your doing it yourself with S3 or piping it into Netlify (which
 
 JAMstack apps inherently satisfy most if not all of the [5 pillars of the AWS Well-Architected Framework](https://aws.amazon.com/blogs/apn/the-5-pillars-of-the-aws-well-architected-framework/). These are core concepts that AWS considers to deliver fast, secure, high-performing, resilient, and efficient infrastructure.
 
-![AWS Well-Architected](https://www.freecodecamp.org/news/content/images/2020/02/aws-well-architected-framework.jpg)
+![AWS Well-Architected](/assets/aws-well-architected-framework.jpg)
 
 Let's see how...
 
