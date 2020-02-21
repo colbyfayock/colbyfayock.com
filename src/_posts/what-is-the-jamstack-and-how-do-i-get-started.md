@@ -139,7 +139,7 @@ You can see Quincy from freeCodeCamp talk more about this at the 2018 JAMstack_c
 
 The main website for [Impossible Foods](https://impossiblefoods.com/) is no other than a Gatsby site! Everything from their recipes to their location finder are all compiled through our favorite "blazing fast" static site generator.
 
-![https://impossiblefoods.com/](https://www.freecodecamp.org/news/content/images/2020/02/impossible-foods.jpg)
+![https://impossiblefoods.com/](/assets/impossible-foods.jpg)
 
 ### web.dev
 
