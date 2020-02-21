@@ -116,7 +116,7 @@ Try to take advantage of these requests at compile time when you can, such as wi
 
 We already talked about the 3 components (Javascript, APIs, Markup), but what we didn't talk about is the fact that you don't necessarily have to use all 3 of them in order to consider your site worthy of the JAM label.
 
-![Wayne's World "we're not worthy"](https://www.freecodecamp.org/news/content/images/2020/02/were-not-worthy.gif)
+![Wayne's World "we're not worthy"](/assets/were-not-worthy.gif)
 
 Really it all boils down to the Markup and how you serve it. Instead of your Rails app rendering your HTML for you, you might host a precompiled React app on S3 that reaches out to Rails via a set of APIs.
 
