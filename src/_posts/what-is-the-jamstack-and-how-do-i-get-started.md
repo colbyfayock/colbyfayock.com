@@ -62,7 +62,7 @@ To be considered a JAMstack app, the HTML needs to be served statically, which b
 
 If you're piecing a page together and serving it with PHP, it's probably not a JAMstack app. If you upload and serve a single HTML file from storage that constructs an app with Javascript, it sounds like a JAMstack app.
 
-![Static output from Gatsby on AWS S3](https://www.freecodecamp.org/news/content/images/2020/02/aws-s3-static-files-gatsby.jpg)
+![Static output from Gatsby on AWS S3](/assets/aws-s3-static-files-gatsby.jpg)
 
 But that doesn't mean we have to always build 100% of the app within the browser. Tools like Gatsby and other [static site generators](https://www.staticgen.com/) allow us to pull in some or all of our API sources at build time and render the pages out as HTML files.
 
