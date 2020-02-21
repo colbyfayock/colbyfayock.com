@@ -145,7 +145,7 @@ The main website for [Impossible Foods](https://impossiblefoods.com/) is no ot
 
 Google's [web.dev](https://web.dev/) resource center is built out using the growing [11ty](https://www.11ty.dev/). You can even find the code made open source at: <https://github.com/GoogleChrome/web.dev>
 
-![https://web.dev/](https://www.freecodecamp.org/news/content/images/2020/02/google-web-dev-1.jpg)
+![https://web.dev/](/assets/google-web-dev.jpg)
 
 ## What are some tools I can use to build JAMstack sites or apps?
 
