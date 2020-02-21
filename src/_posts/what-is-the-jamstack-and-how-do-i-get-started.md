@@ -128,7 +128,7 @@ But you don't even need to have APIs. You don't even need to have Javascript! As
 
 Yes! freecodecamp.org and its learning portal [is a JAMstack site](https://www.freecodecamp.org/news/freecodecamp-jamstack/) built on Gatsby. Even with the complexities of providing an app to take code courses with, freeCodeCamp is able to pull together the power of a static site generator and powerful APIs to bring people around the world the power of learning code.
 
-![https://www.freecodecamp.org/](https://www.freecodecamp.org/news/content/images/2020/02/freecodecamp.jpg)
+![https://www.freecodecamp.org/](/assets/freecodecamp.jpg)
 
 You can see Quincy from freeCodeCamp talk more about this at the 2018 JAMstack_conf:\
 <https://www.youtube.com/watch?v=e5H7CI3yqPY>
