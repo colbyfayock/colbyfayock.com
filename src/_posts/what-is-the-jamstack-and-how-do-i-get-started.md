@@ -74,7 +74,7 @@ Using the term hosting here can be misleading if you're new to the concept. Yeah
 
 Instead, whether your doing it yourself with S3 or piping it into Netlify (which is actually [multi-cloud](https://www.netlify.com/blog/2018/05/14/how-netlify-migrated-to-a-fully-multi-cloud-infrastructure/)), your HTML and static assets are getting served from object storage. On the tail end of that you typically have a CDN like [Cloudflare](https://www.cloudflare.com/) which caches those files at locations all over the world making your pages load faster for the people visiting your site.
 
-![CDN distribution map](https://www.freecodecamp.org/news/content/images/2020/02/cdn-distribution-map.jpg)
+![CDN distribution map](/assets/cdn-distribution-map.jpg)
 
 ## So what makes a JAMstack app so great?
 
