@@ -25,7 +25,7 @@ export default function Template({ location, data }) {
     const socialImage = getShareImage({
         title: post.title,
         cloudName: 'fay',
-        imagePublicID: 'blog-social-card-1.0',
+        imagePublicID: 'blog-social-card-1.1',
         textColor: '232129',
         imageWidth: 1280,
         imageHeight: 640,
