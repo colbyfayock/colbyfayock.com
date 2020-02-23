@@ -93,6 +93,10 @@ export default function Template({ location, data }) {
                 content: 'summary_large_image'
             },
             {
+                property: 'twitter:image',
+                content: socialImage
+            },
+            {
                 property: 'twitter:site',
                 content: '@colbyfayock'
             },

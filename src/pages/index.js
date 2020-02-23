@@ -52,6 +52,10 @@ const Index = ({location, data}) => {
         content: 'summary_large_image'
       },
       {
+        property: 'twitter:image',
+        content: websiteSocialCard
+      },
+      {
         property: 'twitter:site',
         content: '@colbyfayock'
       },
