@@ -46,6 +46,18 @@ const Index = ({location, data}) => {
       {
         property: 'og:image:height',
         content: 640
+      },
+      {
+        property: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      {
+        property: 'twitter:site',
+        content: '@colbyfayock'
+      },
+      {
+        property: 'twitter:creator',
+        content: '@colbyfayock'
       }
   ],
   };
