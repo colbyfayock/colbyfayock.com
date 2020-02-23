@@ -40,6 +40,10 @@ const Index = ({location, data}) => {
         content: websiteSocialCard
       },
       {
+        property: 'og:image:secure_url',
+        content: websiteSocialCard
+      },
+      {
         property: 'og:image:width',
         content: 1280
       },

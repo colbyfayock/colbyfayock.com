@@ -81,6 +81,10 @@ export default function Template({ location, data }) {
                 content: socialImage
             },
             {
+                property: 'og:image:secure_url',
+                content: socialImage
+            },
+            {
                 property: 'og:image:width',
                 content: 1280
             },
