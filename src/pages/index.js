@@ -7,6 +7,8 @@ import { usePosts, useTalks } from 'hooks';
 import Layout from 'components/layout';
 import ArticleList from 'components/ArticleList';
 
+import websiteSocialCard from 'assets/images/website-social-card.jpg'
+
 const Index = ({location, data}) => {
 
   const posts = usePosts();
@@ -32,6 +34,18 @@ const Index = ({location, data}) => {
       {
           property: 'profile:username',
           content: 'colbyfayock'
+      },
+      {
+        property: 'og:image',
+        content: websiteSocialCard
+      },
+      {
+        property: 'og:image:width',
+        content: 1280
+      },
+      {
+        property: 'og:image:height',
+        content: 640
       }
   ],
   };
