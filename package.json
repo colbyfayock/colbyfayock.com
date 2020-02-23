@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Colby Fayock",
   "dependencies": {
+    "@jlengstorf/get-share-image": "^0.6.0",
     "gatsby": "^2.18.7",
     "gatsby-plugin-google-marketing-platform": "^0.1.17",
     "gatsby-plugin-postcss": "^2.1.16",

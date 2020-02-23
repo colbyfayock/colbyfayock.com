@@ -15,7 +15,25 @@ const Index = ({location, data}) => {
   const helmet_settings = {
     bodyAttributes: {
       class: 'home',
-    }
+    },
+    meta: [
+      {
+          property: 'og:url',
+          content: `https://www.colbyfayock.com`
+      },
+      {
+          property: 'og:type',
+          content: 'profile'
+      },
+      {
+          property: 'profile:first_name',
+          content: 'Colby'
+      },
+      {
+          property: 'profile:username',
+          content: 'colbyfayock'
+      }
+  ],
   };
 
   return (

@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Parameterize from 'parameterize';
+import getShareImage from '@jlengstorf/get-share-image';
 
 import Post from 'models/post';
 
@@ -21,6 +22,22 @@ export default function Template({ location, data }) {
 
     const post = new Post(data.markdownRemark);
 
+    const socialImage = getShareImage({
+        title: post.title,
+        cloudName: 'fay',
+        imagePublicID: 'blog-social-card-1.0',
+        textColor: '232129',
+        imageWidth: 1280,
+        imageHeight: 640,
+        textAreaWidth: 860,
+        textLeftOffset: 80,
+        titleFont: 'Source%20Sans%20Pro',
+        titleLeftOffset: 80,
+        titleFontSize: 70,
+        titleBottomOffset: 180,
+        titleExtraConfig: '_line_spacing_-10_semibold'
+    });
+
     const helmet_settings = {
         bodyAttributes: {
             class: `article post post-${Parameterize(post.title)}`,
@@ -28,9 +45,49 @@ export default function Template({ location, data }) {
         title: `${post.title} - Colby Fayock`,
         meta: [
             {
+                name: 'description',
+                content: post.excerpt
+            },
+            {
                 property: 'og:title',
                 content: `${post.title} - Colby Fayock`,
             },
+            {
+                property: 'og:description',
+                content: post.excerpt,
+            },
+            {
+                property: 'og:url',
+                content: `https://www.colbyfayock.com${post.path}`
+            },
+            {
+                property: 'og:type',
+                content: 'article'
+            },
+            {
+                property: 'article:publisher',
+                content: 'https://www.colbyfayock.com'
+            },
+            {
+                property: 'article:section',
+                content: post.category
+            },
+            {
+                property: 'article:tag',
+                content: post.category
+            },
+            {
+                property: 'og:image',
+                content: socialImage
+            },
+            {
+                property: 'og:image:width',
+                content: 1280
+            },
+            {
+                property: 'og:image:height',
+                content: 640
+            }
         ],
     };
 
@@ -49,12 +106,12 @@ export default function Template({ location, data }) {
                 </Hidden>
 
                 <Hidden>
-                    <a class="p-author h-card" href="https://colbyfayock.com">Colby Fayock</a>
-                    <img class="u-photo" src="https://www.colbyfayock.com/colby-fayock-bite-world.jpg" alt="Author Colby Fayock Image" />
+                    <a className="p-author h-card" href="https://colbyfayock.com">Colby Fayock</a>
+                    <img className="u-photo" src="https://www.colbyfayock.com/colby-fayock-bite-world.jpg" alt="Author Colby Fayock" />
                 </Hidden>
 
                 <Hidden>
-                    <a class="u-url" href={`https://colbyfayock.com${post.path}`}>
+                    <a className="u-url" href={`https://colbyfayock.com${post.path}`}>
                         { `https://colbyfayock.com${post.path}` }
                     </a>
                 </Hidden>
