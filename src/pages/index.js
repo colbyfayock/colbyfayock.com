@@ -20,20 +20,24 @@ const Index = ({location, data}) => {
     },
     meta: [
       {
-          property: 'og:url',
-          content: `https://www.colbyfayock.com`
+        name: 'image',
+        content: websiteSocialCard
       },
       {
-          property: 'og:type',
-          content: 'profile'
+        property: 'og:url',
+        content: `https://www.colbyfayock.com`
       },
       {
-          property: 'profile:first_name',
-          content: 'Colby'
+        property: 'og:type',
+        content: 'profile'
       },
       {
-          property: 'profile:username',
-          content: 'colbyfayock'
+        property: 'profile:first_name',
+        content: 'Colby'
+      },
+      {
+        property: 'profile:username',
+        content: 'colbyfayock'
       },
       {
         property: 'og:image',

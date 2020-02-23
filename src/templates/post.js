@@ -49,6 +49,10 @@ export default function Template({ location, data }) {
                 content: post.excerpt
             },
             {
+                name: 'image',
+                content: socialImage
+            },
+            {
                 property: 'og:title',
                 content: `${post.title} - Colby Fayock`,
             },
