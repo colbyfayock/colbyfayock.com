@@ -34,8 +34,9 @@ export default function Template({ location, data }) {
         titleFont: 'Source%20Sans%20Pro',
         titleLeftOffset: 80,
         titleFontSize: 70,
-        titleBottomOffset: 180,
-        titleExtraConfig: '_line_spacing_-10_semibold'
+        titleBottomOffset: -60,
+        titleExtraConfig: '_line_spacing_-10_semibold',
+        titleGravity: 'west'
     });
 
     const helmet_settings = {

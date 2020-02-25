@@ -947,10 +947,10 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@jlengstorf/get-share-image@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@jlengstorf/get-share-image/-/get-share-image-0.6.0.tgz#65faba0eeef22feb300c58780b6d021cc7066606"
-  integrity sha512-BnJAPloz0xXE2iz6Si0mg1Bvse597/C9ks4vBtdJqEYjcL9iXLNNLXafAFeVe/nYJ5M400/rENeeoZD32oI5TQ==
+"@jlengstorf/get-share-image@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@jlengstorf/get-share-image/-/get-share-image-0.7.0.tgz#234a97f416e2934aa5301117054b3515e411e22a"
+  integrity sha512-MZAjlaHoBfP0FOhKLhHbDJqeCYQDrfytxk/rmTEH+ZQ2z8NwB4duMwzu45pz6iawTxjzhAdF6HefT/Y4SaAJPQ==
 
 "@mikaelkristiansson/domready@^1.0.9":
   version "1.0.9"
