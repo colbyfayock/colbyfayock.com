@@ -5,7 +5,7 @@ import {
     FaDribbble,
     FaGithub,
     FaInstagram,
-    FaMedium
+    FaYoutube
 } from 'react-icons/fa';
 
 import { FiMail } from 'react-icons/fi';
@@ -42,14 +42,9 @@ const SocialIcons = () => {
             icon: <FaTwitter />,
         },
         {
-            title: 'Medium',
-            url: 'https://medium.com/@colbyfayock',
-            icon: <FaMedium />,
-        },
-        {
-            title: 'Instagram',
-            url: 'https://www.instagram.com/colbyfayock/',
-            icon: <FaInstagram />,
+            title: 'Youtube',
+            url: 'https://youtube.com/colbyfayock',
+            icon: <FaYoutube />,
         },
         {
             title: 'GitHub',
@@ -60,6 +55,11 @@ const SocialIcons = () => {
             title: 'Dribbble',
             url: 'http://dribbble.com/colbyfayock',
             icon: <FaDribbble />,
+        },
+        {
+            title: 'Instagram',
+            url: 'https://www.instagram.com/colbyfayock/',
+            icon: <FaInstagram />,
         },
         {
             title: 'Email',
