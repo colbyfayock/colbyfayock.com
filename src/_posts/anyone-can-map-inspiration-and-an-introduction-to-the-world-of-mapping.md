@@ -64,7 +64,7 @@ While it's increased more in some areas than others, the global improvements are
 
 There's also a creative side and beauty to great maps. Thick datasets applied to a map (or any medium) can often become literal works of art.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/pentagram-the-room-of-change.jpg)
+![](/assets/pentagram-the-room-of-change.jpg)
 
 [The Room of Change from Pentagram](https://www.pentagram.com/work/the-room-of-change?rel=discipline&rel-id=16)
 
