@@ -52,7 +52,7 @@ Mapping tools like this provide an effective means of giving as much information
 
 On a more positive note, we can get a detailed look over time of [how life expectancy is improving around the world](https://ourworldindata.org/life-expectancy).
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/life-expectancy-map.jpg)
+![](/assets/life-expectancy-map.jpg)
 
 [Life expectancy in 2019 from Our World in Data](https://ourworldindata.org/life-expectancy)
 
