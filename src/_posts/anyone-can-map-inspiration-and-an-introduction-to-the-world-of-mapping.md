@@ -116,7 +116,7 @@ You've probably experienced more map types than you realize. Given it's a powerf
 
 A **[choropleth map](https://en.wikipedia.org/wiki/Choropleth_map)** is commonly seen for election results and regional datasets where a particular geographic location represents a point of reference.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/cnn-democratic-primary-2020.jpg)
+![](/assets/cnn-democratic-primary-2020.jpg)
 
 [CNN Map of Democratic primary after Super Tuesday](https://www.cnn.com/election/2020/primaries-and-caucuses)
 
