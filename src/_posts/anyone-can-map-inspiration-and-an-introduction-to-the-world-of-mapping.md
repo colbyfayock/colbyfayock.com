@@ -10,7 +10,7 @@ Chef Gusteau was a visionary who created food experiences for the world to enjoy
 
 If you've seen the [Pixar](https://www.pixar.com/) movie [Ratatouille](https://movies.disney.com/ratatouille), you should know who [Chef Gusteau](https://ratatouille.fandom.com/wiki/Auguste_Gusteau) is. He helped our "little chef" [Remy](https://pixar.fandom.com/wiki/Remy) the rat navigate the culinary world and become the top chef of Paris.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/ratatouille-remy-chef-gusteau-paris.jpg)
+![](/assets/ratatouille-remy-chef-gusteau-paris.jpg)
 
 Remy from Ratatouille overlooking Gusteau's in Paris
 
@@ -114,13 +114,13 @@ Maps come in all shapes and sizes. While shaded geographic areas typically work 
 
 You've probably experienced more map types than you realize. Given it's a powerful way to present data, maps are used frequently across the web.
 
-A [**choropleth map**](https://en.wikipedia.org/wiki/Choropleth_map) is commonly seen for election results and regional datasets where a particular geographic location represents a point of reference.
+A **[choropleth map](https://en.wikipedia.org/wiki/Choropleth_map)** is commonly seen for election results and regional datasets where a particular geographic location represents a point of reference.
 
 ![](https://www.freecodecamp.org/news/content/images/2020/03/cnn-democratic-primary-2020.jpg)
 
 [CNN Map of Democratic primary after Super Tuesday](https://www.cnn.com/election/2020/primaries-and-caucuses)
 
-**[Heat maps](https://en.wikipedia.org/wiki/Heat_map) **on the other hand allow you to reflect on the intensity of a data point over a given area. This is powerful when you want to represent both the area covered of a dataset but also range the data represents at the same time, such as population density.
+**[Heat maps](https://en.wikipedia.org/wiki/Heat_map)** on the other hand allow you to reflect on the intensity of a data point over a given area. This is powerful when you want to represent both the area covered of a dataset but also range the data represents at the same time, such as population density.
 
 ![](https://www.freecodecamp.org/news/content/images/2020/03/arcgis-population-heatmap-2015.jpg)
 
@@ -184,15 +184,15 @@ And it certainly helps that we have plenty of tooling to help us get there. Whet
 
 For the developers out there who are inspired to get started, here are a few resources to start off with mapping:
 
--   [How to build a mapping app in React the easy way with Leaflet](https://www.freecodecamp.org/news/easily-spin-up-a-mapping-app-in-react-with-leaflet/)
--   [How to Visualize Air Pollution using Folium Maps - An In Depth Tutorial](https://www.freecodecamp.org/news/visualizing-air-pollution-folium-maps/)
--   [How to integrate maps in React Native using react-native-maps](https://www.freecodecamp.org/news/how-to-integrate-maps-in-react-native-using-react-native-maps-5745490fe055/)
--   [How to Create your own Santa Tracker with Gatsby and React Leaflet](https://www.freecodecamp.org/news/create-your-own-santa-tracker-with-gatsby-and-react-leaflet/)
--   [Building Maps with Impact on React and the JAMstack](https://www.youtube.com/watch?v=a-1rcaQ-aSk&list=PLeGxIOPLk9EKBu_B0WpBLYkkHQIGki2EZ&index=3) (Video)
--   [Gatsby Starter Leaflet](https://github.com/colbyfayock/gatsby-starter-leaflet)
--   [Leaflet](https://leafletjs.com/)
--   [OpenLayers](https://openlayers.org/)
--   [My Maps by Google](https://www.google.com/maps/about/mymaps/)
+* [How to build a mapping app in React the easy way with Leaflet](https://www.freecodecamp.org/news/easily-spin-up-a-mapping-app-in-react-with-leaflet/)
+* [How to Visualize Air Pollution using Folium Maps - An In Depth Tutorial](https://www.freecodecamp.org/news/visualizing-air-pollution-folium-maps/)
+* [How to integrate maps in React Native using react-native-maps](https://www.freecodecamp.org/news/how-to-integrate-maps-in-react-native-using-react-native-maps-5745490fe055/)
+* [How to Create your own Santa Tracker with Gatsby and React Leaflet](https://www.freecodecamp.org/news/create-your-own-santa-tracker-with-gatsby-and-react-leaflet/)
+* [Building Maps with Impact on React and the JAMstack](https://www.youtube.com/watch?v=a-1rcaQ-aSk&list=PLeGxIOPLk9EKBu_B0WpBLYkkHQIGki2EZ&index=3) (Video)
+* [Gatsby Starter Leaflet](https://github.com/colbyfayock/gatsby-starter-leaflet)
+* [Leaflet](https://leafletjs.com/)
+* [OpenLayers](https://openlayers.org/)
+* [My Maps by Google](https://www.google.com/maps/about/mymaps/)
 
 ## What's your favorite map experience or tool?
 
