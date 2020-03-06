@@ -30,7 +30,7 @@ With this inspiration, you'll be taken on a journey to learn more about the diff
 
 Take for instance [NASA's FIRMS service](https://firms.modaps.eosdis.nasa.gov/map/), which provides a realtime look at active fire data around the world.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/nasa-firms-active-fires-world.jpg)
+![](/assets/nasa-firms-active-fires-world.jpg)
 
 Active fires around the world via [NASA FIRMS](https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms)
 
