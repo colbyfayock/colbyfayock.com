@@ -10,7 +10,9 @@ Chef Gusteau was a visionary who created food experiences for the world to enjoy
 
 If you've seen the [Pixar](https://www.pixar.com/) movie [Ratatouille](https://movies.disney.com/ratatouille), you should know who [Chef Gusteau](https://ratatouille.fandom.com/wiki/Auguste_Gusteau) is. He helped our "little chef" [Remy](https://pixar.fandom.com/wiki/Remy) the rat navigate the culinary world and become the top chef of Paris.
 
-![](/assets/ratatouille-remy-chef-gusteau-paris.jpg "Remy from Ratatouille overlooking Gusteau's in Paris")
+![](/assets/ratatouille-remy-chef-gusteau-paris.jpg)
+
+*Remy from Ratatouille overlooking Gusteau's in Paris*
 
 Throughout the movie, we get a lot of great quotes on their journey. But the one we're interested in here is Gusteau's motto, and the title of his book, "Anyone can cook!" So how can we apply this and the lessons to our own mapping journey?
 
@@ -30,7 +32,7 @@ Take for instance [NASA's FIRMS service](https://firms.modaps.eosdis.nasa.gov/m
 
 ![](/assets/nasa-firms-active-fires-world.jpg)
 
-Active fires around the world via [NASA FIRMS](https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms)
+*Active fires around the world via [NASA FIRMS](https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms)*
 
 Fires are a real-world example of disasters that we can learn from. This tool is used to help manage resources for stopping and preventing those fires by allowing scientists and those that are curious to analyze burn areas and model the data itself.
 
@@ -40,7 +42,7 @@ And something very current, cases of [COVID-19 (Coronavrius)](https://www.who.i
 
 ![](/assets/john-hopkins-coronavirus-map.jpg)
 
-[Global cases of Coronavirus (COVID-19) from John Hopkins CSSE](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
+*[Global cases of Coronavirus (COVID-19) from John Hopkins CSSE](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)*
 
 This map tracks the spread of the virus in real time, allowing scientists to model it's coverage and produce study results to share with the global community.
 
@@ -52,7 +54,7 @@ On a more positive note, we can get a detailed look over time of [how life expe
 
 ![](/assets/life-expectancy-map.jpg)
 
-[Life expectancy in 2019 from Our World in Data](https://ourworldindata.org/life-expectancy)
+*[Life expectancy in 2019 from Our World in Data](https://ourworldindata.org/life-expectancy)*
 
 While it's increased more in some areas than others, the global improvements are clear, and we get to see this rise in some countries from hundreds of years ago!
 
@@ -64,7 +66,7 @@ There's also a creative side and beauty to great maps. Thick datasets applied to
 
 ![](/assets/pentagram-the-room-of-change.jpg)
 
-[The Room of Change from Pentagram](https://www.pentagram.com/work/the-room-of-change?rel=discipline&rel-id=16)
+*[The Room of Change from Pentagram](https://www.pentagram.com/work/the-room-of-change?rel=discipline&rel-id=16)*
 
 Whether showcased in an exhibit or [one of the many options to purchase on Etsy](https://www.etsy.com/search?q=map), presenting meaningful data in a beautiful way can be impactful not just from an informational perspective, but also a cultural one.
 
@@ -74,7 +76,7 @@ Maps can also provide some interactivity that makes them fun to explore while yo
 
 ![](/assets/dailyfx-global-commodities.jpg)
 
-[Global Commodities interactive map from DailyFX](https://www.dailyfx.com/research/global-commodities/globe)
+*[Global Commodities interactive map from DailyFX](https://www.dailyfx.com/research/global-commodities/globe)*
 
 Though the data can frequently be thick and boring on its own, that doesn't mean we can't find more interesting ways to present the data to interact with.
 
@@ -84,7 +86,7 @@ This map from at [radiooooo.com](http://radiooooo.com/) allows you to travel a
 
 ![](/assets/radiooooo-music-radio-map.jpg)
 
-[Music Radio from radiooooo.com](http://radiooooo.com/)
+*[Music Radio from radiooooo.com](http://radiooooo.com/)*
 
 Their use of a map makes it easy to identify the part of the world the person wants to explore.
 
@@ -94,7 +96,7 @@ Whether you notice it or not when you're browsing the web every day, you most li
 
 ![](/assets/reddit-truck-driver-map-dataisbeautiful.jpg)
 
-[u/dancingchopstix's recordings of their truck driving travels](https://www.reddit.com/r/dataisbeautiful/comments/csl706/i_recorded_my_travels_as_a_professional_truck/)
+*[u/dancingchopstix's recordings of their truck driving travels](https://www.reddit.com/r/dataisbeautiful/comments/csl706/i_recorded_my_travels_as_a_professional_truck/)*
 
 Luckily, we don't have to work hard to find this inspiration, as we can visit aggregations of beautiful maps and general datasets like that of [/r/dataisbeautiful](https://www.reddit.com/r/dataisbeautiful/).
 
@@ -106,7 +108,7 @@ Maps come in all shapes and sizes. While shaded geographic areas typically work 
 
 ![](/assets/50-state-project-road-strip.jpg)
 
-[50 State Project road trip map](https://www.the50statesproject.com/)
+*[50 State Project road trip map](https://www.the50statesproject.com/)*
 
 ### Exploring common map types
 
@@ -116,13 +118,13 @@ A **[choropleth map](https://en.wikipedia.org/wiki/Choropleth_map)** is common
 
 ![](/assets/cnn-democratic-primary-2020.jpg)
 
-[CNN Map of Democratic primary after Super Tuesday](https://www.cnn.com/election/2020/primaries-and-caucuses)
+*[CNN Map of Democratic primary after Super Tuesday](https://www.cnn.com/election/2020/primaries-and-caucuses)*
 
 **[Heat maps](https://en.wikipedia.org/wiki/Heat_map)** on the other hand allow you to reflect on the intensity of a data point over a given area. This is powerful when you want to represent both the area covered of a dataset but also range the data represents at the same time, such as population density.
 
 ![](/assets/arcgis-population-heatmap-2015.jpg)
 
-[ArcGIS GPW 2015 Population Density heat map from](https://www.arcgis.com/home/webmap/viewer.html?useExisting=1&layers=90978c3a3a664c20b8da8fc21de6071b)
+*[ArcGIS GPW 2015 Population Density heat map from](https://www.arcgis.com/home/webmap/viewer.html?useExisting=1&layers=90978c3a3a664c20b8da8fc21de6071b)*
 
 ### Learn from others, but don't be afraid to create a new path
 
@@ -136,9 +138,11 @@ But that also means you don't need to be stuck working within the constraints of
 
 While there may not always be a right way, there [sometimes are wrong ways](https://twitter.com/TerribleMaps).  But don't let failure stop you!
 
-https://twitter.com/TerribleMaps/status/1119336763762331649
+![](/assets/terrible-maps-tweet.jpg)
 
-Take these failures as a learning experience in your journey of creating interesting and effective maps. By being bold with your experimentation, you'll find yourself discovering techniques or creating new ways that can ultimately help people better understand map data.
+*<https://twitter.com/TerribleMaps/status/1119336763762331649>*
+
+[](https://twitter.com/TerribleMaps/status/1119336763762331649)Take these failures as a learning experience in your journey of creating interesting and effective maps. By being bold with your experimentation, you'll find yourself discovering techniques or creating new ways that can ultimately help people better understand map data.
 
 ## You don't have to be a cartographer to build great maps
 
@@ -148,7 +152,7 @@ Towards the end of Remy's journey, the food critic Anton Ego who was once critic
 
 ![](/assets/anton-ego-realization.jpg)
 
-Ratatouille critic Anton Ego's revelation
+*Ratatouille critic Anton Ego's revelation*
 
 While it's not reasonable to assume that every single one of us will be a great mapper, everyone has the opportunity to try and explore the medium.
 
