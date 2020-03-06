@@ -84,7 +84,7 @@ Though the data can frequently be thick and boring on its own, that doesn't mean
 
 This map from at [radiooooo.com](http://radiooooo.com/) allows you to travel around the world and through time.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/radiooooo-music-radio-map.jpg)
+![](/assets/radiooooo-music-radio-map.jpg)
 
 [Music Radio from radiooooo.com](http://radiooooo.com/)
 
