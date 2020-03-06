@@ -138,31 +138,7 @@ But that also means you don't need to be stuck working within the constraints of
 
 While there may not always be a right way, there [sometimes are wrong ways](https://twitter.com/TerribleMaps).  But don't let failure stop you!
 
-> [![](https://pbs.twimg.com/profile_images/695741339326160900/CalT3T7Y_bigger.jpg)](https://twitter.com/TerribleMaps)
->
-> [
->
-> Terrible Maps@TerribleMaps
->
-> ](https://twitter.com/TerribleMaps)
->
-> [](https://twitter.com/TerribleMaps/status/1119336763762331649)
->
-> Map of every pub in the UK.
->
-> [![View image on Twitter](https://pbs.twimg.com/media/D4iu1uUXsAEnymC?format=png&name=medium "View image on Twitter")](https://twitter.com/TerribleMaps/status/1119336763762331649/photo/1)
->
-> [12.6K](https://twitter.com/intent/like?tweet_id=1119336763762331649 "Like")
->
-> [3:27 PM - Apr 19, 2019](https://twitter.com/TerribleMaps/status/1119336763762331649)
->
-> [Twitter Ads info and privacy](https://support.twitter.com/articles/20175256 "Twitter Ads info and privacy")
-
-[
-
-2,861 people are talking about this
-
-](https://twitter.com/TerribleMaps/status/1119336763762331649 "View the conversation on Twitter")
+https://twitter.com/TerribleMaps/status/1119336763762331649
 
 Take these failures as a learning experience in your journey of creating interesting and effective maps. By being bold with your experimentation, you'll find yourself discovering techniques or creating new ways that can ultimately help people better understand map data.
 
@@ -172,7 +148,7 @@ Take these failures as a learning experience in your journey of creating interes
 
 Towards the end of Remy's journey, the food critic Anton Ego who was once critical of Gusteau's claim that "anyone can cook" came to a realization of what our chef truly meant.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/anton-ego-realization.jpg)
+![](/assets/anton-ego-realization.jpg)
 
 Ratatouille critic Anton Ego's revelation
 
