@@ -94,7 +94,7 @@ Their use of a map makes it easy to identify the part of the world the person wa
 
 Whether you notice it or not when you're browsing the web every day, you most likely run into visualizations of datasets that create powerful ways to present that data in a way that's more easily understood.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/reddit-truck-driver-map-dataisbeautiful.jpg)
+![](/assets/reddit-truck-driver-map-dataisbeautiful.jpg)
 
 [u/dancingchopstix's recordings of their truck driving travels](https://www.reddit.com/r/dataisbeautiful/comments/csl706/i_recorded_my_travels_as_a_professional_truck/)
 
