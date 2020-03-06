@@ -74,7 +74,7 @@ Whether showcased in an exhibit or [one of the many options to purchase on Etsy
 
 Maps can also provide some interactivity that makes them fun to explore while you learn more about the dataset, like this globe that maps out global commodities from DailyFX.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/dailyfx-global-commodities.jpg)
+![](/assets/dailyfx-global-commodities.jpg)
 
 [Global Commodities interactive map from DailyFX](https://www.dailyfx.com/research/global-commodities/globe)
 
