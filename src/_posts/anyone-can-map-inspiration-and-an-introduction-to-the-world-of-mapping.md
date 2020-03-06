@@ -40,7 +40,7 @@ Fires are a real-world example of disasters that we can learn from. This tool is
 
 And something very current, cases of [COVID-19 (Coronavrius)](https://www.who.int/health-topics/coronavirus) around the world by  [Johns Hopkins Center for Systems Science and Engineering](https://systems.jhu.edu/).
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/john-hopkins-coronavirus-map.jpg)
+![](/assets/john-hopkins-coronavirus-map.jpg)
 
 [Global cases of Coronavirus (COVID-19) from John Hopkins CSSE](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
 
