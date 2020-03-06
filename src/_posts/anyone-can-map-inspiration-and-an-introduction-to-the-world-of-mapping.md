@@ -122,7 +122,7 @@ A **[choropleth map](https://en.wikipedia.org/wiki/Choropleth_map)** is common
 
 **[Heat maps](https://en.wikipedia.org/wiki/Heat_map)** on the other hand allow you to reflect on the intensity of a data point over a given area. This is powerful when you want to represent both the area covered of a dataset but also range the data represents at the same time, such as population density.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/arcgis-population-heatmap-2015.jpg)
+![](/assets/arcgis-population-heatmap-2015.jpg)
 
 [ArcGIS GPW 2015 Population Density heat map from](https://www.arcgis.com/home/webmap/viewer.html?useExisting=1&layers=90978c3a3a664c20b8da8fc21de6071b)
 
