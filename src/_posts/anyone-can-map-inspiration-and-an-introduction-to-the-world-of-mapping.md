@@ -106,7 +106,7 @@ Luckily, we don't have to work hard to find this inspiration, as we can visit ag
 
 Maps come in all shapes and sizes. While shaded geographic areas typically work well with election results, it might not work as well for showcasing your summer road trip.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/50-state-project-road-strip.jpg)
+![](/assets/50-state-project-road-strip.jpg)
 
 [50 State Project road trip map](https://www.the50statesproject.com/)
 
