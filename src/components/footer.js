@@ -1,12 +1,26 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { FaTwitter, FaYoutube } from 'react-icons/fa';
 
 import SocialIcons from './social-icons';
 import Hidden from 'components/Hidden';
 
 import image_resume from '../../static/assets/colby-fayock-front-end-development-web-design-resume.pdf';
 
+
+
 const Footer = () => {
+
+  function handleOnTwitterClick(e) {
+    e.preventDefault();
+
+    const host = 'https://twitter.com/intent/tweet';
+    const message = 'Hey%20@colbyfayock!%20What%E2%80%99s%20good%3F%20😎'
+    const action = `${host}?text=${message}`;
+
+    window.open(action, 'share-twitter', 'width=550, height=235');
+  }
+
   return (
     <div className="footer">
 
@@ -15,9 +29,24 @@ const Footer = () => {
         <div className="content">
 
           <div className="row">
-            <p>
-              Looking to refresh your web presence? <a href="mailto:hello@colbyfayock.com">Contact me now</a> for availability and pricing.
+            <p className="emoji">
+              👨‍🚀 😎 👨‍💻
             </p>
+            <p>
+              Stay cool with more Javascript, UX, and other interesting things
+            </p>
+            <ul>
+              <li>
+                <button onClick={handleOnTwitterClick}>
+                  <FaTwitter/> Follow & Say Hi
+                </button>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/colbyfayock?sub_confirmation=1">
+                  <FaYoutube/> Subscribe
+                </a>
+              </li>
+            </ul>
           </div>
 
         </div>
