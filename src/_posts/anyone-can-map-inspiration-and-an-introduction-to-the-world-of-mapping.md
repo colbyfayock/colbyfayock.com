@@ -10,9 +10,7 @@ Chef Gusteau was a visionary who created food experiences for the world to enjoy
 
 If you've seen the [Pixar](https://www.pixar.com/) movie [Ratatouille](https://movies.disney.com/ratatouille), you should know who [Chef Gusteau](https://ratatouille.fandom.com/wiki/Auguste_Gusteau) is. He helped our "little chef" [Remy](https://pixar.fandom.com/wiki/Remy) the rat navigate the culinary world and become the top chef of Paris.
 
-![Remy from Ratatouille overlooking Gusteau's in Paris](/assets/ratatouille-remy-chef-gusteau-paris.jpg "Remy from Ratatouille overlooking Gusteau's in Paris")
-
-*Remy from Ratatouille overlooking Gusteau's in Paris*
+{{<figure src="/assets/ratatouille-remy-chef-gusteau-paris.jpg" caption="Remy from Ratatouille overlooking Gusteau's in Paris" link="undefined">}}
 
 Throughout the movie, we get a lot of great quotes on their journey. But the one we're interested in here is Gusteau's motto, and the title of his book, "Anyone can cook!" So how can we apply this and the lessons to our own mapping journey?
 
