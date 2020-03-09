@@ -3,8 +3,10 @@ import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Parameterize from 'parameterize';
 import getShareImage from '@jlengstorf/get-share-image';
+import { FaTwitter } from 'react-icons/fa';
 
 import Post from 'models/post';
+import { createTweetAction, openTweet } from 'lib/social';
 
 import Layout from 'components/layout';
 import ArticleHeader from 'components/ArticleHeader';
@@ -39,6 +41,8 @@ export default function Template({ location, data }) {
         titleGravity: 'west'
     });
 
+    const postUrl = `https://www.colbyfayock.com${post.path}`;
+
     const helmet_settings = {
         bodyAttributes: {
             class: `article post post-${Parameterize(post.title)}`,
@@ -63,7 +67,7 @@ export default function Template({ location, data }) {
             },
             {
                 property: 'og:url',
-                content: `https://www.colbyfayock.com${post.path}`
+                content: postUrl
             },
             {
                 property: 'og:type',
@@ -116,6 +120,22 @@ export default function Template({ location, data }) {
         ],
     };
 
+
+    const twitterAction = createTweetAction({
+        message: [
+            `${post.title} from @colbyfayock`,
+            '👏👏👏👏',
+            postUrl
+        ]
+    });
+
+    function handleOnTwitterClick(e) {
+        e.preventDefault();
+        openTweet({
+            message: twitterAction
+        })
+    }
+
     return (
         <Layout location={location}>
             <article className="container article-content h-entry" itemScope="" itemType="http://schema.org/BlogPosting">
@@ -141,7 +161,14 @@ export default function Template({ location, data }) {
                     </a>
                 </Hidden>
 
+                <p className="article-tweet">
+                    <a href={twitterAction} onClick={handleOnTwitterClick}>
+                        <FaTwitter/> Share this on Twitter
+                    </a>
+                </p>
+
             </article>
+
         </Layout>
     );
 }

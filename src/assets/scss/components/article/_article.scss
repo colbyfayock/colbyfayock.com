@@ -46,6 +46,28 @@
 
 }
 
+.article-tweet {
+
+  &,
+  a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    font-size: 1.4em;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  svg {
+    margin-right: .5em;
+  }
+
+}
+
 @import 'article-header';
 @import 'article-content-body';
 @import 'article-meta';

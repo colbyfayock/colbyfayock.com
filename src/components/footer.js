@@ -2,23 +2,25 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { FaTwitter, FaYoutube } from 'react-icons/fa';
 
+import { createTweetAction, openTweet } from 'lib/social';
+
 import SocialIcons from './social-icons';
 import Hidden from 'components/Hidden';
 
 import image_resume from '../../static/assets/colby-fayock-front-end-development-web-design-resume.pdf';
 
-
-
 const Footer = () => {
+  const twitterAction = createTweetAction({
+    message: [
+      `Hey @colbyfayock! What's good? 😎`
+    ]
+  });
 
   function handleOnTwitterClick(e) {
     e.preventDefault();
-
-    const host = 'https://twitter.com/intent/tweet';
-    const message = 'Hey%20@colbyfayock!%20What%E2%80%99s%20good%3F%20😎'
-    const action = `${host}?text=${message}`;
-
-    window.open(action, 'share-twitter', 'width=550, height=235');
+    openTweet({
+        message: twitterAction
+    })
   }
 
   return (
@@ -37,9 +39,9 @@ const Footer = () => {
             </p>
             <ul>
               <li>
-                <button onClick={handleOnTwitterClick}>
+                <a href={twitterAction} onClick={handleOnTwitterClick}>
                   <FaTwitter/> Follow & Say Hi
-                </button>
+                </a>
               </li>
               <li>
                 <a href="https://www.youtube.com/colbyfayock?sub_confirmation=1">
