@@ -10,7 +10,7 @@ Chef Gusteau was a visionary who created food experiences for the world to enjoy
 
 If you've seen the [Pixar](https://www.pixar.com/) movie [Ratatouille](https://movies.disney.com/ratatouille), you should know who [Chef Gusteau](https://ratatouille.fandom.com/wiki/Auguste_Gusteau) is. He helped our "little chef" [Remy](https://pixar.fandom.com/wiki/Remy) the rat navigate the culinary world and become the top chef of Paris.
 
-![](/assets/ratatouille-remy-chef-gusteau-paris.jpg)
+![Remy from Ratatouille overlooking Gusteau's in Paris](/assets/ratatouille-remy-chef-gusteau-paris.jpg "Remy from Ratatouille overlooking Gusteau's in Paris")
 
 *Remy from Ratatouille overlooking Gusteau's in Paris*
 
