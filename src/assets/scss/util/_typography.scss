@@ -92,7 +92,8 @@ p,
 ul,
 ol,
 pre,
-blockquote {
+blockquote,
+figure {
 
     line-height: $line-height-base;
 
@@ -109,7 +110,8 @@ blockquote {
 p,
 ul,
 ol,
-pre {
+pre,
+figure {
     font-size: $font-size-copy;
     margin: $margin-top-copy 0 $margin-bottom-copy;
 }
@@ -182,4 +184,11 @@ pre {
         white-space: pre-wrap;
     }
 
+}
+
+figcaption {
+    text-align: center;
+    margin-top: .5em;
+    font-style: italic;
+    color: $color-grey4;
 }
