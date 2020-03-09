@@ -5,8 +5,10 @@
   "author": "Colby Fayock",
   "dependencies": {
     "@jlengstorf/get-share-image": "^0.7.0",
+    "eslint-plugin-graphql": "^3.1.1",
     "gatsby": "^2.18.7",
     "gatsby-plugin-google-marketing-platform": "^0.1.17",
+    "gatsby-plugin-netlify-cms": "^4.1.41",
     "gatsby-plugin-postcss": "^2.1.16",
     "gatsby-plugin-react-helmet": "^3.1.16",
     "gatsby-plugin-resolve-src": "^2.0.0",
@@ -15,6 +17,7 @@
     "gatsby-source-filesystem": "^2.1.40",
     "gatsby-transformer-remark": "^2.6.39",
     "netlify-cms": "^2.9.7",
+    "netlify-cms-app": "^2.11.27",
     "node-sass": "^4.13.0",
     "normalize.css": "^8.0.1",
     "parameterize": "^1.0.0",

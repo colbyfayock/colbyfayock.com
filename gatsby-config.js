@@ -65,6 +65,13 @@ module.exports = {
                 fetchLimit: 10000,
                 token: process.env.WEBMENTIONS_TOKEN
             }
+        },
+        {
+            resolve: 'gatsby-plugin-netlify-cms',
+            options: {
+                manualInit: true,
+                modulePath: `${__dirname}/src/cms/cms.js`,
+            },
         }
     ],
 };
