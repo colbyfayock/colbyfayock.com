@@ -1,8 +1,8 @@
 import { init, registerEditorComponent } from 'netlify-cms-app'
 
-import { figure } from './components/components';
+import { Figure } from 'netlify-cms-editor-component-figure';
 
-registerEditorComponent(figure);
+registerEditorComponent(Figure);
 
 init({
   config: {

@@ -8577,6 +8577,11 @@ netlify-cms-core@^2.21.0:
     url "^0.11.0"
     what-input "^5.1.4"
 
+netlify-cms-editor-component-figure@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/netlify-cms-editor-component-figure/-/netlify-cms-editor-component-figure-0.0.1.tgz#98a5d161a4069c5fe0d14438e914dc203e9594a6"
+  integrity sha512-iz4ayCIpjiXoY+hRlukAyvH1ZbciuIGi8fCwzBIZW5WeNnZ7TX6HrsgwoA97juwSTtCnr1Ad74wVLW2a9h+n/Q==
+
 netlify-cms-editor-component-image@^2.4.2:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/netlify-cms-editor-component-image/-/netlify-cms-editor-component-image-2.4.3.tgz#73f01b412d2b59f7fb4cb0d93b4229535c8cc749"
