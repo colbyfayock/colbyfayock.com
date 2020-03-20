@@ -384,9 +384,7 @@ leafletElement.fitBounds(bounds);
 
 Once you save  and reload the page, you should now see a blue path representing the jump from each of our locations on the map!
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/mapping-app-with-road-trip-path.jpg)
-
-Mapping app with road trip path
+<figure><img src="/assets/mapping-app-with-road-trip-path.jpg" alt="" /><figcaption>Mapping app with road trip path</figcaption></figure>
 
 One issue though. If you notice, we only see the path. This is because we need to add some CSS which we'll get to in the next step.
 
