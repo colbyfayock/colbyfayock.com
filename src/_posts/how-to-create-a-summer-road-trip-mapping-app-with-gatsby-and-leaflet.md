@@ -1,6 +1,6 @@
 ---
 template: post
-title: ' How to Create a Summer Road Trip Mapping App with Gatsby and Leaflet'
+title: How to Create a Summer Road Trip Mapping App with Gatsby and Leaflet
 date: 2020-03-20T16:48:25.121Z
 category: coding
 ---
