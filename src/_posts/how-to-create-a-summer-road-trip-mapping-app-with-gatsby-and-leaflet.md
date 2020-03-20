@@ -12,9 +12,7 @@ Get ready for the summer by building your own road trip mapping app with this st
 
 We'll be walking through building a new mapping app that shows a route representing the trip. Each location will have a little card where we can add a picture and some things we did.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/summer-road-trip-map.jpg)
-
-[Colbana's Summer Road Trip](https://summer-road-trip.netlify.com/)
+<figure><img src="/assets/summer-road-trip-map.jpg" alt="" /><figcaption>[Colbana's Summer Road Trip](https://summer-road-trip.netlify.com/)</figcaption></figure>
 
 To get started, we're going to use this [Leaflet Gatsby Starter](https://github.com/colbyfayock/gatsby-starter-leaflet) I created to make the initial setup a little smoother. With our app bootstrapped, we'll create our list of locations and use Leaflet's API to draw our route on the map.
 
