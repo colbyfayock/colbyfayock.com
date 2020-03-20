@@ -44,9 +44,7 @@ cd my-road-trip
 yarn develop
 ```
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/terminal-starting-gatsby-development-server.jpg)
-
-Starting your Gatsby app in the terminal
+<figure><img src="/assets/terminal-starting-gatsby-development-server.jpg" alt="" /><figcaption>Starting your Gatsby app in the terminal</figcaption></figure>
 
 If all goes as planned, your server should start and you should now be able to see your basic mapping app in your browser!
 
