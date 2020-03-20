@@ -87,9 +87,7 @@ Now that we have those pieces cleared out, we can remove all of the following im
 
 After, our map should still work, but not do anything.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/new-empty-mapping-app.jpg)
-
-New mapping app with nothing going on
+<figure><img src="/assets/new-empty-mapping-app.jpg" alt="" /><figcaption>New mapping app with nothing going on</figcaption></figure>
 
 [Follow along with the commit](https://github.com/colbyfayock/my-road-trip/commit/c92e8f970c8a2f2436f65ea0890680a88b747c49)
 
