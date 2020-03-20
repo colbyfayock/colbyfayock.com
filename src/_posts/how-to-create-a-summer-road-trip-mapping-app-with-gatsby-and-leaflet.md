@@ -441,9 +441,7 @@ There's three components to our styles above:
 
 Once those styles are saved, you should now see the points on the map representing each location. Additionally, you should be able to click each of these points to open up a popup containing information about the stop.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/road-trip-mapping-app-with-popup.jpg)
-
-Road trip mapping app with popups
+<figure><img src="/assets/road-trip-mapping-app-with-popup.jpg" alt="" /><figcaption>Road trip mapping app with popups</figcaption></figure>
 
 [Follow along with the commit](https://github.com/colbyfayock/my-road-trip/commit/d2bac5c1b04a32837366de6f15f14d5342134d38)
 
