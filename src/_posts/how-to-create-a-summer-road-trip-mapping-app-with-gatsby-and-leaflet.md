@@ -35,9 +35,7 @@ We'll also want to set up a foundation for our map. We can do this by utilizing 
 gatsby new my-road-trip https://github.com/colbyfayock/gatsby-starter-leaflet
 ```
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/terminal-creating-new-gatsby-app.jpg)
-
-Creating a new Leaflet Gatsby app in the terminal
+<figure><img src="/assets/terminal-creating-new-gatsby-app.jpg" alt="" /><figcaption>Creating a new Leaflet Gatsby app in the terminal</figcaption></figure>
 
 After that's finished running, you can navigate to the newly created project directory and start your local development server:
 
