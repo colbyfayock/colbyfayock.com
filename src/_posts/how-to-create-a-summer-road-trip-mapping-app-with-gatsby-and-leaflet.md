@@ -26,8 +26,8 @@ Yup. If you haven't played with maps before, don't be discouraged! It's not as b
 
 If you followed along with my last tutorial for [building a Santa Tracker](https://www.freecodecamp.org/news/create-your-own-santa-tracker-with-gatsby-and-react-leaflet/), you can follow the same steps to get started. If not, we'll want to make sure we have the following set up:
 
--   [node](https://nodejs.org/en/) or [yarn](https://yarnpkg.com/en/) - I'll be using yarn, but you can substitute with npm where appropriate
--   [Gatsby's CLI](https://www.gatsbyjs.org/docs/gatsby-cli/) - `yarn global add gatsby-cli`
+* [node](https://nodejs.org/en/) or [yarn](https://yarnpkg.com/en/) - I'll be using yarn, but you can substitute with npm where appropriate
+* [Gatsby's CLI](https://www.gatsbyjs.org/docs/gatsby-cli/) - `yarn global add gatsby-cli`
 
 If you're not sure about one of the above items, you can try checking out the beginning [my previous tutorial](https://www.freecodecamp.org/news/create-your-own-santa-tracker-with-gatsby-and-react-leaflet/).
 
@@ -80,18 +80,18 @@ Next, we don't want a marker this time, so let's remove the `<Marker` componen
 
 Now that we have those pieces cleared out, we can remove all of the following imports and variables from the top of our file:
 
--   useRef
--   Marker
--   promiseToFlyTo
--   getCurrentLocation
--   gatsby_astronaut
--   timeToZoom
--   timeToOpenPopupAfterZoom
--   timeToUpdatePopupAfterZoom
--   ZOOM
--   popupContentHello
--   popupContentGatsby
--   markerRef
+* useRef
+* Marker
+* promiseToFlyTo
+* getCurrentLocation
+* gatsby_astronaut
+* timeToZoom
+* timeToOpenPopupAfterZoom
+* timeToUpdatePopupAfterZoom
+* ZOOM
+* popupContentHello
+* popupContentGatsby
+* markerRef
 
 After, our map should still work, but not do anything.
 
@@ -132,7 +132,6 @@ export const locations = [
     ]
   }
 ];
-
 ```
 
 You can use the above to get started, but you'll eventually want to change the details to something of your choosing.
@@ -156,14 +155,12 @@ export const locations = [
     ]
   }
 ]
-
 ```
 
 Once we have that file created, we can now import our locations into our `src/pages/index.js` file so we can use it in our next step:
 
 ```
 import { locations } from 'data/locations';
-
 ```
 
 If you add a `console.log(locations)` inside of your page, you should now see all of your location data in an array!
@@ -204,16 +201,15 @@ function createTripPointsGeoJson({ locations } = {}) {
     })
   }
 }
-
 ```
 
 So what's happening in the above?
 
--   We take an argument of locations, which will be our array of destinations
--   We return an object with some dynamic properties associated with it
--   Within the object, we map our locations to individual `Feature` objects
--   Each object includes a `Point` shape using our coordinates
--   It additionally includes our properties that store our metadata
+* We take an argument of locations, which will be our array of destinations
+* We return an object with some dynamic properties associated with it
+* Within the object, we map our locations to individual `Feature` objects
+* Each object includes a `Point` shape using our coordinates
+* It additionally includes our properties that store our metadata
 
 When this function is invoked, we will have a newly created javascript object that includes an array of Points representing the locations we are stopping at on our road trip.
 
@@ -255,7 +251,6 @@ function createTripLinesGeoJson({ locations } = {}) {
     })
   }
 }
-
 ```
 
 So you'll immediately notice that this is very similar to our last function. We're returning an object and setting our metadata properties on a list of Features.
@@ -317,24 +312,23 @@ function tripStopPointToLayer( feature = {}, latlng ) {
 
   return layer;
 }
-
 ```
 
 One thing you'll notice as we work through this function is that we create strings of HTML text. Given that the Leaflet API we're utilizing for this doesn't interface directly with React, we have to build out HTML manually to pass it in to our functions.
 
 Starting from the top:
 
--   We take in 2 arguments, `feature` and `latlng`. Leaflet passes these 2 values in for us to use in our function.
--   We destructure our feature, allowing us to assign our metadata into variables
--   2 string variables are initialized that we'll use for our HTML
--   If we include a `todo` property as an array, we add a new list with each item inside.
--   If we include an image, we create an image tag.
--   With our newly created HTML strings, we construct the entirety of what will be our popup card for each strop
--   With our popup HTML, we create a Leaflet `popup` instance
--   With the latlng argument and our popup, we create a new Leaflet `marker`  instance. This will represent the point on the map.
--   Inside of the Marker creation, we create a basic HTML tag that well use to style the marker
--   We then bind our popup to this new Marker instance. This will allow the popup to be associated with that individual Marker
--   Finally, we return our newly created layer
+* We take in 2 arguments, `feature` and `latlng`. Leaflet passes these 2 values in for us to use in our function.
+* We destructure our feature, allowing us to assign our metadata into variables
+* 2 string variables are initialized that we'll use for our HTML
+* If we include a `todo` property as an array, we add a new list with each item inside.
+* If we include an image, we create an image tag.
+* With our newly created HTML strings, we construct the entirety of what will be our popup card for each strop
+* With our popup HTML, we create a Leaflet `popup` instance
+* With the latlng argument and our popup, we create a new Leaflet `marker`  instance. This will represent the point on the map.
+* Inside of the Marker creation, we create a basic HTML tag that well use to style the marker
+* We then bind our popup to this new Marker instance. This will allow the popup to be associated with that individual Marker
+* Finally, we return our newly created layer
 
 Remember to make sure you put all of the functions above at the bottom of your `src/pages/index.js` page.
 
@@ -352,7 +346,6 @@ First, at the top of the function, we want to make sure we have a map. If not, w
 
 ```
 if ( !leafletElement ) return;
-
 ```
 
 Next, we want to use the `eachLayer` utility function and remove each `layer` from our map element. We do this to make sure we always have the correct map layer state.
@@ -366,7 +359,6 @@ With our cleaned up map, we can utilize 2 of the functions we created to create 
 ```
 const tripPoints = createTripPointsGeoJson({ locations });
 const tripLines = createTripLinesGeoJson({ locations });
-
 ```
 
 With our GeoJSON objects, we need to convert those to Leaflet GeoJSON instances, which we'll use to add to the map.
@@ -377,7 +369,6 @@ const tripPointsGeoJsonLayers = new L.geoJson(tripPoints, {
 });
 
 const tripLinesGeoJsonLayers = new L.geoJson(tripLines);
-
 ```
 
 If you notice in the above, we're using our `tripStopPointToLayer` function. As I alluded to before, the `geoJson` instance we're creating includes a property that allows us to pass in a function, giving us the ability to manipulate the layer creation. This is how we create our point and popup content.
@@ -387,21 +378,18 @@ We can proceed to adding both of those new layers to our map using the `addTo`�
 ```
 tripPointsGeoJsonLayers.addTo(leafletElement);
 tripLinesGeoJsonLayers.addTo(leafletElement);
-
 ```
 
 Next, to make sure we zoom and center on the right location, we want to grab the bounds of the map using the `getBounds` function on our GeoJSON layer instance.
 
 ```
 const bounds = tripPointsGeoJsonLayers.getBounds();
-
 ```
 
 Finally, we fit our map's view to those bounds using the `fitBounds` function on our Map instance.
 
 ```
 leafletElement.fitBounds(bounds);
-
 ```
 
 Once you save  and reload the page, you should now see a blue path representing the jump from each of our locations on the map!
@@ -455,14 +443,13 @@ We can get started by copy and pasting this block of styles into the bottom of t
   }
 
 }
-
 ```
 
 There's three components to our styles above:
 
--   `.trip-stop-images`: Inside of the marker popup, we optionally can include an image. These styles set the size, make the text transparent, (it's there for accessibility), and float it to the left so that our popup content can align correctly side by side.
--   `.trip-stop-content`: This refers to the other half of our popup content. All we need to do here is make sure our size is appropriate and that it floats next to our image.
--   `.icon-trip-stop`: The HTML tag that we're using as our icon designation gets styled here. We size it up, set a color using a predetermined Scss variable, and we're good to go.
+* `.trip-stop-images`: Inside of the marker popup, we optionally can include an image. These styles set the size, make the text transparent, (it's there for accessibility), and float it to the left so that our popup content can align correctly side by side.
+* `.trip-stop-content`: This refers to the other half of our popup content. All we need to do here is make sure our size is appropriate and that it floats next to our image.
+* `.icon-trip-stop`: The HTML tag that we're using as our icon designation gets styled here. We size it up, set a color using a predetermined Scss variable, and we're good to go.
 
 Once those styles are saved, you should now see the points on the map representing each location. Additionally, you should be able to click each of these points to open up a popup containing information about the stop.
 
@@ -482,8 +469,7 @@ Final version of the road trip mapping app
 
 [Follow along with the commit](https://github.com/colbyfayock/my-road-trip/commit/c2c667da6e34595bc6d8dd0ee66e55d4155feed2)
 
-Yay, we did it!
----------------
+## Yay, we did it!
 
 If you followed along with me, or skipped right to the starter, you should now have a mapping app that you can use for your next road trip.
 
@@ -495,6 +481,6 @@ Whatever it is, if you enjoyed getting this map spun up, get creative and apply 
 
 You can check out a few of my other resources to get started:
 
--   [Anyone Can Map! Inspiration and an introduction to the world of mapping](https://www.freecodecamp.org/news/anyone-can-map-inspiration-and-an-introduction-to-the-world-of-mapping/)
--   [How to Create your own Santa Tracker with Gatsby and React Leaflet](https://www.freecodecamp.org/news/create-your-own-santa-tracker-with-gatsby-and-react-leaflet/)
--   [How to build a mapping app in React the easy way with Leaflet](https://www.freecodecamp.org/news/easily-spin-up-a-mapping-app-in-react-with-leaflet/)
+* [Anyone Can Map! Inspiration and an introduction to the world of mapping](https://www.freecodecamp.org/news/anyone-can-map-inspiration-and-an-introduction-to-the-world-of-mapping/)
+* [How to Create your own Santa Tracker with Gatsby and React Leaflet](https://www.freecodecamp.org/news/create-your-own-santa-tracker-with-gatsby-and-react-leaflet/)
+* [How to build a mapping app in React the easy way with Leaflet](https://www.freecodecamp.org/news/easily-spin-up-a-mapping-app-in-react-with-leaflet/)
