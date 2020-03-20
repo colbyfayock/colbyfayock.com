@@ -48,9 +48,7 @@ yarn develop
 
 If all goes as planned, your server should start and you should now be able to see your basic mapping app in your browser!
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/gatsby-starter-leaflet-in-browser.jpg)
-
-New Leaflet Gatsby app in the browser
+![New Leaflet Gatsby app in the browser](/assets/gatsby-starter-leaflet-in-browser.jpg)
 
 ## Step 1: Cleaning up some unneeded code
 
