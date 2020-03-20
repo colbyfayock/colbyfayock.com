@@ -449,9 +449,7 @@ Once those styles are saved, you should now see the points on the map representi
 
 The last thing that's completely optional is to make a few style tweaks to give your site a little personality. I'm not going to go over this in details, but if you'd like to follow along and dress things up a little bit, you can follow along with [this commit](https://github.com/colbyfayock/my-road-trip/commit/c2c667da6e34595bc6d8dd0ee66e55d4155feed2) which shows each code change I made.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/road-trip-mapping-app.jpg)
-
-Final version of the road trip mapping app
+<figure><img src="/assets/road-trip-mapping-app.jpg" alt="" /><figcaption>Final version of the road trip mapping app</figcaption></figure>
 
 [Follow along with the commit](https://github.com/colbyfayock/my-road-trip/commit/c2c667da6e34595bc6d8dd0ee66e55d4155feed2)
 
