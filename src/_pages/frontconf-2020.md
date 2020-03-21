@@ -1,7 +1,7 @@
 ---
 template: page
 title: FrontConf 2020
-path: /frontconf2020
+path: /frontconf-2020
 ---
 ## Summer Road Trip
 
