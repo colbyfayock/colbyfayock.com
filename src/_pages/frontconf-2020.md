@@ -3,14 +3,8 @@ template: page
 title: FrontConf 2020
 path: /frontconf-2020
 ---
-## Summer Road Trip
-
-![Colbana's Summer Road Trip](/assets/summer-road-trip-map.jpg)
-
-* Demo: [https://summer-road-trip.netlify.com](https://summer-road-trip.netlify.com/)/
-* Tutorial: <https://www.colbyfayock.com/2020/03/how-to-create-a-summer-road-trip-mapping-app-with-gatsby-and-leaflet/>
-
 ## Talk Resources
+* [Slides](https://slides.com/colbyfayock/building-maps-with-impact-on-react-and-the-jamstack-frontconf-2020#/)
 * [Gatsby Starter Leaflet](https://github.com/colbyfayock/gatsby-starter-leaflet)
 * [Leaflet](https://leafletjs.com/)
 * [React Leaflet](https://react-leaflet.js.org/)
@@ -21,6 +15,13 @@ path: /frontconf-2020
 * [Next Stream Coronavirus Map](https://nextstrain.org/ncov)
 * [Radiooooo World Radio](http://radiooooo.com/)
 * [FilmDrop](https://filmdrop.io/)
+
+## Summer Road Trip
+
+![Colbana's Summer Road Trip](/assets/summer-road-trip-map.jpg)
+
+* Demo: [https://summer-road-trip.netlify.com](https://summer-road-trip.netlify.com/)/
+* Tutorial: <https://www.colbyfayock.com/2020/03/how-to-create-a-summer-road-trip-mapping-app-with-gatsby-and-leaflet/>
 
 ## Learning More About Mapping
 
