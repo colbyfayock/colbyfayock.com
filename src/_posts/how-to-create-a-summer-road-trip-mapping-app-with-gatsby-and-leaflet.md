@@ -401,6 +401,40 @@ In this step, we'll be working inside of the `_home.scss` file, which you can 
 We can get started by copy and pasting this block of styles into the bottom of that file. With that done, we can walk through what's happening.
 
 ```
+.trip-stop {
+
+  width: 400px;
+  overflow: hidden;
+
+  h2 {
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: .2em;
+  }
+
+  p,
+  ul,
+  h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+  }
+
+  p {
+    margin: .2em 0;
+  }
+
+  .trip-stop-date {
+    color: $grey-600;
+    font-size: 1em;
+  }
+
+  ul {
+    padding: 0 0 0 1.4em;
+    margin: 0;
+  }
+
+}
+
 .trip-stop-image {
   display: block;
   float: left;
