@@ -54,9 +54,7 @@ yarn develop
 
 If all goes as planned, your server should start and you should now be able to see your basic mapping app in your browser!
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/gatsby-starter-leaflet-in-browser-1.jpg)
-
-New Leaflet Gatsby app in the browser
+<figure><img src="/assets/gatsby-starter-leaflet-in-browser.jpg" alt="" /><figcaption>New Leaflet Gatsby app in the browser</figcaption></figure>
 
 [Follow along with the commit!](https://github.com/colbyfayock/my-coronavirus-map/commits/master)
 
@@ -103,9 +101,7 @@ Now that we have those pieces cleared out, we can remove all of the following im
 
 After, our map should still work, but not do anything.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/new-empty-mapping-app-1.jpg)
-
-*New mapping app with nothing going on*
+<figure><img src="/assets/new-empty-mapping-app.jpg" alt="" /><figcaption>New mapping app with nothing going on</figcaption></figure>
 
 [Follow along with the commit!](https://github.com/colbyfayock/my-coronavirus-map/commit/a3e9cff3949bb7ebb7cc89166c875e97b6dcb5a8)
 
