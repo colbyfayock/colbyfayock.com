@@ -14,9 +14,7 @@ The Coronavirus (COVID-19) pandemic has swiftly changed how all of us interact d
 
 We'll be putting together a mapping application that uses an API containing recent Coronavirus statistics and maps out the locations and impact each country is facing.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/coronavirus-map-dashboard-demo.jpg)
-
-Coronavirus map dashboard demo
+<figure><img src="/assets/coronavirus-map-dashboard-demo.jpg" alt="" /><figcaption>Coronavirus map dashboard demo</figcaption></figure>
 
 On the map, we'll show a marker for each country with the number of confirmed cases. On top of that, we'll include a little popup tooltip that shows more in depth information.
 
@@ -43,9 +41,7 @@ We'll also want to set up a foundation for our map. We can do this by utilizing 
 gatsby new my-coronavirus-map https://github.com/colbyfayock/gatsby-starter-leaflet
 ```
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/terminal-creating-new-coronavirus-map-from-gatsby-starter.jpg)
-
-Creating a new Leaflet Gatsby app in the terminal
+<figure><img src="/assets/terminal-creating-new-coronavirus-map-from-gatsby-starter.jpg" alt="" /><figcaption>Creating a new Leaflet Gatsby app in the terminal</figcaption></figure>
 
 After that's finished running, you can navigate to the newly created project directory and start your local development server:
 
@@ -54,9 +50,7 @@ cd my-coronavirus-map
 yarn develop
 ```
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/terminal-starting-gatsby-development-server-1.jpg)
-
-Starting your Gatsby app in the terminal
+<figure><img src="/assets/running-gatsby-starter-leaflet.jpg" alt="" /><figcaption>Starting your Gatsby app in the terminal</figcaption></figure>
 
 If all goes as planned, your server should start and you should now be able to see your basic mapping app in your browser!
 
