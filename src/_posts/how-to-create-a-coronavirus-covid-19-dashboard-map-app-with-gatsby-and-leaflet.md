@@ -363,9 +363,7 @@ And finally, once we have our `geoJsonLayers` created with our styling added, 
 geoJsonLayers.addTo(map)
 ```
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/map-with-coronavirus-location-data.jpg)
-
-Map with Coronavirus location data
+<figure><img src="/assets/map-with-coronavirus-location-data.jpg" alt="" /><figcaption>Map with Coronavirus location data</figcaption></figure>
 
 Now you might be wondering why it doesn't appear to be centering properly. Go ahead and change the `LOCATION` variable at the top of the `index.js` file to:
 
@@ -378,9 +376,7 @@ const LOCATION = {
 
 Once that's set, when the page reloads, the map should be centered in the middle of the world!
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/map-with-coronavirus-location-data-centered-tooltip.jpg)
-
-Map with Coronavirus location data centered with a tooltip
+<figure><img src="/assets/map-with-coronavirus-location-data-centered-tooltip.jpg" alt="" /><figcaption>Map with Coronavirus location data centered with a tooltip</figcaption></figure>
 
 [Follow along with the commit!](https://github.com/colbyfayock/my-coronavirus-map/commit/49c78e4ef3e98c974fab7bca10b6f8f7578b42c2)
 
@@ -396,9 +392,7 @@ Take what you learned and run with it. You can apply this to any other type of d
 
 In my original demo, I set up a custom basemap using [Mapbox](https://mapbox.com/) that allows me to have a dark background making the markers easier to see.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/mapbox-studio-basemap.jpg)
-
-Creating a new basemap in Mapbox Studio
+<figure><img src="/assets/mapbox-studio-basemap.jpg" alt="" /><figcaption>Creating a new basemap in Mapbox Studio</figcaption></figure>
 
 Mapbox is great and has a nice free tier if you're interested in getting started.
 
@@ -414,9 +408,7 @@ To learn how to integrate it, you can try to check out the source code of [my o
 
 Dashboards with maps like the [Johns Hopkins University app](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6) allows us to see more than a look on the map, but a glimpse at quick stats about the cases around the world.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/johns-hopkins-coronavirus-map-march-29.jpg)
-
-Johns Hopkins University Coronavirus Map Dashboard
+<figure><img src="/assets/johns-hopkins-coronavirus-map-march-29.jpg" alt="" /><figcaption>Johns Hopkins University Coronavirus Map Dashboard - March 29, 2020</figcaption></figure>
 
 The [NovelCOVID API](https://github.com/NovelCOVID/API) has more endpoints like `/all` that provide a few global stats.
 
