@@ -152,9 +152,7 @@ In this snippet, we're doing the following:
 
 After that's set up, we can console log out the `data` object and we'll see our data successfully fetched!
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/coronavirus-location-data-in-browser.jpg)
-
-Logging the Coronavirus location data to the browser console
+<figure><img src="/assets/coronavirus-location-data-in-browser.jpg" alt="" /><figcaption>Logging the Coronavirus location data to the browser console</figcaption></figure>
 
 [Follow along with the commit!](https://github.com/colbyfayock/my-coronavirus-map/commit/86bebfee4a34b9bad516879b228921cdaad55126)
 
@@ -200,9 +198,7 @@ So what are we doing here?
 
 If you `console.log` this object our into your browser and copy the contents, you can paste this into geojson.io and see the location data show up correctly.
 
-![](https://www.freecodecamp.org/news/content/images/2020/03/location-data-geojson-io.jpg)
-
-Previewing Coronavirus location data on geojson.io
+<figure><img src="/assets/location-data-geojson-io.jpg" alt="" /><figcaption>Previewing Coronavirus location data on geojson.io</figcaption></figure>
 
 With this GeoJSON document, we'll now be able to add it to our map.
 
