@@ -68,9 +68,7 @@ Once you're happy with your new style and everything's published, we want to gen
 
 Head on over to the Account section of the Mapbox dashboard.
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/mapbox-account.jpg)
-
-Creating a new token in Mapbox
+<figure><img src="/assets/mapbox-account.jpg" alt="" /><figcaption>Creating a new token in Mapbox</figcaption></figure>
 
 Mapbox provides you with a "default" token that you can use in your applications. You're free to use this, but I recommend creating a new token that you can provide a unique name, that way if you ever blow past the [free tier](https://www.mapbox.com/pricing/) of Mapbox, you'll be able to track your usage.
 
