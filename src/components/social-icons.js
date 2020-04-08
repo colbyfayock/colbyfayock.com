@@ -10,13 +10,16 @@ import {
 
 import { FiMail } from 'react-icons/fi';
 
+import EggheadLogo from 'components/EggheadLogo';
+
 const SocialIconsList = ({links}) => {
 
     if ( !Array.isArray(links) ) return null;
 
     const link_items = links.map((item, index) => {
+        const id = item.title.toLowerCase().replace('.', '');
         return (
-            <li key={`SocialIconsList-${index}`} className={`social-icons-${item.title.toLowerCase()}`}>
+            <li key={`SocialIconsList-${index}`} className={`social-icons-${id}`}>
                 <a href={item.url} rel="me">
                     { item.icon }
                     <span className="ir">{ item.title }</span>
@@ -45,6 +48,11 @@ const SocialIcons = () => {
             title: 'Youtube',
             url: 'https://youtube.com/colbyfayock',
             icon: <FaYoutube />,
+        },
+        {
+            title: 'Egghead.io',
+            url: 'https://egghead.io/instructors/colby-fayock',
+            icon: <EggheadLogo />,
         },
         {
             title: 'GitHub',

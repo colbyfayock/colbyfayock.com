@@ -14,18 +14,6 @@
         line-height: 2em;
         text-align: center;
 
-    }
-
-    a,
-    path,
-    polygon {
-
-        color: $color-grey5;
-
-    }
-
-    a {
-
         &:hover {
 
             &,
@@ -38,4 +26,20 @@
 
     }
 
+    a,
+    path,
+    polygon {
+
+        color: $color-grey5;
+
+    }
+
+    svg {
+        width: 28px;
+    }
+
+}
+
+.social-icons-eggheadio {
+    transform: translateY(1px);
 }
