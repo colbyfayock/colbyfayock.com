@@ -28,9 +28,7 @@ If you want to learn more about building a map and adding data to it, you can ch
 
 Mapbox is a mapping platform that allows its customers to create custom mapping solutions. They also leverage a variety of APIs that provide powerful capabilities for building map features.
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/mapbox-homepage.jpg)
-
-[mapbox.com](https://www.mapbox.com/)
+<figure><img src="/assets/mapbox-homepage.jpg" alt="" /><figcaption>mapbox.com</figcaption></figure>
 
 For our purposes, we're going to utilize their Map API, specifically their Static Tiles API, to serve a custom map style that we create.
 
