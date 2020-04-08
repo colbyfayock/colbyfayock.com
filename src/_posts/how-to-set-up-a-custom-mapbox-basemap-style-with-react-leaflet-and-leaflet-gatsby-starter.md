@@ -46,11 +46,11 @@ Creating a new style in Mapbox isn't as hard as it sounds. While it can get real
 
 First, head over to Mapbox's [Studio dashboard](https://studio.mapbox.com/) by clicking your account link in the top right corner when logged in.
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/mapbox-studio.jpg)
-
-Mapbox Studio
+<figure><img src="/assets/mapbox-studio.jpg" alt="" /><figcaption>Mapbox Studio</figcaption></figure>
 
 Once we're on our Studio dashboard, we want to select the New Style button.
+
+
 
 ![](https://www.freecodecamp.org/news/content/images/2020/04/mapbox-studio-new-style.jpg)
 
