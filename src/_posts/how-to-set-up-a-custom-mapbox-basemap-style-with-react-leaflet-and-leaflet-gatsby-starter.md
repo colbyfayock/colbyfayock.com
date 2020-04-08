@@ -58,9 +58,7 @@ After clicking the button, a modal will pop up allowing you to choose a template
 
 And now we're dropped into our customization UI.
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/mapbox-customize-style.jpg)
-
-Mapbox customize style UI
+<figure><img src="/assets/mapbox-customize-style.jpg" alt="" /><figcaption>Mapbox customize style UI</figcaption></figure>
 
 From here, you can really do what you'd like. There are a ton of options to customize your map. It's a little complex to try to dig in here, but [Mapbox provides some resources](https://docs.mapbox.com/studio-manual/overview/) to try to help you get productive.
 
