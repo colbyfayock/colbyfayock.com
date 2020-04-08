@@ -76,9 +76,7 @@ Additionally, it's best to keep a separate token for each application, that way 
 
 Once you click Create a token, you can set up the key how you'd like, with the scopes and permissions you choose, but for our purposes, you can leave all of the Public scopes checked for our map, which they do by default.
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/mapbox-create-token.jpg)
-
-Create a new access token in Mapbox
+<figure><img src="/assets/mapbox-create-token.jpg" alt="" /><figcaption>Create a new access token in Mapbox</figcaption></figure>
 
 ### Configuring our custom endpoint
 
