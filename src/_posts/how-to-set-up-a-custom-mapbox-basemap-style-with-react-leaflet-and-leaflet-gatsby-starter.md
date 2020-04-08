@@ -99,9 +99,7 @@ There are a few parameters here we need to understand:
 
 To find your username and style ID, we can use the Style URL for our new Mapbox style to get those values.
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/mapbox-studio-style-url.jpg)
-
-Finding the Style URL in Mapbox Studio
+<figure><img src="/assets/mapbox-studio-style-url.jpg" alt="" /><figcaption>Finding the Style URL in Mapbox Studio</figcaption></figure>
 
 In my example, my Style URL looks like:
 
