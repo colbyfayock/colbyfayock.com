@@ -225,9 +225,7 @@ const mapSettings = {
 
 Save that change, refresh the map in your browser, and you should now see your custom basemap style!
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/gatsby-starter-leaflet-with-mapbox-tilelayer-in-browser.jpg)
-
-Gatsby Starter Leaflet with custom Mapbox basemap in browser
+<figure><img src="/assets/gatsby-starter-leaflet-with-mapbox-tilelayer-in-browser.jpg" alt="" /><figcaption>Gatsby Starter Leaflet with custom Mapbox basemap in browser</figcaption></figure>
 
 ### See the code!
 
