@@ -54,9 +54,7 @@ Once we're on our Studio dashboard, we want to select the New Style button.
 
 After clicking the button, a modal will pop up allowing you to choose a template. You can choose whatever you want here, but I'm going to choose Monochrome with a variation of Dark. And after you've selected your template, click the Customize button.
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/mapbox-studio-new-style-choose-template.jpg)
-
-Select and customize a template for a new style in Mapbox Studio
+<figure><img src="/assets/mapbox-studio-new-style-choose-template.jpg" alt="" /><figcaption>Select and customize a template for a new style in Mapbox Studio</figcaption></figure>
 
 And now we're dropped into our customization UI.
 
