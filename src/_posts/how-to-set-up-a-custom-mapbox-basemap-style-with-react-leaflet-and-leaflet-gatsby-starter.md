@@ -82,9 +82,7 @@ Once you click Create a token, you can set up the key how you'd like, with the s
 
 For this tutorial, we're going to use [Mapbox's Static Tiles service](https://docs.mapbox.com/api/maps/#static-tiles).
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/mapbox-static-tiles-map-api.jpg)
-
-Mapbox Static Tiles Maps API
+<figure><img src="/assets/mapbox-static-tiles-map-api.jpg" alt="" /><figcaption>Mapbox Static Tiles Maps API</figcaption></figure>
 
 Our endpoint will look like the following:
 
