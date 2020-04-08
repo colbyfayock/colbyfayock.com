@@ -8,30 +8,23 @@ category: coding
 ---
 Building maps can be pretty powerful, but often you're stuck with open source options for the map imagery that might not help the readability of your data. How can we leverage Mapbox's tile APIs to add a custom basemap to our React Leaflet app?
 
-What are we going to build?
----------------------------
+## What are we going to build?
 
 We're going to walk through creating a new basic [Mapbox style](https://www.mapbox.com/mapbox-studio/) in our [Mapbox](https://www.mapbox.com/) account. Once created, we're going to use their [Map API](https://docs.mapbox.com/api/maps/) to add a custom basemap to our [React Leaflet](https://react-leaflet.js.org/) app.
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/gatsby-starter-leaflet-with-mapbox-tilelayer.jpg)
-
-Gatsby Starter Leaflet with Mapbox basemap
+<figure><img src="/assets/gatsby-starter-leaflet-with-mapbox-tilelayer.jpg" alt="" /><figcaption>Gatsby Starter Leaflet with Mapbox basemap</figcaption></figure>
 
 For our map, we're going to use this [Leaflet Gatsby Starter](https://github.com/colbyfayock/gatsby-starter-leaflet) I created that will allow you to easily spin up a new mapping app. Before we spin that up though, I'll walk you through how to add it using only React Leaflet components.
 
-A mapping app?
---------------
+## A mapping app?
 
 Yup! Maps are used all around the world to study datasets for geographic locations. They're important tools for scientists and others that are trying to help the world.
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/coronavirus-map-dashboard-demo.jpg)
-
-Coronavirus (COVID-19) custom map
+<figure><img src="/assets/coronavirus-map-dashboard-demo.jpg" alt="" /><figcaption>Coronavirus (COVID-19) custom map</figcaption></figure>
 
 If you want to learn more about building a map and adding data to it, you can check out some of [my other articles](https://www.freecodecamp.org/news/author/colbyfayock/) first such as creating a [Coronavirus (COVID-19) map](https://www.freecodecamp.org/news/how-to-create-a-coronavirus-covid-19-dashboard-map-app-in-react-with-gatsby-and-leaflet/) or a [Summer Road Trip map](https://www.freecodecamp.org/news/how-to-create-a-summer-road-trip-mapping-app-with-gatsby-and-leaflet/) as well as a little bit of inspiration about why [Anyone Can Map](https://www.freecodecamp.org/news/anyone-can-map-inspiration-and-an-introduction-to-the-world-of-mapping/).
 
-What is Mapbox?
----------------
+## What is Mapbox?
 
 Mapbox is a mapping platform that allows its customers to create custom mapping solutions. They also leverage a variety of APIs that provide powerful capabilities for building map features.
 
@@ -41,8 +34,7 @@ Mapbox is a mapping platform that allows its customers to create custom mapping 
 
 For our purposes, we're going to utilize their Map API, specifically their Static Tiles API, to serve a custom map style that we create.
 
-Part 1: Creating a custom Mapbox style
---------------------------------------
+## Part 1: Creating a custom Mapbox style
 
 To get the look and feel that we want for our map, it's important to have a basemap that helps make our data present itself without distractions. Plus, sometimes it's fun to have a custom map.
 
@@ -112,15 +104,14 @@ Our endpoint will look like the following:
 
 ```
 https://api.mapbox.com/styles/v1/{username}/{style_id}/tiles/256/{z}/{x}/{y}@2x?access_token={access_token}
-
 ```
 
 There are a few parameters here we need to understand:
 
--   username: this will be your Mapbox account's username
--   style_id: this will be the ID of the style you created before
--   z, x, y: these are parameters that Leaflet programmatically swaps out, so we want to leave them as is
--   access_token: this is the Mapbox key you created above
+* username: this will be your Mapbox account's username
+* style_id: this will be the ID of the style you created before
+* z, x, y: these are parameters that Leaflet programmatically swaps out, so we want to leave them as is
+* access_token: this is the Mapbox key you created above
 
 To find your username and style ID, we can use the Style URL for our new Mapbox style to get those values.
 
@@ -132,7 +123,6 @@ In my example, my Style URL looks like:
 
 ```
 mapbox://styles/colbyfayock/ck8lryjfq0jdo1ip9ctmuhc6p
-
 ```
 
 `colbyfayock` is my username and `ck8lryjfq0jdo1ip9ctmuhc6p` is my style ID.
@@ -141,11 +131,9 @@ And once I update my endpoint parameters, the final tilepoint URL will look like
 
 ```
 https://api.mapbox.com/styles/v1/colbyfayock/ck8lryjfq0jdo1ip9ctmuhc6p/tiles/256/{z}/{x}/{y}@2x?access_token=MYACCESSTOKEN
-
 ```
 
-Part 2: Adding a custom TileLayer to React Leaflet
---------------------------------------------------
+## Part 2: Adding a custom TileLayer to React Leaflet
 
 When building a map with React Leaflet, your main component will be a `<Map>` that wraps the entirety of the app. This is what sets up your [Map instance](https://leafletjs.com/reference-1.6.0.html#map-example) for [Leaflet](https://leafletjs.com/).
 
@@ -164,7 +152,6 @@ The example on the React Leaflet homepage uses a public version of [OpenStreetM
     attribution="&copy; <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
   />
 </Map>
-
 ```
 
 This gives you a basic map, but we want to swap in Mapbox so we can set up a custom look and feel for our map.
@@ -177,14 +164,12 @@ For URL, it will simply be the custom style endpoint we created earlier, so in m
 
 ```
 https://api.mapbox.com/styles/v1/colbyfayock/ck8lryjfq0jdo1ip9ctmuhc6p/tiles/256/{z}/{x}/{y}@2x?access_token=MYACCESSTOKEN
-
 ```
 
 For attribution, we want to credit Mapbox as the service, so we want to set our attribution as:
 
 ```
 Map data &copy; <a href=&quot;https://www.openstreetmap.org/&quot;>OpenStreetMap</a> contributors, <a href=&quot;https://creativecommons.org/licenses/by-sa/2.0/&quot;>CC-BY-SA</a>, Imagery &copy; <a href=&quot;https://www.mapbox.com/&quot;>Mapbox</a>
-
 ```
 
 When plugged in to our `TileLayer`, our code should now look like this:
@@ -196,7 +181,6 @@ When plugged in to our `TileLayer`, our code should now look like this:
     attribution="Map data &copy; <a href=&quot;https://www.openstreetmap.org/&quot;>OpenStreetMap</a> contributors, <a href=&quot;https://creativecommons.org/licenses/by-sa/2.0/&quot;>CC-BY-SA</a>, Imagery &copy; <a href=&quot;https://www.mapbox.com/&quot;>Mapbox</a>"
   />
 </Map>
-
 ```
 
 And once we open up our map, we should see our new basemap!
@@ -211,8 +195,7 @@ If you want to see how I did it, [check out the diff commit by commit](https://
 
 The only caveat there is I created an `.env.development.local` file in the root of my project in which I stored a new environment variable called `REACT_APP_MAPBOX_KEY`  to store my Mapbox key.
 
-Part 3: Adding a custom basemap to Gatsby Starter Leaflet
----------------------------------------------------------
+## Part 3: Adding a custom basemap to Gatsby Starter Leaflet
 
 I've written [a few](https://www.colbyfayock.com/2020/03/how-to-create-a-coronavirus-covid-19-dashboard-map-app-with-gatsby-and-leaflet) [other](https://www.colbyfayock.com/2020/03/how-to-create-a-summer-road-trip-mapping-app-with-gatsby-and-leaflet) [articles](https://www.colbyfayock.com/2020/03/anyone-can-map-inspiration-and-an-introduction-to-the-world-of-mapping/) on [how to get started](https://www.freecodecamp.org/news/easily-spin-up-a-mapping-app-in-react-with-leaflet/) with my [Leaflet Gatsby Starter](https://github.com/colbyfayock/gatsby-starter-leaflet), but for this part, we'll want to have a basic app spun up that we can use to change our `TileLayer` endpoint.
 
@@ -247,7 +230,6 @@ export const mapServices = [
     url: `https://api.mapbox.com/styles/v1/colbyfayock/ck8c2foj72lqk1jnug0g2haw0/tiles/256/{z}/{x}/{y}@2x?access_token=MY_ACCESS_TOKEN`
   }
 ];
-
 ```
 
 ### Using our Mapbox map service
@@ -261,7 +243,6 @@ const mapSettings = {
   zoom: DEFAULT_ZOOM,
   mapEffect
 };
-
 ```
 
 Save that change, refresh the map in your browser, and you should now see your custom basemap style!
@@ -276,8 +257,7 @@ If you want to see how I did it, [check out the diff with the commit](https://g
 
 The only caveat there is I created an `.env.development` file in the root of my project in which I stored a new environment variable called `GATSBY_MAPBOX_KEY`  to store my Mapbox key.
 
-Securing your Mapbox key
-------------------------
+## Securing your Mapbox key
 
 ### Environment variables
 
@@ -297,13 +277,12 @@ This is helpful for instance, where you have a key that will never be used publi
 
 If someone grabs your key, they could plug it into their own website and use up all of your free tier, potentially running up your bill!
 
-Want to learn more about maps?
-------------------------------
+## Want to learn more about maps?
 
 You can check out a few of my other resources to get started:
 
--   [Anyone Can Map! Inspiration and an introduction to the world of mapping](https://www.freecodecamp.org/news/anyone-can-map-inspiration-and-an-introduction-to-the-world-of-mapping/)
--   [How to create a Coronavirus (COVID-19) Dashboard & Map App in React with Gatsby and Leaflet](https://www.freecodecamp.org/news/how-to-create-a-coronavirus-covid-19-dashboard-map-app-in-react-with-gatsby-and-leaflet/)
--   [How to Create a Summer Road Trip Mapping App with Gatsby and Leaflet](https://www.freecodecamp.org/news/how-to-create-a-summer-road-trip-mapping-app-with-gatsby-and-leaflet/)
--   [How to Create your own Santa Tracker with Gatsby and React Leaflet](https://www.freecodecamp.org/news/create-your-own-santa-tracker-with-gatsby-and-react-leaflet/)
--   [How to build a mapping app in React the easy way with Leaflet](https://www.freecodecamp.org/news/easily-spin-up-a-mapping-app-in-react-with-leaflet/)
+* [Anyone Can Map! Inspiration and an introduction to the world of mapping](https://www.freecodecamp.org/news/anyone-can-map-inspiration-and-an-introduction-to-the-world-of-mapping/)
+* [How to create a Coronavirus (COVID-19) Dashboard & Map App in React with Gatsby and Leaflet](https://www.freecodecamp.org/news/how-to-create-a-coronavirus-covid-19-dashboard-map-app-in-react-with-gatsby-and-leaflet/)
+* [How to Create a Summer Road Trip Mapping App with Gatsby and Leaflet](https://www.freecodecamp.org/news/how-to-create-a-summer-road-trip-mapping-app-with-gatsby-and-leaflet/)
+* [How to Create your own Santa Tracker with Gatsby and React Leaflet](https://www.freecodecamp.org/news/create-your-own-santa-tracker-with-gatsby-and-react-leaflet/)
+* [How to build a mapping app in React the easy way with Leaflet](https://www.freecodecamp.org/news/easily-spin-up-a-mapping-app-in-react-with-leaflet/)
