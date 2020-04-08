@@ -187,9 +187,7 @@ To get started, check out the instructions on the Starter github:
 
 Once you're ready, you should have a basic mapping app ready to go!
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/gatsby-starter-leaflet-in-browser.jpg)
-
-New Leaflet Gatsby app in the browser
+<figure><img src="/assets/gatsby-starter-leaflet-in-browser.jpg" alt="" /><figcaption>New Leaflet Gatsby app in the browser</figcaption></figure>
 
 ### Configuring our Mapbox service
 
