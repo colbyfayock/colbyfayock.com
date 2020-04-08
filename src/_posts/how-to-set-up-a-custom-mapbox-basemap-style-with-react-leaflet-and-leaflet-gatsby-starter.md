@@ -257,8 +257,8 @@ If someone grabs your key, they could plug it into their own website and use up 
 
 You can check out a few of my other resources to get started:
 
-* [Anyone Can Map! Inspiration and an introduction to the world of mapping](https://www.freecodecamp.org/news/anyone-can-map-inspiration-and-an-introduction-to-the-world-of-mapping/)
-* [How to create a Coronavirus (COVID-19) Dashboard & Map App in React with Gatsby and Leaflet](https://www.freecodecamp.org/news/how-to-create-a-coronavirus-covid-19-dashboard-map-app-in-react-with-gatsby-and-leaflet/)
-* [How to Create a Summer Road Trip Mapping App with Gatsby and Leaflet](https://www.freecodecamp.org/news/how-to-create-a-summer-road-trip-mapping-app-with-gatsby-and-leaflet/)
-* [How to Create your own Santa Tracker with Gatsby and React Leaflet](https://www.freecodecamp.org/news/create-your-own-santa-tracker-with-gatsby-and-react-leaflet/)
+* [Anyone Can Map! Inspiration and an introduction to the world of mapping](https://www.colbyfayock.com/2020/03/anyone-can-map-inspiration-and-an-introduction-to-the-world-of-mapping)
+* [How to create a Coronavirus (COVID-19) Dashboard & Map App in React with Gatsby and Leaflet](https://www.colbyfayock.com/2020/03/how-to-create-a-coronavirus-covid-19-dashboard-map-app-with-gatsby-and-leaflet)
+* [How to Create a Summer Road Trip Mapping App with Gatsby and Leaflet](https://www.colbyfayock.com/2020/03/how-to-create-a-summer-road-trip-mapping-app-with-gatsby-and-leaflet)
+* [How to Create your own Santa Tracker with Gatsby and React Leaflet](https://www.colbyfayock.com/2019/12/create-your-own-santa-tracker-with-gatsby-and-react-leaflet/)
 * [How to build a mapping app in React the easy way with Leaflet](https://www.freecodecamp.org/news/easily-spin-up-a-mapping-app-in-react-with-leaflet/)
