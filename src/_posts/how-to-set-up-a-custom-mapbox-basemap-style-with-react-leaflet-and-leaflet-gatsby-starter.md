@@ -167,9 +167,7 @@ When plugged in to our `TileLayer`, our code should now look like this:
 
 And once we open up our map, we should see our new basemap!
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/react-leaflet-mapbox-basemap.jpg)
-
-React Leaflet with a Mapbox basemap
+<figure><img src="/assets/react-leaflet-mapbox-basemap.jpg" alt="" /><figcaption>React Leaflet with a Mapbox basemap</figcaption></figure>
 
 ### See the code!
 
