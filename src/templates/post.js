@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import Parameterize from 'parameterize';
 import getShareImage from '@jlengstorf/get-share-image';
 import { FaTwitter } from 'react-icons/fa';
