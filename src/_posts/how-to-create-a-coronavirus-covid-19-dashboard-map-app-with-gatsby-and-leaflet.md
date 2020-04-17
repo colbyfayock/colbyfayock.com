@@ -157,7 +157,7 @@ After that's set up, we can console log out the `data` object and we'll see ou
 
 [Follow along with the commit!](https://github.com/colbyfayock/my-coronavirus-map/commit/86bebfee4a34b9bad516879b228921cdaad55126)
 
-**Update:** The previous commit includes a link to the original NovelCOVID v1 API endpoint which has now been deprecated. Please us this instead: <https://corona.lmao.ninja/v2/countries>.
+**Update:** The previous commit includes a link to the original NovelCOVID v1 API endpoint which has now been deprecated. Please use this instead: <https://corona.lmao.ninja/v2/countries>.
 
 [See updated commit](https://github.com/colbyfayock/my-coronavirus-map/commit/e8f63c7ca60ec358b2edc9bc3ed8935be85b5573).
 
