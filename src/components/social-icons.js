@@ -11,6 +11,7 @@ import {
 import { FiMail } from 'react-icons/fi';
 
 import EggheadLogo from 'components/EggheadLogo';
+import RedbubbleLogo from 'components/RedbubbleLogo';
 
 const SocialIconsList = ({links}) => {
 
@@ -68,6 +69,11 @@ const SocialIcons = () => {
             title: 'Instagram',
             url: 'https://www.instagram.com/colbyfayock/',
             icon: <FaInstagram />,
+        },
+        {
+            title: 'Redbubble',
+            url: 'https://www.redbubble.com/people/colbyfayock/shop',
+            icon: <RedbubbleLogo />,
         },
         {
             title: 'Email',
