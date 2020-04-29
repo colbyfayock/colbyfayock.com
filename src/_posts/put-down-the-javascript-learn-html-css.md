@@ -8,7 +8,7 @@ A growing trend in front end development is the idea that you can dive right in 
 
 ## Why do I need HTML or CSS?
 
-The UI frameworks that we know today like [React](https://reactjs.org/) and [Vue](https://vuejs.org) build on top of the basic building blocks of a webpage: HTML and CSS. Though these UI frameworks supercharge these basics through some cool tools and Javascript, what you’re building is fundamentally the same thing as the [Space Jam website](https://www.spacejam.com/archive/spacejam/movie/jam.htm) from 1996.
+The UI frameworks that we know today like [React](https://reactjs.org/) and [Vue](https://vuejs.org) build on top of the basic building blocks of a webpage: HTML and CSS. Though these UI frameworks supercharge these basics through some cool tools and Javascript, what you’re building is fundamentally the same thing as the [Space Jam website](https://www.spacejam.com/) from 1996.
 
 But I get it, writing HTML and CSS manually is dated right?
 
