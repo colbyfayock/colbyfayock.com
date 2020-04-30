@@ -6,8 +6,7 @@ category: coding
 ---
 Writing about our work is one of those things that most of us have on our to-do list. But whether it's due to procrastination or fear, we never actually get to it. Here's some more motivation and reasons why you should give it a shot!
 
-Why should we write in the first place?
----------------------------------------
+## Why should we write in the first place?
 
 Maybe you've never thought about writing before or maybe you're looking for a little more motivation. Whatever the case, there are a lot of good reasons why writing can help us grow.
 
@@ -17,9 +16,7 @@ Coding can be tough. And we all started somewhere at the beginning.
 
 It's a long journey that each of us go through and it's even harder to go at it alone. Luckily, we've had websites like [freecodecamp.org](https://www.freecodecamp.org/) and [css-tricks.com](https://css-tricks.com/) along the way that have made that journey more manageable, but there's always going to be a challenge that just doesn't make sense.
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/css-tricks-around-2011.jpg)
-
-CSS-Tricks around 2011 when I got my first official coding job via [Way Back Machine](https://web.archive.org/web/20110701022701/http://css-tricks.com/)
+<figure><img src="/assets/css-tricks-around-2011.jpg" alt="" /><figcaption>CSS-Tricks around 2011 when I got my first official coding job via Way Back Machine https://web.archive.org/web/20110701022701/http://css-tricks.com/ </figcaption></figure>
 
 This is where we have an opportunity to share our experiences to help others grow. While our favorite coding sites have tons of amazing tutorials, maybe they're missing a key point someone needed to fully grasp the solution. Whether you're at the beginning or middle of your journey, every experience, big or small, can help another developer on their own journey.
 
@@ -41,9 +38,7 @@ Doubling up on reinforcing your learning, by writing about your experiences, you
 
 As much as we had hoped we would remember how to speak Spanish from the classes we took, 10 years goes by pretty quickly and you suddenly realize you can only correctly say "hola" in Spanish.
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/hola-sign.jpg)
-
-Hola sign from Jon Tyson on [Unsplash](https://unsplash.com/photos/8MMtYM_3xMY)
+<figure><img src="/assets/hola-sign.jpg" alt="" /><figcaption>Hola sign from Jon Tyson on Unsplash https://unsplash.com/photos/8MMtYM_3xM </figcaption></figure>
 
 If you were the ambitious type, maybe you saved all of your notes. If not, maybe you remember a good website that has flashcards.
 
@@ -59,8 +54,7 @@ This doesn't guarantee a job, but it certainly can help. All teams are a little 
 
 But even if you don't immediately get hired, you're playing the long game. Opportunities will start to come in small ways that lead to bigger opportunities down the road.
 
-Why you might be hesitating and how we can look at it another way?
-------------------------------------------------------------------
+## Why you might be hesitating and how we can look at it another way?
 
 Sometimes motivation isn't enough. We all have our personal challenges that might prevent us from doing something we want to do. But sometimes it's a matter of finding a different perspective to give you that bit of inspiration to finally dive in.
 
@@ -68,9 +62,7 @@ Sometimes motivation isn't enough. We all have our personal challenges that migh
 
 This is something I've personally struggled with for the majority of my career. Whether I was confident in my ability to do my job or not, I never felt like it was enough to be one of the people writing guides for others.
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/colby-fayock-personal-website.jpg)
-
-[My website and blog](https://www.colbyfayock.com/)
+![My website and blog](/assets/colby-fayock-personal-website.jpg)
 
 It wasn't until another team member brought another perspective to this argument (thanks Marquet) -- everyone learns differently and maybe my way of telling a story can help someone learn.
 
@@ -100,16 +92,13 @@ Inspiration for me comes from my experience talking with others. I'm lucky to be
 
 Whenever a topic like that comes up, I immediately note it down for later. This topic was on that list! Over time, my list of topics has grown to a point where I don't think I'll even finish it by the end of the year.
 
-![](https://www.freecodecamp.org/news/content/images/2020/04/list-of-topic-ideas.jpg)
-
-My personal list of topic ideas
+<figure><img src="/assets/list-of-topic-ideas.jpg" alt="" /><figcaption>My personal list of topic ideas</figcaption></figure>
 
 While that could feel overwhelming, it's also motivates me to have a bigger selection of what I'm in the mood to write about rather than forcing myself to both think of a new topic and write about something I don't want to write about each week.
 
 Whatever the case, find your source of inspiration. You don't need to be an expert on it. It doesn't matter if someone more experienced already wrote about it. Write what you know. Share your experiences. Maybe you'll help someone see the problem from a different perspective.
 
-Finding what motivates you
---------------------------
+## Finding what motivates you
 
 At the end of the day, writing is something that each of us will need to find our own motivation to do.
 
