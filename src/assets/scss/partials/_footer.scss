@@ -89,10 +89,19 @@
     &,
     a,
     path,
-    polygon {
+    polygon,
+    svg {
 
         color: $color-grey3;
 
+    }
+
+    .social-icons-redbubble,
+    .social-icons-eggheadio {
+        svg,
+        path {
+            fill: $color-grey3;
+        }
     }
 
 }

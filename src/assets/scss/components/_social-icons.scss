@@ -28,7 +28,8 @@
 
     a,
     path,
-    polygon {
+    polygon,
+    svg {
 
         color: $color-grey5;
 
@@ -36,6 +37,14 @@
 
     svg {
         width: 28px;
+    }
+
+    :not(.home) & {
+
+        svg {
+            height: 1em;
+        }
+
     }
 
 }
