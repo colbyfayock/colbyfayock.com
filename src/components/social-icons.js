@@ -52,7 +52,7 @@ const SocialIcons = () => {
         },
         {
             title: 'Egghead.io',
-            url: 'https://egghead.io/instructors/colby-fayock',
+            url: 'https://egghead.io/instructors/colby-fayock?af=atzgap',
             icon: <EggheadLogo />,
         },
         {
