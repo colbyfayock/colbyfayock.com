@@ -3,7 +3,7 @@ template: page
 title: ByteConf 2020
 path: /byteconf-2020
 ---
-<figure><img src="/assets/thanks-for-tuning-in.jpg" alt="" /><figcaption>Thanks for checking out my talk! ❤️</figcaption></figure>
+<figure><img src="/assets/thanks-for-tuning-in.jpg" alt="" /><figcaption>Thanks for tuning in to my talk! ❤️</figcaption></figure>
 
 You can find the slide deck and some more resources to get started or push forward on your code journey!
 
