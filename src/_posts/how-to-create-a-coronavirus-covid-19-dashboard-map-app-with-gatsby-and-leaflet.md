@@ -1,12 +1,13 @@
 ---
 template: post
-title: >-
-  How to create a Coronavirus (COVID-19) Dashboard & Map App with Gatsby and
-  Leaflet
+title: How to create a Coronavirus (COVID-19) Dashboard & Map App with Gatsby
+  and Leaflet
 date: 2020-03-29T19:37:10.061Z
 category: coding
 ---
 The Coronavirus (COVID-19) pandemic has swiftly changed how all of us interact day to day. How can we use available APIs to build a mapping app that shows the impact it has had on the world?
+
+**Update:** The original NovelCOVID API v1 endpoint has been deprecated. Please update and use the following instead: <https://corona.lmao.ninja/v2/countries>
 
 *Author's Note: This is meant to be a demo and proof of concept for putting together an impactful mapping application using real life data. For complete and accurate analysis, please make sure to use tools like [Johns Hopkins University dashboard](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6). Stay home and be safe! ❤️*
 
@@ -132,7 +133,7 @@ async function mapEffect({ leafletElement: map } = {}) {
     let response;
 
     try {
-      response = await axios.get('https://corona.lmao.ninja/countries');
+      response = await axios.get('https://corona.lmao.ninja/v2/countries');
     } catch(e) {
       console.log(`Failed to fetch countries: ${e.message}`, e);
       return;
@@ -155,6 +156,10 @@ After that's set up, we can console log out the `data` object and we'll see ou
 <figure><img src="/assets/coronavirus-location-data-in-browser.jpg" alt="" /><figcaption>Logging the Coronavirus location data to the browser console</figcaption></figure>
 
 [Follow along with the commit!](https://github.com/colbyfayock/my-coronavirus-map/commit/86bebfee4a34b9bad516879b228921cdaad55126)
+
+**Update:** The previous commit includes a link to the original NovelCOVID v1 API endpoint which has now been deprecated. Please use this instead: <https://corona.lmao.ninja/v2/countries>.
+
+[See updated commit](https://github.com/colbyfayock/my-coronavirus-map/commit/e8f63c7ca60ec358b2edc9bc3ed8935be85b5573).
 
 ## Step 3: Transform the Coronavirus data into a geographic data format
 
