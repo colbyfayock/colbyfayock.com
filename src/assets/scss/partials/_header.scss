@@ -110,3 +110,14 @@
     }
 
 }
+
+.header-notice {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: $color-primary;
+    padding: 1em;
+}

@@ -6,6 +6,7 @@ import { createTweetAction, openTweet } from 'lib/social';
 
 import SocialIcons from './social-icons';
 import Hidden from 'components/Hidden';
+import EmailSignup from 'components/EmailSignup';
 
 import image_resume from '../../static/assets/colby-fayock-front-end-development-web-design-resume.pdf';
 
@@ -53,6 +54,20 @@ const Footer = () => {
 
         </div>
 
+      </div>
+
+      <div className="container footer-email-signup">
+        <div className="content">
+          <div className="row">
+            <p>
+              Get updates straight to your email inbox!
+            </p>
+            <p className="emoji">
+              🙌 ✉️ 🙌
+            </p>
+            <EmailSignup />
+          </div>
+        </div>
       </div>
 
       <footer className="container footer-primary" role="contentinfo">
