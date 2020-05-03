@@ -2,7 +2,7 @@ import React from 'react';
 
 const RedbubbleLogo = () => {
   return (
-    <svg enable-background="new 0 0 16 16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <svg enableBackground="new 0 0 16 16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
       <filter id="a" filterUnits="userSpaceOnUse" height="16" width="16" x="0" y="0">
         <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/>
       </filter>

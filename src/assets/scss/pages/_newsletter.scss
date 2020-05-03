@@ -1,0 +1,44 @@
+.newsletter {
+
+  text-align: center;
+
+  .article-header {
+    padding-bottom: 1em;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: .4em;
+  }
+
+  .do {
+
+    display: flex;
+    width: 100%;
+    max-width: 50em;
+    justify-content: space-around;
+    text-align: left;
+    margin: 3em auto;
+
+  }
+
+  .do-will,
+  .do-wont {
+    padding: 0 2em;
+  }
+
+  .do-will {
+    width: 55%;
+  }
+
+  .do-wont {
+    width: 45%;
+  }
+
+}
+
+.newsletter-note {
+  max-width: 30em;
+  font-size: 1em;
+  margin: 0 auto;
+}
