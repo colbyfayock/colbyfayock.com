@@ -12,7 +12,20 @@ const NewsletterPage = ({location}) => {
     bodyAttributes: {
       class: 'newsletter',
     },
+    title: 'Newsletter - Colby Fayock',
     meta: [
+      {
+        name: 'description',
+        content: 'Sign up to get content updates straight to your inbox 🔥',
+      },
+      {
+        property: 'og:title',
+        content: 'Newsletter - Colby Fayock',
+      },
+      {
+        property: 'og:description',
+        content: 'Sign up to get content updates straight to your inbox 🔥',
+      },
       {
         name: 'image',
         content: websiteSocialCard
