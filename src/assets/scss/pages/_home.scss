@@ -42,3 +42,34 @@
   }
 
 }
+
+.home-newsletter {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+  font-weight: 600;
+
+  a {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    &:hover {
+
+      text-decoration: underline;
+
+    }
+
+  }
+
+  .tag {
+    font-size: .5em;
+    text-decoration: none;
+    margin-right: .8em;
+  }
+
+}

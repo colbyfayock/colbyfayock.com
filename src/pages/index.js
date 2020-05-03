@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
@@ -79,6 +80,13 @@ const Index = ({location, data}) => {
       <div className="container">
 
         <Helmet {...helmet_settings} />
+
+        <p className="home-newsletter">
+          <Link to="/newsletter">
+            <span className="tag tag-new">New</span>
+            Check out my newsletter!
+          </Link>
+        </p>
 
         <Tabs>
           <TabList>
