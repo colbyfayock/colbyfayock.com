@@ -5,6 +5,7 @@
   "author": "Colby Fayock",
   "dependencies": {
     "@jlengstorf/get-share-image": "^0.7.0",
+    "dotenv": "^8.2.0",
     "eslint-plugin-graphql": "^3.1.1",
     "gatsby": "^2.21.9",
     "gatsby-plugin-google-marketing-platform": "^0.1.20",

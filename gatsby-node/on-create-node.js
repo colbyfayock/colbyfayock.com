@@ -6,11 +6,11 @@ module.exports = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
   if ( node.internal.type === 'MarkdownRemark' ) {
-  createNodeField({
-    node,
-    name: 'slug',
-    value: getNodeSlug(node),
-  })
+    createNodeField({
+      node,
+      name: 'slug',
+      value: getNodeSlug(node),
+    })
   }
 
 };

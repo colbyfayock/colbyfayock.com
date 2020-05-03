@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 module.exports = {
     siteMetadata: {
         title: 'colbyfayock.com',
@@ -59,9 +61,8 @@ module.exports = {
                     twitter: "colbyfayock"
                 },
                 mentions: true,
-                pingbacks: false,
-                domain: "colbyfayock.com",
-                fetchLimit: 10000,
+                pingbacks: true,
+                domain: "www.colbyfayock.com",
                 token: process.env.WEBMENTIONS_TOKEN
             }
         },

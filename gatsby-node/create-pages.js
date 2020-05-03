@@ -1,5 +1,7 @@
 const path = require("path");
 
+const hostname = 'https://www.colbyfayock.com';
+
 module.exports = ({ graphql, actions }) => {
 
   const { createPage } = actions;
@@ -35,6 +37,7 @@ module.exports = ({ graphql, actions }) => {
           component: path.resolve(`src/templates/${String(node.frontmatter.template)}.js`),
           context: {
             slug: node.fields.slug,
+            permalink: createPermalinkFromSlug(node.fields.slug)
           },
         });
       });
@@ -44,3 +47,14 @@ module.exports = ({ graphql, actions }) => {
     });
   });
 };
+
+function createPermalinkFromSlug(slug) {
+  let path = slug;
+  if ( path.charAt(0) !== '/' ) {
+    path = `/${path}`;
+  }
+  if ( path.charAt(path.length - 1) !== '/' ) {
+    path = `${path}/`;
+  }
+  return `${hostname}${path}`;
+}

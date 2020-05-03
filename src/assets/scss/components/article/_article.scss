@@ -48,6 +48,8 @@
 
 .article-tweet {
 
+  margin-top: 2em;
+
   &,
   a {
     display: flex;
@@ -64,6 +66,14 @@
 
   svg {
     margin-right: .5em;
+  }
+
+}
+
+.article-webmentions {
+
+  h3 {
+    text-align: center;
   }
 
 }
