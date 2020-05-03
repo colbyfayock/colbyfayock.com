@@ -70,7 +70,7 @@ const NewsletterPage = ({location}) => {
         property: 'twitter:creator',
         content: '@colbyfayock'
       }
-  ],
+    ],
   };
 
   return (
