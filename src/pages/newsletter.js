@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet';
 import Layout from 'components/layout';
 import EmailSignup from 'components/EmailSignup';
 
-import websiteSocialCard from 'assets/images/website-social-card.jpg'
+import newsletterSocialCard from 'assets/images/newsletter-social-card.jpg'
 
 const NewsletterPage = ({location}) => {
 
@@ -28,7 +28,7 @@ const NewsletterPage = ({location}) => {
       },
       {
         name: 'image',
-        content: websiteSocialCard
+        content: newsletterSocialCard
       },
       {
         property: 'og:url',
@@ -40,11 +40,11 @@ const NewsletterPage = ({location}) => {
       },
       {
         property: 'og:image',
-        content: websiteSocialCard
+        content: newsletterSocialCard
       },
       {
         property: 'og:image:secure_url',
-        content: websiteSocialCard
+        content: newsletterSocialCard
       },
       {
         property: 'og:image:width',
@@ -60,7 +60,7 @@ const NewsletterPage = ({location}) => {
       },
       {
         property: 'twitter:image',
-        content: websiteSocialCard
+        content: newsletterSocialCard
       },
       {
         property: 'twitter:site',
