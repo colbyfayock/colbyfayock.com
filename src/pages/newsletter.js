@@ -100,9 +100,7 @@ const NewsletterPage = ({location}) => {
                 </ul>
               </div>
             </div>
-            <p>
-              <EmailSignup />
-            </p>
+            <EmailSignup />
             <p className="newsletter-note">
               After signing up, you'll get an email to confirm your subscription.
               Make sure to do this or you won't get awesome stuff!
