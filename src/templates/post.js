@@ -22,8 +22,6 @@ const PostContent = ({html}) => {
 }
 
 export default function Template({ location, data }) {
-  console.log('data',data)
-
   const webmentions = data?.allWebMentionEntry?.nodes;
   const post = new Post(data.markdownRemark);
 
