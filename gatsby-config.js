@@ -73,7 +73,6 @@ module.exports = {
                 modulePath: `${__dirname}/src/cms/cms.js`,
             },
         },
-        'gatsby-plugin-react-helmet',
-        'gatsby-plugin-netlify-cache'
+        'gatsby-plugin-react-helmet'
     ],
 };
