@@ -42,7 +42,7 @@ Pictures can be useful for a variety of reasons. For complex concepts, having a 
 
 <figure><img src="/assets/new-york-times-nike-shoes-data-visualization.jpg" alt="" /><figcaption>New York Times data visualization of running shoes</figcaption></figure>
 
-<https://www.nytimes.com/interactive/2018/07/18/upshot/nike-vaporfly-shoe-strava.html>
+*<https://www.nytimes.com/interactive/2018/07/18/upshot/nike-vaporfly-shoe-strava.html>*
 
 Adding examples of a new idea can help contextualize your thoughts. This can serve as a way to demonstrate a use case or to inspire someone with successful implementations.
 
@@ -58,7 +58,7 @@ From the your reader's perspective, linking to other pages is a way to show auth
 
 <figure><img src="/assets/colbyfayock.com-language-popularity-link.jpg" alt="" /><figcaption>Link and chart to show language popularity trends</figcaption></figure>
 
-<https://www.colbyfayock.com/2020/02/how-to-become-a-full-stack-web-developer-in-2020/>
+*<https://www.colbyfayock.com/2020/02/how-to-become-a-full-stack-web-developer-in-2020/>*
 
 But you're also helping yourself. If you've been writing for a while, you already have a stock of great content you want to share. Why not link to some of your past work with some [internal links](https://moz.com/learn/seo/internal-link)?
 
