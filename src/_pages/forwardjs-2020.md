@@ -4,6 +4,7 @@ title: ForwardJS 2020
 path: /forwardjs-2020
 ---
 ## Talk Resources
+
 * [Slides](https://slides.com/colbyfayock/building-maps-with-impact-on-react-and-the-jamstack-frontconf-2020#/)
 * [Gatsby Starter Leaflet](https://github.com/colbyfayock/gatsby-starter-leaflet)
 * [Leaflet](https://leafletjs.com/)
@@ -22,6 +23,12 @@ path: /forwardjs-2020
 
 * Demo: [https://summer-road-trip.netlify.com](https://summer-road-trip.netlify.com/)/
 * Tutorial: <https://www.colbyfayock.com/2020/03/how-to-create-a-summer-road-trip-mapping-app-with-gatsby-and-leaflet/>
+
+## Say hi on Twitter and follow me for more updates!
+
+* 🐦[Follow me on Twitter](https://twitter.com/colbyfayock)
+* 📹 [Subscribe to my Youtube](https://www.youtube.com/colbyfayock?sub_confirmation=1)
+* ✉️ [Get updates with my Newsletter](https://colbyfayock.ck.page/signup)
 
 ## Learning More About Mapping
 
