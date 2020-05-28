@@ -1,6 +1,7 @@
 ---
 template: post
-title: How is Design Important as a Developer and What Can You Do to Level Up?
+title: How is Visual and UX Design Important as a Developer and What Can You Do
+  to Level Up?
 date: 2020-05-28T12:46:31.073Z
 category: coding
 ---
@@ -10,11 +11,9 @@ Design is a part of the product process that often gets pushed off. This can com
 
 Design is a term that can describe many parts of the process. Most often, it's probably thought of as the visual designers or UX designers who are actively working to make your product usable or beautiful.
 
-But when it comes to software, this can also describe how well you architect features or how easy to understand your documentation is. While you might not be focusing on a purely visual aspect, you still need to design a solution to the problem you face, which could be getting developers to understand how to use your API.
-
 A question that I commonly get asked or see online is where should one start to learn the basics of design?
 
-Though this question typically leans towards the visual or UX side of design, this question makes me happy. It's an important part of the process that is constantly a secondary thought.  And when [I asked this on Twitter](https://twitter.com/colbyfayock/status/1258456643274186753), I received some thoughtful responses.
+This question makes me happy. It's an important part of the process that is constantly a secondary thought.  And when [I asked this on Twitter](https://twitter.com/colbyfayock/status/1258456643274186753), I received some thoughtful responses.
 
 ![](/assets/design-resources-tweet.jpg)
 
@@ -62,9 +61,7 @@ All of this early feedback and brainstorming will help you achieve the end-goal 
 
 Most of people reading this post probably have written code in one form or another. But have you ever thought about how your code impacts other developers?
 
-There are many layers to how your code can provide a better experience for another developer. The basic being -- is the code you just wrote for a new page intuitive for the next developer to work on?
-
-But it extends further when you consider how other developers will indirectly use your work. While it might be easy to map your database one-to-one with a response when you dump all of the data into a GET request, is that going to provide a good experience for the front end developer that ultimately has to use that code to create the UI?
+There are many layers to how your code can provide a better experience for another developer. The basic being – is the documentation that you created readable and easy to understand?
 
 <figure><img src="/assets/stripe-api-documentation.jpg" alt="" /><figcaption>Stripe's API documentation</figcaption></figure>
 
