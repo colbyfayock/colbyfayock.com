@@ -14,7 +14,9 @@ But when it comes to software, this can also describe how well you architect fea
 
 A question that I commonly get asked or see online is where should one start to learn the basics of design?
 
-Though this question typically leans towards the visual or UX side of design, this question makes me happy. It's an important part of the process that is constantly a secondary thought.  And when [I asked this on Twitter](https://twitter.com/colbyfayock/status/1258456643274186753), I received some thoughtful responses![](https://twitter.com/colbyfayock)
+Though this question typically leans towards the visual or UX side of design, this question makes me happy. It's an important part of the process that is constantly a secondary thought.  And when [I asked this on Twitter](https://twitter.com/colbyfayock/status/1258456643274186753), I received some thoughtful responses.
+
+![](/assets/design-resources-tweet.jpg)
 
 <https://twitter.com/colbyfayock/status/1258456643274186753>
 
