@@ -74,9 +74,7 @@ Beautiful documentation isn't that which has a beautiful design, it's one that t
 
 But of course everyone wants something nice to look at. Not only can design treats make people happy and smile, it can also help avoid stress and tension.
 
-![](https://www.freecodecamp.org/news/content/images/2020/05/josh-w-comeau-website-heart-1.jpg)
-
-Josh W. Comeau includes cute, happy graphics throughout his site
+<figure><img src="/assets/josh-w-comeau-website-heart.jpg" alt="" /><figcaption>Josh W. Comeau includes cute, happy graphics throughout his site</figcaption></figure>
 
 Having a page that's ugly or overly thick with data can be unsettling. Not only can it hurt the usability, but the clutter and color choices can make people feel uneasy, stressed, and full of anxiety.
 
