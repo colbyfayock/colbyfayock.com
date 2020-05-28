@@ -50,9 +50,7 @@ Why spend a couple sprints building out a solution only to start from scratch wh
 
 Get design feedback early. Work with the design resources you have to iterate and work in feedback as you go. It's important to solve the UI problems before you develop the solutions.
 
-![](https://www.freecodecamp.org/news/content/images/2020/05/design-prototyping.jpg)
-
-Design sketches from [Unsplash.com](https://unsplash.com/photos/MKDEMlPRoYU)
+<figure><img src="/assets/design-prototyping.jpg" alt="" /><figcaption>Design sketches from Unsplash.com https://unsplash.com/photos/MKDEMlPRoY</figcaption></figure>
 
 And this can generally help your team flesh out ideas. Visually seeing an idea, even as a rough sketch on a piece of paper or a disposable prototype, can completely change the way you look at the solution.
 
@@ -66,9 +64,7 @@ There are many layers to how your code can provide a better experience for anoth
 
 But it extends further when you consider how other developers will indirectly use your work. While it might be easy to map your database one-to-one with a response when you dump all of the data into a GET request, is that going to provide a good experience for the front end developer that ultimately has to use that code to create the UI?
 
-![](https://www.freecodecamp.org/news/content/images/2020/05/strip-api-documentation.jpg)
-
-[Stripe's API documentation](https://stripe.com/docs/api/balance/balance_retrieve)
+<figure><img src="/assets/stripe-api-documentation.jpg" alt="" /><figcaption>Stripe's API documentation</figcaption></figure>
 
 While it's certainly important for your fellow teammates, they should typically be able to message you on Slack or hop on a call when they run into trouble. But how about those developers that only have your documentation?
 
