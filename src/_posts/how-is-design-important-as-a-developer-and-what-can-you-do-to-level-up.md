@@ -26,15 +26,13 @@ So before I share with you some resources, I'm going to start by explaining why 
 
 Starting from the top -- you can have the best, most ingenious product that blows all competition away, but if no one knows how to use it, it realistically has no value.
 
-![](https://www.freecodecamp.org/news/content/images/2020/02/pied-piper-user-interface.jpg)
-
-Fictional Pied Piper's app tanked because of a bad user experience
+<figure><img src="/assets/pied-piper-user-interface.jpg" alt="" /><figcaption>Fictional Pied Piper's app tanked because of a bad user experience</figcaption></figure>
 
 Our fictional friends at [Pied Piper](https://www.hbo.com/silicon-valley) learned this the hard way when their product launch with a groundbreaking compression algorithm didn't go over too well because no one knew how to actually use it.
 
 But this is a realistic scenario. We learned from [Craigslist](https://craigslist.org/) that your website or app doesn't need to have a slick design, but it has to be usable.
 
-![](https://www.freecodecamp.org/news/content/images/2020/05/craigslist-2020-vs-2001.jpg)
+<figure><img src="/assets/craigslist-2020-vs-2001.jpg" alt="" /><figcaption>Craigslist in 2001 vs 2020</figcaption></figure>
 
 For nearly 20 years, Craigslist really hasn't changed that much. A few tweaks to make things a little bit cleaner, but overall it's the same basic layout and experience.
 
