@@ -1,7 +1,6 @@
 ---
 template: post
-title: How is Visual and UX Design Important as a Developer and What Can You Do
-  to Level Up?
+title: How is Design Important as a Developer and What Can You Do to Level Up?
 date: 2020-05-28T12:46:31.073Z
 category: coding
 ---
