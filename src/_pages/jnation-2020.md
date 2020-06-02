@@ -5,7 +5,7 @@ path: /jnation-2020
 ---
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/building-maps-with-impact-on-react-and-the-jamstack-forwardjs)
+* [Slides](https://slides.com/colbyfayock/building-maps-with-impact-on-react-and-the-jamstack-jnation-2020)
 * [Mapping with React Leaflet on egghead.io](https://egghead.io/playlists/mapping-with-react-leaflet-e0e0?af=atzgap)
 * [Gatsby Starter Leaflet](https://github.com/colbyfayock/gatsby-starter-leaflet)
 * [Leaflet](https://leafletjs.com/)
