@@ -149,6 +149,14 @@ While you can Google around and find a newsletter that makes sense for you, here
 * [Web Tools Weekly](https://webtoolsweekly.com/)
 * [CSS Weekly](https://css-weekly.com/)
 
+## Building your "brand"
+
+"Brand" is a funny word and can come sometimes come with negative connotations, but really as an author, your goal should be to build a presence that you carry with you consistently through all of your different outlets of work.
+
+For instance, when possible, try to always use the same username when creating author profiles. You can find me mostly anywhere at [@colbyfayock](https://twitter.com/colbyfayock) -- it makes it easy for people to find me on a new network.
+
+Also try to use the same picture. While it's definitely fun to customize your different profiles depending on who's there, the benefit of using the same picture is people will come to recognize you by that picture. They'll instantly be able to remember they saw your blog post when they see your tweet come through their feed.
+
 ## Be patient, your time will come
 
 You're not going to find an overnight success without spending a lot of money, so be patient. Content development is hard, it takes time to both build an audience and figure out your voice.
