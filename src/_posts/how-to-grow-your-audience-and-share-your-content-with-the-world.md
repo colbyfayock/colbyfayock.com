@@ -115,6 +115,16 @@ Learn about the different tech or [webdev](https://www.reddit.com/r/webdev/) s
 
 But if you can have thick skin and learn to take the heat should you get noticed, Hacker News can be an incredible way to broadcast to the world. People have turned into [overnight successes](https://www.youtube.com/watch?v=ifq3xhik8tE) by ending up on the front page of Hacker News whether they're the ones who posted it there or not.
 
+### More platforms
+
+While those are two of the big ones, there are a ton more. Here are a few more to get you started:
+
+* [Echo JS](https://www.echojs.com/)
+* [RubyFlow](http://www.rubyflow.com/)
+* [Lobsters](https://lobste.rs/)
+* [Golang News](https://golangnews.com/)
+* [Web Designer News](https://www.webdesignernews.com/)
+
 ## Other notable places
 
 ### Chat-based Communities
