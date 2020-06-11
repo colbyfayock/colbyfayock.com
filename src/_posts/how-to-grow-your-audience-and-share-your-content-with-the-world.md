@@ -125,6 +125,18 @@ There are a ton of [communities](https://www.freecodecamp.org/news/freecodecamp
 
 This is something a lot of people regret not starting earlier -- myself included. It's not too much effort to start a newsletter [with a platform that has a free tier](https://app.convertkit.com/referrals/l/36ce3fce-f231-48b5-b878-e622d0265c3f) and keep it in your back pocket until you see some growth. No one's going to judge you for waiting a few months to put out content, but once you begin to grow your audience, they'll be excited to see all of your new work.
 
+### Other people's newsletters
+
+You don't have to have your own newsletter to get into someone's inbox, there are already a ton of newsletter curators doing a lot of hard work to find great content around the web, but if they don't see it, how can they include it?
+
+Most newsletter publications love to receive submissions. This helps their publication grow and include content from people who might not have a good opportunity on their own.
+
+While you can Google around and find a newsletter that makes sense for you, here are a few that I follow along with that I know would love to see your work:
+
+* All [Cooperpress](https://cooperpress.com/publications/) Publications including [Javascript Weekly](http://javascriptweekly.com/), [Serverless Status](https://serverless.email/), and [a bunch more](https://cooperpress.com/publications/)
+* [Web Tools Weekly](https://webtoolsweekly.com/)
+* [CSS Weekly](https://css-weekly.com/)
+
 ## Be patient, your time will come
 
 You're not going to find an overnight success without spending a lot of money, so be patient. Content development is hard, it takes time to both build an audience and figure out your voice.
