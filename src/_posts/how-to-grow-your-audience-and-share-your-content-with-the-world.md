@@ -6,8 +6,7 @@ category: coding
 ---
 Building quality content can be a really rewarding task, but for those just starting out or those who don't yet have a large audience, that content can easily get buried amongst the other million tweets on Twitter. How can we expand our reach and help our content impact more people?
 
-Creating our content for the masses
------------------------------------
+## Creating our content for the masses
 
 Every content creator has been there -- you just wrote an article that you're super excited about and think it's going to be a massive hit. But you quickly find that overnight success never came when you wake up hoping to find thousands of likes on the tweet only to find not a single one.
 
@@ -17,8 +16,7 @@ Social networks don't tend to prioritize their feeds based on how good your arti
 
 So how do we expand that reach? While the obvious route is to buy your way to the top with ads, I'm going to focus on more natural ways we can build our audience.
 
-What do I mean by building an audience?
----------------------------------------
+## What do I mean by building an audience?
 
 Your favorite web developers or social media influencers didn't start with 100,000 followers -- most of them worked really hard to get where they are.  That process is what building an audience is all about.
 
@@ -28,8 +26,7 @@ Your audience is those people who followed you or are actively engaging with the
 
 By working hard on your content, being consistent, and [finding your voice](https://www.colbyfayock.com/2020/05/how-to-write-more-effectively-and-develop-your-unique-style/), you'll naturally build that audience. But to build that audience, people first need to see it. So how can we get it in front of people?
 
-Leveraging larger platforms and publications
---------------------------------------------
+## Leveraging larger platforms and publications
 
 While your new blog might not have anyone subscribed to your RSS feed, there are platforms out there with large audiences that are actively looking for more authors.
 
@@ -37,12 +34,11 @@ By leveraging these audiences, you're helping to get your foot in the door. Whil
 
 This process can take many forms, but I'm going to focus on a few things:
 
--   Syndicating with other platforms
--   Contributing to other publications
--   Sharing on content curation platforms
+* Syndicating with other platforms
+* Contributing to other publications
+* Sharing on content curation platforms
 
-Syndicating with other platforms
---------------------------------
+## Syndicating with other platforms
 
 Syndicating your content can be one of the more effective means of getting access to a larger network while holding on to a lot of the benefits of hosting your own content.
 
@@ -60,9 +56,7 @@ The great part about it, is everyone seems to get a bit of a fair chance at gett
 
 To syndicate on dev.to, you'll want to set up the canonical link in the post configuration. When editing the content, you'll want to look for the settings icon, where you'll then be provided with an input where you can add the original URL for your post.
 
-![](https://www.freecodecamp.org/news/content/images/2020/06/devto-post-canonical-url.jpg)
-
-Adding a canonical URL to a dev.to post
+<figure><img src="/assets/devto-post-canonical-url.jpg" alt="" /><figcaption>Adding a canonical URL to a dev.to post</figcaption></figure>
 
 ### Medium
 
@@ -78,18 +72,13 @@ Adding a canonical link to your Medium posts is a bit trickier though. To do thi
 
 On your Stories page, you can find the Import button.
 
-![](https://www.freecodecamp.org/news/content/images/2020/06/medium-import-story.jpg)
-
-Importing a story on Medium
+<figure><img src="/assets/medium-import-story.jpg" alt="" /><figcaption>Importing a story on Medium</figcaption></figure>
 
 Once it's imported, you won't really be able to see much, but once you preview the page, you can view the source and find the canonical link added.
 
-![](https://www.freecodecamp.org/news/content/images/2020/06/medium-post-source-canonical-link.jpg)
+<figure><img src="/assets/medium-post-source-canonical-link.jpg" alt="" /><figcaption>Canonical link in Medium post source</figcaption></figure>
 
-Canonical link in Medium post source
-
-Contributing to other publications
-----------------------------------
+## Contributing to other publications
 
 While you might have to give up ownership of your content, writing for other publications or writing as a "guest post" is a great way to get started and gain some ground where you might not have had any before.
 
@@ -99,19 +88,18 @@ This can even open up the door to more opportunities. This helps give your name 
 
 The good news -- is there's an endless supply of big name publishers that you can submit your work to. Here are a few you can get started with:
 
--   [freeCodeCamp News](https://www.freecodecamp.org/news/developer-news-style-guide/)
--   [Smashing Magazine](https://www.smashingmagazine.com/write-for-us/)
--   [CSS-Tricks](https://css-tricks.com/guest-posting/)
--   [Sitepoint](https://sitepoint.typeform.com/to/DMmYfn)
--   [Tuts+](https://envato.formstack.com/forms/create_a_tutorial?Source=&Medium=)
--   [Web Designer Depot](https://www.webdesignerdepot.com/write-for-us/)
+* [freeCodeCamp News](https://www.freecodecamp.org/news/developer-news-style-guide/)
+* [Smashing Magazine](https://www.smashingmagazine.com/write-for-us/)
+* [CSS-Tricks](https://css-tricks.com/guest-posting/)
+* [Sitepoint](https://sitepoint.typeform.com/to/DMmYfn)
+* [Tuts+](https://envato.formstack.com/forms/create_a_tutorial?Source=&Medium=)
+* [Web Designer Depot](https://www.webdesignerdepot.com/write-for-us/)
 
 Each of these publications have different processes of getting published. So be patient and keep working hard at your content.
 
 *Note: know of another publisher that offers writing opportunities? [Let me know](https://twitter.com/colbyfayock) and I'll add them above!*
 
-Sharing on content curation platforms
--------------------------------------
+## Sharing on content curation platforms
 
 It would be great if we all had a massive Twitter following where we could post about our new blog, but that's typically not the case. So while you should absolutely set up a [social media profile](https://twitter.com/colbyfayock) and get your content out there, I'll focus on other platforms here.
 
@@ -127,8 +115,7 @@ Learn about the different tech or [webdev](https://www.reddit.com/r/webdev/) s
 
 But if you can have thick skin and learn to take the heat should you get noticed, Hacker News can be an incredible way to broadcast to the world. People have turned into [overnight successes](https://www.youtube.com/watch?v=ifq3xhik8tE) by ending up on the front page of Hacker News whether they're the ones who posted it there or not.
 
-Other notable places
---------------------
+## Other notable places
 
 ### Chat-based Communities
 
@@ -138,8 +125,7 @@ There are a ton of [communities](https://www.freecodecamp.org/news/freecodecamp
 
 This is something a lot of people regret not starting earlier -- myself included. It's not too much effort to start a newsletter [with a platform that has a free tier](https://app.convertkit.com/referrals/l/36ce3fce-f231-48b5-b878-e622d0265c3f) and keep it in your back pocket until you see some growth. No one's going to judge you for waiting a few months to put out content, but once you begin to grow your audience, they'll be excited to see all of your new work.
 
-Be patient, your time will come
--------------------------------
+## Be patient, your time will come
 
 You're not going to find an overnight success without spending a lot of money, so be patient. Content development is hard, it takes time to both build an audience and figure out your voice.
 
@@ -147,8 +133,7 @@ But chances are, if this is your first article you've ever written, maybe that f
 
 **THAT'S OKAY!** Don't give up! Send it to another publisher. Ask where you could improve and work on your next article. The more you write, the more [you'll learn about what's effective](https://www.colbyfayock.com/2020/05/how-to-write-more-effectively-and-develop-your-unique-style/). It's not a sprint, be patient and just keep up the hard work.
 
-Overcoming the fear of sharing your work
-----------------------------------------
+## Overcoming the fear of sharing your work
 
 Most of these things aren't easy to do. The idea that you might have to face critical feedback of your work is absolutely scary!
 
