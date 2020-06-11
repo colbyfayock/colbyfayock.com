@@ -94,6 +94,8 @@ The good news -- is there's an endless supply of big name publishers that you ca
 * [Sitepoint](https://sitepoint.typeform.com/to/DMmYfn)
 * [Tuts+](https://envato.formstack.com/forms/create_a_tutorial?Source=&Medium=)
 * [Web Designer Depot](https://www.webdesignerdepot.com/write-for-us/)
+* [DZone](https://dzone.com/pages/contribute)
+* [Pluralsight Guides](https://www.pluralsight.com/guides) (See "Teach" in footer)
 
 Each of these publications have different processes of getting published. So be patient and keep working hard at your content.
 
