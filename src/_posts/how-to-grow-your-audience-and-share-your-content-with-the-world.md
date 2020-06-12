@@ -123,7 +123,6 @@ While those are two of the big ones, there are a ton more. Here are a few more t
 
 * [Echo JS](https://www.echojs.com/)
 * [RubyFlow](http://www.rubyflow.com/)
-* [Lobsters](https://lobste.rs/)
 * [Golang News](https://golangnews.com/)
 * [Web Designer News](https://www.webdesignernews.com/)
 
