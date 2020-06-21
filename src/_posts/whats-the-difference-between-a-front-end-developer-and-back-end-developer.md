@@ -14,6 +14,8 @@ Whether you're working on a website or a native iOS app, all development environ
 
 This line can get blurry, especially given the rise of javascript and the [serverless](https://en.wikipedia.org/wiki/Serverless_computing) world. With the tooling somewhat merging together, we might sometimes wonder if we're a [full stack developer](https://www.colbyfayock.com/2020/02/how-to-become-a-full-stack-web-developer-in-2020/).
 
+<figure><img src="/assets/brian-holt-twitter-fullstack-developer.jpg" alt="" /><figcaption>https://twitter.com/holtbt/status/977419276251430912</figcaption></figure>
+
 ## But we're not all full stack
 
 As much as we might all [want to be](https://full-stack.netlify.app/), we're not all full stack developers. Personally, I find myself able to be productive in the back end of an application, but it's not my strength and I much prefer to be heads down building UIs.
