@@ -79,9 +79,7 @@ The back ends of applications were historically built using server-side language
 
 On each request to the server, the backend would perform the full stack of the operations, including rendering out the front end. By using frameworks or DIY architectures, the back end would accept the request, figure out what it should do with that request, run any business logic needed with the request, and provide the front end any data that it would need to display a response to that request.
 
-![](https://www.freecodecamp.org/news/content/images/2020/06/front-end-back-end-500-error.jpg)
-
-Back end giving the front end a 500 Internal Server Error
+<figure><img src="/assets/front-end-back-end-500-error.jpg" alt="" /><figcaption>Back end giving the front end a 500 Internal Server Error</figcaption></figure>
 
 Some of the more traditional back end tools include:
 
