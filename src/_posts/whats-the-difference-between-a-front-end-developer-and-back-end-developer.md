@@ -111,9 +111,7 @@ Some of the back end tools that are more common and growing in popularity includ
 
 Part of the twist with back ends is now you can write your back end with javascript. With the inception of [Node.js](https://nodejs.org/en/), developers were given the ability to use their favorite browser language to do most of the same things they were used to and familiar with but now on a server.
 
-![](https://www.freecodecamp.org/news/content/images/2020/06/nodejs-never-stopped-to-think-if-should.jpg)
-
-Never stopped to think if we should write JS on a server
+<figure><img src="/assets/nodejs-never-stopped-to-think-if-should.jpg" alt="" /><figcaption>Never stopped to think if we should write JS on a server</figcaption></figure>
 
 While not everyone is fond of running javascript as a server side language, it became a little easier to use the same language to write the full stack of an application. This changed the game a bit as far as front ends and back ends were concerned.
 
