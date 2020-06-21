@@ -55,9 +55,7 @@ Now it's common to see javascript-heavy websites and apps built using UI framewo
 
 When the browser loads the page, the page receives an initial HTML document that also includes the script tag to the javascript (same as always). But once that javascript loads, it reaches out to APIs using browser requests that when completed, update the page to fill in any kind of dynamic data that you'd typically get along with that first HTML document.
 
-![](https://www.freecodecamp.org/news/content/images/2020/06/building-website-with-more-steps.jpg)
-
-It's like building a website... with more steps
+<figure><img src="/assets/building-website-with-more-steps.jpg" alt="" /><figcaption>It's like building a website... with more steps</figcaption></figure>
 
 While it sounds like more steps, it commonly provides a faster initial page load and render, not to mention it has a great developer experience. By delivering less on that first request and prioritizing what loads after that, it usually ends up as a better user experience.
 
