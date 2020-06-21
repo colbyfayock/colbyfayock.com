@@ -28,8 +28,8 @@ export default function Template({ location, data }) {
   const socialImage = getShareImage({
     title: post.title,
     cloudName: 'fay',
-    imagePublicID: 'blog-social-card-1.1',
-    textColor: '232129',
+    imagePublicID: 'blog-social-card-2.0',
+    textColor: 'ffffff',
     imageWidth: 1280,
     imageHeight: 640,
     textAreaWidth: 860,
@@ -37,7 +37,7 @@ export default function Template({ location, data }) {
     titleFont: 'Source%20Sans%20Pro',
     titleLeftOffset: 80,
     titleFontSize: 70,
-    titleBottomOffset: -60,
+    titleBottomOffset: -30,
     titleExtraConfig: '_line_spacing_-10_semibold',
     titleGravity: 'west'
   });
