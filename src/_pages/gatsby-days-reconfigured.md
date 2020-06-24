@@ -5,11 +5,20 @@ path: /gatsby-days-reconfigured
 ---
 <figure><img src="/assets/thanks-for-tuning-in.jpg" alt="" /><figcaption>Thanks for tuning in to my talk! ❤️</figcaption></figure>
 
-You can find the slide deck and some more resources to get started or push forward on your code journey!
+You can find the slide deck and some more resources to get started with mapping!
 
 ## Talk Resources
 
-* [](https://slides.com/colbyfayock/building-maps-with-impact-on-react-and-the-jamstack-frontconf-2020#/)[Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-byteconf-2020)
+* [Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-byteconf-2020)
+* [Mapping with React Leaflet on egghead.io](https://egghead.io/playlists/mapping-with-react-leaflet-e0e0?af=atzgap)
+* [Collierville Eats](https://collierville-eats.netlify.app/)
+* [Collierville Eats with Map](https://collierville-eats-map.netlify.app/)
+* [Gats B's](https://gatsbs.netlify.app/)
+* [Gatsby Starter Leaflet](https://github.com/colbyfayock/gatsby-starter-leaflet)
+* [Leaflet](https://leafletjs.com/)
+* [React Leaflet](https://react-leaflet.js.org/)
+* [John's Hopkins Coronavirus Map](https://www.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)
+* [Fogg](https://fogg.element84.com/)
 
 ## Say hi on Twitter and follow me for more updates!
 
