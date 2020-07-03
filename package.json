@@ -9,6 +9,7 @@
     "dotenv": "^8.2.0",
     "eslint-plugin-graphql": "^4.0.0",
     "gatsby": "^2.23.1",
+    "gatsby-plugin-feed": "^2.5.10",
     "gatsby-plugin-google-marketing-platform": "^0.1.21",
     "gatsby-plugin-manifest": "^2.4.10",
     "gatsby-plugin-netlify-cms": "^4.3.4",

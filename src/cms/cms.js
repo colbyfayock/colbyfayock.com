@@ -128,6 +128,12 @@ init({
             name: 'body',
             label: 'Body',
             widget: 'markdown'
+          },
+          {
+            name: 'category',
+            label: 'Category',
+            widget: 'hidden',
+            default: 'talk'
           }
         ]
       },
