@@ -2,12 +2,25 @@
 
   input,
   button {
+
     height: 3em;
+
+    @include mobile() {
+      width: 100%;
+    }
+
   }
 
   input {
+
     width: 15em;
     margin-right: 1em;
+
+    @include mobile() {
+      width: 100%;
+      margin: 0 0 1em 0;
+    }
+
   }
 
 }
