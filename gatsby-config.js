@@ -95,10 +95,14 @@ module.exports = {
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map(edge => {
+                let path = edge.node.fields.slug;
+                if ( path.charAt(0) !== '/' ) {
+                  path = `/${path}`;
+                }
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
-                  url: `${site.siteMetadata.siteUrl}${edge.node.fields.slug}`,
-                  guid: `${site.siteMetadata.siteUrl}${edge.node.fields.slug}`,
+                  url: `${site.siteMetadata.siteUrl}${path}`,
+                  guid: `${site.siteMetadata.siteUrl}${path}`,
                 })
               })
             },
