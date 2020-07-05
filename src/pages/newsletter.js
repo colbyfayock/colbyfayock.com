@@ -8,6 +8,10 @@ import newsletterSocialCard from 'assets/images/newsletter-social-card.jpg'
 
 const NewsletterPage = ({location}) => {
 
+  const isDev = process.env.NODE_ENV === 'development';
+  const hostname = !isDev ? 'https://www.colbyfayock.com' : '';
+  const socialCardUrl = `${hostname}${newsletterSocialCard}`;
+
   const helmet_settings = {
     bodyAttributes: {
       class: 'newsletter',
@@ -28,7 +32,7 @@ const NewsletterPage = ({location}) => {
       },
       {
         name: 'image',
-        content: newsletterSocialCard
+        content: socialCardUrl
       },
       {
         property: 'og:url',
@@ -40,11 +44,11 @@ const NewsletterPage = ({location}) => {
       },
       {
         property: 'og:image',
-        content: newsletterSocialCard
+        content: socialCardUrl
       },
       {
         property: 'og:image:secure_url',
-        content: newsletterSocialCard
+        content: socialCardUrl
       },
       {
         property: 'og:image:width',
@@ -60,7 +64,7 @@ const NewsletterPage = ({location}) => {
       },
       {
         property: 'twitter:image',
-        content: newsletterSocialCard
+        content: socialCardUrl
       },
       {
         property: 'twitter:site',

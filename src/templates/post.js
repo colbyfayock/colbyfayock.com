@@ -28,7 +28,7 @@ export default function Template({ location, data }) {
   const socialImage = getShareImage({
     title: post.title,
     cloudName: 'fay',
-    imagePublicID: 'blog-social-card-2.0',
+    imagePublicID: 'blog-social-card-3.0',
     textColor: 'ffffff',
     imageWidth: 1280,
     imageHeight: 640,
@@ -42,7 +42,9 @@ export default function Template({ location, data }) {
     titleGravity: 'west'
   });
 
-  const postUrl = `https://www.colbyfayock.com${post.path}`;
+  const isDev = process.env.NODE_ENV === 'development';
+  const hostname = !isDev ? 'https://www.colbyfayock.com' : '';
+  const postUrl = `${hostname}${post.path}`;
 
   const helmet_settings = {
     bodyAttributes: {
