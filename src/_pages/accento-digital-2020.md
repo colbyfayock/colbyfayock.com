@@ -5,7 +5,7 @@ path: /accento-digital-2020
 ---
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/building-maps-with-impact-on-react-and-the-jamstack-jnation-2020)
+* [Slides](https://slides.com/colbyfayock/building-maps-with-impact-on-react-and-the-jamstack-accento-digital-2020)
 * [Mapping with React Leaflet on egghead.io](https://egghead.io/playlists/mapping-with-react-leaflet-e0e0?af=atzgap)
 * [Gatsby Starter Leaflet](https://github.com/colbyfayock/gatsby-starter-leaflet)
 * [Leaflet](https://leafletjs.com/)
@@ -36,7 +36,8 @@ path: /accento-digital-2020
 * 📹 [Anyone Can Map! Inspiring Mapping Applications and How They Impact the World](https://www.youtube.com/watch?v=pQ_5PGv0YTA)
 * 🗒️ [Anyone Can Map! Inspiration and an introduction to the world of mapping](https://www.freecodecamp.org/news/anyone-can-map-inspiration-and-an-introduction-to-the-world-of-mapping/)
 * 🗒️ [How to build a mapping app in React the easy way with Leaflet](https://www.freecodecamp.org/news/easily-spin-up-a-mapping-app-in-react-with-leaflet/)
-* 🗒️ [How to Create your own Santa Tracker with Gatsby and React Leaflet](https://www.freecodecamp.org/news/create-your-own-santa-tracker-with-gatsby-and-react-leaflet/)
+* 🗒️ [](https://www.freecodecamp.org/news/create-your-own-santa-tracker-with-gatsby-and-react-leaflet/)[How to Create a Travel Bucket List Map with Gatsby, React Leaflet, & GraphCMS](https://www.freecodecamp.org/news/how-to-create-a-travel-bucket-list-map-with-gatsby-react-leaflet-graphcms/)
+* 📹 [How to Make a Travel Bucket List Mapping app with Gatsby, React Leaflet, & GraphCMS](https://www.youtube.com/watch?v=isbr52VKjb0)
 
 ## Other Stuff
 
