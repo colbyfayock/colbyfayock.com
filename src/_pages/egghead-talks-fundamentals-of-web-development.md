@@ -9,9 +9,9 @@ You can find the slide deck and some more resources to get started or push forwa
 
 ## Talk Resources
 
-* [](https://slides.com/colbyfayock/building-maps-with-impact-on-react-and-the-jamstack-frontconf-2020#/)[Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-byteconf-2020)
-* [Pure CSS Guess Who?](https://codepen.io/jh3y/pen/eYpmGeK) (@jh3yy)
-* [CSS-only Colorful Calendar Concept](https://codepen.io/davidkpiano/pen/xwyVXO) (@Sunnynsm, @DavidKPiano)
+* [Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-egghead-talks)
+* [Anything can be a Cake](https://codepen.io/cobra_winfrey/pen/abdjReO) (@cobra_winfrey)
+* [CSS collector’s cabinet](https://codepen.io/lynnandtonic/pen/LYGjqOo) (@lynnandtonic)
 * [Coronavirus Invaders - CSS Pure Game (No JS!)](https://codepen.io/elad2412/pen/wvabjXy) (@eladsc)
 * [Alien Title Sequence](https://codepen.io/colbyfayock/pen/aEqsL) (@colbyfayock, me!)
 * [freecodecamp.org](https://freecodecamp.org/)
@@ -40,13 +40,3 @@ You can find the slide deck and some more resources to get started or push forwa
 * 🗒️ [What Are Environment Variables and How Can I Use Them with Gatsby and Netlify?](https://www.freecodecamp.org/news/what-are-environment-variables-and-how-can-i-use-them-with-gatsby-and-netlify/) (freecodecamp.org)
 * 📹 [How to create a custom React hook and publish it to npm](https://www.youtube.com/watch?v=Q0xVnRanXVk&feature=emb_title) (youtube.com)
 * 🗒️ [How to Create a Custom React Hook and Publish it to npm](https://www.freecodecamp.org/news/how-to-create-a-custom-react-hook-and-publish-it-to-npm/) (freecodecamp.org)
-
-### Want to learn how to create mapping apps?
-
-* 📹 [Mapping with React Leaflet](https://egghead.io/playlists/mapping-with-react-leaflet-e0e0?af=atzgap) (egghead.io)
-* 📹 [How to create a Coronavirus (COVID-19) Dashboard & Map App in React with Gatsby and Leaflet](https://www.youtube.com/watch?v=GryBIsfBfro) (youtube.com)
-* 🗒️[How to create a Coronavirus (COVID-19) Dashboard & Map App with Gatsby and Leaflet](https://www.colbyfayock.com/2020/03/how-to-create-a-coronavirus-covid-19-dashboard-map-app-with-gatsby-and-leaflet) (colbyfayock.com)
-* 📹 [Anyone Can Map! Inspiring Mapping Applications and How They Impact the World](https://www.youtube.com/watch?v=pQ_5PGv0YTA) (youtube.com)
-* 🗒️ [Anyone Can Map! Inspiration and an introduction to the world of mapping](https://www.colbyfayock.com/2020/03/anyone-can-map-inspiration-and-an-introduction-to-the-world-of-mapping/) (colbyfayock.com)
-* 🗒️ [How to build a mapping app in React the easy way with Leaflet](https://www.freecodecamp.org/news/easily-spin-up-a-mapping-app-in-react-with-leaflet/) (freecodecamp.org)
-* 🗒️ [How to Create your own Santa Tracker with Gatsby and React Leaflet](https://www.freecodecamp.org/news/create-your-own-santa-tracker-with-gatsby-and-react-leaflet/) (freecodecamp.org)
