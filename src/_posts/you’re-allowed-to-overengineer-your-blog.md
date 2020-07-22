@@ -10,7 +10,7 @@ A common thread in web development thought pieces is why you shouldn’t use a c
 
 One of the main points to the argument of why a blog might be overengineered is that blogs are typically made up of groups of static data. Because that data is static, it can be statically generated without needing any kind of Javascript framework on top like React.
 
-https://twitter.com/markdalgleish/status/1108433814647300097
+<figure><img src="/assets/tweet-webpack-babel-typescript-react-emotion-static-blog-with-3-posts.jpg" alt="" /><figcaption>https://twitter.com/markdalgleish/status/1108433814647300097</figcaption></figure>
 
 [Shipping Javascript can be expensive](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4). There’s no question about that. When using tools like React, [you’re immediately introducing](https://iainbean.com/posts/2020/your-blog-doesnt-need-a-javascript-framework/) performance implications by simply shipping more Javascript. If you’re just dumping out static content to a page, why do you need Javascript in the first place?
 
