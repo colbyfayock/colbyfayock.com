@@ -9,7 +9,8 @@ You can find the slide deck and some more resources to get started or push forwa
 
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-egghead-talks)
+* [Talk Recording](https://egghead.io/lessons/egghead-put-down-the-javascript-level-up-with-the-fundamentals-of-web-development?af=atzgap) (egghead.io)
+* [Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-egghead-talks) (slides.com)
 * [Anything can be a Cake](https://codepen.io/cobra_winfrey/pen/abdjReO) (@cobra_winfrey)
 * [CSS collector’s cabinet](https://codepen.io/lynnandtonic/pen/LYGjqOo) (@lynnandtonic)
 * [Coronavirus Invaders - CSS Pure Game (No JS!)](https://codepen.io/elad2412/pen/wvabjXy) (@eladsc)
