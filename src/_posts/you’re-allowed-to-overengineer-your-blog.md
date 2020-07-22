@@ -1,7 +1,7 @@
 ---
 template: post
 title: You’re Allowed to Overengineer Your Blog
-date: 2020-07-22T12:42:47.100Z
+date: 2020-07-21T12:42:47.100Z
 category: coding
 ---
 A common thread in web development thought pieces is why you shouldn’t use a certain framework on your blog or why simply, you shouldn’t overengineer it. But what can overengineering our personal projects like our blog do to help us grow as developers?
