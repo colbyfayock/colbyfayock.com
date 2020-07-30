@@ -6,7 +6,7 @@ category: coding
 ---
 Full stack web developers are the Swiss Army knife of the code world. Having that designation means you can produce end to end solutions, which is a highly marketable and agile skillset. But what does it actually take to achieve that status?
 
-*Translated to Chinese: <http://buxiang.com.cn/?p=7927>*
+*Translations:  [Korean](https://dev-dain.tistory.com/m/39), [Chinese](http://buxiang.com.cn/?p=7927)*
 
 ## First off, what really makes a developer full stack?
 
