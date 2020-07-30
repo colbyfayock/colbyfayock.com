@@ -6,6 +6,8 @@ category: coding
 ---
 Full stack web developers are the Swiss Army knife of the code world. Having that designation means you can produce end to end solutions, which is a highly marketable and agile skillset. But what does it actually take to achieve that status?
 
+*Translated to Chinese: <http://buxiang.com.cn/?p=7927>*
+
 ## First off, what really makes a developer full stack?
 
 It’s fun and buzzy to say any [front end developer is a full stack developer](https://full-stack.netlify.com/), but being able to deploy a website to [Netlify](https://www.netlify.com/) doesn’t make you full stack. This isn’t to be discouraging, just realistically, only having that experience won’t hold up well to that job title in your next interview. While you’re technically creating and deploying your work from start to finish, Netlify, [Zeit](https://zeit.co/), and other providers give you the power to do this with their magical tools that take the majority of the stack operations work out of the equation.
