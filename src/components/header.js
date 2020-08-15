@@ -5,22 +5,30 @@ import SocialIcons from './social-icons';
 
 const Header = ({location}) => {
 
-  const [showNotice, updateShowNotice] = useState(false);
+  const [notice, updateNotice] = useState();
 
   useEffect(() => {
+    let updatedNotice;
+
     if ( window.location.search.includes('emailSignup=success') ) {
-      updateShowNotice(true);
+      updatedNotice = 'Thanks for signing up for my newsletter! 🤗';
+    } else if (window.location.search.includes('newsletterUnsubscribe=success')) {
+      updatedNotice = 'Sorry to see you go... 😢 Successfully unsubscribed from newsletter!';
+    }
+
+    if (updatedNotice) {
+      updateNotice(updatedNotice);
       setTimeout(() => {
-        updateShowNotice(false);
+        updateNotice(undefined);
       }, 5000);
     }
   }, []);
 
   return (
     <>
-      {showNotice && (
-        <div className="header-notice" onClick={() => updateShowNotice(false)}>
-          Thanks for signing up for my newsletter! 🤗
+      {notice && (
+        <div className="header-notice" onClick={() => updateNotice(false)}>
+          {notice}
         </div>
       )}
       <nav className="header container" role="navigation">
