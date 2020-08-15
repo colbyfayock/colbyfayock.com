@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet';
 
 import { usePosts } from 'hooks';
 
-import Layout from 'components/layout';
+import Layout from 'components/Layout';
 import ArticleList from 'components/ArticleList';
 
 const AllPosts = ({location}) => {

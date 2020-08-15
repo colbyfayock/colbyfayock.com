@@ -1,54 +1,52 @@
 .social-icons {
 
-    @include horizontalList();
+  @include horizontalList();
 
-    li {
-        margin: 0;
-    }
+  &:before {
+    content: '';
+    margin-left: -.4em;
+  }
 
-    a {
+  &:after {
+    content: '';
+    margin-right: -.4em;
+  }
 
-        display: block;
-        width: 2em;
-        height: 2em;
-        line-height: 2em;
-        text-align: center;
+  li {
 
-        &:hover {
+    margin: 0;
 
-            &,
-            path,
-            polygon {
-                color: $color-primary;
-            }
+  }
 
-        }
+  a {
 
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
 
-    a,
-    path,
-    polygon,
-    svg {
+    &:hover {
 
-        color: $color-grey5;
-
-    }
-
-    svg {
-        width: 28px;
-    }
-
-    :not(.home) & {
-
-        svg {
-            height: 1em;
-        }
+      &,
+      path,
+      polygon {
+        color: $color-primary;
+      }
 
     }
+
+  }
+
+  svg {
+    color: $color-grey5;
+    width: 28px;
+  }
 
 }
 
 .social-icons-eggheadio {
-    transform: translateY(1px);
+  transform: translateY(1px);
 }

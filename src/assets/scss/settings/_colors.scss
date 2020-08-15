@@ -22,7 +22,10 @@ $color-grey5: darken($color-grey, 15);
 $color-grey6: darken($color-grey, 30);
 $color-grey7: darken($color-grey, 45);
 
-$color-primary: $color-teal;
+$color-brand-purple-light: #9C5CC4;
+$color-brand-purple-medium: #692BA8;
+
+$color-primary: $color-brand-purple-medium;
 $color-secondary: $color-blue;
 
 $color-alert: $color-orange;
@@ -41,35 +44,38 @@ $color-info: $color-blue;
 $color-info-background: lighten( $color-info, 25 );
 
 $color-map:
-    ( 'red' $color-red )
-    ( 'pink' $color-pink )
-    ( 'magenta' $color-magenta )
-    ( 'purple' $color-purple )
-    ( 'violet' $color-violet )
-    ( 'indigo' $color-indigo )
-    ( 'blue' $color-blue )
-    ( 'cyan' $color-cyan )
-    ( 'teal' $color-teal )
-    ( 'green' $color-green )
-    ( 'yellow' $color-yellow )
-    ( 'amber' $color-amber )
-    ( 'orange' $color-orange )
-    ( 'brown' $color-brown )
-    ( 'grey' $color-grey )
+  ( 'red' $color-red )
+  ( 'pink' $color-pink )
+  ( 'magenta' $color-magenta )
+  ( 'purple' $color-purple )
+  ( 'violet' $color-violet )
+  ( 'indigo' $color-indigo )
+  ( 'blue' $color-blue )
+  ( 'cyan' $color-cyan )
+  ( 'teal' $color-teal )
+  ( 'green' $color-green )
+  ( 'yellow' $color-yellow )
+  ( 'amber' $color-amber )
+  ( 'orange' $color-orange )
+  ( 'brown' $color-brown )
+  ( 'grey' $color-grey )
 
-    ( 'grey1' $color-grey1 )
-    ( 'grey2' $color-grey2 )
-    ( 'grey3' $color-grey3 )
-    ( 'grey4' $color-grey4 )
-    ( 'grey5' $color-grey5 )
-    ( 'grey6' $color-grey6 )
-    ( 'grey7' $color-grey7 )
+  ( 'grey1' $color-grey1 )
+  ( 'grey2' $color-grey2 )
+  ( 'grey3' $color-grey3 )
+  ( 'grey4' $color-grey4 )
+  ( 'grey5' $color-grey5 )
+  ( 'grey6' $color-grey6 )
+  ( 'grey7' $color-grey7 )
 
-    ( 'alert' $color-alert )
-    ( 'warning' $color-warning )
-    ( 'error' $color-error )
-    ( 'success' $color-success )
-    ( 'info' $color-info )
+  ( 'purple-light' $color-brand-purple-light )
+  ( 'purple-medium' $color-brand-purple-medium )
+
+  ( 'alert' $color-alert )
+  ( 'warning' $color-warning )
+  ( 'error' $color-error )
+  ( 'success' $color-success )
+  ( 'info' $color-info )
 ;
 
 
@@ -82,15 +88,15 @@ $color-map:
 
 @each $color in $color-map {
 
-    $name: nth($color, 1);
-    $value: nth($color, 2);
+  $name: nth($color, 1);
+  $value: nth($color, 2);
 
-    .color-#{$name} {
-        color: $value;
-    }
+  .color-#{$name} {
+    color: $value;
+  }
 
-    .background-#{$name} {
-        background-color: $value;
-    }
+  .background-#{$name} {
+    background-color: $value;
+  }
 
 }

@@ -5,10 +5,11 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 import { usePosts, useTalks } from 'hooks';
 
-import Layout from 'components/layout';
+import Layout from 'components/Layout';
+import Masthead from 'components/Masthead';
 import ArticleList from 'components/ArticleList';
 
-import websiteSocialCard from 'assets/images/website-social-card.jpg'
+
 
 const Index = ({location, data}) => {
 
@@ -21,14 +22,6 @@ const Index = ({location, data}) => {
     },
     meta: [
       {
-        name: 'image',
-        content: websiteSocialCard
-      },
-      {
-        property: 'og:url',
-        content: `https://www.colbyfayock.com`
-      },
-      {
         property: 'og:type',
         content: 'profile'
       },
@@ -39,47 +32,17 @@ const Index = ({location, data}) => {
       {
         property: 'profile:username',
         content: 'colbyfayock'
-      },
-      {
-        property: 'og:image',
-        content: websiteSocialCard
-      },
-      {
-        property: 'og:image:secure_url',
-        content: websiteSocialCard
-      },
-      {
-        property: 'og:image:width',
-        content: 1280
-      },
-      {
-        property: 'og:image:height',
-        content: 640
-      },
-      {
-        property: 'twitter:card',
-        content: 'summary_large_image'
-      },
-      {
-        property: 'twitter:image',
-        content: websiteSocialCard
-      },
-      {
-        property: 'twitter:site',
-        content: '@colbyfayock'
-      },
-      {
-        property: 'twitter:creator',
-        content: '@colbyfayock'
       }
-  ],
+    ],
   };
 
   return (
     <Layout location={location}>
-      <div className="container">
+      <Helmet {...helmet_settings} />
 
-        <Helmet {...helmet_settings} />
+      <Masthead />
+
+      <div className="container">
 
         <p className="home-newsletter">
           <Link to="/newsletter">

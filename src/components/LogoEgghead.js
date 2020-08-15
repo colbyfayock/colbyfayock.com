@@ -1,8 +1,8 @@
 import React from 'react';
 
-const EggheadLogo = () => {
+const LogoEgghead = () => {
   return (
-    <svg version="1.1" x="0px" y="0px" viewBox="0 0 400 412.8">
+    <svg className="logo-svg" version="1.1" x="0px" y="0px" viewBox="0 0 400 412.8">
       <path d="M381.1,143.3c-16-7.2-38.6-11.8-60.5-14.7c-13.7-33-30-61.6-47.4-82.6c-23.6-28.7-48.7-43.3-74.5-43.3
         S148,17.2,124.3,46C107,67,90.6,95.6,76.9,128.7c-22.5,3.1-45,7.9-60.3,14.7c-9,4-14.6,13-14.3,22.9c0.7,24.5,6.7,50.6,11.2,68
         C16.4,246,27,254.3,39,254.4h0.1c2.5,0,5.1,0,7.6-0.1c-0.4,20.3,3.1,40.4,10.5,59.3c22.9,58.1,79,96.4,141.6,96.4
@@ -27,4 +27,4 @@ const EggheadLogo = () => {
   )
 }
 
-export default EggheadLogo;
+export default LogoEgghead;

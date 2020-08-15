@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import Layout from 'components/layout';
+import Layout from 'components/Layout';
 import EmailSignup from 'components/EmailSignup';
 
 import newsletterSocialCard from 'assets/images/newsletter-social-card.jpg'

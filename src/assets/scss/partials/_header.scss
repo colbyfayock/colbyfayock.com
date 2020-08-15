@@ -1,128 +1,104 @@
 .header {
 
-    text-align: center;
+  text-align: center;
 
-    .row {
+  .row {
 
-        display: flex;
-        width: 100%;
-        margin-bottom: 0;
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
 
-        @include mobile() {
-            flex-direction: column;
-            align-items: center;
-        }
+    @include mobile() {
+      flex-direction: column;
+      align-items: center;
+    }
 
-        .home & {
-            display: block;
-            padding: 0;
-        }
+    .home & {
+      display: block;
+      padding: 0;
+    }
+
+  }
+
+  .h1 {
+
+    margin: 0;
+
+    a {
+      font-weight: $font-weight-bolder;
+    }
+
+    .home & {
+
+      text-align: center;
+
+      a {
+        font-size: 1.6em;
+      }
+
+      @include mobile() {
+        font-size: 1.8em;
+      }
 
     }
 
-    .h1 {
+    body:not(.home) & {
 
-        margin: 0;
-
-        a {
-            font-weight: $font-weight-bolder;
-        }
-
-        .home & {
-
-            text-align: center;
-
-            a {
-                font-size: 1.6em;
-            }
-
-            @include mobile() {
-                font-size: 1.8em;
-            }
-
-        }
-
-        body:not(.home) & {
-
-            font-size: 1em;
-
-        }
+      font-size: 1em;
 
     }
 
-    .tagline {
-        display: block;
-        color: $color-grey4;
-        font-weight: $font-weight-medium;
-        font-size: .5em;
-        line-height: 1.2em;
-        margin-top: .6em;
-    }
+  }
 
-    .header-logo,
-    .header-social {
-        flex-grow: 1;
-    }
+  .tagline {
+    display: block;
+    color: $color-grey4;
+    font-weight: $font-weight-medium;
+    font-size: .5em;
+    line-height: 1.2em;
+    margin-top: .6em;
+  }
 
-    .header-logo {
+  .header-logo,
+  .header-social {
+    flex-grow: 1;
+  }
 
-        body:not(.home) & {
+  .header-logo a {
+    text-decoration: none;
+  }
 
-            font-size: 1.4em;
-            text-align: left;
+  .social-icons {
 
-            a {
+    .home & {
 
-                display: block;
-                height: 2em;
-                color: $color-grey4;
-                line-height: 2em;
-
-                &:hover {
-                    color: $color-primary;
-                }
-
-            }
-
-        }
-
-        @include mobile() {
-            text-align: center;
-        }
+      display: flex;
+      font-size: 1.6em;
+      flex-flow: wrap;
+      justify-content: center;
+      margin-top: .3em;
 
     }
 
-    .social-icons {
+    body:not(.home) & {
 
-        .home & {
-
-            display: flex;
-            font-size: 1.6em;
-            flex-flow: wrap;
-            justify-content: center;
-            margin-top: .3em;
-
-        }
-
-        body:not(.home) & {
-
-            @include desktop() {
-                text-align: right;
-            }
-
-        }
+      @include desktop() {
+        text-align: right;
+      }
 
     }
+
+  }
 
 }
 
 .header-notice {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    background-color: $color-primary;
-    padding: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: $color-primary;
+  padding: 1em;
 }

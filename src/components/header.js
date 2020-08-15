@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'gatsby';
 
-import HeaderLogo from './HeaderLogo';
-import SocialIcons from './social-icons';
+import Logo from './Logo';
+import SocialIcons from 'components/SocialIcons';
 
 const Header = ({location}) => {
 
@@ -27,7 +28,11 @@ const Header = ({location}) => {
         <div className="content">
           <div className="row">
 
-            <HeaderLogo path={location.pathname} />
+            <div className="header-logo">
+              <Link to="/">
+                <Logo />
+              </Link>
+            </div>
 
             <div className="header-social">
               <SocialIcons />

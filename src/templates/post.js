@@ -8,7 +8,7 @@ import { FaTwitter } from 'react-icons/fa';
 import Post from 'models/post';
 import { createTweetAction, openTweet } from 'lib/social';
 
-import Layout from 'components/layout';
+import Layout from 'components/Layout';
 import ArticleHeader from 'components/ArticleHeader';
 import Hidden from 'components/Hidden';
 import Webmentions from 'components/Webmentions';
