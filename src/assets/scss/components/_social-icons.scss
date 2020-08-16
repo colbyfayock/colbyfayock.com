@@ -13,9 +13,7 @@
   }
 
   li {
-
     margin: 0;
-
   }
 
   a {
@@ -42,11 +40,41 @@
 
   svg {
     color: $color-grey5;
-    width: 28px;
+    width: 1em;
+    height: 1em;
+  }
+
+}
+
+.social-icons-youtube {
+
+  svg {
+    transform: translateY(1px) scale(1.2);
   }
 
 }
 
 .social-icons-eggheadio {
-  transform: translateY(1px);
+
+  svg {
+    transform: scale(1.1);
+  }
+
 }
+
+.social-icons-email {
+
+  svg {
+    transform: translateY(1px) scale(1.05);
+  }
+
+}
+
+.social-icons-rss {
+
+  svg {
+    transform: scale(.95);
+  }
+
+}
+

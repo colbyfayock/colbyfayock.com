@@ -24,9 +24,11 @@ $color-grey7: darken($color-grey, 45);
 
 $color-brand-purple-light: #9C5CC4;
 $color-brand-purple-medium: #692BA8;
+$color-brand-blue-light: #174AFF;
+$color-brand-blue-dark: #0B0D60;
 
 $color-primary: $color-brand-purple-medium;
-$color-secondary: $color-blue;
+$color-secondary: $color-brand-blue-dark;
 
 $color-alert: $color-orange;
 $color-alert-background: lighten( $color-alert, 25 );

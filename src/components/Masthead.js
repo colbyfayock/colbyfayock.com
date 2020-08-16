@@ -1,21 +1,26 @@
 import React from 'react';
 
+import { useSiteMetadata } from 'hooks';
+
 import Logo from 'components/Logo';
 import SocialIcons from 'components/SocialIcons';
 
-import { useSiteMetadata } from 'hooks';
+import imgCosmo from 'assets/images/cosmo.png';
 
 const Masthead = () => {
-  const { title, tagline, description, siteUrl } = useSiteMetadata();
+  const { tagline } = useSiteMetadata();
 
   return (
     <div className="masthead">
       <div className="container">
-        <h1><Logo /></h1>
+        <h1>
+          <Logo />
+        </h1>
         <p className="masthead-tagline">
           { tagline }
         </p>
         <SocialIcons />
+        <img src={imgCosmo} />
       </div>
     </div>
   )

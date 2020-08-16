@@ -1,27 +1,24 @@
 .container {
 
-    max-width: 60em;
-    padding: 0 2em;
-    margin: 0 auto;
+  max-width: 80em;
+  padding: 0 2em;
+  margin: 0 auto;
 
-    @include mobile() {
-        padding: 0 1em;
-    }
+  @include mobile() {
+    padding: 0 1em;
+  }
 
 }
 
 .row {
-    margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .row-flex {
-    @include desktop() {
-        display: flex;
-        display: -webkit-flex;
-        height: 100%;
-        flex-direction: row;
-        -webkit-flex-direction: row;
-        -webkit-align-content: stretch;
-        align-content: stretch;
-    }
+  @include desktop() {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-content: stretch;
+  }
 }

@@ -42,14 +42,26 @@ const Index = ({location, data}) => {
 
       <Masthead />
 
-      <div className="container">
-
-        <p className="home-newsletter">
+      <div className="home-newsletter">
+        <div className="container">
           <Link to="/newsletter">
-            <span className="tag tag-new">New</span>
-            Check out my newsletter!
+            <span className="home-newsletter-icon">
+              📬
+            </span>
+            <div className="home-newsletter-content">
+              <h3>Weekly Newsletter</h3>
+              <p>
+                Fresh guides & tutorials weekly straight to your inbox!
+              </p>
+            </div>
+            <button className="home-newsletter-button">
+              Sign Up
+            </button>
           </Link>
-        </p>
+        </div>
+      </div>
+
+      <div className="container">
 
         <Tabs>
           <TabList>
