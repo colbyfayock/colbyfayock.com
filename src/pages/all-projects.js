@@ -1,17 +1,17 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
-import { usePosts } from 'hooks';
+import { useProjects } from 'hooks';
 
 import Layout from 'components/Layout';
 import ArticleList from 'components/ArticleList';
 
-const AllPosts = ({location}) => {
+const AllProjects = ({location}) => {
 
-  const { posts } = usePosts();
+  const { projects } = useProjects();
 
   const helmet_settings = {
-    title: 'All Posts - Colby Fayock',
+    title: 'All Projects',
     meta: [
       {
         name: 'description',
@@ -19,7 +19,7 @@ const AllPosts = ({location}) => {
       },
       {
         property: 'og:title',
-        content: 'All Posts - Colby Fayock',
+        content: 'All Projects - Colby Fayock',
       },
       {
         property: 'og:description',
@@ -37,13 +37,13 @@ const AllPosts = ({location}) => {
 
         <header className="article-header">
           <h1 className="entry-title single-title flat-top" itemProp="headline">
-            All Posts
+            All Projects
           </h1>
         </header>
 
         <Helmet {...helmet_settings} />
 
-        <ArticleList count="all" articles={posts} />
+        <ArticleList count="all" articles={projects} />
 
       </div>
     </Layout>
@@ -51,4 +51,4 @@ const AllPosts = ({location}) => {
 
 }
 
-export default AllPosts;
+export default AllProjects;

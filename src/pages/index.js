@@ -1,20 +1,20 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { FaRss } from 'react-icons/fa';
 
-import { usePosts, useTalks } from 'hooks';
+import { usePosts, useTalks, useProjects } from 'hooks';
 
 import Layout from 'components/Layout';
 import Masthead from 'components/Masthead';
 import ArticleList from 'components/ArticleList';
 
 
-
 const Index = ({location, data}) => {
 
-  const posts = usePosts();
-  const talks = useTalks();
+  const { posts, toAll: toAllPosts } = usePosts();
+  const { projects, toAll: toAllProjects } = useProjects();
+  const { talks, toAll: toAllTalks } = useTalks();
 
   const helmet_settings = {
     bodyAttributes: {
@@ -61,22 +61,52 @@ const Index = ({location, data}) => {
         </div>
       </div>
 
-      <div className="container">
+      <div className="home-content container">
 
-        <Tabs>
-          <TabList>
-            <Tab>Blog</Tab>
-            <Tab>Speaking</Tab>
-          </TabList>
-          <TabPanel>
-            <ArticleList articles={posts} />
-          </TabPanel>
-          <TabPanel>
-            <ArticleList articles={talks} />
-          </TabPanel>
-        </Tabs>
+        <div className="home-main">
+          <div className="home-content-header">
+            <Link className="home-content-header-title" to={toAllPosts}>
+              <h2>
+                <span className="header-icon">📝</span> Latest From the Blog
+              </h2>
+            </Link>
+            <div className="home-content-header-actions">
+              <a href="https://www.colbyfayock.com/rss.xml">
+                <FaRss className="icon-rss" /> RSS
+              </a>
+            </div>
+          </div>
+          <ArticleList articles={posts} count={5} toAll={toAllPosts} labelArticles="Posts" />
+        </div>
+
+        <div className="home-sidebar">
+
+          <div className="home-sidebar-section">
+            <div className="home-content-header">
+              <Link className="home-content-header-title" to={toAllProjects}>
+                <h2>
+                  <span className="header-icon">💼</span> Featured Projects
+                </h2>
+              </Link>
+            </div>
+            <ArticleList articles={projects} count={5} toAll={toAllProjects} labelArticles="Projects"  />
+          </div>
+
+          <div className="home-sidebar-section">
+            <div className="home-content-header">
+              <Link className="home-content-header-title" to={toAllTalks}>
+                <h2>
+                  <span className="header-icon">📣</span> Recent Talks
+                </h2>
+              </Link>
+            </div>
+            <ArticleList articles={talks} count={3} toAll={toAllTalks} labelArticles="Talks"  />
+          </div>
+
+        </div>
 
       </div>
+
     </Layout>
   );
 

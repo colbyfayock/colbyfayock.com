@@ -1,14 +1,28 @@
 .masthead {
 
-  padding: 8em 0;
+  overflow: hidden;
+  padding: clamp(1em, 14vw, 12em) 0;
+
+  @media all and (min-width: 600px) {
+    overflow: visible;
+  }
 
   .container {
+
     position: relative;
-    padding-right: 30vw;
+    text-align: center;
+    font-size: 1.2em;
+
+    @media all and (min-width: 600px) {
+      font-size: 1em;
+      text-align: left;
+      padding-right: 30vw;
+    }
+
   }
 
   h1 {
-    font-size: clamp(1em, 5.5vw, 5.2em);
+    font-size: clamp(2em, 6vw, 5em);
     margin: 0 0 .25em;
   }
 
@@ -17,22 +31,32 @@
   }
 
   .social-icons {
-    font-size: clamp(1em, 2.6vw, 2.4em);
+    font-size: clamp(1em, 3.2vw, 2.5em);
   }
 
-  img {
-    position: absolute;
-    top: -7em;
-    right: 0;
+  .cosmo-wave {
+
     width: 32em;
-    font-size: clamp(.4em, 1.4vw, 1.05em);
+    font-size: clamp(.4em, 1.4vw, 1.2em);
+    pointer-events: none;
+    touch-action: none;
+    margin-top: 5em;
+    margin-bottom: -25em;
+
+    @media all and (min-width: 600px) {
+      position: absolute;
+      top: -7em;
+      right: -1em;
+      margin: 0;
+    }
+
   }
 
 }
 
 .masthead-tagline {
   color: lighten($color-grey5, 3);
-  font-size: clamp(1em, 2.7vw, 2.4em);
+  font-size: clamp(1em, 3.2vw, 2.4em);
   font-weight: 600;
   margin: 0 0 .4em;
 }

@@ -4,8 +4,7 @@ import {
   FaDribbble,
   FaGithub,
   FaInstagram,
-  FaYoutube,
-  FaRss
+  FaYoutube
 } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 
@@ -60,13 +59,7 @@ const socialLinks = [
     title: 'Email',
     url: 'mailto:hello@colbyfayock.com',
     Icon: FiMail,
-  },
-  {
-    id: 'rss',
-    title: 'RSS',
-    url: 'https://www.colbyfayock.com/rss.xml',
-    Icon: FaRss,
-  },
+  }
 ];
 
 const SocialIcons = () => {

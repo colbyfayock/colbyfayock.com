@@ -1,7 +1,5 @@
 .header {
 
-  text-align: center;
-
   .row {
 
     display: flex;
@@ -13,50 +11,25 @@
       align-items: center;
     }
 
-    .home & {
-      display: block;
-      padding: 0;
-    }
-
   }
 
-  .h1 {
-
+  .header-logo {
+    font-size: 1em;
     margin: 0;
-
-    a {
-      font-weight: $font-weight-bolder;
-    }
-
-    .home & {
-
-      text-align: center;
-
-      a {
-        font-size: 1.6em;
-      }
-
-      @include mobile() {
-        font-size: 1.8em;
-      }
-
-    }
-
-    body:not(.home) & {
-
-      font-size: 1em;
-
-    }
-
   }
 
-  .tagline {
-    display: block;
-    color: $color-grey4;
-    font-weight: $font-weight-medium;
-    font-size: .5em;
-    line-height: 1.2em;
-    margin-top: .6em;
+  .logo {
+
+    color: $color-grey5;
+
+    @media (hover: hover) {
+
+      &:hover {
+        color: $color-brand-purple-medium;
+      }
+
+    }
+
   }
 
   .header-logo,

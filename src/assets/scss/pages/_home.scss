@@ -53,8 +53,13 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     font-size: clamp(.5em, 1.3vw, 1.1em);
+
+    @media all and (min-width: 600px) {
+      justify-content: flex-start;
+    }
 
     &:before {
       content: '';
@@ -96,4 +101,93 @@
 .home-newsletter-button {
   font-size: 1.3em;
   background-color: $color-brand-blue-light;
+}
+
+.home-content {
+
+  display: flex;
+  padding-top: 6em;
+
+  @include tablet() {
+    display: block;
+  }
+
+}
+
+.home-content-header {
+
+  display: flex;
+  font-size: .7em;
+  align-items: center;
+  margin-bottom: 3em;
+
+  @media all and (min-width: 600px) {
+    font-size: 1em;
+  }
+
+  h2,
+  h3 {
+    margin: 0;
+  }
+
+  .header-icon {
+    margin-right: .2em;
+  }
+
+}
+
+.home-content-header-title {
+
+  flex-grow: 1;
+  text-decoration: none;
+
+
+}
+
+.home-content-header-actions {
+
+  a {
+    display: flex;
+    align-items: center;
+    color: $color-grey5;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  svg {
+    margin-right: .4em;
+  }
+
+  .icon-rss {
+    transform: translateY(-1px);
+  }
+
+}
+
+.home-main {
+
+  width: 65%;
+  padding-right: 6em;
+
+  @include tablet() {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 5em;
+  }
+
+}
+
+.home-sidebar {
+
+  width: 35%;
+  font-size: .8em;
+
+  @include tablet() {
+    width: 100%;
+  }
+
+}
+
+.home-sidebar-section {
+  margin-bottom: 5em;
 }

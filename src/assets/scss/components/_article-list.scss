@@ -6,20 +6,18 @@
 
   font-size: 1.2em;
   font-weight: $font-weight-bolder;
-  margin-top: 5em;
-
-  @extend %blog-more-link;
+  text-align: left;
 
   a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
 
-    &:hover {
-
-      .fa-hand-o-down {
-        display: none;
-      }
-
-    }
-
+  svg {
+    font-size: .9em;
+    margin-left: .3em;
+    transform: translateY(1px);
   }
 
 }

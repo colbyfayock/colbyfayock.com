@@ -13,5 +13,8 @@ export default function usePosts() {
 
   // Map through all posts and create a new Post instance for each
 
-  return posts.map(({ node } = {}) => new Post(node));
+  return {
+    posts: posts.map(({ node } = {}) => new Post(node)),
+    toAll: '/all-posts'
+  }
 }
