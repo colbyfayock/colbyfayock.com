@@ -107,7 +107,11 @@
 .home-content {
 
   display: flex;
-  padding-top: 6em;
+  padding-top: 2em;
+
+  @media all and (min-width: 600px) {
+    padding-top: 6em;
+  }
 
   @include tablet() {
     display: block;
