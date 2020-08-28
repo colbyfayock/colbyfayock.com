@@ -1,128 +1,77 @@
 .header {
 
-    text-align: center;
+  .row {
 
-    .row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
 
-        display: flex;
-        width: 100%;
-        margin-bottom: 0;
+    @include mobile() {
+      flex-direction: column;
+      align-items: center;
+    }
 
-        @include mobile() {
-            flex-direction: column;
-            align-items: center;
-        }
+  }
 
-        .home & {
-            display: block;
-            padding: 0;
-        }
+  .header-logo {
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .logo {
+
+    color: $color-grey5;
+
+    @media (hover: hover) {
+
+      &:hover {
+        color: $color-brand-purple-medium;
+      }
 
     }
 
-    .h1 {
+  }
 
-        margin: 0;
+  .header-logo,
+  .header-social {
+    flex-grow: 1;
+  }
 
-        a {
-            font-weight: $font-weight-bolder;
-        }
+  .header-logo a {
+    text-decoration: none;
+  }
 
-        .home & {
+  .social-icons {
 
-            text-align: center;
+    .home & {
 
-            a {
-                font-size: 1.6em;
-            }
-
-            @include mobile() {
-                font-size: 1.8em;
-            }
-
-        }
-
-        body:not(.home) & {
-
-            font-size: 1em;
-
-        }
+      display: flex;
+      font-size: 1.6em;
+      flex-flow: wrap;
+      justify-content: center;
+      margin-top: .3em;
 
     }
 
-    .tagline {
-        display: block;
-        color: $color-grey4;
-        font-weight: $font-weight-medium;
-        font-size: .5em;
-        line-height: 1.2em;
-        margin-top: .6em;
-    }
+    body:not(.home) & {
 
-    .header-logo,
-    .header-social {
-        flex-grow: 1;
-    }
-
-    .header-logo {
-
-        body:not(.home) & {
-
-            font-size: 1.4em;
-            text-align: left;
-
-            a {
-
-                display: block;
-                height: 2em;
-                color: $color-grey4;
-                line-height: 2em;
-
-                &:hover {
-                    color: $color-primary;
-                }
-
-            }
-
-        }
-
-        @include mobile() {
-            text-align: center;
-        }
+      @include desktop() {
+        text-align: right;
+      }
 
     }
 
-    .social-icons {
-
-        .home & {
-
-            display: flex;
-            font-size: 1.6em;
-            flex-flow: wrap;
-            justify-content: center;
-            margin-top: .3em;
-
-        }
-
-        body:not(.home) & {
-
-            @include desktop() {
-                text-align: right;
-            }
-
-        }
-
-    }
+  }
 
 }
 
 .header-notice {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: white;
-    text-align: center;
-    background-color: $color-primary;
-    padding: 1em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: $color-primary;
+  padding: 1em;
 }

@@ -6,7 +6,7 @@ import { FaPlay, FaThLarge, FaLink } from 'react-icons/fa';
 
 import Talk from 'models/talk';
 
-import Layout from 'components/layout';
+import Layout from 'components/Layout';
 import ArticleHeader from 'components/ArticleHeader';
 import ArticleContent from 'components/ArticleContent';
 

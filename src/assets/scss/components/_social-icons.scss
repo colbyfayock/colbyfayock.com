@@ -1,54 +1,80 @@
 .social-icons {
 
-    @include horizontalList();
+  @include horizontalList();
 
-    li {
-        margin: 0;
-    }
+  &:before {
+    content: '';
+    margin-left: -.4em;
+  }
 
-    a {
+  &:after {
+    content: '';
+    margin-right: -.4em;
+  }
 
-        display: block;
-        width: 2em;
-        height: 2em;
-        line-height: 2em;
-        text-align: center;
+  li {
+    margin: 0;
+  }
 
-        &:hover {
+  a {
 
-            &,
-            path,
-            polygon {
-                color: $color-primary;
-            }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
 
-        }
+    &:hover {
 
-    }
-
-    a,
-    path,
-    polygon,
-    svg {
-
-        color: $color-grey5;
-
-    }
-
-    svg {
-        width: 28px;
-    }
-
-    :not(.home) & {
-
-        svg {
-            height: 1em;
-        }
+      &,
+      path,
+      polygon {
+        color: $color-primary;
+      }
 
     }
+
+  }
+
+  svg {
+    color: $color-grey5;
+    width: 1em;
+    height: 1em;
+  }
+
+}
+
+.social-icons-youtube {
+
+  svg {
+    transform: translateY(1px) scale(1.2);
+  }
 
 }
 
 .social-icons-eggheadio {
-    transform: translateY(1px);
+
+  svg {
+    transform: scale(1.1);
+  }
+
 }
+
+.social-icons-email {
+
+  svg {
+    transform: translateY(1px) scale(1.05);
+  }
+
+}
+
+.social-icons-rss {
+
+  svg {
+    transform: scale(.95);
+  }
+
+}
+

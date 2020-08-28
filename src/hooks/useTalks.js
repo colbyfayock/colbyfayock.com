@@ -13,5 +13,8 @@ export default function useTalks() {
 
   // Map through all talks and create a new Talk instance for each
 
-  return talks.map(({ node } = {}) => new Talk(node));
+  return {
+    talks: talks.map(({ node } = {}) => new Talk(node)),
+    toAll: '/all-talks'
+  }
 }

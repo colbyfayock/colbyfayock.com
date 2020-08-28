@@ -1,10 +1,11 @@
 require('dotenv').config();
 
 const siteMetadata = {
-  title: 'colbyfayock.com',
-  description: 'A UX Designer & Front-end Developer Blog',
+  title: 'Colby Fayock',
+  tagline: 'UX Designer & Front End Engineer',
+  description: 'Destructuring React and the static web. Helping others learn by doing and providing insights into the development world.',
   siteUrl: 'https://www.colbyfayock.com'
-}
+};
 
 module.exports = {
   siteMetadata,

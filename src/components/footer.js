@@ -4,7 +4,7 @@ import { FaTwitter, FaYoutube } from 'react-icons/fa';
 
 import { createTweetAction, openTweet } from 'lib/social';
 
-import SocialIcons from './social-icons';
+import SocialIcons from 'components/SocialIcons';
 import Hidden from 'components/Hidden';
 import EmailSignup from 'components/EmailSignup';
 

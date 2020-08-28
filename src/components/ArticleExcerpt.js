@@ -13,33 +13,21 @@ const ArticleExcerpt = ({article = {}}) => {
 
       <header className="article-excerpt-header">
 
-        <h2 className="h2 article-excerpt-header-title">
+        <h3 className="h3 article-excerpt-header-title">
           <Link to={ path }>
             { title }
           </Link>
-        </h2>
+        </h3>
 
         <ArticleMeta category={category} date={date} />
 
       </header>
 
-      <section>
-
-        <p dangerouslySetInnerHTML={{ __html: excerpt }} />
-
-        <p className="article-excerpt-more">
-          <Link to={ path }>
-            Read More
-            <span className="fa-hand-o-right">
-              <FaHandPointRight />
-            </span>
-            <span className="fa-thumbs-o-up">
-              <FaThumbsUp />
-            </span>
-          </Link>
-        </p>
-
-      </section>
+      {excerpt && (
+        <section>
+          <p dangerouslySetInnerHTML={{ __html: excerpt }} />
+        </section>
+      )}
 
     </article>
   )

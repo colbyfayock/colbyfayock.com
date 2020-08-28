@@ -28,28 +28,21 @@
 }
 
 .article-excerpt-header {
-  margin-bottom: .8em;
+
+  & + section {
+    margin-top: .8em;
+  }
+
 }
 
 .article-excerpt-header-title {
-  margin: 0 0 .4em 0;
-}
 
-.article-excerpt-more {
-
-  font-size: 1em;
-  font-weight: $font-weight-bold;
-
-  @extend %blog-more-link;
+  margin: 0 0 .5em 0;
 
   a {
 
     &:hover {
-
-      .fa-hand-o-right {
-        display: none;
-      }
-
+      text-decoration: underline;
     }
 
   }
