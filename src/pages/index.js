@@ -54,9 +54,11 @@ const Index = ({location, data}) => {
                 Fresh guides & tutorials weekly straight to your inbox!
               </p>
             </div>
-            <button className="home-newsletter-button">
-              Sign Up
-            </button>
+            <div className="home-newsletter-button">
+              <button>
+                Sign Up
+              </button>
+            </div>
           </Link>
         </div>
       </div>

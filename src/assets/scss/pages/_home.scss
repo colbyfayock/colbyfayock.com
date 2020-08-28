@@ -54,8 +54,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     text-decoration: none;
-    font-size: .5em;
+    font-size: .8em;
 
     @media all and (min-width: 600px) {
       font-size: clamp(.5em, 1.3vw, 1.1em);
@@ -72,14 +73,26 @@
 }
 
 .home-newsletter-icon {
+
+  display: none;
   font-size: 4em;
   margin-right: .5em;
   transform: translateY(-5px);
+
+  @media all and (min-width: 600px) {
+    display: block;
+  }
+
 }
 
 .home-newsletter-content {
 
-  margin-right: 2.5em;
+  text-align: center;
+
+  @media all and (min-width: 600px) {
+    text-align: left;
+    margin-right: 2.5em;
+  }
 
   h3,
   p {
@@ -100,8 +113,23 @@
 }
 
 .home-newsletter-button {
-  font-size: 1.3em;
-  background-color: $color-brand-blue-light;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.4em;
+
+  @media all and (min-width: 600px) {
+    width: auto;
+    margin-top: 0;
+  }
+
+  button {
+    font-size: 1.3em;
+    background-color: $color-brand-blue-light;
+  }
+
 }
 
 .home-content {
