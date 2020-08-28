@@ -55,9 +55,10 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: clamp(.5em, 1.3vw, 1.1em);
+    font-size: .5em;
 
     @media all and (min-width: 600px) {
+      font-size: clamp(.5em, 1.3vw, 1.1em);
       justify-content: flex-start;
     }
 
