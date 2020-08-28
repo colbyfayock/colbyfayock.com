@@ -11,6 +11,3 @@ Spin up development
 ```
 yarn develop
 ```
-
-
-test
