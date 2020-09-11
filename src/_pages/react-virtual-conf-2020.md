@@ -18,11 +18,28 @@ path: /react-virtual-conf-2020
 * [Radiooooo World Radio](http://radiooooo.com/)
 * [FilmDrop](https://filmdrop.io/)
 
-## Build Maps on React Leaflet on egghead.io
+## Build Maps from Scratch with React Leaflet
 
 [![](/assets/build-maps-with-react-leaflet-eggheadio.png)](https://egghead.io/courses/build-maps-with-react-leaflet?af=atzgap)
 
-[Take the course](https://egghead.io/courses/build-maps-with-react-leaflet?af=atzgap)
+**What you'll learn**
+
+* How to build a map from scratch in a React app
+* How to add markers and shapes to a map
+* About geospatial data formats and how to create your own
+* How to wrangle that data and visualize that data on a map
+* How to use geolocation features to personalize the map
+* How to customize the map with imagery and custom markers
+
+[Build Maps with React Leaflet on egghead.io](https://egghead.io/courses/build-maps-with-react-leaflet?af=atzgap)
+
+
+
+## Learn Everything to Know About the Jamstack
+
+![](/assets/jamstack-handbook-social.jpg)
+
+
 
 ## Summer Road Trip
 
