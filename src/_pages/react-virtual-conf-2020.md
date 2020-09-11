@@ -55,6 +55,12 @@ path: /react-virtual-conf-2020
 * Demo: [https://summer-road-trip.netlify.com](https://summer-road-trip.netlify.com/)/
 * Tutorial: <https://www.colbyfayock.com/2020/03/how-to-create-a-summer-road-trip-mapping-app-with-gatsby-and-leaflet/>
 
+## Learn by Doing with 50 Project Ideas
+
+![](/assets/50-react-projects-banner.jpg)
+
+[Free Download: 50 Projects for React & the State Web](https://50reactprojects.com/)
+
 ## Say hi on Twitter and follow me for more updates!
 
 * 🐦[Follow me on Twitter](https://twitter.com/colbyfayock)
