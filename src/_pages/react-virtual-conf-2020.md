@@ -35,9 +35,19 @@ path: /react-virtual-conf-2020
 
 
 
-## Learn Everything to Know About the Jamstack
+## Ebook: Learn Everything to Know About the Jamstack
 
-![](/assets/jamstack-handbook-social.jpg)
+[![](/assets/jamstack-handbook-social.jpg)](https://jamstackhandbook.com/)
+
+**Here are some things you'll learn:**
+
+* What exactly is the Jamstack?
+* What makes the Jamstack so awesome?
+* What are the good parts?
+* What are the not so good parts?
+* How can we build Jamstack sites?
+
+[Preorder at jamstackhandbook.com](https://jamstackhandbook.com/)
 
 
 
