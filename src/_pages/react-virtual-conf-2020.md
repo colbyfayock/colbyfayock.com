@@ -57,7 +57,7 @@ path: /react-virtual-conf-2020
 
 ## Learn by Doing with 50 Project Ideas
 
-![](/assets/50-react-projects-banner.jpg)
+[![](/assets/50-react-projects-banner.jpg)](https://50reactprojects.com/)
 
 [Free Download: 50 Projects for React & the State Web](https://50reactprojects.com/)
 
