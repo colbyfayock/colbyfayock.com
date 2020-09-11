@@ -33,9 +33,7 @@ path: /react-virtual-conf-2020
 
 [Build Maps with React Leaflet on egghead.io](https://egghead.io/courses/build-maps-with-react-leaflet?af=atzgap)
 
-
-
-## Ebook: Learn Everything to Know About the Jamstack
+## Ebook: Learn All the Things About the Jamstack
 
 [![](/assets/jamstack-handbook-social.jpg)](https://jamstackhandbook.com/)
 
@@ -48,8 +46,6 @@ path: /react-virtual-conf-2020
 * How can we build Jamstack sites?
 
 [Preorder at jamstackhandbook.com](https://jamstackhandbook.com/)
-
-
 
 ## Summer Road Trip
 
