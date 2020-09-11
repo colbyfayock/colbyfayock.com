@@ -18,6 +18,12 @@ path: /react-virtual-conf-2020
 * [Radiooooo World Radio](http://radiooooo.com/)
 * [FilmDrop](https://filmdrop.io/)
 
+## Build Maps on React Leaflet on egghead.io
+
+
+
+[Take the course](https://egghead.io/courses/build-maps-with-react-leaflet?af=atzgap)
+
 ## Summer Road Trip
 
 ![Colbana's Summer Road Trip](/assets/summer-road-trip-map.jpg)
