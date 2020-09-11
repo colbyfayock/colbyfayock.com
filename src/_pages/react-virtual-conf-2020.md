@@ -20,7 +20,7 @@ path: /react-virtual-conf-2020
 
 ## Build Maps on React Leaflet on egghead.io
 
-
+![](/assets/build-maps-with-react-leaflet-eggheadio.png)
 
 [Take the course](https://egghead.io/courses/build-maps-with-react-leaflet?af=atzgap)
 
