@@ -5,11 +5,12 @@ path: /react-global-2020
 ---
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-egghead-talks) (slides.com)
+* [Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-react-global-summit-2020) (slides.com)
 * [Anything can be a Cake](https://codepen.io/cobra_winfrey/pen/abdjReO) (@cobra_winfrey)
 * [CSS collector’s cabinet](https://codepen.io/lynnandtonic/pen/LYGjqOo) (@lynnandtonic)
 * [Coronavirus Invaders - CSS Pure Game (No JS!)](https://codepen.io/elad2412/pen/wvabjXy) (@eladsc)
 * [Alien Title Sequence](https://codepen.io/colbyfayock/pen/aEqsL) (@colbyfayock, me!)
+* [egghead.io](https://egghead.io/)
 * [freecodecamp.org](https://freecodecamp.org/)
 
 ## Ebook: Learn All the Things About the Jamstack
