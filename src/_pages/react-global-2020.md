@@ -25,7 +25,7 @@ path: /react-global-2020
 * What are the not so good parts?
 * How can we build Jamstack sites?
 
-[Preorder at jamstackhandbook.com](https://jamstackhandbook.com/)
+[Order at jamstackhandbook.com](https://jamstackhandbook.com/)
 
 ## Learn by Doing with 50 Project Ideas
 
