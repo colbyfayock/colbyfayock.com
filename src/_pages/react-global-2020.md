@@ -5,7 +5,6 @@ path: /react-global-2020
 ---
 ## Talk Resources
 
-* [Talk Recording](https://egghead.io/lessons/egghead-put-down-the-javascript-level-up-with-the-fundamentals-of-web-development?af=atzgap) (egghead.io)
 * [Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-egghead-talks) (slides.com)
 * [Anything can be a Cake](https://codepen.io/cobra_winfrey/pen/abdjReO) (@cobra_winfrey)
 * [CSS collector’s cabinet](https://codepen.io/lynnandtonic/pen/LYGjqOo) (@lynnandtonic)
@@ -53,6 +52,7 @@ path: /react-global-2020
 * 🐦[Follow me on Twitter](https://twitter.com/colbyfayock)
 * 📹 [Subscribe to my Youtube](https://www.youtube.com/colbyfayock?sub_confirmation=1)
 * ✉️ [Get updates with my Newsletter](https://colbyfayock.ck.page/signup)
+
 ## Want more resources to learn?
 
 ### More to learn on your code journey
@@ -71,5 +71,3 @@ path: /react-global-2020
 * 🗒️ [What Are Environment Variables and How Can I Use Them with Gatsby and Netlify?](https://www.freecodecamp.org/news/what-are-environment-variables-and-how-can-i-use-them-with-gatsby-and-netlify/) (freecodecamp.org)
 * 📹 [How to create a custom React hook and publish it to npm](https://www.youtube.com/watch?v=Q0xVnRanXVk&feature=emb_title) (youtube.com)
 * 🗒️ [How to Create a Custom React Hook and Publish it to npm](https://www.freecodecamp.org/news/how-to-create-a-custom-react-hook-and-publish-it-to-npm/) (freecodecamp.org)
-
-
