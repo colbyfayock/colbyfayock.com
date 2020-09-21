@@ -1,6 +1,6 @@
 ---
 template: page
 title: What do I use?
-path: /uses
+path: /what-do-i-use
 ---
 todo
