@@ -15,6 +15,8 @@ I also want to point out that just because you see me or other content creators 
 
 That said, here's the equipment I've been using to create [videos on YouTube](https://www.youtube.com/colbyfayock), [lessons and courses on egghead.io](https://egghead.io/instructors/colby-fayock?af=atzgap), and various other bits and pieces I use the equipment with. Reach out on Twitter if you have any specific questions and I can try to answer as best as I can, or at a minimum, help you try to figure it out.
 
+*Note: the prices I'm marking below are at the time of writing this*
+
 ## Audio
 
 Audio is arguably the most important piece of the content creation puzzle. When delivering video, podcasts, or any other sound-based educational content, you want to be able to communicate as clearly as you can so your listeners and viewers can understand every concept you're trying to convey.
@@ -27,6 +29,14 @@ They provide a [Shure BETA 87A](https://www.amazon.com/Shure-Supercardioid-Conde
 
 Before my egghead.io journey, I used a [Blue Yeti](https://www.amazon.com/gp/product/B00N1YPXW2/?tag=fay-uses-20), which worked really well, and is an extremely popular option for people getting into content creation. I used a Blue yeti when [recording a podcast with That's My JAMstack](https://thatsmyjamstack.com/posts/colby-fayock/).
 
+* [Shure BETA 87A](https://www.amazon.com/Shure-Supercardioid-Condenser-Microphone-Applications/dp/B0002BACBO/?tag=fay-uses-20) ($249)
+* [Focusrite Scarlett](https://www.amazon.com/Focusrite-Scarlett-Audio-Interface-Tools/dp/B07QR6Z1JB/?tag=fay-uses-20) ($109)
+* [Blue Yeti](https://www.amazon.com/gp/product/B00N1YPXW2/?tag=fay-uses-20) ($129)
+
 ## Video
+
+While my video quality isn't as high as it might be with a DSLR, I've come a long way since [my first video](https://www.youtube.com/watch?v=MsrNdjp0aKI) and have [had some success](https://youtube.com/colbyfayock) using the [Logitech C922 Pro](https://www.amazon.com/Logitech-Stream-Streaming-Recording-Included/dp/B01MTTMPKT?tag=fay-uses-20).
+
+<figure><img src="/assets/colby-fayock-webcam-smile.jpg" alt="" /><figcaption>Me! Smiling on camera</figcaption></figure>
 
 ## Lighting
