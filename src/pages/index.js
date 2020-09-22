@@ -110,6 +110,23 @@ const Index = ({location, data}) => {
 
           <div className="home-sidebar-section">
             <div className="home-content-header">
+              <span className="home-content-header-title">
+                <h2>
+                  <span className="header-icon">✨</span> Featured Features
+                </h2>
+              </span>
+            </div>
+            <ArticleList articles={[
+              {
+                path: '/what-i-use',
+                title: 'What I Use',
+                category: 'Audio, video, lighting, etc'
+              }
+            ]}  />
+          </div>
+
+          <div className="home-sidebar-section">
+            <div className="home-content-header">
               <Link className="home-content-header-title" to={toAllProjects}>
                 <h2>
                   <span className="header-icon">💼</span> Featured Projects
