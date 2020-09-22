@@ -39,4 +39,31 @@ While my video quality isn't as high as it might be with a DSLR, I've come a lon
 
 <figure><img src="/assets/colby-fayock-webcam-smile.jpg" alt="" /><figcaption>Me! Smiling on camera</figcaption></figure>
 
+It provides some nice autofocus capabilities and has some control mechanisms with their G HUB software. 
+
+* [Logitech C922 Pro](https://www.amazon.com/Logitech-Stream-Streaming-Recording-Included/dp/B01MTTMPKT?tag=fay-uses-20) ($99.99)
+
 ## Lighting
+
+Your video will only be as good your lighting. Without sufficient lighting, your camera won't be able to take in enough light to provide a detailed picture. The Logitech C922 suffers a lot without sufficient lighting, leading the video to be laggy and grainy.
+
+I use 2 [Neewer LED panels](https://www.amazon.com/gp/product/B079FQBFJD/?tag=fay-uses-20). They come as a [single pack ](https://www.amazon.com/gp/product/B079FQBFJD/?tag=fay-uses-20) as well as a [2-pack](https://www.amazon.com/gp/product/B07LGX143D/?tag=fay-uses-20) that comes with stands if you know you need additional lighting. They do a nice job at providing a lot of light and allow you to control the brightness and color on the back of the panels. They only come with batteries, which means they're portable, but if you would rather the ability to plug them in without recharging every time, I use these [power adapters](https://www.amazon.com/gp/product/B07HNL5D56/?tag=fay-uses-20).
+
+![](/assets/colby-fayock-desk-setup.png "My desk setup")
+
+While the 2-pack came with stands, I needed something to mount them to my desk, as I didn't have space for them sitting behind my desk. I used [monopods](https://www.amazon.com/gp/product/B00ST1Y2QU/?tag=fay-uses-20) and [desk clamps](https://www.amazon.com/gp/product/B00DJ5XH4O/?tag=fay-uses-20) to attach and position them to shine down.
+
+Finally, I have a simple ring light that I got for free that just provides some fill on my face. This works really well even if it's your own available option for lighting than nothing at all. It also works really well as a way to provide some good lighting with a stand for video chats with your phone, as it comes with a phone holder in the middle.
+
+* [Neewer Slim LED - Single Pack](https://www.amazon.com/gp/product/B079FQBFJD/?tag=fay-uses-20) ($49.99)
+* [Neewer Slim LED - 2-pack](https://www.amazon.com/gp/product/B07LGX143D/?tag=fay-uses-20) ($86.99)
+* [Power Adapters](https://www.amazon.com/gp/product/B07HNL5D56/?tag=fay-uses-20) ($9.99)
+* [Smatree Monopods](https://www.amazon.com/gp/product/B00ST1Y2QU/?tag=fay-uses-20) ($21.99)
+* [SMALLRIG Ballhead Clamps](https://www.amazon.com/gp/product/B00DJ5XH4O/?tag=fay-uses-20) ($13.99)
+* [UBeesize 10" LED Ring Light](https://www.amazon.com/gp/product/B0822GQR3Z/?tag=fay-uses-20) ($22.99)
+
+## Other
+
+There are a few other accessories that made my setup easier to manage.
+
+* [OWC 14-Port Thunderbolt 3 Dock](https://www.amazon.com/gp/product/B07JM3S5SJ/?tag=fay-uses-20) ($279): With all of the accessories, you need enough power to fully support them, particularly if you're using a laptop (I learned this the hard way).
