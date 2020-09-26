@@ -5,7 +5,8 @@ path: /wordcamp-philly-2020
 ---
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/building-maps-with-impact-on-react-and-the-jamstack-react-virtual-conf-2020)
+* [Slides](https://slides.com/colbyfayock/wordpress-in-a-headless-world-wordcamp-philly-2020)
+* [Next WordPress Starter](https://github.com/colbyfayock/next-wordpress-starter)
 
 
 ## Ebook: Learn All the Things About the Jamstack
