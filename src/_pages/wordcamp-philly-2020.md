@@ -6,7 +6,11 @@ path: /wordcamp-philly-2020
 ## Talk Resources
 
 * [Slides](https://slides.com/colbyfayock/wordpress-in-a-headless-world-wordcamp-philly-2020)
+* [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/)
+* [WordPress REST API](https://developer.wordpress.org/rest-api/)
 * [Next WordPress Starter](https://github.com/colbyfayock/next-wordpress-starter)
+* [WordPress on AWS Lightsail](https://aws.amazon.com/lightsail/projects/wordpress/)
+* [Headless CMS Catalog](https://headlesscms.org/)
 
 
 ## Ebook: Learn All the Things About the Jamstack
