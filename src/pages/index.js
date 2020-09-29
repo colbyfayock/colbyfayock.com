@@ -118,6 +118,11 @@ const Index = ({location, data}) => {
             </div>
             <ArticleList articles={[
               {
+                path: 'https://cottonbureau.com/products/cosmo-the-space-jellyfish',
+                title: 'Cosmo the Space Jellyfish Tshirt',
+                category: 'Available on Cotton Bureau'
+              },
+              {
                 path: '/what-i-use',
                 title: 'What I Use',
                 category: 'Audio, video, lighting, etc'
