@@ -120,7 +120,12 @@ const Index = ({location, data}) => {
               {
                 path: 'https://cottonbureau.com/products/cosmo-the-space-jellyfish',
                 title: 'Cosmo the Space Jellyfish Tshirt',
-                category: 'Available on Cotton Bureau'
+                category: 'Available on Cotton Bureau high quality products'
+              },
+              {
+                path: 'https://www.redbubble.com/i/t-shirt/Cosmo-the-Space-Jellyfish-by-colbyfayock/58649803.S7RYU',
+                title: 'Cosmo the Space Jellyfish on Redbubble',
+                category: 'More product options, more affordable'
               },
               {
                 path: '/what-i-use',
