@@ -109,7 +109,7 @@ You can export Figma projects in a few different ways. You can export as image f
 
 To export an entire project though, like an ebook, Figma also has the ability inside of the menu under File to Export Frames to PDFs.
 
-http://d.fay.io/lP6QNh
+<figure><img src="/assets/exporting-frames-as-pdf-figma.jpg" alt="" /><figcaption>Exporting frames as PDF in Figma</figcaption></figure>
 
 This allowed me to avoid figuring out some hacky solution or try to export each individually, which would have been a nightmare.
 
