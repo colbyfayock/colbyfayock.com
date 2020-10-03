@@ -89,7 +89,7 @@ While I could have probably split this up into multiple pages inside Bear, it ju
 
 One of the nice things about Figma, is at any point in time, I can simply zoom up and see everything I have done.
 
-http://d.fay.io/nRHlxX
+<figure><img src="/assets/50-react-projects-overview.jpg" alt="" /><figcaption>Overview of 50 React Projects</figcaption></figure>
 
 This made it easy for me to fully lay out where I was at and the progress I had.
 
@@ -99,7 +99,7 @@ But that’s not as bad as it sounds. When creating a text block, you’re given
 
 This helped avoid having to copy and paste everything into Figma from Bear any time I wanted to update something or add a new project. It helped me keep changes in sync and it helped me visually piece each project together with the full context of the project. 
 
-http://d.fay.io/90vYlu
+<figure><img src="/assets/editing-text-in-figma.jpg" alt="" /><figcaption>Editing text in Figma</figcaption></figure>
 
 Probably the only thing that was a big pain was spell checking. There’s a plugin that exists called [SPELLL](https://www.figma.com/community/plugin/754026612866636376) that worked decently well for it, but it wasn’t as great of an experience as you might find in an actual writing tool.
 
