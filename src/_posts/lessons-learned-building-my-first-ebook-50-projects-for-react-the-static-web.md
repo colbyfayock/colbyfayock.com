@@ -187,7 +187,7 @@ I had already been working on a course when my ebook launched. [Building Maps wi
 
 Because egghead pays earnings depending on the amount of people who watch the content of a course, it was an opportunity for me to share something that could again, help offset the costs of my content creation.
 
-http://d.fay.io/nFD9sQ
+<figure><img src="/assets/mapping-course-email-newsletter.jpg" alt="" /><figcaption>First newsletter promoting a product</figcaption></figure>
 
 This was my first time I was sending something outside of my regular email to my new audience. I was nervous. What if they mass unsubscribed?
 
