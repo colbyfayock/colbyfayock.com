@@ -121,7 +121,7 @@ It seems that Figma orders them from left to right, then down, similar to how a 
 
 ## Discovering you just made an ebomb
 
-I’ve known for a little while now what [ebombs](https://stackingthebricks.com/the-ebomb-recipe-that-works/) were, they’re essentially  a piece of educational content that provides a lot of value to someone. Ideally, those ebombs are something that is highly sharable that a lot of people want.
+I’ve known for a little while now what [ebombs](https://stackingthebricks.com/the-ebomb-recipe-that-works/) were, they’re essentially a piece of educational content that provides a lot of value to someone. Ideally, those ebombs are something that is highly sharable that a lot of people want.
 
 As a content creator wanting to build an audience, I always wanted to come up with a cool ebomb to help grow while helping people learn. This specific project idea didn’t come directly from wanted to create one, it was very quickly obvious it would provide a lot of value as an ebomb.
 
@@ -153,7 +153,7 @@ I didn’t have high expectations. I don’t have a huge audience, and even less
 
 I got 1,671 downloads and ultimately new people into my audience on day 1 of launching my book. I was flabbergasted.
 
-http://d.fay.io/6vsJzY
+<figure><img src="/assets/converkit-subscriber-growth.jpg" alt="" /><figcaption>Subscriber / audience growth in Converkit</figcaption></figure>
 
 The success ultimately came from Twitter. Again, I don’t have a large audience, but as soon as [I posted the tweet](https://twitter.com/colbyfayock/status/1293527859110252544), people came out in masses to help support me. Friends and people I look up to in the community retweeted my post to all of their followers, and those people retweeted it to their followers.
 
