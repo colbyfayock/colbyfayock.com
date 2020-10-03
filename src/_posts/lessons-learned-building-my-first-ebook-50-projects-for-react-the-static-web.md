@@ -169,7 +169,7 @@ Like I mentioned before, I didn’t have high expectations for how many people w
 
 Having a few hundred subscribers in a Convertkit audience places you squarely inside of their free tier.
 
-http://d.fay.io/0g5tL3
+![Converkit Free Tier](/assets/converkit-free-tier.jpg)
 
 That would mean I could still send some newsletters every week ([like I still do](https://colbyfayock.com/newsletter)), contribute free educational content, and get by without spending any money, only my time
 
