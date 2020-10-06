@@ -9,7 +9,7 @@ path: /jamstack-conf-2020
 
 ## Ebook: Learn All the Things About the Jamstack
 
-[![](/assets/jamstack-handbook-social.jpg)](https://jamstackhandbook.com/)
+![Jamstack Handbook 50% Off All Orders](/assets/50-off-wide.jpg)
 
 **Here are some things you'll learn:**
 
@@ -19,7 +19,9 @@ path: /jamstack-conf-2020
 * What are the not so good parts?
 * How can we build Jamstack sites?
 
-[Preorder at jamstackhandbook.com](https://jamstackhandbook.com/)
+Today only, 50% off all orders!
+
+[Order at jamstackhandbook.com](https://jamstackhandbook.com/)
 
 ## Learn by Doing with 50 Project Ideas
 
