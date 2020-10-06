@@ -6,6 +6,14 @@ path: /jamstack-conf-2020
 ## Talk Resources
 
 * [Slides](https://slides.com/colbyfayock/bringing-remote-sensing-and-disaster-relief-to-the-jamstack-jamstack-conf-2020)
+* [The Map of Biodiversity Importance: An Overview])(https://storymaps.arcgis.com/stories/c2858319d41e410aa4b36ff9fad6ced0)
+* [COVID-19 Dashboard from CSSE at Johns Hopkins University](https://coronavirus.jhu.edu/map.html)
+* (Earth's Biggest Storms: Tropical Cyclones)[https://storymaps.arcgis.com/stories/7cafb5298c3143b19b6e06a1d5a309f4?adumkts=product]
+* (Radiooooo)[https://radiooooo.com/]
+* (NASA Earthdata Search Client)[https://search.earthdata.nasa.gov/search]
+* (EOS Land Viewer)[https://eos.com/landviewer/]
+* (FilmDrop)[https://filmdrop.io/)
+* [Fogg](https://fogg.element84.com/)
 
 ## Ebook: Learn All the Things About the Jamstack
 
