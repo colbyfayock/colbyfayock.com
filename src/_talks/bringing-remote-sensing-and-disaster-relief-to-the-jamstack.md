@@ -1,6 +1,7 @@
 ---
 template: talk
-title: Bringing Remote Sensing and Disaster Relief to the Jamstack
+title: Bringing Remote Sensing and Disaster Relief to the Jamstack - Jamstack
+  Conf 2020
 video: https://www.youtube.com/watch?v=dBHUir4I13c
 video_embed: https://www.youtube.com/embed/dBHUir4I13c
 slides: https://slides.com/colbyfayock/bringing-remote-sensing-and-disaster-relief-to-the-jamstack-jamstack-conf-2020
