@@ -10,6 +10,11 @@ const FEATURED_PROJECTS = [
     category: 'Free ebook with 50 project ideas'
   },
   {
+    path: 'https://github.com/colbyfayock/next-wordpress-starter',
+    title: 'Next.js WordPress Starter',
+    category: 'Scale WordPress to the world with Next.js'
+  },
+  {
     path: 'https://github.com/colbyfayock/gatsby-starter-leaflet',
     title: 'Gatsby Leaflet Starter',
     category: 'Quickly bootstrap a mapping app with Leaflet'
