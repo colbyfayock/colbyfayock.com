@@ -120,7 +120,7 @@ const Index = ({location, data}) => {
               {
                 path: 'https://spacejelly.dev/',
                 title: 'Cosmo the Space Jellyfish Stickers',
-                category: 'Starting at $1 + $2 flat rate shipping'
+                category: 'Starting at $1 for a Cosmo sticker!'
               },
               {
                 path: 'https://cottonbureau.com/products/cosmo-the-space-jellyfish',
