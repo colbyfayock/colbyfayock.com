@@ -118,6 +118,11 @@ const Index = ({location, data}) => {
             </div>
             <ArticleList articles={[
               {
+                path: 'https://spacejelly.dev/',
+                title: 'Cosmo the Space Jellyfish Stickers',
+                category: 'Starting at $1 + $2 flat rate shipping'
+              },
+              {
                 path: 'https://cottonbureau.com/products/cosmo-the-space-jellyfish',
                 title: 'Cosmo the Space Jellyfish Tshirt',
                 category: 'Available on Cotton Bureau high quality products'
