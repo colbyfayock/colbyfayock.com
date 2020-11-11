@@ -5,8 +5,9 @@ path: /developer-week-austin-2020
 ---
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-react-global-summit-2020) (slides.com)
-* [Anything can be a Cake](https://codepen.io/cobra_winfrey/pen/abdjReO) (@cobra_winfrey)
+* [Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-developer-week-austin-2020) (slides.com)
+* [A Single Div](https://a.singlediv.com) (a.singlediv.com)
+* [Isometric eCommerce CSS Grid](https://codepen.io/andybarefoot/pen/PBPrex) (@andybarefoot)
 * [CSS collector’s cabinet](https://codepen.io/lynnandtonic/pen/LYGjqOo) (@lynnandtonic)
 * [Coronavirus Invaders - CSS Pure Game (No JS!)](https://codepen.io/elad2412/pen/wvabjXy) (@eladsc)
 * [Alien Title Sequence](https://codepen.io/colbyfayock/pen/aEqsL) (@colbyfayock, me!)
