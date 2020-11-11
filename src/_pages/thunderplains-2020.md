@@ -5,7 +5,7 @@ path: /thunderplains-2020
 ---
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-developer-week-austin-2020) (slides.com)
+* [Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-thunderplains-2020) (slides.com)
 * [A Single Div](https://a.singlediv.com) (a.singlediv.com)
 * [Isometric eCommerce CSS Grid](https://codepen.io/andybarefoot/pen/PBPrex) (@andybarefoot)
 * [CSS collector’s cabinet](https://codepen.io/lynnandtonic/pen/LYGjqOo) (@lynnandtonic)
