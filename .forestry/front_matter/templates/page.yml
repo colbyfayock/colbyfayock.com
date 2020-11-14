@@ -1,0 +1,13 @@
+---
+label: Page
+hide_body: false
+fields:
+- type: text
+  name: template
+  label: template
+- type: text
+  name: title
+  label: title
+- type: text
+  name: path
+  label: path
