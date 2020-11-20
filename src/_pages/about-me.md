@@ -1,6 +1,7 @@
 ---
 template: page
 title: About
+path: /about
 ---
 ## Where it started...
 
@@ -40,8 +41,14 @@ Fairfax, VA
 
 Drove all UX and front end development for a large geek culture ecommerce website.
 
+### [Element 84](https://element84.com/)
+
+#### Lead UX & Front End Engineer
+
+Alexandria, VA
+
 ## And what I'm doing now...
 
-Currently, I'm living in Virginia working as a UX Designer & Front End Developer for [Element 84](https://www.element84.com/).
+Currently, I'm living in Pennsylvania (Philly side) working as a Developer Advocate for [Applitools](https://applitools.com/).
 
 You can also find me freelancing and messing around with [GitHub repos](https://github.com/colbyfayock) in my free time.
