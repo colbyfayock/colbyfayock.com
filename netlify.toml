@@ -1,2 +1,8 @@
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"
+  
+[[redirects]]
+  from = "/ecomm"
+  to = "https://colbyfayock.ck.page/nextjs-stripe-ecommerce-course"
+  status = 302
+  force = true
