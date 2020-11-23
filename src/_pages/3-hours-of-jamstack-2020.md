@@ -5,7 +5,7 @@ path: /3-hours-of-jamstack-2020
 ---
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-thunderplains-2020) (slides.com)
+* [Slides](https://slides.com/colbyfayock/up-and-selling-with-nextjs-and-snipcart-3-hours-jamstack-2020) (slides.com)
 
 ## Ebook: Learn All the Things About the Jamstack
 
