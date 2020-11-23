@@ -6,6 +6,7 @@ path: /3-hours-of-jamstack-2020
 ## Talk Resources
 
 * [Slides](https://slides.com/colbyfayock/up-and-selling-with-nextjs-and-snipcart-3-hours-jamstack-2020) (slides.com)
+* [Create an eCommerce Store with Next.js and Stripe Checkout](https://colbyfayock.ck.page/nextjs-stripe-ecommerce-course) (convertkit.com)
 
 ## Ebook: Learn All the Things About the Jamstack
 
