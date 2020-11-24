@@ -14,6 +14,8 @@ It’s about to cross the 4 year mark since I parted ways with ThinkGeek.
 
 While GameStop seems to have killed [Timmy](https://www.wired.com/2012/08/monkey-timmy-cosplay/) off twice now (there’s not even a [landing page](https://www.gamestop.com/toys-collectibles/thinkgeek) anymore), Timmy and ThinkGeek still live on in a lot of people’s memories.
 
+<figure><img src="/assets/timmy-thanos-snap.jpg" alt="" /><figcaption>GameStop: *Snap* - Timmy: I'm not feeling so good</figcaption></figure>
+
 \[disintegrating thanos meme timmy]
 http://d.fay.io/HgWDy6
 
