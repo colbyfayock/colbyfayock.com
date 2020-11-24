@@ -66,7 +66,7 @@ This also carried to product photography. The photo wing of the creative team pr
 
 The photography team also constantly recruited team members throughout the company to be part of the product photos, adding another touch of personality.
 
-http://d.fay.io/8QDRkX
+<figure><img src="/assets/thinkgeek-valentines-gift-center.jpg" alt="ThinkGeek Valentine's Gift Center" /><figcaption>ThinkGeek Valentine's Gift Center</figcaption></figure>
 
 I was fortunate to be included in some of those product shots. While the work itself was usually interesting, it helped the customers get to know the people behind the HTTP request at ThinkGeek.
 
