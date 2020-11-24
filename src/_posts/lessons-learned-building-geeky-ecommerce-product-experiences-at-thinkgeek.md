@@ -16,9 +16,6 @@ While GameStop seems to have killed [Timmy](https://www.wired.com/2012/08/monkey
 
 <figure><img src="/assets/timmy-thanos-snap.jpg" alt="" /><figcaption>GameStop: *Snap* - Timmy: I'm not feeling so good</figcaption></figure>
 
-\[disintegrating thanos meme timmy]
-http://d.fay.io/HgWDy6
-
 It's a time of my career I deeply cherish. I’m still able to carry a lot of those memories and experiences into my every day work which help me build better experiences for people around the world.
 
 Those experiences helped me have more empathy for the people using what I build and helped me have more fun with my work.
@@ -37,7 +34,7 @@ But maybe it's just bringing someone a smile when they visit your website.
 
 At ThinkGeek, Timmy the monkey was the fan favorite mascot of the geek community. Timmy was special! Fans from all of the world would post pictures of their Timmy stickers on their laptops.
 
-https://twitter.com/sciencegurlz0/status/742885147696107520
+<figure><img src="/assets/tweet-scientific-camping.jpg" alt="" /><figcaption>https://twitter.com/sciencegurlz0/status/742885147696107520</figcaption></figure>
 
 But Timmy wasn't just a mascot, Timmy was part of the team. We made sure Timmy had a spot on the website for all occasions.
 
