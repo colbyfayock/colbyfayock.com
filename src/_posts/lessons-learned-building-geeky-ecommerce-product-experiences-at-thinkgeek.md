@@ -14,7 +14,7 @@ It’s about to cross the 4 year mark since I parted ways with ThinkGeek.
 
 While GameStop seems to have killed [Timmy](https://www.wired.com/2012/08/monkey-timmy-cosplay/) off twice now (there’s not even a [landing page](https://www.gamestop.com/toys-collectibles/thinkgeek) anymore), Timmy and ThinkGeek still live on in a lot of people’s memories.
 
-<figure><img src="/assets/timmy-thanos-snap.jpg" alt="" /><figcaption>GameStop: *Snap* - Timmy: I'm not feeling so good</figcaption></figure>
+<figure><img src="/assets/timmy-thanos-snap.jpg" alt="GameStop: *Snap* - Timmy: I'm not feeling so good" /><figcaption>GameStop: *Snap* - Timmy: I'm not feeling so good</figcaption></figure>
 
 It's a time of my career I deeply cherish. I’m still able to carry a lot of those memories and experiences into my every day work which help me build better experiences for people around the world.
 
@@ -34,16 +34,21 @@ But maybe it's just bringing someone a smile when they visit your website.
 
 At ThinkGeek, Timmy the monkey was the fan favorite mascot of the geek community. Timmy was special! Fans from all of the world would post pictures of their Timmy stickers on their laptops.
 
-<figure><img src="/assets/tweet-scientific-camping.jpg" alt="" /><figcaption>https://twitter.com/sciencegurlz0/status/742885147696107520</figcaption></figure>
+<figure><img src="/assets/tweet-scientific-camping.jpg" alt="Scientific Camping" /><figcaption>Scientific Camping</figcaption></figure>
+
+https://twitter.com/sciencegurlz0/status/742885147696107520
 
 But Timmy wasn't just a mascot, Timmy was part of the team. We made sure Timmy had a spot on the website for all occasions.
 
 And it wasn't as simple as plastering his face all over the website. The talented creative team took the time to create different versions of Timmy whether it was with a lightsaber and robe for the Star Wars page or a Timmy incorporated into an entire scene for the holiday theme.
 
-http://d.fay.io/WnY38f
+<figure><img src="/assets/thinkgeek-holiday-footer.jpg" alt="ThinkGeek Star Wars Holiday Footer" /><figcaption>ThinkGeek Star Wars Holiday Footer</figcaption></figure>
+
 https://web.archive.org/web/20151214225122/http://www.thinkgeek.com/
 
 These details didn't stop with Timmy. Another favorite was how in an earlier version of the website, as you scrolled down the page, the robot footer would change to zombies!
+
+<figure><img src="/assets/thinkgeek-zombies-vs-robots.gif" alt="ThinkGeek Zombies vs Robots" /><figcaption>ThinkGeek Zombies vs Robots</figcaption></figure>
 
 https://web.archive.org/web/20140207230409/http://www.thinkgeek.com/
 http://d.fay.io/0Pvr0i
