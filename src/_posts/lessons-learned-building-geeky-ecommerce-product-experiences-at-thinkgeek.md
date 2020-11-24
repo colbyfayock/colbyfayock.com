@@ -51,7 +51,6 @@ These details didn't stop with Timmy. Another favorite was how in an earlier ver
 <figure><img src="/assets/thinkgeek-zombies-vs-robots.gif" alt="ThinkGeek Zombies vs Robots" /><figcaption>ThinkGeek Zombies vs Robots</figcaption></figure>
 
 https://web.archive.org/web/20140207230409/http://www.thinkgeek.com/
-http://d.fay.io/0Pvr0i
 
 Doing that kind of thing isn't necessary. That’s not going to directly drive revenue. But just like other small details, adding that special touch is going to make someone smile and want them to be part of your community.
 
@@ -63,7 +62,7 @@ Browsing around and reading about products wasn’t your typical specification l
 
 This also carried to product photography. The photo wing of the creative team produced super high quality work, taking pictures of products that while unique in their own right, were incorporated into a larger idea bringing them to life.
 
-http://d.fay.io/r7sivN
+<figure><img src="/assets/thinkgeek-vader-measuring-cup-set.jpg" alt="ThinkGeek's Star Wars Measuring Cup Set with Darth Vader" /><figcaption>ThinkGeek's Star Wars Measuring Cup Set with Darth Vader</figcaption></figure>
 
 The photography team also constantly recruited team members throughout the company to be part of the product photos, adding another touch of personality.
 
