@@ -78,6 +78,8 @@ While it’s certainly in everyone’s best interest to be professional, that do
 
 Granted ThinkGeek had products that made some of this possible, the creative team took this to heart and made sure each video was more than just a voiceover of some dull product shot, it was a chance for the people that make up the company to show their personality and make the products more interesting.
 
+![Timmy O'Reilly on ThinkGeek's YouTube](/assets/timmy-oreilly-youtube-thumb.jpg)
+
 https://www.youtube.com/watch?v=cAtt16eQ2Lc
 
 (Yours truly [also made a cameo or two](https://www.youtube.com/watch?v=pCSiSJe2XAc)).
@@ -85,6 +87,8 @@ https://www.youtube.com/watch?v=cAtt16eQ2Lc
 This provided a way for the team to connect with the people who were buying things even if that meant they were never going to meet them.
 
 The ThinkGeek team also made an effort to join the community around them and make a safe place for people to have fun.
+
+![Trivia Night on ThinkGeek's YouTube](/assets/thinkgeek-trivia-youtube-thumb.jpg)
 
 https://www.youtube.com/watch?v=fiebFh_lVNs
 
