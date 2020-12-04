@@ -54,14 +54,6 @@
 
 }
 
-.social-icons-eggheadio {
-
-  svg {
-    transform: scale(1.1);
-  }
-
-}
-
 .social-icons-email {
 
   svg {
@@ -74,6 +66,14 @@
 
   svg {
     transform: scale(.95);
+  }
+
+}
+
+.social-icons-twitch {
+
+  svg {
+    transform: translateY(2px);
   }
 
 }

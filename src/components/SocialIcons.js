@@ -4,12 +4,10 @@ import {
   FaDribbble,
   FaGithub,
   FaInstagram,
-  FaYoutube
+  FaYoutube,
+  FaTwitch
 } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
-
-import LogoEgghead from 'components/LogoEgghead';
-import LogoRedbubble from 'components/LogoRedbubble';
 
 const socialLinks = [
   {
@@ -25,10 +23,10 @@ const socialLinks = [
     Icon: FaYoutube,
   },
   {
-    id: 'eggheadio',
-    title: 'Egghead.io',
-    url: 'https://egghead.io/instructors/colby-fayock?af=atzgap',
-    Icon: LogoEgghead,
+    id: 'twitch',
+    title: 'Twitch',
+    url: 'https://www.twitch.tv/colbyfayock',
+    Icon: FaTwitch,
   },
   {
     id: 'github',
@@ -47,12 +45,6 @@ const socialLinks = [
     title: 'Instagram',
     url: 'https://www.instagram.com/colbyfayock/',
     Icon: FaInstagram,
-  },
-  {
-    id: 'redbubble',
-    title: 'Redbubble',
-    url: 'https://www.redbubble.com/people/colbyfayock/shop',
-    Icon: LogoRedbubble,
   },
   {
     id: 'email',
