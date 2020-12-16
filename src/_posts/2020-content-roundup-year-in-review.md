@@ -4,6 +4,10 @@ title: 2020 Content Roundup - Year in Review
 date: 2020-12-16T13:45:56.551Z
 category: coding
 ---
+This year has been hard on pretty much everyone in the world, some more than others. It's led to a boom in content creation as people are forced to move to a digital life in a remote world and new learners looking to find a new career like learning how to code.
+
+Through this time, I’ve been putting a lot of work into developing educational content to help others learn dev-related tools. I was fortunate that this ended up leading to a new challenge and the start of a new career as a Developer Advocate.
+
 * [Content growth](#content-growth)
 * [New challenges and new career](#new-challenges)
 * [Content Roundup](#content-roundup)
@@ -12,9 +16,7 @@ category: coding
 * [Content Roundup - Talks, Podcasts, Streams, and Ebooks](#content-roundup-other)
 * [Content Roundup - Ebooks](#content-roundup-ebooks)
 
-This year has been hard on pretty much everyone in the world, some more than others. It's led to a boom in content creation as people are forced to move to a digital life in a remote world and new learners looking to find a new career like learning how to code.
-
-Through this time, I’ve been putting a lot of work into developing educational content to help others learn dev-related tools. I was fortunate that this ended up leading to a new challenge and the start of a new career as a Developer Advocate.
+## Starting my 2020 journey
 
 You might have heard me talk about this before, but it started from my work with maps, where it inspired me to try to help make an impact by teaching others how to make mapping apps themselves. This became even more important during the pandemic, as maps are a powerful way to [communicate viral data](https://coronavirus.jhu.edu/map.html) or share open restaurant locations with others to help small businesses.
 
