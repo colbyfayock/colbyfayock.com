@@ -14,7 +14,7 @@ That led me into developing various other types of content where now I [write ar
 
 I’m also now a huge advocate of [Next.js](https://nextjs.org/) and most of my content comes along with a demo of spinning up a new Next.js app or integrating some kind of awesome tool with it. Really [React](https://reactjs.org/) is what my sweet spot is, but Next.js provides a lot of ways to make that development more natural and boost productivity.
 
-## Content growth
+<h2 id="content-growth">Content growth</h2>
 
 On the content side, I started off with a blog post about [how to become a Full Stack Developer in 2020](https://www.freecodecamp.org/news/how-to-become-a-full-stack-web-developer-in-2020/) after my coworker and friend [Marquet Reid](https://twitter.com/QuetCodesFire) helped push me past my imposter syndrome. This article had really great reception and it motivated me to write more.
 
@@ -30,7 +30,7 @@ I was also fortunate that being an instructor [came with some free audio gear](h
 
 While all of this content work was rewarding, it certainly wasn’t sustainable as a side hustle, which is what I was doing for the vast majority of the year. The hope was I would eventually be able to do this full time, which led me to a new opportunity.
 
-## New challenges and new career
+<h2 id="new-challenges">New challenges and new career</h2>
 
 As of December 1, I officially started as a Developer Advocate at [Applitools](https://applitools.com/), which is a visual regression testing framework.
 
@@ -40,7 +40,7 @@ It also helps that Applitools itself as a product is pretty rad (not trying to s
 
 I’m really excited to see where this takes me, as I already started [streaming](https://twitch.tv/colbyfayock) for [the first time](https://www.youtube.com/watch?v=Bei0Cvu7D7I) and I have a lot of plans for ramping that up with some fun content for 2021 both on my personal channel and with Applitools.
 
-## Content Roundup
+<h2 id="content-roundup">Content Roundup</h2>
 
 Now for the fun part. I love being able to look back and see what content was most impactful. The first and only time I did this was [for my birthday](https://twitter.com/colbyfayock/status/1283021436270063616) this past year, which I think I’ll keep up as a tradition since it was kind of middle of the year, but this is the first year in review aside from that.
 
@@ -48,7 +48,7 @@ I also love looking back at which content was the most fun to make. I thoroughly
 
 Let’s dive in!
 
-## Content Roundup: Articles
+<h2 id="content-roundup-articles">Content Roundup: Articles</h2>
 
 ### Overview
 
@@ -108,7 +108,7 @@ While I try to make all of my articles impactful, I think some more than others 
 4. [How to Fetch GraphQL Data in Next.js with Apollo GraphQL](https://www.freecodecamp.org/news/how-to-fetch-graphql-data-in-next-js-with-apollo-graphql/): Space is cool, so getting to work with SpaceX data was a great opp
 5. [How to Test and Play with Web APIs the Easy Way with Postman](https://www.freecodecamp.org/news/how-to-test-and-play-with-web-apis-the-easy-way-with-postman/): I got the opportunity to play with a few different geeky APIs like Pokémon and Lord of the Rings
 
-## Content Roundup: Videos
+<h2 id="content-roundup-videos">Content Roundup: Videos</h2>
 
 ### Overview
 
@@ -148,7 +148,7 @@ The top 5 lessons in 2020 as of Dec 15:
 
 *Data is from egghead’s internal analytics.*
 
-## Content Roundup - Talks, Podcasts, Streams, and Ebooks
+<h2 id="content-roundup-other">Content Roundup - Talks, Podcasts, Streams, and Ebooks</h2>
 
 ### Conference Talks
 
@@ -190,7 +190,7 @@ On [my channel](https://twitch.tv/colbyfayock):
 
 * 12/3/2020 - [Visual Regression Testing in a Next.js App with Cypress and Applitools](https://www.youtube.com/watch?v=Bei0Cvu7D7I)
 
-## Content Roundup - Ebooks
+<h2 id="content-roundup-ebooks">Content Roundup - Ebooks</h2>
 
 Finally, I produced 2 ebooks this year that I’m super proud of
 
