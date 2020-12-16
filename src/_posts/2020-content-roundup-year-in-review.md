@@ -16,6 +16,13 @@ Through this time, I’ve been putting a lot of work into developing educational
 * [Content Roundup - Talks, Podcasts, Streams, and Ebooks](#content-roundup-other)
 * [Content Roundup - Ebooks](#content-roundup-ebooks)
 
+[![Top 5 of 2020 on YouTube](/assets/thumb-1280x720.jpg)](https://www.youtube.com/watch?v=OzttcyBPLKU)
+
+
+<span style="text-align:center;display:block;font-style:italic;">[Watch my Top 5 Videos of 2020 on YouTube](https://www.youtube.com/watch?v=OzttcyBPLKU)</soan>
+
+
+
 ## Starting my 2020 journey
 
 You might have heard me talk about this before, but it started from my work with maps, where it inspired me to try to help make an impact by teaching others how to make mapping apps themselves. This became even more important during the pandemic, as maps are a powerful way to [communicate viral data](https://coronavirus.jhu.edu/map.html) or share open restaurant locations with others to help small businesses.
