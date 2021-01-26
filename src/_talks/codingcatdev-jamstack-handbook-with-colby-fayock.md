@@ -1,7 +1,8 @@
 ---
 template: talk
 title: "CodingCatDev: Jamstack Handbook with Colby Fayock"
-video_embed: https://www.youtube.com/watch?v=NUYSPAWtiT0
+video: ""
+video_embed: https://www.youtube.com/embed/NUYSPAWtiT0
 link: https://codingcat.dev/podcasts/1-6-jamstack-handbook-with-colby-fayock/
 link_label: Listen In at codingcat.dev
 date: 2021-01-26T01:39:39.125Z
