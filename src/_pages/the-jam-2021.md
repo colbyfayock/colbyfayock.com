@@ -9,6 +9,8 @@ path: /the-jam-2021
 
 ## Ebook: Learn All the Things About the Jamstack
 
+[![Jamstack Handbook](/assets/jamstack-handbook-social.jpg)](https://jamstackhandbook.com/)
+
 **Here are some things you'll learn:**
 
 * What exactly is the Jamstack?
