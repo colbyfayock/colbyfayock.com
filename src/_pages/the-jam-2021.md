@@ -52,7 +52,6 @@ We'll walk through React core fundamentals like the useState React hook and Cont
 
 [![Sign up for free!](/assets/open-graph.jpg)](https://journeyto.dev/)
 
-
 As an educator, part of my goal is to create content that helps others learn new tools through tutorials, walkthroughs, videos, courses, and really any medium I can use.​
 
 But none of those tutorials include the soft skills beyond code that are important to a career, like how to communicate with a team or how to figure out how you learn best.
@@ -80,4 +79,3 @@ This free 7-week newsletter helps you learn the human-oriented skills that you d
 * 🗒️ [What is the JAMstack and how do I get started?](https://www.colbyfayock.com/2020/02/what-is-the-jamstack-and-how-do-i-get-started/) (colbyfayock.com)
 * 📹 [Jamstack Tutorials on YouTube](https://www.youtube.com/playlist?list=PLFsfg2xP7cbJhIyKBnhTSflKVrIx-YGpX)
 * 📹 [How to host and deploy a static website or JAMstack app on AWS S3 & CloudFront](https://www.youtube.com/watch?v=1lDGDzmbQWg) (youtube.com)
-* 🗒️ [How to Become a Full Stack Web Developer in 2020](https://www.freecodecamp.org/news/how-to-become-a-full-stack-web-developer-in-2020/)
