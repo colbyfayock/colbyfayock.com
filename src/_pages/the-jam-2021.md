@@ -16,7 +16,7 @@ You can find the slide deck and some more resources to get started with the Jams
 * [Next.js](https://nextjs.org/) (nextjs.org)
 * [Space Jelly Store](https://spacejelly.dev/store/) (spacejelly.dev)
 * [use-shopping-cart](https://github.com/dayhaysoos/use-shopping-cart) (github.com)
-* [Course: Create an eCommerce Store with Next.js and Stripe Checkout](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap) (egghead.io)
+* [Course: Create an eCommerce Store with Next.js and Stripe Checkout](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap&utm_source=colbyfayock.com&utm_medium=website&utm_campaign=thejamdev2021_talk_page) (egghead.io)
 * [Jamstack Handbook](https://jamstackhandbook.com) (jamstackhandbook.com)
 * [E-Commerce for React Developers](https://snipcart.com/blog/react-ecommerce-tutorial) (snipcart.com)
 
@@ -36,7 +36,7 @@ You can find the slide deck and some more resources to get started with the Jams
 
 ## Course: Create an eCommerce Store with Next.js and Stripe Checkout
 
-[![Ecommerce Course on egghead.io](/assets/card_2x.jpg)](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap)
+[![Ecommerce Course on egghead.io](/assets/card_2x.jpg)](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap&utm_source=colbyfayock.com&utm_medium=website&utm_campaign=thejamdev2021_talk_page)
 
 Ecommerce is a powerful way to sell products online whether it's tshirts or an ebook.
 
@@ -44,7 +44,7 @@ In this egghead.io course, I walk through building an online store from scratch 
 
 We'll walk through React core fundamentals like the useState React hook and Context API to build a global cart that sends customers to check out.
 
-[Take the course at egghead.io](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap)
+[Take the course at egghead.io](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap&utm_source=colbyfayock.com&utm_medium=website&utm_campaign=thejamdev2021_talk_page)
 
 ## Learn by Doing with 50 Project Ideas
 
