@@ -5,7 +5,7 @@ path: /the-jam-2021
 ---
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/getting-personal-with-ecommerce-react-and-the-static-web-the-jam-2021)
+* [Slides](https://slides.com/colbyfayock/getting-personal-with-ecommerce-react-and-the-static-web-the-jam-2021) (slides.com)
 * [Little Caesars Pizza Delivers with Gatsby](https://www.gatsbyjs.com/blog/2020-07-15-little-caesars-delivers-with-gatsby/) (gatsbyjs.com)
 * [Shopping for speed on eBay.com](https://web.dev/shopping-for-speed-on-ebay/) (web.dev)
 * [Snipcart](https://snipcart.com/) (snipcart.com)
@@ -14,11 +14,7 @@ path: /the-jam-2021
 * [use-shopping-cart](https://github.com/dayhaysoos/use-shopping-cart) (github.com)
 * [Course: Create an eCommerce Store with Next.js and Stripe Checkout](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap) (egghead.io)
 * [Jamstack Handbook](https://jamstackhandbook.com) (jamstackhandbook.com)
-* [E-Commerce for
-React Developers](https://snipcart.com/blog/react-ecommerce-tutorial)
-
-
-
+* [E-Commerce for React Developers](https://snipcart.com/blog/react-ecommerce-tutorial) (snipcart.com)
 
 ## Ebook: Learn All the Things About the Jamstack
 
@@ -34,10 +30,13 @@ React Developers](https://snipcart.com/blog/react-ecommerce-tutorial)
 
 [Order at jamstackhandbook.com](https://jamstackhandbook.com/)
 
+## Course: Create an eCommerce Store with Next.js and Stripe Checkout
+
+[![Ecommerce Course on egghead.io](/assets/card_2x.jpg)](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap)
 
 
 
-
+[Take the course at egghead.io](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap)
 
 
 ## Learn by Doing with 50 Project Ideas
