@@ -3,6 +3,10 @@ template: page
 title: The Jam 2021
 path: /the-jam-2021
 ---
+<figure><img src="/assets/thanks-for-tuning-in.jpg" alt="" /><figcaption>Thanks for tuning in to my talk! ❤️</figcaption></figure>
+
+You can find the slide deck and some more resources to get started with the Jamstack!
+
 ## Talk Resources
 
 * [Slides](https://slides.com/colbyfayock/getting-personal-with-ecommerce-react-and-the-static-web-the-jam-2021) (slides.com)
