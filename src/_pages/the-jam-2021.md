@@ -34,16 +34,38 @@ path: /the-jam-2021
 
 [![Ecommerce Course on egghead.io](/assets/card_2x.jpg)](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap)
 
+Ecommerce is a powerful way to sell products online whether it's tshirts or an ebook.
 
+In this egghead.io course, I walk through building an online store from scratch using Next.js and Stripe Checkout.
+
+We'll walk through React core fundamentals like the useState React hook and Context API to build a global cart that sends customers to check out.
 
 [Take the course at egghead.io](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap)
-
 
 ## Learn by Doing with 50 Project Ideas
 
 [![50 React Projects - Learn by Doing](/assets/50-react-projects-banner.jpg)](https://50reactprojects.com/)
 
 [Free Download: 50 Projects for React & the State Web](https://50reactprojects.com/)
+
+## Journey to Dev
+
+[![Sign up for free!](/assets/open-graph.jpg)](https://journeyto.dev/)
+
+
+As an educator, part of my goal is to create content that helps others learn new tools through tutorials, walkthroughs, videos, courses, and really any medium I can use.​
+
+But none of those tutorials include the soft skills beyond code that are important to a career, like how to communicate with a team or how to figure out how you learn best.
+
+This free 7-week newsletter helps you learn the human-oriented skills that you don't learn through tutorials like:
+
+* How do I learn best?
+* How do I ask the right questions?
+* How can I become a good communicator?
+* How can I better position myself to find a job?
+* How can I set myself up for success?
+
+[Start Your Journey](https://journeyto.dev/)
 
 ## Say hi on Twitter and follow me for more updates!
 
