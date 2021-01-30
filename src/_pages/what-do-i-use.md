@@ -55,12 +55,15 @@ While the 2-pack came with stands, I needed something to mount them to my desk, 
 
 Finally, I have a simple ring light that I got for free that just provides some fill on my face. This works really well even if it's your own available option for lighting than nothing at all. It also works really well as a way to provide some good lighting with a stand for video chats with your phone, as it comes with a phone holder in the middle.
 
-* [Neewer Slim LED - Single Pack](https://www.amazon.com/gp/product/B079FQBFJD/?tag=fay-uses-20) ($49.99)
-* [Neewer Slim LED - 2-pack](https://www.amazon.com/gp/product/B07LGX143D/?tag=fay-uses-20) ($86.99)
+* [Neewer Slim LED - 2-pack](https://www.amazon.com/gp/product/B07LGX143D/?tag=fay-uses-20) ($86.99) or a [Single Pack](https://www.amazon.com/gp/product/B079FQBFJD/?tag=fay-uses-20) ($49.99)
 * [Power Adapters](https://www.amazon.com/gp/product/B07HNL5D56/?tag=fay-uses-20) ($9.99)
 * [Smatree Monopods](https://www.amazon.com/gp/product/B00ST1Y2QU/?tag=fay-uses-20) ($21.99)
-* [SMALLRIG Ballhead Clamps](https://www.amazon.com/gp/product/B00DJ5XH4O/?tag=fay-uses-20) ($13.99)
+* [MOSHUSO Heavy Duty C Clamp](https://www.amazon.com/gp/product/B08B6FJ7W6/?tag=fayuses-20) ($14.99)
 * [UBeesize 10" LED Ring Light](https://www.amazon.com/gp/product/B0822GQR3Z/?tag=fay-uses-20) ($22.99)
+
+**Previously Used**
+
+[SMALLRIG Ballhead Clamps](https://www.amazon.com/gp/product/B00DJ5XH4O/?tag=fay-uses-20): I tried using this clamp for my desk. It seemed flexible enough and sturdy enough from what I was seeing in the reviews. It ended up being an awkward fit for my desk. I was able to get the clamp itself decently on my desk, but the ball joints ultimately would fail, leaving my light to fall over all the time. My updated clamps ([MOSHUSO](https://www.amazon.com/gp/product/B08B6FJ7W6/?tag=fayuses-20)) do a fantastic job at holding it together partly because it doesn't have the points of failure, but generally they're super well constructed.
 
 ## Other
 
