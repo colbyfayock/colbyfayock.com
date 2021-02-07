@@ -62,7 +62,7 @@ Syndicating to Hashnode involves creating a new post with the content you want t
 
 ### Dev.to
 
-[Dev.to](https://dev.to/) is another platform option similar to Hasnode. They provide an incredibly welcoming and safe space where developers experienced and new can publish their work.
+[Dev.to](https://dev.to/) is another platform option similar to Hashnode. They provide an incredibly welcoming and safe space where developers experienced and new can publish their work.
 
 To syndicate on dev.to, similar to Hashnode, you'll want to set up the canonical link in the post configuration. When editing the content, you'll want to look for the settings icon, where you'll then be provided with an input where you can add the original URL for your post.
 
