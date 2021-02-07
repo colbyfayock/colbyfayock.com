@@ -48,15 +48,27 @@ While it's important from an SEO perspective, it's also generally a good way to 
 
 So what are some platforms that we can syndicate with and how can I set it up?
 
-### Dev.to
+### Hashnode
 
-[Dev.to](https://dev.to/) is the choice platform for developers who want to share their knowledge and open up conversation to the larger tech community. They provide an incredibly welcoming and safe space where developers experienced and new can publish their work.
+[Hashnode](https://hashnode.com/) is a blog network that allows developers to share their knowledge and open up conversation to the larger tech community. 
 
 The great part about it, is everyone seems to get a bit of a fair chance at getting their work out to the world. While they have similar features to other networks where you can follow your favorite authors, newer authors still show up in the content feed giving you a chance to be seen.
 
-To syndicate on dev.to, you'll want to set up the canonical link in the post configuration. When editing the content, you'll want to look for the settings icon, where you'll then be provided with an input where you can add the original URL for your post.
+Syndicating to Hashnode involves creating a new post with the content you want to share followed by adding a canonical link. You can do that by navigating to the Settings of a post, then look for the "republishing" option, and paste in your original URL.
+
+<figure><img src="/assets/canonical-link-hashnode.jpg" alt="" /><figcaption>Adding a canonical link in Hashnode</figcaption></figure>
+
+
+
+### Dev.to
+
+[Dev.to](https://dev.to/) is another platform option similar to Hasnode. They provide an incredibly welcoming and safe space where developers experienced and new can publish their work.
+
+To syndicate on dev.to, similar to Hashnode, you'll want to set up the canonical link in the post configuration. When editing the content, you'll want to look for the settings icon, where you'll then be provided with an input where you can add the original URL for your post.
 
 <figure><img src="/assets/devto-post-canonical-url.jpg" alt="" /><figcaption>Adding a canonical URL to a dev.to post</figcaption></figure>
+
+One issue with Dev.to at the time of writing this though is the uncertainty of if their canonical links actually function properly. If you look at the source code of a post page, you can see that the canonical link exists, but it exists among two separate instances of an HTML document, which isn't valid.
 
 ### Medium
 
