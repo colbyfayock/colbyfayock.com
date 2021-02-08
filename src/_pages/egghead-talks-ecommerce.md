@@ -18,8 +18,7 @@ You can find the slide deck and some more resources to get started with the Jams
 * [Space Jelly Store](https://spacejelly.dev/store/) (spacejelly.dev)
 * [use-shopping-cart](https://github.com/dayhaysoos/use-shopping-cart) (github.com)
 * [Course: Create an eCommerce Store with Next.js and Stripe Checkout](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap&utm_source=colbyfayock.com&utm_medium=website&utm_campaign=thejamdev2021_talk_page) (egghead.io)
-* [Jamstack Handbook](https://jamstackhandbook.com) (jamstackhandbook.com)
-* [E-Commerce for React Developers](https://snipcart.com/blog/react-ecommerce-tutorial) (snipcart.com)
+* [Ebook: 50 Projects for React & the Static Web](https://50reactprojects.com/) (50reactprojects.com)
 
 ## Course: Create an eCommerce Store with Next.js and Stripe Checkout
 
