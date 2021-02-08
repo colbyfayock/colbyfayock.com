@@ -9,7 +9,8 @@ You can find the slide deck and some more resources to get started with the Jams
 
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/getting-personal-with-ecommerce-react-and-the-static-web-the-jam-2021) (slides.com)
+* [Slides](https://slides.com/colbyfayock/getting-personal-with-ecommerce-react-the-static-web-egghead-talks) (slides.com)
+* [Retail Ecommerce Sales Worldwide, 2019-2024](https://www.emarketer.com/chart/242908/retail-ecommerce-sales-worldwide-2019-2024-trillions-change-of-total-retail-sales) (emarketer.com)
 * [Little Caesars Pizza Delivers with Gatsby](https://www.gatsbyjs.com/blog/2020-07-15-little-caesars-delivers-with-gatsby/) (gatsbyjs.com)
 * [Shopping for speed on eBay.com](https://web.dev/shopping-for-speed-on-ebay/) (web.dev)
 * [Snipcart](https://snipcart.com/) (snipcart.com)
@@ -19,20 +20,6 @@ You can find the slide deck and some more resources to get started with the Jams
 * [Course: Create an eCommerce Store with Next.js and Stripe Checkout](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap&utm_source=colbyfayock.com&utm_medium=website&utm_campaign=thejamdev2021_talk_page) (egghead.io)
 * [Jamstack Handbook](https://jamstackhandbook.com) (jamstackhandbook.com)
 * [E-Commerce for React Developers](https://snipcart.com/blog/react-ecommerce-tutorial) (snipcart.com)
-
-## Ebook: Learn All the Things About the Jamstack
-
-[![Jamstack Handbook](/assets/jamstack-handbook-social.jpg)](https://jamstackhandbook.com/)
-
-**Here are some things you'll learn:**
-
-* What exactly is the Jamstack?
-* What makes the Jamstack so awesome?
-* What are the good parts?
-* What are the not so good parts?
-* How can we build Jamstack sites?
-
-[Order at jamstackhandbook.com](https://jamstackhandbook.com/)
 
 ## Course: Create an eCommerce Store with Next.js and Stripe Checkout
 
@@ -49,6 +36,8 @@ We'll walk through React core fundamentals like the useState React hook and Cont
 ## Learn by Doing with 50 Project Ideas
 
 [![50 React Projects - Learn by Doing](/assets/50-react-projects-banner.jpg)](https://50reactprojects.com/)
+
+Stop asking yourself WHAT you want to build and start learning by doing with these 50 project ideas complete with project briefs, resources, and layout ideas.
 
 [Free Download: 50 Projects for React & the State Web](https://50reactprojects.com/)
 
@@ -69,6 +58,22 @@ This free 7-week newsletter helps you learn the human-oriented skills that you d
 * How can I set myself up for success?
 
 [Start Your Journey](https://journeyto.dev/)
+
+
+## Ebook: Learn All the Things About the Jamstack
+
+[![Jamstack Handbook](/assets/jamstack-handbook-social.jpg)](https://jamstackhandbook.com/)
+
+**Here are some things you'll learn:**
+
+* What exactly is the Jamstack?
+* What makes the Jamstack so awesome?
+* What are the good parts?
+* What are the not so good parts?
+* How can we build Jamstack sites?
+
+[Order at jamstackhandbook.com](https://jamstackhandbook.com/)
+
 
 ## Say hi on Twitter and follow me for more updates!
 
