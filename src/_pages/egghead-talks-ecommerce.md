@@ -9,6 +9,7 @@ You can find the slide deck and some more resources to get started with the Jams
 
 ## Talk Resources
 
+* [Replay the Talk](https://egghead.io/talks/react-getting-personal-with-ecommerce-react-the-static-web?af=atzgap) (egghead.io)
 * [Slides](https://slides.com/colbyfayock/getting-personal-with-ecommerce-react-the-static-web-egghead-talks) (slides.com)
 * [Retail Ecommerce Sales Worldwide, 2019-2024](https://www.emarketer.com/chart/242908/retail-ecommerce-sales-worldwide-2019-2024-trillions-change-of-total-retail-sales) (emarketer.com)
 * [Little Caesars Pizza Delivers with Gatsby](https://www.gatsbyjs.com/blog/2020-07-15-little-caesars-delivers-with-gatsby/) (gatsbyjs.com)
@@ -58,7 +59,6 @@ This free 7-week newsletter helps you learn the human-oriented skills that you d
 
 [Start Your Journey](https://journeyto.dev/)
 
-
 ## Ebook: Learn All the Things About the Jamstack
 
 [![Jamstack Handbook](/assets/jamstack-handbook-social.jpg)](https://jamstackhandbook.com/)
@@ -72,7 +72,6 @@ This free 7-week newsletter helps you learn the human-oriented skills that you d
 * How can we build Jamstack sites?
 
 [Order at jamstackhandbook.com](https://jamstackhandbook.com/)
-
 
 ## Say hi on Twitter and follow me for more updates!
 
