@@ -6,9 +6,9 @@ category: coding
 ---
 ![Next.js in 10 Tweets](/assets/0-intro.jpg)
 
-Next.js has taken the web dev world by storm
+[Next.js](https://nextjs.org/) has taken the web dev world by storm
 
-It’s the @reactjs framework devs rave about praising it's power, flexibility, and dev experience
+It’s the [React](https://reactjs.org/) framework devs rave about praising its power, flexibility, and dev experience
 
 Don't feel like you're missing out!
 
@@ -24,7 +24,7 @@ Let’s dive in 🧵
 
 It couples a great dev experience with an opinionated feature set to make it easy to spin up new performant, dynamic web apps
 
-It's used by many high-profile teams like @hulu, @apple, @Nike, and more
+It's used by many high-profile teams like Hulu, Apple, Nike, and more
 
 <https://nextjs.org/>
 
@@ -34,9 +34,9 @@ It's used by many high-profile teams like @hulu, @apple, @Nike, and more
 
 ![Created by Vercel](/assets/2.-vercel.jpg)
 
-The team at Vercel, formerly Zeit, originally and launched v1 of the framework on Oct 26, 2016 in the pursuit of universal JavaScript apps
+The team at [Vercel](https://vercel.com/), formerly Zeit, originally and launched v1 of the framework on Oct 26, 2016 in the pursuit of universal JavaScript apps
 
-Since then, the team and community has grown expotentially, including contributions from web leaders like Google
+Since then, the team and community has grown exponentially, including contributions from web leaders like Google
 
 [https://vercel.com/blog/next ](https://vercel.com/blog/next)
 
@@ -46,7 +46,7 @@ Since then, the team and community has grown expotentially, including contributi
 
 ![58.59% adoption in the Jamstack community](/assets/3.-jamstack-adoption.jpg)
 
-In the #jamstack world, Next.js pulled a hefty 58.6% share of framework adoption in 2020
+In the [Jamstack](https://jamstackhandbook.com/) world, Next.js pulled a hefty 58.6% share of framework adoption in 2020
 
 Compared to other popular React.js frameworks like Gatsby, which pulled in 12%
 
@@ -74,7 +74,7 @@ or
 npx create-next-app
 ```
 
-You can even start from a git-based template with the -e flag
+You can even start from a git-based template with the `-e` flag
 
 ```
 yarn create next-app  -e https://github.com/colbyfayock/next-sass-starter
@@ -110,7 +110,7 @@ You can also add dynamic routes for more complex apps
 
 ![Server side rendering](/assets/6.-ssr.jpg)
 
-The foundation of Next.js comes  from SSR
+The foundation of Next.js comes from SSR
 
 SSR = Server Side Rendering
 
@@ -148,7 +148,7 @@ ISR = Incremental Static Regeneration
 
 Caching mechanisms serve pages statically while refreshing stale content in the background on the server
 
-Setting revalidate on getStaticProps defines how often it refreshes
+Setting revalidate on `getStaticProps` defines how often it refreshes
 
 <https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration>
 
@@ -162,9 +162,10 @@ Next.js can also create APIs with serverless functions
 
 It also uses file-system based routing to create new routes
 
+```
 /pages/api/my-endpoint.js
-
-\=> /api/my-endpoint
+=> /api/my-endpoint
+```
 
 Inside, you export a handler function to handle the request and response
 
@@ -176,9 +177,9 @@ Inside, you export a handler function to handle the request and response
 
 ![Plugins & Packages](/assets/10.-plugins-packages.jpg)
 
-Instead of a dedicated plugin ecoystem, Next.js maintains opinionated packages that get bundled into the framework
+Instead of a dedicated plugin ecosystem, Next.js maintains opinionated packages that get bundled into the framework
 
-next/image provides a range of optimizations like compression, automatic modern formats, and responsive sizing
+[next/image](https://nextjs.org/docs/api-reference/next/image) provides a range of optimizations like compression, automatic modern formats, and responsive sizing
 
 <https://nextjs.org/docs/basic-features/image-optimization>
 
@@ -192,7 +193,7 @@ Next.js is a flexible framework that gives you as a developer a lot of power ove
 
 Want to dive more into Next.js & React?
 
-Check out my @eggheadio course [Create an eCommerce Store with Next.js and Stripe Checkout](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap)
+Check out my [egghead.io](https://egghead.io/?af=atzgap) course [Create an eCommerce Store with Next.js and Stripe Checkout](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap)
 
 [https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap)
 
