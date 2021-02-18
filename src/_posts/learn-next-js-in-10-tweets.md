@@ -18,7 +18,7 @@ Let’s dive in 🧵
 
 [🐦 View & Share the Tweet Thread](https://twitter.com/colbyfayock/status/1362407526222995456)
 
-## 1. Next.js is a React.js framework from Vercel
+## [1. Next.js is a React.js framework from Vercel](https://twitter.com/colbyfayock/status/1362407635904065543)
 
 ![](/assets/1.-next.js-is-a-react-framework.jpg)
 
@@ -30,7 +30,7 @@ It's used by many high-profile teams like @hulu, @apple, @Nike, and more
 
 [🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362407635904065543)
 
-## 2. Next.js was created by and is maintained by Vercel
+## [2. Next.js was created by and is maintained by Vercel](https://twitter.com/colbyfayock/status/1362407833342537729)
 
 ![](/assets/2.-vercel.jpg)
 
@@ -42,7 +42,7 @@ Since then, the team and community has grown expotentially, including contributi
 
 [🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362407833342537729)
 
-## 3. Next.js & Jamstack Adoption
+## [3. Next.js & Jamstack Adoption](https://twitter.com/colbyfayock/status/1362408028767723522)
 
 ![](/assets/3.-jamstack-adoption.jpg)
 
@@ -56,7 +56,7 @@ Compared to other popular React.js frameworks like Gatsby, which pulled in 12%
 
 [🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362408028767723522)
 
-## 4. Create a new Next.js app with Create Next App
+## [4. Create a new Next.js app with Create Next App](https://twitter.com/colbyfayock/status/1362408221273694211)
 
 ![](/assets/4.-create-next-app.jpg)
 
@@ -84,7 +84,7 @@ yarn create next-app  -e https://github.com/colbyfayock/next-sass-starter
 
 [🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362408221273694211)
 
-## 5. Next.js Routing
+## [5. Next.js Routing](https://twitter.com/colbyfayock/status/1362408377847054341)
 
 ![](/assets/5.-routing.jpg)
 
@@ -106,7 +106,7 @@ You can also add dynamic routes for more complex apps
 
 [🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362408377847054341)
 
-## 6. Next.js was built on Server Side Rendering
+## [6. Next.js was built on Server Side Rendering](https://twitter.com/colbyfayock/status/1362408518066860032)
 
 ![](/assets/6.-ssr.jpg)
 
@@ -122,7 +122,7 @@ If any data is needed, `getServerSideProps` can be used to fetch dynamic data du
 
 [🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362408518066860032)
 
-## 7. Next.js supports statically generating apps
+## [7. Next.js supports statically generating apps](https://twitter.com/colbyfayock/status/1362408735293997056)
 
 ![](/assets/7.-ssg.jpg)
 
@@ -138,7 +138,7 @@ SSG = Static Site Generation
 
 [🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362408735293997056)
 
-## 8. Next.js hybrid approach with Incremental Static Regeneration
+## [8. Next.js hybrid approach with Incremental Static Regeneration](https://twitter.com/colbyfayock/status/1362408899123494913)
 
 ![](/assets/8.-isg.jpg)
 
@@ -154,7 +154,7 @@ Setting revalidate on getStaticProps defines how often it refreshes
 
 [🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362408899123494913)
 
-## 9. Serverless functions with Next.js
+## [9. Serverless functions with Next.js](https://twitter.com/colbyfayock/status/1362409060281298948)
 
 ![](/assets/9.-api.jpg)
 
@@ -172,7 +172,7 @@ Inside, you export a handler function to handle the request and response
 
 [🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362409060281298948)
 
-## 10. Next.js & Plugins
+## [10. Next.js & Plugins](https://twitter.com/colbyfayock/status/1362409214015131650)
 
 ![](/assets/10.-plugins-packages.jpg)
 
@@ -184,7 +184,7 @@ next/image provides a range of optimizations like compression, automatic modern 
 
 [🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362409214015131650)
 
-## Learn Next.js by building an online store
+## [Learn Next.js by building an online store](https://twitter.com/colbyfayock/status/1362409386891767816)
 
 ![](/assets/11.-course.jpg)
 
