@@ -135,3 +135,19 @@ Caching mechanisms serve pages statically while refreshing stale content in the 
 Setting revalidate on getStaticProps defines how often it refreshes
 
 <https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration>
+
+## 9. Serverless functions with Next.js
+
+![](/assets/9.-api.jpg)
+
+Next.js can also create APIs with serverless functions
+
+It also uses file-system based routing to create new routes
+
+/pages/api/my-endpoint.js
+
+\=> /api/my-endpoint
+
+Inside, you export a handler function to handle the request and response
+
+<https://nextjs.org/docs/api-routes/introduction>
