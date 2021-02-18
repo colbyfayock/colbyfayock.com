@@ -6,6 +6,8 @@ category: coding
 ---
 
 
+
+
 ![](/assets/0-intro.jpg)
 
 Next.js has taken the web dev world by storm
@@ -95,3 +97,31 @@ Meaning the files you create and their names, are what's used to create your web
 You can also add dynamic routes for more complex apps
 
 <https://nextjs.org/docs/routing/introduction>
+
+## 6. Next.js was built on Server Side Rendering
+
+![](/assets/6.-ssr.jpg)
+
+The foundation of Next.js comes  from SSR
+
+SSR = Server Side Rendering
+
+On each browser request, Next.js renders the React page  and serves the HTML to the browser
+
+If any data is needed, `getServerSideProps` can be used to fetch dynamic data during render
+
+<https://nextjs.org/docs/basic-features/pages#server-side-rendering>
+
+## 7. Next.js supports statically generating apps
+
+![](/assets/7.-ssg.jpg)
+
+It's also capable of SSG
+
+SSG = Static Site Generation
+
+`next export` takes the Next.js website, renders the project similar to how it would on the server, and saves it as static files and assets
+
+`getStaticProps` allows you to fetch data at build time
+
+<https://nextjs.org/docs/basic-features/pages#static-generation-recommended>
