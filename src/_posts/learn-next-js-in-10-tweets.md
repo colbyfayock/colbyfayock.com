@@ -4,7 +4,7 @@ title: Learn Next.js in 10 Tweets
 date: 2021-02-18T16:20:46.417Z
 category: coding
 ---
-![](/assets/0-intro.jpg)
+![Next.js in 10 Tweets](/assets/0-intro.jpg)
 
 Next.js has taken the web dev world by storm
 
@@ -20,7 +20,7 @@ Let’s dive in 🧵
 
 ## [1. Next.js is a React.js framework from Vercel](https://twitter.com/colbyfayock/status/1362407635904065543)
 
-![](/assets/1.-next.js-is-a-react-framework.jpg)
+![React based web framework](/assets/1.-next.js-is-a-react-framework.jpg)
 
 It couples a great dev experience with an opinionated feature set to make it easy to spin up new performant, dynamic web apps
 
@@ -32,7 +32,7 @@ It's used by many high-profile teams like @hulu, @apple, @Nike, and more
 
 ## [2. Next.js was created by and is maintained by Vercel](https://twitter.com/colbyfayock/status/1362407833342537729)
 
-![](/assets/2.-vercel.jpg)
+![Created by Vercel](/assets/2.-vercel.jpg)
 
 The team at Vercel, formerly Zeit, originally and launched v1 of the framework on Oct 26, 2016 in the pursuit of universal JavaScript apps
 
@@ -44,7 +44,7 @@ Since then, the team and community has grown expotentially, including contributi
 
 ## [3. Next.js & Jamstack Adoption](https://twitter.com/colbyfayock/status/1362408028767723522)
 
-![](/assets/3.-jamstack-adoption.jpg)
+![58.59% adoption in the Jamstack community](/assets/3.-jamstack-adoption.jpg)
 
 In the #jamstack world, Next.js pulled a hefty 58.6% share of framework adoption in 2020
 
@@ -58,7 +58,7 @@ Compared to other popular React.js frameworks like Gatsby, which pulled in 12%
 
 ## [4. Create a new Next.js app with Create Next App](https://twitter.com/colbyfayock/status/1362408221273694211)
 
-![](/assets/4.-create-next-app.jpg)
+![Create Next App](/assets/4.-create-next-app.jpg)
 
 The easiest way to get started with a new Next.js app is with Create Next App
 
@@ -86,7 +86,7 @@ yarn create next-app  -e https://github.com/colbyfayock/next-sass-starter
 
 ## [5. Next.js Routing](https://twitter.com/colbyfayock/status/1362408377847054341)
 
-![](/assets/5.-routing.jpg)
+![File system based router](/assets/5.-routing.jpg)
 
 Next.js uses a file-system based router
 
@@ -108,7 +108,7 @@ You can also add dynamic routes for more complex apps
 
 ## [6. Next.js was built on Server Side Rendering](https://twitter.com/colbyfayock/status/1362408518066860032)
 
-![](/assets/6.-ssr.jpg)
+![Server side rendering](/assets/6.-ssr.jpg)
 
 The foundation of Next.js comes  from SSR
 
@@ -124,7 +124,7 @@ If any data is needed, `getServerSideProps` can be used to fetch dynamic data du
 
 ## [7. Next.js supports statically generating apps](https://twitter.com/colbyfayock/status/1362408735293997056)
 
-![](/assets/7.-ssg.jpg)
+![Static Site Generation](/assets/7.-ssg.jpg)
 
 It's also capable of SSG
 
@@ -140,7 +140,7 @@ SSG = Static Site Generation
 
 ## [8. Next.js hybrid approach with Incremental Static Regeneration](https://twitter.com/colbyfayock/status/1362408899123494913)
 
-![](/assets/8.-isg.jpg)
+![Incremental Static Generation](/assets/8.-isg.jpg)
 
 There's also a hybrid approach with ISR
 
@@ -156,7 +156,7 @@ Setting revalidate on getStaticProps defines how often it refreshes
 
 ## [9. Serverless functions with Next.js](https://twitter.com/colbyfayock/status/1362409060281298948)
 
-![](/assets/9.-api.jpg)
+![Serverless Functions](/assets/9.-api.jpg)
 
 Next.js can also create APIs with serverless functions
 
@@ -174,7 +174,7 @@ Inside, you export a handler function to handle the request and response
 
 ## [10. Next.js & Plugins](https://twitter.com/colbyfayock/status/1362409214015131650)
 
-![](/assets/10.-plugins-packages.jpg)
+![Plugins & Packages](/assets/10.-plugins-packages.jpg)
 
 Instead of a dedicated plugin ecoystem, Next.js maintains opinionated packages that get bundled into the framework
 
@@ -186,7 +186,7 @@ next/image provides a range of optimizations like compression, automatic modern 
 
 ## [Learn Next.js by building an online store](https://twitter.com/colbyfayock/status/1362409386891767816)
 
-![](/assets/11.-course.jpg)
+![eCommerce with Next.js](/assets/11.-course.jpg)
 
 Next.js is a flexible framework that gives you as a developer a lot of power over creating great experiences on the web.
 
