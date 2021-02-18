@@ -16,6 +16,8 @@ Here's everything you need to know in 10 tweets
 
 Let’s dive in 🧵
 
+[🐦 View & Share the Tweet Thread](https://twitter.com/colbyfayock/status/1362407526222995456)
+
 ## 1. Next.js is a React.js framework from Vercel
 
 ![](/assets/1.-next.js-is-a-react-framework.jpg)
@@ -26,6 +28,8 @@ It's used by many high-profile teams like @hulu, @apple, @Nike, and more
 
 <https://nextjs.org/>
 
+[🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362407635904065543)
+
 ## 2. Next.js was created by and is maintained by Vercel
 
 ![](/assets/2.-vercel.jpg)
@@ -35,6 +39,8 @@ The team at Vercel, formerly Zeit, originally and launched v1 of the framework o
 Since then, the team and community has grown expotentially, including contributions from web leaders like Google
 
 [https://vercel.com/blog/next ](https://vercel.com/blog/next)
+
+[🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362407833342537729)
 
 ## 3. Next.js & Jamstack Adoption
 
@@ -47,6 +53,8 @@ Compared to other popular React.js frameworks like Gatsby, which pulled in 12%
 \*The Next.js stats likely include some server side rendered, arguably not Jamstack
 
 <https://almanac.httparchive.org/en/2020/jamstack>
+
+[🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362408028767723522)
 
 ## 4. Create a new Next.js app with Create Next App
 
@@ -74,6 +82,8 @@ yarn create next-app  -e https://github.com/colbyfayock/next-sass-starter
 
 <https://nextjs.org/docs/api-reference/create-next-app>
 
+[🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362408221273694211)
+
 ## 5. Next.js Routing
 
 ![](/assets/5.-routing.jpg)
@@ -94,6 +104,8 @@ You can also add dynamic routes for more complex apps
 
 <https://nextjs.org/docs/routing/introduction>
 
+[🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362408377847054341)
+
 ## 6. Next.js was built on Server Side Rendering
 
 ![](/assets/6.-ssr.jpg)
@@ -107,6 +119,8 @@ On each browser request, Next.js renders the React page  and serves the HTML to
 If any data is needed, `getServerSideProps` can be used to fetch dynamic data during render
 
 <https://nextjs.org/docs/basic-features/pages#server-side-rendering>
+
+[🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362408518066860032)
 
 ## 7. Next.js supports statically generating apps
 
@@ -122,6 +136,8 @@ SSG = Static Site Generation
 
 <https://nextjs.org/docs/basic-features/pages#static-generation-recommended>
 
+[🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362408735293997056)
+
 ## 8. Next.js hybrid approach with Incremental Static Regeneration
 
 ![](/assets/8.-isg.jpg)
@@ -135,6 +151,8 @@ Caching mechanisms serve pages statically while refreshing stale content in the 
 Setting revalidate on getStaticProps defines how often it refreshes
 
 <https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration>
+
+[🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362408899123494913)
 
 ## 9. Serverless functions with Next.js
 
@@ -152,6 +170,8 @@ Inside, you export a handler function to handle the request and response
 
 <https://nextjs.org/docs/api-routes/introduction>
 
+[🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362409060281298948)
+
 ## 10. Next.js & Plugins
 
 ![](/assets/10.-plugins-packages.jpg)
@@ -161,6 +181,8 @@ Instead of a dedicated plugin ecoystem, Next.js maintains opinionated packages t
 next/image provides a range of optimizations like compression, automatic modern formats, and responsive sizing
 
 <https://nextjs.org/docs/basic-features/image-optimization>
+
+[🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362409214015131650)
 
 ## Learn Next.js by building an online store
 
@@ -173,3 +195,5 @@ Want to dive more into Next.js & React?
 Check out my @eggheadio course [Create an eCommerce Store with Next.js and Stripe Checkout](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap)
 
 [https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap)
+
+[🐦 View & Share the Tweet](https://twitter.com/colbyfayock/status/1362409386891767816)
