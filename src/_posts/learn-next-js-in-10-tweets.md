@@ -151,3 +151,25 @@ It also uses file-system based routing to create new routes
 Inside, you export a handler function to handle the request and response
 
 <https://nextjs.org/docs/api-routes/introduction>
+
+## 10. Next.js & Plugins
+
+![](/assets/10.-plugins-packages.jpg)
+
+Instead of a dedicated plugin ecoystem, Next.js maintains opinionated packages that get bundled into the framework
+
+next/image provides a range of optimizations like compression, automatic modern formats, and responsive sizing
+
+<https://nextjs.org/docs/basic-features/image-optimization>
+
+## Learn Next.js by building an online store
+
+![](/assets/11.-course.jpg)
+
+Next.js is a flexible framework that gives you as a developer a lot of power over creating great experiences on the web.
+
+Want to dive more into Next.js & React?
+
+Check out my @eggheadio course [Create an eCommerce Store with Next.js and Stripe Checkout](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap)
+
+[https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap)
