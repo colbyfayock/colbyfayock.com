@@ -4,10 +4,6 @@ title: Learn Next.js in 10 Tweets
 date: 2021-02-18T16:20:46.417Z
 category: coding
 ---
-
-
-
-
 ![](/assets/0-intro.jpg)
 
 Next.js has taken the web dev world by storm
@@ -125,3 +121,17 @@ SSG = Static Site Generation
 `getStaticProps` allows you to fetch data at build time
 
 <https://nextjs.org/docs/basic-features/pages#static-generation-recommended>
+
+## 8. Next.js hybrid approach with Incremental Static Regeneration
+
+![](/assets/8.-isg.jpg)
+
+There's also a hybrid approach with ISR
+
+ISR = Incremental Static Regeneration
+
+Caching mechanisms serve pages statically while refreshing stale content in the background on the server
+
+Setting revalidate on getStaticProps defines how often it refreshes
+
+<https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration>
