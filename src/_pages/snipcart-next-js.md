@@ -9,8 +9,15 @@ You can find the slide deck and some more resources to get started with the Jams
 
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/getting-personal-with-ecommerce-react-the-static-web-egghead-talks) (slides.com)
+* [Slides](https://slides.com/colbyfayock/wtf-is-nextjs-snipcart) (slides.com)
 * [Next.js](https://nextjs.org/) (nextjs.org)
+* [Next.js Launch](https://vercel.com/blog/next) (vercel.com)
+* [ZEIT is now Vercel](https://vercel.com/blog/zeit-is-now-vercel) (vercel.com)
+* [Jamstack](https://almanac.httparchive.org/en/2020/jamstack) (almanac.httparchive.org)
+* [Next.js Hulu Case Study](https://nextjs.org/case-studies/hulu) (nextjs.org)
+* [Create Next App](https://nextjs.org/docs/api-reference/create-next-app) (nextjs.org)
+* [egghead Next](https://github.com/eggheadio/egghead-next) (github.com)
+* [Next.js WordPress Starter](https://github.com/colbyfayock/next-wordpress-starter) (github.com)
 * [Course: Create an eCommerce Store with Next.js and Stripe Checkout](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap&utm_source=colbyfayock.com&utm_medium=website&utm_campaign=thejamdev2021_talk_page) (egghead.io)
 
 ## Course: Create an eCommerce Store with Next.js and Stripe Checkout
