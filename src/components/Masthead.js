@@ -13,7 +13,7 @@ const Masthead = () => {
     <div className="masthead">
       <div className="container">
         <h1>
-          <Logo />
+          Testing Deploy Previews
         </h1>
         <p className="masthead-tagline">
           { tagline }
