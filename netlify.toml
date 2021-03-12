@@ -6,3 +6,8 @@
   to = "https://egghead.io/courses/create-an-ecommerce-store-with-next-js-and-stripe-checkout-562c?af=atzgap"
   status = 302
   force = true
+
+  from = "/cosmoshirt"
+  to = "https://cottonbureau.com/products/cosmo-the-space-jellyfish#/5503032/tee-men-standard-tee-indigo-tri-blend-s"
+  status = 302
+  force = true
