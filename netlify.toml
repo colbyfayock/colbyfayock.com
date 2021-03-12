@@ -3,6 +3,6 @@
   
 [[redirects]]
   from = "/ecomm"
-  to = "https://colbyfayock.ck.page/nextjs-stripe-ecommerce-course"
+  to = "https://egghead.io/courses/create-an-ecommerce-store-with-next-js-and-stripe-checkout-562c?af=atzgap"
   status = 302
   force = true
