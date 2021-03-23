@@ -9,7 +9,7 @@ You can find the slide deck and some more resources to get started with the Jams
 
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/getting-personal-with-ecommerce-react-the-static-web-egghead-talks) (slides.com)
+* [Slides](https://slides.com/colbyfayock/scaling-wordpress-with-nextjs-react-summit-2021) (slides.com)
 * [CMS Usage Distribution in the Top 1 Million Sites](https://trends.builtwith.com/cms) (trends.builtwith.com)
 * [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc) (aws.amazon.com)
 * [WordPress REST API](https://developer.wordpress.org/rest-api/) (developer.wordpress.com)
