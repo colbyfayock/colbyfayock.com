@@ -17,6 +17,27 @@ You can find the slide deck and some more resources to get started with the Jams
 * [Next.js WordPress Starter](https://github.com/colbyfayock/next-wordpress-starter) (github.com)
 * [Jamstack Handbook](https://jamstackhandbook.com/) (jamstackhandbook.com)
 
+## Free Course: From Design to Development
+
+![fromdesignto.dev](/assets/from-design-to-development.jpg)
+
+This course is PACKED with a ton of awesome web tools including:
+
+* 🎨 Designing layouts with Figma
+* 💻 Creating React apps with Next.js
+* 💅 Styling the web with Sass
+* 📓 Creating component systems with Storybook
+* 🧐 Automating Visual Testing with Applitools Eyes
+* 🤖 Automating code tasks with GitHub Actions
+* ⚙️ Deploying a Next.js app with Netlify
+* 🔒 Authenticating users with Netlify Identity
+* 📝 Managing dynamic content with Airtable
+
+[Take it FREE at yotube.com](https://www.youtube.com/watch?v=QjZIeA952jE)
+
+Or [learn more at fromdesignto.dev](https://fromdesignto.dev/)
+
+
 
 ## Course: Create an eCommerce Store with Next.js and Stripe Checkout
 
