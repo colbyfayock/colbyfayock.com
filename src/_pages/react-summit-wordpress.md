@@ -9,17 +9,14 @@ You can find the slide deck and some more resources to get started with the Jams
 
 ## Talk Resources
 
-* [Replay the Talk](https://egghead.io/talks/react-getting-personal-with-ecommerce-react-the-static-web?af=atzgap) (egghead.io)
 * [Slides](https://slides.com/colbyfayock/getting-personal-with-ecommerce-react-the-static-web-egghead-talks) (slides.com)
-* [Retail Ecommerce Sales Worldwide, 2019-2024](https://www.emarketer.com/chart/242908/retail-ecommerce-sales-worldwide-2019-2024-trillions-change-of-total-retail-sales) (emarketer.com)
-* [Little Caesars Pizza Delivers with Gatsby](https://www.gatsbyjs.com/blog/2020-07-15-little-caesars-delivers-with-gatsby/) (gatsbyjs.com)
-* [Shopping for speed on eBay.com](https://web.dev/shopping-for-speed-on-ebay/) (web.dev)
-* [Snipcart](https://snipcart.com/) (snipcart.com)
-* [Next.js](https://nextjs.org/) (nextjs.org)
-* [Space Jelly Store](https://spacejelly.dev/store/) (spacejelly.dev)
-* [use-shopping-cart](https://github.com/dayhaysoos/use-shopping-cart) (github.com)
-* [Course: Create an eCommerce Store with Next.js and Stripe Checkout](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap&utm_source=colbyfayock.com&utm_medium=website&utm_campaign=thejamdev2021_talk_page) (egghead.io)
-* [Ebook: 50 Projects for React & the Static Web](https://50reactprojects.com/) (50reactprojects.com)
+* [CMS Usage Distribution in the Top 1 Million Sites](https://trends.builtwith.com/cms) (trends.builtwith.com)
+* [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc) (aws.amazon.com)
+* [WordPress REST API](https://developer.wordpress.org/rest-api/) (developer.wordpress.com)
+* [WPGraphQL](https://www.wpgraphql.com/) (wpgraphql.com)
+* [Next.js WordPress Starter](https://github.com/colbyfayock/next-wordpress-starter) (github.com)
+* [Jamstack Handbook](https://jamstackhandbook.com/) (jamstackhandbook.com)
+
 
 ## Course: Create an eCommerce Store with Next.js and Stripe Checkout
 
