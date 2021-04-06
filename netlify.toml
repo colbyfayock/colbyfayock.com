@@ -12,3 +12,9 @@
   to = "https://cottonbureau.com/products/cosmo-the-space-jellyfish#/5503032/tee-men-standard-tee-indigo-tri-blend-s"
   status = 302
   force = true
+
+[[redirects]]
+  from = "/hashnode-brand"
+  to = "https://www.colbyfayock.com/hashnode-bootcamp-personal-brand"
+  status = 302
+  force = true
