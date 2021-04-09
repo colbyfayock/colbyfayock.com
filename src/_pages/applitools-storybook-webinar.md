@@ -9,31 +9,17 @@ You can find the slide deck and some more resources below.
 
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/scaling-wordpress-with-nextjs-react-summit-2021) (slides.com)
-*
-
-## Free Course: From Design to Development
-
-![fromdesignto.dev](blob:https://www.colbyfayock.com/d67547dc-47cd-4a51-9cc4-b9d599470a7a)
-
-This course is PACKED with a ton of awesome web tools including:
-
-* 🎨 Designing layouts with Figma
-* 💻 Creating React apps with Next.js
-* 💅 Styling the web with Sass
-* 📓 Creating component systems with Storybook
-* 🧐 Automating Visual Testing with Applitools Eyes
-* 🤖 Automating code tasks with GitHub Actions
-* ⚙️ Deploying a Next.js app with Netlify
-* 🔒 Authenticating users with Netlify Identity
-* 📝 Managing dynamic content with Airtable
-
-[Take it FREE at yotube.com](https://www.youtube.com/watch?v=QjZIeA952jE)
-
-Or [learn more at fromdesignto.dev](https://fromdesignto.dev/)
-
-
-
+* [Slides](https://slides.com/colbyfayock/) (slides.com)
+* [Building a visual language](https://airbnb.design/building-a-visual-language/) (airbnb.design)
+* [Storybook](https://storybook.js.org/) (storybook.js.org)
+* [The Guardian Storybook](5dfcbf3012392c0020e7140b-gmgigeoguh.chromatic.com) (chromatic.com)
+* [Shopify Polaris Storybook](5d559397bae39100201eedc1-wvrmdldybf.chromatic.com) (chromatic.com)
+* [IBM Carbon Components](https://react.carbondesignsystem.com/) (react.carbondesignsystem.com)
+* [Applitools](https://applitools.com/) (applitools.com)
+* [Applitools Tutorials](https://applitools.com/tutorials/) (applitools.com)
+* [Applitools Eyes Storybook SDK](https://www.npmjs.com/package/@applitools/eyes-storybook) (npmjs.com)
+* [Storybook CSF React Tutorial](https://applitools.com/tutorials/storybook-csf-react.html) (applitools.com)
+* [How to Add Applitools Eyes to Storybook](https://applitools.com/blog/how-to-add-applitools-eyes-storybook/) (applitools.com)
 
 
 ## Say hi on Twitter and follow me for more updates!
