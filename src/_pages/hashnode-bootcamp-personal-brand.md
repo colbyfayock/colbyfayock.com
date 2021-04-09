@@ -3,8 +3,6 @@ template: page
 title: Hashnode Bootcamp Personal Brand
 path: /hashnode-bootcamp-personal-brand
 ---
-
-
 ![](/assets/thanks-for-tuning-in.jpg)
 
 Thanks for tuning in to my talk! ❤️
@@ -27,7 +25,9 @@ You can find the slide deck and some more resources to get started with the Jams
 
 ## Free Course: From Design to Development
 
-![fromdesignto.dev](blob:https://www.colbyfayock.com/d67547dc-47cd-4a51-9cc4-b9d599470a7a)
+
+
+![fromdesignto.dev](/assets/from-design-to-development.jpg)
 
 This course is PACKED with a ton of awesome web tools including:
 
