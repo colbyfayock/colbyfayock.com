@@ -14,7 +14,16 @@ You can find the slide deck and some more resources to get started with the Jams
 ## Talk Resources
 
 * [Slides](https://slides.com/colbyfayock/scaling-wordpress-with-nextjs-react-summit-2021) (slides.com)
+* [Learn in Public](https://www.swyx.io/learn-in-public/) (swyx.io)
+* [The Coding Career Handbook](https://www.learninpublic.org/) (learninpublic.org)
+* [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history) (maggieappleton.com)
+* [React is a Potato Plant](maggieappleton.com/reactpotato) (maggieappleton.com)
+* [Java Programming](https://testautomationu.applitools.com/java-programming-course/) (testautomationu.applitools.com)
+* [It's okay to have imposter syndrome @shanselman](https://twitter.com/shanselman/status/1348399361521111040) (twitter.com)
+* [An Interactive Guide to CSS Transitions](https://www.joshwcomeau.com/animation/css-transitions/) (joshwcomeau.com)
+* [Content Reminder](github.com/colbyfayock/content-reminder) (github.com)
 * [CFP Template](https://cfptemplate.com/) (cfptemplate.com)
+* [dev-pack](https://www.devpack.dev/) (devpack.dev)
 
 ## Free Course: From Design to Development
 
@@ -36,26 +45,6 @@ This course is PACKED with a ton of awesome web tools including:
 
 Or [learn more at fromdesignto.dev](https://fromdesignto.dev/)
 
-## Course: Create an eCommerce Store with Next.js and Stripe Checkout
-
-[![Ecommerce Course on egghead.io](/assets/card_2x.jpg)](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap&utm_source=colbyfayock.com&utm_medium=website&utm_campaign=thejamdev2021_talk_page)
-
-Ecommerce is a powerful way to sell products online whether it's tshirts or an ebook.
-
-In this egghead.io course, I walk through building an online store from scratch using Next.js and Stripe Checkout.
-
-We'll walk through React core fundamentals like the useState React hook and Context API to build a global cart that sends customers to check out.
-
-[Take the course at egghead.io](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap&utm_source=colbyfayock.com&utm_medium=website&utm_campaign=thejamdev2021_talk_page)
-
-## Learn by Doing with 50 Project Ideas
-
-[![50 React Projects - Learn by Doing](/assets/50-react-projects-banner.jpg)](https://50reactprojects.com/)
-
-Stop asking yourself WHAT you want to build and start learning by doing with these 50 project ideas complete with project briefs, resources, and layout ideas.
-
-[Free Download: 50 Projects for React & the State Web](https://50reactprojects.com/)
-
 ## Journey to Dev
 
 [![Sign up for free!](/assets/open-graph.jpg)](https://journeyto.dev/)
@@ -74,19 +63,13 @@ This free 7-week newsletter helps you learn the human-oriented skills that you d
 
 [Start Your Journey](https://journeyto.dev/)
 
-## Ebook: Learn All the Things About the Jamstack
+## Learn by Doing with 50 Project Ideas
 
-[![Jamstack Handbook](/assets/jamstack-handbook-social.jpg)](https://jamstackhandbook.com/)
+[![50 React Projects - Learn by Doing](/assets/50-react-projects-banner.jpg)](https://50reactprojects.com/)
 
-**Here are some things you'll learn:**
+Stop asking yourself WHAT you want to build and start learning by doing with these 50 project ideas complete with project briefs, resources, and layout ideas.
 
-* What exactly is the Jamstack?
-* What makes the Jamstack so awesome?
-* What are the good parts?
-* What are the not so good parts?
-* How can we build Jamstack sites?
-
-[Order at jamstackhandbook.com](https://jamstackhandbook.com/)
+[Free Download: 50 Projects for React & the State Web](https://50reactprojects.com/)
 
 ## Say hi on Twitter and follow me for more updates!
 
@@ -94,10 +77,3 @@ This free 7-week newsletter helps you learn the human-oriented skills that you d
 * 📹 [Subscribe to my Youtube](https://www.youtube.com/colbyfayock?sub_confirmation=1)
 * 📹 [Follow me on Twitch](https://www.twitch.tv/colbyfayock)
 * ✉️ [Get updates with my Newsletter](https://colbyfayock.com/newsletter)
-
-## More Jamstack
-
-* 🗒️ [New to Jamstack? Everything You Need to Know to Get Started](https://snipcart.com/blog/jamstack) (snipcart.com)
-* 🗒️ [What is the JAMstack and how do I get started?](https://www.colbyfayock.com/2020/02/what-is-the-jamstack-and-how-do-i-get-started/) (colbyfayock.com)
-* 📹 [Jamstack Tutorials on YouTube](https://www.youtube.com/playlist?list=PLFsfg2xP7cbJhIyKBnhTSflKVrIx-YGpX)
-* 📹 [How to host and deploy a static website or JAMstack app on AWS S3 & CloudFront](https://www.youtube.com/watch?v=1lDGDzmbQWg) (youtube.com)
