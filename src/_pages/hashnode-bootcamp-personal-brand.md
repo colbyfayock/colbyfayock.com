@@ -13,7 +13,7 @@ You can find the slide deck and some more resources to get started with the Jams
 
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/scaling-wordpress-with-nextjs-react-summit-2021) (slides.com)
+* [Slides](https://slides.com/colbyfayock/stand-out-by-building-a-personal-brand-hashnode-bootcamp-3) (slides.com)
 * [Learn in Public](https://www.swyx.io/learn-in-public/) (swyx.io)
 * [The Coding Career Handbook](https://www.learninpublic.org/) (learninpublic.org)
 * [A Brief History & Ethos of the Digital Garden](https://maggieappleton.com/garden-history) (maggieappleton.com)
