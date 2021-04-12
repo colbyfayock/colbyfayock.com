@@ -22,6 +22,21 @@ You can find the slide deck and some more resources below.
 * [How to Add Applitools Eyes to Storybook](https://applitools.com/blog/how-to-add-applitools-eyes-storybook/) (applitools.com)
 
 
+
+[![Automation Cookbook](/assets/automation-cookbook.jpg)](https://info.applitools.com/udgOG)
+
+## Test Automation Recipes
+
+Most of the when writing automated tests, we interact with simpler elements, like maybe checking for some text or clicking a button.
+
+But the web isn't just made of those simple elements, we have other elements like select dropdowns and filepickers, which can be challenging to figure out in automated testing frameworks.
+
+That's where Applitools' Automation Cookbook comes in, where we put together quick recipes that can help you get productive in popular test automation frameworks like Cypress and Selenium.
+
+[Automation Cookbook](https://info.applitools.com/udgOG) (applitools.com)
+
+
+
 ## Say hi on Twitter and follow me for more updates!
 
 * 🐦 [Follow me on Twitter](https://twitter.com/colbyfayock)
