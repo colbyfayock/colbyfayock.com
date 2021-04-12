@@ -9,7 +9,7 @@ You can find the slide deck and some more resources below.
 
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/) (slides.com)
+* [Slides](https://slides.com/colbyfayock/bringing-quality-design-systems-to-life-with-storybook-and-applitools-webinar) (slides.com)
 * [Building a visual language](https://airbnb.design/building-a-visual-language/) (airbnb.design)
 * [Storybook](https://storybook.js.org/) (storybook.js.org)
 * [The Guardian Storybook](5dfcbf3012392c0020e7140b-gmgigeoguh.chromatic.com) (chromatic.com)
