@@ -9,7 +9,6 @@ You can find the slide deck and some more resources to get started with the Jams
 
 ## Talk Resources
 
-* [Replay the Talk](https://egghead.io/talks/react-getting-personal-with-ecommerce-react-the-static-web?af=atzgap) (egghead.io)
 * [Slides](https://slides.com/colbyfayock/getting-personal-with-ecommerce-react-the-static-web-egghead-talks) (slides.com)
 * [Retail Ecommerce Sales Worldwide, 2019-2024](https://www.emarketer.com/chart/242908/retail-ecommerce-sales-worldwide-2019-2024-trillions-change-of-total-retail-sales) (emarketer.com)
 * [Little Caesars Pizza Delivers with Gatsby](https://www.gatsbyjs.com/blog/2020-07-15-little-caesars-delivers-with-gatsby/) (gatsbyjs.com)
@@ -18,8 +17,8 @@ You can find the slide deck and some more resources to get started with the Jams
 * [Next.js](https://nextjs.org/) (nextjs.org)
 * [Space Jelly Store](https://spacejelly.dev/store/) (spacejelly.dev)
 * [use-shopping-cart](https://github.com/dayhaysoos/use-shopping-cart) (github.com)
+* [Shopify Headless](https://www.shopify.com/plus/solutions/headless-commerce) (shopify.com)
 * [Course: Create an eCommerce Store with Next.js and Stripe Checkout](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap&utm_source=colbyfayock.com&utm_medium=website&utm_campaign=thejamdev2021_talk_page) (egghead.io)
-* [Ebook: 50 Projects for React & the Static Web](https://50reactprojects.com/) (50reactprojects.com)
 
 ## Course: Create an eCommerce Store with Next.js and Stripe Checkout
 
@@ -32,6 +31,26 @@ In this egghead.io course, I walk through building an online store from scratch 
 We'll walk through React core fundamentals like the useState React hook and Context API to build a global cart that sends customers to check out.
 
 [Take the course at egghead.io](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap&utm_source=colbyfayock.com&utm_medium=website&utm_campaign=thejamdev2021_talk_page)
+
+## Free Course: From Design to Development
+
+![fromdesignto.dev](/assets/from-design-to-development.jpg)
+
+This course is PACKED with a ton of awesome web tools including:
+
+* 🎨 Designing layouts with Figma
+* 💻 Creating React apps with Next.js
+* 💅 Styling the web with Sass
+* 📓 Creating component systems with Storybook
+* 🧐 Automating Visual Testing with Applitools Eyes
+* 🤖 Automating code tasks with GitHub Actions
+* ⚙️ Deploying a Next.js app with Netlify
+* 🔒 Authenticating users with Netlify Identity
+* 📝 Managing dynamic content with Airtable
+
+[Take it FREE at yotube.com](https://www.youtube.com/watch?v=QjZIeA952jE)
+
+Or [learn more at fromdesignto.dev](https://fromdesignto.dev/)
 
 ## Learn by Doing with 50 Project Ideas
 
