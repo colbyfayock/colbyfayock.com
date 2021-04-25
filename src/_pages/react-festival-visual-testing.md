@@ -17,7 +17,7 @@ You can find the slide deck and some more resources to get started with the Jams
 * [Applitools](https://info.applitools.com/udjf2) (applitools.com)
 * [Applitools Tutorials](https://info.applitools.com/udjf3) (applitools.com)
 * [Eyes Cypress SDK](https://www.npmjs.com/package/@applitools/eyes-cypress) (npmjs.com)
-* [From Design to Development Crash Course](fromdesignto.dev)
+* [From Design to Development Crash Course](fromdesignto.dev) (fromdesignto.dev)
 
 ## Free Course: From Design to Development
 
