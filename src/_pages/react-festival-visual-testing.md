@@ -13,7 +13,7 @@ You can find the slide deck and some more resources to get started with the Jams
 
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/scaling-wordpress-with-nextjs-react-summit-2021) (slides.com)
+* [Slides](https://slides.com/colbyfayock/adding-a-second-pair-of-eyes-with-visual-testing-react-case-study-festival) (slides.com)
 *
 *
 
