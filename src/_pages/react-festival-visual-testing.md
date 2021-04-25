@@ -3,9 +3,7 @@ template: page
 title: React Festival Visual Testing
 path: /react-festival-visual-testing
 ---
-
-
-![](/assets/thanks-for-tuning-in.jpg)
+## ![Thank you!](/assets/thanks-for-tuning-in.jpg)
 
 Thanks for tuning in to my talk! ❤️
 
@@ -14,12 +12,16 @@ You can find the slide deck and some more resources to get started with the Jams
 ## Talk Resources
 
 * [Slides](https://slides.com/colbyfayock/adding-a-second-pair-of-eyes-with-visual-testing-react-case-study-festival) (slides.com)
-*
-*
+* [TestPyramid](https://martinfowler.com/bliki/TestPyramid.html) (martinfowler.com)
+* [Test Trophy](kentcdodds.com/blog/write-tests) (kentcdodds.com)
+* [Applitools](https://info.applitools.com/udjf2) (applitools.com)
+* [Applitools Tutorials](https://info.applitools.com/udjf3) (applitools.com)
+* [Eyes Cypress SDK](https://www.npmjs.com/package/@applitools/eyes-cypress) (npmjs.com)
+* [From Design to Development Crash Course](fromdesignto.dev)
 
 ## Free Course: From Design to Development
 
-![fromdesignto.dev](blob:https://www.colbyfayock.com/e009d754-7f7f-45d0-9479-e5a66ee2c759)
+![fromdesignto.dev](/assets/from-design-to-development.jpg)
 
 This course is PACKED with a ton of awesome web tools including:
 
