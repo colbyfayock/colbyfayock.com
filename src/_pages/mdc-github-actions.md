@@ -12,11 +12,23 @@ You can find the slide deck and some more resources to get started with the Jams
 ## Talk Resources
 
 * [Slides](https://slides.com/colbyfayock/adding-a-second-pair-of-eyes-with-visual-testing-react-case-study-festival) (slides.com)
-* [TestPyramid](https://martinfowler.com/bliki/TestPyramid.html) (martinfowler.com)
-* [Test Trophy](kentcdodds.com/blog/write-tests) (kentcdodds.com)
-* [Applitools](https://info.applitools.com/udjf2) (applitools.com)
-* [Applitools Tutorials](https://info.applitools.com/udjf3) (applitools.com)
-* [Eyes Cypress SDK](https://www.npmjs.com/package/@applitools/eyes-cypress) (npmjs.com)
+* [ESLint](https://eslint.org/) (eslint.org)
+* [Prettier](https://prettier.io/) (prettier.io)
+* [Cypress](https://www.cypress.io/) (cypress.io)
+* [AWS CloudFormation](https://aws.amazon.com/cloudformation/) (aws.amazon.com)
+* [Git Hooks](https://git-scm.com/docs/githooks) (git-scm.com)
+* [Jenkins](https://www.jenkins.io/) (jenkins.io)
+* [GitHub Actions](https://github.com/features/actions) (github.com)
+* [Creating Actions](https://docs.github.com/en/actions/creating-actions) (docs.github.com)
+* [Applitools Eyes Action](https://github.com/colbyfayock/applitools-eyes-action) (github.com)
+* [Applitools](https://applitools.com/) (applitools.com)
+* [Sitemap Generator](https://www.npmjs.com/package/sitemap-generator) (npmjs.com)
+* [Content Reminder](https://github.com/colbyfayock/content-reminder) (github.com)
+* [Lighthouse CI Action](https://github.com/marketplace/actions/lighthouse-ci-action) (github.com)
+* [Create a New Github Action to Automate Code Tasks with Javascript](https://egghead.io/courses/create-a-new-github-action-to-automate-code-tasks-with-javascript-f1e9?af=atzgap) (egghead.io)
+* [How to Use Github Actions to Automate Tests and Slack Notifications](https://www.youtube.com/watch?v=1n-jHHNSoTw) (youtube.com)
+* [Custom GitHub Actions in Node.js - GitHub Actions JavaScript Tutorial](https://www.youtube.com/watch?v=Ef0gPGUh9oo) (youtube.com)
+* [Use Github Actions to Automatically Deploy a Static Site - Next.js & AWS S3](https://www.youtube.com/watch?v=D3h91EvRxuk) (youtube.com)
 * [From Design to Development Crash Course](fromdesignto.dev) (fromdesignto.dev)
 
 ## Free Course: From Design to Development
