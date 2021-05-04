@@ -11,7 +11,7 @@ You can find the slide deck and some more resources to get started with the Jams
 
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/adding-a-second-pair-of-eyes-with-visual-testing-react-case-study-festival) (slides.com)
+* [Slides](https://slides.com/colbyfayock/automating-all-the-code-and-testing-things-with-github-actions-minnesota-dev-conf-2021) (slides.com)
 * [ESLint](https://eslint.org/) (eslint.org)
 * [Prettier](https://prettier.io/) (prettier.io)
 * [Cypress](https://www.cypress.io/) (cypress.io)
