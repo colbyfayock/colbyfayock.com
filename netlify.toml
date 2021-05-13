@@ -24,3 +24,10 @@
   to = "https://www.colbyfayock.com/hashnode-bootcamp-personal-brand"
   status = 302
   force = true
+
+
+[[redirects]]
+  from = "/wpnextjs"
+  to = "https://github.com/colbyfayock/next-wordpress-starter"
+  status = 302
+  force = true
