@@ -5,17 +5,13 @@ path: /jsnation-fundamentals
 ---
 <figure><img src="/assets/thanks-for-tuning-in.jpg" alt="" /><figcaption>Thanks for tuning in to my talk! ❤️</figcaption></figure>
 
-You can find the slide deck and some more resources to get started with the Jamstack!
+You can find the slide deck and some more resources to help you level up!
 
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/scaling-wordpress-with-nextjs-react-summit-2021) (slides.com)
-* [CMS Usage Distribution in the Top 1 Million Sites](https://trends.builtwith.com/cms) (trends.builtwith.com)
-* [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc) (aws.amazon.com)
-* [WordPress REST API](https://developer.wordpress.org/rest-api/) (developer.wordpress.com)
-* [WPGraphQL](https://www.wpgraphql.com/) (wpgraphql.com)
-* [Next.js WordPress Starter](https://github.com/colbyfayock/next-wordpress-starter) (github.com)
-* [Jamstack Handbook](https://jamstackhandbook.com/) (jamstackhandbook.com)
+* [Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-jsnation-2021) (slides.com)
+* [Put Down the Javascript - Learn HTML & CSS](https://www.colbyfayock.com/2019/08/put-down-the-javascript-learn-html-css) (colbyfayock.com)
+* [Full Talk](https://egghead.io/talks/egghead-put-down-the-javascript-level-up-with-the-fundamentals-of-web-development?af=atzgap) (egghead.io)
 
 ## Free Course: From Design to Development
 
@@ -36,8 +32,6 @@ This course is PACKED with a ton of awesome web tools including:
 [Take it FREE at yotube.com](https://www.youtube.com/watch?v=QjZIeA952jE)
 
 Or [learn more at fromdesignto.dev](https://fromdesignto.dev/)
-
-
 
 ## Course: Create an eCommerce Store with Next.js and Stripe Checkout
 
