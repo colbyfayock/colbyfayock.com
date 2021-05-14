@@ -1,7 +1,7 @@
 ---
 template: page
 title: JSNation Fundamentals
-path: /jnation-fundamentals
+path: /jsnation-fundamentals
 ---
 <figure><img src="/assets/thanks-for-tuning-in.jpg" alt="" /><figcaption>Thanks for tuning in to my talk! ❤️</figcaption></figure>
 
