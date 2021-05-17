@@ -31,3 +31,9 @@
   to = "https://github.com/colbyfayock/next-wordpress-starter"
   status = 302
   force = true
+  
+[[redirects]]
+  from = "/frontendtestfest"
+  to = "/front-end-test-fest"
+  status = 302
+  force = true
