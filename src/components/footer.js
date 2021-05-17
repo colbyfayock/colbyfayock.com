@@ -65,7 +65,9 @@ const Footer = () => {
             <p className="emoji">
               🙌 ✉️ 🙌
             </p>
-            <EmailSignup />
+            <EmailSignup onSubmit={() => {
+              alert('Submitted!');
+            }} />
           </div>
         </div>
       </div>

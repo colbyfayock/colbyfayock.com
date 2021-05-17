@@ -44,7 +44,7 @@ const socialLinks = [
     id: 'instagram',
     title: 'Instagram',
     url: 'https://www.instagram.com/colbyfayock/',
-    Icon: FaInstagram,
+    Icon: FaGithub,
   },
   {
     id: 'email',
