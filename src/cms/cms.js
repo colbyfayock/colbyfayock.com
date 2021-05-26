@@ -9,7 +9,7 @@ init({
     backend: {
       name: 'github',
       repo: 'colbyfayock/colbyfayock.com',
-      brand: 'main'
+      branch: 'main'
     },
     load_config_file: false,
     display_url: 'https://colbyfayock.com',
