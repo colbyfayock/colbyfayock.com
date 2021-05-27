@@ -8,7 +8,8 @@ init({
   config: {
     backend: {
       name: 'github',
-      repo: 'colbyfayock/colbyfayock.com'
+      repo: 'colbyfayock/colbyfayock.com',
+      branch: 'main'
     },
     load_config_file: false,
     display_url: 'https://colbyfayock.com',
