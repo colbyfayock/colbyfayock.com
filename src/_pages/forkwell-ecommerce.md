@@ -9,7 +9,7 @@ You can find the slide deck and some more resources to get started with the Jams
 
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/getting-personal-with-ecommerce-react-the-static-web-cloudflare-tv) (slides.com)
+* [Slides](https://slides.com/colbyfayock/getting-personal-with-ecommerce-react-the-static-web-forkwell) (slides.com)
 * [Retail Ecommerce Sales Worldwide, 2019-2024](https://www.emarketer.com/chart/242908/retail-ecommerce-sales-worldwide-2019-2024-trillions-change-of-total-retail-sales) (emarketer.com)
 * [Little Caesars Pizza Delivers with Gatsby](https://www.gatsbyjs.com/blog/2020-07-15-little-caesars-delivers-with-gatsby/) (gatsbyjs.com)
 * [Shopping for speed on eBay.com](https://web.dev/shopping-for-speed-on-ebay/) (web.dev)
