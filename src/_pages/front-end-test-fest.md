@@ -11,7 +11,7 @@ You can find the slide deck and some more resources to get started with the Jams
 
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/adding-a-second-pair-of-eyes-with-visual-testing-react-case-study-festival) (slides.com
+* [Slides](https://slides.com/colbyfayock/testing-beyond-the-dom-front-end-test-fest) (slides.com
 * [Applitools](https://info.applitools.com/udjf2) (applitools.com)
 * [Applitools Tutorials](https://info.applitools.com/udjf3) (applitools.com)
 * [Eyes Cypress SDK](https://www.npmjs.com/package/@applitools/eyes-cypress) (npmjs.com)
