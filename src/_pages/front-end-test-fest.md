@@ -3,8 +3,6 @@ template: page
 title: Front-End Test Fest
 path: /front-end-test-fest
 ---
-
-
 ## ![Thank you!](/assets/thanks-for-tuning-in.jpg)
 
 Thanks for tuning in to my talk! ❤️
@@ -18,6 +16,8 @@ You can find the slide deck and some more resources to get started with the Jams
 * [Applitools Tutorials](https://info.applitools.com/udjf3) (applitools.com)
 * [Eyes Cypress SDK](https://www.npmjs.com/package/@applitools/eyes-cypress) (npmjs.com)
 * [From Design to Development Crash Course](fromdesignto.dev) (fromdesignto.dev)
+* [Video Game Store Demo](https://demo-video-game-store.netlify.app/) (netlify.app)
+* [Video Game Store Code](https://github.com/colbyfayock/demo-ecommerce) (github.com)
 
 ## Free Course: From Design to Development
 
