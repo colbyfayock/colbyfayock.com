@@ -37,3 +37,9 @@
   to = "/front-end-test-fest"
   status = 302
   force = true
+
+[[redirects]]
+  from = "/reactvirtualconf"
+  to = "/nextjs-wordpress-react-virtual-conf"
+  status = 302
+  force = true
