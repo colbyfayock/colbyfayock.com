@@ -3,8 +3,6 @@ template: page
 title: LBT GitHub Actions
 path: /lbt-github-actions
 ---
-
-
 ## ![Thank you!](/assets/thanks-for-tuning-in.jpg)
 
 Thanks for tuning in to my talk! ❤️
@@ -13,7 +11,7 @@ You can find the slide deck and some more resources to get started with the Jams
 
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/automating-all-the-code-and-testing-things-with-github-actions-minnesota-dev-conf-2021) (slides.com)
+* [Slides](https://slides.com/colbyfayock/automating-all-the-code-testing-things-with-github-actions-learn-build-teach) (slides.com)
 * [ESLint](https://eslint.org/) (eslint.org)
 * [Prettier](https://prettier.io/) (prettier.io)
 * [Cypress](https://www.cypress.io/) (cypress.io)
@@ -31,7 +29,6 @@ You can find the slide deck and some more resources to get started with the Jams
 * [How to Use Github Actions to Automate Tests and Slack Notifications](https://www.youtube.com/watch?v=1n-jHHNSoTw) (youtube.com)
 * [Custom GitHub Actions in Node.js - GitHub Actions JavaScript Tutorial](https://www.youtube.com/watch?v=Ef0gPGUh9oo) (youtube.com)
 * [Use Github Actions to Automatically Deploy a Static Site - Next.js & AWS S3](https://www.youtube.com/watch?v=D3h91EvRxuk) (youtube.com)
-* [From Design to Development Crash Course](fromdesignto.dev) (fromdesignto.dev)
 
 ## Free Course: From Design to Development
 
