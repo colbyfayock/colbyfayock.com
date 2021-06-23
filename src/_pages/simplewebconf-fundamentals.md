@@ -10,8 +10,6 @@ You can find the slide deck and some more resources to help you level up!
 ## Talk Resources
 
 * [Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-jsnation-2021) (slides.com)
-* [Put Down the Javascript - Learn HTML & CSS](https://www.colbyfayock.com/2019/08/put-down-the-javascript-learn-html-css) (colbyfayock.com)
-* [Full Talk](https://egghead.io/talks/egghead-put-down-the-javascript-level-up-with-the-fundamentals-of-web-development?af=atzgap) (egghead.io)
 
 ## Free Course: From Design to Development
 
