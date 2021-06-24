@@ -43,3 +43,9 @@
   to = "/nextjs-wordpress-react-virtual-conf"
   status = 302
   force = true
+  
+[[redirects]]
+  from = "/simplewebconf"
+  to = "/simplewebconf-fundamentals"
+  status = 302
+  force = true
