@@ -10,6 +10,9 @@ You can find the slide deck and some more resources to help you level up!
 ## Talk Resources
 
 * [Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-jsnation-2021) (slides.com)
+* [Isometric eCommerce CSS Grid](https://codepen.io/andybarefoot/pen/PBPrex) (@andybarefoot)
+* [CSS collector’s cabinet](https://codepen.io/lynnandtonic/pen/LYGjqOo) (@lynnandtonic)
+* [Coronavirus Invaders - CSS Pure Game (No JS!)](https://codepen.io/elad2412/pen/wvabjXy) (@eladsc)
 * [50 Projects for React & the Static Web](https://50reactprojects.com/) (50reactprojects.com)
 
 ## Free Course: From Design to Development
