@@ -55,3 +55,21 @@
   to = "https://amzn.to/2UbS5Wg"
   status = 302
   force = true
+
+[[redirects]]
+  from = "/monopod"
+  to = "https://amzn.to/2UbUyA0"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/clamps"
+  to = "https://amzn.to/2ThkQjZ"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/adapters"
+  to = "https://amzn.to/3hhXbYK"
+  status = 302
+  force = true
