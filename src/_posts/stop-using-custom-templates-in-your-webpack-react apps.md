@@ -1,7 +1,7 @@
 ---
 template: post
-title: "Stop using custom templates in your Webpack React\_apps"
-date: '2018-07-09'
+title: "Stop using custom templates in your Webpack React apps"
+date: 2018-07-09T00:00:00.674Z
 category: coding
 ---
 Google "webpack react" and you'll notice the top result guides all have one thing in common: they create custom HTML templates for their React applications.
