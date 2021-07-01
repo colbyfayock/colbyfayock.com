@@ -1,174 +1,74 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'gatsby';
-import { Helmet } from 'react-helmet';
-import { FaRss } from 'react-icons/fa';
-
-import { usePosts, useTalks, useProjects } from 'hooks';
+import useSite from 'hooks/use-site';
+import { getPaginatedPosts } from 'lib/posts';
+import { WebsiteJsonLd } from 'lib/json-ld';
 
 import Layout from 'components/Layout';
-import Masthead from 'components/Masthead';
-import ArticleList from 'components/ArticleList';
+import Header from 'components/Header';
+import Section from 'components/Section';
+import Container from 'components/Container';
+import PostCard from 'components/PostCard';
+import Pagination from 'components/Pagination';
 
+import styles from 'styles/pages/Home.module.scss';
 
-const Index = ({location, data}) => {
-
-  const [notice, updateNotice] = useState();
-
-  useEffect(() => {
-    let updatedNotice;
-
-    if ( window.location.search.includes('emailSignup=success') ) {
-      updatedNotice = 'Thanks for signing up for my newsletter! 🤗';
-    } else if (window.location.search.includes('newsletterUnsubscribe=success')) {
-      updatedNotice = 'Sorry to see you go... 😢 Successfully unsubscribed!';
-    }
-
-    if (updatedNotice) {
-      updateNotice(updatedNotice);
-      setTimeout(() => {
-        updateNotice(undefined);
-      }, 5000);
-    }
-  }, []);
-
-  const { posts, toAll: toAllPosts } = usePosts();
-  const { projects, toAll: toAllProjects } = useProjects();
-  const { talks, toAll: toAllTalks } = useTalks();
-
-  const helmet_settings = {
-    bodyAttributes: {
-      class: 'home',
-    },
-    meta: [
-      {
-        property: 'og:type',
-        content: 'profile'
-      },
-      {
-        property: 'profile:first_name',
-        content: 'Colby'
-      },
-      {
-        property: 'profile:username',
-        content: 'colbyfayock'
-      }
-    ],
-  };
+export default function Home({ posts, pagination }) {
+  const { metadata = {} } = useSite();
+  const { title, description } = metadata;
 
   return (
-    <Layout location={location}>
-      <Helmet {...helmet_settings} />
+    <Layout>
+      <WebsiteJsonLd siteTitle={title} />
+      <Header>
+        <h1
+          className={styles.title}
+          dangerouslySetInnerHTML={{
+            __html: title,
+          }}
+        />
 
-      {notice && (
-        <div className="header-notice" onClick={() => updateNotice(false)}>
-          {notice}
-        </div>
-      )}
+        <p
+          className={styles.description}
+          dangerouslySetInnerHTML={{
+            __html: description,
+          }}
+        />
+      </Header>
 
-      <Masthead />
-
-      <div className="home-newsletter">
-        <div className="container">
-          <Link to="/newsletter">
-            <span className="home-newsletter-icon">
-              📬
-            </span>
-            <div className="home-newsletter-content">
-              <h3>Weekly Newsletter</h3>
-              <p>
-                Fresh guides & tutorials weekly straight to your inbox!
-              </p>
-            </div>
-            <div className="home-newsletter-button">
-              <button>
-                Sign Up
-              </button>
-            </div>
-          </Link>
-        </div>
-      </div>
-
-      <div className="home-content container">
-
-        <div className="home-main">
-          <div className="home-content-header">
-            <Link className="home-content-header-title" to={toAllPosts}>
-              <h2>
-                <span className="header-icon">📝</span> Latest From the Blog
-              </h2>
-            </Link>
-            <div className="home-content-header-actions">
-              <a href="https://www.colbyfayock.com/rss.xml">
-                <FaRss className="icon-rss" /> RSS
-              </a>
-            </div>
-          </div>
-          <ArticleList articles={posts} count={5} toAll={toAllPosts} labelArticles="Posts" />
-        </div>
-
-        <div className="home-sidebar">
-
-          <div className="home-sidebar-section">
-            <div className="home-content-header">
-              <span className="home-content-header-title">
-                <h2>
-                  <span className="header-icon">✨</span> Featured Features
-                </h2>
-              </span>
-            </div>
-            <ArticleList articles={[
-              {
-                path: 'https://spacejelly.dev/',
-                title: 'Cosmo the Space Jellyfish Stickers',
-                category: 'Starting at $1 for a Cosmo sticker!'
-              },
-              {
-                path: 'https://cottonbureau.com/products/cosmo-the-space-jellyfish',
-                title: 'Cosmo the Space Jellyfish Tshirt',
-                category: 'Available on Cotton Bureau high quality products'
-              },
-              {
-                path: 'https://www.redbubble.com/i/t-shirt/Cosmo-the-Space-Jellyfish-by-colbyfayock/58649803.S7RYU',
-                title: 'Cosmo the Space Jellyfish on Redbubble',
-                category: 'More product options, more affordable'
-              },
-              {
-                path: '/what-i-use',
-                title: 'What I Use',
-                category: 'Audio, video, lighting, etc'
-              }
-            ]}  />
-          </div>
-
-          <div className="home-sidebar-section">
-            <div className="home-content-header">
-              <Link className="home-content-header-title" to={toAllProjects}>
-                <h2>
-                  <span className="header-icon">💼</span> Featured Projects
-                </h2>
-              </Link>
-            </div>
-            <ArticleList articles={projects} count={5} toAll={toAllProjects} labelArticles="Projects"  />
-          </div>
-
-          <div className="home-sidebar-section">
-            <div className="home-content-header">
-              <Link className="home-content-header-title" to={toAllTalks}>
-                <h2>
-                  <span className="header-icon">📣</span> Recent Talks
-                </h2>
-              </Link>
-            </div>
-            <ArticleList articles={talks} count={3} toAll={toAllTalks} labelArticles="Talks"  />
-          </div>
-
-        </div>
-
-      </div>
-
+      <Section>
+        <Container>
+          <h2 className="sr-only">Posts</h2>
+          <ul className={styles.posts}>
+            {posts.map((post) => {
+              return (
+                <li key={post.slug}>
+                  <PostCard post={post} />
+                </li>
+              );
+            })}
+          </ul>
+          {pagination && (
+            <Pagination
+              addCanonical={false}
+              currentPage={pagination?.currentPage}
+              pagesCount={pagination?.pagesCount}
+              basePath={pagination?.basePath}
+            />
+          )}
+        </Container>
+      </Section>
     </Layout>
   );
-
 }
 
-export default Index;
+export async function getStaticProps() {
+  const { posts, pagination } = await getPaginatedPosts();
+  return {
+    props: {
+      posts,
+      pagination: {
+        ...pagination,
+        basePath: '/posts',
+      },
+    },
+  };
+}
