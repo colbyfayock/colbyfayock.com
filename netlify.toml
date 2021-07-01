@@ -32,6 +32,18 @@
   status = 302
   force = true
   
+  
+###############
+# Conferences #
+###############
+
+
+[[redirects]]
+  from = "/simplewebconf"
+  to = "/simplewebconf-fundamentals"
+  status = 302
+  force = true
+
 [[redirects]]
   from = "/frontendtestfest"
   to = "/front-end-test-fest"
@@ -45,10 +57,14 @@
   force = true
   
 [[redirects]]
-  from = "/simplewebconf"
-  to = "/simplewebconf-fundamentals"
+  from = "/decoupleddays"
+  to = "/decoupled-days-scaling-nextjs-with-wordpress"
   status = 302
   force = true
+
+################
+# Amazon Links #
+################
 
 [[redirects]]
   from = "/keylights"
