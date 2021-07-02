@@ -28,8 +28,42 @@
   force = true
 
 [[redirects]]
+  from = "/what-do-i-use"
+  to = "/what-i-use"
+  status = 302
+  force = true
+
+[[redirects]]
   from = "/wpnextjs"
   to = "https://github.com/colbyfayock/next-wordpress-starter"
+  status = 302
+  force = true
+
+################
+# Amazon Links #
+################
+
+[[redirects]]
+  from = "/adapters"
+  to = "https://amzn.to/3hhXbYK"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/clamps"
+  to = "https://amzn.to/2ThkQjZ"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/keylights"
+  to = "https://amzn.to/2UbS5Wg"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/monopod"
+  to = "https://amzn.to/2UbUyA0"
   status = 302
   force = true
 
@@ -67,30 +101,168 @@
   status = 302
   force = true
 
-################
-# Amazon Links #
-################
+###############
+# Event Notes #
+###############
 
 [[redirects]]
-  from = "/adapters"
-  to = "https://amzn.to/3hhXbYK"
-  status = 302
+  from = "/3-hours-of-jamstack-2020"
+  to = "/event-notes/3-hours-of-jamstack-2020"
+  status = 301
   force = true
 
 [[redirects]]
-  from = "/clamps"
-  to = "https://amzn.to/2ThkQjZ"
-  status = 302
+  from = "/accento-digital-2020"
+  to = "/event-notes/accento-digital-2020"
+  status = 301
   force = true
 
 [[redirects]]
-  from = "/keylights"
-  to = "https://amzn.to/2UbS5Wg"
-  status = 302
+  from = "/applitools-storybook-webinar"
+  to = "/event-notes/applitools-storybook-webinar"
+  status = 301
   force = true
 
 [[redirects]]
-  from = "/monopod"
-  to = "https://amzn.to/2UbUyA0"
-  status = 302
+  from = "/byteconf-2020"
+  to = "/event-notes/byteconf-2020"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cloudflare-tv-ecommerce"
+  to = "/event-notes/cloudflare-tv-ecommerce"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/conf42-2020"
+  to = "/event-notes/conf42-2020"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/developer-week-austin-2020"
+  to = "/event-notes/developer-week-austin-2020"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/egghead-talks-ecommerce"
+  to = "/event-notes/egghead-talks-ecommerce"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/egghead-talks-fundamentals-of-web-development"
+  to = "/event-notes/egghead-talks-fundamentals-of-web-development"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/forwardjs-2020"
+  to = "/event-notes/forwardjs-2020"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/front-end-test-fest"
+  to = "/event-notes/front-end-test-fest"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/frontconf-2020"
+  to = "/event-notes/frontconf-2020"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/gatsby-days-reconfigured"
+  to = "/event-notes/gatsby-days-reconfigured"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/hashnode-bootcamp-personal-brand"
+  to = "/event-notes/hashnode-bootcamp-personal-brand"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/jamstack-conf-2020"
+  to = "/event-notes/jamstack-conf-2020"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/jnation-2020"
+  to = "/event-notes/jnation-2020"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/jsnation-fundamentals"
+  to = "/event-notes/jsnation-fundamentals"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mdc-github-actions"
+  to = "/event-notes/mdc-github-actions"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/middlesbrough-fe"
+  to = "/event-notes/middlesbrough-fe"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/react-festival-visual-testing"
+  to = "/event-notes/react-festival-visual-testing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/react-global-2020"
+  to = "/event-notes/react-global-2020"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/react-summit-wordpress"
+  to = "/event-notes/react-summit-wordpress"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/react-virtual-conf-2020"
+  to = "/event-notes/react-virtual-conf-2020"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/snipcart-next-js"
+  to = "/event-notes/snipcart-next-js"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/the-jam-2021"
+  to = "/event-notes/the-jam-2021"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/thunderplains-2020"
+  to = "/event-notes/thunderplains-2020"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wordcamp-philly-2020"
+  to = "/event-notes/wordcamp-philly-2020"
+  status = 301
   force = true
