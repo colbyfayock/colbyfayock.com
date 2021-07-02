@@ -302,3 +302,65 @@
   to = "/event-notes/wordcamp-philly-2020"
   status = 301
   force = true
+
+#########
+# TALKS #
+#########
+
+[[redirects]]
+  from = "/bringing-remote-sensing-and-disaster-relief-to-the-jamstack"
+  to = "/talks/bringing-remote-sensing-and-disaster-relief-to-the-jamstack"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/building-maps-with-impact-on-react-and-the-jamstack"
+  to = "/talks/building-maps-with-impact-on-react-and-the-jamstack"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/building-maps-with-impact-on-react-and-the-jamstack-frontconf"
+  to = "/talks/bringing-remote-sensing-and-disaster-relief-to-the-jamstack"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mapping-gatsby-from-space"
+  to = "/talks/mapping-gatsby-from-space"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/supercharge-your-mapping-apps-with-gatsby-gatsby-days-reconfigured"
+  to = "/talks/supercharge-your-mapping-apps-with-gatsby"
+  status = 301
+  force = true
+
+############
+# PODCASTS #
+############
+
+[[redirects]]
+  from = "/codingcatdev-jamstack-handbook-with-colby-fayock"
+  to = "/podcasts/codingcatdev-jamstack-handbook-with-colby-fayock"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/jamstack-radio-jamstack-handbook-with-colby-fayock"
+  to = "/podcasts/jamstack-radio-jamstack-handbook-with-colby-fayock"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/react-round-up-put-down-the-javascript-learn-the-web-fundamentals-with-colby-fayock"
+  to = "/podcasts/react-round-up-put-down-the-javascript-learn-the-web-fundamentals-with-colby-fayock"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/thats-my-jamstack-on-mapping-like…-the-world-gatsby-science-and-more"
+  to = "/podcasts/thats-my-jamstack-on-mapping-like…-the-world-gatsby-science-and-more"
+  status = 301
+  force = true
