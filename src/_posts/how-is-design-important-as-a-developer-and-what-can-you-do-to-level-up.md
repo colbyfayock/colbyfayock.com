@@ -102,7 +102,8 @@ Since you're now inevitably inspired to spend some time and learn about design, 
 
 ### Misc
 
-* [Design Tips from @steveschoger](https://twitter.com/i/events/994601867987619840)
+* [Daily UI Challenge](https://www.dailyui.co/)
+* [](https://www.dailyui.co/)[Design Tips from @steveschoger](https://twitter.com/i/events/994601867987619840)
 * [Complete Web & Mobile Design: Zero to Mastery](https://academy.zerotomastery.io/courses/1073485/lectures/24094923)
 
 ## What's your take on design as a developer?

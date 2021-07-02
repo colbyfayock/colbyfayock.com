@@ -1,27 +1,23 @@
 ---
 template: page
-title: Front-End Test Fest
-path: /front-end-test-fest
+title: SimpleWebConf Fundamentals
+path: /simplewebconf-fundamentals
 ---
-## ![Thank you!](/assets/thanks-for-tuning-in.jpg)
+<figure><img src="/assets/thanks-for-tuning-in.jpg" alt="" /><figcaption>Thanks for tuning in to my talk! ❤️</figcaption></figure>
 
-Thanks for tuning in to my talk! ❤️
-
-You can find the slide deck and some more resources to get started with the Jamstack!
+You can find the slide deck and some more resources to help you level up!
 
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/testing-beyond-the-dom-front-end-test-fest) (slides.com
-* [Applitools](https://info.applitools.com/udjf2) (applitools.com)
-* [Applitools Tutorials](https://info.applitools.com/udjf3) (applitools.com)
-* [Eyes Cypress SDK](https://www.npmjs.com/package/@applitools/eyes-cypress) (npmjs.com)
-* [From Design to Development Crash Course](fromdesignto.dev) (fromdesignto.dev)
-* [Video Game Store Demo](https://demo-video-game-store.netlify.app/) (netlify.app)
-* [Video Game Store Code](https://github.com/colbyfayock/demo-ecommerce) (github.com)
+* [Slides](https://slides.com/colbyfayock/put-down-the-javascript-level-up-with-the-fundamentals-of-web-development-simplewebconf-2021) (slides.com)
+* [Isometric eCommerce CSS Grid](https://codepen.io/andybarefoot/pen/PBPrex) (@andybarefoot)
+* [CSS collector’s cabinet](https://codepen.io/lynnandtonic/pen/LYGjqOo) (@lynnandtonic)
+* [Coronavirus Invaders - CSS Pure Game (No JS!)](https://codepen.io/elad2412/pen/wvabjXy) (@eladsc)
+* [50 Projects for React & the Static Web](https://50reactprojects.com/) (50reactprojects.com)
 
 ## Free Course: From Design to Development
 
-![fromdesignto.dev](blob:https://www.colbyfayock.com/a4e1ca07-c561-452e-bb48-00cfe477e0af)
+![fromdesignto.dev](/assets/from-design-to-development.jpg)
 
 This course is PACKED with a ton of awesome web tools including:
 

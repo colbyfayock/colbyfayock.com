@@ -1,27 +1,25 @@
 ---
 template: page
-title: Front-End Test Fest
-path: /front-end-test-fest
+title: Next.js WordPress React Virtual Conf
+path: /nextjs-wordpress-react-virtual-conf
 ---
-## ![Thank you!](/assets/thanks-for-tuning-in.jpg)
-
-Thanks for tuning in to my talk! ❤️
+<figure><img src="/assets/thanks-for-tuning-in.jpg" alt="" /><figcaption>Thanks for tuning in to my talk! ❤️</figcaption></figure>
 
 You can find the slide deck and some more resources to get started with the Jamstack!
 
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/testing-beyond-the-dom-front-end-test-fest) (slides.com
-* [Applitools](https://info.applitools.com/udjf2) (applitools.com)
-* [Applitools Tutorials](https://info.applitools.com/udjf3) (applitools.com)
-* [Eyes Cypress SDK](https://www.npmjs.com/package/@applitools/eyes-cypress) (npmjs.com)
-* [From Design to Development Crash Course](fromdesignto.dev) (fromdesignto.dev)
-* [Video Game Store Demo](https://demo-video-game-store.netlify.app/) (netlify.app)
-* [Video Game Store Code](https://github.com/colbyfayock/demo-ecommerce) (github.com)
+* [Slides](https://slides.com/colbyfayock/scaling-wordpress-with-next-js-react-virtual-conf) (slides.com)
+* [CMS Usage Distribution in the Top 1 Million Sites](https://trends.builtwith.com/cms) (trends.builtwith.com)
+* [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/?wa-lens-whitepapers.sort-by=item.additionalFields.sortDate&wa-lens-whitepapers.sort-order=desc) (aws.amazon.com)
+* [WordPress REST API](https://developer.wordpress.org/rest-api/) (developer.wordpress.com)
+* [WPGraphQL](https://www.wpgraphql.com/) (wpgraphql.com)
+* [Next.js WordPress Starter](https://github.com/colbyfayock/next-wordpress-starter) (github.com)
+* [Jamstack Handbook](https://jamstackhandbook.com/) (jamstackhandbook.com)
 
 ## Free Course: From Design to Development
 
-![fromdesignto.dev](blob:https://www.colbyfayock.com/a4e1ca07-c561-452e-bb48-00cfe477e0af)
+![fromdesignto.dev](/assets/from-design-to-development.jpg)
 
 This course is PACKED with a ton of awesome web tools including:
 
@@ -100,7 +98,5 @@ This free 7-week newsletter helps you learn the human-oriented skills that you d
 
 ## More Jamstack
 
-* 🗒️ [New to Jamstack? Everything You Need to Know to Get Started](https://snipcart.com/blog/jamstack) (snipcart.com)
 * 🗒️ [What is the JAMstack and how do I get started?](https://www.colbyfayock.com/2020/02/what-is-the-jamstack-and-how-do-i-get-started/) (colbyfayock.com)
 * 📹 [Jamstack Tutorials on YouTube](https://www.youtube.com/playlist?list=PLFsfg2xP7cbJhIyKBnhTSflKVrIx-YGpX)
-* 📹 [How to host and deploy a static website or JAMstack app on AWS S3 & CloudFront](https://www.youtube.com/watch?v=1lDGDzmbQWg) (youtube.com)

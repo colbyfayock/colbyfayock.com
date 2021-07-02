@@ -1,27 +1,40 @@
 ---
 template: page
-title: Front-End Test Fest
-path: /front-end-test-fest
+title: Forkwell Ecommerce
+path: /forkwell-ecommerce
 ---
-## ![Thank you!](/assets/thanks-for-tuning-in.jpg)
-
-Thanks for tuning in to my talk! ❤️
+<figure><img src="/assets/thanks-for-tuning-in.jpg" alt="" /><figcaption>Thanks for tuning in to my talk! ❤️</figcaption></figure>
 
 You can find the slide deck and some more resources to get started with the Jamstack!
 
 ## Talk Resources
 
-* [Slides](https://slides.com/colbyfayock/testing-beyond-the-dom-front-end-test-fest) (slides.com
-* [Applitools](https://info.applitools.com/udjf2) (applitools.com)
-* [Applitools Tutorials](https://info.applitools.com/udjf3) (applitools.com)
-* [Eyes Cypress SDK](https://www.npmjs.com/package/@applitools/eyes-cypress) (npmjs.com)
-* [From Design to Development Crash Course](fromdesignto.dev) (fromdesignto.dev)
-* [Video Game Store Demo](https://demo-video-game-store.netlify.app/) (netlify.app)
-* [Video Game Store Code](https://github.com/colbyfayock/demo-ecommerce) (github.com)
+* [Slides](https://slides.com/colbyfayock/getting-personal-with-ecommerce-react-the-static-web-forkwell) (slides.com)
+* [Retail Ecommerce Sales Worldwide, 2019-2024](https://www.emarketer.com/chart/242908/retail-ecommerce-sales-worldwide-2019-2024-trillions-change-of-total-retail-sales) (emarketer.com)
+* [Little Caesars Pizza Delivers with Gatsby](https://www.gatsbyjs.com/blog/2020-07-15-little-caesars-delivers-with-gatsby/) (gatsbyjs.com)
+* [Shopping for speed on eBay.com](https://web.dev/shopping-for-speed-on-ebay/) (web.dev)
+* [Snipcart](https://snipcart.com/) (snipcart.com)
+* [Next.js](https://nextjs.org/) (nextjs.org)
+* [Space Jelly Store](https://spacejelly.dev/store/) (spacejelly.dev)
+* [use-shopping-cart](https://github.com/dayhaysoos/use-shopping-cart) (github.com)
+* [Shopify Headless](https://www.shopify.com/plus/solutions/headless-commerce) (shopify.com)
+* [Course: Create an eCommerce Store with Next.js and Stripe Checkout](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap&utm_source=colbyfayock.com&utm_medium=website&utm_campaign=thejamdev2021_talk_page) (egghead.io)
+
+## Course: Create an eCommerce Store with Next.js and Stripe Checkout
+
+[![Ecommerce Course on egghead.io](/assets/card_2x.jpg)](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap&utm_source=colbyfayock.com&utm_medium=website&utm_campaign=thejamdev2021_talk_page)
+
+Ecommerce is a powerful way to sell products online whether it's tshirts or an ebook.
+
+In this egghead.io course, I walk through building an online store from scratch using Next.js and Stripe Checkout.
+
+We'll walk through React core fundamentals like the useState React hook and Context API to build a global cart that sends customers to check out.
+
+[Take the course at egghead.io](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap&utm_source=colbyfayock.com&utm_medium=website&utm_campaign=thejamdev2021_talk_page)
 
 ## Free Course: From Design to Development
 
-![fromdesignto.dev](blob:https://www.colbyfayock.com/a4e1ca07-c561-452e-bb48-00cfe477e0af)
+![fromdesignto.dev](/assets/from-design-to-development.jpg)
 
 This course is PACKED with a ton of awesome web tools including:
 
@@ -38,18 +51,6 @@ This course is PACKED with a ton of awesome web tools including:
 [Take it FREE at yotube.com](https://www.youtube.com/watch?v=QjZIeA952jE)
 
 Or [learn more at fromdesignto.dev](https://fromdesignto.dev/)
-
-## Course: Create an eCommerce Store with Next.js and Stripe Checkout
-
-[![Ecommerce Course on egghead.io](/assets/card_2x.jpg)](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap&utm_source=colbyfayock.com&utm_medium=website&utm_campaign=thejamdev2021_talk_page)
-
-Ecommerce is a powerful way to sell products online whether it's tshirts or an ebook.
-
-In this egghead.io course, I walk through building an online store from scratch using Next.js and Stripe Checkout.
-
-We'll walk through React core fundamentals like the useState React hook and Context API to build a global cart that sends customers to check out.
-
-[Take the course at egghead.io](https://egghead.io/projects/create-an-ecommerce-store-with-next-js-and-stripe-checkout?af=atzgap&utm_source=colbyfayock.com&utm_medium=website&utm_campaign=thejamdev2021_talk_page)
 
 ## Learn by Doing with 50 Project Ideas
 
