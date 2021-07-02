@@ -2,7 +2,7 @@ import { getApolloClient } from 'lib/apollo-client';
 
 import { QUERY_ALL_PODCASTS, QUERY_PODCAST_BY_SLUG } from 'data/podcasts';
 
-const PREFIX = '[Event Notes]';
+const PREFIX = '[Podcasts]';
 
 /**
  * getPodcastBySlug

@@ -18,6 +18,7 @@ const DEFAULT_POST_OPTIONS = {};
 
 export default function TemplateArchive({
   title = 'Archive',
+  label = 'Posts',
   Title,
   posts,
   postOptions = DEFAULT_POST_OPTIONS,
@@ -57,14 +58,14 @@ export default function TemplateArchive({
 
       <Section>
         <Container>
-          <SectionTitle>Posts</SectionTitle>
+          <SectionTitle>{label}</SectionTitle>
           {Array.isArray(posts) && (
             <>
               <ul className={styles.posts}>
                 {posts.map((post) => {
                   return (
                     <li key={post.slug}>
-                      <PostCard post={post} options={postOptions} />
+                      <PostCard post={post} parentSlug={slug} options={postOptions} />
                     </li>
                   );
                 })}

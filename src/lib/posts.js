@@ -16,8 +16,8 @@ import {
  * postPathBySlug
  */
 
-export function postPathBySlug(slug) {
-  return `/posts/${slug}`;
+export function postPathBySlug(slug, { parent = 'posts' } = {}) {
+  return `/${parent}/${slug}`;
 }
 
 /**

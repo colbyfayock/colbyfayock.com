@@ -8,6 +8,12 @@ export const QUERY_ALL_TALKS = gql`
       edges {
         node {
           content
+          id
+          parent {
+            node {
+              id
+            }
+          }
           slug
           title
           uri
@@ -32,6 +38,7 @@ export const QUERY_TALK_BY_URI = gql`
         }
       }
       content
+      id
       parent {
         node {
           ... on Talk {

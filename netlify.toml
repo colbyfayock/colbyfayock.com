@@ -16,6 +16,36 @@
   force = true
 
 [[redirects]]
+  from = "/all-event-notes"
+  to = "/event-notes"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/all-podcasts"
+  to = "/podcasts"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/all-posts"
+  to = "/posts"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/all-projects"
+  to = "/projects"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/all-talks"
+  to = "/talks"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/cosmoshirt"
   to = "https://cottonbureau.com/products/cosmo-the-space-jellyfish#/5503032/tee-men-standard-tee-indigo-tri-blend-s"
   status = 302
@@ -298,7 +328,7 @@
   force = true
 
 [[redirects]]
-  from = "/snipcart-next-js"
+  from = "/snipcart-nextjs"
   to = "/event-notes/snipcart-next-js"
   status = 301
   force = true
@@ -326,8 +356,8 @@
 #########
 
 [[redirects]]
-  from = "/bringing-remote-sensing-and-disaster-relief-to-the-jamstack"
-  to = "/talks/bringing-remote-sensing-and-disaster-relief-to-the-jamstack"
+  from = "/bringing-remote-sensing-and-disaster-relief-to-the-jamstack-jamstack-conf-2020"
+  to = "/talks/bringing-remote-sensing-and-disaster-relief-to-the-jamstack/jamstack-conf-2020/"
   status = 301
   force = true
 
@@ -339,7 +369,7 @@
 
 [[redirects]]
   from = "/building-maps-with-impact-on-react-and-the-jamstack-frontconf"
-  to = "/talks/bringing-remote-sensing-and-disaster-relief-to-the-jamstack"
+  to = "/talks/building-maps-with-impact-on-react-and-the-jamstack/frontconf-2020/"
   status = 301
   force = true
 
@@ -378,7 +408,402 @@
   force = true
 
 [[redirects]]
-  from = "/thats-my-jamstack-on-mapping-like…-the-world-gatsby-science-and-more"
+  from = "/thats-my-jamstack-on-mapping-like-the-world-gatsby-science-and-more"
   to = "/podcasts/thats-my-jamstack-on-mapping-like…-the-world-gatsby-science-and-more"
+  status = 301
+  force = true
+
+
+#########
+# POSTS #
+#########
+
+[[redirects]]
+  from = "/2009/07/paper-heart"
+  to = "/posts/paper-heart"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2009/10/john-long"
+  to = "/posts/john-long"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2009/10/tau-epsilon-phi-web-design"
+  to = "/posts/tau-epsilon-phi-web-design"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2010/01/filmore-myspace-design"
+  to = "/posts/filmore-myspace-design"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2009/11/wowee-zowee"
+  to = "/posts/wowee-zowee"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2009/11/headphones-and-sunglasses"
+  to = "/posts/headphones-and-sunglasses"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2010/03/filmore-album-art"
+  to = "/posts/filmore-album-art"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2010/04/design-official"
+  to = "/posts/design-official"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2010/04/anthony-santiago"
+  to = "/posts/anthony-santiago"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2010/05/bill-taylor"
+  to = "/posts/bill-taylor"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2010/09/hair-by-diane"
+  to = "/posts/hair-by-diane"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2011/02/st-patricks-and-state-pattys-day"
+  to = "/posts/st-patricks-and-state-pattys-day"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2011/03/hair-by-diane-website"
+  to = "/posts/hair-by-diane-website"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2010/10/mannings"
+  to = "/posts/mannings"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2011/04/pong-fu-flyer-design"
+  to = "/posts/pong-fu-flyer-design"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2012/04/asynchronous-javascript-loading"
+  to = "/posts/asynchronous-javascript-loading"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2011/04/resume"
+  to = "/posts/resume"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2012/05/iphone-lock-screen"
+  to = "/posts/iphone-lock-screen"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2013/05/hippify-javascript-plugin"
+  to = "/posts/hippify-javascript-plugin"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2013/05/new-site-design-how-about-an-updated-resume"
+  to = "/posts/new-site-design-how-about-an-updated-resume"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2013/03/minimalios-winterboard-theme"
+  to = "/posts/minimalios-winterboard-theme"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2013/06/frosty-deals-daily-deal-hub"
+  to = "/posts/frosty-deals-daily-deal-hub"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2014/07/minimalios7"
+  to = "/posts/minimalios7"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2014/12/dpkg-scanpackages-stripping-name-field"
+  to = "/posts/dpkg-scanpackages-stripping-name-field"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2013/09/sync-your-sublimetext2-settings-with-dropbox"
+  to = "/posts/sync-your-sublimetext2-settings-with-dropbox"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2014/11/minimalios8"
+  to = "/posts/minimalios8"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2015/03/batch-png-optimization"
+  to = "/posts/batch-png-optimization"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2016/03/custom-blacklist-contact-form-7"
+  to = "/posts/custom-blacklist-contact-form-7"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/08/50-projects-for-react-the-static-web"
+  to = "/posts/50-projects-for-react-the-static-web"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/03/anyone-can-map-inspiration-and-an-introduction-to-the-world-of-mapping"
+  to = "/posts/anyone-can-map-inspiration-and-an-introduction-to-the-world-of-mapping"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/09/building-maps-with-react-leaflet-course-on-eggheadio"
+  to = "/posts/building-maps-with-react-leaflet-course-on-eggheadio"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2019/12/create-your-own-santa-tracker-with-gatsby-and-react-leaflet"
+  to = "/posts/create-your-own-santa-tracker-with-gatsby-and-react-leaflet"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2019/04/destructuring-the-fundamentals-of-react-hooks"
+  to = "/posts/destructuring-the-fundamentals-of-react-hooks"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2019/11/dont-just-lint-your-code-fix-it-with-prettier"
+  to = "/posts/dont-just-lint-your-code-fix-it-with-prettier"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/12/2020-content-roundup-year-in-review"
+  to = "/posts/2020-content-roundup-year-in-review"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2021/01/colbyashi-maru"
+  to = "/posts/colbyashi-maru"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2018/06/how-do-you-find-all-of-those-blog-posts"
+  to = "/posts/how-do-you-find-all-of-those-blog-posts"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/05/how-is-design-important-as-a-developer-and-what-can-you-do-to-level-up"
+  to = "/posts/how-is-design-important-as-a-developer-and-what-can-you-do-to-level-up"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2018/07/easily-maintain-html-partials-in-webpack-based-javascript-applications"
+  to = "/posts/easily-maintain-html-partials-in-webpack-based-javascript-applications"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/05/how-myspace-taught-me-how-to-code-and-where-you-should-look-to-develop-your-passion"
+  to = "/posts/how-myspace-taught-me-how-to-code-and-where-you-should-look-to-develop-your-passion"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/02/how-to-become-a-full-stack-web-developer-in-2020"
+  to = "/posts/how-to-become-a-full-stack-web-developer-in-2020"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/07/how-to-build-tech-communities-in-a-world-of-pandemic"
+  to = "/posts/how-to-build-tech-communities-in-a-world-of-pandemic"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/03/how-to-create-a-coronavirus-covid-19-dashboard-map-app-with-gatsby-and-leaflet"
+  to = "/posts/how-to-create-a-coronavirus-covid-19-dashboard-map-app-with-gatsby-and-leaflet"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/04/how-to-set-up-a-custom-mapbox-basemap-style-with-react-leaflet-and-leaflet-gatsby-starter"
+  to = "/posts/how-to-set-up-a-custom-mapbox-basemap-style-with-react-leaflet-and-leaflet-gatsby-starter"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/03/how-to-create-a-summer-road-trip-mapping-app-with-gatsby-and-leaflet"
+  to = "/posts/how-to-create-a-summer-road-trip-mapping-app-with-gatsby-and-leaflet"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2021/02/learn-nextjs-in-10-tweets"
+  to = "/posts/learn-nextjs-in-10-tweets"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/06/how-to-grow-your-audience-and-share-your-content-with-the-world"
+  to = "/posts/how-to-grow-your-audience-and-share-your-content-with-the-world"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/11/lessons-learned-building-geeky-ecommerce-product-experiences-at-thinkgeek"
+  to = "/posts/lessons-learned-building-geeky-ecommerce-product-experiences-at-thinkgeek"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2019/08/put-down-the-javascript-learn-html-css"
+  to = "/posts/put-down-the-javascript-learn-html-css"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/10/lessons-learned-building-my-first-ebook-50-projects-for-react-the-static-web"
+  to = "/posts/lessons-learned-building-my-first-ebook-50-projects-for-react-the-static-web"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2019/11/how-to-use-google-tag-manager-to-maintain-google-analytics-and-other-marketing-tags"
+  to = "/posts/how-to-use-google-tag-manager-to-maintain-google-analytics-and-other-marketing-tags"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/04/overcoming-your-fear-of-writing-and-how-you-can-find-motivation"
+  to = "/posts/overcoming-your-fear-of-writing-and-how-you-can-find-motivation"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2018/08/reliable-and-maintainable-google-analytics-in-webpack"
+  to = "/posts/reliable-and-maintainable-google-analytics-in-webpack"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/05/how-to-write-more-effectively-and-develop-your-unique-style"
+  to = "/posts/how-to-write-more-effectively-and-develop-your-unique-style"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2019/09/making-sense-of-google-analytics-and-the-traffic-to-your-website"
+  to = "/posts/making-sense-of-google-analytics-and-the-traffic-to-your-website"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/04/set-future-you-up-for-success-with-good-coding-habits"
+  to = "/posts/set-future-you-up-for-success-with-good-coding-habits"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/07/top-5-things-to-learn-first-with-aws-and-how-to-get-started-with-amazon-web-services"
+  to = "/posts/top-5-things-to-learn-first-with-aws-and-how-to-get-started-with-amazon-web-services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2018/07/stop-using-custom-templates-in-your-webpack-react-apps"
+  to = "/posts/stop-using-custom-templates-in-your-webpack-react-apps"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/05/what-is-a-senior-developer-and-how-can-i-become-one"
+  to = "/posts/what-is-a-senior-developer-and-how-can-i-become-one"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2019/09/what-is-gatsby-and-why-its-time-to-get-on-the-hype-train"
+  to = "/posts/what-is-gatsby-and-why-its-time-to-get-on-the-hype-train"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2019/10/what-is-linting-and-how-can-it-save-you-time"
+  to = "/posts/what-is-linting-and-how-can-it-save-you-time"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/02/what-is-the-jamstack-and-how-do-i-get-started"
+  to = "/posts/what-is-the-jamstack-and-how-do-i-get-started"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/07/youre-allowed-to-overengineer-your-blog"
+  to = "/posts/youre-allowed-to-overengineer-your-blog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2019/07/you-dont-need-css-in-js-why-i-use-stylesheets"
+  to = "/posts/you-dont-need-css-in-js-why-i-use-stylesheets"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/2020/06/whats-the-difference-between-a-front-end-developer-and-back-end-developer"
+  to = "/posts/whats-the-difference-between-a-front-end-developer-and-back-end-developer"
   status = 301
   force = true
