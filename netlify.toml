@@ -130,6 +130,12 @@
   force = true
 
 [[redirects]]
+  from = "/click-deploy"
+  to = "/event-notes/click-deploy"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/cloudflare-tv-ecommerce"
   to = "/event-notes/cloudflare-tv-ecommerce"
   status = 301
@@ -138,6 +144,12 @@
 [[redirects]]
   from = "/conf42-2020"
   to = "/event-notes/conf42-2020"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/decoupled-days-scaling-next-js-with-wordpress"
+  to = "/event-notes/decoupled-days-scaling-next-js-with-wordpress"
   status = 301
   force = true
 
@@ -156,6 +168,12 @@
 [[redirects]]
   from = "/egghead-talks-fundamentals-of-web-development"
   to = "/event-notes/egghead-talks-fundamentals-of-web-development"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/forkwell-ecommerce"
+  to = "/event-notes/forkwell-ecommerce"
   status = 301
   force = true
 
@@ -208,6 +226,12 @@
   force = true
 
 [[redirects]]
+  from = "/lbt-github-actions"
+  to = "/event-notes/lbt-github-actions"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/mdc-github-actions"
   to = "/event-notes/mdc-github-actions"
   status = 301
@@ -216,6 +240,12 @@
 [[redirects]]
   from = "/middlesbrough-fe"
   to = "/event-notes/middlesbrough-fe"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/next-js-wordpress-react-virtual-conf"
+  to = "/event-notes/next-js-wordpress-react-virtual-conf"
   status = 301
   force = true
 
@@ -240,6 +270,12 @@
 [[redirects]]
   from = "/react-virtual-conf-2020"
   to = "/event-notes/react-virtual-conf-2020"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/simplewebconf-fundamentals"
+  to = "/event-notes/simplewebconf-fundamentals"
   status = 301
   force = true
 
