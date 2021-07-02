@@ -62,7 +62,9 @@ export async function getAllPodcasts() {
  */
 
 export function mapPodcastData(podcast = {}) {
-  const data = { ...podcast };
-
+  const data = {
+    ...podcast,
+    ...podcast.podcast,
+  };
   return data;
 }

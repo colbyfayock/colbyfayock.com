@@ -9,7 +9,7 @@ import FeaturedImage from 'components/FeaturedImage';
 import styles from 'styles/pages/Post.module.scss';
 
 export default function Post({ podcast }) {
-  const { featuredImage, content, title } = podcast;
+  const { featuredImage, content, title, datePublished } = podcast;
 
   return (
     <Layout>
@@ -27,6 +27,7 @@ export default function Post({ podcast }) {
             __html: title,
           }}
         />
+        <p>{datePublished}</p>
       </Header>
 
       <Content>
