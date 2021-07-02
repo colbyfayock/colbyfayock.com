@@ -133,7 +133,10 @@ export async function getTopLevelPages() {
  */
 
 export function mapPageData(page = {}) {
-  const data = { ...page };
+  const data = {
+    ...page,
+    ...page.page,
+  };
 
   if (data.featuredImage) {
     data.featuredImage = data.featuredImage.node;

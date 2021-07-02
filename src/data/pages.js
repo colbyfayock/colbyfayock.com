@@ -31,6 +31,9 @@ export const QUERY_ALL_PAGES = gql`
           }
           id
           menuOrder
+          page {
+            excludeFromPathGeneration
+          }
           parent {
             node {
               id

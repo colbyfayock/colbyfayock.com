@@ -144,7 +144,9 @@ export async function getStaticPaths() {
   // the top level parent page, where the slugChild will be an array of the
   // remaining segments to make up the path or URI
 
-  const paths = pages.map(({ uri }) => {
+  const pagesToBuild = pages.filter(({ excludeFromPathGeneration }) => excludeFromPathGeneration === 'no');
+
+  const paths = pagesToBuild.map(({ uri }) => {
     const segments = uri.split('/').filter((seg) => seg !== '');
 
     return {
