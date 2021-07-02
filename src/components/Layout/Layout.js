@@ -9,7 +9,7 @@ import Nav from 'components/Nav';
 import Main from 'components/Main';
 import Footer from 'components/Footer';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, exclude = [] }) => {
   const router = useRouter();
   const { asPath } = router;
 
@@ -64,7 +64,7 @@ const Layout = ({ children }) => {
     <div className={styles.layoutContainer}>
       <Helmet {...helmetSettings} />
 
-      <Nav />
+      {!exclude.includes('nav') && <Nav />}
 
       <Main>{children}</Main>
 

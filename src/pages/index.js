@@ -3,36 +3,22 @@ import { getPaginatedPosts } from 'lib/posts';
 import { WebsiteJsonLd } from 'lib/json-ld';
 
 import Layout from 'components/Layout';
-import Header from 'components/Header';
 import Section from 'components/Section';
 import Container from 'components/Container';
 import PostCard from 'components/PostCard';
-import Pagination from 'components/Pagination';
+import Masthead from 'components/Masthead';
 
 import styles from 'styles/pages/Home.module.scss';
 
-export default function Home({ posts, pagination }) {
+export default function Home({ posts }) {
   const { metadata = {} } = useSite();
-  const { title, description } = metadata;
+  const { title } = metadata;
 
   return (
-    <Layout>
+    <Layout exclude={['nav']}>
       <WebsiteJsonLd siteTitle={title} />
-      <Header>
-        <h1
-          className={styles.title}
-          dangerouslySetInnerHTML={{
-            __html: title,
-          }}
-        />
 
-        <p
-          className={styles.description}
-          dangerouslySetInnerHTML={{
-            __html: description,
-          }}
-        />
-      </Header>
+      <Masthead />
 
       <Section>
         <Container>
@@ -46,14 +32,6 @@ export default function Home({ posts, pagination }) {
               );
             })}
           </ul>
-          {pagination && (
-            <Pagination
-              addCanonical={false}
-              currentPage={pagination?.currentPage}
-              pagesCount={pagination?.pagesCount}
-              basePath={pagination?.basePath}
-            />
-          )}
         </Container>
       </Section>
     </Layout>
@@ -61,14 +39,10 @@ export default function Home({ posts, pagination }) {
 }
 
 export async function getStaticProps() {
-  const { posts, pagination } = await getPaginatedPosts();
+  const { posts } = await getPaginatedPosts();
   return {
     props: {
       posts,
-      pagination: {
-        ...pagination,
-        basePath: '/posts',
-      },
     },
   };
 }
