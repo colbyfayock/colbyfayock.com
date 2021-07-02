@@ -10,6 +10,12 @@
 ########
 
 [[redirects]]
+  from = "/about-me"
+  to = "/about"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/cosmoshirt"
   to = "https://cottonbureau.com/products/cosmo-the-space-jellyfish#/5503032/tee-men-standard-tee-indigo-tri-blend-s"
   status = 302
@@ -24,6 +30,12 @@
 [[redirects]]
   from = "/egghead-actions"
   to = "https://egghead.io/courses/create-a-new-github-action-to-automate-code-tasks-with-javascript-f1e9?af=atzgap"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/uses"
+  to = "/what-i-use"
   status = 302
   force = true
 
