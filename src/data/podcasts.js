@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 export const QUERY_ALL_PODCASTS = gql`
   query AllPodcasts {
-    podcasts {
+    podcasts(first: 100) {
       edges {
         node {
           content

@@ -4,7 +4,7 @@ export const TALKS_ROOT_SLUG = 'talks';
 
 export const QUERY_ALL_TALKS = gql`
   query AllTalks {
-    talks {
+    talks(first: 100) {
       edges {
         node {
           content

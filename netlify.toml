@@ -28,12 +28,6 @@
   force = true
 
 [[redirects]]
-  from = "/what-do-i-use"
-  to = "/what-i-use"
-  status = 302
-  force = true
-
-[[redirects]]
   from = "/wpnextjs"
   to = "https://github.com/colbyfayock/next-wordpress-starter"
   status = 302
@@ -190,6 +184,12 @@
   force = true
 
 [[redirects]]
+  from = "/frontconf2020"
+  to = "/event-notes/frontconf-2020"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/frontconf-2020"
   to = "/event-notes/frontconf-2020"
   status = 301
@@ -234,6 +234,12 @@
 [[redirects]]
   from = "/mdc-github-actions"
   to = "/event-notes/mdc-github-actions"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/middlesbroughfe"
+  to = "/event-notes/middlesbrough-fe"
   status = 301
   force = true
 

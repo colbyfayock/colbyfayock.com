@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 export const QUERY_ALL_EVENT_NOTES = gql`
   query AllEventNotes {
-    eventNotes {
+    eventNotes(first: 100) {
       edges {
         node {
           content

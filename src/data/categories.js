@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 export const QUERY_ALL_CATEGORIES = gql`
   {
-    categories(first: 10000) {
+    categories(first: 100) {
       edges {
         node {
           categoryId
@@ -18,7 +18,7 @@ export const QUERY_ALL_CATEGORIES = gql`
 
 export const QUERY_CATEGORY_BY_SLUG = gql`
   query CategoryBySlug($slug: [String]) {
-    categories(where: { slug: $slug }, first: 10000) {
+    categories(where: { slug: $slug }, first: 100) {
       edges {
         node {
           categoryId
@@ -34,7 +34,7 @@ export const QUERY_CATEGORY_BY_SLUG = gql`
 
 export const QUERY_CATEGORY_SEO_BY_SLUG = gql`
   query CategorySEOBySlug($slug: [String]) {
-    categories(where: { slug: $slug }, first: 10000) {
+    categories(where: { slug: $slug }, first: 100) {
       edges {
         node {
           id
