@@ -1,27 +1,28 @@
 import { getApolloClient } from 'lib/apollo-client';
 
-import { QUERY_ALL_TALKS, QUERY_TALK_BY_SLUG } from 'data/talks';
+import { QUERY_ALL_TALKS, QUERY_TALK_BY_URI, TALKS_ROOT_SLUG } from 'data/talks';
+import { removeLastTrailingSlash } from 'lib/util';
 
 const PREFIX = '[Talks]';
 
 /**
- * getTalkBySlug
+ * getTalkByUri
  */
 
-export async function getTalkBySlug(slug) {
+export async function getTalkByUri(uri) {
   const apolloClient = getApolloClient();
 
   let talkData;
 
   try {
     talkData = await apolloClient.query({
-      query: QUERY_TALK_BY_SLUG,
+      query: QUERY_TALK_BY_URI,
       variables: {
-        slug,
+        uri,
       },
     });
   } catch (e) {
-    console.log(`${PREFIX}[getTalkBySlug] Failed to query data: ${e.message}`);
+    console.log(`${PREFIX}[getTalkByUri] Failed to query data: ${e.message}`);
     throw e;
   }
 
@@ -30,6 +31,14 @@ export async function getTalkBySlug(slug) {
   return {
     talk,
   };
+}
+
+/**
+ * getTalkByUriSlug
+ */
+
+export async function getTalkByUriSlug(uriSlug) {
+  return getTalkByUri(`/${TALKS_ROOT_SLUG}/${uriSlug}`);
 }
 
 /**
@@ -63,6 +72,16 @@ export async function getAllTalks() {
 
 export function mapTalkData(talk = {}) {
   const data = { ...talk };
+
+  data.uriSlug = data.uri ? removeLastTrailingSlash(data.uri.replace(`/${TALKS_ROOT_SLUG}/`, '')) : null;
+
+  if (data.parent) {
+    data.parent = { ...data.parent.node };
+  }
+
+  if (data.children) {
+    data.children = data.children.edges.map(({ node }) => node);
+  }
 
   return data;
 }
