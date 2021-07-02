@@ -45,7 +45,6 @@ export const QUERY_ALL_POSTS = gql`
           postId
           title
           slug
-          isSticky
         }
       }
     }
@@ -95,7 +94,6 @@ export const QUERY_POST_BY_SLUG = gql`
       postId
       title
       slug
-      isSticky
     }
   }
 `;
@@ -145,7 +143,6 @@ export const QUERY_POSTS_BY_CATEGORY_ID = gql`
           postId
           title
           slug
-          isSticky
         }
       }
     }
@@ -184,7 +181,6 @@ export const QUERY_POSTS_BY_AUTHOR_SLUG = gql`
           postId
           slug
           title
-          isSticky
         }
       }
     }

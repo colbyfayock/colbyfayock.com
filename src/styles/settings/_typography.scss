@@ -1,3 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
 
-$font-family-default: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$font-size-base: 1.2em;
+$line-height-base: $font-size-base * 1.333333333;
+
+$font-weight-medium: 400;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
+
+$font-color-base: $color-grey6;
+
+$font-family-base: "Source Sans Pro", Helvetica, Arial, sans-serif;
+
+$font-size-h1: $font-size-base * 2.125;
+$font-size-h2: $font-size-h1 * 0.823529412;
+$font-size-h3: $font-size-h1 * 0.705882353;
+$font-size-h4: $font-size-h1 * 0.588235294;
+$font-size-h5: $font-size-h1 * 0.470588235;
+$font-size-h6: $font-size-h1 * 0.470588235;
+$font-size-copy: $font-size-base;
+
+$margin-bottom-h1: $font-size-base * 0.833333334;
+$margin-bottom-h2: $margin-bottom-h1 * 1.2143;
+$margin-bottom-h3: $margin-bottom-h1 * 1.41667;
+$margin-bottom-h4: $margin-bottom-h1 * 1.7;
+$margin-bottom-h5: $margin-bottom-h1 * 2.125;
+$margin-bottom-h6: $margin-bottom-h1 * 2.125;
+$margin-bottom-copy: $font-size-copy * 1.5;
+
+$margin-top-h1: $margin-bottom-h1 * 1.5;
+$margin-top-h2: $margin-bottom-h2 * 1.5;
+$margin-top-h3: $margin-bottom-h3 * 1.5;
+$margin-top-h4: $margin-bottom-h4 * 1.5;
+$margin-top-h5: $margin-bottom-h5 * 1.5;
+$margin-top-h6: $margin-bottom-h6 * 1.5;
+$margin-top-copy: $margin-bottom-copy / 2;

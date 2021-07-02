@@ -1,21 +1,21 @@
 import Link from 'next/link';
 
+import ClassName from 'models/classname';
 import { postPathBySlug, sanitizeExcerpt } from 'lib/posts';
 
 import Metadata from 'components/Metadata';
 
-import { FaMapPin } from 'react-icons/fa';
 import styles from './PostCard.module.scss';
 
-const PostCard = ({ post, parentSlug, options = {} }) => {
-  const { title, excerpt, slug, date, author, categories, isSticky = false } = post;
+const PostCard = ({ className, post, parentSlug, options = {} }) => {
+  const postCardClassName = new ClassName(styles.postCard);
+
+  postCardClassName.addIf(className, className);
+
+  const { title, excerpt, slug, date, categories } = post;
   const { excludeMetadata = [] } = options;
 
   const metadata = {};
-
-  if (!excludeMetadata.includes('author') && author) {
-    metadata.author = author;
-  }
 
   if (!excludeMetadata.includes('date') && date) {
     metadata.date = date;
@@ -27,15 +27,8 @@ const PostCard = ({ post, parentSlug, options = {} }) => {
 
   const hasMetadata = Object.keys(metadata).length > 0;
 
-  let postCardStyle = styles.postCard;
-
-  if (isSticky) {
-    postCardStyle = `${postCardStyle} ${styles.postCardSticky}`;
-  }
-
   return (
-    <div className={postCardStyle}>
-      {isSticky && <FaMapPin aria-label="Sticky Post" />}
+    <div className={postCardClassName}>
       <Link href={postPathBySlug(slug, { parent: parentSlug })}>
         <a>
           <h3

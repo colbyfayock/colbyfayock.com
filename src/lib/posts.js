@@ -291,14 +291,6 @@ export async function getRelatedPosts(category, postId, count = 5) {
 }
 
 /**
- * sortStickyPosts
- */
-
-export function sortStickyPosts(posts) {
-  return [...posts].sort((post) => (post.isSticky ? -1 : 1));
-}
-
-/**
  * getPostsPerPage
  */
 
@@ -347,9 +339,8 @@ export async function getPaginatedPosts(currentPage = 1) {
     page = 1;
   }
   const offset = postsPerPage * (page - 1);
-  const sortedPosts = sortStickyPosts(posts);
   return {
-    posts: sortedPosts.slice(offset, offset + postsPerPage),
+    posts: posts.slice(offset, offset + postsPerPage),
     pagination: {
       currentPage: page,
       pagesCount,

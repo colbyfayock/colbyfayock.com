@@ -1,5 +1,25 @@
+@import "styles/settings/__settings";
+
 .layoutContainer {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
+}
+
+.notice {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: $color-primary;
+  padding: 0.5em 1em;
+  cursor: pointer;
+
+  p {
+    margin: 0;
+  }
 }

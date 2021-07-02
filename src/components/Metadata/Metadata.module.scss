@@ -4,10 +4,12 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  color: $color-gray-600;
+  color: $color-gray-900;
+  font-weight: 600;
+  font-size: 1em;
   list-style: none;
   padding: 0;
-  margin: 0 -0.8em;
+  margin: 0;
 
   ul {
     list-style: none;
@@ -16,7 +18,24 @@
   }
 
   & > li {
-    margin: 0.8em;
+    margin: 0;
+
+    &:last-child {
+      margin-right: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      display: inline-block;
+      content: "//";
+      color: $color-brand-purple-light;
+      font-weight: 900;
+      margin: 0 0.6em;
+      transform: translateY(-2px);
+    }
   }
 
   p {
@@ -34,28 +53,15 @@
   }
 }
 
-.metadataAuthor {
-  a {
-    margin-left: 0.2em;
-  }
-
-  address {
-    display: flex;
-    align-items: center;
-    font-style: normal;
-  }
-
-  img {
-    width: 1.4em;
-    height: auto;
-    border-radius: 50%;
-    margin-right: 0.5em;
-  }
-}
-
 .metadataCategories {
+  ul {
+    display: inline-block;
+    font-size: 1em;
+  }
+
   li {
     display: inline-block;
+    margin: 0;
 
     &:after {
       content: ", ";
@@ -68,9 +74,4 @@
       }
     }
   }
-}
-
-.metadataSticky {
-  font-size: 1.15em;
-  color: $color-gray-300;
 }

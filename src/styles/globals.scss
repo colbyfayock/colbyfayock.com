@@ -1,43 +1,5 @@
 @import "styles/settings/__settings";
 
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: $font-family-default;
-}
-
-p,
-.wp-block-columns {
-  line-height: 1.6;
-  margin: 1.2em 0;
-}
-
-ul {
-  padding-left: 1.2em;
-}
-
-a {
-  color: $color-primary;
-}
-
-img {
-  max-width: 100%;
-}
-
-input {
-  &[type="text"],
-  &[type="search"],
-  &[type="email"] {
-    outline-offset: 0;
-    padding: 0.5em 0.8em;
-  }
-}
-
 .sr-only {
   display: block;
   overflow: hidden;
@@ -48,4 +10,5 @@ input {
   height: 0;
 }
 
+@import "base";
 @import "wordpress";

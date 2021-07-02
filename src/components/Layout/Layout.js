@@ -13,7 +13,7 @@ const Layout = ({ children, exclude = [] }) => {
   const router = useRouter();
   const { asPath } = router;
 
-  const { homepage, metadata = {} } = useSite();
+  const { homepage, metadata = {}, notices, clearNotices } = useSite();
 
   if (!metadata.og) {
     metadata.og = {};
@@ -63,6 +63,18 @@ const Layout = ({ children, exclude = [] }) => {
   return (
     <div className={styles.layoutContainer}>
       <Helmet {...helmetSettings} />
+
+      {notices && notices.length > 0 && (
+        <div className={styles.notices}>
+          {notices.map(({ message }) => {
+            return (
+              <div key={message} className={styles.notice} onClick={clearNotices}>
+                <p className={styles.noticeMessage}>{message}</p>
+              </div>
+            );
+          })}
+        </div>
+      )}
 
       {!exclude.includes('nav') && <Nav />}
 

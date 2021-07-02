@@ -21,26 +21,15 @@
   }
 }
 
-.postCardSticky {
-  border: solid 0.02em $color-gray-100;
-  border-radius: 1em;
-
-  svg {
-    position: absolute;
-    top: 1.2em;
-    right: 1em;
-    font-size: 1.15em;
-    color: $color-gray-300;
-  }
-}
-
 .postCardTitle {
+  color: $color-primary;
   margin: 0 0 1em 0;
   font-size: 1.5em;
 }
 
 .postCardContent {
-  font-size: 1.25em;
+  color: $color-gray-700;
+  font-size: 0.9em;
   margin: 0;
 
   p {
@@ -55,5 +44,5 @@
 }
 
 .postCardMetadata {
-  margin: -0.8em -0.8em 0.4em;
+  margin: -0.6em 0 0.8em;
 }

@@ -1,16 +1,21 @@
+import Link from 'next/link';
+import { FaRss } from 'react-icons/fa';
+
 import useSite from 'hooks/use-site';
-import { getPaginatedPosts } from 'lib/posts';
+import { getAllPosts } from 'lib/posts';
+import { getAllProjects } from 'lib/projects';
 import { WebsiteJsonLd } from 'lib/json-ld';
 
 import Layout from 'components/Layout';
 import Section from 'components/Section';
 import Container from 'components/Container';
-import PostCard from 'components/PostCard';
+import PostCardList from 'components/PostCardList';
 import Masthead from 'components/Masthead';
+import Button from 'components/Button';
 
 import styles from 'styles/pages/Home.module.scss';
 
-export default function Home({ posts }) {
+export default function Home({ posts, projects }) {
   const { metadata = {} } = useSite();
   const { title } = metadata;
 
@@ -20,18 +25,104 @@ export default function Home({ posts }) {
 
       <Masthead />
 
-      <Section>
+      <Section className={styles.homeNewsletter}>
         <Container>
-          <h2 className="sr-only">Posts</h2>
-          <ul className={styles.posts}>
-            {posts.map((post) => {
-              return (
-                <li key={post.slug}>
-                  <PostCard post={post} />
-                </li>
-              );
-            })}
-          </ul>
+          <Link href="/newsletter">
+            <a>
+              <span className={styles.homeNewsletterIcon}>📬</span>
+              <div className={styles.homeNewsletterContent}>
+                <h3>Weekly Newsletter</h3>
+                <p>Fresh guides & tutorials weekly straight to your inbox!</p>
+              </div>
+              <div className={styles.homeNewsletterButton}>
+                <Button>Sign Up</Button>
+              </div>
+            </a>
+          </Link>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container className={styles.homeContentContainer}>
+          <div className={styles.homeMain}>
+            <div className={styles.homeContentHeader}>
+              <Link href="/posts">
+                <a className={styles.homeContentHeaderTitle}>
+                  <h2>
+                    <span className={styles.headerContentHeaderIcon}>📝</span> Latest From the Blog
+                  </h2>
+                </a>
+              </Link>
+              <div className={styles.homeContentHeaderActions}>
+                <a href="https://www.colbyfayock.com/rss.xml">
+                  <FaRss /> RSS
+                </a>
+              </div>
+            </div>
+
+            <PostCardList posts={posts} labelPlural="Posts" url="/posts" />
+          </div>
+
+          <div className={styles.homeSidebar}>
+            <div className={styles.homeSidebarSection}>
+              <div className={styles.homeContentHeader}>
+                <span className={styles.homeContentHeaderTitle}>
+                  <h2>
+                    <span className={styles.headerContentHeaderIcon}>✨</span> Featured Features
+                  </h2>
+                </span>
+              </div>
+
+              {/* <ArticleList articles={[
+                {
+                  path: 'https://spacejelly.dev/',
+                  title: 'Cosmo the Space Jellyfish Stickers',
+                  category: 'Starting at $1 for a Cosmo sticker!'
+                },
+                {
+                  path: 'https://cottonbureau.com/products/cosmo-the-space-jellyfish',
+                  title: 'Cosmo the Space Jellyfish Tshirt',
+                  category: 'Available on Cotton Bureau high quality products'
+                },
+                {
+                  path: 'https://www.redbubble.com/i/t-shirt/Cosmo-the-Space-Jellyfish-by-colbyfayock/58649803.S7RYU',
+                  title: 'Cosmo the Space Jellyfish on Redbubble',
+                  category: 'More product options, more affordable'
+                },
+                {
+                  path: '/what-i-use',
+                  title: 'What I Use',
+                  category: 'Audio, video, lighting, etc'
+                }
+              ]}  /> */}
+            </div>
+
+            <div className={styles.homeSidebarSection}>
+              <div className={styles.homeContentHeader}>
+                <Link href="/projects">
+                  <a className={styles.homeContentHeaderTitle}>
+                    <h2>
+                      <span className={styles.headerContentHeaderIcon}>💼</span> Featured Projects
+                    </h2>
+                  </a>
+                </Link>
+              </div>
+              <PostCardList posts={projects} labelPlural="Projects" url="/projects" />
+            </div>
+
+            <div className={styles.homeSidebarSection}>
+              <div className={styles.homeContentHeader}>
+                <Link href="/talks">
+                  <a className={styles.homeContentHeaderTitle}>
+                    <h2>
+                      <span className={styles.headerContentHeaderIcon}>📣</span> Recent Events
+                    </h2>
+                  </a>
+                </Link>
+              </div>
+              {/* <ArticleList articles={talks} count={3} toAll="/talks" labelArticles="Talks"  /> */}
+            </div>
+          </div>
         </Container>
       </Section>
     </Layout>
@@ -39,10 +130,13 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-  const { posts } = await getPaginatedPosts();
+  const { posts } = await getAllPosts();
+  const { projects } = await getAllProjects();
+  console.log('projects,', projects);
   return {
     props: {
-      posts,
+      posts: posts.slice(0, 5),
+      projects: projects.slice(0, 5),
     },
   };
 }

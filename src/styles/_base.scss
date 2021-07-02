@@ -1,0 +1,188 @@
+@import "styles/settings/__settings";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font-family-base;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $font-color-base;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: $font-size-h1;
+  font-weight: $font-weight-bolder;
+  line-height: 1.2em;
+  margin: $margin-top-h1 0 $margin-bottom-h1;
+}
+
+h2 {
+  font-size: $font-size-h2;
+  font-weight: $font-weight-bolder;
+  margin: $margin-top-h2 0 $margin-bottom-h2;
+}
+
+h3 {
+  font-size: $font-size-h3;
+  font-weight: $font-weight-bolder;
+  margin: $margin-top-h3 0 $margin-bottom-h3;
+}
+
+h4 {
+  font-size: $font-size-h4;
+  font-weight: $font-weight-bolder;
+  margin: $margin-top-h4 0 $margin-bottom-h4;
+}
+
+h5 {
+  font-size: $font-size-h5;
+  font-weight: $font-weight-bolder;
+  margin: $margin-top-h5 0 $margin-bottom-h5;
+}
+
+h6 {
+  font-size: $font-size-h6;
+  font-weight: $font-weight-bolder;
+  margin: $margin-top-h6 0 $margin-bottom-h6;
+}
+
+a {
+  color: $color-primary;
+
+  &:hover,
+  &:focus {
+    color: lighten($color-primary, 7);
+  }
+
+  &:active {
+    color: darken($color-primary, 7);
+  }
+
+  &:visited {
+    color: $color-primary;
+
+    &:hover {
+      color: lighten($color-primary, 7);
+    }
+
+    &:active {
+      color: darken($color-primary, 7);
+    }
+  }
+}
+
+p,
+ul,
+ol,
+pre,
+blockquote,
+figure {
+  line-height: $line-height-base;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+p,
+ul,
+ol,
+pre,
+figure {
+  font-size: $font-size-copy;
+  margin: $margin-top-copy 0 $margin-bottom-copy;
+}
+
+ul {
+  padding-left: 1.2em;
+}
+
+ol {
+  padding-left: 2.6em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+hr {
+  height: 1px;
+  background-color: $color-grey2;
+  margin: 2em 0;
+  border: 0;
+}
+
+blockquote {
+  color: $color-grey4;
+  font-size: 1.2em;
+  font-style: italic;
+  padding: 2em 2.2em;
+  border: solid 1px $color-grey1;
+  margin: 3.1875em 0;
+
+  p {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+code,
+pre {
+  display: inline;
+  background-color: $color-grey1;
+  white-space: nowrap;
+  border-radius: 0;
+  border: 0;
+}
+
+code {
+  padding: 0.1em 0.3em;
+}
+
+pre {
+  display: block;
+  overflow: hidden;
+  overflow-x: scroll;
+  font-size: 0.8em;
+  line-height: 1.4em;
+  padding: 2em;
+
+  p + & {
+    margin-top: -2em;
+  }
+
+  code {
+    white-space: pre-wrap;
+  }
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 0.5em;
+  font-style: italic;
+  color: $color-grey4;
+}
+
+img {
+  max-width: 100%;
+}

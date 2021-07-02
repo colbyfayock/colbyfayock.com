@@ -20,18 +20,7 @@ import FeaturedImage from 'components/FeaturedImage';
 import styles from 'styles/pages/Post.module.scss';
 
 export default function Post({ post, socialImage, relatedPosts }) {
-  const {
-    title,
-    metaTitle,
-    description,
-    content,
-    date,
-    author,
-    categories,
-    modified,
-    featuredImage,
-    isSticky = false,
-  } = post;
+  const { title, metaTitle, description, content, date, author, categories, modified, featuredImage } = post;
 
   const { metadata: siteMetadata = {}, homepage } = useSite();
 
@@ -58,9 +47,7 @@ export default function Post({ post, socialImage, relatedPosts }) {
     metadata.twitter.title = metadata.title;
   }
 
-  const metadataOptions = {
-    compactCategories: false,
-  };
+  const metadataOptions = {};
 
   const { posts: relatedPostsList, title: relatedPostsTitle } = relatedPosts;
 
@@ -92,7 +79,6 @@ export default function Post({ post, socialImage, relatedPosts }) {
           author={author}
           categories={categories}
           options={metadataOptions}
-          isSticky={isSticky}
         />
       </Header>
 
