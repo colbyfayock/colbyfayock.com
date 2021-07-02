@@ -1,4 +1,93 @@
+[build]
+  command = "yarn build"
+  publish = "out"
+
+########
+# Misc #
+########
+
 [[redirects]]
-  from = "/*"
-  to = "/404"
-  status = 404
+  from = "/cosmoshirt"
+  to = "https://cottonbureau.com/products/cosmo-the-space-jellyfish#/5503032/tee-men-standard-tee-indigo-tri-blend-s"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/ecomm"
+  to = "https://egghead.io/courses/create-an-ecommerce-store-with-next-js-and-stripe-checkout-562c?af=atzgap"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/egghead-actions"
+  to = "https://egghead.io/courses/create-a-new-github-action-to-automate-code-tasks-with-javascript-f1e9?af=atzgap"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/wpnextjs"
+  to = "https://github.com/colbyfayock/next-wordpress-starter"
+  status = 302
+  force = true
+
+###############
+# Conferences #
+###############
+
+[[redirects]]
+  from = "/decoupleddays"
+  to = "/decoupled-days-scaling-nextjs-with-wordpress"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/frontendtestfest"
+  to = "/front-end-test-fest"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/hashnode-brand"
+  to = "https://www.colbyfayock.com/hashnode-bootcamp-personal-brand"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/reactvirtualconf"
+  to = "/nextjs-wordpress-react-virtual-conf"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/simplewebconf"
+  to = "/simplewebconf-fundamentals"
+  status = 302
+  force = true
+
+################
+# Amazon Links #
+################
+
+[[redirects]]
+  from = "/adapters"
+  to = "https://amzn.to/3hhXbYK"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/clamps"
+  to = "https://amzn.to/2ThkQjZ"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/keylights"
+  to = "https://amzn.to/2UbS5Wg"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/monopod"
+  to = "https://amzn.to/2UbUyA0"
+  status = 302
+  force = true
