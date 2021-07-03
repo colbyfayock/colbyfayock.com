@@ -102,26 +102,6 @@ export default function Home({ posts, projects, featuredFeatures }) {
                 }}
               />
             </div>
-
-            <div className={styles.homeSidebarSection}>
-              <div className={styles.homeContentHeader}>
-                <Link href="/talks">
-                  <a className={styles.homeContentHeaderTitle}>
-                    <h2>
-                      <span className={styles.headerContentHeaderIcon}>📣</span> Recent Events
-                    </h2>
-                  </a>
-                </Link>
-              </div>
-              <PostCardList
-                posts={projects}
-                labelPlural="Projects"
-                url="/projects"
-                postCardOptions={{
-                  contentField: 'content',
-                }}
-              />
-            </div>
           </div>
         </Container>
       </Section>
