@@ -10,6 +10,12 @@
 ########
 
 [[redirects]]
+  from = "/404.html"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
   from = "/about-me"
   to = "/about"
   status = 301
@@ -409,7 +415,7 @@
 
 [[redirects]]
   from = "/thats-my-jamstack-on-mapping-like-the-world-gatsby-science-and-more"
-  to = "/podcasts/thats-my-jamstack-on-mapping-like…-the-world-gatsby-science-and-more"
+  to = "/podcasts/thats-my-jamstack-on-mapping-like-the-world-gatsby-science-and-more"
   status = 301
   force = true
 

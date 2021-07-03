@@ -133,7 +133,6 @@ export async function getStaticProps() {
   const { posts } = await getAllPosts();
   const { projects } = await getAllProjects();
   const { featuredFeatures } = await getAllFeaturedFeatures();
-  console.log('featuredFeatures', featuredFeatures);
 
   return {
     props: {
