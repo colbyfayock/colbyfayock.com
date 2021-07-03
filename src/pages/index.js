@@ -4,6 +4,7 @@ import { FaRss } from 'react-icons/fa';
 import useSite from 'hooks/use-site';
 import { getAllPosts } from 'lib/posts';
 import { getAllProjects } from 'lib/projects';
+import { getAllFeaturedFeatures } from 'lib/featured-features';
 import { WebsiteJsonLd } from 'lib/json-ld';
 
 import Layout from 'components/Layout';
@@ -15,7 +16,7 @@ import Button from 'components/Button';
 
 import styles from 'styles/pages/Home.module.scss';
 
-export default function Home({ posts, projects }) {
+export default function Home({ posts, projects, featuredFeatures }) {
   const { metadata = {} } = useSite();
   const { title } = metadata;
 
@@ -72,29 +73,13 @@ export default function Home({ posts, projects }) {
                   </h2>
                 </span>
               </div>
-
-              {/* <ArticleList articles={[
-                {
-                  path: 'https://spacejelly.dev/',
-                  title: 'Cosmo the Space Jellyfish Stickers',
-                  category: 'Starting at $1 for a Cosmo sticker!'
-                },
-                {
-                  path: 'https://cottonbureau.com/products/cosmo-the-space-jellyfish',
-                  title: 'Cosmo the Space Jellyfish Tshirt',
-                  category: 'Available on Cotton Bureau high quality products'
-                },
-                {
-                  path: 'https://www.redbubble.com/i/t-shirt/Cosmo-the-Space-Jellyfish-by-colbyfayock/58649803.S7RYU',
-                  title: 'Cosmo the Space Jellyfish on Redbubble',
-                  category: 'More product options, more affordable'
-                },
-                {
-                  path: '/what-i-use',
-                  title: 'What I Use',
-                  category: 'Audio, video, lighting, etc'
-                }
-              ]}  /> */}
+              <PostCardList
+                posts={featuredFeatures}
+                postCardOptions={{
+                  contentField: 'content',
+                  linkField: 'featureUrl',
+                }}
+              />
             </div>
 
             <div className={styles.homeSidebarSection}>
@@ -107,7 +92,15 @@ export default function Home({ posts, projects }) {
                   </a>
                 </Link>
               </div>
-              <PostCardList posts={projects} labelPlural="Projects" url="/projects" />
+              <PostCardList
+                posts={projects}
+                labelPlural="Projects"
+                url="/projects"
+                postCardOptions={{
+                  contentField: 'content',
+                  linkField: 'projectUrl',
+                }}
+              />
             </div>
 
             <div className={styles.homeSidebarSection}>
@@ -120,7 +113,14 @@ export default function Home({ posts, projects }) {
                   </a>
                 </Link>
               </div>
-              {/* <ArticleList articles={talks} count={3} toAll="/talks" labelArticles="Talks"  /> */}
+              <PostCardList
+                posts={projects}
+                labelPlural="Projects"
+                url="/projects"
+                postCardOptions={{
+                  contentField: 'content',
+                }}
+              />
             </div>
           </div>
         </Container>
@@ -132,11 +132,14 @@ export default function Home({ posts, projects }) {
 export async function getStaticProps() {
   const { posts } = await getAllPosts();
   const { projects } = await getAllProjects();
-  console.log('projects,', projects);
+  const { featuredFeatures } = await getAllFeaturedFeatures();
+  console.log('featuredFeatures', featuredFeatures);
+
   return {
     props: {
       posts: posts.slice(0, 5),
       projects: projects.slice(0, 5),
+      featuredFeatures,
     },
   };
 }

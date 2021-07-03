@@ -2,12 +2,13 @@ import { useEffect, useRef, useState, useCallback } from 'react';
 import Link from 'next/link';
 import { FaSearch } from 'react-icons/fa';
 
-import useSite from 'hooks/use-site';
 import useSearch, { SEARCH_STATE_LOADED } from 'hooks/use-search';
 import { postPathBySlug } from 'lib/posts';
-import { findMenuByLocation, MENU_LOCATION_NAVIGATION_DEFAULT } from 'lib/menus';
 
 import Section from 'components/Section';
+import Container from 'components/Container';
+import Logo from 'components/Logo';
+import SocialIcons from 'components/SocialIcons';
 
 import styles from './Nav.module.scss';
 
@@ -18,14 +19,6 @@ const Nav = () => {
   const formRef = useRef();
 
   const [searchVisibility, setSearchVisibility] = useState(SEARCH_HIDDEN);
-
-  const { metadata = {}, menus } = useSite();
-  const { title } = metadata;
-
-  const navigation = findMenuByLocation(menus, [
-    process.env.WORDPRESS_MENU_LOCATION_NAVIGATION,
-    MENU_LOCATION_NAVIGATION_DEFAULT,
-  ]);
 
   const { query, results, search, clearSearch, state } = useSearch({
     maxResults: 5,
@@ -178,91 +171,59 @@ const Nav = () => {
   return (
     <nav className={styles.nav}>
       <Section className={styles.navSection}>
-        <p className={styles.navName}>
-          <Link href="/">
-            <a>{title}</a>
-          </Link>
-        </p>
-        <ul className={styles.navMenu}>
-          {navigation?.map(({ id, path, label, title, target, children }) => {
-            return (
-              <li key={id}>
-                {!path.includes('http') && !target && (
-                  <Link href={path}>
-                    <a title={title}>{label}</a>
-                  </Link>
-                )}
-                {path.includes('http') && (
-                  <a href={path} title={title} target={target}>
-                    {label}
-                  </a>
-                )}
+        <Container className={styles.navContainer}>
+          <p className={styles.navName}>
+            <Link href="/">
+              <a>
+                <Logo className={styles.navLogo} />
+              </a>
+            </Link>
+          </p>
 
-                {children?.length > 0 && (
-                  <ul className={styles.navSubMenu}>
-                    {children.map(({ id, path, label, title, target }) => {
-                      return (
-                        <li key={id}>
-                          {!path.includes('http') && !target && (
-                            <Link href={path}>
-                              <a title={title}>{label}</a>
+          <SocialIcons />
+
+          <div className={styles.navSearch}>
+            {searchVisibility === SEARCH_HIDDEN && (
+              <button onClick={handleOnToggleSearch} disabled={!searchIsLoaded}>
+                <span className="sr-only">Toggle Search</span>
+                <FaSearch />
+              </button>
+            )}
+            {searchVisibility === SEARCH_VISIBLE && (
+              <form ref={formRef} action="/search" data-search-is-active={!!query}>
+                <input
+                  type="search"
+                  name="q"
+                  value={query || ''}
+                  onChange={handleOnSearch}
+                  autoComplete="off"
+                  placeholder="Search..."
+                  required
+                />
+                <div className={styles.navSearchResults}>
+                  {results.length > 0 && (
+                    <ul>
+                      {results.map(({ slug, title }, index) => {
+                        return (
+                          <li key={slug}>
+                            <Link tabIndex={index} href={postPathBySlug(slug)}>
+                              <a>{title}</a>
                             </Link>
-                          )}
-                          {path.includes('http') && (
-                            <a href={path} title={title} target={target}>
-                              {label}
-                            </a>
-                          )}
-                        </li>
-                      );
-                    })}
-                  </ul>
-                )}
-              </li>
-            );
-          })}
-        </ul>
-        <div className={styles.navSearch}>
-          {searchVisibility === SEARCH_HIDDEN && (
-            <button onClick={handleOnToggleSearch} disabled={!searchIsLoaded}>
-              <span className="sr-only">Toggle Search</span>
-              <FaSearch />
-            </button>
-          )}
-          {searchVisibility === SEARCH_VISIBLE && (
-            <form ref={formRef} action="/search" data-search-is-active={!!query}>
-              <input
-                type="search"
-                name="q"
-                value={query || ''}
-                onChange={handleOnSearch}
-                autoComplete="off"
-                placeholder="Search..."
-                required
-              />
-              <div className={styles.navSearchResults}>
-                {results.length > 0 && (
-                  <ul>
-                    {results.map(({ slug, title }, index) => {
-                      return (
-                        <li key={slug}>
-                          <Link tabIndex={index} href={postPathBySlug(slug)}>
-                            <a>{title}</a>
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                )}
-                {results.length === 0 && (
-                  <p>
-                    Sorry, not finding anything for <strong>{query}</strong>
-                  </p>
-                )}
-              </div>
-            </form>
-          )}
-        </div>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
+                  {results.length === 0 && (
+                    <p>
+                      Sorry, not finding anything for <strong>{query}</strong>
+                    </p>
+                  )}
+                </div>
+              </form>
+            )}
+          </div>
+        </Container>
       </Section>
     </nav>
   );

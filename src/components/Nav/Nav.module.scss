@@ -2,21 +2,21 @@
 
 .nav {
   width: 100%;
-  border-bottom: 1px solid $color-gray-100;
-  padding: 0 1rem;
 }
 
 .navSection {
+  padding: 1em 0;
+  margin: 0;
+}
+
+.navContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 100%;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin: 0;
 
-  @media (min-width: 480px) {
+  @media (min-width: 640px) {
     justify-content: space-between;
     flex-direction: row;
   }
@@ -30,7 +30,7 @@
   flex-grow: 1;
   margin: 0.8em 0 0;
 
-  @media (min-width: 480px) {
+  @media (min-width: 640px) {
     justify-content: flex-start;
     margin-top: 0;
   }
@@ -42,52 +42,10 @@
     text-decoration: none;
     border-bottom: solid 2px transparent;
 
-    @media (min-width: 480px) {
+    @media (min-width: 640px) {
       padding: 0.5em;
       margin-left: -0.5em;
     }
-
-    &:hover {
-      color: $color-primary;
-    }
-  }
-}
-
-.navMenu {
-  display: flex;
-  align-items: center;
-  flex-grow: 0;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-
-  & > li {
-    margin: 0 0.25em;
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
-    &:hover {
-      & > a {
-        color: $color-primary;
-      }
-
-      .navSubMenu {
-        display: block;
-      }
-    }
-  }
-
-  a {
-    display: block;
-    text-decoration: none;
-    color: $color-gray-600;
-    font-size: 1.1em;
-    padding: 0.5em;
 
     @media (hover: hover) {
       &:hover {
@@ -97,28 +55,33 @@
   }
 }
 
-.navSubMenu {
-  display: none;
-  position: absolute;
-  padding: 0;
-  list-style: none;
-  background-color: #fff;
-  padding: 0.5em;
-  border-radius: $border-radius-small;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  margin-left: -0.25em;
-
-  li {
-    a {
-      font-size: 1rem;
-      padding: 0.3em;
-    }
-  }
+.navLogo {
+  color: $color-gray-600;
+  font-size: 1.2em;
 }
 
 .navSearch {
+  display: flex;
+  align-items: center;
   flex-grow: 0;
-  margin-left: 1em;
+
+  @media (min-width: 640px) {
+    margin-left: 1.5em;
+  }
+
+  &:before {
+    display: none;
+    width: 1px;
+    height: 2em;
+    content: "";
+    background: $color-gray-300;
+    margin-right: 0.5em;
+
+    @media (min-width: 640px) {
+      display: block;
+    }
+  }
+
   form {
     display: flex;
     align-items: center;
@@ -128,14 +91,15 @@
     height: 100%;
     padding: 1em;
 
-    @media (min-width: 480px) {
+    @media (min-width: 640px) {
       justify-content: flex-end;
       margin-right: -1rem;
     }
   }
 
   input {
-    font-size: 0.845em;
+    font-size: 0.8em;
+    padding: 0.5em;
   }
 
   button {
@@ -179,7 +143,7 @@
   margin-right: -1rem;
   z-index: 999;
 
-  @media (min-width: 480px) {
+  @media (min-width: 640px) {
     width: 30em;
     margin-right: 0;
   }
@@ -205,6 +169,7 @@
     text-decoration: none;
     padding: 0.5em;
     margin: 0 -0.5em;
+
     &:focus {
       outline: 2px solid $color-blue-500;
     }

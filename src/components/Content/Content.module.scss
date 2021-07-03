@@ -1,8 +1,6 @@
 @import "styles/settings/__settings";
 
 .content {
-  font-size: 1.5rem;
-
   h2,
   h3,
   h4,
@@ -20,5 +18,11 @@
   img {
     display: block;
     margin: 0 auto;
+  }
+
+  p {
+    a {
+      word-break: break-word;
+    }
   }
 }

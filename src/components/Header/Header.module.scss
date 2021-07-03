@@ -1,7 +1,16 @@
 @import "styles/settings/__settings";
+@import "styles/util/__util";
 
 .header {
   margin: 5rem 0;
+
+  @include tablet() {
+    margin: 3rem 0;
+  }
+
+  @include mobile() {
+    margin: 0;
+  }
 
   h1 {
     margin: 0;

@@ -1,5 +1,4 @@
-import { FaTwitter, FaDribbble, FaGithub, FaInstagram, FaYoutube, FaTwitch } from 'react-icons/fa';
-import { FiMail } from 'react-icons/fi';
+import { FaTwitter, FaGithub, FaInstagram, FaYoutube, FaTwitch } from 'react-icons/fa';
 
 import styles from './SocialIcons.module.scss';
 
@@ -29,22 +28,10 @@ const socialLinks = [
     Icon: FaGithub,
   },
   {
-    id: 'dribbble',
-    title: 'Dribbble',
-    url: 'http://dribbble.com/colbyfayock',
-    Icon: FaDribbble,
-  },
-  {
     id: 'instagram',
     title: 'Instagram',
     url: 'https://www.instagram.com/colbyfayock/',
     Icon: FaInstagram,
-  },
-  {
-    id: 'email',
-    title: 'Email',
-    url: 'mailto:hello@colbyfayock.com',
-    Icon: FiMail,
   },
 ];
 

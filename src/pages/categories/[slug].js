@@ -6,7 +6,7 @@ import TemplateArchive from 'templates/archive';
 import Title from 'components/Title';
 
 export default function Category({ category, posts }) {
-  const { name, description, slug } = category;
+  const { name, description } = category;
 
   const { metadata } = usePageMetadata({
     metadata: {
@@ -15,7 +15,7 @@ export default function Category({ category, posts }) {
     },
   });
 
-  return <TemplateArchive title={name} Title={<Title title={name} />} posts={posts} slug={slug} metadata={metadata} />;
+  return <TemplateArchive title={name} Title={<Title title={name} />} posts={posts} slug="posts" metadata={metadata} />;
 }
 
 export async function getStaticProps({ params = {} } = {}) {

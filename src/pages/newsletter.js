@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { Helmet } from 'react-helmet';
 
 import { getPageByUri } from 'lib/pages';
@@ -15,12 +14,18 @@ import Container from 'components/Container';
 import FeaturedImage from 'components/FeaturedImage';
 import FormSignupNewsletter from 'components/FormSignupNewsletter';
 
-import styles from 'styles/pages/Page.module.scss';
+import pageStyles from 'styles/pages/Page.module.scss';
+import newsletterStyles from 'styles/pages/Newsletter.module.scss';
 
 const NEWSLETTER_PAGE_URI = '/newsletter/';
 
 export default function Page({ page }) {
-  const { title, metaTitle, description, slug, content, featuredImage, children } = page;
+  const styles = {
+    ...pageStyles,
+    ...newsletterStyles,
+  };
+
+  const { title, metaTitle, description, slug, content, featuredImage } = page;
 
   const { metadata: siteMetadata = {} } = useSite();
 
@@ -38,12 +43,10 @@ export default function Page({ page }) {
     metadata.twitter.title = metadata.title;
   }
 
-  const hasChildren = Array.isArray(children) && children.length > 0;
-
   const helmetSettings = helmetSettingsFromMetadata(metadata);
 
   return (
-    <Layout>
+    <Layout pageClassName={styles.pageNewsletter}>
       <Helmet {...helmetSettings} />
 
       <WebpageJsonLd
@@ -65,8 +68,8 @@ export default function Page({ page }) {
       </Header>
 
       <Content>
-        <Section>
-          <Container>
+        <Section className={styles.newsletterContentSection}>
+          <Container className={styles.newsletterContentContainer}>
             <div
               className={styles.content}
               dangerouslySetInnerHTML={{
@@ -76,32 +79,9 @@ export default function Page({ page }) {
           </Container>
         </Section>
 
-        {hasChildren && (
-          <Section className={styles.sectionChildren}>
-            <Container>
-              <aside>
-                <p className={styles.childrenHeader}>
-                  <strong>{title}</strong>
-                </p>
-                <ul>
-                  {children.map((child) => {
-                    return (
-                      <li key={child.id}>
-                        <Link href={child.uri}>
-                          <a>{child.title}</a>
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              </aside>
-            </Container>
-          </Section>
-        )}
-
-        <Section>
+        <Section className={styles.newsletterFormSection}>
           <Container>
-            <FormSignupNewsletter />
+            <FormSignupNewsletter className={styles.newsletterForm} />
           </Container>
         </Section>
       </Content>

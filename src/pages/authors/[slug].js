@@ -17,10 +17,6 @@ export default function Author({ user, posts }) {
     },
   });
 
-  const postOptions = {
-    excludeMetadata: ['author'],
-  };
-
   return (
     <>
       <AuthorJsonLd author={user} />
@@ -28,7 +24,6 @@ export default function Author({ user, posts }) {
         title={name}
         Title={<Title title={name} thumbnail={avatar} />}
         posts={posts}
-        postOptions={postOptions}
         slug={slug}
         metadata={metadata}
       />

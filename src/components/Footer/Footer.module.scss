@@ -1,78 +1,110 @@
 @import "styles/settings/__settings";
+@import "styles/util/__util";
 
-.footer {
-  width: 100%;
-  border-top: 1px solid $color-gray-100;
-}
+.footerSecondary {
+  color: $color-grey4;
+  font-size: 1em;
+  text-align: center;
 
-.footerMenu {
-  margin: 2rem 0;
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-}
-
-.footerMenuColumns {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin: 0 -2em;
-
-  @media (min-width: 480px) {
-    justify-content: center;
+  @include mobile() {
+    font-size: 0.9em;
+    margin-top: 0.2em;
   }
 
-  & > li {
-    max-width: 15em;
-    margin: 2em;
+  p {
+    font-size: 1.8em;
+    margin: 0 0 0.5em;
   }
-}
 
-.footerMenuTitle {
-  display: inline-block;
-  color: $color-gray-800;
-  text-decoration: none;
-  margin-bottom: 1.4em;
-  margin-top: 0;
-}
+  .emoji {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+  }
 
-.footerMenuItems {
+  ul,
   li {
-    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    margin: 0 0.5em;
+  }
+
+  button,
+  a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: $color-primary;
+    text-decoration: none;
+    font-weight: bold;
+    background: none;
+    text-transform: none;
+
+    svg {
+      margin-right: 0.5em;
+    }
+  }
+}
+
+.footerEmailSignup {
+  text-align: center;
+
+  .emoji {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.6em;
+    margin: 0.5em 0;
+  }
+}
+
+.footerEmailSignupForm {
+  justify-content: center;
+}
+
+.footerPrimary {
+  text-align: center;
+}
+
+.footerSocial,
+.footerLinks {
+  &,
+  a,
+  path,
+  polygon,
+  svg {
+    color: $color-grey3;
+  }
+}
+
+.footerLinks {
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    margin: 0 0.5em;
+
+    &:after {
+      content: "•";
+      margin-left: 1em;
+    }
 
     &:last-child {
-      margin-bottom: 0;
+      &:after {
+        display: none;
+        content: "";
+      }
     }
   }
 
   a {
-    display: block;
-    overflow: hidden;
-    color: $color-gray-600;
+    font-size: 0.8em;
     text-decoration: none;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-
-    @media (hover: hover) {
-      &:hover {
-        color: $color-primary;
-        text-decoration: underline;
-      }
-    }
-  }
-}
-
-.footerLegal {
-  color: $color-gray-400;
-  background-color: $color-gray-900;
-  padding: 0.8rem 0;
-  margin: 0;
-
-  p {
-    font-size: 0.9em;
-    text-align: center;
-    margin: 0;
   }
 }

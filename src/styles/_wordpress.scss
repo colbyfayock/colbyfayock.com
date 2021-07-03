@@ -1,10 +1,25 @@
+@import "styles/util/__util";
+
 .wp-block-columns {
   @extend p;
   display: flex;
+  flex-direction: row;
   margin: 0 -1em;
+
+  @include tablet() {
+    flex-direction: column;
+  }
 }
 
 .wp-block-column {
   flex: 1;
   margin: 0 1em;
+
+  @include tablet() {
+    margin: $margin-top-copy 0 $margin-bottom-copy;
+  }
+}
+
+.has-text-align-center {
+  text-align: center;
 }

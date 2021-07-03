@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import { Helmet } from 'react-helmet';
 import styles from './Layout.module.scss';
 
+import ClassName from 'models/classname';
 import useSite from 'hooks/use-site';
 import { helmetSettingsFromMetadata } from 'lib/site';
 
@@ -9,7 +10,9 @@ import Nav from 'components/Nav';
 import Main from 'components/Main';
 import Footer from 'components/Footer';
 
-const Layout = ({ children, exclude = [] }) => {
+const Layout = ({ children, exclude = [], pageClassName }) => {
+  const layoutClassName = new ClassName(styles.layoutContainer);
+
   const router = useRouter();
   const { asPath } = router;
 
@@ -24,6 +27,9 @@ const Layout = ({ children, exclude = [] }) => {
   const helmetSettings = {
     defaultTitle: metadata.title,
     titleTemplate: process.env.WORDPRESS_PLUGIN_SEO === true ? '%s' : `%s - ${metadata.title}`,
+    bodyAttributes: {
+      class: pageClassName,
+    },
     ...helmetSettingsFromMetadata(metadata, {
       setTitle: false,
       link: [
@@ -61,7 +67,7 @@ const Layout = ({ children, exclude = [] }) => {
   };
 
   return (
-    <div className={styles.layoutContainer}>
+    <div className={layoutClassName.toString()}>
       <Helmet {...helmetSettings} />
 
       {notices && notices.length > 0 && (

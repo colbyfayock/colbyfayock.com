@@ -1,0 +1,52 @@
+@import "styles/settings/__settings";
+@import "styles/util/__util";
+
+.pageNewsletter {
+}
+
+.newsletterContentSection {
+  padding-top: 0;
+
+  @include mobile() {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.newsletterContentContainer {
+  :global {
+    .wp-block-columns {
+      max-width: 50rem;
+      font-size: 0.95em;
+      margin: 4em auto 0;
+    }
+
+    .wp-block-column:first-child {
+      width: 55%;
+
+      @include mobile() {
+        width: 100%;
+      }
+    }
+
+    .wp-block-column:last-child {
+      width: 45%;
+
+      @include mobile() {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.newsletterFormSection {
+  @include mobile() {
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
+.newsletterForm {
+  display: flex;
+  justify-content: center;
+}

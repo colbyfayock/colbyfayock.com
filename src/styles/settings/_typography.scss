@@ -1,3 +1,5 @@
+@use "sass:math";
+
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap");
 
 $font-size-base: 1.2em;
@@ -33,4 +35,4 @@ $margin-top-h3: $margin-bottom-h3 * 1.5;
 $margin-top-h4: $margin-bottom-h4 * 1.5;
 $margin-top-h5: $margin-bottom-h5 * 1.5;
 $margin-top-h6: $margin-bottom-h6 * 1.5;
-$margin-top-copy: $margin-bottom-copy / 2;
+$margin-top-copy: math.div($margin-bottom-copy, 2);

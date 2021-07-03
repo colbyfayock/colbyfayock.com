@@ -1,100 +1,101 @@
 import Link from 'next/link';
+import { FaTwitter, FaYoutube } from 'react-icons/fa';
 
 import useSite from 'hooks/use-site';
-import { postPathBySlug } from 'lib/posts';
-import { categoryPathBySlug } from 'lib/categories';
+import { createTweetAction, openTweet } from 'lib/social';
+
+import SocialIcons from 'components/SocialIcons';
 
 import Section from 'components/Section';
 import Container from 'components/Container';
+import FormSignupNewsletter from 'components/FormSignupNewsletter';
 
 import styles from './Footer.module.scss';
 
 const Footer = () => {
-  const { metadata = {}, recentPosts = [], categories = [] } = useSite();
+  const { metadata = {} } = useSite();
   const { title } = metadata;
 
-  const hasRecentPosts = Array.isArray(recentPosts) && recentPosts.length > 0;
-  const hasRecentCategories = Array.isArray(categories) && categories.length > 0;
-  const hasMenu = hasRecentPosts || hasRecentCategories;
+  const twitterAction = createTweetAction({
+    message: [`Hey @colbyfayock! What's good? 😎`],
+  });
+
+  function handleOnTwitterClick(e) {
+    e.preventDefault();
+    openTweet({
+      message: twitterAction,
+    });
+  }
 
   return (
-    <footer className={styles.footer}>
-      {hasMenu && (
-        <Section className={styles.footerMenu}>
-          <Container>
-            <ul className={styles.footerMenuColumns}>
-              {hasRecentPosts && (
-                <li>
-                  <Link href="/posts/">
-                    <a className={styles.footerMenuTitle}>
-                      <strong>Recent Posts</strong>
-                    </a>
-                  </Link>
-                  <ul className={styles.footerMenuItems}>
-                    {recentPosts.map((post) => {
-                      const { id, slug, title } = post;
-                      return (
-                        <li key={id}>
-                          <Link href={postPathBySlug(slug)}>
-                            <a>{title}</a>
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </li>
-              )}
-              {hasRecentCategories && (
-                <li>
-                  <Link href="/categories/">
-                    <a className={styles.footerMenuTitle}>
-                      <strong>Categories</strong>
-                    </a>
-                  </Link>
-                  <ul className={styles.footerMenuItems}>
-                    {categories.map((category) => {
-                      const { id, slug, name } = category;
-                      return (
-                        <li key={id}>
-                          <Link href={categoryPathBySlug(slug)}>
-                            <a>{name}</a>
-                          </Link>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </li>
-              )}
+    <div className={styles.footer}>
+      <Section>
+        <Container className={styles.footerSecondary}>
+          <p className={styles.emoji}>👨‍🚀 🚀</p>
+          <p>Want more Javascript, UX, and other interesting things?</p>
+          <ul>
+            <li>
+              <a href={twitterAction} onClick={handleOnTwitterClick}>
+                <FaTwitter /> Follow & Say Hi
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/colbyfayock?sub_confirmation=1">
+                <FaYoutube /> Subscribe
+              </a>
+            </li>
+          </ul>
+        </Container>
+      </Section>
+
+      <Section>
+        <Container className={styles.footerEmailSignup}>
+          <p>Get free content and updates straight to your inbox!</p>
+          <p className={styles.emoji}>🙌 ✉️ 🙌</p>
+          <FormSignupNewsletter className={styles.footerEmailSignupForm} />
+        </Container>
+      </Section>
+
+      <footer>
+        <Section>
+          <Container className={styles.footerPrimary} role="contentinfo">
+            <SocialIcons className={styles.footerSocial} />
+
+            <ul className={styles.footerLinks}>
               <li>
-                <p className={styles.footerMenuTitle}>
-                  <strong>More</strong>
-                </p>
-                <ul className={styles.footerMenuItems}>
-                  <li>
-                    <Link href="/feed.xml">
-                      <a>RSS</a>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/sitemap.xml">
-                      <a>Sitemap</a>
-                    </Link>
-                  </li>
-                </ul>
+                <Link href="/about">
+                  <a>About</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/posts">
+                  <a>All Posts</a>
+                </Link>
+              </li>
+              <li>
+                <a href="/assets/colby-fayock-front-end-development-web-design-resume.pdf">Resume</a>
+              </li>
+              <li>
+                <Link href="/">
+                  <a>&copy; {title}</a>
+                </Link>
               </li>
             </ul>
           </Container>
         </Section>
-      )}
+      </footer>
 
-      <Section className={styles.footerLegal}>
-        <Container>
-          <p>
-            &copy; {new Date().getFullYear()} {title}
-          </p>
-        </Container>
-      </Section>
-    </footer>
+      <div hidden className="h-card sr-only">
+        <a className="p-name u-url" href="https://www.colbyfayock.com" rel="me">
+          Colby Fayock
+        </a>
+        <img className="u-photo" src="https://www.colbyfayock.com/colby-fayock-bite-world.jpg" alt="Colby Fayock" />
+        <p className="p-note">
+          A Front End Engineer and UX Designer that’s passionate about tackling challenges that can help save people’s
+          lives and make the world a better place.
+        </p>
+      </div>
+    </div>
   );
 };
 

@@ -17,6 +17,7 @@ import {
  */
 
 export function postPathBySlug(slug, { parent = 'posts' } = {}) {
+  if (!parent) return slug;
   return `/${parent}/${slug}`;
 }
 
