@@ -1,0 +1,96 @@
+$color-gray-50: #eef0f3;
+$color-gray-100: #cfd7de;
+$color-gray-200: #b1bdca;
+$color-gray-300: #93a3b5;
+$color-gray-400: #7589a0;
+$color-gray-500: #5c7086;
+$color-gray-600: #475768;
+$color-gray-700: #333e4a;
+$color-gray-800: #1e242b;
+$color-gray-900: #090b0d;
+
+$color-blue-50: #f3f8ff;
+$color-blue-100: #c0ddff;
+$color-blue-200: #8dc1ff;
+$color-blue-300: #5aa6ff;
+$color-blue-400: #278bff;
+$color-blue-500: #0070f3;
+$color-blue-600: #0059c0;
+$color-blue-700: #00418d;
+$color-blue-800: #002a5a;
+$color-blue-900: #001227;
+
+$color-red: #bc493a;
+$color-pink: #ffc6dd;
+$color-magenta: #ce65a0;
+$color-purple: #30284a;
+$color-violet: #9452b7;
+$color-indigo: #6f3d8a;
+$color-blue: #3e4270;
+$color-cyan: #2f96b5;
+$color-teal: #007079;
+$color-green: #40893f;
+$color-yellow: #ffcc4c;
+$color-amber: #e8ad3e;
+$color-orange: #d89d38;
+$color-brown: #7a4d2c;
+$color-grey: #747a80;
+
+$color-grey1: lighten($color-grey, 45);
+$color-grey2: lighten($color-grey, 30);
+$color-grey3: lighten($color-grey, 15);
+$color-grey4: $color-grey;
+$color-grey5: darken($color-grey, 15);
+$color-grey6: darken($color-grey, 30);
+$color-grey7: darken($color-grey, 45);
+
+$color-brand-purple-light: #9c5cc4;
+$color-brand-purple-medium: #692ba8;
+$color-brand-blue-light: #174aff;
+$color-brand-blue-dark: #0b0d60;
+
+$color-primary: $color-brand-purple-medium;
+$color-secondary: $color-brand-blue-dark;
+
+$color-alert: $color-orange;
+$color-alert-background: lighten($color-alert, 25);
+
+$color-warning: $color-yellow;
+$color-warning-background: lighten($color-warning, 25);
+
+$color-error: $color-red;
+$color-error-background: lighten($color-error, 25);
+
+$color-success: $color-green;
+$color-success-background: lighten($color-success, 25);
+
+$color-info: $color-blue;
+$color-info-background: lighten($color-info, 25);
+
+$color-map: ("red" $color-red) ("pink" $color-pink) ("magenta" $color-magenta) ("purple" $color-purple)
+  ("violet" $color-violet) ("indigo" $color-indigo) ("blue" $color-blue) ("cyan" $color-cyan) ("teal" $color-teal)
+  ("green" $color-green) ("yellow" $color-yellow) ("amber" $color-amber) ("orange" $color-orange) ("brown" $color-brown)
+  ("grey" $color-grey) ("grey1" $color-grey1) ("grey2" $color-grey2) ("grey3" $color-grey3) ("grey4" $color-grey4)
+  ("grey5" $color-grey5) ("grey6" $color-grey6) ("grey7" $color-grey7) ("purple-light" $color-brand-purple-light)
+  ("purple-medium" $color-brand-purple-medium) ("alert" $color-alert) ("warning" $color-warning) ("error" $color-error)
+  ("success" $color-success) ("info" $color-info);
+
+/*
+* Color Classes
+*
+* Create colors for color classes
+* (.color-blue, .background-blue, etc.)
+*/
+
+@each $color in $color-map {
+  $name: nth($color, 1);
+  $value: nth($color, 2);
+
+  .color-#{$name} {
+    color: $value;
+  }
+
+  .background-#{$name} {
+    background-color: $value;
+  }
+}

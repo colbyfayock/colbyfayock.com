@@ -1,0 +1,36 @@
+@mixin mobile() {
+  @media all and (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media all and (max-width: 960px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media all and (min-width: 641px) {
+    @content;
+  }
+}
+
+@mixin horizontalList() {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    margin: 0 0.5em;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@import "styles/settings/__settings";
+
+.metadata {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: $color-gray-900;
+  font-weight: 600;
+  font-size: 1em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  & > li {
+    margin: 0;
+
+    &:last-child {
+      margin-right: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      display: inline-block;
+      content: "//";
+      color: $color-brand-purple-light;
+      font-weight: 900;
+      margin: 0 0.6em;
+      transform: translateY(-2px);
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-primary;
+      text-decoration: underline;
+    }
+  }
+}
+
+.metadataCategories {
+  ul {
+    display: inline-block;
+    font-size: 1em;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0;
+
+    &:after {
+      content: ", ";
+      margin-right: 0.4em;
+    }
+
+    &:last-child {
+      &:after {
+        content: none;
+      }
+    }
+  }
+}

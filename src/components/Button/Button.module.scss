@@ -1,0 +1,13 @@
+@import "styles/settings/__settings";
+
+.button {
+  color: white;
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: $color-primary;
+  padding: 0.7em 1.4em;
+  border-radius: $border-radius-small;
+  border: 0;
+  cursor: pointer;
+}

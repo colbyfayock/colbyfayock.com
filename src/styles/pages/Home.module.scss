@@ -1,0 +1,165 @@
+@import "styles/settings/__settings";
+
+// HOME NEWSLETTER
+
+.homeNewsletter {
+  color: white;
+  background-color: $color-brand-blue-dark;
+  padding: 2em 0;
+  margin: 0;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-size: 0.8em;
+
+    @media all and (min-width: 600px) {
+      font-size: clamp(0.5em, 1.3vw, 1.1em);
+      justify-content: flex-start;
+    }
+
+    &:before {
+      content: "";
+      margin-left: -0.5em;
+    }
+  }
+}
+
+.homeNewsletterIcon {
+  display: none;
+  font-size: 4em;
+  margin-right: 0.5em;
+  transform: translateY(-5px);
+
+  @media all and (min-width: 600px) {
+    display: block;
+  }
+}
+
+.homeNewsletterContent {
+  text-align: center;
+
+  @media all and (min-width: 600px) {
+    text-align: left;
+    margin-right: 2.5em;
+  }
+
+  h3,
+  p {
+    color: white;
+  }
+
+  h3 {
+    margin: 0 0 0.2em;
+  }
+
+  p {
+    opacity: 0.9;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+.homeNewsletterButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.4em;
+
+  @media all and (min-width: 600px) {
+    width: auto;
+    margin-top: 0;
+  }
+
+  button {
+    font-size: 1.3em;
+    background-color: $color-brand-blue-light;
+  }
+}
+
+// HOME CONTENT
+
+.homeContentContainer {
+  display: flex;
+  padding-top: 2em;
+
+  @media all and (max-width: 600px) {
+    padding-top: 6em;
+  }
+
+  @media all and (max-width: 960px) {
+    display: block;
+  }
+}
+
+.homeContentHeader {
+  display: flex;
+  font-size: 0.7em;
+  align-items: center;
+  margin-bottom: 3em;
+
+  @media all and (min-width: 600px) {
+    font-size: 1em;
+  }
+
+  h2,
+  h3 {
+    margin: 0;
+  }
+}
+
+.headerContentHeaderIcon {
+  margin-right: 0.2em;
+}
+
+.homeContentHeaderTitle {
+  flex-grow: 1;
+  text-decoration: none;
+}
+
+.homeContentHeaderActions {
+  a {
+    display: flex;
+    align-items: center;
+    color: $color-grey5;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  svg {
+    margin-right: 0.4em;
+  }
+
+  .icon-rss {
+    transform: translateY(-1px);
+  }
+}
+
+.homeMain {
+  width: 65%;
+  padding-right: 6em;
+
+  @media all and (max-width: 960px) {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 5em;
+  }
+}
+
+.homeSidebar {
+  width: 35%;
+  font-size: 0.8em;
+
+  @media all and (max-width: 960px) {
+    width: 100%;
+  }
+}
+
+.homeSidebarSection {
+  margin-bottom: 5em;
+}

@@ -1,0 +1,72 @@
+@import "styles/settings/__settings";
+
+.masthead {
+  overflow: hidden;
+  padding: 2em 0 1em;
+
+  @media all and (min-width: 600px) {
+    padding: clamp(1em, 14vw, 12em) 0;
+    overflow: visible;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0 0 0.25em;
+
+    @media all and (min-width: 600px) {
+      font-size: clamp(2em, 6vw, 5em);
+    }
+  }
+}
+
+.mastheadContainer {
+  position: relative;
+  text-align: center;
+  font-size: 1.2em;
+
+  @media all and (min-width: 600px) {
+    font-size: 1em;
+    text-align: left;
+    padding-right: 30vw;
+  }
+}
+
+.mastheadLogo {
+  margin-left: -0.05em;
+}
+
+.mastheadSocialIcons {
+  font-size: 1em;
+
+  @media all and (min-width: 600px) {
+    font-size: clamp(1em, 3.2vw, 2.5em);
+  }
+}
+
+.mastheadCosmo {
+  width: 32em;
+  font-size: 0.4em;
+  pointer-events: none;
+  touch-action: none;
+  margin-top: 5em;
+  margin-bottom: -18em;
+
+  @media all and (min-width: 600px) {
+    position: absolute;
+    top: -7em;
+    right: -1em;
+    font-size: clamp(0.4em, 1.4vw, 1.2em);
+    margin: 0;
+  }
+}
+
+.mastheadTagline {
+  color: lighten($color-grey5, 3);
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0 0 0.4em;
+
+  @media all and (min-width: 600px) {
+    font-size: clamp(1em, 3.2vw, 2.4em);
+  }
+}

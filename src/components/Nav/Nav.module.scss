@@ -1,0 +1,183 @@
+@import "styles/settings/__settings";
+
+.nav {
+  width: 100%;
+}
+
+.navSection {
+  padding: 1em 0;
+  margin: 0;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+
+  @media (min-width: 640px) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.navName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  margin: 0.8em 0 0;
+
+  @media (min-width: 640px) {
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+
+  a {
+    color: $color-gray-500;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: solid 2px transparent;
+
+    @media (min-width: 640px) {
+      padding: 0.5em;
+      margin-left: -0.5em;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+.navLogo {
+  color: $color-gray-600;
+  font-size: 1.2em;
+}
+
+.navSearch {
+  display: flex;
+  align-items: center;
+  flex-grow: 0;
+
+  @media (min-width: 640px) {
+    margin-left: 1.5em;
+  }
+
+  &:before {
+    display: none;
+    width: 1px;
+    height: 2em;
+    content: "";
+    background: $color-gray-300;
+    margin-right: 0.5em;
+
+    @media (min-width: 640px) {
+      display: block;
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+
+    @media (min-width: 640px) {
+      justify-content: flex-end;
+      margin-right: -1rem;
+    }
+  }
+
+  input {
+    font-size: 0.8em;
+    padding: 0.5em;
+  }
+
+  button {
+    font-size: 1.2em;
+    background: none;
+    padding: 1.045em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &[disabled] {
+      svg {
+        fill: $color-gray-200;
+        transition: fill 0.5s;
+      }
+    }
+
+    svg {
+      fill: $color-gray-400;
+      transform: translateY(2px);
+    }
+
+    &:focus {
+      svg {
+        fill: $color-primary;
+      }
+    }
+  }
+}
+
+.navSearchResults {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100vw;
+  background-color: white;
+  padding: 1.5em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  border-top: solid 5px $color-primary;
+  margin-right: -1rem;
+  z-index: 999;
+
+  @media (min-width: 640px) {
+    width: 30em;
+    margin-right: 0;
+  }
+
+  [data-search-is-active="true"] & {
+    display: block;
+  }
+
+  p {
+    line-height: 1.15;
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: -0.5em 0;
+  }
+
+  a {
+    display: block;
+    color: $color-gray-800;
+    text-decoration: none;
+    padding: 0.5em;
+    margin: 0 -0.5em;
+
+    &:focus {
+      outline: 2px solid $color-blue-500;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        color: $color-primary;
+      }
+    }
+  }
+}

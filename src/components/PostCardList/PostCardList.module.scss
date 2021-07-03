@@ -1,0 +1,37 @@
+@import "styles/settings/__settings";
+
+.postCardList {
+  & > ul {
+    & > li {
+      margin-bottom: 3em;
+    }
+  }
+}
+
+.postCardListPosts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.postCardListPostCard {
+  padding: 0;
+}
+
+.postCardListMore {
+  font-size: 1.2em;
+  font-weight: $font-weight-bolder;
+  text-align: left;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  svg {
+    font-size: 0.9em;
+    margin-left: 0.3em;
+    transform: translateY(1px);
+  }
+}

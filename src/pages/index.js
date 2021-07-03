@@ -1,174 +1,124 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'gatsby';
-import { Helmet } from 'react-helmet';
+import Link from 'next/link';
 import { FaRss } from 'react-icons/fa';
 
-import { usePosts, useTalks, useProjects } from 'hooks';
+import useSite from 'hooks/use-site';
+import { getAllPosts } from 'lib/posts';
+import { getAllProjects } from 'lib/projects';
+import { getAllFeaturedFeatures } from 'lib/featured-features';
+import { WebsiteJsonLd } from 'lib/json-ld';
 
 import Layout from 'components/Layout';
+import Section from 'components/Section';
+import Container from 'components/Container';
+import PostCardList from 'components/PostCardList';
 import Masthead from 'components/Masthead';
-import ArticleList from 'components/ArticleList';
+import Button from 'components/Button';
 
+import styles from 'styles/pages/Home.module.scss';
 
-const Index = ({location, data}) => {
-
-  const [notice, updateNotice] = useState();
-
-  useEffect(() => {
-    let updatedNotice;
-
-    if ( window.location.search.includes('emailSignup=success') ) {
-      updatedNotice = 'Thanks for signing up for my newsletter! 🤗';
-    } else if (window.location.search.includes('newsletterUnsubscribe=success')) {
-      updatedNotice = 'Sorry to see you go... 😢 Successfully unsubscribed!';
-    }
-
-    if (updatedNotice) {
-      updateNotice(updatedNotice);
-      setTimeout(() => {
-        updateNotice(undefined);
-      }, 5000);
-    }
-  }, []);
-
-  const { posts, toAll: toAllPosts } = usePosts();
-  const { projects, toAll: toAllProjects } = useProjects();
-  const { talks, toAll: toAllTalks } = useTalks();
-
-  const helmet_settings = {
-    bodyAttributes: {
-      class: 'home',
-    },
-    meta: [
-      {
-        property: 'og:type',
-        content: 'profile'
-      },
-      {
-        property: 'profile:first_name',
-        content: 'Colby'
-      },
-      {
-        property: 'profile:username',
-        content: 'colbyfayock'
-      }
-    ],
-  };
+export default function Home({ posts, projects, featuredFeatures }) {
+  const { metadata = {} } = useSite();
+  const { title } = metadata;
 
   return (
-    <Layout location={location}>
-      <Helmet {...helmet_settings} />
-
-      {notice && (
-        <div className="header-notice" onClick={() => updateNotice(false)}>
-          {notice}
-        </div>
-      )}
+    <Layout exclude={['nav']}>
+      <WebsiteJsonLd siteTitle={title} />
 
       <Masthead />
 
-      <div className="home-newsletter">
-        <div className="container">
-          <Link to="/newsletter">
-            <span className="home-newsletter-icon">
-              📬
-            </span>
-            <div className="home-newsletter-content">
-              <h3>Weekly Newsletter</h3>
-              <p>
-                Fresh guides & tutorials weekly straight to your inbox!
-              </p>
-            </div>
-            <div className="home-newsletter-button">
-              <button>
-                Sign Up
-              </button>
-            </div>
+      <Section className={styles.homeNewsletter}>
+        <Container>
+          <Link href="/newsletter">
+            <a>
+              <span className={styles.homeNewsletterIcon}>📬</span>
+              <div className={styles.homeNewsletterContent}>
+                <h3>Weekly Newsletter</h3>
+                <p>Fresh guides & tutorials weekly straight to your inbox!</p>
+              </div>
+              <div className={styles.homeNewsletterButton}>
+                <Button>Sign Up</Button>
+              </div>
+            </a>
           </Link>
-        </div>
-      </div>
+        </Container>
+      </Section>
 
-      <div className="home-content container">
-
-        <div className="home-main">
-          <div className="home-content-header">
-            <Link className="home-content-header-title" to={toAllPosts}>
-              <h2>
-                <span className="header-icon">📝</span> Latest From the Blog
-              </h2>
-            </Link>
-            <div className="home-content-header-actions">
-              <a href="https://www.colbyfayock.com/rss.xml">
-                <FaRss className="icon-rss" /> RSS
-              </a>
-            </div>
-          </div>
-          <ArticleList articles={posts} count={5} toAll={toAllPosts} labelArticles="Posts" />
-        </div>
-
-        <div className="home-sidebar">
-
-          <div className="home-sidebar-section">
-            <div className="home-content-header">
-              <span className="home-content-header-title">
-                <h2>
-                  <span className="header-icon">✨</span> Featured Features
-                </h2>
-              </span>
-            </div>
-            <ArticleList articles={[
-              {
-                path: 'https://spacejelly.dev/',
-                title: 'Cosmo the Space Jellyfish Stickers',
-                category: 'Starting at $1 for a Cosmo sticker!'
-              },
-              {
-                path: 'https://cottonbureau.com/products/cosmo-the-space-jellyfish',
-                title: 'Cosmo the Space Jellyfish Tshirt',
-                category: 'Available on Cotton Bureau high quality products'
-              },
-              {
-                path: 'https://www.redbubble.com/i/t-shirt/Cosmo-the-Space-Jellyfish-by-colbyfayock/58649803.S7RYU',
-                title: 'Cosmo the Space Jellyfish on Redbubble',
-                category: 'More product options, more affordable'
-              },
-              {
-                path: '/what-i-use',
-                title: 'What I Use',
-                category: 'Audio, video, lighting, etc'
-              }
-            ]}  />
-          </div>
-
-          <div className="home-sidebar-section">
-            <div className="home-content-header">
-              <Link className="home-content-header-title" to={toAllProjects}>
-                <h2>
-                  <span className="header-icon">💼</span> Featured Projects
-                </h2>
+      <Section>
+        <Container className={styles.homeContentContainer}>
+          <div className={styles.homeMain}>
+            <div className={styles.homeContentHeader}>
+              <Link href="/posts">
+                <a className={styles.homeContentHeaderTitle}>
+                  <h2>
+                    <span className={styles.headerContentHeaderIcon}>📝</span> Latest From the Blog
+                  </h2>
+                </a>
               </Link>
+              <div className={styles.homeContentHeaderActions}>
+                <a href="https://www.colbyfayock.com/rss.xml">
+                  <FaRss /> RSS
+                </a>
+              </div>
             </div>
-            <ArticleList articles={projects} count={5} toAll={toAllProjects} labelArticles="Projects"  />
+
+            <PostCardList posts={posts} labelPlural="Posts" url="/posts" />
           </div>
 
-          <div className="home-sidebar-section">
-            <div className="home-content-header">
-              <Link className="home-content-header-title" to={toAllTalks}>
-                <h2>
-                  <span className="header-icon">📣</span> Recent Talks
-                </h2>
-              </Link>
+          <div className={styles.homeSidebar}>
+            <div className={styles.homeSidebarSection}>
+              <div className={styles.homeContentHeader}>
+                <span className={styles.homeContentHeaderTitle}>
+                  <h2>
+                    <span className={styles.headerContentHeaderIcon}>✨</span> Featured Features
+                  </h2>
+                </span>
+              </div>
+              <PostCardList
+                posts={featuredFeatures}
+                postCardOptions={{
+                  contentField: 'content',
+                  linkField: 'featureUrl',
+                }}
+              />
             </div>
-            <ArticleList articles={talks} count={3} toAll={toAllTalks} labelArticles="Talks"  />
+
+            <div className={styles.homeSidebarSection}>
+              <div className={styles.homeContentHeader}>
+                <Link href="/projects">
+                  <a className={styles.homeContentHeaderTitle}>
+                    <h2>
+                      <span className={styles.headerContentHeaderIcon}>💼</span> Featured Projects
+                    </h2>
+                  </a>
+                </Link>
+              </div>
+              <PostCardList
+                posts={projects}
+                labelPlural="Projects"
+                url="/projects"
+                postCardOptions={{
+                  contentField: 'content',
+                  linkField: 'projectUrl',
+                }}
+              />
+            </div>
           </div>
-
-        </div>
-
-      </div>
-
+        </Container>
+      </Section>
     </Layout>
   );
-
 }
 
-export default Index;
+export async function getStaticProps() {
+  const { posts } = await getAllPosts();
+  const { projects } = await getAllProjects();
+  const { featuredFeatures } = await getAllFeaturedFeatures();
+
+  return {
+    props: {
+      posts: posts.slice(0, 5),
+      projects: projects.slice(0, 5),
+      featuredFeatures,
+    },
+  };
+}

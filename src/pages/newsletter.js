@@ -1,135 +1,100 @@
-import React from 'react';
 import { Helmet } from 'react-helmet';
 
+import { getPageByUri } from 'lib/pages';
+import { WebpageJsonLd } from 'lib/json-ld';
+import { helmetSettingsFromMetadata } from 'lib/site';
+import useSite from 'hooks/use-site';
+import usePageMetadata from 'hooks/use-page-metadata';
+
 import Layout from 'components/Layout';
-import EmailSignup from 'components/EmailSignup';
+import Header from 'components/Header';
+import Content from 'components/Content';
+import Section from 'components/Section';
+import Container from 'components/Container';
+import FeaturedImage from 'components/FeaturedImage';
+import FormSignupNewsletter from 'components/FormSignupNewsletter';
 
-import newsletterSocialCard from 'assets/images/newsletter-social-card.jpg'
+import pageStyles from 'styles/pages/Page.module.scss';
+import newsletterStyles from 'styles/pages/Newsletter.module.scss';
 
-const NewsletterPage = ({location}) => {
+const NEWSLETTER_PAGE_URI = '/newsletter/';
 
-  const isDev = process.env.NODE_ENV === 'development';
-  const hostname = !isDev ? 'https://www.colbyfayock.com' : '';
-  const socialCardUrl = `${hostname}${newsletterSocialCard}`;
-
-  const helmet_settings = {
-    bodyAttributes: {
-      class: 'newsletter',
-    },
-    title: 'Newsletter - Colby Fayock',
-    meta: [
-      {
-        name: 'description',
-        content: 'Sign up to get content updates straight to your inbox 🔥',
-      },
-      {
-        property: 'og:title',
-        content: 'Newsletter - Colby Fayock',
-      },
-      {
-        property: 'og:description',
-        content: 'Sign up to get content updates straight to your inbox 🔥',
-      },
-      {
-        name: 'image',
-        content: socialCardUrl
-      },
-      {
-        property: 'og:url',
-        content: `https://www.colbyfayock.com/newsletter`
-      },
-      {
-        property: 'og:type',
-        content: 'website'
-      },
-      {
-        property: 'og:image',
-        content: socialCardUrl
-      },
-      {
-        property: 'og:image:secure_url',
-        content: socialCardUrl
-      },
-      {
-        property: 'og:image:width',
-        content: 1280
-      },
-      {
-        property: 'og:image:height',
-        content: 640
-      },
-      {
-        property: 'twitter:card',
-        content: 'summary_large_image'
-      },
-      {
-        property: 'twitter:image',
-        content: socialCardUrl
-      },
-      {
-        property: 'twitter:site',
-        content: '@colbyfayock'
-      },
-      {
-        property: 'twitter:creator',
-        content: '@colbyfayock'
-      }
-    ],
+export default function Page({ page }) {
+  const styles = {
+    ...pageStyles,
+    ...newsletterStyles,
   };
 
+  const { title, metaTitle, description, slug, content, featuredImage } = page;
+
+  const { metadata: siteMetadata = {} } = useSite();
+
+  const { metadata } = usePageMetadata({
+    metadata: {
+      ...page,
+      title: metaTitle,
+      description: description || page.og?.description || `Read more about ${title}`,
+    },
+  });
+
+  if (process.env.WORDPRESS_PLUGIN_SEO !== true) {
+    metadata.title = `${title} - ${siteMetadata.title}`;
+    metadata.og.title = metadata.title;
+    metadata.twitter.title = metadata.title;
+  }
+
+  const helmetSettings = helmetSettingsFromMetadata(metadata);
+
   return (
-    <Layout location={location}>
+    <Layout pageClassName={styles.pageNewsletter}>
+      <Helmet {...helmetSettings} />
 
-      <article className="container article-content" itemScope="" itemType="http://schema.org/BlogPosting">
+      <WebpageJsonLd
+        title={metadata.title}
+        description={metadata.description}
+        siteTitle={siteMetadata.title}
+        slug={slug}
+      />
 
-        <Helmet {...helmet_settings} />
+      <Header>
+        {featuredImage && (
+          <FeaturedImage
+            {...featuredImage}
+            src={featuredImage.sourceUrl}
+            dangerouslySetInnerHTML={featuredImage.caption}
+          />
+        )}
+        <h1 className={styles.title}>{title}</h1>
+      </Header>
 
-        <header className="article-header">
+      <Content>
+        <Section className={styles.newsletterContentSection}>
+          <Container className={styles.newsletterContentContainer}>
+            <div
+              className={styles.content}
+              dangerouslySetInnerHTML={{
+                __html: content,
+              }}
+            />
+          </Container>
+        </Section>
 
-            <h1 className="entry-title single-title flat-top" itemProp="headline">
-              Newsletter
-            </h1>
-
-        </header>
-
-        <div className="content">
-          <div className="row">
-            <p>
-              Sign up to get content updates straight to your inbox! 🔥
-            </p>
-            <div className="do">
-              <div className="do-will">
-                <h3>✅ 💁‍♂️ What I will do...</h3>
-                <ul>
-                  <li>Sometimes send you links to my content</li>
-                  <li>Like articles, <a href="https://youtube.com/colbyfayock">Youtube</a>, and <a href="https://egghead.io/instructors/colby-fayock?af=atzgap">Egghead</a></li>
-                  <li>Say nice things about the awesome stuff others are making</li>
-                  <li>Thank you too much for your support</li>
-                </ul>
-              </div>
-              <div className="do-wont">
-                <h3>🚫 🙅‍♂️ What I won't do...</h3>
-                <ul>
-                  <li>Sell or give away your info</li>
-                  <li>Spam you</li>
-                  <li>Say anything mean</li>
-                  <li>Let you down</li>
-                </ul>
-              </div>
-            </div>
-            <EmailSignup />
-            <p className="newsletter-note">
-              After signing up, you'll get an email to confirm your subscription.
-              Make sure to do this or you won't get awesome stuff!
-            </p>
-          </div>
-        </div>
-
-      </article>
-
+        <Section className={styles.newsletterFormSection}>
+          <Container>
+            <FormSignupNewsletter className={styles.newsletterForm} />
+          </Container>
+        </Section>
+      </Content>
     </Layout>
   );
-
 }
 
-export default NewsletterPage;
+export async function getStaticProps() {
+  const { page } = await getPageByUri(NEWSLETTER_PAGE_URI);
+
+  return {
+    props: {
+      page,
+    },
+  };
+}
