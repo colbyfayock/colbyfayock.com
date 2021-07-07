@@ -80,6 +80,12 @@
   to = "/what-i-use"
   status = 302
   force = true
+  
+[[redirects]]
+  from = "/updates"
+  to = "/ecommerce-jamstack"
+  status = 302
+  force = true
 
 [[redirects]]
   from = "/wpnextjs"
