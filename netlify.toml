@@ -59,19 +59,25 @@
 
 [[redirects]]
   from = "/ecomm"
-  to = "https://egghead.io/courses/create-an-ecommerce-store-with-next-js-and-stripe-checkout-562c?af=atzgap"
+  to = "/ecommerce-jamstack"
   status = 302
   force = true
   
 [[redirects]]
   from = "/ecommerce"
-  to = "https://egghead.io/courses/create-an-ecommerce-store-with-next-js-and-stripe-checkout-562c?af=atzgap"
+  to = "/ecommerce-jamstack"
   status = 302
   force = true
 
 [[redirects]]
   from = "/egghead-actions"
   to = "https://egghead.io/courses/create-a-new-github-action-to-automate-code-tasks-with-javascript-f1e9?af=atzgap"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/egghead-ecommerce"
+  to = "https://egghead.io/courses/create-an-ecommerce-store-with-next-js-and-stripe-checkout-562c?af=atzgap"
   status = 302
   force = true
 
