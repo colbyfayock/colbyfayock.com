@@ -62,6 +62,12 @@
   to = "https://egghead.io/courses/create-an-ecommerce-store-with-next-js-and-stripe-checkout-562c?af=atzgap"
   status = 302
   force = true
+  
+[[redirects]]
+  from = "/ecommerce"
+  to = "https://egghead.io/courses/create-an-ecommerce-store-with-next-js-and-stripe-checkout-562c?af=atzgap"
+  status = 302
+  force = true
 
 [[redirects]]
   from = "/egghead-actions"
