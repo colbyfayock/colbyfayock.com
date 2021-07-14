@@ -28,3 +28,9 @@ export default function Custom404() {
     </Layout>
   );
 }
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
