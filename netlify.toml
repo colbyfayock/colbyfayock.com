@@ -148,6 +148,13 @@
   to = "/nextjs-wordpress-react-virtual-conf"
   status = 302
   force = true
+  
+  
+[[redirects]]
+  from = "/reliableweb"
+  to = "/event-notes/reliable-web-summit-2021"
+  status = 302
+  force = true
 
 [[redirects]]
   from = "/simplewebconf"
