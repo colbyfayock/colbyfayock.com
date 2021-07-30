@@ -122,6 +122,12 @@
   force = true
     
 [[redirects]]
+  from = "/elgatolightstrips"
+  to = "https://amzn.to/3zSssJE"
+  status = 302
+  force = true
+    
+[[redirects]]
   from = "/floodlight"
   to = "https://amzn.to/2UYa3MM"
   status = 302
@@ -136,6 +142,12 @@
 [[redirects]]
   from = "/monopod"
   to = "https://amzn.to/2UbUyA0"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/huecolorbulbs"
+  to = "https://amzn.to/3iaVTAA"
   status = 302
   force = true
  
