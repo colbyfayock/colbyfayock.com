@@ -56,7 +56,7 @@
   to = "/ecommerce-jamstack"
   status = 302
   force = true
-  
+
 [[redirects]]
   from = "/ecommerce"
   to = "/ecommerce-jamstack"
@@ -75,12 +75,6 @@
   status = 302
   force = true
 
-[[redirects]]
-  from = "/uses"
-  to = "/what-i-use"
-  status = 302
-  force = true
-  
 [[redirects]]
   from = "/updates"
   to = "/ecommerce-jamstack"
@@ -108,31 +102,31 @@
   to = "https://amzn.to/2ThkQjZ"
   status = 302
   force = true
-  
+
 [[redirects]]
   from = "/colorbulbs"
   to = "https://amzn.to/3zU5f9W"
   status = 302
   force = true
-  
+
 [[redirects]]
   from = "/desklamps"
   to = "https://amzn.to/3ffyR9L"
   status = 302
   force = true
-    
+
 [[redirects]]
   from = "/elgatolightstrips"
   to = "https://amzn.to/3zSssJE"
   status = 302
   force = true
-    
+
 [[redirects]]
   from = "/floodlight"
   to = "https://amzn.to/2UYa3MM"
   status = 302
   force = true
-  
+
 [[redirects]]
   from = "/keylights"
   to = "https://amzn.to/2UbS5Wg"
@@ -144,19 +138,19 @@
   to = "https://amzn.to/2UbUyA0"
   status = 302
   force = true
-  
+
 [[redirects]]
   from = "/huecolorbulbs"
   to = "https://amzn.to/3iaVTAA"
   status = 302
   force = true
- 
+
 [[redirects]]
   from = "/portablecolorpanel"
   to = "https://amzn.to/3rIOXO5"
   status = 302
   force = true
- 
+
 [[redirects]]
   from = "/smartplugs"
   to = "https://amzn.to/3rIOXO5"
@@ -196,8 +190,8 @@
   to = "/nextjs-wordpress-react-virtual-conf"
   status = 302
   force = true
-  
-  
+
+
 [[redirects]]
   from = "/reliableweb"
   to = "/event-notes/reliable-web-summit-2021"
