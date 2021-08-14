@@ -1,0 +1,54 @@
+@import "styles/settings/__settings";
+@import "styles/util/__util";
+
+.pageUses {
+  :global {
+    .wp-block-columns {
+      font-size: 1em;
+    }
+
+    .wp-block-media-text {
+      width: 50%;
+      border: solid 1px $color-gray-100;
+      padding: 1.5em;
+      border-radius: 0.2em;
+      margin: 3em auto;
+
+      @include tablet() {
+        width: 100%;
+        margin: 0.9em 0 1.8em;
+      }
+
+      h3 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+      }
+
+      p {
+        margin: 0.5em 0;
+      }
+    }
+
+    // When nested inside of the columns, we want the columns to manage
+    // the width instead of the media block
+
+    .wp-block-columns {
+      .wp-block-media-text {
+        width: auto;
+
+        @include tablet() {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+.usesHeader {
+  margin-top: 0;
+}
+
+.usesHeaderContainer {
+  width: 100%;
+  max-width: none;
+}
