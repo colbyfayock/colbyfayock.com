@@ -59,6 +59,7 @@ export default function Page({ page }) {
         {featuredImage && (
           <FeaturedImage
             {...featuredImage}
+            className={styles.usesFeaturedImage}
             src={featuredImage.sourceUrl}
             dangerouslySetInnerHTML={featuredImage.caption}
           />

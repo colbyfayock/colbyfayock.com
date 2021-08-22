@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "styles/settings/__settings";
 @import "styles/util/__util";
 
@@ -46,6 +47,27 @@
 
 .usesHeader {
   margin-top: 0;
+  margin-bottom: -2.5rem;
+}
+
+.usesFeaturedImage {
+  position: relative;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: $color-primary;
+    mix-blend-mode: screen;
+  }
+
+  div {
+    padding-top: percentage(math.div(350, 960));
+  }
 }
 
 .usesHeaderContainer {

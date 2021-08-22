@@ -9,6 +9,10 @@ const FeaturedImage = ({ className, ...rest }) => {
 
   featuredImageClassName.addIf(className, className);
 
+  // temporarily remove srcset and sizes to avoid bug with incorrect sizing
+  delete rest.srcSet;
+  delete rest.sizes;
+
   return <Image className={featuredImageClassName} {...rest} />;
 };
 
