@@ -86,6 +86,13 @@
   to = "https://github.com/colbyfayock/next-wordpress-starter"
   status = 302
   force = true
+  
+
+[[redirects]]
+  from = "/what-i-use"
+  to = "/uses"
+  status = 302
+  force = true
 
 ################
 # Amazon Links #
