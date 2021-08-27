@@ -82,6 +82,12 @@
   force = true
 
 [[redirects]]
+  from = "/uppbeat"
+  to = "https://uppbeat.io?referral=colby-3bgkq"
+  status = 302
+  force = true
+
+[[redirects]]
   from = "/wpnextjs"
   to = "https://github.com/colbyfayock/next-wordpress-starter"
   status = 302
