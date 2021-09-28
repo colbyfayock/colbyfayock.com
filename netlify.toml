@@ -205,6 +205,12 @@
   force = true
   
 [[redirects]]
+  from = "/ijs"
+  to = "/event-notes/ijs-2021/"
+  status = 302
+  force = true
+  
+[[redirects]]
   from = "/jamstackconf"
   to = "/event-notes/jamstack-conf-2021/"
   status = 302
