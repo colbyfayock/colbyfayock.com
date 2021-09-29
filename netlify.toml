@@ -217,11 +217,16 @@
   force = true
 
 [[redirects]]
+  from = "/reactlondon"
+  to = "/event-notes/react-advanced-london-2021/"
+  status = 302
+  force = true
+
+[[redirects]]
   from = "/reactvirtualconf"
   to = "/nextjs-wordpress-react-virtual-conf"
   status = 302
   force = true
-
 
 [[redirects]]
   from = "/reliableweb"
