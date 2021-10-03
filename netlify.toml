@@ -223,6 +223,12 @@
   force = true
   
 [[redirects]]
+  from = "/reactdayny"
+  to = "/event-notes/react-day-ny-2021/"
+  status = 302
+  force = true
+  
+[[redirects]]
   from = "/reactlondon"
   to = "/event-notes/react-advanced-london-2021/"
   status = 302
