@@ -99,7 +99,13 @@
   to = "/uses"
   status = 302
   force = true
-
+  
+[[redirects]]
+  from = "/workshop"
+  to = "https://github.com/colbyfayock/hyper-bros-trading-workshop"
+  status = 302
+  force = true
+  
 ################
 # Amazon Links #
 ################
