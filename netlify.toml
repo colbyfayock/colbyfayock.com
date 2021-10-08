@@ -258,6 +258,12 @@
   status = 302
   force = true
 
+[[redirects]]
+  from = "/stet"
+  to = "/event-notes/stet-github-actions/"
+  status = 302
+  force = true
+
 ###############
 # Event Notes #
 ###############
