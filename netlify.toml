@@ -187,6 +187,12 @@
 ###############
 
 [[redirects]]
+  from = "/conf42"
+  to = "/event-notes/conf42-2021/"
+  status = 302
+  force = true
+  
+[[redirects]]
   from = "/decoupleddays"
   to = "/decoupled-days-scaling-nextjs-with-wordpress"
   status = 302
