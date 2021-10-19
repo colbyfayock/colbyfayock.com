@@ -187,6 +187,12 @@
 ###############
 
 [[redirects]]
+  from = "/allthingsopen"
+  to = "/event-notes/all-things-open-2021/"
+  status = 302
+  force = true
+  
+[[redirects]]
   from = "/conf42"
   to = "/event-notes/conf42-2021/"
   status = 302
