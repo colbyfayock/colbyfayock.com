@@ -102,7 +102,7 @@
   
 [[redirects]]
   from = "/workshop"
-  to = "https://github.com/colbyfayock/hyper-bros-trading-workshop"
+  to = "https://github.com/colbyfayock/hyper-bros-trading-workshop-github-universe"
   status = 302
   force = true
   
