@@ -245,6 +245,12 @@
   to = "/event-notes/react-day-ny-2021/"
   status = 302
   force = true
+    
+[[redirects]]
+  from = "/reactglobal"
+  to = "/event-notes/react-global-online-summit-2021/"
+  status = 302
+  force = true
   
 [[redirects]]
   from = "/reactlondon"
