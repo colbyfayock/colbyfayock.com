@@ -82,11 +82,30 @@
   force = true
 
 [[redirects]]
+  from = "/uppbeat"
+  to = "https://uppbeat.io?referral=colby-3bgkq"
+  status = 302
+  force = true
+
+[[redirects]]
   from = "/wpnextjs"
   to = "https://github.com/colbyfayock/next-wordpress-starter"
   status = 302
   force = true
+  
 
+[[redirects]]
+  from = "/what-i-use"
+  to = "/uses"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/workshop"
+  to = "https://github.com/colbyfayock/hyper-bros-trading-workshop-github-universe"
+  status = 302
+  force = true
+  
 ################
 # Amazon Links #
 ################
@@ -168,6 +187,18 @@
 ###############
 
 [[redirects]]
+  from = "/allthingsopen"
+  to = "/event-notes/all-things-open-2021/"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/conf42"
+  to = "/event-notes/conf42-2021/"
+  status = 302
+  force = true
+  
+[[redirects]]
   from = "/decoupleddays"
   to = "/decoupled-days-scaling-nextjs-with-wordpress"
   status = 302
@@ -178,10 +209,52 @@
   to = "/front-end-test-fest"
   status = 302
   force = true
+  
+[[redirects]]
+  from = "/graphqlconf"
+  to = "/event-notes/graphql-conf-2021/"
+  status = 302
+  force = true
 
 [[redirects]]
   from = "/hashnode-brand"
   to = "https://www.colbyfayock.com/hashnode-bootcamp-personal-brand"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/ijs"
+  to = "/event-notes/ijs-2021/"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/jamstackconf"
+  to = "/event-notes/jamstack-conf-2021/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/reactbrussels"
+  to = "/event-notes/react-brussels-2021/"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/reactdayny"
+  to = "/event-notes/react-day-ny-2021/"
+  status = 302
+  force = true
+    
+[[redirects]]
+  from = "/reactglobal"
+  to = "/event-notes/react-global-online-summit-2021/"
+  status = 302
+  force = true
+  
+[[redirects]]
+  from = "/reactlondon"
+  to = "/event-notes/react-advanced-london-2021/"
   status = 302
   force = true
 
@@ -190,7 +263,6 @@
   to = "/nextjs-wordpress-react-virtual-conf"
   status = 302
   force = true
-
 
 [[redirects]]
   from = "/reliableweb"
@@ -201,6 +273,12 @@
 [[redirects]]
   from = "/simplewebconf"
   to = "/simplewebconf-fundamentals"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/stet"
+  to = "/event-notes/stet-github-actions/"
   status = 302
   force = true
 
