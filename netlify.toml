@@ -193,6 +193,12 @@
   force = true
   
 [[redirects]]
+  from = "/automationsummit"
+  to = "/event-notes/automation-summit-2021/"
+  status = 302
+  force = true
+  
+[[redirects]]
   from = "/conf42"
   to = "/event-notes/conf42-2021/"
   status = 302
