@@ -5,6 +5,13 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+[[plugins]]
+  package = "netlify-plugin-cloudinary"
+
+  [plugins.inputs]
+    cloudName = "colbycloud"
+    deliveryType = "upload"
+
 ########
 # Misc #
 ########
@@ -92,20 +99,20 @@
   to = "https://github.com/colbyfayock/next-wordpress-starter"
   status = 302
   force = true
-  
+
 
 [[redirects]]
   from = "/what-i-use"
   to = "/uses"
   status = 302
   force = true
-  
+
 [[redirects]]
   from = "/workshop"
   to = "https://github.com/colbyfayock/hyper-bros-trading-workshop-github-universe"
   status = 302
   force = true
-  
+
 ################
 # Amazon Links #
 ################
@@ -191,19 +198,19 @@
   to = "/event-notes/all-things-open-2021/"
   status = 302
   force = true
-  
+
 [[redirects]]
   from = "/automationsummit"
   to = "/event-notes/automation-summit-2021/"
   status = 302
   force = true
-  
+
 [[redirects]]
   from = "/conf42"
   to = "/event-notes/conf42-2021/"
   status = 302
   force = true
-  
+
 [[redirects]]
   from = "/decoupleddays"
   to = "/decoupled-days-scaling-nextjs-with-wordpress"
@@ -215,7 +222,7 @@
   to = "/front-end-test-fest"
   status = 302
   force = true
-  
+
 [[redirects]]
   from = "/graphqlconf"
   to = "/event-notes/graphql-conf-2021/"
@@ -227,13 +234,13 @@
   to = "https://www.colbyfayock.com/hashnode-bootcamp-personal-brand"
   status = 302
   force = true
-  
+
 [[redirects]]
   from = "/ijs"
   to = "/event-notes/ijs-2021/"
   status = 302
   force = true
-  
+
 [[redirects]]
   from = "/jamstackconf"
   to = "/event-notes/jamstack-conf-2021/"
@@ -245,19 +252,19 @@
   to = "/event-notes/react-brussels-2021/"
   status = 302
   force = true
-  
+
 [[redirects]]
   from = "/reactdayny"
   to = "/event-notes/react-day-ny-2021/"
   status = 302
   force = true
-    
+
 [[redirects]]
   from = "/reactglobal"
   to = "/event-notes/react-global-online-summit-2021/"
   status = 302
   force = true
-  
+
 [[redirects]]
   from = "/reactlondon"
   to = "/event-notes/react-advanced-london-2021/"
