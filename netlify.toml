@@ -228,6 +228,12 @@
   to = "/event-notes/graphql-conf-2021/"
   status = 302
   force = true
+  
+[[redirects]]
+  from = "/graphqlgalaxy"
+  to = "/event-notes/graphql-galaxy-2021/"
+  status = 302
+  force = true
 
 [[redirects]]
   from = "/hashnode-brand"
