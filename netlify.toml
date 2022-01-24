@@ -301,6 +301,12 @@
   status = 302
   force = true
 
+[[redirects]]
+  from = "/thejam"
+  to = "/event-notes/thejam-dev-2022/"
+  status = 302
+  force = true
+
 ###############
 # Event Notes #
 ###############
