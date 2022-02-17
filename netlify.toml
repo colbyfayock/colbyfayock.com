@@ -100,7 +100,6 @@
   status = 302
   force = true
 
-
 [[redirects]]
   from = "/what-i-use"
   to = "/uses"
@@ -488,6 +487,12 @@
 [[redirects]]
   from = "/react-virtual-conf-2020"
   to = "/event-notes/react-virtual-conf-2020"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/siegenextjs"
+  to = "/event-notes/siege-media-next-js/"
   status = 301
   force = true
 
