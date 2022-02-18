@@ -62,7 +62,18 @@ export async function getAllEventNotes() {
  */
 
 export function mapEventNoteData(eventNote = {}) {
-  const data = { ...eventNote };
+  const data = {
+    ...eventNote,
+    ...eventNote.eventNote,
+  };
+
+  data.eventType = data.eventtype;
+  data.eventSlides = data.eventslides;
+  data.talkTitle = data.talktitle;
+
+  delete data.eventtype;
+  delete data.eventslides;
+  delete data.talktitle;
 
   return data;
 }

@@ -6,6 +6,13 @@ export const QUERY_ALL_EVENT_NOTES = gql`
       edges {
         node {
           content
+          eventNote {
+            eventslides {
+              mediaItemUrl
+            }
+            eventtype
+            talktitle
+          }
           id
           title
           slug
@@ -20,6 +27,13 @@ export const QUERY_EVENT_NOTE_BY_SLUG = gql`
     eventNote(id: $slug, idType: SLUG) {
       content
       id
+      eventNote {
+        eventslides {
+          mediaItemUrl
+        }
+        eventtype
+        talktitle
+      }
       title
       slug
     }

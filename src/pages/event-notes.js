@@ -4,7 +4,7 @@ import { getAllEventNotes } from 'lib/event-notes';
 
 import TemplateArchive from 'templates/archive';
 
-export default function Posts({ posts }) {
+export default function EventNotes({ posts }) {
   const title = 'All Event Notes';
   const label = 'Event Notes';
   const slug = 'event-notes';
