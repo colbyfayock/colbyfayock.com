@@ -93,7 +93,6 @@
   status = 302
   force = true
 
-
 [[redirects]]
   from = "/what-i-use"
   to = "/uses"
@@ -294,6 +293,12 @@
   status = 302
   force = true
 
+[[redirects]]
+  from = "/thejam"
+  to = "/event-notes/thejam-dev-2022/"
+  status = 302
+  force = true
+
 ###############
 # Event Notes #
 ###############
@@ -475,6 +480,12 @@
 [[redirects]]
   from = "/react-virtual-conf-2020"
   to = "/event-notes/react-virtual-conf-2020"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/siegenextjs"
+  to = "/event-notes/siege-media-next-js/"
   status = 301
   force = true
 
