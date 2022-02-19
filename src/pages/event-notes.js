@@ -5,8 +5,8 @@ import { getAllEventNotes } from 'lib/event-notes';
 import TemplateArchive from 'templates/archive';
 
 export default function EventNotes({ posts }) {
-  const title = 'All Event Notes';
-  const label = 'Event Notes';
+  const title = 'Event Notes';
+  const label = 'Notes';
   const slug = 'event-notes';
 
   const { metadata } = usePageMetadata({
@@ -16,7 +16,16 @@ export default function EventNotes({ posts }) {
     },
   });
 
-  return <TemplateArchive title={title} label={label} posts={posts} slug={slug} metadata={metadata} />;
+  const notes = posts
+    .filter((post) => post.eventType !== 'private')
+    .map((post) => {
+      return {
+        ...post,
+        excerpt: post.talk?.title,
+      };
+    });
+
+  return <TemplateArchive title={title} label={label} posts={notes} slug={slug} metadata={metadata} />;
 }
 
 export async function getStaticProps() {

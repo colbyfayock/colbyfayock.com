@@ -18,7 +18,9 @@ import Button from 'components/Button';
 import styles from 'styles/pages/EventNotes.module.scss';
 
 export default function EventNote({ eventNote }) {
-  const { featuredImage, content, title, eventType, eventSlides, talkTitle } = eventNote;
+  const { featuredImage, content, title, eventType, eventSlides, talk } = eventNote;
+
+  console.log('talk', talk);
 
   const { metadata } = usePageMetadata({
     metadata: {
@@ -31,11 +33,11 @@ export default function EventNote({ eventNote }) {
   const helmetSettings = helmetSettingsFromMetadata(metadata);
 
   const twitterAction = createTweetAction({
-    message: talkTitle
+    message: talk?.title
       ? [
           "Just checked out @colbyfayock's talk:",
           '',
-          talkTitle,
+          talk.title,
           '',
           'Slides and resources below 👇',
           '',
@@ -77,6 +79,13 @@ export default function EventNote({ eventNote }) {
         <Section>
           <Container className={styles.eventNotesContainer}>
             <aside className={styles.sidebar}>
+              {talk && (
+                <>
+                  <h2>Talk</h2>
+
+                  <p>{talk.title}</p>
+                </>
+              )}
               {eventSlides?.mediaItemUrl && (
                 <>
                   <h2>Slides</h2>

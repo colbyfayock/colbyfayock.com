@@ -11,7 +11,12 @@ export const QUERY_ALL_EVENT_NOTES = gql`
               mediaItemUrl
             }
             eventtype
-            talktitle
+            talk {
+              ... on Talk {
+                id
+                title
+              }
+            }
           }
           id
           title
@@ -32,7 +37,12 @@ export const QUERY_EVENT_NOTE_BY_SLUG = gql`
           mediaItemUrl
         }
         eventtype
-        talktitle
+        talk {
+          ... on Talk {
+            id
+            title
+          }
+        }
       }
       title
       slug

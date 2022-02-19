@@ -69,11 +69,10 @@ export function mapEventNoteData(eventNote = {}) {
 
   data.eventType = data.eventtype;
   data.eventSlides = data.eventslides;
-  data.talkTitle = data.talktitle;
+  data.talk = data.talk && data.talk[0];
 
   delete data.eventtype;
   delete data.eventslides;
-  delete data.talktitle;
 
   return data;
 }
