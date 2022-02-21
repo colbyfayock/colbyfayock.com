@@ -77,7 +77,7 @@
 
 [[redirects]]
   from = "/updates"
-  to = "/ecommerce-jamstack"
+  to = "/course-updates"
   status = 302
   force = true
 
