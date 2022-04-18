@@ -11,3 +11,9 @@ https://github.com/colbyfayock/next-wordpress-starter
 * [Sass](https://sass-lang.com/)
 * [Cloudinary](https://cloudinary.com/)
 * Deployed to [Netlify](https://netlify.com/)
+
+## Issues? Thoughts? Feedback?
+
+Let me know [on Twitter](https://twitter.com/colbyfayock)!
+
+https://twitter.com/colbyfayock
