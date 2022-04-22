@@ -198,6 +198,12 @@
   force = true
 
 [[redirects]]
+  from = "/cityjsbrazil"
+  to = "/event-notes/cityjs-brazil-2022/"
+  status = 302
+  force = true
+  
+[[redirects]]
   from = "/conf42"
   to = "/event-notes/conf42-2021/"
   status = 302
