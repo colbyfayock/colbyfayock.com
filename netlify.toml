@@ -348,7 +348,13 @@
 [[redirects]]
   from = "/cloudflare-tv-ecommerce"
   to = "/event-notes/cloudflare-tv-ecommerce"
-  status = 301
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/cloudflaretv"
+  to = "/event-notes/cloudflaretv-ecomm-media/"
+  status = 302
   force = true
 
 [[redirects]]
