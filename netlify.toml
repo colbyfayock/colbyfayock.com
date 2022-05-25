@@ -442,6 +442,12 @@
   force = true
 
 [[redirects]]
+  from = "/jsnation"
+  to = "/event-notes/js-nation-2022"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/jsnation-fundamentals"
   to = "/event-notes/jsnation-fundamentals"
   status = 301
