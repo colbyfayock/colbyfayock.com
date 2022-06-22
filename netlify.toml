@@ -282,6 +282,12 @@
   force = true
 
 [[redirects]]
+  from = "/reactnorway"
+  to = "/event-notes/react-norway-2022/"
+  status = 302
+  force = true
+
+[[redirects]]
   from = "/reactvirtualconf"
   to = "/nextjs-wordpress-react-virtual-conf"
   status = 302
