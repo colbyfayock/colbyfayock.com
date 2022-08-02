@@ -25,6 +25,12 @@ export async function getEventNoteBySlug(slug) {
     throw e;
   }
 
+  if (!eventNoteData?.data.eventNote) {
+    return {
+      eventNote: undefined,
+    };
+  }
+
   const eventNote = [eventNoteData?.data.eventNote].map(mapEventNoteData)[0];
 
   return {

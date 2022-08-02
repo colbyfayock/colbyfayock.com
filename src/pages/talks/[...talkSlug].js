@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { getTalkByUriSlug, getAllTalks } from 'lib/talks';
+import { getTalkByUriSlug } from 'lib/talks';
 
 import Layout from 'components/Layout';
 import Header from 'components/Header';
@@ -72,6 +72,13 @@ export default function Post({ talk }) {
 export async function getStaticProps({ params = {} } = {}) {
   const { talk } = await getTalkByUriSlug(params?.talkSlug.join('/'));
 
+  if (!talk) {
+    return {
+      props: {},
+      notFound: true,
+    };
+  }
+
   return {
     props: {
       talk,
@@ -80,18 +87,8 @@ export async function getStaticProps({ params = {} } = {}) {
 }
 
 export async function getStaticPaths() {
-  const { talks } = await getAllTalks();
-
-  const paths = talks.map(({ uriSlug }) => {
-    return {
-      params: {
-        talkSlug: uriSlug.split('/'),
-      },
-    };
-  });
-
   return {
-    paths,
-    fallback: false,
+    paths: [],
+    fallback: 'blocking',
   };
 }

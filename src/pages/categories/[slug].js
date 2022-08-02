@@ -1,4 +1,4 @@
-import { getAllCategories, getCategoryBySlug } from 'lib/categories';
+import { getCategoryBySlug } from 'lib/categories';
 import { getPostsByCategoryId } from 'lib/posts';
 import usePageMetadata from 'hooks/use-page-metadata';
 
@@ -20,6 +20,14 @@ export default function Category({ category, posts }) {
 
 export async function getStaticProps({ params = {} } = {}) {
   const { category } = await getCategoryBySlug(params?.slug);
+
+  if (!category) {
+    return {
+      props: {},
+      notFound: true,
+    };
+  }
+
   const { posts } = await getPostsByCategoryId(category.categoryId);
 
   return {
@@ -31,19 +39,8 @@ export async function getStaticProps({ params = {} } = {}) {
 }
 
 export async function getStaticPaths() {
-  const { categories } = await getAllCategories();
-
-  const paths = categories.map((category) => {
-    const { slug } = category;
-    return {
-      params: {
-        slug,
-      },
-    };
-  });
-
   return {
-    paths,
-    fallback: false,
+    paths: [],
+    fallback: 'blocking',
   };
 }

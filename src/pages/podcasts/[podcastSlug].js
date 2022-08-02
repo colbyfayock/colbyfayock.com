@@ -1,4 +1,4 @@
-import { getPodcastBySlug, getAllPodcasts } from 'lib/podcasts';
+import { getPodcastBySlug } from 'lib/podcasts';
 import Layout from 'components/Layout';
 import Header from 'components/Header';
 import Section from 'components/Section';
@@ -48,6 +48,14 @@ export default function Post({ podcast }) {
 
 export async function getStaticProps({ params = {} } = {}) {
   const { podcast } = await getPodcastBySlug(params?.podcastSlug);
+
+  if (!podcast) {
+    return {
+      props: {},
+      notFound: true,
+    };
+  }
+
   return {
     props: {
       podcast,
@@ -56,18 +64,8 @@ export async function getStaticProps({ params = {} } = {}) {
 }
 
 export async function getStaticPaths() {
-  const { podcasts } = await getAllPodcasts();
-
-  const paths = podcasts.map(({ slug }) => {
-    return {
-      params: {
-        podcastSlug: slug,
-      },
-    };
-  });
-
   return {
-    paths,
-    fallback: false,
+    paths: [],
+    fallback: 'blocking',
   };
 }

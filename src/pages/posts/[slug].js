@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Helmet } from 'react-helmet';
 
-import { getPostBySlug, getAllPosts, getRelatedPosts, postPathBySlug } from 'lib/posts';
+import { getPostBySlug, getRelatedPosts, postPathBySlug } from 'lib/posts';
 import { categoryPathBySlug } from 'lib/categories';
 import { formatDate } from 'lib/datetime';
 import { ArticleJsonLd } from 'lib/json-ld';
@@ -130,6 +130,13 @@ export default function Post({ post, socialImage, relatedPosts }) {
 export async function getStaticProps({ params = {} } = {}) {
   const { post } = await getPostBySlug(params?.slug);
 
+  if (!post) {
+    return {
+      props: {},
+      notFound: true,
+    };
+  }
+
   const socialImage = `${process.env.OG_IMAGE_DIRECTORY}/${params?.slug}.png`;
 
   const { categories, postId } = post;
@@ -152,19 +159,8 @@ export async function getStaticProps({ params = {} } = {}) {
 }
 
 export async function getStaticPaths() {
-  const { posts } = await getAllPosts();
-
-  const paths = posts.map((post) => {
-    const { slug } = post;
-    return {
-      params: {
-        slug,
-      },
-    };
-  });
-
   return {
-    paths,
-    fallback: false,
+    paths: [],
+    fallback: 'blocking',
   };
 }

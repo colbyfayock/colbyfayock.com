@@ -44,6 +44,12 @@ export async function getPostBySlug(slug) {
     throw e;
   }
 
+  if (!postData?.data.post) {
+    return {
+      post: undefined,
+    };
+  }
+
   const post = [postData?.data.post].map(mapPostData)[0];
 
   // If the SEO plugin is enabled, look up the data
@@ -292,6 +298,14 @@ export async function getRelatedPosts(category, postId, count = 5) {
 }
 
 /**
+ * sortStickyPosts
+ */
+
+export function sortStickyPosts(posts) {
+  return [...posts].sort((post) => (post.isSticky ? -1 : 1));
+}
+
+/**
  * getPostsPerPage
  */
 
@@ -331,17 +345,29 @@ export async function getPagesCount(posts, postsPerPage) {
  * getPaginatedPosts
  */
 
-export async function getPaginatedPosts(currentPage = 1) {
-  const { posts } = await getAllPosts();
+export async function getPaginatedPosts({ currentPage = 1, ...options } = {}) {
+  const { posts } = await getAllPosts(options);
   const postsPerPage = await getPostsPerPage();
   const pagesCount = await getPagesCount(posts, postsPerPage);
+
   let page = Number(currentPage);
-  if (typeof page === 'undefined' || isNaN(page) || page > pagesCount) {
+
+  if (typeof page === 'undefined' || isNaN(page)) {
     page = 1;
+  } else if (page > pagesCount) {
+    return {
+      posts: [],
+      pagination: {
+        currentPage: undefined,
+        pagesCount,
+      },
+    };
   }
+
   const offset = postsPerPage * (page - 1);
+  const sortedPosts = sortStickyPosts(posts);
   return {
-    posts: posts.slice(offset, offset + postsPerPage),
+    posts: sortedPosts.slice(offset, offset + postsPerPage),
     pagination: {
       currentPage: page,
       pagesCount,

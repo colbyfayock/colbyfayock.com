@@ -25,6 +25,12 @@ export async function getPodcastBySlug(slug) {
     throw e;
   }
 
+  if (!podcastData?.data.podcast) {
+    return {
+      podcast: undefined,
+    };
+  }
+
   const podcast = [podcastData?.data.podcast].map(mapPodcastData)[0];
 
   return {

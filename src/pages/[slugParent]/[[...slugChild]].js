@@ -120,6 +120,13 @@ export async function getStaticProps({ params = {} } = {}) {
 
   const { page } = await getPageByUri(pageUri);
 
+  if (!page) {
+    return {
+      props: {},
+      notFound: true,
+    };
+  }
+
   // In order to show the proper breadcrumbs, we need to find the entire
   // tree of pages. Rather than querying every segment, the query should
   // be cached for all pages, so we can grab that and use it to create
@@ -138,27 +145,8 @@ export async function getStaticProps({ params = {} } = {}) {
 }
 
 export async function getStaticPaths() {
-  const { pages } = await getAllPages();
-
-  // Take all the pages and create path params. The slugParent will always be
-  // the top level parent page, where the slugChild will be an array of the
-  // remaining segments to make up the path or URI
-
-  const pagesToBuild = pages.filter(({ excludeFromPathGeneration }) => excludeFromPathGeneration === 'no');
-
-  const paths = pagesToBuild.map(({ uri }) => {
-    const segments = uri.split('/').filter((seg) => seg !== '');
-
-    return {
-      params: {
-        slugParent: segments.shift(),
-        slugChild: segments,
-      },
-    };
-  });
-
   return {
-    paths,
-    fallback: false,
+    paths: [],
+    fallback: 'blocking',
   };
 }

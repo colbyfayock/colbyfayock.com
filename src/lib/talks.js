@@ -26,6 +26,12 @@ export async function getTalkByUri(uri) {
     throw e;
   }
 
+  if (!talkData?.data.talk) {
+    return {
+      talk: undefined,
+    };
+  }
+
   const talk = [talkData?.data.talk].map(mapTalkData)[0];
 
   return {

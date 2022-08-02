@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Helmet } from 'react-helmet';
 
-import { getEventNoteBySlug, getAllEventNotes } from 'lib/event-notes';
+import { getEventNoteBySlug } from 'lib/event-notes';
 import { createTweetAction, openTweet } from 'lib/social';
 import { helmetSettingsFromMetadata } from 'lib/site';
 import usePageMetadata from 'hooks/use-page-metadata';
@@ -19,8 +19,6 @@ import styles from 'styles/pages/EventNotes.module.scss';
 
 export default function EventNote({ eventNote }) {
   const { featuredImage, content, title, eventType, eventSlides, talk } = eventNote;
-
-  console.log('talk', talk);
 
   const { metadata } = usePageMetadata({
     metadata: {
@@ -144,6 +142,14 @@ export default function EventNote({ eventNote }) {
 
 export async function getStaticProps({ params = {} } = {}) {
   const { eventNote } = await getEventNoteBySlug(params?.eventNoteSlug);
+
+  if (!eventNote) {
+    return {
+      props: {},
+      notFound: true,
+    };
+  }
+
   return {
     props: {
       eventNote,
@@ -152,18 +158,8 @@ export async function getStaticProps({ params = {} } = {}) {
 }
 
 export async function getStaticPaths() {
-  const { eventNotes } = await getAllEventNotes();
-
-  const paths = eventNotes.map(({ slug }) => {
-    return {
-      params: {
-        eventNoteSlug: slug,
-      },
-    };
-  });
-
   return {
-    paths,
-    fallback: false,
+    paths: [],
+    fallback: 'blocking',
   };
 }
