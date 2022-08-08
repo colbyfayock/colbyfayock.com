@@ -466,6 +466,12 @@
   force = true
 
 [[redirects]]
+  from = "/moarserverless"
+  to = "/event-notes/moar-serverless-2022"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/mdc-github-actions"
   to = "/event-notes/mdc-github-actions"
   status = 301
