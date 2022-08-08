@@ -69,49 +69,51 @@ export async function getPostBySlug(slug) {
       throw e;
     }
 
-    const { seo = {} } = seoData?.data?.post;
+    if (seoData?.data?.post) {
+      const { seo = {} } = seoData.data.post;
 
-    post.metaTitle = seo.title;
-    post.metaDescription = seo.metaDesc;
-    post.readingTime = seo.readingTime;
+      post.metaTitle = seo.title;
+      post.metaDescription = seo.metaDesc;
+      post.readingTime = seo.readingTime;
 
-    // The SEO plugin by default includes a canonical link, but we don't want to use that
-    // because it includes the WordPress host, not the site host. We manage the canonical
-    // link along with the other metadata, but explicitly check if there's a custom one
-    // in here by looking for the API's host in the provided canonical link
+      // The SEO plugin by default includes a canonical link, but we don't want to use that
+      // because it includes the WordPress host, not the site host. We manage the canonical
+      // link along with the other metadata, but explicitly check if there's a custom one
+      // in here by looking for the API's host in the provided canonical link
 
-    if (seo.canonical && !seo.canonical.includes(apiHost)) {
-      post.canonical = seo.canonical;
+      if (seo.canonical && !seo.canonical.includes(apiHost)) {
+        post.canonical = seo.canonical;
+      }
+
+      post.og = {
+        author: seo.opengraphAuthor,
+        description: seo.opengraphDescription,
+        image: seo.opengraphImage,
+        modifiedTime: seo.opengraphModifiedTime,
+        publishedTime: seo.opengraphPublishedTime,
+        publisher: seo.opengraphPublisher,
+        title: seo.opengraphTitle,
+        type: seo.opengraphType,
+      };
+
+      post.article = {
+        author: post.og.author,
+        modifiedTime: post.og.modifiedTime,
+        publishedTime: post.og.publishedTime,
+        publisher: post.og.publisher,
+      };
+
+      post.robots = {
+        nofollow: seo.metaRobotsNofollow,
+        noindex: seo.metaRobotsNoindex,
+      };
+
+      post.twitter = {
+        description: seo.twitterDescription,
+        image: seo.twitterImage,
+        title: seo.twitterTitle,
+      };
     }
-
-    post.og = {
-      author: seo.opengraphAuthor,
-      description: seo.opengraphDescription,
-      image: seo.opengraphImage,
-      modifiedTime: seo.opengraphModifiedTime,
-      publishedTime: seo.opengraphPublishedTime,
-      publisher: seo.opengraphPublisher,
-      title: seo.opengraphTitle,
-      type: seo.opengraphType,
-    };
-
-    post.article = {
-      author: post.og.author,
-      modifiedTime: post.og.modifiedTime,
-      publishedTime: post.og.publishedTime,
-      publisher: post.og.publisher,
-    };
-
-    post.robots = {
-      nofollow: seo.metaRobotsNofollow,
-      noindex: seo.metaRobotsNoindex,
-    };
-
-    post.twitter = {
-      description: seo.twitterDescription,
-      image: seo.twitterImage,
-      title: seo.twitterTitle,
-    };
   }
 
   return {

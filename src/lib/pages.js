@@ -58,42 +58,44 @@ export async function getPageByUri(uri) {
       throw e;
     }
 
-    const { seo = {} } = seoData?.data?.page;
+    if (seoData?.data?.page) {
+      const { seo = {} } = seoData.data.page;
 
-    page.metaTitle = seo.title;
-    page.description = seo.metaDesc;
-    page.readingTime = seo.readingTime;
+      page.metaTitle = seo.title;
+      page.description = seo.metaDesc;
+      page.readingTime = seo.readingTime;
 
-    // The SEO plugin by default includes a canonical link, but we don't want to use that
-    // because it includes the WordPress host, not the site host. We manage the canonical
-    // link along with the other metadata, but explicitly check if there's a custom one
-    // in here by looking for the API's host in the provided canonical link
+      // The SEO plugin by default includes a canonical link, but we don't want to use that
+      // because it includes the WordPress host, not the site host. We manage the canonical
+      // link along with the other metadata, but explicitly check if there's a custom one
+      // in here by looking for the API's host in the provided canonical link
 
-    if (seo.canonical && !seo.canonical.includes(apiHost)) {
-      page.canonical = seo.canonical;
+      if (seo.canonical && !seo.canonical.includes(apiHost)) {
+        page.canonical = seo.canonical;
+      }
+
+      page.og = {
+        author: seo.opengraphAuthor,
+        description: seo.opengraphDescription,
+        image: seo.opengraphImage,
+        modifiedTime: seo.opengraphModifiedTime,
+        publishedTime: seo.opengraphPublishedTime,
+        publisher: seo.opengraphPublisher,
+        title: seo.opengraphTitle,
+        type: seo.opengraphType,
+      };
+
+      page.robots = {
+        nofollow: seo.metaRobotsNofollow,
+        noindex: seo.metaRobotsNoindex,
+      };
+
+      page.twitter = {
+        description: seo.twitterDescription,
+        image: seo.twitterImage,
+        title: seo.twitterTitle,
+      };
     }
-
-    page.og = {
-      author: seo.opengraphAuthor,
-      description: seo.opengraphDescription,
-      image: seo.opengraphImage,
-      modifiedTime: seo.opengraphModifiedTime,
-      publishedTime: seo.opengraphPublishedTime,
-      publisher: seo.opengraphPublisher,
-      title: seo.opengraphTitle,
-      type: seo.opengraphType,
-    };
-
-    page.robots = {
-      nofollow: seo.metaRobotsNofollow,
-      noindex: seo.metaRobotsNoindex,
-    };
-
-    page.twitter = {
-      description: seo.twitterDescription,
-      image: seo.twitterImage,
-      title: seo.twitterTitle,
-    };
   }
 
   return {

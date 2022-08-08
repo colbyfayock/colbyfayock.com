@@ -23,7 +23,7 @@ export async function getSiteMetadata() {
     throw e;
   }
 
-  const { generalSettings } = siteData?.data;
+  const { generalSettings } = siteData?.data || {};
   let { title, description, language } = generalSettings;
 
   const settings = {
@@ -58,36 +58,38 @@ export async function getSiteMetadata() {
       throw e;
     }
 
-    const { webmaster, social } = seoData?.data?.seo;
+    if (seoData?.data?.seo) {
+      const { webmaster, social } = seoData.data.seo;
 
-    if (social) {
-      settings.social = {};
+      if (social) {
+        settings.social = {};
 
-      Object.keys(social).forEach((key) => {
-        const { url } = social[key];
-        if (!url || key === '__typename') return;
-        settings.social[key] = url;
-      });
-    }
+        Object.keys(social).forEach((key) => {
+          const { url } = social[key];
+          if (!url || key === '__typename') return;
+          settings.social[key] = url;
+        });
+      }
 
-    if (webmaster) {
-      settings.webmaster = {};
+      if (webmaster) {
+        settings.webmaster = {};
 
-      Object.keys(webmaster).forEach((key) => {
-        if (!webmaster[key] || key === '__typename') return;
-        settings.webmaster[key] = webmaster[key];
-      });
-    }
+        Object.keys(webmaster).forEach((key) => {
+          if (!webmaster[key] || key === '__typename') return;
+          settings.webmaster[key] = webmaster[key];
+        });
+      }
 
-    if (social.twitter) {
-      settings.twitter = {
-        username: social.twitter.username,
-        cardType: social.twitter.cardType,
-      };
+      if (social.twitter) {
+        settings.twitter = {
+          username: social.twitter.username,
+          cardType: social.twitter.cardType,
+        };
 
-      settings.social.twitter = {
-        url: `https://twitter.com/${settings.twitter.username}`,
-      };
+        settings.social.twitter = {
+          url: `https://twitter.com/${settings.twitter.username}`,
+        };
+      }
     }
   }
 

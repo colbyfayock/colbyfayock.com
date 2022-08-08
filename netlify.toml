@@ -2,9 +2,6 @@
   command = "yarn build"
   publish = "out"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-
 ########
 # Misc #
 ########
@@ -202,7 +199,7 @@
   to = "/event-notes/cityjs-brazil-2022/"
   status = 302
   force = true
-  
+
 [[redirects]]
   from = "/conf42"
   to = "/event-notes/conf42-2021/"
