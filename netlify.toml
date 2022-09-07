@@ -209,6 +209,12 @@
   force = true
 
 [[redirects]]
+  from = "/devreach"
+  to = "/event-notes/devreach-2022/"
+  status = 302
+  force = true
+  
+[[redirects]]
   from = "/frontendtestfest"
   to = "/front-end-test-fest"
   status = 302
