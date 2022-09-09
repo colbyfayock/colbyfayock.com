@@ -255,6 +255,12 @@
   to = "/event-notes/js-day-canarias-2022/"
   status = 302
   force = true
+  
+[[redirects]]
+  from = "/jsglobalsummit"
+  to = "/event-notes/js-global-summit-2022/"
+  status = 302
+  force = true
 
 [[redirects]]
   from = "/reactbrussels"
