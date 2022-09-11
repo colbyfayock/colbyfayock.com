@@ -1,6 +1,6 @@
 const CosmoWave = ({ className }) => {
   return (
-    <svg className={className} version="1.1" viewBox="0 0 306.93 389.72" width="306.93" height="389.72">
+    <svg className={className} version="1.1" viewBox="0 0 306.93 389.72">
       <defs>
         <style
           dangerouslySetInnerHTML={{
