@@ -1,0 +1,30 @@
+@import "styles/settings/__settings";
+
+.talks {
+  ul {
+    & > li {
+      margin: 1em 0;
+    }
+
+    h3 {
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      padding-left: 1em;
+      margin: 1em 0 0 3px;
+      border-left: solid 3px $color-brand-blue-light;
+
+      li {
+        margin: 0;
+        margin-bottom: 0.5em;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

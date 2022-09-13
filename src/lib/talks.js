@@ -65,6 +65,8 @@ export async function getAllTalks() {
     throw e;
   }
 
+  console.log('talkData', talkData?.data.talks.edges);
+
   const talks = talkData?.data.talks.edges.map(({ node = {} }) => node);
 
   return {
@@ -81,13 +83,10 @@ export function mapTalkData(talk = {}) {
 
   data.uriSlug = data.uri ? removeLastTrailingSlash(data.uri.replace(`/${TALKS_ROOT_SLUG}/`, '')) : null;
 
-  if (data.parent) {
-    data.parent = { ...data.parent.node };
-  }
+  data.events = data.talk?.talk || [];
+  delete data.talk;
 
-  if (data.children) {
-    data.children = data.children.edges.map(({ node }) => node);
-  }
+  console.log('data', data.talk);
 
   return data;
 }

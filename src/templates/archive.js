@@ -17,6 +17,7 @@ import styles from 'styles/templates/Archive.module.scss';
 const DEFAULT_POST_OPTIONS = {};
 
 export default function TemplateArchive({
+  pageClassName,
   title = 'Archive',
   label = 'Posts',
   Title,
@@ -37,7 +38,7 @@ export default function TemplateArchive({
   const helmetSettings = helmetSettingsFromMetadata(metadata);
 
   return (
-    <Layout>
+    <Layout pageClassName={pageClassName}>
       <Helmet {...helmetSettings} />
 
       <WebpageJsonLd title={title} description={metadata.description} siteTitle={siteMetadata.title} slug={slug} />

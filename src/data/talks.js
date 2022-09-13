@@ -7,16 +7,18 @@ export const QUERY_ALL_TALKS = gql`
     talks(first: 100) {
       edges {
         node {
-          content
           id
-          parent {
-            node {
-              id
-            }
-          }
           slug
           title
           uri
+          talk {
+            talk {
+              ... on EventNote {
+                id
+                title
+              }
+            }
+          }
         }
       }
     }
