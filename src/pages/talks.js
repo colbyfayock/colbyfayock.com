@@ -1,6 +1,7 @@
 import usePageMetadata from 'hooks/use-page-metadata';
 
 import { getAllTalks } from 'lib/talks';
+import { sortByKey } from 'lib/util';
 
 import TemplateArchive from 'templates/archive';
 
@@ -33,16 +34,21 @@ export default function Talks({ talks }) {
 export async function getStaticProps() {
   const { talks } = await getAllTalks();
 
+  let allTalks = talks.map((talk) => {
+    const eventCount = talk.events?.length || 0;
+    return {
+      ...talk,
+      eventCount,
+      excerpt: `<p class="${styles.eventCount}">${eventCount} Events</p>`,
+    };
+  });
+
+  allTalks = sortByKey(allTalks, 'title', 'desc');
+  allTalks = sortByKey(allTalks, 'eventCount', 'desc');
+
   return {
     props: {
-      talks: talks.map((talk) => {
-        console.log('talk', talk);
-        return {
-          ...talk,
-          excerpt:
-            talk.events.length > 0 && `<ul><li>${talk.events.map(({ title }) => title).join('</li><li>')}</li></ul>`,
-        };
-      }),
+      talks: allTalks,
     },
   };
 }

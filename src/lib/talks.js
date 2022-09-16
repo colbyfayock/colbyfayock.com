@@ -65,8 +65,6 @@ export async function getAllTalks() {
     throw e;
   }
 
-  console.log('talkData', talkData?.data.talks.edges);
-
   const talks = talkData?.data.talks.edges.map(({ node = {} }) => node);
 
   return {
@@ -85,8 +83,6 @@ export function mapTalkData(talk = {}) {
 
   data.events = data.talk?.talk || [];
   delete data.talk;
-
-  console.log('data', data.talk);
 
   return data;
 }

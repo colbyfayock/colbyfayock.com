@@ -9,10 +9,14 @@ import Container from 'components/Container';
 import Content from 'components/Content';
 import FeaturedImage from 'components/FeaturedImage';
 
-import styles from 'styles/pages/Post.module.scss';
+import styles from 'styles/pages/Talk.module.scss';
 
 export default function Post({ talk }) {
-  const { featuredImage, content, title, parent, children } = talk;
+  const { featuredImage, content, title, events } = talk;
+
+  const hasEvents = Array.isArray(events) && events.length > 0;
+
+  console.log('talk', talk);
 
   return (
     <Layout>
@@ -23,13 +27,6 @@ export default function Post({ talk }) {
             src={featuredImage.sourceUrl}
             dangerouslySetInnerHTML={featuredImage.caption}
           />
-        )}
-        {parent && (
-          <p>
-            <Link href={parent.uri}>
-              <a>{parent.title}</a>
-            </Link>
-          </p>
         )}
         <h1
           className={styles.title}
@@ -48,23 +45,36 @@ export default function Post({ talk }) {
                 __html: content,
               }}
             />
+            <h2>Where I&apos;ve given this talk...</h2>
+
+            {hasEvents && (
+              <ul className={styles.events}>
+                {events.map((event) => {
+                  return (
+                    <li key={event.id} className={styles.event}>
+                      <h3 className={styles.eventTitle}>
+                        <Link href={event.uri}>
+                          <a>{event.title}</a>
+                        </Link>
+                      </h3>
+                      <Link href={event.uri}>
+                        <a>View Slides &amp; Talk Resources</a>
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+
+            {!hasEvents && (
+              <p>
+                Haven&apos;t given it yet! Want to hear it? Hit me up on Twitter or email me at{' '}
+                <a href="mailto:hello@colbyfayock.com">hello@colbyfayock.com</a>
+              </p>
+            )}
           </Container>
         </Section>
       </Content>
-
-      {children && (
-        <ul>
-          {children.map((child) => {
-            return (
-              <li key={child.id}>
-                <Link href={child.uri}>
-                  <a>{child.title}</a>
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-      )}
     </Layout>
   );
 }

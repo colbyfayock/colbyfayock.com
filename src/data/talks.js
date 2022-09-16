@@ -15,7 +15,6 @@ export const QUERY_ALL_TALKS = gql`
             talk {
               ... on EventNote {
                 id
-                title
               }
             }
           }
@@ -28,31 +27,20 @@ export const QUERY_ALL_TALKS = gql`
 export const QUERY_TALK_BY_URI = gql`
   query TalkByUri($uri: ID!) {
     talk(id: $uri, idType: URI) {
-      children {
-        edges {
-          node {
-            ... on Talk {
-              id
-              title
-              uri
-            }
-          }
-        }
-      }
       content
       id
-      parent {
-        node {
-          ... on Talk {
+      slug
+      title
+      uri
+      talk {
+        talk {
+          ... on EventNote {
             id
             title
             uri
           }
         }
       }
-      slug
-      title
-      uri
     }
   }
 `;

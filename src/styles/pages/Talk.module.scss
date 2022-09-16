@@ -1,0 +1,24 @@
+@import "styles/settings/__settings";
+
+@import "Post.module";
+
+.events {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  padding-left: 2em;
+  margin: 1em 0 0 1em;
+  border-left: solid 3px $color-brand-blue-light;
+}
+
+.event {
+  margin-bottom: 3em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.eventTitle {
+  font-size: 1.4em;
+}
