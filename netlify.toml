@@ -233,6 +233,12 @@
   force = true
 
 [[redirects]]
+  from = "/hackmamba"
+  to = "/event-notes/hackmamba-hackathon-2022"
+  status = 302
+  force = true
+
+[[redirects]]
   from = "/hashnode-brand"
   to = "https://www.colbyfayock.com/hashnode-bootcamp-personal-brand"
   status = 302
