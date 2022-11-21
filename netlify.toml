@@ -180,7 +180,7 @@
 
 [[redirects]]
   from = "/allthingsopen"
-  to = "/event-notes/all-things-open-2021/"
+  to = "/event-notes/all-things-open-2022/"
   status = 302
   force = true
 
@@ -233,6 +233,12 @@
   force = true
 
 [[redirects]]
+  from = "/hackmamba"
+  to = "/event-notes/hackmamba-hackathon-2022"
+  status = 302
+  force = true
+
+[[redirects]]
   from = "/hashnode-brand"
   to = "https://www.colbyfayock.com/hashnode-bootcamp-personal-brand"
   status = 302
@@ -276,7 +282,7 @@
 
 [[redirects]]
   from = "/reactglobal"
-  to = "/event-notes/react-global-online-summit-2021/"
+  to = "/event-notes/react-global-online-summit-2022/"
   status = 302
   force = true
 
@@ -313,6 +319,12 @@
 [[redirects]]
   from = "/stet"
   to = "/event-notes/stet-github-actions/"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/techbash"
+  to = "/event-notes/techbash-2022/"
   status = 302
   force = true
 
