@@ -203,6 +203,12 @@
   force = true
 
 [[redirects]]
+  from = "/codemash"
+  to = "/event-notes/codemash-2023/"
+  status = 302
+  force = true
+  
+[[redirects]]
   from = "/decoupleddays"
   to = "/decoupled-days-scaling-nextjs-with-wordpress"
   status = 302
