@@ -305,6 +305,12 @@
   force = true
 
 [[redirects]]
+  from = "/reactsummit"
+  to = "/event-notes/react-global-summit-2023/"
+  status = 302
+  force = true
+
+[[redirects]]
   from = "/reactvirtualconf"
   to = "/nextjs-wordpress-react-virtual-conf"
   status = 302
