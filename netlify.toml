@@ -322,13 +322,6 @@
   status = 302
   force = true
 
-  
-[[redirects]]
-  from = "/render"
-  to = "/event-notes/renderatl-2023"
-  status = 302
-  force = true
-
 [[redirects]]
   from = "/simplewebconf"
   to = "/simplewebconf-fundamentals"
