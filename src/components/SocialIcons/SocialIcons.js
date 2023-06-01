@@ -1,4 +1,4 @@
-import { FaTwitter, FaGithub, FaInstagram, FaYoutube, FaTwitch, FaMastodon } from 'react-icons/fa';
+import { FaTwitter, FaGithub, FaInstagram, FaYoutube, FaTwitch } from 'react-icons/fa';
 
 import styles from './SocialIcons.module.scss';
 
@@ -32,12 +32,6 @@ const socialLinks = [
     title: 'Instagram',
     url: 'https://www.instagram.com/colbyfayock/',
     Icon: FaInstagram,
-  },
-  {
-    id: 'mastodon',
-    title: 'Mastodon',
-    url: 'https://hachyderm.io/@colbyfayock',
-    Icon: FaMastodon,
   },
 ];
 
