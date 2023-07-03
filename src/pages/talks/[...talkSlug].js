@@ -53,13 +53,9 @@ export default function Post({ talk }) {
                   return (
                     <li key={event.id} className={styles.event}>
                       <h3 className={styles.eventTitle}>
-                        <Link href={event.uri}>
-                          <a>{event.title}</a>
-                        </Link>
+                        <Link href={event.uri}>{event.title}</Link>
                       </h3>
-                      <Link href={event.uri}>
-                        <a>View Slides &amp; Talk Resources</a>
-                      </Link>
+                      <Link href={event.uri}>View Slides &amp; Talk Resources</Link>
                     </li>
                   );
                 })}

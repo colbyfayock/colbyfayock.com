@@ -117,9 +117,7 @@ export default function EventNote({ eventNote }) {
                   <a href="https://www.twitch.tv/colbyfayock">📹 Follow me on Twitch</a>
                 </li>
                 <li>
-                  <Link href="/newsletter">
-                    <a>✉️ Get updates with my Newsletter</a>
-                  </Link>
+                  <Link href="/newsletter">✉️ Get updates with my Newsletter</Link>
                 </li>
               </ul>
             </aside>

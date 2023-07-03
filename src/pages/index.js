@@ -29,16 +29,14 @@ export default function Home({ posts, projects, featuredFeatures }) {
       <Section className={styles.homeNewsletter}>
         <Container>
           <Link href="/newsletter">
-            <a>
-              <span className={styles.homeNewsletterIcon}>📬</span>
-              <div className={styles.homeNewsletterContent}>
-                <h3>Weekly Newsletter</h3>
-                <p>Fresh guides & tutorials weekly straight to your inbox!</p>
-              </div>
-              <div className={styles.homeNewsletterButton}>
-                <Button>Sign Up</Button>
-              </div>
-            </a>
+            <span className={styles.homeNewsletterIcon}>📬</span>
+            <div className={styles.homeNewsletterContent}>
+              <h3>Weekly Newsletter</h3>
+              <p>Fresh guides & tutorials weekly straight to your inbox!</p>
+            </div>
+            <div className={styles.homeNewsletterButton}>
+              <Button>Sign Up</Button>
+            </div>
           </Link>
         </Container>
       </Section>
@@ -47,12 +45,10 @@ export default function Home({ posts, projects, featuredFeatures }) {
         <Container className={styles.homeContentContainer}>
           <div className={styles.homeMain}>
             <div className={styles.homeContentHeader}>
-              <Link href="/posts">
-                <a className={styles.homeContentHeaderTitle}>
-                  <h2>
-                    <span className={styles.headerContentHeaderIcon}>📝</span> Latest From the Blog
-                  </h2>
-                </a>
+              <Link href="/posts" className={styles.homeContentHeaderTitle}>
+                <h2>
+                  <span className={styles.headerContentHeaderIcon}>📝</span> Latest From the Blog
+                </h2>
               </Link>
               <div className={styles.homeContentHeaderActions}>
                 <a href="https://www.colbyfayock.com/rss.xml">
@@ -84,12 +80,10 @@ export default function Home({ posts, projects, featuredFeatures }) {
 
             <div className={styles.homeSidebarSection}>
               <div className={styles.homeContentHeader}>
-                <Link href="/projects">
-                  <a className={styles.homeContentHeaderTitle}>
-                    <h2>
-                      <span className={styles.headerContentHeaderIcon}>💼</span> Featured Projects
-                    </h2>
-                  </a>
+                <Link href="/projects" className={styles.homeContentHeaderTitle}>
+                  <h2>
+                    <span className={styles.headerContentHeaderIcon}>💼</span> Featured Projects
+                  </h2>
                 </Link>
               </div>
               <PostCardList

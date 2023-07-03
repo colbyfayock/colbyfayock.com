@@ -19,9 +19,7 @@ const Metadata = ({ className, date, categories }) => {
             {categories.map((category) => {
               return (
                 <li key={category.slug}>
-                  <Link href={categoryPathBySlug(category.slug)}>
-                    <a>{category.name}</a>
-                  </Link>
+                  <Link href={categoryPathBySlug(category.slug)}>{category.name}</Link>
                 </li>
               );
             })}
@@ -30,7 +28,7 @@ const Metadata = ({ className, date, categories }) => {
       )}
       {date && (
         <li>
-          <time pubdate="pubdate" dateTime={date}>
+          <time itemProp="datePublished" dateTime={date}>
             {formatDate(date)}
           </time>
         </li>

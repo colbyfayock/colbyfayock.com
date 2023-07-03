@@ -174,9 +174,7 @@ const Nav = () => {
         <Container className={styles.navContainer}>
           <p className={styles.navName}>
             <Link href="/">
-              <a>
-                <Logo className={styles.navLogo} />
-              </a>
+              <Logo className={styles.navLogo} />
             </Link>
           </p>
 
@@ -207,7 +205,7 @@ const Nav = () => {
                         return (
                           <li key={slug}>
                             <Link tabIndex={index} href={postPathBySlug(slug)}>
-                              <a>{title}</a>
+                              {title}
                             </Link>
                           </li>
                         );
