@@ -31,6 +31,7 @@ export const QUERY_ALL_PAGES = gql`
           }
           id
           menuOrder
+          modified
           page {
             excludeFromPathGeneration
           }
@@ -82,6 +83,7 @@ export const QUERY_PAGE_BY_URI = gql`
       }
       id
       menuOrder
+      modified
       parent {
         node {
           id
