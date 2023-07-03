@@ -63,22 +63,16 @@ const Footer = () => {
 
             <ul className={styles.footerLinks}>
               <li>
-                <Link href="/about">
-                  <a>About</a>
-                </Link>
+                <Link href="/about">About</Link>
               </li>
               <li>
-                <Link href="/posts">
-                  <a>All Posts</a>
-                </Link>
+                <Link href="/posts">All Posts</Link>
               </li>
               <li>
                 <a href="/assets/colby-fayock-front-end-development-web-design-resume.pdf">Resume</a>
               </li>
               <li>
-                <Link href="/">
-                  <a>&copy; {title}</a>
-                </Link>
+                <Link href="/">&copy; {title}</Link>
               </li>
             </ul>
           </Container>

@@ -102,10 +102,7 @@ export default function Post({ post, socialImage, relatedPosts }) {
             <div className={styles.relatedPosts}>
               {relatedPostsTitle.name ? (
                 <span>
-                  More from{' '}
-                  <Link href={relatedPostsTitle.link}>
-                    <a>{relatedPostsTitle.name}</a>
-                  </Link>
+                  More from <Link href={relatedPostsTitle.link}>{relatedPostsTitle.name}</Link>
                 </span>
               ) : (
                 <span>More Posts</span>
@@ -113,9 +110,7 @@ export default function Post({ post, socialImage, relatedPosts }) {
               <ul>
                 {relatedPostsList.map((post) => (
                   <li key={post.title}>
-                    <Link href={postPathBySlug(post.slug)}>
-                      <a>{post.title}</a>
-                    </Link>
+                    <Link href={postPathBySlug(post.slug)}>{post.title}</Link>
                   </li>
                 ))}
               </ul>

@@ -31,14 +31,12 @@ const PostCard = ({ className, post, parentSlug, contentField = 'excerpt', linkF
   return (
     <div className={postCardClassName}>
       <Link href={link}>
-        <a>
-          <h3
-            className={styles.postCardTitle}
-            dangerouslySetInnerHTML={{
-              __html: title,
-            }}
-          />
-        </a>
+        <h3
+          className={styles.postCardTitle}
+          dangerouslySetInnerHTML={{
+            __html: title,
+          }}
+        />
       </Link>
 
       {hasMetadata && <Metadata className={styles.postCardMetadata} {...metadata} />}

@@ -27,9 +27,7 @@ const PostCardList = ({ className, posts, labelPlural = 'Posts', url, postCardOp
       {url && (
         <p className={styles.postCardListMore}>
           <Link href={url}>
-            <a>
-              View All {labelPlural} <FaChevronRight />
-            </a>
+            View All {labelPlural} <FaChevronRight />
           </Link>
         </p>
       )}
