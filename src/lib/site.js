@@ -30,6 +30,7 @@ export async function getSiteMetadata() {
     title,
     siteTitle: title,
     description,
+    url: process.env.WORDPRESS_SITE_URL,
   };
 
   // It looks like the value of `language` when US English is set

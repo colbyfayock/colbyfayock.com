@@ -1,7 +1,5 @@
-const indexSearch = require('./plugins/search-index');
-const feed = require('./plugins/feed');
-const sitemap = require('./plugins/sitemap');
 const socialImages = require('./plugins/socialImages');
+const pkg = require('./package.json');
 
 const config = {
   // By default, Next.js removes the trailing slash. One reason this would be good
@@ -18,6 +16,7 @@ const config = {
     WORDPRESS_GRAPHQL_ENDPOINT: process.env.WORDPRESS_GRAPHQL_ENDPOINT,
     WORDPRESS_MENU_LOCATION_NAVIGATION: 'PRIMARY',
     WORDPRESS_PLUGIN_SEO: parseEnvValue(process.env.WORDPRESS_PLUGIN_SEO, false),
+    WORDPRESS_SITE_URL: pkg.homepage,
 
     // The image directory for open graph images will be saved at the location above
     // with `public` prepended. By default, images will be saved at /public/images/og
@@ -28,7 +27,7 @@ const config = {
 };
 
 module.exports = () => {
-  const plugins = [indexSearch, feed, sitemap, socialImages];
+  const plugins = [socialImages];
   return plugins.reduce((acc, plugin) => plugin(acc), config);
 };
 

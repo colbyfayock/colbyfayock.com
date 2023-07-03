@@ -1,10 +1,13 @@
 import { getApolloClient } from 'lib/apollo-client';
 
-import parameterize from 'parameterize';
-
 import { QUERY_ALL_USERS, QUERY_ALL_USERS_SEO } from 'data/users';
 
 // const ROLES_AUTHOR = ['author', 'administrator'];
+
+function parameterize(value) {
+  if (typeof value !== 'string') return value;
+  return value.replace(' ', '-').toLowerCase();
+}
 
 /**
  * postPathBySlug
