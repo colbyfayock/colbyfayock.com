@@ -33,6 +33,7 @@
     "he": "^1.2.0",
     "loader-utils": "^3.2.1",
     "next": "13.4.7",
+    "next-plausible": "^3.8.0",
     "path": "^0.12.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",

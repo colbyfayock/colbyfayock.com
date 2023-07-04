@@ -2284,6 +2284,11 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
+next-plausible@^3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/next-plausible/-/next-plausible-3.8.0.tgz#721ae710f68b12d41fefc0c00ade57e06356e533"
+  integrity sha512-fOSI5dRwQkDcARAPqwCM2nqYf2bCP5ITUrX/jj2owkggi7LHAaKku4k/6CoKHAygs7EumYiGOuPt+qaTxxo+YA==
+
 next@13.4.7:
   version "13.4.7"
   resolved "https://registry.yarnpkg.com/next/-/next-13.4.7.tgz#2ab20e6fada2e25cb81bd17f68956705ffd9824e"

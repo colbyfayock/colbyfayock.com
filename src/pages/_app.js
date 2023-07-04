@@ -1,4 +1,7 @@
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import NextApp from 'next/app';
+import PlausibleProvider from 'next-plausible';
 
 import { SiteContext, useSiteContext } from 'hooks/use-site';
 import { SearchProvider } from 'hooks/use-search';
@@ -8,10 +11,13 @@ import { getRecentPosts } from 'lib/posts';
 import { getTopLevelPages } from 'lib/pages';
 import { getCategories } from 'lib/categories';
 import { getAllMenus, createMenuFromPages, MENU_LOCATION_NAVIGATION_DEFAULT } from 'lib/menus';
+import { pageview } from 'lib/gtag';
 
 import 'styles/globals.scss';
 
 function App({ Component, pageProps = {}, metadata, recentPosts, categories, menus }) {
+  const { events } = useRouter();
+
   const site = useSiteContext({
     metadata,
     recentPosts,
@@ -19,12 +25,21 @@ function App({ Component, pageProps = {}, metadata, recentPosts, categories, men
     menus,
   });
 
+  useEffect(() => {
+    events.on('routeChangeComplete', pageview);
+    return () => {
+      events.off('routeChangeComplete', pageview);
+    };
+  }, [events]);
+
   return (
-    <SiteContext.Provider value={site}>
-      <SearchProvider>
-        <Component {...pageProps} />
-      </SearchProvider>
-    </SiteContext.Provider>
+    <PlausibleProvider domain="colbyfayock.com" trackOutboundLinks={true}>
+      <SiteContext.Provider value={site}>
+        <SearchProvider>
+          <Component {...pageProps} />
+        </SearchProvider>
+      </SiteContext.Provider>
+    </PlausibleProvider>
   );
 }
 
