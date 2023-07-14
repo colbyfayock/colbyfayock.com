@@ -17,7 +17,7 @@ import FormConvertkit from 'components/FormConvertkit';
 import pageStyles from 'styles/pages/Page.module.scss';
 import newsletterStyles from 'styles/pages/Newsletter.module.scss';
 
-const PAGE_URI = '/course-updates/';
+const PAGE_URI = '/course/';
 
 export default function Page({ page }) {
   const styles = {
