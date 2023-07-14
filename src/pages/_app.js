@@ -7,21 +7,21 @@ import { SiteContext, useSiteContext } from 'hooks/use-site';
 import { SearchProvider } from 'hooks/use-search';
 
 import { getSiteMetadata } from 'lib/site';
-import { getRecentPosts } from 'lib/posts';
+// import { getRecentPosts } from 'lib/posts';
 import { getTopLevelPages } from 'lib/pages';
-import { getCategories } from 'lib/categories';
+// import { getCategories } from 'lib/categories';
 import { getAllMenus, createMenuFromPages, MENU_LOCATION_NAVIGATION_DEFAULT } from 'lib/menus';
 import { pageview } from 'lib/gtag';
 
 import 'styles/globals.scss';
 
-function App({ Component, pageProps = {}, metadata, recentPosts, categories, menus }) {
+function App({ Component, pageProps = {}, metadata, menus }) {
   const { events } = useRouter();
 
   const site = useSiteContext({
     metadata,
-    recentPosts,
-    categories,
+    // recentPosts,
+    // categories,
     menus,
   });
 
@@ -46,13 +46,13 @@ function App({ Component, pageProps = {}, metadata, recentPosts, categories, men
 App.getInitialProps = async function (appContext) {
   const appProps = await NextApp.getInitialProps(appContext);
 
-  const { posts: recentPosts } = await getRecentPosts({
-    count: 5,
-  });
+  // const { posts: recentPosts } = await getRecentPosts({
+  //   count: 5,
+  // });
 
-  const { categories } = await getCategories({
-    count: 5,
-  });
+  // const { categories } = await getCategories({
+  //   count: 5,
+  // });
 
   const { menus } = await getAllMenus();
 
@@ -66,8 +66,8 @@ App.getInitialProps = async function (appContext) {
   return {
     ...appProps,
     metadata: await getSiteMetadata(),
-    recentPosts,
-    categories,
+    // recentPosts,
+    // categories,
     menus,
   };
 };
