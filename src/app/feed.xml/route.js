@@ -9,8 +9,6 @@ export async function GET() {
   const metadata = await getSiteMetadata();
   const { posts } = await getAllPosts({ queryIncludes: 'all' });
 
-  console.log('metadata', metadata);
-
   const feed = new RSS({
     title: metadata.title || '',
     description: metadata.description,

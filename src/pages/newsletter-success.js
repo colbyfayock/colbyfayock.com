@@ -41,3 +41,9 @@ export default function Page() {
     </Layout>
   );
 }
+
+export async function getStaticProps() {
+  return {
+    props: {},
+  };
+}
