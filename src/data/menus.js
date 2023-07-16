@@ -1,27 +1,25 @@
-import { gql } from '@apollo/client';
-
-export const QUERY_ALL_MENUS = gql`
+export const QUERY_ALL_MENUS = `
   {
     menus {
       edges {
         node {
-          id
-          menuId
+          id,
+          menuId,
           menuItems {
             edges {
               node {
-                cssClasses
-                id
-                parentId
-                label
-                title
-                target
+                cssClasses,
+                id,
+                parentId,
+                label,
+                title,
+                target,
                 path
               }
             }
-          }
-          name
-          slug
+          },
+          name,
+          slug,
           locations
         }
       }

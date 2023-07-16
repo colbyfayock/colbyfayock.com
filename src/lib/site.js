@@ -1,5 +1,4 @@
-import { getApolloClient } from 'lib/apollo-client';
-import { requestCachedData } from 'lib/request';
+import { gql } from 'lib/request';
 
 import { decodeHtmlEntities, removeExtraSpaces } from 'lib/util';
 
@@ -10,18 +9,14 @@ import { QUERY_SITE_DATA, QUERY_SEO_DATA } from 'data/site';
  */
 
 export async function getSiteMetadata() {
-  const apolloClient = getApolloClient();
-
   let siteData;
   let seoData;
 
   try {
-    siteData = await requestCachedData(
-      apolloClient.query({
-        query: QUERY_SITE_DATA,
-      }),
-      'getSiteMetadata'
-    );
+    siteData = await gql({
+      query: QUERY_SITE_DATA,
+      method: 'GET',
+    });
   } catch (e) {
     console.log(`[site][getSiteMetadata] Failed to query site data: ${e.message}`);
     throw e;
@@ -54,12 +49,10 @@ export async function getSiteMetadata() {
 
   if (process.env.WORDPRESS_PLUGIN_SEO === true) {
     try {
-      seoData = await requestCachedData(
-        apolloClient.query({
-          query: QUERY_SEO_DATA,
-        }),
-        'getSiteMetadataSeo'
-      );
+      siteData = await gql({
+        query: QUERY_SEO_DATA,
+        method: 'GET',
+      });
     } catch (e) {
       console.log(`[site][getSiteMetadata] Failed to query SEO plugin: ${e.message}`);
       console.log('Is the SEO Plugin installed? If not, disable WORDPRESS_PLUGIN_SEO in next.config.js.');

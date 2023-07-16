@@ -1,55 +1,53 @@
-import { gql } from '@apollo/client';
-
-export const QUERY_SITE_DATA = gql`
+export const QUERY_SITE_DATA = `
   {
     generalSettings {
-      description
-      language
+      description,
+      language,
       title
     }
   }
 `;
 
-export const QUERY_SEO_DATA = gql`
+export const QUERY_SEO_DATA = `
   {
     seo {
       webmaster {
-        yandexVerify
-        msVerify
-        googleVerify
+        yandexVerify,
+        msVerify,
+        googleVerify,
         baiduVerify
-      }
+      },
       social {
         youTube {
           url
-        }
+        },
         wikipedia {
           url
-        }
+        },
         twitter {
-          username
+          username,
           cardType
-        }
+        },
         pinterest {
-          metaTag
+          metaTag,
           url
-        }
+        },
         mySpace {
           url
-        }
+        },
         linkedIn {
           url
-        }
+        },
         instagram {
           url
-        }
+        },
         facebook {
-          url
+          url,
           defaultImage {
-            altText
-            sourceUrl
+            altText,
+            sourceUrl,
             mediaDetails {
-              height
+              height,
               width
             }
           }
