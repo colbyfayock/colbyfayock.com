@@ -1,4 +1,4 @@
-const socialImages = require('./plugins/socialImages');
+// const socialImages = require('./plugins/socialImages');
 const pkg = require('./package.json');
 
 const config = {
@@ -27,7 +27,7 @@ const config = {
 };
 
 module.exports = () => {
-  const plugins = [socialImages];
+  const plugins = [];
   return plugins.reduce((acc, plugin) => plugin(acc), config);
 };
 
