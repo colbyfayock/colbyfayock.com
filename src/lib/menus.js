@@ -1,4 +1,5 @@
 import { getApolloClient } from 'lib/apollo-client';
+import { requestCachedData } from 'lib/request';
 
 import { QUERY_ALL_MENUS } from 'data/menus';
 
@@ -11,9 +12,12 @@ export const MENU_LOCATION_NAVIGATION_DEFAULT = 'DEFAULT_NAVIGATION';
 export async function getAllMenus() {
   const apolloClient = getApolloClient();
 
-  const data = await apolloClient.query({
-    query: QUERY_ALL_MENUS,
-  });
+  const data = await requestCachedData(
+    apolloClient.query({
+      query: QUERY_ALL_MENUS,
+    }),
+    'getAllMenus'
+  );
 
   const menus = data?.data.menus.edges.map(mapMenuData);
 
