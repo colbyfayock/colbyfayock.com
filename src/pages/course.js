@@ -72,6 +72,10 @@ export default function Page({ page }) {
           <Container className={styles.newsletterContentContainer}>
             <div
               className={styles.content}
+              style={{
+                maxWidth: '50em',
+                margin: '0 auto',
+              }}
               dangerouslySetInnerHTML={{
                 __html: content,
               }}
@@ -79,7 +83,7 @@ export default function Page({ page }) {
           </Container>
         </Section>
 
-        <Section className={styles.newsletterFormSection}>
+        <Section className={`${styles.newsletterFormSection} ${styles.courseFormSection}`}>
           <Container>
             <FormConvertkit className={styles.newsletterForm} formId="5373735" />
           </Container>
