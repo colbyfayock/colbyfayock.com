@@ -23,6 +23,7 @@ export function _createApolloClient() {
   return new ApolloClient({
     link: new HttpLink({
       uri: removeLastTrailingSlash(process.env.WORDPRESS_GRAPHQL_ENDPOINT),
+      useGETForQueries: true,
     }),
     cache: new InMemoryCache(),
   });
