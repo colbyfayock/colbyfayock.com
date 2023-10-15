@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Helmet } from 'react-helmet';
 import { FaRss } from 'react-icons/fa';
 
 import useSite from 'hooks/use-site';
@@ -23,6 +24,15 @@ export default function Home({ posts, projects, featuredFeatures }) {
   return (
     <Layout exclude={['nav']}>
       <WebsiteJsonLd siteTitle={title} />
+
+      <Helmet
+        link={[
+          {
+            rel: 'canonical',
+            href: metadata.url,
+          },
+        ]}
+      />
 
       <Masthead />
 
