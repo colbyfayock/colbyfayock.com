@@ -10,21 +10,21 @@ export default async function sitemap() {
   const pages = allPages.map(({ modified, slug }) => {
     return {
       url: `${metadata.url}${pagePathBySlug(slug)}`,
-      lastModified: modified,
+      lastModified: new Date(modified).toISOString(),
     };
   });
 
   const posts = allPosts.map(({ modified, slug }) => {
     return {
       url: `${metadata.url}${postPathBySlug(slug)}`,
-      lastModified: modified,
+      lastModified: new Date(modified).toISOString(),
     };
   });
 
   return [
     {
       url: metadata.url,
-      lastModified: new Date(),
+      lastModified: new Date().toISOString(),
     },
     ...pages,
     ...posts,
