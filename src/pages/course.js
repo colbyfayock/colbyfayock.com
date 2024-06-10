@@ -85,7 +85,7 @@ export default function Page({ page }) {
 
         <Section className={`${styles.newsletterFormSection} ${styles.courseFormSection}`}>
           <Container>
-            <FormConvertkit className={styles.newsletterForm} formId="5373735" />
+            <FormConvertkit className={styles.newsletterForm} formId="6688433" />
           </Container>
         </Section>
       </Content>
