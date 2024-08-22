@@ -37,6 +37,7 @@ export const QUERY_EVENT_NOTE_BY_SLUG = gql`
           mediaItemUrl
         }
         eventtype
+        mediaembed
         talk {
           ... on Talk {
             id

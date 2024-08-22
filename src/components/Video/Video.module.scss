@@ -1,0 +1,75 @@
+@import "styles/settings/__settings";
+@import "styles/util/__util";
+
+.video {
+  margin-left: auto;
+  margin-right: auto;
+
+  figcaption {
+    margin-top: 1em;
+  }
+}
+
+.videoContainer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.2em;
+  overflow: hidden;
+  border: solid 1px lighten($color-brand-purple-medium, 5);
+
+  iframe,
+  .videoPlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+.videoPlayButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.videoPlayAction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
+  width: 2.4em;
+  height: 2.4em;
+  font-size: 5vw;
+  background: rgba($color-gray-800, 0.9);
+  border: 0;
+  border-radius: 100%;
+  margin: auto;
+
+  @include mobile() {
+    font-size: 5vw;
+  }
+
+  @include tablet() {
+    font-size: 4vw;
+  }
+
+  @include desktop() {
+    font-size: 2em;
+  }
+
+  svg {
+    transform: translateX(5%);
+  }
+}

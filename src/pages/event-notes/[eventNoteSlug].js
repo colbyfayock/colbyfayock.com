@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Helmet } from 'react-helmet';
+import { useInView } from 'react-intersection-observer';
 
 import { getEventNoteBySlug } from 'lib/event-notes';
 import { createTweetAction, openTweet } from 'lib/social';
@@ -14,11 +15,16 @@ import Content from 'components/Content';
 import FeaturedImage from 'components/FeaturedImage';
 import PdfSlider from 'components/PdfSlider';
 import Button from 'components/Button';
+import Video from 'components/Video';
 
 import styles from 'styles/pages/EventNotes.module.scss';
 
 export default function EventNote({ eventNote }) {
-  const { featuredImage, content, title, eventType, eventSlides, talk } = eventNote;
+  const { featuredImage, content, title, eventType, eventSlides, mediaEmbed, talk } = eventNote;
+
+  const { ref: videoContainerRef, inView } = useInView({
+    triggerOnce: true,
+  });
 
   const { metadata } = usePageMetadata({
     metadata: {
@@ -84,6 +90,7 @@ export default function EventNote({ eventNote }) {
                   <p>{talk.title}</p>
                 </>
               )}
+
               {eventSlides?.mediaItemUrl && (
                 <>
                   <h2>Slides</h2>
@@ -123,6 +130,16 @@ export default function EventNote({ eventNote }) {
             </aside>
 
             <div className={styles.resources}>
+              {mediaEmbed && (
+                <>
+                  <h2>Watch the Replay</h2>
+
+                  <div ref={videoContainerRef}>
+                    <Video url={mediaEmbed} title={`Video for ${title}`} isActive={inView} />
+                  </div>
+                </>
+              )}
+
               <h2>Resources</h2>
               <div
                 className={styles.content}

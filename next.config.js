@@ -18,6 +18,15 @@ const config = {
 
     OG_IMAGE_DIRECTORY: '/images/og',
   },
+
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+      },
+    ],
+  },
 };
 
 module.exports = () => {
