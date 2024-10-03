@@ -39,6 +39,12 @@
   force = true
 
 [[redirects]]
+  from = "/course"
+  to = "https://www.fullstacknext.dev/"
+  status = 302
+  force = true
+
+[[redirects]]
   from = "/cosmoshirt"
   to = "https://cottonbureau.com/products/cosmo-the-space-jellyfish#/5503032/tee-men-standard-tee-indigo-tri-blend-s"
   status = 302
