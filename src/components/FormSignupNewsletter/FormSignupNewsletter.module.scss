@@ -1,4 +1,17 @@
 @import "styles/util/__util";
+@import "styles/settings/__settings";
+
+.error {
+  background-color: $color-error;
+  color: white;
+  padding: 0.8em 1em;
+  border-radius: $border-radius-small;
+  margin: 0 auto 1em auto;
+  text-align: center;
+  font-size: 0.9em;
+  max-width: 400px;
+  width: 100%;
+}
 
 .formSignupNewsletter {
   display: flex;
