@@ -19,7 +19,7 @@ class WebpackPlugin {
 
       if (!hasUrl) {
         throw new Error(
-          `[${plugin.name}] Failed to compile: Please check that WORDPRESS_GRAPHQL_ENDPOINT is set and configured in your environment. WORDPRESS_HOST is no longer supported by default.`
+          `[${plugin.name}] Failed to compile: Please check that WORDPRESS_GRAPHQL_ENDPOINT is set and configured in your environment. WORDPRESS_HOST is no longer supported by default.`,
         );
       }
 

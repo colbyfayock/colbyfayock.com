@@ -12,7 +12,7 @@ import Content from 'components/Content';
 import Section from 'components/Section';
 import Container from 'components/Container';
 import FeaturedImage from 'components/FeaturedImage';
-import FormConvertkit from 'components/FormConvertkit';
+import FormSignupNewsletter from 'components/FormSignupNewsletter';
 
 import pageStyles from 'styles/pages/Page.module.scss';
 import newsletterStyles from 'styles/pages/Newsletter.module.scss';
@@ -85,7 +85,7 @@ export default function Page({ page }) {
 
         <Section className={`${styles.newsletterFormSection} ${styles.courseFormSection}`}>
           <Container>
-            <FormConvertkit className={styles.newsletterForm} formId="6688433" />
+            <FormSignupNewsletter className={styles.newsletterForm} location="course" />
           </Container>
         </Section>
       </Content>
