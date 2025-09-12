@@ -7,9 +7,9 @@ import { removeLastTrailingSlash } from 'lib/util';
 export const SiteContext = createContext();
 
 const NOTICES = {
-  emailSignup: {
+  status: {
     success: {
-      message: 'Thanks for signing up for my newsletter! 🤗',
+      message: 'Thanks for signing up!',
     },
   },
   newsletterUnsubscribe: {
