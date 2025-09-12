@@ -31,7 +31,7 @@ const FormSignupNewsletter = ({ className, location }) => {
         }}
         name="phone"
       />
-      <input type="hidden" name="redirect" value="https://spacejelly.dev/" />
+      <input type="hidden" name="redirect" value="https://colbyfayock.com/" />
       <input type="hidden" name="tags" value={`location:colbyfayock.com,location:colbyfayock.com-${location}`} />
       <input
         className={styles.formSignupNewsletterInput}
