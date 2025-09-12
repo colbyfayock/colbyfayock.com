@@ -6,7 +6,6 @@ export const GA_TRACKING_ID = 'G-PZ9GJPGKNB';
  */
 
 export function pageview(url) {
-  console.log('url', url);
   window.gtag('config', GA_TRACKING_ID, {
     page_path: url,
   });

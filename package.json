@@ -7,8 +7,8 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "format": "yarn lint --fix",
-    "format:no-path": "yarn lint:no-path --fix",
+    "format": "npm run lint --fix",
+    "format:no-path": "npm run lint:no-path --fix",
     "lint": "eslint .",
     "lint:no-path": "eslint",
     "start": "next start -p ${PORT:=3000}"
@@ -19,8 +19,8 @@
     }
   },
   "lint-staged": {
-    "**/*.js": "yarn format:no-path",
-    "**/*.scss": "yarn prettier --write"
+    "**/*.js": "npm run format:no-path",
+    "**/*.scss": "npm run prettier --write"
   },
   "dependencies": {
     "@apollo/client": "^4.0.4",
