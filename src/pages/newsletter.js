@@ -81,7 +81,7 @@ export default function Page({ page }) {
 
         <Section className={styles.newsletterFormSection}>
           <Container>
-            <FormSignupNewsletter className={styles.newsletterForm} />
+            <FormSignupNewsletter className={styles.newsletterForm} location="newsletter" />
           </Container>
         </Section>
       </Content>

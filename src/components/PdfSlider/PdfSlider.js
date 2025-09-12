@@ -98,7 +98,7 @@ const PdfSlider = ({ className, src, width, height, cloudName = process.env.NEXT
 
             setTotalPages(Object.keys(newPages).length);
           }
-        })
+        }),
       );
 
       setPages(newPages);

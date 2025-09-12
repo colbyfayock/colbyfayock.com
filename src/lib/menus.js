@@ -66,7 +66,7 @@ export function createMenuFromPages({ locations, pages }) {
  */
 export const parseHierarchicalMenu = (
   data = [],
-  { idKey = 'id', parentKey = 'parentId', childrenKey = 'children' } = {}
+  { idKey = 'id', parentKey = 'parentId', childrenKey = 'children' } = {},
 ) => {
   const tree = [];
   const childrenOf = {};

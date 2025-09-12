@@ -52,7 +52,7 @@ const Footer = () => {
         <Container className={styles.footerEmailSignup}>
           <p>Get free content and updates straight to your inbox!</p>
           <p className={styles.emoji}>🙌 ✉️ 🙌</p>
-          <FormSignupNewsletter className={styles.footerEmailSignupForm} />
+          <FormSignupNewsletter className={styles.footerEmailSignupForm} location="footer" />
         </Container>
       </Section>
 

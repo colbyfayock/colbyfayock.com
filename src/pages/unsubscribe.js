@@ -38,7 +38,7 @@ export default function Page() {
 
         <Section className={styles.newsletterFormSection}>
           <Container>
-            <FormSignupNewsletter className={styles.newsletterForm} />
+            <FormSignupNewsletter className={styles.newsletterForm} location="unsubscribe" />
           </Container>
         </Section>
       </Content>
