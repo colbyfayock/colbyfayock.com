@@ -5,6 +5,8 @@ import { getAllPosts, postPathBySlug } from 'lib/posts';
 
 const MAX_POSTS = 100;
 
+export const dynamic = 'force-dynamic';
+
 export async function GET() {
   const metadata = await getSiteMetadata();
   const { posts } = await getAllPosts({ queryIncludes: 'all' });
@@ -34,6 +36,7 @@ export async function GET() {
   return new Response(feed.xml({ indent: true }), {
     headers: {
       'Content-Type': 'application/atom+xml; charset=utf-8',
+      'Cache-Control': 'public, max-age=3600, s-maxage=3600',
     },
   });
 }
