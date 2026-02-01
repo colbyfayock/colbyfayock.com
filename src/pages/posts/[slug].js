@@ -6,6 +6,7 @@ import { categoryPathBySlug } from 'lib/categories';
 import { formatDate } from 'lib/datetime';
 import { ArticleJsonLd } from 'lib/json-ld';
 import { helmetSettingsFromMetadata } from 'lib/site';
+import { sanitizeHtml } from 'lib/sanitize';
 import useSite from 'hooks/use-site';
 import usePageMetadata from 'hooks/use-page-metadata';
 
@@ -88,7 +89,7 @@ export default function Post({ post, socialImage, relatedPosts }) {
             <div
               className={styles.content}
               dangerouslySetInnerHTML={{
-                __html: content,
+                __html: sanitizeHtml(content),
               }}
             />
           </Container>
@@ -150,6 +151,7 @@ export async function getStaticProps({ params = {} } = {}) {
         },
       },
     },
+    revalidate: 60,
   };
 }
 

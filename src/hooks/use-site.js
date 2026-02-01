@@ -26,7 +26,7 @@ const NOTICES = {
 export function useSiteContext(data) {
   const [notices, setNotices] = useState();
 
-  let { homepage = '' } = config;
+  let homepage = config.homepage || '';
 
   // Trim the trailing slash from the end of homepage to avoid
   // double // issues throughout the metadata

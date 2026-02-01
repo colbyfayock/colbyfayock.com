@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
 import { Helmet } from 'react-helmet';
+import clsx from 'clsx';
 import styles from './Layout.module.scss';
 
-import ClassName from 'models/classname';
 import useSite from 'hooks/use-site';
 import { helmetSettingsFromMetadata } from 'lib/site';
 
@@ -11,7 +11,7 @@ import Main from 'components/Main';
 import Footer from 'components/Footer';
 
 const Layout = ({ children, exclude = [], pageClassName }) => {
-  const layoutClassName = new ClassName(styles.layoutContainer);
+  const layoutClassName = clsx(styles.layoutContainer, pageClassName);
 
   const router = useRouter();
   const { asPath } = router;
@@ -67,7 +67,7 @@ const Layout = ({ children, exclude = [], pageClassName }) => {
   };
 
   return (
-    <div className={layoutClassName.toString()}>
+    <div className={layoutClassName}>
       <Helmet {...helmetSettings} />
 
       {notices && notices.length > 0 && (

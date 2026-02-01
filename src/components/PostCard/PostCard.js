@@ -1,17 +1,13 @@
 import Link from 'next/link';
-
-import ClassName from 'models/classname';
-import { postPathBySlug, sanitizeExcerpt } from 'lib/posts';
+import clsx from 'clsx';
+import { postPathBySlug } from 'lib/posts';
+import { sanitizeExcerpt } from 'lib/sanitize';
 
 import Metadata from 'components/Metadata';
 
 import styles from './PostCard.module.scss';
 
 const PostCard = ({ className, post, parentSlug, contentField = 'excerpt', linkField = 'slug' }) => {
-  const postCardClassName = new ClassName(styles.postCard);
-
-  postCardClassName.addIf(className, className);
-
   const { title, slug, date, categories } = post;
 
   const metadata = {};
@@ -29,7 +25,7 @@ const PostCard = ({ className, post, parentSlug, contentField = 'excerpt', linkF
   const link = linkField === 'slug' ? postPathBySlug(slug, { parent: parentSlug }) : post[linkField];
 
   return (
-    <div className={postCardClassName}>
+    <div className={clsx(styles.postCard, className)}>
       <Link href={link}>
         <h3
           className={styles.postCardTitle}

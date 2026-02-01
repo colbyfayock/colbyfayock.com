@@ -127,7 +127,10 @@ export async function getAllUsers() {
 export async function getAllAuthors() {
   const { users } = await getAllUsers();
 
-  // TODO: Roles aren't showing in response - we should be filtering here
+  // TODO: Roles aren't showing in response - this appears to be a WordPress GraphQL API
+  // limitation. The roles field may need to be explicitly requested in the query or
+  // the WPGraphQL schema may need updating to include roles in the user query.
+  // For now, all users are returned without role filtering.
 
   // const authors = users.filter(({ roles }) => {
   //   const userRoles = roles.map(({ name }) => name);

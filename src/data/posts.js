@@ -1,5 +1,38 @@
 import { gql } from '@apollo/client';
 
+export const AUTHOR_FIELDS = gql`
+  fragment AuthorFields on User {
+    avatar {
+      height
+      url
+      width
+    }
+    id
+    name
+    slug
+  }
+`;
+
+export const CATEGORY_FIELDS = gql`
+  fragment CategoryFields on Category {
+    categoryId
+    id
+    name
+    slug
+  }
+`;
+
+export const MEDIA_ITEM_FIELDS = gql`
+  fragment MediaItemFields on MediaItem {
+    altText
+    caption
+    sourceUrl
+    srcSet
+    sizes
+    id
+  }
+`;
+
 export const QUERY_ALL_POSTS = gql`
   query AllPosts {
     posts(first: 100) {
@@ -7,24 +40,14 @@ export const QUERY_ALL_POSTS = gql`
         node {
           author {
             node {
-              avatar {
-                height
-                url
-                width
-              }
-              id
-              name
-              slug
+              ...AuthorFields
             }
           }
           id
           categories {
             edges {
               node {
-                categoryId
-                id
-                name
-                slug
+                ...CategoryFields
               }
             }
           }
@@ -33,12 +56,7 @@ export const QUERY_ALL_POSTS = gql`
           excerpt
           featuredImage {
             node {
-              altText
-              caption
-              sourceUrl
-              srcSet
-              sizes
-              id
+              ...MediaItemFields
             }
           }
           modified
@@ -49,6 +67,9 @@ export const QUERY_ALL_POSTS = gql`
       }
     }
   }
+  ${AUTHOR_FIELDS}
+  ${CATEGORY_FIELDS}
+  ${MEDIA_ITEM_FIELDS}
 `;
 
 export const QUERY_POST_BY_SLUG = gql`
@@ -56,24 +77,14 @@ export const QUERY_POST_BY_SLUG = gql`
     post(id: $slug, idType: SLUG) {
       author {
         node {
-          avatar {
-            height
-            url
-            width
-          }
-          id
-          name
-          slug
+          ...AuthorFields
         }
       }
       id
       categories {
         edges {
           node {
-            categoryId
-            id
-            name
-            slug
+            ...CategoryFields
           }
         }
       }
@@ -82,12 +93,7 @@ export const QUERY_POST_BY_SLUG = gql`
       excerpt
       featuredImage {
         node {
-          altText
-          caption
-          sourceUrl
-          srcSet
-          sizes
-          id
+          ...MediaItemFields
         }
       }
       modified
@@ -96,6 +102,9 @@ export const QUERY_POST_BY_SLUG = gql`
       slug
     }
   }
+  ${AUTHOR_FIELDS}
+  ${CATEGORY_FIELDS}
+  ${MEDIA_ITEM_FIELDS}
 `;
 
 export const QUERY_POSTS_BY_CATEGORY_ID = gql`
@@ -105,24 +114,14 @@ export const QUERY_POSTS_BY_CATEGORY_ID = gql`
         node {
           author {
             node {
-              avatar {
-                height
-                url
-                width
-              }
-              id
-              name
-              slug
+              ...AuthorFields
             }
           }
           id
           categories {
             edges {
               node {
-                categoryId
-                id
-                name
-                slug
+                ...CategoryFields
               }
             }
           }
@@ -131,12 +130,7 @@ export const QUERY_POSTS_BY_CATEGORY_ID = gql`
           excerpt
           featuredImage {
             node {
-              altText
-              caption
-              id
-              sizes
-              sourceUrl
-              srcSet
+              ...MediaItemFields
             }
           }
           modified
@@ -147,6 +141,9 @@ export const QUERY_POSTS_BY_CATEGORY_ID = gql`
       }
     }
   }
+  ${AUTHOR_FIELDS}
+  ${CATEGORY_FIELDS}
+  ${MEDIA_ITEM_FIELDS}
 `;
 
 export const QUERY_POSTS_BY_AUTHOR_SLUG = gql`
@@ -157,10 +154,7 @@ export const QUERY_POSTS_BY_AUTHOR_SLUG = gql`
           categories {
             edges {
               node {
-                categoryId
-                id
-                name
-                slug
+                ...CategoryFields
               }
             }
           }
@@ -168,12 +162,7 @@ export const QUERY_POSTS_BY_AUTHOR_SLUG = gql`
           excerpt
           featuredImage {
             node {
-              altText
-              caption
-              id
-              sizes
-              sourceUrl
-              srcSet
+              ...MediaItemFields
             }
           }
           id
@@ -185,6 +174,8 @@ export const QUERY_POSTS_BY_AUTHOR_SLUG = gql`
       }
     }
   }
+  ${CATEGORY_FIELDS}
+  ${MEDIA_ITEM_FIELDS}
 `;
 
 export const QUERY_POST_SEO_BY_SLUG = gql`

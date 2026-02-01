@@ -5,6 +5,7 @@ import PlausibleProvider from 'next-plausible';
 
 import { SiteContext, useSiteContext } from 'hooks/use-site';
 import { SearchProvider } from 'hooks/use-search';
+import ErrorBoundary from 'components/ErrorBoundary/ErrorBoundary';
 
 import { getSiteMetadata } from 'lib/site';
 // import { getRecentPosts } from 'lib/posts';
@@ -36,7 +37,9 @@ function App({ Component, pageProps = {}, metadata, menus }) {
     <PlausibleProvider domain="colbyfayock.com" trackOutboundLinks={true}>
       <SiteContext.Provider value={site}>
         <SearchProvider>
-          <Component {...pageProps} />
+          <ErrorBoundary>
+            <Component {...pageProps} />
+          </ErrorBoundary>
         </SearchProvider>
       </SiteContext.Provider>
     </PlausibleProvider>

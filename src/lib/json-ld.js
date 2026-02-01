@@ -7,16 +7,15 @@ import { pagePathBySlug } from 'lib/pages';
 import config from '../../package.json';
 
 export function ArticleJsonLd({ post = {}, siteTitle = '' }) {
-  const { homepage = '', faviconPath = '/favicon.ico' } = config;
+  const homepage = config.homepage || '';
+  const faviconPath = config.faviconPath || '/favicon.ico';
   const { title, slug, excerpt, date, author, categories, modified, featuredImage } = post;
   const path = postPathBySlug(slug);
   const datePublished = !!date && new Date(date);
   const dateModified = !!modified && new Date(modified);
 
-  /** TODO - As image is a recommended field would be interesting to have a
-   * default image in case there is no featuredImage comming from WP,
-   * like the open graph social image
-   * */
+  const fallbackImage = `${homepage}/images/og/default.png`;
+  const image = featuredImage?.sourceUrl || fallbackImage;
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -26,7 +25,7 @@ export function ArticleJsonLd({ post = {}, siteTitle = '' }) {
       '@id': `${homepage}${path}`,
     },
     headline: title,
-    image: [featuredImage?.sourceUrl],
+    image: [image],
     datePublished: datePublished ? datePublished.toISOString() : '',
     dateModified: dateModified ? dateModified.toISOString() : datePublished.toISOString(),
     description: excerpt,
@@ -54,7 +53,7 @@ export function ArticleJsonLd({ post = {}, siteTitle = '' }) {
 }
 
 export function WebsiteJsonLd({ siteTitle = '' }) {
-  const { homepage = '' } = config;
+  const homepage = config.homepage || '';
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -77,7 +76,7 @@ export function WebsiteJsonLd({ siteTitle = '' }) {
 }
 
 export function WebpageJsonLd({ title = '', description = '', siteTitle = '', slug = '' }) {
-  const { homepage = '' } = config;
+  const homepage = config.homepage || '';
   const path = pagePathBySlug(slug);
 
   const jsonLd = {
@@ -100,7 +99,7 @@ export function WebpageJsonLd({ title = '', description = '', siteTitle = '', sl
 }
 
 export function AuthorJsonLd({ author = {} }) {
-  const { homepage = '' } = config;
+  const homepage = config.homepage || '';
   const { name, avatar, description } = author;
   const path = authorPathByName(name);
 
@@ -121,7 +120,8 @@ export function AuthorJsonLd({ author = {} }) {
 }
 
 export function LogoJsonLd() {
-  const { homepage = '', faviconPath = '/favicon.ico' } = config;
+  const homepage = config.homepage || '';
+  const faviconPath = config.faviconPath || '/favicon.ico';
 
   const jsonLd = {
     '@context': 'https://schema.org',

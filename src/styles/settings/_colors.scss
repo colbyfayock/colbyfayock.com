@@ -34,15 +34,17 @@ $color-yellow: #ffcc4c;
 $color-amber: #e8ad3e;
 $color-orange: #d89d38;
 $color-brown: #7a4d2c;
+@use "sass:color";
+
 $color-grey: #747a80;
 
-$color-grey1: lighten($color-grey, 45);
-$color-grey2: lighten($color-grey, 30);
-$color-grey3: lighten($color-grey, 15);
+$color-grey1: color.adjust($color-grey, $lightness: 45%);
+$color-grey2: color.adjust($color-grey, $lightness: 30%);
+$color-grey3: color.adjust($color-grey, $lightness: 15%);
 $color-grey4: $color-grey;
-$color-grey5: darken($color-grey, 15);
-$color-grey6: darken($color-grey, 30);
-$color-grey7: darken($color-grey, 45);
+$color-grey5: color.adjust($color-grey, $lightness: -15%);
+$color-grey6: color.adjust($color-grey, $lightness: -30%);
+$color-grey7: color.adjust($color-grey, $lightness: -45%);
 
 $color-brand-purple-light: #9c5cc4;
 $color-brand-purple-medium: #692ba8;
@@ -53,19 +55,19 @@ $color-primary: $color-brand-purple-medium;
 $color-secondary: $color-brand-blue-dark;
 
 $color-alert: $color-orange;
-$color-alert-background: lighten($color-alert, 25);
+$color-alert-background: color.adjust($color-alert, $lightness: 25%);
 
 $color-warning: $color-yellow;
-$color-warning-background: lighten($color-warning, 25);
+$color-warning-background: color.adjust($color-warning, $lightness: 25%);
 
 $color-error: $color-red;
-$color-error-background: lighten($color-error, 25);
+$color-error-background: color.adjust($color-error, $lightness: 25%);
 
 $color-success: $color-green;
-$color-success-background: lighten($color-success, 25);
+$color-success-background: color.adjust($color-success, $lightness: 25%);
 
 $color-info: $color-blue;
-$color-info-background: lighten($color-info, 25);
+$color-info-background: color.adjust($color-info, $lightness: 25%);
 
 $color-map: ("red" $color-red) ("pink" $color-pink) ("magenta" $color-magenta) ("purple" $color-purple)
   ("violet" $color-violet) ("indigo" $color-indigo) ("blue" $color-blue) ("cyan" $color-cyan) ("teal" $color-teal)

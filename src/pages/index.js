@@ -124,5 +124,6 @@ export async function getStaticProps() {
       projects: projects.slice(0, 5),
       featuredFeatures,
     },
+    revalidate: 60,
   };
 }

@@ -1,14 +1,10 @@
-import ClassName from 'models/classname';
+import clsx from 'clsx';
 
 import styles from './Section.module.scss';
 
 const Section = ({ children, className, ...rest }) => {
-  const sectionClassName = new ClassName(styles.section);
-
-  sectionClassName.addIf(className, className);
-
   return (
-    <section className={sectionClassName.toString()} {...rest}>
+    <section className={clsx(styles.section, className)} {...rest}>
       {children}
     </section>
   );

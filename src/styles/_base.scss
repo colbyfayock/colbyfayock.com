@@ -1,4 +1,5 @@
-@import "styles/settings/__settings";
+@use "sass:color";
+@import "settings/__settings";
 
 * {
   box-sizing: border-box;
@@ -66,22 +67,22 @@ a {
 
   &:hover,
   &:focus {
-    color: lighten($color-primary, 7);
+    color: color.adjust($color-primary, $lightness: 7%);
   }
 
   &:active {
-    color: darken($color-primary, 7);
+    color: color.adjust($color-primary, $lightness: -7%);
   }
 
   &:visited {
     color: $color-primary;
 
     &:hover {
-      color: lighten($color-primary, 7);
+      color: color.adjust($color-primary, $lightness: 7%);
     }
 
     &:active {
-      color: darken($color-primary, 7);
+      color: color.adjust($color-primary, $lightness: -7%);
     }
   }
 }
@@ -213,7 +214,7 @@ select {
   outline: 0;
 
   &:focus {
-    border: solid 2px lighten($color-purple, 25);
+    border: solid 2px color.adjust($color-purple, $lightness: 25%);
   }
 
   &:disabled {

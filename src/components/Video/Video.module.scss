@@ -1,5 +1,6 @@
-@import "styles/settings/__settings";
-@import "styles/util/__util";
+@use "sass:color";
+@import "../../styles/settings/__settings";
+@import "../../styles/util/__util";
 
 .video {
   margin-left: auto;
@@ -15,7 +16,7 @@
   overflow: hidden;
   border-radius: 0.2em;
   overflow: hidden;
-  border: solid 1px lighten($color-brand-purple-medium, 5);
+  border: solid 1px color.adjust($color-brand-purple-medium, $lightness: 5%);
 
   iframe,
   .videoPlay {

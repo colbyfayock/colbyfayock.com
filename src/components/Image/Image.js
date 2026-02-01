@@ -1,4 +1,4 @@
-import ClassName from 'models/classname';
+import clsx from 'clsx';
 
 import styles from './Image.module.scss';
 
@@ -13,12 +13,8 @@ const Image = ({
   sizes,
   dangerouslySetInnerHTML,
 }) => {
-  const imageClassName = new ClassName(styles.image);
-
-  imageClassName.addIf(className, className);
-
   return (
-    <figure className={imageClassName.toString()}>
+    <figure className={clsx(styles.image, className)}>
       <div className={styles.featuredImageImg}>
         <img width={width} height={height} src={src} alt={alt || ''} srcSet={srcSet} sizes={sizes} />
       </div>

@@ -1,18 +1,14 @@
 import Link from 'next/link';
+import clsx from 'clsx';
 
 import { categoryPathBySlug } from 'lib/categories';
 import { formatDate } from 'lib/datetime';
-import ClassName from 'models/classname';
 
 import styles from './Metadata.module.scss';
 
 const Metadata = ({ className, date, categories }) => {
-  const metadataClassName = new ClassName(styles.metadata);
-
-  metadataClassName.addIf(className, className);
-
   return (
-    <ul className={metadataClassName.toString()}>
+    <ul className={clsx(styles.metadata, className)}>
       {Array.isArray(categories) && categories[0] && (
         <li className={styles.metadataCategories}>
           <ul>

@@ -16,8 +16,6 @@ export default function Post({ talk }) {
 
   const hasEvents = Array.isArray(events) && events.length > 0;
 
-  console.log('talk', talk);
-
   return (
     <Layout>
       <Header>
