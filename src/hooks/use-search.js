@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, createContext, useContext, useEffect } from 'react';
 import Fuse from 'fuse.js';
 
@@ -10,7 +12,11 @@ export const SEARCH_STATE_READY = 'READY';
 export const SEARCH_STATE_ERROR = 'ERROR';
 export const SEARCH_STATE_LOADED = 'LOADED';
 
-export const SearchContext = createContext();
+export const SearchContext = createContext({
+  state: SEARCH_STATE_READY,
+  data: null,
+  client: null,
+});
 
 export const SearchProvider = (props) => {
   const search = useSearchState();

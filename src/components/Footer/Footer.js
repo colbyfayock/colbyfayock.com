@@ -1,7 +1,8 @@
+'use client';
+
 import Link from 'next/link';
 import { FaTwitter, FaYoutube } from 'react-icons/fa';
 
-import useSite from 'hooks/use-site';
 import { createTweetAction, openTweet } from 'lib/social';
 
 import SocialIcons from 'components/SocialIcons';
@@ -12,9 +13,8 @@ import FormSignupNewsletter from 'components/FormSignupNewsletter';
 
 import styles from './Footer.module.scss';
 
-const Footer = () => {
-  const { metadata = {} } = useSite();
-  const { title } = metadata;
+const Footer = ({ metadata }) => {
+  const { title } = metadata || {};
 
   const twitterAction = createTweetAction({
     message: [`Hey @colbyfayock! What's good? 😎`],
@@ -85,7 +85,7 @@ const Footer = () => {
         </a>
         <img className="u-photo" src="https://www.colbyfayock.com/colby-fayock-bite-world.jpg" alt="Colby Fayock" />
         <p className="p-note">
-          A Front End Engineer and UX Designer that’s passionate about tackling challenges that can help save people’s
+          A Front End Engineer and UX Designer that's passionate about tackling challenges that can help save people's
           lives and make the world a better place.
         </p>
       </div>

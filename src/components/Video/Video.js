@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect } from 'react';
 import { FaPlay } from 'react-icons/fa';
 import Image from 'next/image';

@@ -1,3 +1,5 @@
+'use client';
+
 import { useContext, createContext, useState, useEffect } from 'react';
 
 import config from '../../package.json';

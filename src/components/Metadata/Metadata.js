@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import clsx from 'clsx';
 
-import { categoryPathBySlug } from 'lib/categories';
+import { categoryPathBySlug } from 'lib/wordpress';
 import { formatDate } from 'lib/datetime';
 
 import styles from './Metadata.module.scss';

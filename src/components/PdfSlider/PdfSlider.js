@@ -1,3 +1,5 @@
+'use client';
+
 import { useState, useEffect } from 'react';
 import { Cloudinary } from '@cloudinary/url-gen';
 import { getPage } from '@cloudinary/url-gen/actions/extract';

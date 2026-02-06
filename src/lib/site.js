@@ -1,107 +1,74 @@
-import { gql } from 'lib/request';
-
-import { decodeHtmlEntities, removeExtraSpaces } from 'lib/util';
-
-import { QUERY_SITE_DATA, QUERY_SEO_DATA } from 'data/site';
-
-/**
- * getSiteMetadata
- */
+import { fetchAPI } from './wordpress';
 
 export async function getSiteMetadata() {
-  let siteData;
-  let seoData;
+  const query = `
+    query SiteMetadata {
+      generalSettings {
+        title
+        description
+        language
+      }
+    }
+  `;
 
   try {
-    siteData = await gql({
-      query: QUERY_SITE_DATA,
-      method: 'GET',
-    });
+    const data = await fetchAPI(query);
+    const { generalSettings } = data || {};
+    let { title, description, language } = generalSettings || {};
+
+    const settings = {
+      title,
+      siteTitle: title,
+      description,
+      url: process.env.WORDPRESS_SITE_URL || process.env.NEXT_PUBLIC_HOME_URL || 'https://colbyfayock.com',
+    };
+
+    if (!language || language === '') {
+      settings.language = 'en';
+    } else {
+      settings.language = language.split('_')[0];
+    }
+
+    settings.title = title;
+
+    return settings;
   } catch (e) {
     console.log(`[site][getSiteMetadata] Failed to query site data: ${e.message}`);
-    throw e;
+    // Return default metadata if API fails
+    return {
+      title: 'Colby Fayock',
+      siteTitle: 'Colby Fayock',
+      description: "Colby Fayock's website",
+      url: process.env.NEXT_PUBLIC_HOME_URL || 'https://colbyfayock.com',
+      language: 'en',
+    };
   }
-
-  const { generalSettings } = siteData?.data || {};
-  let { title, description, language } = generalSettings;
-
-  const settings = {
-    title,
-    siteTitle: title,
-    description,
-    url: process.env.WORDPRESS_SITE_URL,
-  };
-
-  // It looks like the value of `language` when US English is set
-  // in WordPress is empty or "", meaning, we have to infer that
-  // if there's no value, it's English. On the other hand, if there
-  // is a code, we need to grab the 2char version of it to use ofr
-  // the HTML lang attribute
-
-  if (!language || language === '') {
-    settings.language = 'en';
-  } else {
-    settings.language = language.split('_')[0];
-  }
-
-  // If the SEO plugin is enabled, look up the data
-  // and apply it to the default settings
-
-  if (process.env.WORDPRESS_PLUGIN_SEO === true) {
-    try {
-      siteData = await gql({
-        query: QUERY_SEO_DATA,
-        method: 'GET',
-      });
-    } catch (e) {
-      console.log(`[site][getSiteMetadata] Failed to query SEO plugin: ${e.message}`);
-      console.log('Is the SEO Plugin installed? If not, disable WORDPRESS_PLUGIN_SEO in next.config.js.');
-      throw e;
-    }
-
-    if (seoData?.data?.seo) {
-      const { webmaster, social } = seoData.data.seo;
-
-      if (social) {
-        settings.social = {};
-
-        Object.keys(social).forEach((key) => {
-          const { url } = social[key];
-          if (!url || key === '__typename') return;
-          settings.social[key] = url;
-        });
-      }
-
-      if (webmaster) {
-        settings.webmaster = {};
-
-        Object.keys(webmaster).forEach((key) => {
-          if (!webmaster[key] || key === '__typename') return;
-          settings.webmaster[key] = webmaster[key];
-        });
-      }
-
-      if (social.twitter) {
-        settings.twitter = {
-          username: social.twitter.username,
-          cardType: social.twitter.cardType,
-        };
-
-        settings.social.twitter = {
-          url: `https://twitter.com/${settings.twitter.username}`,
-        };
-      }
-    }
-  }
-
-  settings.title = decodeHtmlEntities(settings.title);
-
-  return settings;
 }
 
-/**
- * constructHelmetData
- */
+export function decodeHtmlEntities(text) {
+  if (!text) return text;
+  return text.replace(/&amp;|&lt;|&gt;|&quot;|&#039;/g, (match) => {
+    switch (match) {
+      case '&amp;':
+        return '&';
+      case '&lt;':
+        return '<';
+      case '&gt;':
+        return '>';
+      case '&quot;':
+        return '"';
+      case '&#039;':
+        return "'";
+      default:
+        return match;
+    }
+  });
+}
+
+export function removeExtraSpaces(text) {
+  if (!text) return text;
+  return text.replace(/\s+/g, ' ').trim();
+}
 
 export function constructPageMetadata(defaultMetadata = {}, pageMetadata = {}, options = {}) {
   const { router = {}, homepage = '' } = options;
@@ -119,9 +86,6 @@ export function constructPageMetadata(defaultMetadata = {}, pageMetadata = {}, o
     twitter: {},
   };
 
-  // Static Properties
-  // Loop through top level metadata properties that rely on a non-object value
-
   const staticProperties = ['description', 'language', 'title'];
 
   staticProperties.forEach((property) => {
@@ -131,9 +95,6 @@ export function constructPageMetadata(defaultMetadata = {}, pageMetadata = {}, o
 
     metadata[property] = value;
   });
-
-  // Open Graph Properties
-  // Loop through Open Graph properties that rely on a non-object value
 
   if (pageMetadata.og) {
     const ogProperties = ['description', 'imageUrl', 'imageHeight', 'imageSecureUrl', 'imageWidth', 'title', 'type'];
@@ -151,9 +112,6 @@ export function constructPageMetadata(defaultMetadata = {}, pageMetadata = {}, o
     });
   }
 
-  // Twitter Properties
-  // Loop through Twitter properties that rely on a non-object value
-
   if (pageMetadata.twitter) {
     const twitterProperties = ['cardType', 'description', 'imageUrl', 'title', 'username'];
 
@@ -167,9 +125,6 @@ export function constructPageMetadata(defaultMetadata = {}, pageMetadata = {}, o
       metadata.twitter[property] = value;
     });
   }
-
-  // Article Properties
-  // Loop through article properties that rely on a non-object value
 
   if (metadata.og.type === 'article' && pageMetadata.article) {
     metadata.article = {};
@@ -186,106 +141,4 @@ export function constructPageMetadata(defaultMetadata = {}, pageMetadata = {}, o
   }
 
   return metadata;
-}
-
-/**
- * helmetSettingsFromMetadata
- */
-
-export function helmetSettingsFromMetadata(metadata = {}, options = {}) {
-  const { link = [], meta = [], setTitle = true } = options;
-
-  const sanitizedDescription = removeExtraSpaces(metadata.description);
-
-  const settings = {
-    htmlAttributes: {
-      lang: metadata.language,
-    },
-  };
-
-  if (setTitle) {
-    settings.title = metadata.title;
-  }
-
-  settings.link = [
-    ...link,
-    {
-      rel: 'canonical',
-      href: metadata.canonical,
-    },
-  ].filter(({ href } = {}) => !!href);
-
-  settings.meta = [
-    ...meta,
-    {
-      name: 'description',
-      content: sanitizedDescription,
-    },
-    {
-      property: 'og:title',
-      content: metadata.og?.title || metadata.title,
-    },
-    {
-      property: 'og:description',
-      content: metadata.og?.description || sanitizedDescription,
-    },
-    {
-      property: 'og:url',
-      content: metadata.og?.url,
-    },
-    {
-      property: 'og:image',
-      content: metadata.og?.imageUrl,
-    },
-    {
-      property: 'og:image:secure_url',
-      content: metadata.og?.imageSecureUrl,
-    },
-    {
-      property: 'og:image:width',
-      content: metadata.og?.imageWidth,
-    },
-    {
-      property: 'og:image:height',
-      content: metadata.og?.imageHeight,
-    },
-    {
-      property: 'og:type',
-      content: metadata.og?.type || 'website',
-    },
-    {
-      property: 'og:site_name',
-      content: metadata.siteTitle,
-    },
-    {
-      property: 'twitter:title',
-      content: metadata.twitter?.title || metadata.og?.title || metadata.title,
-    },
-    {
-      property: 'twitter:description',
-      content: metadata.twitter?.description || metadata.og?.description || sanitizedDescription,
-    },
-    {
-      property: 'twitter:image',
-      content: metadata.twitter?.imageUrl || metadata.og?.imageUrl,
-    },
-    {
-      property: 'twitter:site',
-      content: metadata.twitter?.username && `@${metadata.twitter.username}`,
-    },
-    {
-      property: 'twitter:card',
-      content: metadata.twitter?.cardType,
-    },
-    {
-      property: 'article:modified_time',
-      content: metadata.article?.modifiedTime,
-    },
-    {
-      property: 'article:published_time',
-      content: metadata.article?.publishedTime,
-    },
-  ].filter(({ content } = {}) => !!content);
-
-  return settings;
 }

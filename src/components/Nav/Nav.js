@@ -1,9 +1,11 @@
+'use client';
+
 import { useEffect, useRef, useState, useCallback } from 'react';
 import Link from 'next/link';
 import { FaSearch } from 'react-icons/fa';
 
 import useSearch, { SEARCH_STATE_LOADED } from 'hooks/use-search';
-import { postPathBySlug } from 'lib/posts';
+import { postPathBySlug } from 'lib/wordpress';
 
 import Section from 'components/Section';
 import Container from 'components/Container';

@@ -1,16 +1,10 @@
-import { Helmet } from 'react-helmet';
-
-import { authorPathByName } from 'lib/users';
-import { postPathBySlug } from 'lib/posts';
-import { pagePathBySlug } from 'lib/pages';
-
 import config from '../../package.json';
 
 export function ArticleJsonLd({ post = {}, siteTitle = '' }) {
   const homepage = config.homepage || '';
   const faviconPath = config.faviconPath || '/favicon.ico';
   const { title, slug, excerpt, date, author, categories, modified, featuredImage } = post;
-  const path = postPathBySlug(slug);
+  const path = `/posts/${slug}`;
   const datePublished = !!date && new Date(date);
   const dateModified = !!modified && new Date(modified);
 
@@ -29,7 +23,7 @@ export function ArticleJsonLd({ post = {}, siteTitle = '' }) {
     datePublished: datePublished ? datePublished.toISOString() : '',
     dateModified: dateModified ? dateModified.toISOString() : datePublished.toISOString(),
     description: excerpt,
-    keywords: [categories.map(({ name }) => `${name}`).join(', ')],
+    keywords: [categories?.map(({ name }) => `${name}`).join(', ') || ''],
     copyrightYear: datePublished ? datePublished.getFullYear() : '',
     author: {
       '@type': 'Person',
@@ -45,11 +39,7 @@ export function ArticleJsonLd({ post = {}, siteTitle = '' }) {
     },
   };
 
-  return (
-    <Helmet encodeSpecialCharacters={false}>
-      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-    </Helmet>
-  );
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
 }
 
 export function WebsiteJsonLd({ siteTitle = '' }) {
@@ -68,16 +58,12 @@ export function WebsiteJsonLd({ siteTitle = '' }) {
     },
   };
 
-  return (
-    <Helmet encodeSpecialCharacters={false}>
-      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-    </Helmet>
-  );
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
 }
 
 export function WebpageJsonLd({ title = '', description = '', siteTitle = '', slug = '' }) {
   const homepage = config.homepage || '';
-  const path = pagePathBySlug(slug);
+  const path = slug ? `/${slug}` : '';
 
   const jsonLd = {
     '@context': 'http://schema.org',
@@ -91,17 +77,13 @@ export function WebpageJsonLd({ title = '', description = '', siteTitle = '', sl
     },
   };
 
-  return (
-    <Helmet encodeSpecialCharacters={false}>
-      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-    </Helmet>
-  );
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
 }
 
 export function AuthorJsonLd({ author = {} }) {
   const homepage = config.homepage || '';
   const { name, avatar, description } = author;
-  const path = authorPathByName(name);
+  const path = `/author/${name?.toLowerCase().replace(/\s+/g, '-')}`;
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -112,11 +94,7 @@ export function AuthorJsonLd({ author = {} }) {
     description: description,
   };
 
-  return (
-    <Helmet encodeSpecialCharacters={false}>
-      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-    </Helmet>
-  );
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
 }
 
 export function LogoJsonLd() {
@@ -130,9 +108,5 @@ export function LogoJsonLd() {
     logo: `${homepage}${faviconPath}`,
   };
 
-  return (
-    <Helmet encodeSpecialCharacters={false}>
-      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-    </Helmet>
-  );
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />;
 }
