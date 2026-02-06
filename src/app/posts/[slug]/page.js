@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 import { getPostBySlug, getRelatedPosts, categoryPathBySlug, postPathBySlug } from 'lib/wordpress';
 import { getSiteMetadata } from 'lib/site';
@@ -73,9 +74,7 @@ export default async function PostPage({ params }) {
   const { post } = await getPostBySlug(slug);
 
   if (!post) {
-    return {
-      notFound: true,
-    };
+    notFound();
   }
 
   const { title, content, date, author, categories, modified, featuredImage } = post;

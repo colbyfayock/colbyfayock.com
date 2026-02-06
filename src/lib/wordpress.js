@@ -757,10 +757,7 @@ export async function getAllUsers() {
 
 export async function getUserByNameSlug(slug) {
   const { users } = await getAllUsers();
-
-  const normalizedSlug = slug.toLowerCase().replace(/\s+/g, '-');
-  const user = users.find((user) => user.name.toLowerCase().replace(/\s+/g, '-') === normalizedSlug);
-
+  const user = users.find((user) => user.slug === slug);
   return { user };
 }
 
@@ -962,6 +959,7 @@ export async function getAllCategories() {
         edges {
           node {
             id
+            databaseId
             name
             slug
             count
@@ -975,6 +973,7 @@ export async function getAllCategories() {
   const categories =
     data?.categories?.edges?.map(({ node }) => ({
       id: node.id,
+      categoryId: node.databaseId,
       name: node.name,
       slug: node.slug,
       count: node.count,
@@ -991,7 +990,7 @@ export async function getCategoryBySlug(slug) {
 
 export async function getPostsByCategoryId(categoryId) {
   const query = `
-    query PostsByCategory($id: ID!) {
+    query PostsByCategory($id: Int!) {
       posts(where: { categoryId: $id }, first: 100) {
         edges {
           node {

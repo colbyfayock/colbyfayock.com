@@ -3,7 +3,7 @@
  */
 
 export async function getSearchData() {
-  const response = await fetch('/wp-search.json');
+  const response = await fetch('/api/wp-search.json');
   const json = await response.json();
   return json;
 }
