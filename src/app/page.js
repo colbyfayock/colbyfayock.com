@@ -103,6 +103,7 @@ export default async function HomePage() {
                   postCardOptions={{
                     contentField: 'content',
                     linkField: 'featureUrl',
+                    hideMetadata: true,
                   }}
                 />
               </div>
@@ -122,6 +123,7 @@ export default async function HomePage() {
                   postCardOptions={{
                     contentField: 'content',
                     linkField: 'projectUrl',
+                    hideMetadata: true,
                   }}
                 />
               </div>

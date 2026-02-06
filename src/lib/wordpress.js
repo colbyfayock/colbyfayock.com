@@ -44,7 +44,7 @@ export async function getAllPostSlugs() {
 export async function getAllPosts() {
   const query = `
     query AllPosts {
-      posts(first: 100) {
+      posts(first: 1000) {
         edges {
           node {
             id
@@ -109,6 +109,9 @@ export async function getAllFeaturedFeatures() {
             title
             slug
             content
+            featuredFeature {
+              featureUrl
+            }
           }
         }
       }
@@ -124,6 +127,7 @@ export async function getAllFeaturedFeatures() {
           title: node.title,
           slug: node.slug,
           content: node.content,
+          featureUrl: node.featuredFeature?.featureUrl,
         };
         return feature;
       }) || [];
@@ -138,7 +142,7 @@ export async function getAllFeaturedFeatures() {
 export async function getPostsCount() {
   const query = `
     query PostsCount {
-      posts {
+      posts(first: 1000) {
         edges {
           node {
             id
@@ -864,6 +868,9 @@ export async function getAllProjects() {
                 sourceUrl
               }
             }
+            project {
+              projectUrl
+            }
           }
         }
       }
@@ -877,6 +884,7 @@ export async function getAllProjects() {
       if (project.featuredImage?.node) {
         project.featuredImage = project.featuredImage.node;
       }
+      project.projectUrl = node.project?.projectUrl;
       return project;
     }) || [];
 

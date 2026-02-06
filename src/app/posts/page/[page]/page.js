@@ -32,7 +32,7 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function PostsPagePage({ params }) {
-  const { page } = params;
+  const { page } = await params;
   const pageNum = parseInt(page);
   const postsPerPage = await getPostsPerPage();
   const offset = postsPerPage * (pageNum - 1);

@@ -7,16 +7,23 @@ import Metadata from 'components/Metadata';
 
 import styles from './PostCard.module.scss';
 
-const PostCard = ({ className, post, parentSlug, contentField = 'excerpt', linkField = 'slug' }) => {
+const PostCard = ({
+  className,
+  post,
+  parentSlug,
+  contentField = 'excerpt',
+  linkField = 'slug',
+  hideMetadata = false,
+}) => {
   const { title, slug, date, categories } = post;
 
   const metadata = {};
 
-  if (date) {
+  if (date && !hideMetadata) {
     metadata.date = date;
   }
 
-  if (categories) {
+  if (categories && !hideMetadata) {
     metadata.categories = categories;
   }
 
