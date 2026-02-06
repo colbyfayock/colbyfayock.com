@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { FaRss } from 'react-icons/fa';
 
-import { getAllPosts, getAllProjects, getAllFeaturedFeatures } from 'lib/wordpress';
+import { getAllPosts } from 'lib/posts';
+import { getAllProjects } from 'lib/projects';
+import { getAllFeaturedFeatures } from 'lib/featured-features';
 import { getSiteMetadata } from 'lib/site';
 
 import Layout from 'components/Layout';

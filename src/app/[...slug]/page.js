@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-import { getPageByUri, getAllPages, getBreadcrumbsByUri } from 'lib/wordpress';
+import { getPageByUri, getAllPages, getBreadcrumbsByUri } from 'lib/pages';
 import { getSiteMetadata } from 'lib/site';
 
 import Layout from 'components/Layout';

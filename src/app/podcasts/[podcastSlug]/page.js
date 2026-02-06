@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 
-import { getPodcastBySlug } from 'lib/wordpress';
+import { getPodcastBySlug } from 'lib/podcasts';
 import { getSiteMetadata } from 'lib/site';
 
 import Layout from 'components/Layout';

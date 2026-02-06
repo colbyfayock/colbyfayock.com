@@ -1,4 +1,4 @@
-import { getPostsCount, getPaginatedPosts, getPostsPerPage } from 'lib/wordpress';
+import { getPostsCount, getPaginatedPosts, getPostsPerPage } from 'lib/posts';
 import { getSiteMetadata } from 'lib/site';
 
 import Layout from 'components/Layout';

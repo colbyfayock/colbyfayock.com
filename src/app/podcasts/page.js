@@ -1,4 +1,4 @@
-import { getAllPodcasts } from 'lib/wordpress';
+import { getAllPodcasts } from 'lib/podcasts';
 import { getSiteMetadata } from 'lib/site';
 
 import TemplateArchive from 'templates/archive';

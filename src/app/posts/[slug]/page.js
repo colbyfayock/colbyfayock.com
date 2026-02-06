@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-import { getPostBySlug, getRelatedPosts, categoryPathBySlug, postPathBySlug } from 'lib/wordpress';
+import { getPostBySlug, getRelatedPosts, postPathBySlug } from 'lib/posts';
+import { categoryPathBySlug } from 'lib/categories';
 import { getSiteMetadata } from 'lib/site';
 import { sanitizeHtml } from 'lib/sanitize';
 

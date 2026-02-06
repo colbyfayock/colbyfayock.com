@@ -1,4 +1,4 @@
-import { fetchAPI } from './wordpress';
+import { fetchAPI } from './api';
 
 export async function getSiteMetadata() {
   const query = `

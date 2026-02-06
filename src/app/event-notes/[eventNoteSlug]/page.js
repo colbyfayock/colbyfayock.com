@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-import { getEventNoteBySlug } from 'lib/wordpress';
+import { getEventNoteBySlug } from 'lib/event-notes';
 import { getSiteMetadata } from 'lib/site';
 
 import Layout from 'components/Layout';

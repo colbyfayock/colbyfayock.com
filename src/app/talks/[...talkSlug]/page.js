@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-import { getTalkByUriSlug } from 'lib/wordpress';
+import { getTalkByUriSlug } from 'lib/talks';
 import { getSiteMetadata } from 'lib/site';
 
 import Layout from 'components/Layout';

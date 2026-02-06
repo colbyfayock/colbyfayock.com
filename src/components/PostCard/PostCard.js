@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import clsx from 'clsx';
-import { postPathBySlug } from 'lib/wordpress';
+import { postPathBySlug } from 'lib/posts';
 import { sanitizeExcerpt } from 'lib/sanitize';
 
 import Metadata from 'components/Metadata';

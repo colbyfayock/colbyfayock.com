@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 
-import { getCategoryBySlug, getPostsByCategoryId } from 'lib/wordpress';
+import { getCategoryBySlug, getPostsByCategoryId } from 'lib/categories';
 
 import TemplateArchive from 'templates/archive';
 import Title from 'components/Title';

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { getAllCategories, categoryPathBySlug } from 'lib/wordpress';
+import { getAllCategories, categoryPathBySlug } from 'lib/categories';
 import { getSiteMetadata } from 'lib/site';
 
 import Layout from 'components/Layout';

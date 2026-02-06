@@ -46,3 +46,7 @@ public/images/og
 
 # Scratch folder
 /scratch
+
+# Screenshots
+.screenshots/
+*.png

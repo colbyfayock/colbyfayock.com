@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 
-import { getUserByNameSlug, getPostsByAuthorSlug } from 'lib/wordpress';
+import { getUserByNameSlug } from 'lib/users';
+import { getPostsByAuthorSlug } from 'lib/posts';
 
 import TemplateArchive from 'templates/archive';
 import Title from 'components/Title';

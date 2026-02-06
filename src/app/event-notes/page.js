@@ -1,4 +1,4 @@
-import { getAllEventNotes } from 'lib/wordpress';
+import { getAllEventNotes } from 'lib/event-notes';
 import { getSiteMetadata } from 'lib/site';
 
 import Layout from 'components/Layout';

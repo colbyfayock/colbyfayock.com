@@ -1,4 +1,4 @@
-import { getAllProjects } from 'lib/wordpress';
+import { getAllProjects } from 'lib/projects';
 import { getSiteMetadata } from 'lib/site';
 
 import TemplateArchive from 'templates/archive';

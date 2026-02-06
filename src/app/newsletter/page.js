@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 
-import { getPageByUri } from 'lib/wordpress';
+import { getPageByUri } from 'lib/pages';
 import { getSiteMetadata } from 'lib/site';
 
 import Layout from 'components/Layout';
