@@ -1,6 +1,6 @@
 @use "sass:math";
-@import "../settings/__settings";
-@import "styles/util/__util";
+@import "~styles/settings/__settings";
+@import "~styles/util/__util";
 
 .pageUses {
   :global(.wp-block-columns) {
