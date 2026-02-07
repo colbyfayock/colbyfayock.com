@@ -46,23 +46,13 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const { title, metaTitle, description, excerpt, featuredImage, slug: postSlug } = post;
-  const socialImage = featuredImage?.sourceUrl;
+  const { title, metaTitle, description, excerpt, slug: postSlug } = post;
 
   return {
     title: metaTitle || title,
     description: description || excerpt,
     openGraph: {
       url: `${metadata.url}/posts/${postSlug}`,
-      images: socialImage
-        ? [
-            {
-              url: socialImage,
-              width: 2000,
-              height: 1000,
-            },
-          ]
-        : [],
     },
     alternates: {
       canonical: `/posts/${postSlug}`,
@@ -81,8 +71,6 @@ export default async function PostPage({ params }) {
   const { title, content, date, author, categories, modified, featuredImage } = post;
   const metadata = await getSiteMetadata();
 
-  const socialImage = featuredImage?.sourceUrl;
-
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -91,7 +79,6 @@ export default async function PostPage({ params }) {
       '@id': `${metadata.url}/posts/${slug}`,
     },
     headline: title,
-    image: [socialImage || `${metadata.url}/images/og/default.png`],
     datePublished: date ? new Date(date).toISOString() : '',
     dateModified: modified ? new Date(modified).toISOString() : date ? new Date(date).toISOString() : '',
     description: post.excerpt,
