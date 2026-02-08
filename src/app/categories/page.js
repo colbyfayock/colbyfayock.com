@@ -69,10 +69,3 @@ export default async function CategoriesPage() {
     </>
   );
 }
-
-export async function generateStaticParams() {
-  const { categories } = await getAllCategories();
-  return categories.map((category) => ({
-    slug: category.slug,
-  }));
-}

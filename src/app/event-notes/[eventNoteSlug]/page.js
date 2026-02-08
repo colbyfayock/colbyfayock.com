@@ -17,7 +17,6 @@ import TwitterShareButton from './TwitterShareButton';
 import styles from 'styles/pages/EventNotes.module.scss';
 
 export const revalidate = 60;
-export const dynamicParams = true;
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
@@ -33,11 +32,6 @@ export async function generateMetadata({ params }) {
     title: eventNote.title,
     description: `Notes and resources from ${eventNote.title}`,
   };
-}
-
-// Skip static generation to avoid API rate limits during build
-export async function generateStaticParams() {
-  return [];
 }
 
 export default async function EventNotePage({ params }) {

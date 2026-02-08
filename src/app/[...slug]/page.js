@@ -15,12 +15,6 @@ import Breadcrumbs from 'components/Breadcrumbs';
 import styles from 'styles/pages/Page.module.scss';
 
 export const revalidate = 60;
-export const dynamicParams = true;
-
-// Skip static generation to avoid API rate limits during build
-export async function generateStaticParams() {
-  return [];
-}
 
 export async function generateMetadata({ params }) {
   const metadata = await getSiteMetadata();

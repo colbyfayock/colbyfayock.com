@@ -6,7 +6,6 @@ import TemplateArchive from 'templates/archive';
 import Title from 'components/Title';
 
 export const revalidate = 60;
-export const dynamicParams = true;
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
@@ -22,11 +21,6 @@ export async function generateMetadata({ params }) {
     title: category.name,
     description: category.description || `Posts from ${category.name}`,
   };
-}
-
-// Skip static generation to avoid API rate limits during build
-export async function generateStaticParams() {
-  return [];
 }
 
 export default async function CategoryPage({ params }) {

@@ -13,7 +13,6 @@ import FeaturedImage from 'components/FeaturedImage';
 import styles from 'styles/pages/Post.module.scss';
 
 export const revalidate = 60;
-export const dynamicParams = true;
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
@@ -29,11 +28,6 @@ export async function generateMetadata({ params }) {
     title: podcast.title,
     description: `Listen to ${podcast.title}`,
   };
-}
-
-// Skip static generation to avoid API rate limits during build
-export async function generateStaticParams() {
-  return [];
 }
 
 export default async function PodcastPage({ params }) {
