@@ -66,7 +66,7 @@ export default function TemplateArchive({
                 {posts.map((post) => {
                   return (
                     <li key={post.slug}>
-                      <PostCard post={post} parentSlug={slug} options={postOptions} />
+                      <PostCard post={post} parentSlug={slug} {...postOptions} />
                     </li>
                   );
                 })}
