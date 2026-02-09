@@ -51,6 +51,9 @@ export async function getPodcastBySlug(slug) {
             caption
           }
         }
+        podcast {
+          datePublished
+        }
       }
     }
   `;
@@ -65,6 +68,8 @@ export async function getPodcastBySlug(slug) {
   if (podcast.featuredImage?.node) {
     podcast.featuredImage = podcast.featuredImage.node;
   }
+  podcast.datePublished = podcast.podcast?.datePublished;
+  delete podcast.podcast;
 
   return { podcast };
 }
