@@ -10,6 +10,7 @@ export const revalidate = 60;
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
   const { category } = await getCategoryBySlug(resolvedParams.slug);
+  const { posts } = await getPostsByCategoryId(category?.categoryId);
 
   if (!category) {
     return {
@@ -17,9 +18,23 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const categoryDescription = category.description || `Read ${posts?.length || 0} posts from ${category.name}`;
+
   return {
     title: category.name,
-    description: category.description || `Posts from ${category.name}`,
+    description: categoryDescription,
+    openGraph: {
+      title: category.name,
+      description: categoryDescription,
+      url: `/categories/${resolvedParams.slug}`,
+    },
+    twitter: {
+      title: category.name,
+      description: categoryDescription,
+    },
+    alternates: {
+      canonical: `/categories/${resolvedParams.slug}`,
+    },
   };
 }
 

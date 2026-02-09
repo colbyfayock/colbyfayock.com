@@ -11,16 +11,23 @@ export const revalidate = 60;
 
 export async function generateMetadata({ params }) {
   const { page } = await params;
-  const metadata = await getSiteMetadata();
+  const description = `Browse posts on page ${page}.`;
+  const pagePath = `/posts/page/${page}`;
 
   return {
     title: `Posts - Page ${page}`,
-    description: `Browse posts on page ${page}.`,
+    description,
     openGraph: {
-      url: `${metadata.url}/posts/page/${page}`,
+      title: `Posts - Page ${page}`,
+      description,
+      url: pagePath,
+    },
+    twitter: {
+      title: `Posts - Page ${page}`,
+      description,
     },
     alternates: {
-      canonical: `/posts/page/${page}`,
+      canonical: pagePath,
     },
   };
 }

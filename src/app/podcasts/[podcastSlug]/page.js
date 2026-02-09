@@ -24,9 +24,23 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const podcastDescription = `Listen to ${podcast.title}`;
+
   return {
     title: podcast.title,
-    description: `Listen to ${podcast.title}`,
+    description: podcastDescription,
+    openGraph: {
+      title: podcast.title,
+      description: podcastDescription,
+      url: `/podcasts/${resolvedParams.podcastSlug}`,
+    },
+    twitter: {
+      title: podcast.title,
+      description: podcastDescription,
+    },
+    alternates: {
+      canonical: `/podcasts/${resolvedParams.podcastSlug}`,
+    },
   };
 }
 

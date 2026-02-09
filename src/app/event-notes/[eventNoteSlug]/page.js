@@ -28,9 +28,23 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const eventDescription = `Notes and resources from ${eventNote.title}`;
+
   return {
     title: eventNote.title,
-    description: `Notes and resources from ${eventNote.title}`,
+    description: eventDescription,
+    openGraph: {
+      title: eventNote.title,
+      description: eventDescription,
+      url: `/event-notes/${resolvedParams.eventNoteSlug}`,
+    },
+    twitter: {
+      title: eventNote.title,
+      description: eventDescription,
+    },
+    alternates: {
+      canonical: `/event-notes/${resolvedParams.eventNoteSlug}`,
+    },
   };
 }
 

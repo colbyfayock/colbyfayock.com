@@ -21,13 +21,21 @@ export async function generateMetadata() {
   const metadata = await getSiteMetadata();
 
   return {
-    title: metadata.title,
+    title: {
+      absolute: metadata.title, // Don't append site name to homepage
+    },
     description: metadata.description,
     openGraph: {
-      url: metadata.url,
+      title: metadata.title,
+      description: metadata.description,
+      url: '/',
+    },
+    twitter: {
+      title: metadata.title,
+      description: metadata.description,
     },
     alternates: {
-      canonical: metadata.url,
+      canonical: '/',
     },
   };
 }

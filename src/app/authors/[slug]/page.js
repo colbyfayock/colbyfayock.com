@@ -11,6 +11,7 @@ export const revalidate = 60;
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
   const { user } = await getUserByNameSlug(resolvedParams.slug);
+  const { posts } = await getPostsByAuthorSlug(user?.slug);
 
   if (!user) {
     return {
@@ -18,9 +19,23 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const authorDescription = user.description || `Read ${posts?.length || 0} posts from ${user.name}`;
+
   return {
     title: user.name,
-    description: user.description || `Posts by ${user.name}`,
+    description: authorDescription,
+    openGraph: {
+      title: user.name,
+      description: authorDescription,
+      url: `/authors/${resolvedParams.slug}`,
+    },
+    twitter: {
+      title: user.name,
+      description: authorDescription,
+    },
+    alternates: {
+      canonical: `/authors/${resolvedParams.slug}`,
+    },
   };
 }
 

@@ -17,7 +17,6 @@ import styles from 'styles/pages/Page.module.scss';
 export const revalidate = 60;
 
 export async function generateMetadata({ params }) {
-  const metadata = await getSiteMetadata();
   const resolvedParams = await params;
   const { slug } = resolvedParams;
 
@@ -31,24 +30,25 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const { title, metaTitle, description, slug: pageSlug } = page;
-
-  let pageTitle = metaTitle || title;
-  let pageDescription = description;
-
-  if (process.env.WORDPRESS_PLUGIN_SEO !== true) {
-    pageTitle = `${title} - ${metadata.title}`;
-    pageDescription = description || `Read more about ${title}`;
-  }
+  const { title, metaTitle, description } = page;
+  const pageTitle = metaTitle || title;
+  const pageDescription = description || `Read more about ${title}`;
+  const pagePath = `/${slug.join('/')}`;
 
   return {
     title: pageTitle,
     description: pageDescription,
     openGraph: {
-      url: `${metadata.url}${pageSlug}`,
+      title: pageTitle,
+      description: pageDescription,
+      url: pagePath,
+    },
+    twitter: {
+      title: pageTitle,
+      description: pageDescription,
     },
     alternates: {
-      canonical: pageSlug,
+      canonical: pagePath,
     },
   };
 }

@@ -31,7 +31,6 @@ function formatDate(dateString) {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const { post } = await getPostBySlug(slug);
-  const metadata = await getSiteMetadata();
 
   if (!post) {
     return {
@@ -40,12 +39,20 @@ export async function generateMetadata({ params }) {
   }
 
   const { title, metaTitle, description, excerpt, slug: postSlug } = post;
+  const postDescription = description || excerpt || `Read more about ${title}`;
 
   return {
     title: metaTitle || title,
-    description: description || excerpt,
+    description: postDescription,
     openGraph: {
-      url: `${metadata.url}/posts/${postSlug}`,
+      title: metaTitle || title,
+      description: postDescription,
+      url: `/posts/${postSlug}`,
+      type: 'article',
+    },
+    twitter: {
+      title: metaTitle || title,
+      description: postDescription,
     },
     alternates: {
       canonical: `/posts/${postSlug}`,

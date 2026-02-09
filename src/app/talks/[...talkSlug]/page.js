@@ -16,7 +16,6 @@ import styles from 'styles/pages/Talk.module.scss';
 export const revalidate = 60;
 
 export async function generateMetadata({ params }) {
-  const metadata = await getSiteMetadata();
   const resolvedParams = await params;
   const { talkSlug } = resolvedParams;
 
@@ -34,14 +33,23 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const talkDescription = `Watch and learn from the talk: ${talk.title}`;
+  const talkPath = `/talks/${talkSlug.join('/')}`;
+
   return {
     title: talk.title,
-    description: `Watch and learn from the talk: ${talk.title}`,
+    description: talkDescription,
     openGraph: {
-      url: `${metadata.url}/talks/${talkSlug.join('/')}`,
+      title: talk.title,
+      description: talkDescription,
+      url: talkPath,
+    },
+    twitter: {
+      title: talk.title,
+      description: talkDescription,
     },
     alternates: {
-      canonical: `/talks/${talkSlug.join('/')}`,
+      canonical: talkPath,
     },
   };
 }
