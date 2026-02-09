@@ -97,7 +97,7 @@ export async function getPaginatedPosts(offset = 0, limit = 10) {
   return allPosts.slice(offset, offset + limit);
 }
 
-export async function getRelatedPosts(category, postId, count = 4) {
+export async function getRelatedPosts(category, postId, count = 5) {
   if (!category?.categoryId) {
     return [];
   }
