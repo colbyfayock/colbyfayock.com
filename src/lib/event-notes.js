@@ -18,6 +18,15 @@ export async function getAllEventNotes() {
                 sourceUrl
               }
             }
+            eventNote {
+              eventtype
+              talk {
+                ... on Talk {
+                  id
+                  title
+                }
+              }
+            }
           }
         }
       }
@@ -29,7 +38,13 @@ export async function getAllEventNotes() {
     data?.eventNotes?.edges?.map(({ node }) => {
       const eventNote = {
         ...node,
+        eventType: node.eventNote?.eventtype,
+        talk: node.eventNote?.talk,
       };
+
+      // Clean up nested structure
+      delete eventNote.eventNote;
+
       if (eventNote.featuredImage?.node) {
         eventNote.featuredImage = eventNote.featuredImage.node;
       }
@@ -54,6 +69,19 @@ export async function getEventNoteBySlug(slug) {
             sourceUrl
           }
         }
+        eventNote {
+          eventslides {
+            mediaItemUrl
+          }
+          eventtype
+          mediaembed
+          talk {
+            ... on Talk {
+              id
+              title
+            }
+          }
+        }
       }
     }
   `;
@@ -64,9 +92,22 @@ export async function getEventNoteBySlug(slug) {
     return { eventNote: undefined };
   }
 
+  // Flatten the nested eventNote custom fields
+  const eventNoteData = data.eventNote;
   const eventNote = {
-    ...data.eventNote,
+    ...eventNoteData,
+    eventType: eventNoteData.eventNote?.eventtype,
+    eventSlides: eventNoteData.eventNote?.eventslides,
+    mediaEmbed: eventNoteData.eventNote?.mediaembed,
+    talk: eventNoteData.eventNote?.talk,
   };
+
+  // Clean up nested structure
+  delete eventNote.eventNote;
+
+  if (eventNote.featuredImage?.node) {
+    eventNote.featuredImage = eventNote.featuredImage.node;
+  }
 
   return { eventNote };
 }
