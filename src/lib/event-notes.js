@@ -36,10 +36,11 @@ export async function getAllEventNotes() {
   const data = await fetchAPI(query);
   const eventNotes =
     data?.eventNotes?.edges?.map(({ node }) => {
+      const talkArray = node.eventNote?.talk;
       const eventNote = {
         ...node,
         eventType: node.eventNote?.eventtype,
-        talk: node.eventNote?.talk,
+        talk: Array.isArray(talkArray) ? talkArray[0] : talkArray,
       };
 
       // Clean up nested structure
@@ -94,12 +95,13 @@ export async function getEventNoteBySlug(slug) {
 
   // Flatten the nested eventNote custom fields
   const eventNoteData = data.eventNote;
+  const talkArray = eventNoteData.eventNote?.talk;
   const eventNote = {
     ...eventNoteData,
     eventType: eventNoteData.eventNote?.eventtype,
     eventSlides: eventNoteData.eventNote?.eventslides,
     mediaEmbed: eventNoteData.eventNote?.mediaembed,
-    talk: eventNoteData.eventNote?.talk,
+    talk: Array.isArray(talkArray) ? talkArray[0] : talkArray,
   };
 
   // Clean up nested structure

@@ -96,3 +96,79 @@ export function getUrlParamsFromString(string) {
     };
   });
 }
+
+/**
+ * extractYouTubeVideoId
+ * @description Extract YouTube video ID from various YouTube URL formats
+ */
+export function extractYouTubeVideoId(url) {
+  if (typeof url !== 'string') return null;
+
+  // Match various YouTube URL formats
+  const patterns = [
+    /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/,
+    /youtube\.com\/watch\?.*v=([a-zA-Z0-9_-]{11})/,
+  ];
+
+  for (const pattern of patterns) {
+    const match = url.match(pattern);
+    if (match && match[1]) {
+      return match[1];
+    }
+  }
+
+  return null;
+}
+
+/**
+ * processContentWithEmbeds
+ * @description Process HTML content and convert YouTube URLs to responsive iframe embeds
+ */
+export function processContentWithEmbeds(content) {
+  if (typeof content !== 'string') return content;
+
+  // Pattern to match figure elements containing YouTube URLs as plain text
+  // This handles WordPress blocks that show YouTube URLs instead of embeds
+  const figurePattern =
+    /<figure[^>]*>(\s*<div[^>]*>)?(https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})[^<]*)(<\/div>)?(\s*<\/figure>)/gi;
+
+  let processed = content.replace(figurePattern, (match, preDiv, url, videoId) => {
+    if (!videoId) return match;
+
+    return `<figure class="video-embed">
+      <div class="video-embed-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <iframe 
+          src="https://www.youtube.com/embed/${videoId}" 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+          title="YouTube video"
+        ></iframe>
+      </div>
+      <figcaption><a href="${url}" rel="noopener" target="_blank">View on YouTube</a></figcaption>
+    </figure>`;
+  });
+
+  // Also handle bare YouTube URLs that might appear in paragraphs or divs
+  const bareUrlPattern =
+    /(<(?:p|div)[^>]*>)\s*(https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})[^\s<]*)\s*(<\/(?:p|div)>)/gi;
+
+  processed = processed.replace(bareUrlPattern, (match, openTag, url, videoId, closeTag) => {
+    if (!videoId) return match;
+
+    return `<figure class="video-embed">
+      <div class="video-embed-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <iframe 
+          src="https://www.youtube.com/embed/${videoId}" 
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+          title="YouTube video"
+        ></iframe>
+      </div>
+      <figcaption><a href="${url}" rel="noopener" target="_blank">View on YouTube</a></figcaption>
+    </figure>`;
+  });
+
+  return processed;
+}

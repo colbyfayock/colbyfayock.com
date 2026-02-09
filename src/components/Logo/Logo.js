@@ -1,8 +1,15 @@
+'use client';
+
 import clsx from 'clsx';
+
+import useSite from 'hooks/use-site';
 
 import styles from './Logo.module.scss';
 
-const Logo = ({ className, title }) => {
+const Logo = ({ className }) => {
+  const { metadata = {} } = useSite();
+  const { title } = metadata;
+
   return (
     <span
       className={clsx(styles.logo, className)}

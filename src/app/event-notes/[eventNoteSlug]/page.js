@@ -75,8 +75,8 @@ export default async function EventNotePage({ params }) {
             __html: title,
           }}
         />
-        {eventType === 'conference' && <p className={styles.welcome}>Thanks for tuning in to my talk!</p>}
-        {eventType === 'private' && <p className={styles.welcome}>Thanks for having me!</p>}
+        {eventType === 'conference' && <p className={styles.welcome}>Thanks for tuning in to my talk! ❤️</p>}
+        {eventType === 'private' && <p className={styles.welcome}>Thanks for having me! 🚀</p>}
       </Header>
 
       <Content>
