@@ -134,7 +134,7 @@ export default async function EventNotePage({ params }) {
                 <>
                   <h2>Watch the Replay</h2>
 
-                  <Video url={mediaEmbed} title={`Video for ${title}`} />
+                  <Video url={mediaEmbed} title={`Video for ${title}`} isActive={true} />
                 </>
               )}
 
