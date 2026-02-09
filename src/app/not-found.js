@@ -1,7 +1,5 @@
 import Link from 'next/link';
 
-import { getSiteMetadata } from 'lib/site';
-
 import Layout from 'components/Layout';
 import Section from 'components/Section';
 import Container from 'components/Container';
@@ -13,11 +11,9 @@ export const metadata = {
   robots: 'noindex, nofollow',
 };
 
-export default async function NotFound() {
-  const siteMetadata = await getSiteMetadata();
-
+export default function NotFound() {
   return (
-    <Layout metadata={siteMetadata}>
+    <Layout>
       <Section>
         <Container className={styles.center}>
           <h1>Page Not Found</h1>
