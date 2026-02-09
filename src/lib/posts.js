@@ -379,6 +379,10 @@ export async function getPostsByAuthorSlug(authorSlug) {
   return { posts };
 }
 
-export function postPathBySlug(slug) {
+export function postPathBySlug(slug, options = {}) {
+  const { parent } = options;
+  if (parent) {
+    return `/${parent}/${slug}`;
+  }
   return `/posts/${slug}`;
 }
