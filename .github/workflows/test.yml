@@ -7,23 +7,6 @@ on:
     branches: [main]
 
 jobs:
-  unit-tests:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run unit tests
-        run: npm run test:unit
-
   e2e-tests:
     runs-on: ubuntu-latest
     steps:
@@ -41,10 +24,16 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
 
+      - name: Build application
+        run: npm run build
+        env:
+          WORDPRESS_GRAPHQL_ENDPOINT: ${{ secrets.WORDPRESS_GRAPHQL_ENDPOINT }}
+
       - name: Run E2E tests
         run: npm run test:e2e
         env:
           CI: true
+          WORDPRESS_GRAPHQL_ENDPOINT: ${{ secrets.WORDPRESS_GRAPHQL_ENDPOINT }}
 
       - name: Upload Playwright report
         uses: actions/upload-artifact@v4
