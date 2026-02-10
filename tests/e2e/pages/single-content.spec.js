@@ -15,8 +15,8 @@ test.describe('Single Post Page', () => {
     );
     postUrl = allHrefs[0];
     await page.goto(postUrl);
-    // Wait for page to be fully loaded
-    await page.waitForLoadState('networkidle');
+    // Wait for page to be fully loaded (use domcontentloaded to avoid timeout with streaming)
+    await page.waitForLoadState('domcontentloaded');
   });
 
   test('renders page with title', async ({ page }) => {
@@ -36,8 +36,6 @@ test.describe('Single Post Page', () => {
   });
 
   test('displays post title as h1', async ({ page }) => {
-    // Wait for page to fully render
-    await page.waitForLoadState('networkidle');
     // Look for h1 element directly - some pages may render title differently
     const heading = page.locator('h1').first();
     await expect(heading).toBeVisible({ timeout: 10000 });
