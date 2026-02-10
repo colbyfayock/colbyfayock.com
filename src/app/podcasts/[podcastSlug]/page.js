@@ -2,7 +2,6 @@ import { notFound } from 'next/navigation';
 
 import { getPodcastBySlug } from 'lib/podcasts';
 import { getSiteMetadata } from 'lib/site';
-import { processContentWithEmbeds } from 'lib/util';
 
 import Layout from 'components/Layout';
 import Header from 'components/Header';
