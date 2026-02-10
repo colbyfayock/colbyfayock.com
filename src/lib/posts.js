@@ -1,22 +1,5 @@
 import { fetchAPI } from 'lib/api';
 
-export async function getAllPostSlugs() {
-  const query = `
-    query AllPostSlugs {
-      posts(first: 1000) {
-        edges {
-          node {
-            slug
-          }
-        }
-      }
-    }
-  `;
-
-  const data = await fetchAPI(query);
-  return data?.posts?.edges?.map(({ node }) => node.slug) || [];
-}
-
 export async function getAllPosts() {
   const query = `
     query AllPosts {

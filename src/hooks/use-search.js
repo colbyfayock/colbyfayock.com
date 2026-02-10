@@ -7,12 +7,12 @@ import { getSearchData } from 'lib/search';
 
 const SEARCH_KEYS = ['slug', 'title'];
 
-export const SEARCH_STATE_LOADING = 'LOADING';
-export const SEARCH_STATE_READY = 'READY';
-export const SEARCH_STATE_ERROR = 'ERROR';
+const SEARCH_STATE_LOADING = 'LOADING';
+const SEARCH_STATE_READY = 'READY';
+const SEARCH_STATE_ERROR = 'ERROR';
 export const SEARCH_STATE_LOADED = 'LOADED';
 
-export const SearchContext = createContext({
+const SearchContext = createContext({
   state: SEARCH_STATE_READY,
   data: null,
   client: null,
@@ -23,7 +23,7 @@ export const SearchProvider = (props) => {
   return <SearchContext.Provider value={search} {...props} />;
 };
 
-export function useSearchState() {
+function useSearchState() {
   const [state, setState] = useState(SEARCH_STATE_READY);
   const [data, setData] = useState(null);
 
