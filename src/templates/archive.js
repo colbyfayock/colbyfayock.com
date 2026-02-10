@@ -35,7 +35,7 @@ export default function TemplateArchive({
   };
 
   return (
-    <Layout pageClassName={pageClassName}>
+    <Layout pageClassName={pageClassName} metadata={siteMetadata}>
       <WebpageJsonLd
         title={pageMetadata.title}
         description={pageMetadata.description}
