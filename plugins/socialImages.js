@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const fabric = require('fabric').fabric;
+const { StaticCanvas, Textbox } = require('fabric');
 const { getAllPosts, mkdirp } = require('./util');
 
 const WebpackPluginCompiler = require('./plugin-compiler');
@@ -34,7 +34,7 @@ module.exports = function sitemap(nextConfig = {}) {
       posts.forEach((post) => {
         const { title, slug } = post;
 
-        const canvas = new fabric.StaticCanvas(null, {
+        const canvas = new StaticCanvas(null, {
           width,
           height,
           backgroundColor: 'white',
@@ -43,7 +43,7 @@ module.exports = function sitemap(nextConfig = {}) {
         const headlineWidth = (width / 3) * 2;
         const headlineHeight = height - padding * 2 - footerHeight;
 
-        const headline = new fabric.Textbox(title, {
+        const headline = new Textbox(title, {
           left: (width - headlineWidth) / 2,
           top: height / 2 - footerHeight,
           originY: 'center',
@@ -62,7 +62,7 @@ module.exports = function sitemap(nextConfig = {}) {
         const homepage = pkg.homepage && pkg.homepage.replace(/http(s)?:\/\//, '');
 
         if (homepage) {
-          const website = new fabric.Textbox(homepage, {
+          const website = new Textbox(homepage, {
             left: 0,
             top: height - padding / 2 - footerHeight,
             width,
