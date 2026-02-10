@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { expectValidSeo, getSeoMetadata } from '../../helpers/seo.js';
+import { expectValidSeo } from '../../helpers/seo.js';
 
 test.describe('Posts Listing Page', () => {
   test.beforeEach(async ({ page }) => {
