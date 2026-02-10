@@ -2,7 +2,6 @@ const fs = require('fs');
 const he = require('he');
 const { gql, ApolloClient, InMemoryCache } = require('@apollo/client');
 const RSS = require('rss');
-const prettier = require('prettier');
 
 const config = require('../package.json');
 
@@ -332,12 +331,7 @@ function generateSitemap({ posts = [], pages = [] }) {
     </urlset>
     `;
 
-  const sitemapFormatted = prettier.format(sitemap, {
-    printWidth: 120,
-    parser: 'html',
-  });
-
-  return sitemapFormatted;
+  return sitemap;
 }
 
 /**

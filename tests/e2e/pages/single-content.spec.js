@@ -7,8 +7,13 @@ test.describe('Single Post Page', () => {
   test.beforeEach(async ({ page }) => {
     // First get a real post URL from the listing page
     await page.goto('/posts');
-    const firstPostLink = page.locator('a[href^="/posts/"]').first();
-    postUrl = await firstPostLink.getAttribute('href');
+    // Exclude pagination links (/posts/page/*) by using a regex-based filter
+    // Post slugs contain letters/hyphens, not "page/"
+    const postLinks = page.locator('a[href^="/posts/"]');
+    const allHrefs = await postLinks.evaluateAll((links) =>
+      links.map((l) => l.getAttribute('href')).filter((h) => h && !h.includes('/posts/page/')),
+    );
+    postUrl = allHrefs[0];
     await page.goto(postUrl);
     // Wait for page to be fully loaded
     await page.waitForLoadState('networkidle');
@@ -112,23 +117,27 @@ test.describe('Single Podcast Page', () => {
 });
 
 test.describe('Single Category Page', () => {
+  let categoryUrl;
+
   test.beforeEach(async ({ page }) => {
     await page.goto('/categories');
+    // Get an actual category link from the list
+    const categoryLinks = page.locator('main a[href^="/categories/"]');
+    const allHrefs = await categoryLinks.evaluateAll((links) =>
+      links.map((l) => l.getAttribute('href')).filter((h) => h && h !== '/categories/'),
+    );
+    categoryUrl = allHrefs[0];
   });
 
   test('renders page with title', async ({ page }) => {
-    const firstLink = page.locator('a[href^="/categories/"]').first();
-    const url = await firstLink.getAttribute('href');
-    await page.goto(url);
+    await page.goto(categoryUrl);
 
     const title = await page.title();
     expect(title).toBeTruthy();
   });
 
   test('has valid SEO metadata', async ({ page }) => {
-    const firstLink = page.locator('a[href^="/categories/"]').first();
-    const url = await firstLink.getAttribute('href');
-    await page.goto(url);
+    await page.goto(categoryUrl);
 
     await expectValidSeo(page, {
       hasCanonical: true,
@@ -136,18 +145,14 @@ test.describe('Single Category Page', () => {
   });
 
   test('displays category heading', async ({ page }) => {
-    const firstLink = page.locator('a[href^="/categories/"]').first();
-    const url = await firstLink.getAttribute('href');
-    await page.goto(url);
+    await page.goto(categoryUrl);
 
     const heading = page.getByRole('heading', { level: 1 });
     await expect(heading).toBeVisible();
   });
 
   test('displays posts in category', async ({ page }) => {
-    const firstLink = page.locator('a[href^="/categories/"]').first();
-    const url = await firstLink.getAttribute('href');
-    await page.goto(url);
+    await page.goto(categoryUrl);
 
     // Should show posts belonging to this category (may be 0)
     const postLinks = page.locator('a[href^="/posts/"]');

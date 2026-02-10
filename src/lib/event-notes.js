@@ -1,86 +1,115 @@
-import { getApolloClient } from 'lib/apollo-client';
-
-import { QUERY_ALL_EVENT_NOTES, QUERY_EVENT_NOTE_BY_SLUG } from 'data/event-notes';
-
-const PREFIX = '[Event Notes]';
-
-/**
- * getEventNoteBySlug
- */
-
-export async function getEventNoteBySlug(slug) {
-  const apolloClient = getApolloClient();
-
-  let eventNoteData;
-
-  try {
-    eventNoteData = await apolloClient.query({
-      query: QUERY_EVENT_NOTE_BY_SLUG,
-      variables: {
-        slug,
-      },
-    });
-  } catch (e) {
-    console.log(`${PREFIX}[getEventNoteBySlug] Failed to query data: ${e.message}`);
-    throw e;
-  }
-
-  if (!eventNoteData?.data.eventNote) {
-    return {
-      eventNote: undefined,
-    };
-  }
-
-  const eventNote = [eventNoteData?.data.eventNote].map(mapEventNoteData)[0];
-
-  return {
-    eventNote,
-  };
-}
-
-/**
- * getAllEventNotes
- */
+import { fetchAPI } from 'lib/api';
 
 export async function getAllEventNotes() {
-  const apolloClient = getApolloClient();
+  const query = `
+    query AllEventNotes {
+      eventNotes(first: 100) {
+        edges {
+          node {
+            id
+            slug
+            title
+            uri
+            content
+            date
+            featuredImage {
+              node {
+                altText
+                sourceUrl
+              }
+            }
+            eventNote {
+              eventtype
+              talk {
+                ... on Talk {
+                  id
+                  title
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
 
-  let eventNoteData;
+  const data = await fetchAPI(query);
+  const eventNotes =
+    data?.eventNotes?.edges?.map(({ node }) => {
+      const talkArray = node.eventNote?.talk;
+      const eventNote = {
+        ...node,
+        eventType: node.eventNote?.eventtype,
+        talk: Array.isArray(talkArray) ? talkArray[0] : talkArray,
+      };
 
-  try {
-    eventNoteData = await apolloClient.query({
-      query: QUERY_ALL_EVENT_NOTES,
-    });
-  } catch (e) {
-    console.log(`${PREFIX}[getAllEventNotes] Failed to query data: ${e.message}`);
-    throw e;
-  }
+      // Clean up nested structure
+      delete eventNote.eventNote;
 
-  const eventNotes = eventNoteData?.data.eventNotes.edges.map(({ node = {} }) => node);
+      if (eventNote.featuredImage?.node) {
+        eventNote.featuredImage = eventNote.featuredImage.node;
+      }
+      return eventNote;
+    }) || [];
 
-  return {
-    eventNotes: Array.isArray(eventNotes) && eventNotes.map(mapEventNoteData),
-  };
+  return { eventNotes };
 }
 
-/**
- * mapEventNoteData
- */
+export async function getEventNoteBySlug(slug) {
+  const query = `
+    query EventNoteBySlug($slug: ID!) {
+      eventNote(id: $slug, idType: SLUG) {
+        id
+        title
+        slug
+        content
+        date
+        featuredImage {
+          node {
+            altText
+            sourceUrl
+          }
+        }
+        eventNote {
+          eventslides {
+            mediaItemUrl
+          }
+          eventtype
+          mediaembed
+          talk {
+            ... on Talk {
+              id
+              title
+            }
+          }
+        }
+      }
+    }
+  `;
 
-export function mapEventNoteData(eventNote = {}) {
-  const data = {
-    ...eventNote,
-    ...eventNote.eventNote,
+  const data = await fetchAPI(query, { slug });
+
+  if (!data?.eventNote) {
+    return { eventNote: undefined };
+  }
+
+  // Flatten the nested eventNote custom fields
+  const eventNoteData = data.eventNote;
+  const talkArray = eventNoteData.eventNote?.talk;
+  const eventNote = {
+    ...eventNoteData,
+    eventType: eventNoteData.eventNote?.eventtype,
+    eventSlides: eventNoteData.eventNote?.eventslides,
+    mediaEmbed: eventNoteData.eventNote?.mediaembed,
+    talk: Array.isArray(talkArray) ? talkArray[0] : talkArray,
   };
 
-  data.eventType = data.eventtype;
-  data.eventSlides = data.eventslides;
-  data.mediaEmbed = data.mediaembed || null;
-  data.talk = data.talk && data.talk[0];
+  // Clean up nested structure
+  delete eventNote.eventNote;
 
-  delete data.eventtype;
-  delete data.eventslides;
-  delete data.mediaembed;
+  if (eventNote.featuredImage?.node) {
+    eventNote.featuredImage = eventNote.featuredImage.node;
+  }
 
-  return data;
+  return { eventNote };
 }

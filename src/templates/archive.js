@@ -1,7 +1,6 @@
-import { Helmet } from 'react-helmet';
+'use client';
 
 import { WebpageJsonLd } from 'lib/json-ld';
-import { helmetSettingsFromMetadata } from 'lib/site';
 import useSite from 'hooks/use-site';
 
 import Layout from 'components/Layout';
@@ -29,28 +28,29 @@ export default function TemplateArchive({
 }) {
   const { metadata: siteMetadata = {} } = useSite();
 
-  if (process.env.WORDPRESS_PLUGIN_SEO !== true) {
-    metadata.title = `${title} - ${siteMetadata.title}`;
-    metadata.og.title = metadata.title;
-    metadata.twitter.title = metadata.title;
-  }
-
-  const helmetSettings = helmetSettingsFromMetadata(metadata);
+  const pageMetadata = {
+    ...metadata,
+    title: metadata.title || title,
+    description: metadata.description || `Read ${label.toLowerCase()} at ${siteMetadata.title}`,
+  };
 
   return (
-    <Layout pageClassName={pageClassName}>
-      <Helmet {...helmetSettings} />
-
-      <WebpageJsonLd title={title} description={metadata.description} siteTitle={siteMetadata.title} slug={slug} />
+    <Layout pageClassName={pageClassName} metadata={siteMetadata}>
+      <WebpageJsonLd
+        title={pageMetadata.title}
+        description={pageMetadata.description}
+        siteTitle={siteMetadata.title}
+        slug={slug}
+      />
 
       <Header>
         <Container>
           <h1>{Title || title}</h1>
-          {metadata.description && (
+          {pageMetadata.description && (
             <p
               className={styles.archiveDescription}
               dangerouslySetInnerHTML={{
-                __html: metadata.description,
+                __html: pageMetadata.description,
               }}
             />
           )}
@@ -66,7 +66,7 @@ export default function TemplateArchive({
                 {posts.map((post) => {
                   return (
                     <li key={post.slug}>
-                      <PostCard post={post} parentSlug={slug} options={postOptions} />
+                      <PostCard post={post} parentSlug={slug} {...postOptions} />
                     </li>
                   );
                 })}

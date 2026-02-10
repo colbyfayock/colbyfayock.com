@@ -1,6 +1,8 @@
-import useSite from 'hooks/use-site';
+'use client';
 
-import ClassName from 'models/classname';
+import clsx from 'clsx';
+
+import useSite from 'hooks/use-site';
 
 import styles from './Logo.module.scss';
 
@@ -8,15 +10,11 @@ const Logo = ({ className }) => {
   const { metadata = {} } = useSite();
   const { title } = metadata;
 
-  let logoClassName = new ClassName(styles.logo);
-
-  logoClassName.addIf(className, className);
-
   return (
     <span
-      className={logoClassName}
+      className={clsx(styles.logo, className)}
       dangerouslySetInnerHTML={{
-        __html: title,
+        __html: title || '',
       }}
     />
   );

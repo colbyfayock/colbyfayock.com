@@ -1,5 +1,5 @@
 import { getSiteMetadata } from 'lib/site';
-import { getAllPages, pagePathBySlug } from 'lib/pages';
+import { getAllPages } from 'lib/pages';
 import { getAllPosts, postPathBySlug } from 'lib/posts';
 
 export default async function sitemap() {
@@ -9,7 +9,7 @@ export default async function sitemap() {
 
   const pages = allPages.map(({ modified, slug }) => {
     return {
-      url: `${metadata.url}${pagePathBySlug(slug)}`,
+      url: `${metadata.url}/${slug}`,
       lastModified: new Date(modified).toISOString(),
     };
   });

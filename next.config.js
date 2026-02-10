@@ -1,7 +1,11 @@
 // const socialImages = require('./plugins/socialImages');
+const path = require('path');
 const pkg = require('./package.json');
 
 const config = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'src')],
+  },
   // By enabling verbose logging, it will provide additional output details for
   // diagnostic purposes. By default is set to false.
   // verbose: true,

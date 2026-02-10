@@ -1,9 +1,11 @@
+'use client';
+
 import { useState, useEffect } from 'react';
 import { FaPlay } from 'react-icons/fa';
 import Image from 'next/image';
 
 import { getUrlParamsFromString } from 'lib/util';
-import ClassName from 'models/classname';
+import clsx from 'clsx';
 
 import styles from './Video.module.scss';
 
@@ -14,10 +16,6 @@ export const Video = ({ className, title, url, width = 560, height = 315, isActi
     if (isActive !== defaultIsActive) setIsActive(defaultIsActive);
   }, [defaultIsActive]);
 
-  const videoClassName = new ClassName(styles.video);
-
-  videoClassName.addIf(className, className);
-
   const videoId = getUrlParamsFromString(url).find(({ key }) => key === 'v')?.value;
 
   function handleOnActivateClick(e) {
@@ -26,7 +24,7 @@ export const Video = ({ className, title, url, width = 560, height = 315, isActi
   }
 
   return (
-    <figure className={videoClassName.toString()}>
+    <figure className={clsx(styles.video, className)}>
       <div
         className={styles.videoContainer}
         style={{

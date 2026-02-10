@@ -1,88 +1,75 @@
-import { getApolloClient } from 'lib/apollo-client';
-
-import { QUERY_ALL_TALKS, QUERY_TALK_BY_URI, TALKS_ROOT_SLUG } from 'data/talks';
-import { removeLastTrailingSlash } from 'lib/util';
-
-const PREFIX = '[Talks]';
-
-/**
- * getTalkByUri
- */
+import { fetchAPI } from 'lib/api';
 
 export async function getTalkByUri(uri) {
-  const apolloClient = getApolloClient();
+  const query = `
+    query TalkByUri($uri: ID!) {
+      talk(id: $uri, idType: URI) {
+        content
+        id
+        slug
+        title
+        uri
+        talk {
+          talk {
+            ... on EventNote {
+              id
+              title
+              uri
+            }
+          }
+        }
+      }
+    }
+  `;
 
-  let talkData;
+  const data = await fetchAPI(query, { uri });
 
-  try {
-    talkData = await apolloClient.query({
-      query: QUERY_TALK_BY_URI,
-      variables: {
-        uri,
-      },
-    });
-  } catch (e) {
-    console.log(`${PREFIX}[getTalkByUri] Failed to query data: ${e.message}`);
-    throw e;
+  if (!data?.talk) {
+    return { talk: undefined };
   }
 
-  if (!talkData?.data.talk) {
-    return {
-      talk: undefined,
-    };
-  }
+  const talk = { ...data.talk };
+  talk.events = talk.talk?.talk || [];
+  delete talk.talk;
 
-  const talk = [talkData?.data.talk].map(mapTalkData)[0];
-
-  return {
-    talk,
-  };
+  return { talk };
 }
-
-/**
- * getTalkByUriSlug
- */
 
 export async function getTalkByUriSlug(uriSlug) {
-  return getTalkByUri(`/${TALKS_ROOT_SLUG}/${uriSlug}`);
+  return getTalkByUri(`/talks/${uriSlug}`);
 }
-
-/**
- * getAllTalks
- */
 
 export async function getAllTalks() {
-  const apolloClient = getApolloClient();
+  const query = `
+    query AllTalks {
+      talks(first: 100) {
+        edges {
+          node {
+            id
+            slug
+            title
+            uri
+            talk {
+              talk {
+                ... on EventNote {
+                  id
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `;
 
-  let talkData;
+  const data = await fetchAPI(query);
+  const talks =
+    data?.talks?.edges?.map(({ node }) => {
+      const talk = { ...node };
+      talk.events = talk.talk?.talk || [];
+      delete talk.talk;
+      return talk;
+    }) || [];
 
-  try {
-    talkData = await apolloClient.query({
-      query: QUERY_ALL_TALKS,
-    });
-  } catch (e) {
-    console.log(`${PREFIX}[getAllTalks] Failed to query data: ${e.message}`);
-    throw e;
-  }
-
-  const talks = talkData?.data.talks.edges.map(({ node = {} }) => node);
-
-  return {
-    talks: Array.isArray(talks) && talks.map(mapTalkData),
-  };
-}
-
-/**
- * mapTalkData
- */
-
-export function mapTalkData(talk = {}) {
-  const data = { ...talk };
-
-  data.uriSlug = data.uri ? removeLastTrailingSlash(data.uri.replace(`/${TALKS_ROOT_SLUG}/`, '')) : null;
-
-  data.events = data.talk?.talk || [];
-  delete data.talk;
-
-  return data;
+  return { talks };
 }

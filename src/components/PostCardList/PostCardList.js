@@ -1,19 +1,14 @@
 import Link from 'next/link';
 import { FaChevronRight } from 'react-icons/fa';
-
-import ClassName from 'models/classname';
+import clsx from 'clsx';
 
 import PostCard from 'components/PostCard';
 
 import styles from './PostCardList.module.scss';
 
 const PostCardList = ({ className, posts, labelPlural = 'Posts', url, postCardOptions }) => {
-  const postCardListClassName = new ClassName(styles.postCardList);
-
-  postCardListClassName.addIf(className, className);
-
   return (
-    <div className={postCardListClassName}>
+    <div className={clsx(styles.postCardList, className)}>
       <ul className={styles.postCardListPosts}>
         {posts.map((post) => {
           return (

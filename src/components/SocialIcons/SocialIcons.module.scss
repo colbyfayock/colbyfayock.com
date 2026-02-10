@@ -1,5 +1,5 @@
-@import "styles/settings/__settings";
-@import "styles/util/__util";
+@import "~styles/settings/__settings";
+@import "~styles/util/__util";
 
 .socialIcons {
   @include horizontalList();

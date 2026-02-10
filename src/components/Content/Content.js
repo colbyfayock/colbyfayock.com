@@ -1,13 +1,9 @@
-import ClassName from 'models/classname';
+import clsx from 'clsx';
 
 import styles from './Content.module.scss';
 
 const Content = ({ children, className }) => {
-  const contentClassName = new ClassName(styles.content);
-
-  contentClassName.addIf(className, className);
-
-  return <div className={contentClassName.toString()}>{children}</div>;
+  return <div className={clsx(styles.content, className)}>{children}</div>;
 };
 
 export default Content;

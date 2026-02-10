@@ -1,5 +1,8 @@
 import { defineConfig, devices } from '@playwright/test';
 
+const baseURL = process.env.BASE_URL || 'http://localhost:3000';
+const isExternal = baseURL !== 'http://localhost:3000';
+
 export default defineConfig({
   testDir: './tests/e2e',
   fullyParallel: true,
@@ -8,7 +11,7 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    baseURL: 'http://localhost:3000',
+    baseURL,
     trace: 'on-first-retry',
   },
   projects: [
@@ -17,10 +20,15 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
   ],
-  webServer: {
-    command: 'npm run dev',
-    url: 'http://localhost:3000',
-    reuseExistingServer: !process.env.CI,
-    timeout: 120000,
-  },
+  // Only start dev server when testing locally
+  ...(isExternal
+    ? {}
+    : {
+        webServer: {
+          command: 'npm run dev',
+          url: 'http://localhost:3000',
+          reuseExistingServer: !process.env.CI,
+          timeout: 120000,
+        },
+      }),
 });

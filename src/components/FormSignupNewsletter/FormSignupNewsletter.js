@@ -1,5 +1,7 @@
+'use client';
+
 import { useState } from 'react';
-import ClassName from 'models/classname';
+import clsx from 'clsx';
 
 import Button from 'components/Button';
 
@@ -8,9 +10,6 @@ import styles from './FormSignupNewsletter.module.scss';
 const FormSignupNewsletter = ({ className, location }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  const formClassName = new ClassName(styles.formSignupNewsletter);
-
-  formClassName.addIf(className, className);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -47,7 +46,7 @@ const FormSignupNewsletter = ({ className, location }) => {
     <>
       {error && <div className={styles.error}>{error}</div>}
       <form
-        className={formClassName.toString()}
+        className={clsx(styles.formSignupNewsletter, className)}
         method="POST"
         action="https://mailtik.spacejelly.dev/api/forms/newsletter"
         onSubmit={handleSubmit}

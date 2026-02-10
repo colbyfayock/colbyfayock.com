@@ -1,71 +1,42 @@
-import { getApolloClient } from 'lib/apollo-client';
-
-import { QUERY_ALL_PROJECTS, QUERY_PROJECT_BY_SLUG } from 'data/projects';
-
-const PREFIX = '[Projects]';
-
-/**
- * getProjectBySlug
- */
-
-export async function getProjectBySlug(slug) {
-  const apolloClient = getApolloClient();
-
-  let projectData;
-
-  try {
-    projectData = await apolloClient.query({
-      query: QUERY_PROJECT_BY_SLUG,
-      variables: {
-        slug,
-      },
-    });
-  } catch (e) {
-    console.log(`${PREFIX}[getProjectBySlug] Failed to query data: ${e.message}`);
-    throw e;
-  }
-
-  const project = [projectData?.data.project].map(mapProjectData)[0];
-
-  return {
-    project,
-  };
-}
-
-/**
- * getAllProjects
- */
+import { fetchAPI } from 'lib/api';
 
 export async function getAllProjects() {
-  const apolloClient = getApolloClient();
+  const query = `
+    query AllProjects {
+      projects(first: 100) {
+        edges {
+          node {
+            id
+            title
+            slug
+            content
+            date
+            featuredImage {
+              node {
+                altText
+                caption
+                sourceUrl
+              }
+            }
+            project {
+              projectUrl
+            }
+          }
+        }
+      }
+    }
+  `;
 
-  let projectData;
+  const data = await fetchAPI(query);
+  const projects =
+    data?.projects?.edges?.map(({ node }) => {
+      const project = { ...node };
+      if (project.featuredImage?.node) {
+        project.featuredImage = project.featuredImage.node;
+      }
+      project.projectUrl = node.project?.projectUrl;
+      return project;
+    }) || [];
 
-  try {
-    projectData = await apolloClient.query({
-      query: QUERY_ALL_PROJECTS,
-    });
-  } catch (e) {
-    console.log(`${PREFIX}[getAllProjects] Failed to query data: ${e.message}`);
-    throw e;
-  }
-
-  const projects = projectData?.data.projects.edges.map(({ node = {} }) => node);
-
-  return {
-    projects: Array.isArray(projects) && projects.map(mapProjectData),
-  };
-}
-
-/**
- * mapProjectData
- */
-
-export function mapProjectData(project = {}) {
-  const data = {
-    ...project,
-    ...project.project,
-  };
-
-  return data;
+  return { projects };
 }

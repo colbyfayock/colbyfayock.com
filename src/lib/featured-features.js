@@ -1,42 +1,41 @@
-import { getApolloClient } from 'lib/apollo-client';
-
-import { QUERY_ALL_FEATURED_FEATURES } from 'data/featured-features';
-
-const PREFIX = '[Featured Features]';
-
-/**
- * getAllFeaturedFeatures
- */
+import { fetchAPI } from 'lib/api';
 
 export async function getAllFeaturedFeatures() {
-  const apolloClient = getApolloClient();
-
-  let featuredFeatureData;
+  const query = `
+    query AllFeaturedFeatures {
+      featuredFeatures(first: 100) {
+        edges {
+          node {
+            id
+            title
+            slug
+            content
+            featuredFeature {
+              featureUrl
+            }
+          }
+        }
+      }
+    }
+  `;
 
   try {
-    featuredFeatureData = await apolloClient.query({
-      query: QUERY_ALL_FEATURED_FEATURES,
-    });
+    const data = await fetchAPI(query);
+    const featuredFeatures =
+      data?.featuredFeatures?.edges?.map(({ node }) => {
+        const feature = {
+          id: node.id,
+          title: node.title,
+          slug: node.slug,
+          content: node.content,
+          featureUrl: node.featuredFeature?.featureUrl,
+        };
+        return feature;
+      }) || [];
+
+    return { featuredFeatures };
   } catch (e) {
-    console.log(`${PREFIX}[getAllFeaturedFeatures] Failed to query data: ${e.message}`);
-    throw e;
+    console.log(`[featured-features][getAllFeaturedFeatures] Failed to fetch: ${e.message}`);
+    return { featuredFeatures: [] };
   }
-
-  const featuredFeatures = featuredFeatureData?.data.featuredFeatures.edges.map(({ node = {} }) => node);
-
-  return {
-    featuredFeatures: Array.isArray(featuredFeatures) && featuredFeatures.map(mapFeaturedFeatureData),
-  };
-}
-
-/**
- * mapFeaturedFeatureData
- */
-
-export function mapFeaturedFeatureData(featuredFeature = {}) {
-  const data = {
-    ...featuredFeature,
-    ...featuredFeature.featuredFeature,
-  };
-  return data;
 }
