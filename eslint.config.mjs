@@ -5,18 +5,7 @@ import globals from 'globals';
 
 export default [
   {
-    ignores: [
-      'node_modules/**',
-      '.next/**',
-      '.netlify/**',
-      'out/**',
-      'public/**',
-      'src/pages/**',
-      'src/pages.disabled/**',
-      'src/posts.disabled.bak/**',
-      '*.config.js',
-      '*.config.mjs',
-    ],
+    ignores: ['node_modules/**', '.next/**', '.netlify/**', 'out/**', 'public/**', '*.config.js', '*.config.mjs'],
   },
   {
     files: ['**/*.{js,jsx,mjs}'],

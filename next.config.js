@@ -1,4 +1,3 @@
-// const socialImages = require('./plugins/socialImages');
 const path = require('path');
 const pkg = require('./package.json');
 
@@ -15,12 +14,6 @@ const config = {
     WORDPRESS_MENU_LOCATION_NAVIGATION: 'PRIMARY',
     WORDPRESS_PLUGIN_SEO: parseEnvValue(process.env.WORDPRESS_PLUGIN_SEO, 'false'),
     WORDPRESS_SITE_URL: pkg.homepage,
-
-    // The image directory for open graph images will be saved at the location above
-    // with `public` prepended. By default, images will be saved at /public/images/og
-    // and available at /images/og. If changing, make sure to update the .gitignore
-
-    OG_IMAGE_DIRECTORY: '/images/og',
   },
 
   images: {

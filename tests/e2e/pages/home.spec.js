@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { expectValidSeo, getSeoMetadata } from '../../helpers/seo.js';
+import { expectValidSeo } from '../../helpers/seo.js';
 
 test.describe('Home Page', () => {
   test.beforeEach(async ({ page }) => {
@@ -23,12 +23,7 @@ test.describe('Home Page', () => {
   });
 
   test('displays posts section', async ({ page }) => {
-    // Check for posts section - look for heading containing "blog" or "posts"
-    const postsSection = page
-      .locator('h2')
-      .filter({ hasText: /blog|posts/i })
-      .first();
-    // If no heading found, at least verify posts links exist
+    // Verify posts links exist
     const postsLinks = page.locator('a[href^="/posts/"]');
     const linksCount = await postsLinks.count();
     expect(linksCount).toBeGreaterThan(0);
