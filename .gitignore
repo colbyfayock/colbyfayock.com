@@ -53,3 +53,7 @@ public/robots.txt
 
 # Screenshots
 .screenshots/
+
+
+# Visual regression screenshots
+visual-regression/
