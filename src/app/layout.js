@@ -1,5 +1,6 @@
 import 'styles/globals.scss';
 
+import PlausibleProvider from 'next-plausible';
 import ProvidersWrapper from './providers';
 import { getSiteMetadata } from 'lib/site';
 
@@ -50,6 +51,9 @@ export default async function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <head>
+        <PlausibleProvider domain="colbyfayock.com" trackOutboundLinks={true} />
+      </head>
       <body>
         <ProvidersWrapper siteData={siteData}>{children}</ProvidersWrapper>
       </body>

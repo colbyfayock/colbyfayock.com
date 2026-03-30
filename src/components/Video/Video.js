@@ -14,6 +14,7 @@ export const Video = ({ className, title, url, width = 560, height = 315, isActi
 
   useEffect(() => {
     if (isActive !== defaultIsActive) setIsActive(defaultIsActive);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [defaultIsActive]);
 
   const videoId = getUrlParamsFromString(url).find(({ key }) => key === 'v')?.value;

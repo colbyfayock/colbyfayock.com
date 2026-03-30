@@ -35,6 +35,7 @@ $color-amber: #e8ad3e;
 $color-orange: #d89d38;
 $color-brown: #7a4d2c;
 @use "sass:color";
+@use "sass:list";
 
 $color-grey: #747a80;
 
@@ -85,8 +86,8 @@ $color-map: ("red" $color-red) ("pink" $color-pink) ("magenta" $color-magenta) (
 */
 
 @each $color in $color-map {
-  $name: nth($color, 1);
-  $value: nth($color, 2);
+  $name: list.nth($color, 1);
+  $value: list.nth($color, 2);
 
   .color-#{$name} {
     color: $value;

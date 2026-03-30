@@ -47,7 +47,7 @@ function useSearchState() {
 
       try {
         searchData = await getSearchData();
-      } catch (e) {
+      } catch {
         setState(SEARCH_STATE_ERROR);
         return;
       }

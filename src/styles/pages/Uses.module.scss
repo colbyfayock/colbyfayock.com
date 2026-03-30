@@ -61,7 +61,7 @@
   }
 
   div {
-    padding-top: percentage(math.div(350, 960));
+    padding-top: math.percentage(math.div(350, 960));
   }
 }
 

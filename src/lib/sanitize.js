@@ -1,4 +1,3 @@
-/* eslint-disable no-useless-escape */
 const ALLOWED_TAGS = [
   'h1',
   'h2',
