@@ -15,9 +15,16 @@ export const revalidate = 60;
 
 export async function generateMetadata() {
   const metadata = await getSiteMetadata();
+
   return {
     title: 'Categories',
     description: `Read categories at ${metadata.title}`,
+    openGraph: {
+      url: `${metadata.url}/categories`,
+    },
+    alternates: {
+      canonical: '/categories',
+    },
   };
 }
 

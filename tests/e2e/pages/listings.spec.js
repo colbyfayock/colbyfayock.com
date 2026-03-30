@@ -71,6 +71,13 @@ test.describe('Podcasts Listing Page', () => {
     await expectValidSeo(page);
   });
 
+  test('has canonical SEO tags', async ({ page }) => {
+    const seo = await getSeoMetadata(page);
+
+    expect(seo.canonical).toBeTruthy();
+    expect(seo.og.url).toBeTruthy();
+  });
+
   test('displays page heading', async ({ page }) => {
     const heading = page.getByRole('heading', { level: 1 });
     await expect(heading).toBeVisible();
@@ -91,6 +98,13 @@ test.describe('Projects Listing Page', () => {
     await expectValidSeo(page);
   });
 
+  test('has canonical SEO tags', async ({ page }) => {
+    const seo = await getSeoMetadata(page);
+
+    expect(seo.canonical).toBeTruthy();
+    expect(seo.og.url).toBeTruthy();
+  });
+
   test('displays page heading', async ({ page }) => {
     const heading = page.getByRole('heading', { level: 1 });
     await expect(heading).toBeVisible();
@@ -109,6 +123,13 @@ test.describe('Categories Listing Page', () => {
 
   test('has valid SEO metadata', async ({ page }) => {
     await expectValidSeo(page);
+  });
+
+  test('has canonical SEO tags', async ({ page }) => {
+    const seo = await getSeoMetadata(page);
+
+    expect(seo.canonical).toBeTruthy();
+    expect(seo.og.url).toBeTruthy();
   });
 
   test('displays list of categories', async ({ page }) => {
@@ -152,8 +173,26 @@ test.describe('News Listing Page', () => {
     await expectValidSeo(page);
   });
 
+  test('has a canonical URL even when noindexed', async ({ page }) => {
+    const seo = await getSeoMetadata(page);
+
+    expect(seo.canonical).toBeTruthy();
+  });
+
   test('displays page heading', async ({ page }) => {
     const heading = page.getByRole('heading', { level: 1 });
     await expect(heading).toBeVisible();
+  });
+});
+
+test.describe('Search Page', () => {
+  test('marks search results as noindex with a canonical URL', async ({ page }) => {
+    await page.goto('/search?q=test');
+
+    const seo = await getSeoMetadata(page);
+    const robots = await page.locator('meta[name="robots"]').getAttribute('content');
+
+    expect(robots).toContain('noindex');
+    expect(seo.canonical).toBeTruthy();
   });
 });

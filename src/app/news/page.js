@@ -32,6 +32,12 @@ export async function generateMetadata() {
     title: metaTitle || title,
     description: description,
     robots: 'noindex, follow',
+    openGraph: {
+      url: '/newsletter',
+    },
+    alternates: {
+      canonical: '/newsletter',
+    },
   };
 }
 
