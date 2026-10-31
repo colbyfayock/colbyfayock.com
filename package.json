@@ -27,14 +27,15 @@
     "date-fns": "^4.1.0",
     "fuse.js": "^7.1.0",
     "he": "^1.2.0",
-    "next": "^16.1.6",
+    "next": "^16.4.3",
     "next-plausible": "^3.12.5",
-    "react": "19.2.4",
-    "react-dom": "19.2.4",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
     "react-icons": "^5.5.0",
     "react-intersection-observer": "^9.16.0",
     "rss": "^1.2.2",
-    "sass": "^1.97.3"
+    "sass": "^1.97.3",
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.3",
@@ -46,7 +47,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^4.7.0",
     "eslint": "^9.39.2",
-    "eslint-config-next": "16.1.6",
+    "eslint-config-next": "16.4.3",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-react": "^7.37.5",
